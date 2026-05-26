@@ -1,11 +1,11 @@
 {
-  "totalKm": 0,
+  "totalKm": 144,
   "totalCountries": 1,
   "totalDays": 1,
-  "totalElevation": 0,
+  "totalElevation": 54,
   "currentCountry": "France",
-  "currentLocation": "Saint-Nazaire, France",
+  "currentLocation": "Nantes, France",
   "startDate": "2026-05-26",
   "lastUpdate": "2026-05-26",
-  "latestStageSlug": "2026-05-26-saint-nazaire"
+  "latestStageSlug": "2026-05-26-saint-nazaire-nantes"
 }

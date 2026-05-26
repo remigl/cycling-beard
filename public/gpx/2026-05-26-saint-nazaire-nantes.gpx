@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="test" xmlns="http://www.topografix.com/GPX/1/1">
+  <trk>
+    <name>Saint-Nazaire → Nantes</name>
+    <trkseg>
+      <trkpt lat="47.2733" lon="-2.2139"><ele>5</ele></trkpt>
+      <trkpt lat="47.2810" lon="-2.1800"><ele>8</ele></trkpt>
+      <trkpt lat="47.2950" lon="-2.1200"><ele>12</ele></trkpt>
+      <trkpt lat="47.3100" lon="-2.0500"><ele>18</ele></trkpt>
+      <trkpt lat="47.3250" lon="-1.9800"><ele>22</ele></trkpt>
+      <trkpt lat="47.3400" lon="-1.9100"><ele>28</ele></trkpt>
+      <trkpt lat="47.3500" lon="-1.8400"><ele>35</ele></trkpt>
+      <trkpt lat="47.3600" lon="-1.7700"><ele>30</ele></trkpt>
+      <trkpt lat="47.3700" lon="-1.7000"><ele>25</ele></trkpt>
+      <trkpt lat="47.3800" lon="-1.6300"><ele>20</ele></trkpt>
+      <trkpt lat="47.3900" lon="-1.5600"><ele>18</ele></trkpt>
+      <trkpt lat="47.4000" lon="-1.4900"><ele>22</ele></trkpt>
+      <trkpt lat="47.4100" lon="-1.4200"><ele>28</ele></trkpt>
+      <trkpt lat="47.4200" lon="-1.3500"><ele>32</ele></trkpt>
+      <trkpt lat="47.4300" lon="-1.2800"><ele>38</ele></trkpt>
+      <trkpt lat="47.4400" lon="-1.2100"><ele>42</ele></trkpt>
+      <trkpt lat="47.4500" lon="-1.1400"><ele>35</ele></trkpt>
+      <trkpt lat="47.4600" lon="-1.0700"><ele>28</ele></trkpt>
+      <trkpt lat="47.4700" lon="-1.0000"><ele>22</ele></trkpt>
+      <trkpt lat="47.2184" lon="-1.5536"><ele>10</ele></trkpt>
+    </trkseg>
+  </trk>
+</gpx>
