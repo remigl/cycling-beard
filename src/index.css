@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Editorial Aesthetic Color Palette */
+  --color-bg-dark: #FAF9F6; /* Alabaster Cream */
+  --color-surface-card: #FFFFFF; /* Pure White Sheets */
+  --color-surface-container: #E5E5E1; /* Soft Gray Accent Cement */
+  --color-surface-high: #D1D1CB; /* Warm Concrete */
+  --color-surface-highest: #B6B6AF; /* Shadow Stone */
+  --color-text-on: #121212; /* Deep Charcoal/Midnight Solid */
+  --color-text-dim: #4E4E4C; /* Soft Readability Gray */
+  --color-brand-green: #121212; /* Bold Editorial Coal */
+  --color-brand-green-hover: #292928; /* Slightly lighter Coal code */
+  --color-brand-sand: #8D7A68; /* Noble Rich Sand */
+  
+  --border-radius-xs: 0px;
+  --border-radius-sm: 0px;
+  --border-radius-md: 0px;
+  --border-radius-lg: 0px;
+  --border-radius-xl: 0px;
+  --border-radius-2xl: 0px;
+}
+
+/* Immersive Light Editorial Mode base overrides */
+html, body {
+  background-color: #FAF9F6;
+  color: #121212;
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure all sharp components keep the Editorial structural integrity */
+* {
+  border-radius: 0px !important;
+}
+
+/* Editorial Glassmorphism styled lighter for Editorial paper texture */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(18, 18, 18, 0.08) !important;
+}
+
+.glass-nav {
+  background: rgba(250, 249, 246, 0.9) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.08) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+}
+
+/* Classic fine-line borders */
+.divider {
+  height: 1px;
+  background-color: rgba(18, 18, 18, 0.08) !important;
+}
+
+/* Elegant sleek scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF9F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D1CB;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #121212;
+}
+
+/* Editorial vignette overlay for image framing */
+.hero-vignette {
+  background: linear-gradient(to top, rgba(250, 249, 246, 0.98) 0%, rgba(250, 249, 246, 0.25) 50%, rgba(18, 18, 18, 0.35) 100%) !important;
+}
+
+/* Pulse animation for active location markers with sand aesthetic */
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(141, 122, 104, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(141, 122, 104, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(141, 122, 104, 0);
+  }
+}
+
+.marker-pulse {
+  animation: pulse-ring 2.5s infinite;
+}
+
+/* Map route drawing transition effect */
+.route-line {
+  stroke: #121212;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 4 2;
+}
+
+/* Custom fade utility */
+.fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mapping old dark mode colors dynamically to Editorial light theme elements */
+.bg-\[\#1c1b1b\] {
+  background-color: var(--color-surface-card) !important;
+  border-color: rgba(18, 18, 18, 0.08) !important;
+}
+
+.bg-\[\#141313\] {
+  background-color: var(--color-bg-dark) !important;
+}
+
+.border-white\/5,
+.border-white\/10 {
+  border-color: rgba(18, 18, 18, 0.08) !important;
+}
+
+/* Adjust text readability in cards */
+.bg-\[\#1c1b1b\] .text-white,
+.bg-\[\#1c1b1b\] h3,
+.bg-\[\#1c1b1b\] h4,
+.text-text-on {
+  color: var(--color-text-on) !important;
+}
+
+.bg-\[\#1c1b1b\] .text-text-dim,
+.text-text-dim {
+  color: var(--color-text-dim) !important;
+  opacity: 0.9 !important;
+}
+
+/* Map gradient shading for card titles */
+.from-\[\#141313\] {
+  --tw-gradient-from: rgba(250, 249, 246, 0.95) !important;
+  --tw-gradient-to: rgba(250, 249, 246, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+.from-\[\#1c1b1b\] {
+  --tw-gradient-from: rgba(255, 255, 255, 0.98) !important;
+  --tw-gradient-to: rgba(255, 255, 255, 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
+
+/* Input styles for consistent look */
+input, select, textarea {
+  background-color: #FFFFFF !important;
+  color: #121212 !important;
+  border: 1px solid rgba(18, 18, 18, 0.15) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-brand-sand) !important;
+  outline: none !important;
+}
+
+/* Override default card shadows to match refined gallery styling */
+.shadow-lg, .shadow-xl, .shadow-2xl {
+  box-shadow: 0 10px 30px -15px rgba(18, 18, 18, 0.07) !important;
+}
+
+/* Custom style for primary editorial buttons */
+.btn-primary {
+  background-color: #121212 !important;
+  color: #FAF9F6 !important;
+  transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #292928 !important;
+  opacity: 0.95;
+}

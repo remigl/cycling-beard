@@ -1,0 +1,17 @@
+[
+  {
+    "slug": "2026-05-26-saint-nazaire",
+    "date": "2026-05-26",
+    "title": "Le Grand Départ",
+    "country": "France",
+    "distanceKm": 0,
+    "elevationGain": 0,
+    "coverImage": "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1200",
+    "thumbnail": "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=400",
+    "shortDescription": "Le point zéro officiel. Face à l'Atlantique, les sacoches sanglées, le voyage débute.",
+    "hasVideo": false,
+    "hasGpx": false,
+    "mapLat": 47.2733,
+    "mapLng": -2.2139
+  }
+]
