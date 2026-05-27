@@ -92,26 +92,27 @@ async function processImage(srcPath, destDir, baseName) {
     .resize(400, 260, { fit: "cover" })
     .toFile(thumbPath);
 
+  // Chemin relatif depuis public/ pour le navigateur
+  const toPublicPath = (p) => "/" + path.relative(PUBLIC_DIR, p).replace(/\\/g, "/");
   return {
-    webp: webpPath.replace("public", ""),
-    thumb: thumbPath.replace("public", ""),
+    webp: toPublicPath(webpPath),
+    thumb: toPublicPath(thumbPath),
   };
 }
 
 // ─── GPX parsing ─────────────────────────────────────────────────────────────
 
-function parseGpx(gpxContent) {
+function parseOneGpx(gpxContent) {
   const gpx = new GpxParser();
   gpx.parse(gpxContent);
 
   if (!gpx.tracks || gpx.tracks.length === 0) {
-    return { distanceKm: 0, elevationGain: 0, maxAltitude: 0 };
+    return { distanceKm: 0, elevationGain: 0, maxAltitude: 0, endLat: null, endLng: null };
   }
 
   const track = gpx.tracks[0];
   const distanceKm = Math.round(track.distance.total / 100) / 10;
 
-  // Elevation gain (sum of positive deltas)
   let elevationGain = 0;
   let maxAlt = 0;
   const points = track.points;
@@ -121,10 +122,40 @@ function parseGpx(gpxContent) {
     if (points[i].ele > maxAlt) maxAlt = points[i].ele;
   }
 
+  // Dernière position = fin de l'étape (pour la carte)
+  const lastPoint = points[points.length - 1];
   return {
     distanceKm,
     elevationGain: Math.round(elevationGain),
     maxAltitude: Math.round(maxAlt),
+    endLat: lastPoint?.lat ?? null,
+    endLng: lastPoint?.lon ?? null,
+  };
+}
+
+// Fusionne plusieurs GPX en un seul résultat
+function mergeGpxFiles(gpxContents) {
+  if (gpxContents.length === 0) return { distanceKm: 0, elevationGain: 0, maxAltitude: 0 };
+
+  let totalDistance = 0;
+  let totalElevation = 0;
+  let maxAltitude = 0;
+
+  for (const content of gpxContents) {
+    const result = parseOneGpx(content);
+    totalDistance += result.distanceKm;
+    totalElevation += result.elevationGain;
+    if (result.maxAltitude > maxAltitude) maxAltitude = result.maxAltitude;
+  }
+
+  // Prend les coords du dernier GPX
+  const lastResult = parseOneGpx(gpxContents[gpxContents.length - 1]);
+  return {
+    distanceKm: Math.round(totalDistance * 10) / 10,
+    elevationGain: Math.round(totalElevation),
+    maxAltitude: Math.round(maxAltitude),
+    endLat: lastResult.endLat,
+    endLng: lastResult.endLng,
   };
 }
 
@@ -193,13 +224,20 @@ async function syncFolder(drive, folder) {
   const photos = [];
   let gpxStats = { distanceKm: 0, elevationGain: 0, maxAltitude: 0 };
   let gpxPublicPath = null;
+  const gpxContents = [];
   let notes = {};
 
   // Parse date and title from slug
   // Format: YYYY-MM-DD-from-to
   const parts = slug.split("-");
   const date = parts.slice(0, 3).join("-");
-  const titleRaw = parts.slice(3).join(" → ").replace(/-/g, " → ");
+  // Garde le reste du slug tel quel, juste capitalisé (ex: saint-nazaire-lepouliguen)
+  const slugTitle = parts.slice(3).join("-");
+  // Capitalise chaque mot
+  const titleRaw = slugTitle
+    .split("-")
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
 
   // ── Download and process each file ──
   for (const file of files) {
@@ -209,14 +247,15 @@ async function syncFolder(drive, folder) {
     // Download
     await downloadFile(drive, file.id, tmpPath);
 
-    // GPX
+    // GPX — accumule tous les fichiers .gpx
     if (name.endsWith(".gpx")) {
       const gpxContent = fs.readFileSync(tmpPath, "utf-8");
-      gpxStats = parseGpx(gpxContent);
-      const gpxDest = path.join(GPX_DIR, `${slug}.gpx`);
+      gpxContents.push(gpxContent);
+      // Copie chaque GPX sous son nom original
+      const gpxDest = path.join(GPX_DIR, `${slug}_${gpxContents.length}.gpx`);
       fs.copyFileSync(tmpPath, gpxDest);
-      gpxPublicPath = `/gpx/${slug}.gpx`;
-      console.log(`  📍 GPX: ${gpxStats.distanceKm}km, +${gpxStats.elevationGain}m, max ${gpxStats.maxAltitude}m`);
+      if (!gpxPublicPath) gpxPublicPath = `/gpx/${slug}_1.gpx`;
+      console.log(`  📍 GPX #${gpxContents.length}: ${file.name}`);
     }
 
     // Notes
@@ -245,6 +284,12 @@ async function syncFolder(drive, folder) {
     }
   }
 
+  // Fusion de tous les GPX
+  if (gpxContents.length > 0) {
+    gpxStats = mergeGpxFiles(gpxContents);
+    console.log(`  📍 Total GPX (${gpxContents.length} fichier(s)): ${gpxStats.distanceKm}km, +${gpxStats.elevationGain}m, max ${gpxStats.maxAltitude}m`);
+  }
+
   // Fallback cover
   if (!coverWebp && photos.length > 0) {
     coverWebp = photos[0].src;
@@ -270,6 +315,8 @@ async function syncFolder(drive, folder) {
     photos: coverWebp ? [{ src: coverWebp, thumb: thumbWebp, alt: "Cover" }, ...photos] : photos,
     videos: [],
     gpxFile: gpxPublicPath,
+    mapLat: gpxStats.endLat ?? null,
+    mapLng: gpxStats.endLng ?? null,
     highlights: notes.highlights,
     weather: notes.weather || null,
   };
@@ -292,17 +339,31 @@ function computeDayNumber(dateStr) {
 
 // Crude country detection from slug keywords — étendre selon les besoins
 function detectCountry(slug) {
-  if (slug.includes("france") || slug.includes("paris") || slug.includes("lyon") || slug.includes("saint-nazaire")) return "France";
-  if (slug.includes("italy") || slug.includes("turin") || slug.includes("milan") || slug.includes("susa")) return "Italy";
-  if (slug.includes("austria") || slug.includes("wien") || slug.includes("salzburg")) return "Austria";
-  if (slug.includes("hungary") || slug.includes("budapest")) return "Hungary";
-  if (slug.includes("romania") || slug.includes("bucharest")) return "Romania";
-  if (slug.includes("turkey") || slug.includes("istanbul")) return "Turkey";
-  if (slug.includes("iran")) return "Iran";
-  if (slug.includes("uzbekistan") || slug.includes("bukhara") || slug.includes("samarkand")) return "Uzbekistan";
-  if (slug.includes("tajikistan") || slug.includes("pamir") || slug.includes("dushanbe")) return "Tajikistan";
-  if (slug.includes("kyrgyzstan") || slug.includes("bishkek")) return "Kyrgyzstan";
-  if (slug.includes("kazakhstan") || slug.includes("almaty")) return "Kazakhstan";
+  const s = slug.toLowerCase();
+  // France — villes et régions
+  if (s.includes("france") || s.includes("paris") || s.includes("lyon") || 
+      s.includes("saint-nazaire") || s.includes("nazaire") || s.includes("nantes") ||
+      s.includes("bordeaux") || s.includes("toulouse") || s.includes("marseille") ||
+      s.includes("strasbourg") || s.includes("grenoble") || s.includes("annecy") ||
+      s.includes("lepouliguen") || s.includes("pouliguen") || s.includes("larochelle") ||
+      s.includes("rochelle") || s.includes("poitiers") || s.includes("tours") ||
+      s.includes("orleans") || s.includes("dijon") || s.includes("besancon") ||
+      s.includes("belfort") || s.includes("mulhouse") || s.includes("colmar") ||
+      s.includes("metz") || s.includes("nancy") || s.includes("reims") ||
+      s.includes("rennes") || s.includes("brest") || s.includes("lorient") ||
+      s.includes("quimper") || s.includes("vannes") || s.includes("laval") ||
+      s.includes("lemans") || s.includes("angers") || s.includes("saumur") ||
+      s.includes("amboise") || s.includes("blois") || s.includes("chartres")) return "France";
+  if (s.includes("italy") || s.includes("turin") || s.includes("milan") || s.includes("susa")) return "Italy";
+  if (s.includes("austria") || s.includes("wien") || s.includes("salzburg")) return "Austria";
+  if (s.includes("hungary") || s.includes("budapest")) return "Hungary";
+  if (s.includes("romania") || s.includes("bucharest")) return "Romania";
+  if (s.includes("turkey") || s.includes("istanbul")) return "Turkey";
+  if (s.includes("iran")) return "Iran";
+  if (s.includes("uzbekistan") || s.includes("bukhara") || s.includes("samarkand")) return "Uzbekistan";
+  if (s.includes("tajikistan") || s.includes("pamir") || s.includes("dushanbe")) return "Tajikistan";
+  if (s.includes("kyrgyzstan") || s.includes("bishkek")) return "Kyrgyzstan";
+  if (s.includes("kazakhstan") || s.includes("almaty")) return "Kazakhstan";
   return "—";
 }
 
@@ -356,6 +417,8 @@ async function main() {
     shortDescription: s.summary || "",
     hasVideo: s.videos.length > 0,
     hasGpx: !!s.gpxFile,
+    mapLat: s.mapLat ?? null,
+    mapLng: s.mapLng ?? null,
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
