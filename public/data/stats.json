@@ -1,11 +1,11 @@
 {
-  "totalKm": 144,
+  "totalKm": 22,
   "totalCountries": 1,
   "totalDays": 1,
-  "totalElevation": 54,
-  "currentCountry": "France",
-  "currentLocation": "Nantes, France",
+  "totalElevation": 175,
+  "currentCountry": "—",
+  "currentLocation": "Saint → Nazaire → LePouliguen",
   "startDate": "2026-05-26",
   "lastUpdate": "2026-05-27",
-  "latestStageSlug": "2026-05-26-saint-nazaire-nantes"
+  "latestStageSlug": "2026-05-27-Saint-Nazaire-LePouliguen"
 }

@@ -1,14 +1,14 @@
 [
   {
-    "slug": "2026-05-26-saint-nazaire-nantes",
-    "date": "2026-05-26",
-    "title": "Saint-Nazaire → Nantes",
-    "country": "France",
-    "distanceKm": 144.3,
-    "elevationGain": 54,
-    "coverImage": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-26-saint-nazaire-nantes/cover.webp",
-    "thumbnail": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-26-saint-nazaire-nantes/thumb_cover.webp",
-    "shortDescription": "Premier jour de route, vent dans le dos. Ceci est un test.",
+    "slug": "2026-05-27-Saint-Nazaire-LePouliguen",
+    "date": "2026-05-27",
+    "title": "Saint → Nazaire → LePouliguen",
+    "country": "—",
+    "distanceKm": 22.3,
+    "elevationGain": 175,
+    "coverImage": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/numérisé_20260527-1914-03.webp",
+    "thumbnail": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/thumb_numérisé_20260527-1914-03.webp",
+    "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true
   }

@@ -1,0 +1,44 @@
+{
+  "slug": "2026-05-27-Saint-Nazaire-LePouliguen",
+  "date": "2026-05-27",
+  "title": "Saint → Nazaire → LePouliguen",
+  "day": "Jour 2",
+  "location": "Saint → Nazaire → LePouliguen",
+  "country": "—",
+  "distanceKm": 22.3,
+  "elevationGain": 175,
+  "maxAltitude": 40,
+  "coverImage": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/numérisé_20260527-1914-03.webp",
+  "heroVideo": null,
+  "summary": "",
+  "fullStory": [
+    "Cette étape sera bientôt documentée."
+  ],
+  "quote": null,
+  "photos": [
+    {
+      "src": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/numérisé_20260527-1914-03.webp",
+      "thumb": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/thumb_numérisé_20260527-1914-03.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/numérisé_20260527-1914-03.webp",
+      "thumb": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/thumb_numérisé_20260527-1914-03.webp",
+      "alt": "numérisé_20260527-1914-03"
+    },
+    {
+      "src": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/numérisé_20260527-1914-02.webp",
+      "thumb": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/thumb_numérisé_20260527-1914-02.webp",
+      "alt": "numérisé_20260527-1914-02"
+    },
+    {
+      "src": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/numérisé_20260527-1914-01.webp",
+      "thumb": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/thumb_numérisé_20260527-1914-01.webp",
+      "alt": "numérisé_20260527-1914-01"
+    }
+  ],
+  "videos": [],
+  "gpxFile": "/gpx/2026-05-27-Saint-Nazaire-LePouliguen.gpx",
+  "highlights": [],
+  "weather": null
+}
