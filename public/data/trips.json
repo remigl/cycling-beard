@@ -10,6 +10,8 @@
     "thumbnail": "/home/runner/work/cycling-beard/cycling-beard//media/2026-05-27-Saint-Nazaire-LePouliguen/thumb_numérisé_20260527-1914-03.webp",
     "shortDescription": "",
     "hasVideo": false,
-    "hasGpx": true
+    "hasGpx": true,
+    "mapLat": null,
+    "mapLng": null
   }
 ]
