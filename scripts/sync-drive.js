@@ -135,14 +135,16 @@ async function processImage(srcPath, destDir, baseName) {
   const webpPath = path.join(destDir, `${baseName}.webp`);
   const thumbPath = path.join(destDir, `thumb_${baseName}.webp`);
 
-  // Full WebP
+  // Full WebP — .rotate() applique l'orientation EXIF (corrige les photos couchées)
   await sharp(srcPath)
+    .rotate()
     .webp({ quality: 85 })
     .resize(1600, null, { withoutEnlargement: true })
     .toFile(webpPath);
 
   // Thumbnail
   await sharp(srcPath)
+    .rotate()
     .webp({ quality: 70 })
     .resize(400, 260, { fit: "cover" })
     .toFile(thumbPath);
@@ -153,6 +155,24 @@ async function processImage(srcPath, destDir, baseName) {
     webp: toPublicPath(webpPath),
     thumb: toPublicPath(thumbPath),
   };
+}
+
+// ─── Reverse Geocoding (Nominatim / OpenStreetMap, gratuit) ──────────────────
+
+async function reverseGeocode(lat, lng) {
+  if (lat == null || lng == null) return null;
+  try {
+    const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`;
+    const res = await fetch(url, {
+      headers: { "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync)" },
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    const a = data.address || {};
+    return a.city || a.town || a.village || a.municipality || a.county || null;
+  } catch {
+    return null;
+  }
 }
 
 // ─── GPX parsing ─────────────────────────────────────────────────────────────
@@ -449,6 +469,19 @@ async function syncFolder(drive, folder) {
     thumbWebp = photos[0].thumb;
   }
 
+  // ── Reverse geocoding : noms de villes début/fin ──
+  let startCity = null, endCity = null;
+  if (gpxStats.startLat != null) {
+    startCity = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
+    // Pause pour respecter la limite Nominatim (1 req/sec)
+    await new Promise(r => setTimeout(r, 1100));
+    endCity = await reverseGeocode(gpxStats.endLat, gpxStats.endLng);
+    await new Promise(r => setTimeout(r, 1100));
+    if (startCity || endCity) {
+      console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"}`);
+    }
+  }
+
   // ── Traduction du contenu (FR → EN/ES/IT/DE) ──
   const frContent = {
     summary: notes.summary || "",
@@ -465,6 +498,8 @@ async function syncFolder(drive, folder) {
     day: `Jour ${computeDayNumber(date)}`,
     location: notes.location || titleRaw,
     country: detectCountry(slug),
+    startCity: startCity || null,
+    endCity: endCity || null,
     distanceKm: gpxStats.distanceKm,
     elevationGain: gpxStats.elevationGain,
     maxAltitude: gpxStats.maxAltitude || undefined,
@@ -481,6 +516,8 @@ async function syncFolder(drive, folder) {
     gpxFile: gpxPublicPath,
     mapLat: gpxStats.endLat ?? null,
     mapLng: gpxStats.endLng ?? null,
+    startLat: gpxStats.startLat ?? null,
+    startLng: gpxStats.startLng ?? null,
     track: gpxStats.track || [],
     segments: gpxStats.segments || [],
     highlights: notes.highlights || [],
@@ -657,6 +694,8 @@ async function main() {
     date: s.date,
     title: s.title,
     country: s.country,
+    startCity: s.startCity || null,
+    endCity: s.endCity || null,
     distanceKm: s.distanceKm,
     elevationGain: s.elevationGain,
     coverImage: s.coverImage,
