@@ -180,9 +180,10 @@ function parseOneGpx(gpxContent) {
   // Dernière position = fin de l'étape (pour la carte)
   const lastPoint = points[points.length - 1];
 
-  // Trace simplifiée : on garde 1 point sur N pour alléger le JSON
-  const maxPoints = 200;
-  const step = Math.max(1, Math.floor(points.length / maxPoints));
+  // Trace : on garde plus de points pour suivre fidèlement la route
+  // Simplification douce uniquement si le tracé est très dense
+  const maxPoints = 800;
+  const step = points.length > maxPoints ? Math.ceil(points.length / maxPoints) : 1;
   const trackPoints = [];
   for (let i = 0; i < points.length; i += step) {
     trackPoints.push([
@@ -190,12 +191,14 @@ function parseOneGpx(gpxContent) {
       Math.round(points[i].lon * 100000) / 100000,
     ]);
   }
-  // Garde toujours le dernier point
-  if (points.length > 0) {
-    trackPoints.push([
-      Math.round(lastPoint.lat * 100000) / 100000,
-      Math.round(lastPoint.lon * 100000) / 100000,
-    ]);
+  // Garde toujours le dernier point exact
+  const last = [
+    Math.round(lastPoint.lat * 100000) / 100000,
+    Math.round(lastPoint.lon * 100000) / 100000,
+  ];
+  const lastAdded = trackPoints[trackPoints.length - 1];
+  if (!lastAdded || lastAdded[0] !== last[0] || lastAdded[1] !== last[1]) {
+    trackPoints.push(last);
   }
 
   return {
@@ -210,29 +213,25 @@ function parseOneGpx(gpxContent) {
   };
 }
 
-// Fusionne plusieurs GPX en un seul résultat
+// Fusionne plusieurs GPX : stats cumulées + segments séparés (pas de lignes droites)
 function mergeGpxFiles(gpxContents) {
-  if (gpxContents.length === 0) return { distanceKm: 0, elevationGain: 0, maxAltitude: 0 };
+  if (gpxContents.length === 0) return { distanceKm: 0, elevationGain: 0, maxAltitude: 0, segments: [] };
 
   let totalDistance = 0;
   let totalElevation = 0;
   let maxAltitude = 0;
-
-  for (const content of gpxContents) {
-    const result = parseOneGpx(content);
-    totalDistance += result.distanceKm;
-    totalElevation += result.elevationGain;
-    if (result.maxAltitude > maxAltitude) maxAltitude = result.maxAltitude;
-  }
-
-  // Concatène tous les tracés
-  let fullTrack = [];
   let startLat = null, startLng = null;
+  const segments = [];  // chaque GPX = un segment séparé
+
   for (const content of gpxContents) {
     const r = parseOneGpx(content);
+    totalDistance += r.distanceKm;
+    totalElevation += r.elevationGain;
+    if (r.maxAltitude > maxAltitude) maxAltitude = r.maxAltitude;
     if (startLat === null) { startLat = r.startLat; startLng = r.startLng; }
-    if (r.track) fullTrack = fullTrack.concat(r.track);
+    if (r.track && r.track.length > 1) segments.push(r.track);
   }
+
   const lastResult = parseOneGpx(gpxContents[gpxContents.length - 1]);
   return {
     distanceKm: Math.round(totalDistance * 10) / 10,
@@ -242,7 +241,9 @@ function mergeGpxFiles(gpxContents) {
     endLng: lastResult.endLng,
     startLat,
     startLng,
-    track: fullTrack,
+    // track = premier segment (rétrocompat), segments = tous les tracés séparés
+    track: segments[0] || [],
+    segments,
   };
 }
 
@@ -481,6 +482,7 @@ async function syncFolder(drive, folder) {
     mapLat: gpxStats.endLat ?? null,
     mapLng: gpxStats.endLng ?? null,
     track: gpxStats.track || [],
+    segments: gpxStats.segments || [],
     highlights: notes.highlights || [],
     tags: notes.tags || [],
     weather: notes.weather || null,
@@ -665,6 +667,7 @@ async function main() {
     mapLat: s.mapLat ?? null,
     mapLng: s.mapLng ?? null,
     track: s.track || [],
+    segments: s.segments || [],
     tags: s.tags || [],
   }));
 
