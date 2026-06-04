@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { X, Compass, Share2, Search, ArrowRight } from "lucide-react";
+import { X, Share2, Search, ArrowRight } from "lucide-react";
 import Navbar from "./components/Navbar";
 import HomeView from "./components/HomeView";
 import JourneyView from "./components/JourneyView";
@@ -12,7 +12,6 @@ import { SiteStats, TripSummary } from "./types";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("home");
-  const [showIntro, setShowIntro] = useState<boolean>(true);
   const [activeStageSlug, setActiveStageSlug] = useState<string>("");
 
   const [stats, setStats] = useState<SiteStats | null>(null);
@@ -42,11 +41,6 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [activeTab]);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setShowIntro(false), 2800);
-    return () => clearTimeout(timer);
-  }, []);
-
   const handleCustomNavigate = (tabId: string, argument?: string) => {
     if (tabId === "stage" && argument) setActiveStageSlug(argument);
     setActiveTab(tabId);
@@ -74,52 +68,6 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-bg-dark text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark">
-
-      {/* Cinematic intro */}
-      <AnimatePresence>
-        {showIntro && (
-          <motion.div
-            initial={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="fixed inset-0 bg-[#0c0c0b] z-[9999] flex flex-col justify-center items-center p-6 text-center select-none pointer-events-auto"
-          >
-            <div className="max-w-md flex flex-col items-center">
-              <motion.span
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, delay: 0.3 }}
-                className="font-mono text-[9px] text-[#8d7a68] uppercase tracking-[0.3em] font-semibold mb-6 block"
-              >
-                rémi // carnet d'expédition
-              </motion.span>
-              <motion.h2
-                initial={{ opacity: 0, scale: 0.96 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 1.5, delay: 0.5 }}
-                className="font-display font-medium text-lg md:text-xl text-neutral-200 tracking-tight leading-relaxed font-light"
-              >
-                "Le premier tour de roue est le véritable saut dans l'inconnu."
-              </motion.h2>
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: "40px" }}
-                transition={{ duration: 1.2, delay: 1.1 }}
-                className="h-[1.5px] bg-[#8d7a68] my-8"
-              />
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 0.75 }}
-                transition={{ duration: 0.8, delay: 1.4 }}
-                className="flex items-center gap-2 font-mono text-[8px] text-zinc-400 uppercase tracking-widest"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 marker-pulse" />
-                LIVE · Saint-Nazaire, France
-              </motion.div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
 
       {/* Toast */}
       <AnimatePresence>
