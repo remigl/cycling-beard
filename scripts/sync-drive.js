@@ -37,7 +37,7 @@ const GPX_DIR = path.join(PUBLIC_DIR, "gpx");
 // ─── DeepL Translation ────────────────────────────────────────────────────────
 
 const DEEPL_API_KEY = process.env.DEEPL_API_KEY;
-const TARGET_LANGS = { en: "EN", es: "ES", it: "IT", de: "DE" };
+const TARGET_LANGS = { en: "EN", es: "ES", it: "IT", de: "DE", nl: "NL" };
 
 async function deeplTranslate(text, targetLang) {
   if (!text || !text.trim() || !DEEPL_API_KEY) return text;
@@ -261,37 +261,75 @@ function parseNotes(content) {
     tags: [],
   };
 
-  let inStory = false;
-  for (const line of lines) {
-    // Extrait les tags @mot de chaque ligne
-    const tagMatches = line.match(/@([a-zA-ZÀ-ÿ0-9_-]+)/g);
-    if (tagMatches) {
-      for (const t of tagMatches) {
-        const clean = t.slice(1).toLowerCase();
-        if (!result.tags.includes(clean)) result.tags.push(clean);
+  const stripTags = (s) => s.replace(/@[a-zA-ZÀ-ÿ0-9_-]+/g, "").replace(/\s{2,}/g, " ").trim();
+  const collectTags = (line) => {
+    const m = line.match(/@([a-zA-ZÀ-ÿ0-9_-]+)/g);
+    if (m) for (const t of m) {
+      const clean = t.slice(1).toLowerCase();
+      if (!result.tags.includes(clean)) result.tags.push(clean);
+    }
+  };
+
+  // Détecte si le fichier utilise le format structuré (summary:, ---, etc.)
+  const isStructured = lines.some(l =>
+    l.startsWith("summary:") || l === "---" || l.startsWith("quote:") ||
+    l.startsWith("highlight:") || l.startsWith("weather:") || l.startsWith("location:")
+  );
+
+  if (isStructured) {
+    // ── Format structuré (ancien) ──
+    let inStory = false;
+    for (const line of lines) {
+      collectTags(line);
+      if (line.startsWith("# ")) { result.title = stripTags(line.slice(2)); continue; }
+      if (line.startsWith("summary:")) { result.summary = stripTags(line.slice(8)); continue; }
+      if (line.startsWith("quote:")) { result.quote = stripTags(line.slice(6)); continue; }
+      if (line.startsWith("location:")) { result.location = line.slice(9).trim(); continue; }
+      if (line.startsWith("highlight:")) { result.highlights.push(stripTags(line.slice(10))); continue; }
+      if (line.startsWith("weather:")) {
+        const parts = line.slice(8).trim().split(",");
+        result.weather = {
+          condition: parts[0]?.trim() || "—",
+          tempC: parseInt(parts[1]) || 0,
+          windKph: parseInt(parts[2]) || 0,
+        };
+        continue;
+      }
+      if (line === "---") { inStory = !inStory; continue; }
+      if (inStory && line.length > 5) {
+        const cleanLine = stripTags(line);
+        if (cleanLine.length > 3) result.fullStory.push(cleanLine);
       }
     }
+  } else {
+    // ── Texte libre ──
+    // 1ère ligne = titre (retire "# ", "Jour X —", etc.)
+    // Reste = paragraphes du récit
+    let titleSet = false;
+    for (let idx = 0; idx < lines.length; idx++) {
+      const line = lines[idx];
+      collectTags(line);
 
-    if (line.startsWith("# ")) { result.title = line.slice(2); continue; }
-    if (line.startsWith("summary:")) { result.summary = line.slice(8).replace(/@[a-zA-ZÀ-ÿ0-9_-]+/g, "").replace(/\s{2,}/g, " ").trim(); continue; }
-    if (line.startsWith("quote:")) { result.quote = line.slice(6).trim(); continue; }
-    if (line.startsWith("location:")) { result.location = line.slice(9).trim(); continue; }
-    if (line.startsWith("highlight:")) { result.highlights.push(line.slice(10).trim()); continue; }
-    if (line.startsWith("weather:")) {
-      // Format: weather: Ensoleillé, 22°C, 15kph
-      const parts = line.slice(8).trim().split(",");
-      result.weather = {
-        condition: parts[0]?.trim() || "—",
-        tempC: parseInt(parts[1]) || 0,
-        windKph: parseInt(parts[2]) || 0,
-      };
-      continue;
+      if (!titleSet) {
+        // La première ligne non vide devient le titre
+        let titleLine = line.replace(/^#+\s*/, "");
+        // Retire "Jour X —" ou "Jour X -" du début
+        titleLine = titleLine.replace(/^jour\s*\d+\s*[—\-–:]\s*/i, "");
+        result.title = stripTags(titleLine);
+        titleSet = true;
+        continue;
+      }
+
+      // Tout le reste = récit
+      const cleanLine = stripTags(line);
+      if (cleanLine.length > 3) result.fullStory.push(cleanLine);
     }
-    if (line === "---") { inStory = !inStory; continue; }
-    if (inStory && line.length > 10) {
-      // Retire les tags @mot du texte affiché
-      const cleanLine = line.replace(/@[a-zA-ZÀ-ÿ0-9_-]+/g, "").replace(/\s{2,}/g, " ").trim();
-      if (cleanLine.length > 5) result.fullStory.push(cleanLine);
+
+    // Le résumé = première phrase du récit (pour les cartes)
+    if (result.fullStory.length > 0) {
+      const firstPara = result.fullStory[0];
+      const firstSentence = firstPara.split(/(?<=[.!?])\s/)[0];
+      result.summary = firstSentence.length > 10 ? firstSentence : firstPara.slice(0, 140);
     }
   }
 
@@ -301,20 +339,18 @@ function parseNotes(content) {
 // ─── Main sync logic ──────────────────────────────────────────────────────────
 
 async function syncFolder(drive, folder) {
-  // Normalise le slug : minuscules, espaces → tirets, accents supprimés
-  const slug = folder.name
+  // rawSlug garde l'underscore pour parser le titre (ville_ville)
+  const rawSlug = folder.name
     .toLowerCase()
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
     .replace(/\s+/g, "-")
-    .replace(/[^a-z0-9-]/g, "");
+    .replace(/[^a-z0-9_-]/g, "");
+
+  // slug propre pour fichiers/URLs (underscore → tiret)
+  const slug = rawSlug.replace(/_/g, "-");
   console.log(`\n📂 Traitement : ${slug}`);
 
-  // Check if already synced
   const stageJsonPath = path.join(TRIPS_DIR, `${slug}.json`);
-  if (fs.existsSync(stageJsonPath)) {
-    console.log(`  ✓ Déjà synchronisé, on passe.`);
-    return JSON.parse(fs.readFileSync(stageJsonPath, "utf-8"));
-  }
 
   const files = await listFilesInFolder(drive, folder.id);
   console.log(`  → ${files.length} fichier(s) trouvé(s)`);
@@ -333,17 +369,20 @@ async function syncFolder(drive, folder) {
   const gpxContents = [];
   let notes = {};
 
-  // Parse date and title from slug
-  // Format: YYYY-MM-DD-from-to
-  const parts = slug.split("-");
+  // Parse date and title from rawSlug
+  // Format: YYYY-MM-DD-depart_arrivee  (underscore = flèche entre villes)
+  const parts = rawSlug.split("-");
   const date = parts.slice(0, 3).join("-");
-  // Garde le reste du slug tel quel, juste capitalisé (ex: saint-nazaire-lepouliguen)
-  const slugTitle = parts.slice(3).join("-");
-  // Capitalise chaque mot
-  const titleRaw = slugTitle
+  const slugRest = parts.slice(3).join("-");
+  // Capitalise et transforme _ en flèche →
+  const capitalize = (txt) => txt
     .split("-")
     .map(w => w.charAt(0).toUpperCase() + w.slice(1))
     .join(" ");
+  const titleRaw = slugRest
+    .split("_")                          // sépare départ_arrivée
+    .map(part => capitalize(part))       // capitalise chaque ville
+    .join(" → ");                        // relie par une flèche
 
   // ── Download and process each file ──
   for (const file of files) {
@@ -507,6 +546,69 @@ function detectCountry(slug) {
 
 // ─── Entry point ─────────────────────────────────────────────────────────────
 
+// Traite le dossier spécial _about (présentation + photos)
+async function syncAbout(drive, folder) {
+  console.log(`\n👤 Traitement de la présentation (_about)`);
+  const files = await listFilesInFolder(drive, folder.id);
+
+  const mediaDir = path.join(MEDIA_DIR, "_about");
+  fs.mkdirSync(mediaDir, { recursive: true });
+  const tmpDir = path.join("/tmp", "_about");
+  fs.mkdirSync(tmpDir, { recursive: true });
+
+  let presentation = "";
+  let mePhoto = null;
+  let bikePhoto = null;
+
+  for (const file of files) {
+    const name = file.name.toLowerCase();
+    const tmpPath = path.join(tmpDir, file.name);
+    await downloadFile(drive, file.id, tmpPath);
+
+    if (name.endsWith(".md") || name.endsWith(".txt")) {
+      presentation = fs.readFileSync(tmpPath, "utf-8").trim();
+      console.log(`  📝 Présentation lue`);
+    }
+
+    if (name.match(/\.(jpg|jpeg|png|webp)$/i)) {
+      const baseName = path.basename(name, path.extname(name));
+      const paths = await processImage(tmpPath, mediaDir, baseName);
+      if (name.startsWith("me") || name.includes("moi") || name.includes("portrait")) {
+        mePhoto = paths.webp;
+      } else if (name.startsWith("bike") || name.includes("velo") || name.includes("vélo")) {
+        bikePhoto = paths.webp;
+      } else if (!mePhoto) {
+        mePhoto = paths.webp;
+      } else if (!bikePhoto) {
+        bikePhoto = paths.webp;
+      }
+      console.log(`  🖼  ${name}`);
+    }
+  }
+
+  // Découpe la présentation en paragraphes
+  const paragraphs = presentation
+    .split("\n")
+    .map(l => l.trim())
+    .filter(l => l.length > 0 && !l.startsWith("#"));
+
+  // Traduit la présentation
+  const frPres = { summary: "", quote: null, fullStory: paragraphs };
+  const translations = await translateContent(frPres);
+
+  const aboutData = {
+    paragraphs,
+    translations: Object.fromEntries(
+      Object.entries(translations).map(([lang, t]) => [lang, t.fullStory])
+    ),
+    mePhoto,
+    bikePhoto,
+  };
+
+  fs.writeFileSync(path.join(DATA_DIR, "about.json"), JSON.stringify(aboutData, null, 2));
+  console.log(`  ✅ about.json généré`);
+}
+
 async function main() {
   if (!ROOT_FOLDER_ID) {
     console.error("❌ DRIVE_FOLDER_ID manquant dans .env");
@@ -533,6 +635,11 @@ async function main() {
 
   const stages = [];
   for (const folder of folders) {
+    // Dossier spécial _about → page de présentation
+    if (folder.name.toLowerCase() === "_about") {
+      await syncAbout(drive, folder);
+      continue;
+    }
     // Only process folders named YYYY-MM-DD-*
     if (!/^\d{4}-\d{2}-\d{2}/.test(folder.name)) {
       console.log(`⚠️  Dossier ignoré (format inattendu): ${folder.name}`);
