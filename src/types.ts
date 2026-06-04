@@ -14,6 +14,7 @@ export interface TripSummary {
   mapLat?: number;
   mapLng?: number;
   track?: [number, number][];
+  tags?: string[];
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────
@@ -69,6 +70,8 @@ export interface StageDetail {
   mapLat?: number;
   mapLng?: number;
   track?: [number, number][];
+  tags?: string[];
+  translations?: Record<string, { summary: string; quote: string | null; fullStory: string[] }>;
   highlights?: string[];
   weather?: StageWeather;
 }
