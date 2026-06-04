@@ -24,6 +24,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
   const [authorName, setAuthorName] = useState("");
   const [commentText, setCommentText] = useState("");
   const [success, setSuccess] = useState(false);
+  const [lightbox, setLightbox] = useState<number | null>(null);
 
   useEffect(() => {
     if (!slug) return;
@@ -37,7 +38,6 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
       .then((data: StageDetail) => {
         setStage(data);
         setLoading(false);
-        // Load comments from localStorage
         const saved = localStorage.getItem(`tcb_comments_${slug}`);
         if (saved) setComments(JSON.parse(saved));
       })
@@ -87,8 +87,48 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
     );
   }
 
+  // Photos de galerie = toutes sauf la cover (index 0)
+  const galleryPhotos = stage.photos.length > 1 ? stage.photos.slice(1) : stage.photos;
+  const hasStory = stage.fullStory.length > 0 && stage.fullStory[0] !== "Cette étape sera bientôt documentée.";
+  const hasSummary = stage.summary && stage.summary.trim().length > 0;
+
   return (
     <div className="w-full flex flex-col pt-16 bg-bg-dark text-text-on text-left">
+
+      {/* Lightbox */}
+      {lightbox !== null && (
+        <div
+          className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4"
+          onClick={() => setLightbox(null)}
+        >
+          <div className="max-w-5xl w-full flex flex-col items-center gap-3" onClick={e => e.stopPropagation()}>
+            <img
+              src={galleryPhotos[lightbox]?.src}
+              alt={galleryPhotos[lightbox]?.alt}
+              className="max-h-[80vh] w-auto object-contain rounded"
+            />
+            {galleryPhotos[lightbox]?.alt && (
+              <p className="font-mono text-xs text-brand-sand uppercase tracking-wider">
+                {galleryPhotos[lightbox].alt}
+              </p>
+            )}
+            <div className="flex items-center gap-6 mt-2">
+              <button
+                onClick={() => setLightbox(i => i !== null && i > 0 ? i - 1 : galleryPhotos.length - 1)}
+                className="text-text-dim hover:text-white font-mono text-xs cursor-pointer"
+              >← Préc.</button>
+              <span className="font-mono text-[10px] text-text-dim">{lightbox + 1} / {galleryPhotos.length}</span>
+              <button
+                onClick={() => setLightbox(i => i !== null && i < galleryPhotos.length - 1 ? i + 1 : 0)}
+                className="text-text-dim hover:text-white font-mono text-xs cursor-pointer"
+              >Suiv. →</button>
+            </div>
+            <button onClick={() => setLightbox(null)} className="mt-2 font-mono text-[10px] text-text-dim hover:text-white cursor-pointer uppercase tracking-wider">
+              Fermer ✕
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* Hero */}
       <div className="relative w-full h-[60vh] md:h-[70vh] flex items-end justify-start overflow-hidden">
@@ -116,6 +156,12 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
             <span className="flex items-center gap-1"><MapPin size={12} className="text-brand-sand" /> {stage.location}</span>
             <span>•</span>
             <span className="flex items-center gap-1"><Calendar size={12} /> {stage.date}</span>
+            {stage.distanceKm > 0 && (
+              <><span>•</span><span className="flex items-center gap-1"><TrendingUp size={12} /> {stage.distanceKm} km</span></>
+            )}
+            {stage.elevationGain > 0 && (
+              <><span>•</span><span className="flex items-center gap-1"><Mountain size={12} /> +{stage.elevationGain} m</span></>
+            )}
           </div>
         </div>
       </div>
@@ -145,38 +191,75 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
           <div className="grid lg:grid-cols-12 gap-12 items-start">
 
             {/* Story */}
-            <div className="lg:col-span-8 flex flex-col gap-6 text-sm md:text-base text-text-dim leading-relaxed font-light">
-              {stage.fullStory.map((para, i) => (
-                <p key={i}>
-                  {i === 0 ? (
-                    <>
-                      <span className="font-display font-black text-4xl md:text-5xl text-brand-sand float-left mr-3 mt-1 leading-none">
-                        {para.charAt(0)}
-                      </span>
-                      {para.slice(1)}
-                    </>
-                  ) : para}
+            <div className="lg:col-span-8 flex flex-col gap-6">
+
+              {/* Summary / description courte */}
+              {hasSummary && (
+                <p className="text-base md:text-lg text-text-on font-light leading-relaxed border-l-2 border-brand-sand/40 pl-4">
+                  {stage.summary}
                 </p>
-              ))}
+              )}
+
+              {/* Récit complet */}
+              {hasStory && (
+                <div className="flex flex-col gap-5 text-sm md:text-base text-text-dim leading-relaxed font-light">
+                  {stage.fullStory.map((para, i) => (
+                    <p key={i}>
+                      {i === 0 ? (
+                        <>
+                          <span className="font-display font-black text-4xl md:text-5xl text-brand-sand float-left mr-3 mt-1 leading-none">
+                            {para.charAt(0)}
+                          </span>
+                          {para.slice(1)}
+                        </>
+                      ) : para}
+                    </p>
+                  ))}
+                </div>
+              )}
+
+              {!hasStory && !hasSummary && (
+                <p className="text-sm text-text-dim text-opacity-50 italic">
+                  Le récit de cette étape sera ajouté prochainement.
+                </p>
+              )}
 
               {stage.quote && (
-                <div className="my-6 border-l-2 border-brand-sand pl-6 italic text-brand-sand/90 text-base md:text-lg">
+                <div className="my-4 border-l-2 border-brand-sand pl-6 italic text-brand-sand/90 text-base md:text-lg">
                   "{stage.quote}"
                 </div>
               )}
 
-              {/* Photo gallery */}
-              {stage.photos.length > 1 && (
-                <div className="mt-6 grid grid-cols-2 gap-3">
-                  {stage.photos.slice(1).map((photo, i) => (
-                    <img
-                      key={i}
-                      src={photo.src}
-                      alt={photo.alt}
-                      referrerPolicy="no-referrer"
-                      className="w-full aspect-video object-cover rounded-lg"
-                    />
-                  ))}
+              {/* Galerie photos avec titres */}
+              {galleryPhotos.length > 0 && (
+                <div className="mt-4">
+                  <h3 className="font-display font-bold text-xs uppercase text-text-on tracking-wider mb-4 flex items-center gap-2">
+                    <span className="w-1 h-4 bg-brand-sand rounded" />
+                    Photos ({galleryPhotos.length})
+                  </h3>
+                  <div className="grid grid-cols-2 gap-3">
+                    {galleryPhotos.map((photo, i) => (
+                      <div
+                        key={i}
+                        className="flex flex-col gap-1 cursor-pointer group"
+                        onClick={() => setLightbox(i)}
+                      >
+                        <div className="overflow-hidden rounded-lg aspect-video">
+                          <img
+                            src={photo.src}
+                            alt={photo.alt}
+                            referrerPolicy="no-referrer"
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                          />
+                        </div>
+                        {photo.alt && (
+                          <p className="font-mono text-[9px] text-text-dim text-opacity-60 uppercase tracking-wider px-0.5">
+                            {photo.alt}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
 
@@ -258,7 +341,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
                   )}
                   <div className="flex justify-between">
                     <span className="text-text-dim text-opacity-50">Pays</span>
-                    <span className="text-text-on">{stage.country}</span>
+                    <span className="text-text-on">{stage.country !== "—" ? stage.country : "France"}</span>
                   </div>
                   {stage.weather && (
                     <div className="flex justify-between">
