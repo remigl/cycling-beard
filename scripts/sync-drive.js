@@ -34,6 +34,61 @@ const TRIPS_DIR = path.join(DATA_DIR, "trips");
 const MEDIA_DIR = path.join(PUBLIC_DIR, "media");
 const GPX_DIR = path.join(PUBLIC_DIR, "gpx");
 
+// ─── DeepL Translation ────────────────────────────────────────────────────────
+
+const DEEPL_API_KEY = process.env.DEEPL_API_KEY;
+const TARGET_LANGS = { en: "EN", es: "ES", it: "IT", de: "DE" };
+
+async function deeplTranslate(text, targetLang) {
+  if (!text || !text.trim() || !DEEPL_API_KEY) return text;
+  const isFree = DEEPL_API_KEY.endsWith(":fx");
+  const url = isFree
+    ? "https://api-free.deepl.com/v2/translate"
+    : "https://api.deepl.com/v2/translate";
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Authorization": `DeepL-Auth-Key ${DEEPL_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        text: [text],
+        source_lang: "FR",
+        target_lang: targetLang,
+      }),
+    });
+    if (!res.ok) {
+      console.log(`  WARN DeepL erreur ${res.status} pour ${targetLang}`);
+      return text;
+    }
+    const data = await res.json();
+    return data.translations?.[0]?.text || text;
+  } catch (e) {
+    console.log(`  WARN DeepL exception : ${e.message}`);
+    return text;
+  }
+}
+
+async function translateContent(fr) {
+  const translations = { fr };
+  if (!DEEPL_API_KEY) {
+    console.log(`  INFO Pas de cle DeepL - francais uniquement`);
+    return translations;
+  }
+  for (const [code, deeplCode] of Object.entries(TARGET_LANGS)) {
+    const summary = await deeplTranslate(fr.summary, deeplCode);
+    const quote = await deeplTranslate(fr.quote, deeplCode);
+    const fullStory = [];
+    for (const para of fr.fullStory) {
+      fullStory.push(await deeplTranslate(para, deeplCode));
+    }
+    translations[code] = { summary, quote, fullStory };
+    console.log(`  Traduit en ${code.toUpperCase()}`);
+  }
+  return translations;
+}
+
 // ─── Auth Google Drive ────────────────────────────────────────────────────────
 
 function getAuthClient() {
@@ -203,12 +258,22 @@ function parseNotes(content) {
     highlights: [],
     location: null,
     weather: null,
+    tags: [],
   };
 
   let inStory = false;
   for (const line of lines) {
+    // Extrait les tags @mot de chaque ligne
+    const tagMatches = line.match(/@([a-zA-ZÀ-ÿ0-9_-]+)/g);
+    if (tagMatches) {
+      for (const t of tagMatches) {
+        const clean = t.slice(1).toLowerCase();
+        if (!result.tags.includes(clean)) result.tags.push(clean);
+      }
+    }
+
     if (line.startsWith("# ")) { result.title = line.slice(2); continue; }
-    if (line.startsWith("summary:")) { result.summary = line.slice(8).trim(); continue; }
+    if (line.startsWith("summary:")) { result.summary = line.slice(8).replace(/@[a-zA-ZÀ-ÿ0-9_-]+/g, "").replace(/\s{2,}/g, " ").trim(); continue; }
     if (line.startsWith("quote:")) { result.quote = line.slice(6).trim(); continue; }
     if (line.startsWith("location:")) { result.location = line.slice(9).trim(); continue; }
     if (line.startsWith("highlight:")) { result.highlights.push(line.slice(10).trim()); continue; }
@@ -223,7 +288,11 @@ function parseNotes(content) {
       continue;
     }
     if (line === "---") { inStory = !inStory; continue; }
-    if (inStory && line.length > 10) result.fullStory.push(line);
+    if (inStory && line.length > 10) {
+      // Retire les tags @mot du texte affiché
+      const cleanLine = line.replace(/@[a-zA-ZÀ-ÿ0-9_-]+/g, "").replace(/\s{2,}/g, " ").trim();
+      if (cleanLine.length > 5) result.fullStory.push(cleanLine);
+    }
   }
 
   return result;
@@ -340,6 +409,14 @@ async function syncFolder(drive, folder) {
     thumbWebp = photos[0].thumb;
   }
 
+  // ── Traduction du contenu (FR → EN/ES/IT/DE) ──
+  const frContent = {
+    summary: notes.summary || "",
+    quote: notes.quote || null,
+    fullStory: (notes.fullStory?.length > 0) ? notes.fullStory : ["Cette étape sera bientôt documentée."],
+  };
+  const translations = await translateContent(frContent);
+
   // ── Build stage JSON ──
   const stage = {
     slug,
@@ -353,9 +430,12 @@ async function syncFolder(drive, folder) {
     maxAltitude: gpxStats.maxAltitude || undefined,
     coverImage: coverWebp || "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     heroVideo: null,
-    summary: notes.summary || "",
-    fullStory: (notes.fullStory?.length > 0) ? notes.fullStory : ["Cette étape sera bientôt documentée."],
-    quote: notes.quote || null,
+    // Contenu par défaut = français (rétrocompat)
+    summary: frContent.summary,
+    fullStory: frContent.fullStory,
+    quote: frContent.quote,
+    // Toutes les traductions
+    translations,
     photos: coverWebp ? [{ src: coverWebp, thumb: thumbWebp, alt: "Cover" }, ...photos] : photos,
     videos: [],
     gpxFile: gpxPublicPath,
@@ -363,6 +443,7 @@ async function syncFolder(drive, folder) {
     mapLng: gpxStats.endLng ?? null,
     track: gpxStats.track || [],
     highlights: notes.highlights || [],
+    tags: notes.tags || [],
     weather: notes.weather || null,
   };
 
@@ -477,6 +558,7 @@ async function main() {
     mapLat: s.mapLat ?? null,
     mapLng: s.mapLng ?? null,
     track: s.track || [],
+    tags: s.tags || [],
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
