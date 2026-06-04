@@ -276,6 +276,13 @@ async function syncFolder(drive, folder) {
       const paths = await processImage(tmpPath, mediaDir, baseName);
       console.log(`  🖼  ${name} → ${paths.webp}`);
 
+      // Titre lisible : retire préfixe numérique, underscores → espaces, capitalise
+      const photoTitle = baseName
+        .replace(/^\d+[-_]?/, "")           // retire "01_" ou "01-"
+        .replace(/[-_]/g, " ")               // tirets/underscores → espaces
+        .replace(/\b\w/g, c => c.toUpperCase()) // capitalise chaque mot
+        .trim() || baseName;
+
       if (name.startsWith("cover")) {
         coverWebp = paths.webp;
         thumbWebp = paths.thumb;
@@ -283,7 +290,7 @@ async function syncFolder(drive, folder) {
         photos.push({
           src: paths.webp,
           thumb: paths.thumb,
-          alt: baseName,
+          alt: photoTitle,
         });
       }
     }
@@ -358,7 +365,19 @@ function detectCountry(slug) {
       s.includes("rennes") || s.includes("brest") || s.includes("lorient") ||
       s.includes("quimper") || s.includes("vannes") || s.includes("laval") ||
       s.includes("lemans") || s.includes("angers") || s.includes("saumur") ||
-      s.includes("amboise") || s.includes("blois") || s.includes("chartres")) return "France";
+      s.includes("amboise") || s.includes("blois") || s.includes("chartres") ||
+      s.includes("meung") || s.includes("gien") || s.includes("briare") ||
+      s.includes("cosne") || s.includes("nevers") || s.includes("decize") ||
+      s.includes("digoin") || s.includes("roanne") || s.includes("macon") ||
+      s.includes("chalon") || s.includes("beaune") || s.includes("auxerre") ||
+      s.includes("sens") || s.includes("fontainebleau") || s.includes("melun") ||
+      s.includes("montereau") || s.includes("moret") || s.includes("nemours") ||
+      s.includes("montargis") || s.includes("chateauneuf") || s.includes("sully") ||
+      s.includes("beaugency") || s.includes("vendome") || s.includes("troyes") ||
+      s.includes("chaumont") || s.includes("langres") || s.includes("vesoul") ||
+      s.includes("gray") || s.includes("dole") || s.includes("pontarlier") ||
+      s.includes("lons") || s.includes("bourg") || s.includes("menitre") ||
+      s.includes("saumur") || s.includes("chinon") || s.includes("azay")) return "France";
   if (s.includes("italy") || s.includes("turin") || s.includes("milan") || s.includes("susa")) return "Italy";
   if (s.includes("austria") || s.includes("wien") || s.includes("salzburg")) return "Austria";
   if (s.includes("hungary") || s.includes("budapest")) return "Hungary";
