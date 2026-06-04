@@ -1,9 +1,9 @@
 {
   "slug": "2026-05-31-le-menitre-tours",
   "date": "2026-05-31",
-  "title": "Le Menitre Tours",
+  "title": "Le Menitre → Tours",
   "day": "Jour 6",
-  "location": "Le Menitre Tours",
+  "location": "Le Menitre → Tours",
   "country": "France",
   "distanceKm": 105.8,
   "elevationGain": 615,
@@ -49,6 +49,13 @@
       "quote": null,
       "fullStory": [
         "Dieser Schritt wird in Kürze dokumentiert."
+      ]
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Deze stap wordt binnenkort beschreven."
       ]
     }
   },

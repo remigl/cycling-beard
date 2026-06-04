@@ -1,14 +1,14 @@
 {
   "slug": "2026-05-27-saint-nazaire-lepouliguen",
   "date": "2026-05-27",
-  "title": "Saint Nazaire Lepouliguen",
+  "title": "Saint Nazaire → Lepouliguen",
   "day": "Jour 2",
-  "location": "Saint Nazaire Lepouliguen",
+  "location": "Saint Nazaire → Lepouliguen",
   "country": "France",
   "distanceKm": 24.8,
   "elevationGain": 185,
   "maxAltitude": 40,
-  "coverImage": "/media/2026-05-27-saint-nazaire-lepouliguen/numérisé_20260527-1914-03.webp",
+  "coverImage": "/media/2026-05-27-saint-nazaire-lepouliguen/as usual.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -50,28 +50,35 @@
       "fullStory": [
         "Dieser Schritt wird in Kürze dokumentiert."
       ]
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Deze stap wordt binnenkort beschreven."
+      ]
     }
   },
   "photos": [
     {
-      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/numérisé_20260527-1914-03.webp",
-      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_numérisé_20260527-1914-03.webp",
+      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/as usual.webp",
+      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_as usual.webp",
       "alt": "Cover"
     },
     {
-      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/numérisé_20260527-1914-03.webp",
-      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_numérisé_20260527-1914-03.webp",
-      "alt": "NuméRisé 20260527 1914 03"
+      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/as usual.webp",
+      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_as usual.webp",
+      "alt": "As Usual"
     },
     {
-      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/numérisé_20260527-1914-02.webp",
-      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_numérisé_20260527-1914-02.webp",
-      "alt": "NuméRisé 20260527 1914 02"
+      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/premier café au pouliguen.webp",
+      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_premier café au pouliguen.webp",
+      "alt": "Premier Café Au Pouliguen"
     },
     {
-      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/numérisé_20260527-1914-01.webp",
-      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_numérisé_20260527-1914-01.webp",
-      "alt": "NuméRisé 20260527 1914 01"
+      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/le moment le plus dur.webp",
+      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_le moment le plus dur.webp",
+      "alt": "Le Moment Le Plus Dur"
     }
   ],
   "videos": [],

@@ -1,9 +1,9 @@
 {
   "slug": "2026-06-02-meung-sur-loire-gien",
   "date": "2026-06-02",
-  "title": "Meung Sur Loire Gien",
+  "title": "Meung Sur Loire → Gien",
   "day": "Jour 8",
-  "location": "Meung Sur Loire Gien",
+  "location": "Meung Sur Loire → Gien",
   "country": "France",
   "distanceKm": 115.6,
   "elevationGain": 626,
@@ -49,6 +49,13 @@
       "quote": null,
       "fullStory": [
         "Dieser Schritt wird in Kürze dokumentiert."
+      ]
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Deze stap wordt binnenkort beschreven."
       ]
     }
   },

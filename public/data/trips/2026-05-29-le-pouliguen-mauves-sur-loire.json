@@ -1,117 +1,96 @@
 {
   "slug": "2026-05-29-le-pouliguen-mauves-sur-loire",
   "date": "2026-05-29",
-  "title": "Le Pouliguen Mauves Sur Loire",
+  "title": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
   "day": "Jour 4",
-  "location": "Le Pouliguen Mauves Sur Loire",
+  "location": "Le Pouliguen → Mauves Sur Loire",
   "country": "France",
   "distanceKm": 107.8,
   "elevationGain": 561,
   "maxAltitude": 58,
-  "coverImage": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3325.webp",
+  "coverImage": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la plage de la baule.webp",
   "heroVideo": null,
-  "summary": "",
+  "summary": "Nuit chez Jeff et son chat Bada.",
   "fullStory": [
-    "Cette étape sera bientôt documentée."
+    "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+    "Reveil des plus durs."
   ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "",
+      "summary": "Nuit chez Jeff et son chat Bada.",
       "quote": null,
       "fullStory": [
-        "Cette étape sera bientôt documentée."
+        "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+        "Reveil des plus durs."
       ]
     },
     "en": {
-      "summary": "",
+      "summary": "Spent the night at Jeff's place with his cat, Bada.",
       "quote": null,
       "fullStory": [
-        "This step will be documented shortly."
+        "Spent the night at Jeff's place with his cat, Bada. Really nice—we had pizza and non-alcoholic pastis.",
+        "A rough wake-up call."
       ]
     },
     "es": {
-      "summary": "",
+      "summary": "Noche en casa de Jeff y su gato Bada.",
       "quote": null,
       "fullStory": [
-        "Esta etapa se documentará en breve."
+        "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable: una velada con pizza y pastis sin alcohol.",
+        "Un despertar de lo más duro."
       ]
     },
     "it": {
-      "summary": "",
+      "summary": "Notte a casa di Jeff e del suo gatto Bada.",
       "quote": null,
       "fullStory": [
-        "Questa fase sarà presto documentata."
+        "Notte da Jeff e il suo gatto Bada. Davvero simpatici, serata a base di pizza e pastis analcolico.",
+        "Una sveglia da duri."
       ]
     },
     "de": {
-      "summary": "",
+      "summary": "Übernachtung bei Jeff und seiner Katze Bada.",
       "quote": null,
       "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
+        "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
+        "Ein Weckruf für die Hartgesottenen."
+      ]
+    },
+    "nl": {
+      "summary": "Overnachting bij Jeff en zijn kat Bada.",
+      "quote": null,
+      "fullStory": [
+        "Overnachting bij Jeff en zijn kat Bada. Heel gezellig, een avondje pizza en alcoholvrije pastis.",
+        "Een ontwaken voor de echte doorzetters."
       ]
     }
   },
   "photos": [
     {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3325.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3325.webp",
+      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la plage de la baule.webp",
+      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la plage de la baule.webp",
       "alt": "Cover"
     },
     {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3325.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3325.webp",
-      "alt": "Img 3325"
+      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la plage de la baule.webp",
+      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la plage de la baule.webp",
+      "alt": "La Plage De La Baule"
     },
     {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3319.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3319.webp",
-      "alt": "Img 3319"
+      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/le velo a la baule.webp",
+      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_le velo a la baule.webp",
+      "alt": "Le Velo A La Baule"
     },
     {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/20260529_204256.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_20260529_204256.webp",
-      "alt": "204256"
+      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la ferrari.webp",
+      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la ferrari.webp",
+      "alt": "La Ferrari"
     },
     {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3316.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3316.webp",
-      "alt": "Img 3316"
-    },
-    {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3314.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3314.webp",
-      "alt": "Img 3314"
-    },
-    {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3313.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3313.webp",
-      "alt": "Img 3313"
-    },
-    {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3311.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3311.webp",
-      "alt": "Img 3311"
-    },
-    {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3308.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3308.webp",
-      "alt": "Img 3308"
-    },
-    {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3303.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3303.webp",
-      "alt": "Img 3303"
-    },
-    {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3299.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3299.webp",
-      "alt": "Img 3299"
-    },
-    {
-      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/img_3296.webp",
-      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_img_3296.webp",
-      "alt": "Img 3296"
+      "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/boisson anisé avec jeff et bada.webp",
+      "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_boisson anisé avec jeff et bada.webp",
+      "alt": "Boisson Anisé Avec Jeff Et Bada"
     }
   ],
   "videos": [],

@@ -1,9 +1,9 @@
 {
   "slug": "2026-06-04-sauvigny-les-bois-decize",
   "date": "2026-06-04",
-  "title": "Sauvigny Les Bois Decize",
+  "title": "Sauvigny Les Bois → Decize",
   "day": "Jour 10",
-  "location": "Sauvigny Les Bois Decize",
+  "location": "Sauvigny Les Bois → Decize",
   "country": "France",
   "distanceKm": 33.8,
   "elevationGain": 166,
@@ -49,6 +49,13 @@
       "quote": null,
       "fullStory": [
         "Dieser Schritt wird in Kürze dokumentiert."
+      ]
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Deze stap wordt binnenkort beschreven."
       ]
     }
   },

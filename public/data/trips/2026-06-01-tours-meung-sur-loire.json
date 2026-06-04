@@ -1,9 +1,9 @@
 {
   "slug": "2026-06-01-tours-meung-sur-loire",
   "date": "2026-06-01",
-  "title": "Tours Meung Sur Loire",
+  "title": "Tours → Meung Sur Loire",
   "day": "Jour 7",
-  "location": "Tours Meung Sur Loire",
+  "location": "Tours → Meung Sur Loire",
   "country": "France",
   "distanceKm": 124.5,
   "elevationGain": 745,
@@ -49,6 +49,13 @@
       "quote": null,
       "fullStory": [
         "Dieser Schritt wird in Kürze dokumentiert."
+      ]
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Deze stap wordt binnenkort beschreven."
       ]
     }
   },
