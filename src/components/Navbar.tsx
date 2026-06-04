@@ -1,22 +1,29 @@
-import { Search, Menu, X } from "lucide-react";
+import { Search, Menu, X, Globe, Check } from "lucide-react";
 import { useState } from "react";
+import { Lang, LANGUAGES } from "../i18n";
 
 interface NavbarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
   onSearchToggle: () => void;
+  lang: Lang;
+  changeLang: (l: Lang) => void;
+  t: (key: string) => string;
 }
 
-export default function Navbar({ activeTab, setActiveTab, onSearchToggle }: NavbarProps) {
+export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, changeLang, t }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
 
   const tabs = [
-    { id: "home", label: "Accueil" },
-    { id: "journey", label: "Itinéraire" },
-    { id: "map", label: "Carte de Suivi" },
-    { id: "about", label: "À Propos" },
-    { id: "support", label: "Me Soutenir" },
+    { id: "home", label: t("nav.home") },
+    { id: "journey", label: t("nav.journey") },
+    { id: "map", label: t("nav.map") },
+    { id: "about", label: t("nav.about") },
+    { id: "support", label: t("nav.support") },
   ];
+
+  const currentLang = LANGUAGES.find(l => l.code === lang) || LANGUAGES[0];
 
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
@@ -27,12 +34,11 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle }: Navb
           onClick={() => setActiveTab("home")}
           className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity"
         >
-          {/* Fallback texte si pas de logo image */}
           <div className="w-8 h-8 rounded-full bg-brand-sand/20 border border-brand-sand/30 flex items-center justify-center text-brand-sand font-display font-black text-xs">
             R
           </div>
           <span className="font-display text-sm font-semibold italic text-text-on tracking-tight">
-            rémi<span className="text-brand-sand font-sans font-light text-[11px] not-italic ml-1.5 uppercase tracking-[0.2em]">THE CYCLING BEARD</span>
+            rémi<span className="text-brand-sand font-sans font-light text-[11px] not-italic ml-1.5 uppercase tracking-[0.2em] hidden sm:inline">THE CYCLING BEARD</span>
           </span>
         </div>
 
@@ -54,7 +60,45 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle }: Navb
         </div>
 
         {/* Toolbar */}
-        <div className="flex items-center gap-3 text-text-on">
+        <div className="flex items-center gap-2 text-text-on">
+
+          {/* Language selector */}
+          <div className="relative">
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className="flex items-center gap-1.5 hover:text-brand-sand cursor-pointer transition-colors p-2 hover:bg-white/5 rounded-full"
+              aria-label="Langue"
+            >
+              <Globe size={17} />
+              <span className="text-[10px] font-mono uppercase font-bold hidden sm:inline">{currentLang.code}</span>
+            </button>
+
+            {langOpen && (
+              <>
+                <div className="fixed inset-0 z-40" onClick={() => setLangOpen(false)} />
+                <div className="absolute right-0 mt-2 w-44 bg-[#1c1b1b] border border-white/10 rounded-lg shadow-2xl z-50 overflow-hidden">
+                  {LANGUAGES.map(l => (
+                    <button
+                      key={l.code}
+                      onClick={() => { changeLang(l.code); setLangOpen(false); }}
+                      className={`w-full flex items-center justify-between gap-2 px-4 py-2.5 text-xs font-mono transition-colors cursor-pointer ${
+                        lang === l.code
+                          ? "bg-brand-sand/15 text-brand-sand"
+                          : "text-text-dim hover:bg-white/5 hover:text-text-on"
+                      }`}
+                    >
+                      <span className="flex items-center gap-2">
+                        <span className="text-sm">{l.flag}</span>
+                        {l.label}
+                      </span>
+                      {lang === l.code && <Check size={13} />}
+                    </button>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+
           <button
             onClick={onSearchToggle}
             className="hover:text-brand-sand cursor-pointer transition-colors p-2 hover:bg-white/5 rounded-full"
