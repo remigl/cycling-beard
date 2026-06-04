@@ -4,6 +4,8 @@ export interface TripSummary {
   date: string;
   title: string;
   country: string;
+  startCity?: string | null;
+  endCity?: string | null;
   distanceKm: number;
   elevationGain: number;
   coverImage: string;
@@ -57,6 +59,8 @@ export interface StageDetail {
   day: string;
   location: string;
   country: string;
+  startCity?: string | null;
+  endCity?: string | null;
   distanceKm: number;
   elevationGain: number;
   maxAltitude?: number;
