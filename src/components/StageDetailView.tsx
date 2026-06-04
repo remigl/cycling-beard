@@ -2,10 +2,13 @@ import { ChevronLeft, MapPin, TrendingUp, Calendar, Mountain, Send, Sparkles, Al
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { StageDetail } from "../types";
+import { Lang } from "../i18n";
 
 interface StageDetailViewProps {
   slug: string;
   onNavigate: (tab: string, arg?: string) => void;
+  lang: Lang;
+  t: (key: string) => string;
 }
 
 interface Comment {
@@ -15,7 +18,7 @@ interface Comment {
   date: string;
 }
 
-export default function StageDetailView({ slug, onNavigate }: StageDetailViewProps) {
+export default function StageDetailView({ slug, onNavigate, lang, t }: StageDetailViewProps) {
   const [stage, setStage] = useState<StageDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -69,7 +72,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
     return (
       <div className="w-full min-h-screen pt-24 flex items-center justify-center bg-bg-dark">
         <div className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
-          Chargement de l'étape...
+          {t("loading")}
         </div>
       </div>
     );
@@ -79,9 +82,9 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
     return (
       <div className="w-full min-h-screen pt-24 flex flex-col items-center justify-center bg-bg-dark gap-4">
         <AlertTriangle size={32} className="text-brand-sand" />
-        <p className="font-mono text-xs text-text-dim">Étape introuvable.</p>
+        <p className="font-mono text-xs text-text-dim">{t("not_found")}</p>
         <button onClick={() => onNavigate("journey")} className="text-brand-sand text-xs font-mono underline cursor-pointer">
-          Retour à l'itinéraire
+          {t("stage.back")}
         </button>
       </div>
     );
@@ -89,8 +92,20 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
 
   // Photos de galerie = toutes sauf la cover (index 0)
   const galleryPhotos = stage.photos.length > 1 ? stage.photos.slice(1) : stage.photos;
-  const hasStory = stage.fullStory.length > 0 && stage.fullStory[0] !== "Cette étape sera bientôt documentée.";
-  const hasSummary = stage.summary && stage.summary.trim().length > 0;
+
+  // Contenu localisé : on prend la traduction si dispo, sinon le français par défaut
+  const localized = stage.translations?.[lang] || {
+    summary: stage.summary,
+    quote: stage.quote,
+    fullStory: stage.fullStory,
+  };
+  const dispSummary = localized.summary || stage.summary;
+  const dispQuote = localized.quote ?? stage.quote;
+  const dispStory = (localized.fullStory && localized.fullStory.length > 0) ? localized.fullStory : stage.fullStory;
+
+  const placeholderTexts = ["Cette étape sera bientôt documentée.", "This stage will be documented soon."];
+  const hasStory = dispStory.length > 0 && !placeholderTexts.includes(dispStory[0]);
+  const hasSummary = dispSummary && dispSummary.trim().length > 0;
 
   return (
     <div className="w-full flex flex-col pt-16 bg-bg-dark text-text-on text-left">
@@ -144,7 +159,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
             onClick={() => onNavigate("journey")}
             className="flex items-center gap-1.5 font-mono text-[9px] text-brand-sand uppercase tracking-wider mb-4 hover:underline cursor-pointer"
           >
-            <ChevronLeft size={12} /> Retour à l'itinéraire
+            <ChevronLeft size={12} /> {t("stage.back")}
           </button>
           <span className="bg-brand-sand/30 text-brand-sand border border-brand-sand/30 font-mono text-[9px] uppercase tracking-widest px-3 py-1 rounded">
             {stage.day} — {stage.country}
@@ -169,17 +184,17 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
       {/* Tab nav */}
       <div className="border-y border-white/5 bg-[#1c1b1b] px-6 md:px-14 py-3 sticky top-[48px] z-40">
         <div className="max-w-7xl mx-auto flex gap-6 font-display text-[10px] uppercase tracking-widest font-bold">
-          {(["story", "technical"] as const).map(t => (
+          {(["story", "technical"] as const).map(tab => (
             <button
-              key={t}
-              onClick={() => setActiveTab(t)}
+              key={tab}
+              onClick={() => setActiveTab(tab)}
               className={`pb-0.5 cursor-pointer transition-colors ${
-                activeTab === t
+                activeTab === tab
                   ? "text-brand-sand border-b-2 border-brand-sand font-black"
                   : "text-text-dim text-opacity-60 hover:text-opacity-100"
               }`}
             >
-              {t === "story" ? "Le Récit" : "Technique & Stats"}
+              {tab === "story" ? t("stage.story") : t("stage.technical")}
             </button>
           ))}
         </div>
@@ -196,14 +211,14 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
               {/* Summary / description courte */}
               {hasSummary && (
                 <p className="text-base md:text-lg text-text-on font-light leading-relaxed border-l-2 border-brand-sand/40 pl-4">
-                  {stage.summary}
+                  {dispSummary}
                 </p>
               )}
 
               {/* Récit complet */}
               {hasStory && (
                 <div className="flex flex-col gap-5 text-sm md:text-base text-text-dim leading-relaxed font-light">
-                  {stage.fullStory.map((para, i) => (
+                  {dispStory.map((para, i) => (
                     <p key={i}>
                       {i === 0 ? (
                         <>
@@ -220,13 +235,13 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
 
               {!hasStory && !hasSummary && (
                 <p className="text-sm text-text-dim text-opacity-50 italic">
-                  Le récit de cette étape sera ajouté prochainement.
+                  {t("stage.soon")}
                 </p>
               )}
 
-              {stage.quote && (
+              {dispQuote && (
                 <div className="my-4 border-l-2 border-brand-sand pl-6 italic text-brand-sand/90 text-base md:text-lg">
-                  "{stage.quote}"
+                  "{dispQuote}"
                 </div>
               )}
 
@@ -235,7 +250,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
                 <div className="mt-4">
                   <h3 className="font-display font-bold text-xs uppercase text-text-on tracking-wider mb-4 flex items-center gap-2">
                     <span className="w-1 h-4 bg-brand-sand rounded" />
-                    Photos ({galleryPhotos.length})
+                    {t("stage.photos")} ({galleryPhotos.length})
                   </h3>
                   <div className="grid grid-cols-2 gap-3">
                     {galleryPhotos.map((photo, i) => (
@@ -268,12 +283,12 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
                 <div className="flex items-center gap-2 mb-6">
                   <Sparkles size={16} className="text-brand-sand" />
                   <h3 className="font-display text-lg font-bold uppercase text-text-on">
-                    Commentaires ({comments.length})
+                    {t("stage.comments")} ({comments.length})
                   </h3>
                 </div>
                 <div className="flex flex-col gap-4 mb-10">
                   {comments.length === 0 ? (
-                    <p className="text-xs text-text-dim text-opacity-40 italic">Aucun commentaire pour le moment.</p>
+                    <p className="text-xs text-text-dim text-opacity-40 italic">{t("stage.no_comment")}</p>
                   ) : (
                     comments.map(c => (
                       <div key={c.id} className="bg-[#1c1b1b] border border-white/5 rounded p-4 text-xs">
@@ -288,10 +303,10 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
                 </div>
                 <form onSubmit={handlePostComment} className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6 max-w-xl">
                   <span className="font-mono text-[9px] text-brand-sand font-bold tracking-widest uppercase block mb-3">
-                    Laisser un commentaire
+                    {t("stage.leave_comment")}
                   </span>
                   <div className="mb-4">
-                    <label className="block text-text-dim text-opacity-50 font-mono text-[8px] uppercase tracking-wider mb-1">Votre nom</label>
+                    <label className="block text-text-dim text-opacity-50 font-mono text-[8px] uppercase tracking-wider mb-1">{t("stage.your_name")}</label>
                     <input
                       type="text" required placeholder="Votre prénom"
                       value={authorName} onChange={e => setAuthorName(e.target.value)}
@@ -299,7 +314,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
                     />
                   </div>
                   <div className="mb-4">
-                    <label className="block text-text-dim text-opacity-50 font-mono text-[8px] uppercase tracking-wider mb-1">Commentaire</label>
+                    <label className="block text-text-dim text-opacity-50 font-mono text-[8px] uppercase tracking-wider mb-1">{t("stage.comment")}</label>
                     <textarea
                       rows={3} required placeholder="Votre message..."
                       value={commentText} onChange={e => setCommentText(e.target.value)}
@@ -311,7 +326,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
                   </button>
                   {success && (
                     <div className="mt-3 bg-brand-green/20 text-brand-sand border border-brand-sand/30 p-2 rounded text-xs text-center">
-                      Commentaire publié !
+                      {t("stage.published")}
                     </div>
                   )}
                 </form>
@@ -322,30 +337,30 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
             <div className="lg:col-span-4 flex flex-col gap-6 sticky top-[120px]">
               <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
                 <h3 className="font-display font-black text-xs uppercase text-text-on tracking-wider mb-4 border-b border-white/5 pb-2">
-                  Stats de l'étape
+                  {t("stage.stats")}
                 </h3>
                 <div className="flex flex-col gap-4 font-mono text-xs">
                   <div className="flex justify-between">
-                    <span className="text-text-dim text-opacity-50">Distance</span>
+                    <span className="text-text-dim text-opacity-50">{t("stage.distance")}</span>
                     <span className="text-brand-sand font-bold">{stage.distanceKm > 0 ? `${stage.distanceKm} km` : "—"}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-text-dim text-opacity-50">Dénivelé +</span>
+                    <span className="text-text-dim text-opacity-50">{t("stage.elevation")}</span>
                     <span className="text-text-on font-semibold">{stage.elevationGain > 0 ? `${stage.elevationGain} m` : "—"}</span>
                   </div>
                   {stage.maxAltitude && (
                     <div className="flex justify-between">
-                      <span className="text-text-dim text-opacity-50">Altitude max</span>
+                      <span className="text-text-dim text-opacity-50">{t("stage.altitude")}</span>
                       <span className="text-text-on font-semibold">{stage.maxAltitude} m</span>
                     </div>
                   )}
                   <div className="flex justify-between">
-                    <span className="text-text-dim text-opacity-50">Pays</span>
+                    <span className="text-text-dim text-opacity-50">{t("stage.country")}</span>
                     <span className="text-text-on">{stage.country !== "—" ? stage.country : "France"}</span>
                   </div>
                   {stage.weather && (
                     <div className="flex justify-between">
-                      <span className="text-text-dim text-opacity-50">Météo</span>
+                      <span className="text-text-dim text-opacity-50">{t("stage.weather")}</span>
                       <span className="text-text-on">{stage.weather.condition}, {stage.weather.tempC}°C</span>
                     </div>
                   )}
@@ -355,7 +370,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
               {stage.highlights && stage.highlights.length > 0 && (
                 <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
                   <h3 className="font-display font-black text-xs uppercase text-text-on tracking-wider mb-4 border-b border-white/5 pb-2">
-                    Highlights
+                    {t("stage.highlights")}
                   </h3>
                   <ul className="flex flex-col gap-2">
                     {stage.highlights.map((h, i) => (
@@ -369,12 +384,12 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
               )}
 
               <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
-                <h3 className="font-display font-bold text-xs uppercase text-text-on tracking-wider mb-2">Voir sur la carte</h3>
+                <h3 className="font-display font-bold text-xs uppercase text-text-on tracking-wider mb-2">{t("stage.view_map")}</h3>
                 <button
                   onClick={() => onNavigate("map")}
                   className="w-full bg-bg-dark border border-white/10 hover:border-brand-sand text-brand-sand font-display text-[9px] font-bold uppercase tracking-widest py-2.5 rounded text-center transition-all cursor-pointer mt-2"
                 >
-                  Ouvrir la carte interactive
+                  {t("stage.open_map")}
                 </button>
               </div>
             </div>
@@ -386,17 +401,17 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
               <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <TrendingUp size={16} className="text-brand-sand" />
-                  <h4 className="font-display font-bold text-xs uppercase text-text-on">Distance</h4>
+                  <h4 className="font-display font-bold text-xs uppercase text-text-on">{t("stage.distance")}</h4>
                 </div>
                 <p className="font-mono text-3xl font-black text-brand-sand">
                   {stage.distanceKm > 0 ? `${stage.distanceKm}` : "—"}
                 </p>
-                <p className="text-xs text-text-dim text-opacity-50 uppercase font-mono tracking-wider mt-1">km parcourus</p>
+                <p className="text-xs text-text-dim text-opacity-50 uppercase font-mono tracking-wider mt-1">{t("stage.km_done")}</p>
               </div>
               <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <Mountain size={16} className="text-brand-sand" />
-                  <h4 className="font-display font-bold text-xs uppercase text-text-on">Dénivelé</h4>
+                  <h4 className="font-display font-bold text-xs uppercase text-text-on">{t("stage.elevation")}</h4>
                 </div>
                 <p className="font-mono text-3xl font-black text-brand-sand">
                   {stage.elevationGain > 0 ? `+${stage.elevationGain}` : "—"}
@@ -406,7 +421,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
               <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
                 <div className="flex items-center gap-2 mb-3">
                   <MapPin size={16} className="text-brand-sand" />
-                  <h4 className="font-display font-bold text-xs uppercase text-text-on">Altitude max</h4>
+                  <h4 className="font-display font-bold text-xs uppercase text-text-on">{t("stage.altitude")}</h4>
                 </div>
                 <p className="font-mono text-3xl font-black text-brand-sand">
                   {stage.maxAltitude ?? "—"}
@@ -423,7 +438,7 @@ export default function StageDetailView({ slug, onNavigate }: StageDetailViewPro
                   download
                   className="inline-flex items-center gap-2 text-brand-sand font-mono text-xs hover:underline"
                 >
-                  Télécharger le tracé GPX →
+                  {t("stage.download_gpx")}
                 </a>
               </div>
             )}
