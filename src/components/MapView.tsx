@@ -1,5 +1,5 @@
-import { Compass, Map, Globe, Info, Navigation, ArrowRight, ShieldCheck, Milestone } from "lucide-react";
-import { useState } from "react";
+import { Compass, ShieldCheck, Milestone, Navigation, ArrowRight, Info } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
 import { TripSummary } from "../types";
 
 interface MapViewProps {
@@ -7,143 +7,146 @@ interface MapViewProps {
   trips: TripSummary[];
 }
 
+// Charge Leaflet dynamiquement (CSS + JS) depuis le CDN
+function useLeaflet() {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    if ((window as any).L) { setLoaded(true); return; }
+
+    // CSS
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
+    document.head.appendChild(css);
+
+    // JS
+    const script = document.createElement("script");
+    script.src = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js";
+    script.onload = () => setLoaded(true);
+    document.body.appendChild(script);
+  }, []);
+  return loaded;
+}
+
 export default function MapView({ onNavigate, trips }: MapViewProps) {
-  const [mapStyle, setMapStyle] = useState<"topographic" | "grid">("topographic");
-  const [activeTrip, setActiveTrip] = useState<TripSummary | null>(trips[trips.length - 1] || null);
+  const leafletLoaded = useLeaflet();
+  const mapContainerRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<any>(null);
+  const [activeTrip, setActiveTrip] = useState<TripSummary | null>(
+    trips.length > 0 ? trips[trips.length - 1] : null
+  );
 
-  // Convert lat/lng to approximate SVG percentage positions (Europe → Pamir range)
-  // Lon: -10 to 80 → 0-100%, Lat: 70 to 30 → 0-100%
-  const toSvgPos = (lat: number, lng: number) => ({
-    x: ((lng + 10) / 90) * 100,
-    y: ((70 - lat) / 40) * 100,
-  });
+  const tripsWithTrack = trips.filter(t => t.track && t.track.length > 0);
+  const tripsWithCoords = trips.filter(t => t.mapLat != null && t.mapLng != null);
 
-  const tripsWithCoords = trips.filter(t => t.mapLat !== undefined && t.mapLng !== undefined);
+  useEffect(() => {
+    if (!leafletLoaded || !mapContainerRef.current) return;
+    const L = (window as any).L;
+
+    // Init map once
+    if (!mapRef.current) {
+      mapRef.current = L.map(mapContainerRef.current, {
+        zoomControl: true,
+        scrollWheelZoom: true,
+      }).setView([47.0, 2.0], 6);
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '© OpenStreetMap',
+        maxZoom: 19,
+      }).addTo(mapRef.current);
+    }
+
+    const map = mapRef.current;
+
+    // Clear previous layers (except tiles)
+    map.eachLayer((layer: any) => {
+      if (layer.options && layer.options.attribution) return; // garde les tuiles
+      map.removeLayer(layer);
+    });
+
+    const allBounds: any[] = [];
+
+    // Trace chaque tracé GPX
+    tripsWithTrack.forEach(trip => {
+      const polyline = L.polyline(trip.track, {
+        color: "#E8620A",
+        weight: 4,
+        opacity: 0.85,
+      }).addTo(map);
+      allBounds.push(...trip.track);
+    });
+
+    // Marqueurs aux étapes
+    tripsWithCoords.forEach(trip => {
+      const marker = L.circleMarker([trip.mapLat, trip.mapLng], {
+        radius: 7,
+        fillColor: "#2A6B73",
+        color: "#fff",
+        weight: 2,
+        fillOpacity: 1,
+      }).addTo(map);
+
+      marker.bindPopup(`<strong>${trip.title}</strong><br>${trip.date} · ${trip.distanceKm} km`);
+      marker.on("click", () => setActiveTrip(trip));
+      allBounds.push([trip.mapLat, trip.mapLng]);
+    });
+
+    // Ajuste la vue pour tout afficher
+    if (allBounds.length > 0) {
+      map.fitBounds(allBounds, { padding: [40, 40], maxZoom: 12 });
+    }
+
+    // Fix display bug
+    setTimeout(() => map.invalidateSize(), 200);
+  }, [leafletLoaded, trips]);
 
   return (
     <div className="w-full min-h-screen pt-24 pb-20 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
       <div className="max-w-6xl w-full text-left">
 
         {/* Header */}
-        <div className="mb-8 flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
-          <div>
-            <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase">
-              Localisation & Itinéraire
-            </p>
-            <h1 className="font-display text-3xl md:text-5xl font-black uppercase mt-1 text-text-on">
-              Carte de Suivi
-            </h1>
-            <p className="text-xs text-text-dim text-opacity-80 mt-2 font-light">
-              Tracé GPS mis à jour à chaque étape. Cliquez sur un point pour explorer la halte.
-            </p>
-          </div>
-          <div className="bg-[#1c1b1b] border border-white/5 p-1 rounded-md flex gap-2 self-start md:self-auto font-mono text-[9px] uppercase font-bold tracking-wider">
-            <button
-              onClick={() => setMapStyle("topographic")}
-              className={`px-3 py-1.5 rounded cursor-pointer transition-all flex items-center gap-1 ${
-                mapStyle === "topographic" ? "bg-brand-sand text-bg-dark font-extrabold" : "text-text-dim hover:text-white"
-              }`}
-            >
-              <Map size={11} /> Topo
-            </button>
-            <button
-              onClick={() => setMapStyle("grid")}
-              className={`px-3 py-1.5 rounded cursor-pointer transition-all flex items-center gap-1 ${
-                mapStyle === "grid" ? "bg-brand-sand text-bg-dark font-extrabold" : "text-text-dim hover:text-white"
-              }`}
-            >
-              <Globe size={11} /> Grille
-            </button>
-          </div>
+        <div className="mb-8">
+          <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase">
+            Localisation & Itinéraire
+          </p>
+          <h1 className="font-display text-3xl md:text-5xl font-black uppercase mt-1 text-text-on">
+            Carte de Suivi
+          </h1>
+          <p className="text-xs text-text-dim text-opacity-80 mt-2 font-light">
+            Le tracé réel de chaque étape sur OpenStreetMap. Cliquez sur un point pour explorer la halte.
+          </p>
         </div>
 
-        {/* Map + sidebar grid */}
         <div className="grid lg:grid-cols-12 gap-8 items-stretch">
 
-          {/* Map */}
-          <div className="lg:col-span-8 bg-[#1c1b1b] border border-white/5 rounded-lg p-6 relative min-h-[440px] overflow-hidden">
-
-            {/* Background texture */}
-            <div className="absolute inset-0 z-0 opacity-40 select-none">
-              {mapStyle === "topographic" ? (
-                <svg className="w-full h-full text-text-on/[0.04]" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M 50,-50 C 150,-50 300,100 200,300 C 100,500 50,450 150,600" fill="none" stroke="currentColor" strokeWidth="1" />
-                  <path d="M 120,-20 C 220,50 310,180 230,350 C 150,520 80,420 190,580" fill="none" stroke="currentColor" strokeWidth="1.5" />
-                  <path d="M 0,200 Q 200,150 400,350 T 800,400" fill="none" stroke="currentColor" strokeWidth="0.8" />
-                  <path d="M 200,50 Q 400,100 500,280 T 900,150" fill="none" stroke="currentColor" strokeWidth="0.5" />
-                </svg>
-              ) : (
-                <div
-                  className="w-full h-full"
-                  style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px)", backgroundSize: "40px 40px" }}
-                />
-              )}
-            </div>
-
-            {/* Watermark */}
-            <div className="absolute bottom-4 left-4 z-10 font-mono text-[8px] text-text-dim text-opacity-35 select-none flex flex-col gap-0.5">
-              <span>GPS SYNC: OK</span>
-              <span>PROJECTION: MERCATOR</span>
-            </div>
-
-            {/* SVG route + pins */}
-            <div className="relative z-10 w-full h-[320px] md:h-[400px]">
-              <svg className="absolute inset-0 w-full h-full overflow-visible" viewBox="0 0 100 100" preserveAspectRatio="none">
-                {tripsWithCoords.length > 1 && (
-                  <path
-                    d={tripsWithCoords.map((t, i) => {
-                      const pos = toSvgPos(t.mapLat!, t.mapLng!);
-                      return `${i === 0 ? "M" : "L"} ${pos.x},${pos.y}`;
-                    }).join(" ")}
-                    fill="none"
-                    stroke="#8d7a68"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="opacity-90"
-                  />
-                )}
-              </svg>
-
-              {tripsWithCoords.map(trip => {
-                const pos = toSvgPos(trip.mapLat!, trip.mapLng!);
-                const isActive = activeTrip?.slug === trip.slug;
-                return (
-                  <div
-                    key={trip.slug}
-                    className="absolute -translate-x-1/2 -translate-y-1/2 cursor-pointer z-20 group"
-                    style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
-                    onClick={() => setActiveTrip(trip)}
-                  >
-                    <div className={`w-6 h-6 rounded-full border bg-bg-dark flex items-center justify-center transition-all ${
-                      isActive
-                        ? "border-brand-sand scale-125 shadow-[0_0_12px_rgba(210,180,140,0.5)]"
-                        : "border-brand-sand/40 hover:border-white"
-                    }`}>
-                      <div className={`w-2.5 h-2.5 rounded-full transition-colors ${isActive ? "bg-brand-sand" : "bg-brand-sand/60 group-hover:bg-white"}`} />
-                    </div>
-                    <div className="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#1c1b1b] border border-white/10 rounded px-2 py-1 font-mono text-[8px] text-brand-sand whitespace-nowrap z-30 pointer-events-none">
-                      {trip.title}
-                    </div>
-                  </div>
-                );
-              })}
-
-              {tripsWithCoords.length === 0 && (
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <p className="font-mono text-[10px] text-text-dim text-opacity-40 uppercase tracking-wider">
-                    Aucune étape géolocalisée pour l'instant
-                  </p>
-                </div>
-              )}
-            </div>
+          {/* Vraie carte Leaflet */}
+          <div className="lg:col-span-8 bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative min-h-[440px]">
+            {!leafletLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
+                <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
+                  Chargement de la carte...
+                </span>
+              </div>
+            )}
+            <div
+              ref={mapContainerRef}
+              className="w-full h-[440px] md:h-[520px]"
+              style={{ background: "#1c1b1b" }}
+            />
+            {tripsWithTrack.length === 0 && tripsWithCoords.length === 0 && leafletLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
+                <p className="font-mono text-[10px] text-text-dim bg-bg-dark/80 px-4 py-2 rounded uppercase tracking-wider">
+                  Aucun tracé GPX pour l'instant
+                </p>
+              </div>
+            )}
           </div>
 
           {/* Sidebar */}
           <div className="lg:col-span-4 flex flex-col justify-between bg-[#1c1b1b] border border-white/5 rounded-lg p-6 text-left">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Navigation size={15} className="text-brand-sand marker-pulse" />
+                <Navigation size={15} className="text-brand-sand" />
                 <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-brand-sand">Point d'étape</span>
               </div>
 
@@ -203,27 +206,27 @@ export default function MapView({ onNavigate, trips }: MapViewProps) {
           <div className="flex items-start gap-3">
             <ShieldCheck size={20} className="text-brand-sand shrink-0 mt-0.5" />
             <div>
-              <h4 className="font-display font-bold text-xs uppercase text-text-on">Tracé GPX authentifié</h4>
+              <h4 className="font-display font-bold text-xs uppercase text-text-on">Tracé GPX réel</h4>
               <p className="text-[11px] text-text-dim text-opacity-70 leading-relaxed font-light mt-1">
-                Chaque route est issue du fichier GPX enregistré sur le terrain, précis à ±5 mètres.
+                Chaque route provient du fichier GPX enregistré sur le terrain.
               </p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Milestone size={20} className="text-brand-sand shrink-0 mt-0.5" />
             <div>
-              <h4 className="font-display font-bold text-xs uppercase text-text-on">Mise à jour automatique</h4>
+              <h4 className="font-display font-bold text-xs uppercase text-text-on">Mise à jour auto</h4>
               <p className="text-[11px] text-text-dim text-opacity-70 leading-relaxed font-light mt-1">
-                Un dossier déposé sur Drive déclenche la synchronisation et ajoute le point automatiquement.
+                Un dossier déposé sur Drive ajoute le tracé automatiquement.
               </p>
             </div>
           </div>
           <div className="flex items-start gap-3">
             <Compass size={20} className="text-brand-sand shrink-0 mt-0.5" />
             <div>
-              <h4 className="font-display font-bold text-xs uppercase text-text-on">Couverture mondiale</h4>
+              <h4 className="font-display font-bold text-xs uppercase text-text-on">OpenStreetMap</h4>
               <p className="text-[11px] text-text-dim text-opacity-70 leading-relaxed font-light mt-1">
-                De l'Atlantique au Pamir — toute la trajectoire plein Est est cartographiée ici.
+                Cartographie libre et gratuite, sans clé API ni limite.
               </p>
             </div>
           </div>
