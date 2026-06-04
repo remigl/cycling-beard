@@ -9,9 +9,20 @@ import MapView from "./components/MapView";
 import AboutView from "./components/AboutView";
 import SupportView from "./components/SupportView";
 import { SiteStats, TripSummary } from "./types";
+import { Lang, makeT } from "./i18n";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("home");
+  const [lang, setLang] = useState<Lang>(() => {
+    const saved = typeof localStorage !== "undefined" ? localStorage.getItem("tcb_lang") : null;
+    return (saved as Lang) || "fr";
+  });
+  const t = makeT(lang);
+
+  const changeLang = (l: Lang) => {
+    setLang(l);
+    localStorage.setItem("tcb_lang", l);
+  };
   const [activeStageSlug, setActiveStageSlug] = useState<string>("");
 
   const [stats, setStats] = useState<SiteStats | null>(null);
@@ -88,6 +99,9 @@ export default function App() {
         activeTab={activeTab}
         setActiveTab={setActiveTab}
         onSearchToggle={() => setSearchDrawerOpen(true)}
+        lang={lang}
+        changeLang={changeLang}
+        t={t}
       />
 
       <main className="flex-grow">
@@ -101,16 +115,16 @@ export default function App() {
             className="w-full"
           >
             {activeTab === "home" && (
-              <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} />
+              <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} t={t} />
             )}
             {activeTab === "journey" && (
-              <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} />
+              <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} />
             )}
             {activeTab === "stage" && (
-              <StageDetailView slug={activeStageSlug} onNavigate={handleCustomNavigate} />
+              <StageDetailView slug={activeStageSlug} onNavigate={handleCustomNavigate} lang={lang} t={t} />
             )}
             {activeTab === "map" && (
-              <MapView onNavigate={handleCustomNavigate} trips={trips} />
+              <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} />
             )}
             {activeTab === "about" && <AboutView />}
             {activeTab === "support" && <SupportView />}
