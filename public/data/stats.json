@@ -1,11 +1,11 @@
 {
   "totalKm": 22,
   "totalCountries": 1,
-  "totalDays": 1,
+  "totalDays": 6,
   "totalElevation": 175,
   "currentCountry": "—",
-  "currentLocation": "Saint → Nazaire → LePouliguen",
+  "currentLocation": "Mauves Sur Loire Le Menitre",
   "startDate": "2026-05-26",
-  "lastUpdate": "2026-05-31",
-  "latestStageSlug": "2026-05-27-Saint-Nazaire-LePouliguen"
+  "lastUpdate": "2026-06-04",
+  "latestStageSlug": "2026-06-30-mauves-sur-loire-le-menitre"
 }
