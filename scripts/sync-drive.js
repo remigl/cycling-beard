@@ -200,7 +200,12 @@ function parseNotes(content) {
 // ─── Main sync logic ──────────────────────────────────────────────────────────
 
 async function syncFolder(drive, folder) {
-  const slug = folder.name; // e.g. "2026-08-14-turin-susa"
+  // Normalise le slug : minuscules, espaces → tirets, accents supprimés
+  const slug = folder.name
+    .toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9-]/g, "");
   console.log(`\n📂 Traitement : ${slug}`);
 
   // Check if already synced
@@ -310,14 +315,14 @@ async function syncFolder(drive, folder) {
     coverImage: coverWebp || "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     heroVideo: null,
     summary: notes.summary || "",
-    fullStory: notes.fullStory.length > 0 ? notes.fullStory : ["Cette étape sera bientôt documentée."],
+    fullStory: (notes.fullStory?.length > 0) ? notes.fullStory : ["Cette étape sera bientôt documentée."],
     quote: notes.quote || null,
     photos: coverWebp ? [{ src: coverWebp, thumb: thumbWebp, alt: "Cover" }, ...photos] : photos,
     videos: [],
     gpxFile: gpxPublicPath,
     mapLat: gpxStats.endLat ?? null,
     mapLng: gpxStats.endLng ?? null,
-    highlights: notes.highlights,
+    highlights: notes.highlights || [],
     weather: notes.weather || null,
   };
 
