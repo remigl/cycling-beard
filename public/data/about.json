@@ -1,12 +1,40 @@
 {
-  "paragraphs": [],
+  "paragraphs": [
+    "Bienvenue sur mon blog.",
+    "J’y raconte mon itinéraire et j’ajoute quelques photos. Cela me permet de garder une trace de mon parcours et ça me distrait.",
+    "Merci à tous les hôtes qui m’ont accueilli et merci à tous ceux qui me soutiennent."
+  ],
   "translations": {
-    "fr": [],
-    "en": [],
-    "es": [],
-    "it": [],
-    "de": [],
-    "nl": []
+    "fr": [
+      "Bienvenue sur mon blog.",
+      "J’y raconte mon itinéraire et j’ajoute quelques photos. Cela me permet de garder une trace de mon parcours et ça me distrait.",
+      "Merci à tous les hôtes qui m’ont accueilli et merci à tous ceux qui me soutiennent."
+    ],
+    "en": [
+      "Welcome to my blog.",
+      "I write about my journey there and add a few photos. It helps me keep track of where I’ve been, and it keeps me entertained.",
+      "Thank you to all the hosts who welcomed me, and thank you to everyone who supports me."
+    ],
+    "es": [
+      "Bienvenido a mi blog.",
+      "Allí cuento mi recorrido y añado algunas fotos. Eso me permite dejar constancia de mi viaje y me distrae.",
+      "Gracias a todos los anfitriones que me han acogido y gracias a todos los que me apoyan."
+    ],
+    "it": [
+      "Benvenuti sul mio blog.",
+      "Lì racconto il mio percorso e aggiungo qualche foto. Questo mi permette di tenere traccia del mio viaggio e mi distrae.",
+      "Grazie a tutti gli ospiti che mi hanno accolto e grazie a tutti coloro che mi sostengono."
+    ],
+    "de": [
+      "Willkommen auf meinem Blog.",
+      "Dort beschreibe ich meine Route und füge ein paar Fotos hinzu. So kann ich meine Reise dokumentieren, und es lenkt mich ab.",
+      "Vielen Dank an alle Gastgeber, die mich aufgenommen haben, und vielen Dank an alle, die mich unterstützen."
+    ],
+    "nl": [
+      "Welkom op mijn blog.",
+      "Daar vertel ik over mijn reis en voeg ik een paar foto’s toe. Zo houd ik mijn reis bij en heb ik iets leuks om mee bezig te zijn.",
+      "Hartelijk dank aan alle gastheren en -vrouwen die mij hebben ontvangen, en dank aan iedereen die mij steunt."
+    ]
   },
   "mePhoto": "/media/_about/me.webp",
   "bikePhoto": "/media/_about/bike.webp"
