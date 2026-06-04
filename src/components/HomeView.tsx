@@ -1,4 +1,3 @@
-import { Coffee } from "lucide-react";
 import { motion } from "motion/react";
 import { SiteStats, TripSummary } from "../types";
 import { Lang } from "../i18n";
@@ -131,9 +130,14 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                   href={BMC_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-brand-sand text-bg-dark font-display text-[11px] font-bold uppercase tracking-widest px-6 py-3 rounded-xl hover:bg-opacity-90 transition-all cursor-pointer"
+                  className="inline-block hover:opacity-90 transition-opacity"
                 >
-                  <Coffee size={15} /> {t("support.cta")}
+                  <img
+                    src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                    alt={t("support.cta")}
+                    style={{ height: "50px", width: "auto" }}
+                    referrerPolicy="no-referrer"
+                  />
                 </a>
               </div>
             </div>
