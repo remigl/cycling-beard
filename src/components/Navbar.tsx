@@ -1,17 +1,16 @@
-import { Search, Menu, X, Globe, Check } from "lucide-react";
+import { Menu, X, Globe, Check } from "lucide-react";
 import { useState } from "react";
 import { Lang, LANGUAGES } from "../i18n";
 
 interface NavbarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
-  onSearchToggle: () => void;
   lang: Lang;
   changeLang: (l: Lang) => void;
   t: (key: string) => string;
 }
 
-export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, changeLang, t }: NavbarProps) {
+export default function Navbar({ activeTab, setActiveTab, lang, changeLang, t }: NavbarProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
@@ -98,13 +97,6 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, 
             )}
           </div>
 
-          <button
-            onClick={onSearchToggle}
-            className="hover:text-brand-sand cursor-pointer transition-colors p-2 hover:bg-white/5 rounded-full"
-            aria-label="Rechercher"
-          >
-            <Search size={18} />
-          </button>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden p-2 hover:bg-white/5 rounded text-text-on"
