@@ -124,12 +124,34 @@ function parseOneGpx(gpxContent) {
 
   // Dernière position = fin de l'étape (pour la carte)
   const lastPoint = points[points.length - 1];
+
+  // Trace simplifiée : on garde 1 point sur N pour alléger le JSON
+  const maxPoints = 200;
+  const step = Math.max(1, Math.floor(points.length / maxPoints));
+  const track = [];
+  for (let i = 0; i < points.length; i += step) {
+    track.push([
+      Math.round(points[i].lat * 100000) / 100000,
+      Math.round(points[i].lon * 100000) / 100000,
+    ]);
+  }
+  // Garde toujours le dernier point
+  if (points.length > 0) {
+    track.push([
+      Math.round(lastPoint.lat * 100000) / 100000,
+      Math.round(lastPoint.lon * 100000) / 100000,
+    ]);
+  }
+
   return {
     distanceKm,
     elevationGain: Math.round(elevationGain),
     maxAltitude: Math.round(maxAlt),
     endLat: lastPoint?.lat ?? null,
     endLng: lastPoint?.lon ?? null,
+    startLat: points[0]?.lat ?? null,
+    startLng: points[0]?.lon ?? null,
+    track,
   };
 }
 
@@ -148,7 +170,14 @@ function mergeGpxFiles(gpxContents) {
     if (result.maxAltitude > maxAltitude) maxAltitude = result.maxAltitude;
   }
 
-  // Prend les coords du dernier GPX
+  // Concatène tous les tracés
+  let fullTrack = [];
+  let startLat = null, startLng = null;
+  for (const content of gpxContents) {
+    const r = parseOneGpx(content);
+    if (startLat === null) { startLat = r.startLat; startLng = r.startLng; }
+    if (r.track) fullTrack = fullTrack.concat(r.track);
+  }
   const lastResult = parseOneGpx(gpxContents[gpxContents.length - 1]);
   return {
     distanceKm: Math.round(totalDistance * 10) / 10,
@@ -156,6 +185,9 @@ function mergeGpxFiles(gpxContents) {
     maxAltitude: Math.round(maxAltitude),
     endLat: lastResult.endLat,
     endLng: lastResult.endLng,
+    startLat,
+    startLng,
+    track: fullTrack,
   };
 }
 
@@ -329,6 +361,7 @@ async function syncFolder(drive, folder) {
     gpxFile: gpxPublicPath,
     mapLat: gpxStats.endLat ?? null,
     mapLng: gpxStats.endLng ?? null,
+    track: gpxStats.track || [],
     highlights: notes.highlights || [],
     weather: notes.weather || null,
   };
@@ -443,6 +476,7 @@ async function main() {
     hasGpx: !!s.gpxFile,
     mapLat: s.mapLat ?? null,
     mapLng: s.mapLng ?? null,
+    track: s.track || [],
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
