@@ -145,7 +145,7 @@ export default function JourneyView({ onNavigate, trips, stats, t }: JourneyView
             {t("journey.empty")}
           </div>
         ) : (
-          <div className="flex flex-col gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((trip, i) => (
               <motion.div
                 key={trip.slug}
@@ -153,54 +153,56 @@ export default function JourneyView({ onNavigate, trips, stats, t }: JourneyView
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.35, delay: i * 0.05 }}
                 onClick={() => onNavigate("stage", trip.slug)}
-                className="group flex flex-col sm:flex-row gap-4 bg-[#111110] border border-white/5 hover:border-brand-sand/30 rounded-xl overflow-hidden cursor-pointer transition-all duration-300"
+                className="group flex flex-col bg-surface-card border border-text-on/10 hover:border-brand-sand hover:shadow-lg rounded-2xl overflow-hidden cursor-pointer transition-all duration-300"
               >
                 {/* Thumbnail */}
-                <div className="w-full sm:w-48 h-36 sm:h-auto flex-shrink-0 overflow-hidden">
+                <div className="w-full h-48 overflow-hidden relative">
                   <img
                     src={trip.thumbnail}
                     alt={trip.title}
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
+                  {/* Badges sur l'image */}
+                  <div className="absolute top-3 left-3 flex items-center gap-1.5">
+                    {trip.hasGpx && (
+                      <span className="font-mono text-[8px] bg-black/70 text-white px-2 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                        GPX
+                      </span>
+                    )}
+                    {trip.hasVideo && (
+                      <span className="font-mono text-[8px] bg-black/70 text-white px-2 py-1 rounded-full uppercase tracking-wider backdrop-blur-sm">
+                        Vidéo
+                      </span>
+                    )}
+                  </div>
                 </div>
 
                 {/* Content */}
-                <div className="flex flex-col justify-between p-4 flex-1 min-w-0">
+                <div className="flex flex-col justify-between p-5 flex-1 min-w-0">
                   <div>
-                    <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                      <span className="font-mono text-[8px] text-brand-sand font-bold uppercase tracking-widest">
-                        {trip.country !== "—" ? trip.country : "France"}
-                      </span>
-                      {trip.hasGpx && (
-                        <span className="font-mono text-[7px] bg-emerald-900/40 text-emerald-400 px-1.5 py-0.5 rounded uppercase tracking-wider">
-                          GPX
-                        </span>
-                      )}
-                      {trip.hasVideo && (
-                        <span className="font-mono text-[7px] bg-sky-900/40 text-sky-400 px-1.5 py-0.5 rounded uppercase tracking-wider">
-                          Vidéo
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="font-display font-bold text-base text-text-on group-hover:text-brand-sand transition-colors">
+                    <span className="font-mono text-[9px] text-brand-sand font-bold uppercase tracking-widest">
+                      {trip.country !== "—" ? trip.country : "France"}
+                      {trip.startCity && trip.endCity && ` · ${trip.startCity} → ${trip.endCity}`}
+                    </span>
+                    <h3 className="font-display font-bold text-lg text-text-on group-hover:text-brand-sand transition-colors mt-1.5 leading-tight">
                       {trip.title}
                     </h3>
-                    <p className="text-[11px] text-text-dim text-opacity-70 mt-1.5 line-clamp-2 leading-relaxed">
+                    <p className="text-xs text-text-dim mt-2 line-clamp-2 leading-relaxed">
                       {trip.shortDescription}
                     </p>
 
                     {/* Tags de l'étape */}
                     {trip.tags && trip.tags.length > 0 && (
-                      <div className="flex gap-1.5 flex-wrap mt-2">
+                      <div className="flex gap-1.5 flex-wrap mt-3">
                         {trip.tags.map(tag => (
                           <button
                             key={tag}
                             onClick={(e) => { e.stopPropagation(); toggleTag(tag); }}
-                            className={`font-mono text-[8px] lowercase px-1.5 py-0.5 rounded-full border transition-all cursor-pointer ${
+                            className={`font-mono text-[9px] lowercase px-2 py-0.5 rounded-full border transition-all cursor-pointer ${
                               selectedTags.includes(tag)
-                                ? "bg-brand-sand text-bg-dark border-brand-sand"
-                                : "border-brand-sand/25 text-brand-sand/80 hover:bg-brand-sand/10"
+                                ? "bg-brand-sand text-surface-card border-brand-sand"
+                                : "border-brand-sand/30 text-brand-sand hover:bg-brand-sand/10"
                             }`}
                           >
                             #{tag}
@@ -210,8 +212,8 @@ export default function JourneyView({ onNavigate, trips, stats, t }: JourneyView
                     )}
                   </div>
 
-                  <div className="flex items-center justify-between mt-3 pt-3 border-t border-white/5">
-                    <div className="flex gap-4 font-mono text-[9px] text-text-dim">
+                  <div className="flex items-center justify-between mt-4 pt-3 border-t border-text-on/10">
+                    <div className="flex gap-3 font-mono text-[9px] text-text-dim">
                       <span className="flex items-center gap-1">
                         <Calendar size={10} /> {trip.date}
                       </span>
