@@ -19,8 +19,6 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, 
     { id: "home", label: t("nav.home") },
     { id: "journey", label: t("nav.journey") },
     { id: "map", label: t("nav.map") },
-    { id: "about", label: t("nav.about") },
-    { id: "support", label: t("nav.support") },
   ];
 
   const currentLang = LANGUAGES.find(l => l.code === lang) || LANGUAGES[0];
@@ -66,11 +64,12 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, 
           <div className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-1.5 hover:text-brand-sand cursor-pointer transition-colors p-2 hover:bg-white/5 rounded-full"
+              className="flex items-center gap-1.5 hover:text-brand-sand cursor-pointer transition-colors px-2.5 py-1.5 hover:bg-white/5 rounded-full border border-white/10"
               aria-label="Langue"
             >
-              <Globe size={17} />
-              <span className="text-[10px] font-mono uppercase font-bold hidden sm:inline">{currentLang.code}</span>
+              <span className="text-base leading-none">{currentLang.flag}</span>
+              <span className="text-[10px] font-mono uppercase font-bold">{currentLang.label}</span>
+              <Globe size={13} className="opacity-60" />
             </button>
 
             {langOpen && (
