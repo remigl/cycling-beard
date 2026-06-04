@@ -23,6 +23,7 @@ jobs:
         env:
           DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
           GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
         run: |
           echo "$GOOGLE_SERVICE_ACCOUNT_KEY" > service-account.json
           GOOGLE_SERVICE_ACCOUNT_KEY_PATH=./service-account.json node scripts/sync-drive.js
