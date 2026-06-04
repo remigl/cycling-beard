@@ -340,6 +340,18 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
                   {t("stage.stats")}
                 </h3>
                 <div className="flex flex-col gap-4 font-mono text-xs">
+                  {stage.startCity && (
+                    <div className="flex justify-between">
+                      <span className="text-text-dim text-opacity-50">{t("stage.start")}</span>
+                      <span className="text-text-on">{stage.startCity}</span>
+                    </div>
+                  )}
+                  {stage.endCity && (
+                    <div className="flex justify-between">
+                      <span className="text-text-dim text-opacity-50">{t("stage.end")}</span>
+                      <span className="text-text-on">{stage.endCity}</span>
+                    </div>
+                  )}
                   <div className="flex justify-between">
                     <span className="text-text-dim text-opacity-50">{t("stage.distance")}</span>
                     <span className="text-brand-sand font-bold">{stage.distanceKm > 0 ? `${stage.distanceKm} km` : "—"}</span>
