@@ -13,6 +13,7 @@ export interface TripSummary {
   hasGpx: boolean;
   mapLat?: number;
   mapLng?: number;
+  track?: [number, number][];
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────
@@ -67,6 +68,7 @@ export interface StageDetail {
   gpxFile?: string | null;
   mapLat?: number;
   mapLng?: number;
+  track?: [number, number][];
   highlights?: string[];
   weather?: StageWeather;
 }
