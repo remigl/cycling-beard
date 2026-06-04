@@ -102,7 +102,6 @@ export default function App() {
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        onSearchToggle={() => setSearchDrawerOpen(true)}
         lang={lang}
         changeLang={changeLang}
         t={t}
