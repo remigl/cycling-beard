@@ -9405,4 +9405,78 @@
      <gpxdata:speed>1.283</gpxdata:speed>
     </extensions>
    </trkpt>
-   <trkpt lat="47.3798429" lon="-0.9629
+   <trkpt lat="47.3798429" lon="-0.9629592">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:47Z</time>
+    <extensions>
+     <gpxdata:distance>6537.00</gpxdata:distance>
+     <gpxdata:speed>1.294</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3798318" lon="-0.9629532">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:48Z</time>
+    <extensions>
+     <gpxdata:distance>6538.00</gpxdata:distance>
+     <gpxdata:speed>1.314</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3798204" lon="-0.9629475">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:49Z</time>
+    <extensions>
+     <gpxdata:distance>6539.50</gpxdata:distance>
+     <gpxdata:speed>1.336</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3798091" lon="-0.9629416">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:50Z</time>
+    <extensions>
+     <gpxdata:distance>6541.00</gpxdata:distance>
+     <gpxdata:speed>1.353</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3797981" lon="-0.9629356">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:51Z</time>
+    <extensions>
+     <gpxdata:distance>6542.00</gpxdata:distance>
+     <gpxdata:speed>1.353</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3797873" lon="-0.9629303">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:52Z</time>
+    <extensions>
+     <gpxdata:distance>6543.00</gpxdata:distance>
+     <gpxdata:speed>1.317</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3797770" lon="-0.9629272">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:53Z</time>
+    <extensions>
+     <gpxdata:distance>6544.50</gpxdata:distance>
+     <gpxdata:speed>1.286</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3797681" lon="-0.9629280">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:54Z</time>
+    <extensions>
+     <gpxdata:distance>6546.00</gpxdata:distance>
+     <gpxdata:speed>1.214</gpxdata:speed>
+    </extensions>
+   </trkpt>
+   <trkpt lat="47.3797610" lon="-0.9629318">
+    <ele>12</ele>
+    <time>2026-05-30T12:39:55Z</time>
+    <extensions>
+     <gpxdata:distance>6546.50</gpxdata:distance>
+     <gpxdata:speed>1.158</gpxdata:speed>
+    </extensions>
+   </trkpt>
+  </trkseg>
+ </trk>
+</gpx>
