@@ -5,6 +5,7 @@ import { TripSummary } from "../types";
 interface MapViewProps {
   onNavigate: (tab: string, arg?: string) => void;
   trips: TripSummary[];
+  t: (key: string) => string;
 }
 
 // Charge Leaflet dynamiquement (CSS + JS) depuis le CDN
@@ -28,7 +29,7 @@ function useLeaflet() {
   return loaded;
 }
 
-export default function MapView({ onNavigate, trips }: MapViewProps) {
+export default function MapView({ onNavigate, trips, t }: MapViewProps) {
   const leafletLoaded = useLeaflet();
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -107,13 +108,13 @@ export default function MapView({ onNavigate, trips }: MapViewProps) {
         {/* Header */}
         <div className="mb-8">
           <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase">
-            Localisation & Itinéraire
+            {t("map.label")}
           </p>
           <h1 className="font-display text-3xl md:text-5xl font-black uppercase mt-1 text-text-on">
-            Carte de Suivi
+            {t("map.title")}
           </h1>
           <p className="text-xs text-text-dim text-opacity-80 mt-2 font-light">
-            Le tracé réel de chaque étape sur OpenStreetMap. Cliquez sur un point pour explorer la halte.
+            {t("map.intro")}
           </p>
         </div>
 
@@ -124,7 +125,7 @@ export default function MapView({ onNavigate, trips }: MapViewProps) {
             {!leafletLoaded && (
               <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
                 <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
-                  Chargement de la carte...
+                  {t("map.loading")}
                 </span>
               </div>
             )}
@@ -136,7 +137,7 @@ export default function MapView({ onNavigate, trips }: MapViewProps) {
             {tripsWithTrack.length === 0 && tripsWithCoords.length === 0 && leafletLoaded && (
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
                 <p className="font-mono text-[10px] text-text-dim bg-bg-dark/80 px-4 py-2 rounded uppercase tracking-wider">
-                  Aucun tracé GPX pour l'instant
+                  {t("map.no_track")}
                 </p>
               </div>
             )}
@@ -147,7 +148,7 @@ export default function MapView({ onNavigate, trips }: MapViewProps) {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Navigation size={15} className="text-brand-sand" />
-                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-brand-sand">Point d'étape</span>
+                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-brand-sand">{t("map.point")}</span>
               </div>
 
               {activeTrip ? (
@@ -183,7 +184,7 @@ export default function MapView({ onNavigate, trips }: MapViewProps) {
               ) : (
                 <div className="h-64 flex flex-col items-center justify-center text-center text-xs text-text-dim text-opacity-40">
                   <Info size={24} className="mb-2 opacity-50" />
-                  Cliquez sur un point de la carte
+                  {t("map.click_point")}
                 </div>
               )}
             </div>
@@ -194,7 +195,7 @@ export default function MapView({ onNavigate, trips }: MapViewProps) {
                   onClick={() => onNavigate("stage", activeTrip.slug)}
                   className="w-full bg-brand-sand text-bg-dark font-display text-[10px] font-bold uppercase tracking-widest py-3 rounded hover:bg-opacity-95 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
                 >
-                  Explorer cette étape <ArrowRight size={11} />
+                  {t("map.explore")} <ArrowRight size={11} />
                 </button>
               </div>
             )}
