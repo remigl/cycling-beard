@@ -37,7 +37,9 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
     trips.length > 0 ? trips[trips.length - 1] : null
   );
 
-  const tripsWithTrack = trips.filter(t => t.track && t.track.length > 0);
+  const tripsWithTrack = trips.filter(t =>
+    (t.track && t.track.length > 0) || (t.segments && t.segments.length > 0)
+  );
   const tripsWithCoords = trips.filter(t => t.mapLat != null && t.mapLng != null);
 
   useEffect(() => {
@@ -67,14 +69,22 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
 
     const allBounds: any[] = [];
 
-    // Trace chaque tracé GPX
+    // Trace chaque étape — chaque segment GPX séparément (pas de ligne droite entre étapes)
     tripsWithTrack.forEach(trip => {
-      const polyline = L.polyline(trip.track, {
-        color: "#E8620A",
-        weight: 4,
-        opacity: 0.85,
-      }).addTo(map);
-      allBounds.push(...trip.track);
+      // Utilise les segments si dispo, sinon le track simple
+      const segments = (trip.segments && trip.segments.length > 0)
+        ? trip.segments
+        : (trip.track ? [trip.track] : []);
+
+      segments.forEach(seg => {
+        if (seg.length < 2) return;
+        L.polyline(seg, {
+          color: "#E8620A",
+          weight: 4,
+          opacity: 0.85,
+        }).addTo(map);
+        allBounds.push(...seg);
+      });
     });
 
     // Marqueurs aux étapes
