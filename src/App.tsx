@@ -6,8 +6,6 @@ import HomeView from "./components/HomeView";
 import JourneyView from "./components/JourneyView";
 import StageDetailView from "./components/StageDetailView";
 import MapView from "./components/MapView";
-import AboutView from "./components/AboutView";
-import SupportView from "./components/SupportView";
 import { SiteStats, TripSummary } from "./types";
 import { Lang, makeT } from "./i18n";
 
@@ -27,6 +25,7 @@ export default function App() {
 
   const [stats, setStats] = useState<SiteStats | null>(null);
   const [trips, setTrips] = useState<TripSummary[]>([]);
+  const [about, setAbout] = useState<any>(null);
 
   const [searchDrawerOpen, setSearchDrawerOpen] = useState(false);
   const [globalQuery, setGlobalQuery] = useState("");
@@ -46,6 +45,11 @@ export default function App() {
       .then(r => r.json())
       .then((data: TripSummary[]) => setTrips(data))
       .catch(console.error);
+
+    fetch("/data/about.json")
+      .then(r => r.json())
+      .then((data) => setAbout(data))
+      .catch(() => setAbout(null));
   }, []);
 
   useEffect(() => {
@@ -115,7 +119,7 @@ export default function App() {
             className="w-full"
           >
             {activeTab === "home" && (
-              <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} t={t} />
+              <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} t={t} about={about} lang={lang} />
             )}
             {activeTab === "journey" && (
               <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} />
@@ -126,8 +130,6 @@ export default function App() {
             {activeTab === "map" && (
               <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} />
             )}
-            {activeTab === "about" && <AboutView />}
-            {activeTab === "support" && <SupportView />}
           </motion.div>
         </AnimatePresence>
       </main>
@@ -146,9 +148,6 @@ export default function App() {
               className="flex items-center gap-1 text-text-on hover:text-brand-sand transition-colors cursor-pointer"
             >
               <Share2 size={12} /> Partager
-            </button>
-            <button onClick={() => handleCustomNavigate("about")} className="hover:text-text-on transition-colors cursor-pointer">
-              À Propos
             </button>
             <button onClick={() => handleCustomNavigate("map")} className="hover:text-text-on transition-colors cursor-pointer">
               Carte
