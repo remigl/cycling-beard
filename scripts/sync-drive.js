@@ -183,16 +183,16 @@ function parseOneGpx(gpxContent) {
   // Trace simplifiée : on garde 1 point sur N pour alléger le JSON
   const maxPoints = 200;
   const step = Math.max(1, Math.floor(points.length / maxPoints));
-  const track = [];
+  const trackPoints = [];
   for (let i = 0; i < points.length; i += step) {
-    track.push([
+    trackPoints.push([
       Math.round(points[i].lat * 100000) / 100000,
       Math.round(points[i].lon * 100000) / 100000,
     ]);
   }
   // Garde toujours le dernier point
   if (points.length > 0) {
-    track.push([
+    trackPoints.push([
       Math.round(lastPoint.lat * 100000) / 100000,
       Math.round(lastPoint.lon * 100000) / 100000,
     ]);
@@ -206,7 +206,7 @@ function parseOneGpx(gpxContent) {
     endLng: lastPoint?.lon ?? null,
     startLat: points[0]?.lat ?? null,
     startLng: points[0]?.lon ?? null,
-    track,
+    track: trackPoints,
   };
 }
 
