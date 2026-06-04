@@ -14,6 +14,7 @@ export interface TripSummary {
   mapLat?: number;
   mapLng?: number;
   track?: [number, number][];
+  segments?: [number, number][][];
   tags?: string[];
 }
 
