@@ -84,7 +84,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                   <div className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-brand-sand tracking-tight">
                     {m.value}
                   </div>
-                  <div className="font-display font-extrabold text-[10px] text-text-on uppercase tracking-[0.15em] mt-2">
+                  <div className="font-display font-extrabold text-[10px] text-brand-sand uppercase tracking-[0.15em] mt-2">
                     {m.label}
                   </div>
                 </div>
