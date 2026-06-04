@@ -6,25 +6,26 @@ interface HomeViewProps {
   onNavigate: (tab: string, arg?: string) => void;
   stats: SiteStats | null;
   trips: TripSummary[];
+  t: (key: string) => string;
 }
 
-export default function HomeView({ onNavigate, stats, trips }: HomeViewProps) {
+export default function HomeView({ onNavigate, stats, trips, t }: HomeViewProps) {
   const latest = trips[trips.length - 1];
   const heroImage = latest?.coverImage ||
     "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1600";
 
   const metrics = stats
     ? [
-        { value: stats.totalKm.toLocaleString("fr-FR"), label: "Kilomètres", desc: "Distance totale parcourue" },
-        { value: String(stats.totalCountries), label: "Pays", desc: "Frontières traversées" },
-        { value: String(stats.totalDays), label: "Jours", desc: "Temps passé sur les pistes" },
-        { value: stats.totalElevation.toLocaleString("fr-FR"), label: "M Dénivelé", desc: "Ascension cumulée" },
+        { value: stats.totalKm.toLocaleString("fr-FR"), label: t("home.km"), desc: "" },
+        { value: String(stats.totalCountries), label: t("home.countries"), desc: "" },
+        { value: String(stats.totalDays), label: t("home.days"), desc: "" },
+        { value: stats.totalElevation.toLocaleString("fr-FR"), label: t("home.elevation"), desc: "" },
       ]
     : [
-        { value: "—", label: "Kilomètres", desc: "" },
-        { value: "—", label: "Pays", desc: "" },
-        { value: "—", label: "Jours", desc: "" },
-        { value: "—", label: "M Dénivelé", desc: "" },
+        { value: "—", label: t("home.km"), desc: "" },
+        { value: "—", label: t("home.countries"), desc: "" },
+        { value: "—", label: t("home.days"), desc: "" },
+        { value: "—", label: t("home.elevation"), desc: "" },
       ];
 
   return (
@@ -50,14 +51,14 @@ export default function HomeView({ onNavigate, stats, trips }: HomeViewProps) {
           <div className="flex items-center justify-center gap-2 mb-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500 marker-pulse" />
             <span className="font-mono text-[9px] uppercase font-bold tracking-[0.25em] text-brand-sand">
-              Expédition au long cours
+              {t("home.tagline")}
             </span>
           </div>
           <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-text-on uppercase tracking-[0.05em] leading-tight">
             THE CYCLING BEARD
           </h1>
           <p className="max-w-xl mx-auto mt-3 text-xs md:text-sm text-text-dim text-opacity-85 leading-relaxed font-light">
-            De Saint-Nazaire plein Est à la force des jambes. Un voyage continu documenté en direct, reliant l'Atlantique aux confins de l'Europe centrale jusqu'au Pamir.
+            {t("home.intro")}
           </p>
         </motion.div>
 
@@ -86,13 +87,13 @@ export default function HomeView({ onNavigate, stats, trips }: HomeViewProps) {
           <div className="border-t border-white/10 pt-4 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono">
             <span className="text-text-dim text-opacity-75 flex items-center gap-1.5">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-              {stats ? `${stats.currentLocation} · ${stats.currentCountry}` : "Localisation en cours..."}
+              {stats ? `${stats.currentLocation} · ${stats.currentCountry}` : t("home.locating")}
             </span>
             <button
               onClick={() => onNavigate("journey")}
               className="text-brand-sand hover:text-white transition-colors cursor-pointer flex items-center gap-1 font-bold text-[10px] uppercase tracking-wider"
             >
-              Accéder aux carnets <ArrowRight size={10} />
+              {t("home.cta")} <ArrowRight size={10} />
             </button>
           </div>
         </motion.div>
