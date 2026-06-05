@@ -5,6 +5,8 @@
   "day": "Jour 6",
   "location": "Le Menitre → Tours",
   "country": "France",
+  "startCity": "Tours",
+  "endCity": "Tours",
   "distanceKm": 105.8,
   "elevationGain": 615,
   "maxAltitude": 70,
@@ -64,6 +66,8 @@
   "gpxFile": "/gpx/2026-05-31-le-menitre-tours_1.gpx",
   "mapLat": 47.3652911,
   "mapLng": 0.6596539,
+  "startLat": 47.3651732,
+  "startLng": 0.6596097,
   "track": [
     [
       47.36517,

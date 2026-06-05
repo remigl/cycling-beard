@@ -5,6 +5,8 @@
   "day": "Jour 10",
   "location": "Sauvigny Les Bois → Decize",
   "country": "France",
+  "startCity": "Imphy",
+  "endCity": "Imphy",
   "distanceKm": 33.8,
   "elevationGain": 166,
   "maxAltitude": 230,
@@ -64,6 +66,8 @@
   "gpxFile": "/gpx/2026-06-04-sauvigny-les-bois-decize_1.gpx",
   "mapLat": 46.9381078,
   "mapLng": 3.2578549,
+  "startLat": 46.9379812,
+  "startLng": 3.2578107,
   "track": [
     [
       46.93798,

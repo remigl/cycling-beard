@@ -5,6 +5,8 @@
   "day": "Jour 5",
   "location": "Mauves Sur Loire → Le Menitre",
   "country": "France",
+  "startCity": "Loire-Authion",
+  "endCity": "Oudon",
   "distanceKm": 118.2,
   "elevationGain": 607,
   "maxAltitude": 60,
@@ -64,6 +66,8 @@
   "gpxFile": "/gpx/2026-05-30-mauves-sur-loire-le-menitre_1.gpx",
   "mapLat": 47.3479893,
   "mapLng": -1.2840281,
+  "startLat": 47.4086174,
+  "startLng": -0.3183689,
   "track": [
     [
       47.40862,

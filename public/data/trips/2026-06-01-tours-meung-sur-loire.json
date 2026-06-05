@@ -5,6 +5,8 @@
   "day": "Jour 7",
   "location": "Tours → Meung Sur Loire",
   "country": "France",
+  "startCity": "Beaugency",
+  "endCity": "Tours",
   "distanceKm": 124.5,
   "elevationGain": 745,
   "maxAltitude": 98,
@@ -64,6 +66,8 @@
   "gpxFile": "/gpx/2026-06-01-tours-meung-sur-loire_1.gpx",
   "mapLat": 47.3890227,
   "mapLng": 0.6917179,
+  "startLat": 47.776694,
+  "startLng": 1.6343958,
   "track": [
     [
       47.77669,

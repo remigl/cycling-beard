@@ -5,6 +5,8 @@
   "day": "Jour 8",
   "location": "Meung Sur Loire → Gien",
   "country": "France",
+  "startCity": "Poilly-lez-Gien",
+  "endCity": "Poilly-lez-Gien",
   "distanceKm": 115.6,
   "elevationGain": 626,
   "maxAltitude": 150,
@@ -64,6 +66,8 @@
   "gpxFile": "/gpx/2026-06-02-meung-sur-loire-gien_1.gpx",
   "mapLat": 47.6870117,
   "mapLng": 2.6091523,
+  "startLat": 47.6866113,
+  "startLng": 2.6103647,
   "track": [
     [
       47.68661,

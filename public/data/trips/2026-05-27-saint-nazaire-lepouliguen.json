@@ -5,6 +5,8 @@
   "day": "Jour 2",
   "location": "Saint Nazaire → Lepouliguen",
   "country": "France",
+  "startCity": "La Baule-Escoublac",
+  "endCity": "La Baule-Escoublac",
   "distanceKm": 24.8,
   "elevationGain": 185,
   "maxAltitude": 40,
@@ -27,7 +29,7 @@
       "summary": "Train from Paris to Saint-Nazaire, with the bike in the luggage car.",
       "quote": null,
       "fullStory": [
-        "Took the train from Paris to Saint-Nazaire, with my bike in the luggage car. Then drove to Le Pouliguen. It was hot."
+        "Took the train from Paris to Saint-Nazaire, with my bike in the baggage car. Then drove to Le Pouliguen. It was hot."
       ]
     },
     "es": {
@@ -85,6 +87,8 @@
   "gpxFile": "/gpx/2026-05-27-saint-nazaire-lepouliguen_1.gpx",
   "mapLat": 47.280427,
   "mapLng": -2.4115557,
+  "startLat": 47.2804285,
+  "startLng": -2.4116958,
   "track": [
     [
       47.28043,
