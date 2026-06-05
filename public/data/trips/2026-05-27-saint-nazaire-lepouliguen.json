@@ -1,7 +1,7 @@
 {
   "slug": "2026-05-27-saint-nazaire-lepouliguen",
   "date": "2026-05-27",
-  "title": "Saint Nazaire → Lepouliguen",
+  "title": "Paris → Le Pouliguen",
   "day": "Jour 2",
   "location": "Saint Nazaire → Lepouliguen",
   "country": "France",
@@ -12,52 +12,52 @@
   "maxAltitude": 40,
   "coverImage": "/media/2026-05-27-saint-nazaire-lepouliguen/le dîner de roi.webp",
   "heroVideo": null,
-  "summary": "",
+  "summary": "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon.",
   "fullStory": [
-    "Cette étape sera bientôt documentée."
+    "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
   ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "",
+      "summary": "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon.",
       "quote": null,
       "fullStory": [
-        "Cette étape sera bientôt documentée."
+        "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
       ]
     },
     "en": {
-      "summary": "",
+      "summary": "Train from Paris to Saint-Nazaire, with the bike in the luggage car.",
       "quote": null,
       "fullStory": [
-        "This step will be documented shortly."
+        "Took the train from Paris to Saint-Nazaire, with my bike in the luggage car. Then drove to Le Pouliguen. It was hot."
       ]
     },
     "es": {
-      "summary": "",
+      "summary": "Tren de París a Saint-Nazaire, con la bicicleta en el maletero.",
       "quote": null,
       "fullStory": [
-        "Esta etapa se documentará en breve."
+        "Tren de París a Saint-Nazaire, con la bicicleta en el vagón de carga. Después, por carretera hasta Le Pouliguen. Hacía calor."
       ]
     },
     "it": {
-      "summary": "",
+      "summary": "Treno da Parigi a Saint-Nazaire, con la bicicletta nel bagagliaio.",
       "quote": null,
       "fullStory": [
-        "Questa fase sarà presto documentata."
+        "Treno da Parigi a Saint-Nazaire, con la bici nel bagagliaio. Poi in auto fino a Le Pouliguen. Faceva caldo."
       ]
     },
     "de": {
-      "summary": "",
+      "summary": "Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen.",
       "quote": null,
       "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
+        "Mit dem Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen. Dann weiter mit dem Auto nach Le Pouliguen. Es war heiß."
       ]
     },
     "nl": {
-      "summary": "",
+      "summary": "Trein van Parijs naar Saint-Nazaire, fiets in de bagageruimte.",
       "quote": null,
       "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
+        "Met de trein van Parijs naar Saint-Nazaire, de fiets in de bagageruimte. Daarna over de weg naar Le Pouliguen. Het was warm."
       ]
     }
   },
