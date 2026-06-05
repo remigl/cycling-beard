@@ -10,7 +10,7 @@
   "distanceKm": 105.8,
   "elevationGain": 615,
   "maxAltitude": 70,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-05-31-le-menitre-tours/20260531_134726.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -61,7 +61,18 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-05-31-le-menitre-tours/20260531_134726.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_20260531_134726.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-05-31-le-menitre-tours/20260531_134726.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_20260531_134726.webp",
+      "alt": "134726"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-05-31-le-menitre-tours_1.gpx",
   "mapLat": 47.3652911,

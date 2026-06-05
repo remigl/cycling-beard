@@ -10,7 +10,7 @@
   "distanceKm": 115.6,
   "elevationGain": 626,
   "maxAltitude": 150,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-02-meung-sur-loire-gien/img_3376.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -61,7 +61,23 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-02-meung-sur-loire-gien/img_3376.webp",
+      "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_img_3376.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-02-meung-sur-loire-gien/img_3376.webp",
+      "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_img_3376.webp",
+      "alt": "Img 3376"
+    },
+    {
+      "src": "/media/2026-06-02-meung-sur-loire-gien/img_3388.webp",
+      "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_img_3388.webp",
+      "alt": "Img 3388"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-02-meung-sur-loire-gien_1.gpx",
   "mapLat": 47.6870117,

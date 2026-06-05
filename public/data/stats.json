@@ -1,11 +1,11 @@
 {
-  "totalKm": 696,
+  "totalKm": 754,
   "totalCountries": 1,
-  "totalDays": 8,
-  "totalElevation": 3757,
+  "totalDays": 9,
+  "totalElevation": 4215,
   "currentCountry": "France",
-  "currentLocation": "Sauvigny Les Bois → Decize",
+  "currentLocation": "Decize → Paray Le Monial",
   "startDate": "2026-05-26",
   "lastUpdate": "2026-06-05",
-  "latestStageSlug": "2026-06-04-sauvigny-les-bois-decize"
+  "latestStageSlug": "2026-06-05-decize-paray-le-monial"
 }

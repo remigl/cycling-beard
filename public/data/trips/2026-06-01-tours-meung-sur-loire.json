@@ -10,7 +10,7 @@
   "distanceKm": 124.5,
   "elevationGain": 745,
   "maxAltitude": 98,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-01-tours-meung-sur-loire/img_3358.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -61,7 +61,43 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3358.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3358.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3358.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3358.webp",
+      "alt": "Img 3358"
+    },
+    {
+      "src": "/media/2026-06-01-tours-meung-sur-loire/20260601_114005.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_20260601_114005.webp",
+      "alt": "114005"
+    },
+    {
+      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3362.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3362.webp",
+      "alt": "Img 3362"
+    },
+    {
+      "src": "/media/2026-06-01-tours-meung-sur-loire/20260601_151710.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_20260601_151710.webp",
+      "alt": "151710"
+    },
+    {
+      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3363.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3363.webp",
+      "alt": "Img 3363"
+    },
+    {
+      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3365.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3365.webp",
+      "alt": "Img 3365"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-01-tours-meung-sur-loire_1.gpx",
   "mapLat": 47.3890227,

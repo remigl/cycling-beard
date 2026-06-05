@@ -1,0 +1,75 @@
+{
+  "slug": "2026-06-05-decize-paray-le-monial",
+  "date": "2026-06-05",
+  "title": "Decize → Paray Le Monial",
+  "day": "Jour 11",
+  "location": "Decize → Paray Le Monial",
+  "country": "France",
+  "startCity": null,
+  "endCity": null,
+  "distanceKm": 0,
+  "elevationGain": 0,
+  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "heroVideo": null,
+  "summary": "",
+  "fullStory": [
+    "Cette étape sera bientôt documentée."
+  ],
+  "quote": null,
+  "translations": {
+    "fr": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Cette étape sera bientôt documentée."
+      ]
+    },
+    "en": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "This step will be documented shortly."
+      ]
+    },
+    "es": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Esta etapa se documentará en breve."
+      ]
+    },
+    "it": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Questa fase sarà presto documentata."
+      ]
+    },
+    "de": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Dieser Schritt wird in Kürze dokumentiert."
+      ]
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": [
+        "Deze stap wordt binnenkort beschreven."
+      ]
+    }
+  },
+  "photos": [],
+  "videos": [],
+  "gpxFile": null,
+  "mapLat": null,
+  "mapLng": null,
+  "startLat": null,
+  "startLng": null,
+  "track": [],
+  "segments": [],
+  "highlights": [],
+  "tags": [],
+  "weather": null
+}
