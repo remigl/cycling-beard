@@ -1,7 +1,7 @@
 {
   "slug": "2026-05-29-le-pouliguen-mauves-sur-loire",
   "date": "2026-05-29",
-  "title": "Le Pouliguen → Mauves Sur Loire",
+  "title": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
   "day": "Jour 4",
   "location": "Le Pouliguen → Mauves Sur Loire",
   "country": "France",
@@ -12,52 +12,59 @@
   "maxAltitude": 58,
   "coverImage": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la plage de la baule.webp",
   "heroVideo": null,
-  "summary": "",
+  "summary": "Nuit chez Jeff et son chat Bada.",
   "fullStory": [
-    "Cette étape sera bientôt documentée."
+    "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+    "Reveil des plus durs."
   ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "",
+      "summary": "Nuit chez Jeff et son chat Bada.",
       "quote": null,
       "fullStory": [
-        "Cette étape sera bientôt documentée."
+        "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+        "Reveil des plus durs."
       ]
     },
     "en": {
-      "summary": "",
+      "summary": "Spent the night at Jeff's place with his cat, Bada.",
       "quote": null,
       "fullStory": [
-        "This step will be documented shortly."
+        "Spent the night at Jeff's place with his cat, Bada. Really nice—we had pizza and non-alcoholic pastis.",
+        "A rough wake-up call."
       ]
     },
     "es": {
-      "summary": "",
+      "summary": "Noche en casa de Jeff y su gato Bada.",
       "quote": null,
       "fullStory": [
-        "Esta etapa se documentará en breve."
+        "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable: una velada con pizza y pastis sin alcohol.",
+        "Un despertar de lo más duro."
       ]
     },
     "it": {
-      "summary": "",
+      "summary": "Notte a casa di Jeff e del suo gatto Bada.",
       "quote": null,
       "fullStory": [
-        "Questa fase sarà presto documentata."
+        "Notte da Jeff e il suo gatto Bada. Sono stati davvero gentili, abbiamo passato la serata con pizza e pastis analcolico.",
+        "Una sveglia da duri."
       ]
     },
     "de": {
-      "summary": "",
+      "summary": "Übernachtung bei Jeff und seiner Katze Bada.",
       "quote": null,
       "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
+        "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
+        "Ein Weckruf für die Hartgesottenen."
       ]
     },
     "nl": {
-      "summary": "",
+      "summary": "Overnachting bij Jeff en zijn kat Bada.",
       "quote": null,
       "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
+        "Overnachting bij Jeff en zijn kat Bada. Heel gezellig, een avondje pizza en alcoholvrije pastis.",
+        "Een ontwaken voor de echte doorzetters."
       ]
     }
   },
