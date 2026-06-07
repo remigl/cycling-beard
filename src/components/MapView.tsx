@@ -87,18 +87,64 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
       });
     });
 
-    // Marqueurs aux étapes
-    tripsWithCoords.forEach(trip => {
-      const marker = L.circleMarker([trip.mapLat, trip.mapLng], {
-        radius: 7,
-        fillColor: "#2A6B73",
-        color: "#fff",
-        weight: 2,
-        fillOpacity: 1,
-      }).addTo(map);
+    // Marqueurs aux étapes — différencier départ / actuel / intermédiaire
+    // trips est en ordre chronologique : [0] = départ, dernier = position actuelle
+    const lastIdx = tripsWithCoords.length - 1;
 
-      marker.bindPopup(`<strong>${trip.title}</strong><br>${trip.date} · ${trip.distanceKm} km`);
-      marker.on("click", () => setActiveTrip(trip));
+    // Point de départ réel = début du tout premier tracé
+    const firstTrip = tripsWithCoords[0];
+    let departurePoint = firstTrip ? [firstTrip.mapLat, firstTrip.mapLng] : null;
+    if (firstTrip) {
+      const segs = (firstTrip.segments && firstTrip.segments.length > 0)
+        ? firstTrip.segments : (firstTrip.track ? [firstTrip.track] : []);
+      if (segs.length > 0 && segs[0].length > 0) {
+        departurePoint = segs[0][0]; // tout premier point GPS
+      }
+    }
+
+    // Marqueur de départ (vert avec drapeau)
+    if (departurePoint) {
+      const startIcon = L.divIcon({
+        html: `<div style="background:#16a34a;width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;"><span style="transform:rotate(45deg);font-size:13px;">🚩</span></div>`,
+        className: "",
+        iconSize: [26, 26],
+        iconAnchor: [13, 26],
+      });
+      L.marker(departurePoint, { icon: startIcon, zIndexOffset: 500 })
+        .addTo(map)
+        .bindPopup(`<strong>Départ</strong><br>${firstTrip.title}`);
+      allBounds.push(departurePoint);
+    }
+
+    tripsWithCoords.forEach((trip, idx) => {
+      const isCurrent = idx === lastIdx;
+
+      if (isCurrent) {
+        // Position actuelle : gros marqueur orange pulsant
+        const currentIcon = L.divIcon({
+          html: `<div style="position:relative;display:flex;align-items:center;justify-content:center;">
+            <div style="position:absolute;width:34px;height:34px;border-radius:50%;background:rgba(232,98,10,.3);animation:bmcpulse 1.8s infinite;"></div>
+            <div style="width:18px;height:18px;border-radius:50%;background:#E8620A;border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);"></div>
+          </div>`,
+          className: "",
+          iconSize: [34, 34],
+          iconAnchor: [17, 17],
+        });
+        const m = L.marker([trip.mapLat, trip.mapLng], { icon: currentIcon, zIndexOffset: 1000 }).addTo(map);
+        m.bindPopup(`<strong>📍 Position actuelle</strong><br>${trip.title}<br>${trip.date}`);
+        m.on("click", () => setActiveTrip(trip));
+      } else if (idx > 0) {
+        // Étapes intermédiaires (le départ idx 0 a déjà son drapeau)
+        const marker = L.circleMarker([trip.mapLat, trip.mapLng], {
+          radius: 6,
+          fillColor: "#2A6B73",
+          color: "#fff",
+          weight: 2,
+          fillOpacity: 1,
+        }).addTo(map);
+        marker.bindPopup(`<strong>${trip.title}</strong><br>${trip.date} · ${trip.distanceKm} km`);
+        marker.on("click", () => setActiveTrip(trip));
+      }
       allBounds.push([trip.mapLat, trip.mapLng]);
     });
 
@@ -113,6 +159,7 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
 
   return (
     <div className="w-full min-h-screen pt-24 pb-20 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
+      <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
       <div className="max-w-6xl w-full text-left">
 
         {/* Header */}
@@ -126,6 +173,19 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
           <p className="text-xs text-text-dim text-opacity-80 mt-2 font-light">
             {t("map.intro")}
           </p>
+
+          {/* Légende */}
+          <div className="flex items-center gap-5 mt-4 font-mono text-[10px] text-text-dim">
+            <span className="flex items-center gap-1.5">
+              <span className="text-sm">🚩</span> {t("map.start")}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full" style={{ background: "#2A6B73", border: "2px solid #fff" }} /> {t("map.stage")}
+            </span>
+            <span className="flex items-center gap-1.5">
+              <span className="w-3 h-3 rounded-full" style={{ background: "#E8620A", border: "2px solid #fff" }} /> {t("map.current")}
+            </span>
+          </div>
         </div>
 
         <div className="grid lg:grid-cols-12 gap-8 items-stretch">
