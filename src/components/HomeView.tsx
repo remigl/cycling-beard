@@ -1,9 +1,31 @@
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { SiteStats, TripSummary } from "../types";
 import { Lang } from "../i18n";
 
 // URL Buy Me a Coffee
 const BMC_URL = "https://buymeacoffee.com/cyclingBeard";
+
+// Code météo Open-Meteo → emoji
+function weatherIcon(code: number): string {
+  if (code === 0) return "☀️";
+  if (code <= 2) return "🌤️";
+  if (code === 3) return "☁️";
+  if (code <= 48) return "🌫️";
+  if (code <= 67) return "🌧️";
+  if (code <= 77) return "🌨️";
+  if (code <= 82) return "🌧️";
+  if (code <= 86) return "🌨️";
+  if (code >= 95) return "⛈️";
+  return "🌥️";
+}
+
+interface WeatherDay {
+  label: string;
+  icon: string;
+  tempMax: number;
+  tempMin: number;
+}
 
 interface AboutData {
   paragraphs: string[];
@@ -25,6 +47,31 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
   const latest = trips[trips.length - 1];
   const heroImage = latest?.coverImage ||
     "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1600";
+
+  const [weather, setWeather] = useState<WeatherDay[]>([]);
+
+  // Récupère la météo 2 jours de la position actuelle (dernier point GPS)
+  useEffect(() => {
+    if (!latest?.mapLat || !latest?.mapLng) return;
+    const labels: Record<string, [string, string]> = {
+      fr: ["Aujourd'hui", "Demain"], en: ["Today", "Tomorrow"],
+      es: ["Hoy", "Mañana"], it: ["Oggi", "Domani"],
+      de: ["Heute", "Morgen"], nl: ["Vandaag", "Morgen"],
+    };
+    const [todayLbl, tomorrowLbl] = labels[lang] || labels.fr;
+
+    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latest.mapLat}&longitude=${latest.mapLng}&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=2`)
+      .then(r => r.json())
+      .then(data => {
+        const d = data.daily;
+        if (!d) return;
+        setWeather([
+          { label: todayLbl, icon: weatherIcon(d.weather_code[0]), tempMax: Math.round(d.temperature_2m_max[0]), tempMin: Math.round(d.temperature_2m_min[0]) },
+          { label: tomorrowLbl, icon: weatherIcon(d.weather_code[1]), tempMax: Math.round(d.temperature_2m_max[1]), tempMin: Math.round(d.temperature_2m_min[1]) },
+        ]);
+      })
+      .catch(() => setWeather([]));
+  }, [latest?.mapLat, latest?.mapLng, lang]);
 
   const metrics = stats
     ? [
@@ -91,11 +138,26 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
               ))}
             </div>
 
-            <div className="border-t border-white/10 pt-4 flex justify-center text-xs font-mono">
-              <span className="text-text-on flex items-center gap-1.5">
+            <div className="border-t border-white/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
+              <span className="text-brand-sand flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 {stats ? `${stats.currentLocation} · ${stats.currentCountry}` : t("home.locating")}
               </span>
+
+              {/* Météo 2 jours */}
+              {weather.length > 0 && (
+                <div className="flex items-center gap-5 mt-1">
+                  {weather.map((day, i) => (
+                    <div key={i} className="flex items-center gap-2 text-text-on">
+                      <span className="text-lg">{day.icon}</span>
+                      <div className="flex flex-col leading-tight">
+                        <span className="text-[9px] uppercase tracking-wider text-brand-sand font-bold">{day.label}</span>
+                        <span className="text-[11px]">{day.tempMax}° / {day.tempMin}°</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           </motion.div>
         </div>
