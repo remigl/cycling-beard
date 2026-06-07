@@ -708,6 +708,9 @@ async function main() {
     track: s.track || [],
     segments: s.segments || [],
     tags: s.tags || [],
+    fullStory: s.fullStory || [],
+    photos: s.photos || [],
+    translations: s.translations || null,
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
