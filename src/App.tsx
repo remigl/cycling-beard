@@ -121,7 +121,7 @@ export default function App() {
               <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} t={t} about={about} lang={lang} />
             )}
             {activeTab === "journey" && (
-              <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} />
+              <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} lang={lang} />
             )}
             {activeTab === "stage" && (
               <StageDetailView slug={activeStageSlug} onNavigate={handleCustomNavigate} lang={lang} t={t} />
