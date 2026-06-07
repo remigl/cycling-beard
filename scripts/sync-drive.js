@@ -725,7 +725,7 @@ async function main() {
     totalDays: stages.length,
     totalElevation: Math.round(totalElevation),
     currentCountry: lastStage?.country || "France",
-    currentLocation: lastStage?.location || "Saint-Nazaire, France",
+    currentLocation: lastStage?.endCity || lastStage?.location || "Saint-Nazaire",
     startDate: "2026-05-26",
     lastUpdate: new Date().toISOString().split("T")[0],
     latestStageSlug: lastStage?.slug || "",
