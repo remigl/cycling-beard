@@ -141,18 +141,22 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             <div className="border-t border-white/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
               <span className="text-brand-sand flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                {stats ? `${stats.currentLocation} · ${stats.currentCountry}` : t("home.locating")}
+                {stats ? `${t("home.current")} : ${stats.currentLocation}` : t("home.locating")}
               </span>
 
               {/* Météo 2 jours */}
               {weather.length > 0 && (
-                <div className="flex items-center gap-5 mt-1">
+                <div className="flex items-center gap-6 mt-1">
                   {weather.map((day, i) => (
-                    <div key={i} className="flex items-center gap-2 text-text-on">
-                      <span className="text-lg">{day.icon}</span>
+                    <div key={i} className="flex items-center gap-2">
+                      <span className="text-2xl">{day.icon}</span>
                       <div className="flex flex-col leading-tight">
                         <span className="text-[9px] uppercase tracking-wider text-brand-sand font-bold">{day.label}</span>
-                        <span className="text-[11px]">{day.tempMax}° / {day.tempMin}°</span>
+                        <span className="text-[11px] text-text-on">
+                          <span className="text-red-400">{day.tempMax}°</span>
+                          {" / "}
+                          <span className="text-sky-400">{day.tempMin}°</span>
+                        </span>
                       </div>
                     </div>
                   ))}
