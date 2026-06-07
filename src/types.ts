@@ -18,6 +18,9 @@ export interface TripSummary {
   track?: [number, number][];
   segments?: [number, number][][];
   tags?: string[];
+  fullStory?: string[];
+  photos?: { src: string; thumb: string; alt: string }[];
+  translations?: Record<string, { summary: string; quote: string | null; fullStory: string[] }>;
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────
