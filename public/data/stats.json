@@ -1,11 +1,11 @@
 {
-  "totalKm": 848,
+  "totalKm": 982,
   "totalCountries": 1,
-  "totalDays": 9,
-  "totalElevation": 4794,
-  "currentCountry": "France",
-  "currentLocation": "Decize → Paray Le Monial",
+  "totalDays": 10,
+  "totalElevation": 5751,
+  "currentCountry": "—",
+  "currentLocation": "Paray Le Monial → Verjux",
   "startDate": "2026-05-26",
   "lastUpdate": "2026-06-07",
-  "latestStageSlug": "2026-06-05-decize-paray-le-monial"
+  "latestStageSlug": "2026-06-06-paray-le-monial-verjux"
 }
