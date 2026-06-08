@@ -499,7 +499,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
               <Mountain size={16} className="text-brand-sand" />
               <h4 className="font-display font-bold text-xs uppercase text-text-on tracking-wider">{t("stage.replay")}</h4>
             </div>
-            <RideReplay track={stage.track || []} t={t} />
+            <RideReplay segments={stage.segments} track={stage.track} t={t} />
           </div>
         )}
       </div>
