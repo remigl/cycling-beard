@@ -1,4 +1,4 @@
-import { Compass, ShieldCheck, Milestone, Navigation, ArrowRight, Info } from "lucide-react";
+import { Navigation, ArrowRight, Info } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { TripSummary } from "../types";
 
@@ -269,37 +269,6 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
                 </button>
               </div>
             )}
-          </div>
-        </div>
-
-        {/* Info strip */}
-        <div className="mt-12 bg-[#1b1a1a]/55 border border-white/5 rounded-lg p-6 md:p-8 grid md:grid-cols-3 gap-6 text-left">
-          <div className="flex items-start gap-3">
-            <ShieldCheck size={20} className="text-brand-sand shrink-0 mt-0.5" />
-            <div>
-              <h4 className="font-display font-bold text-xs uppercase text-text-on">Tracé GPX réel</h4>
-              <p className="text-[11px] text-text-dim text-opacity-70 leading-relaxed font-light mt-1">
-                Chaque route provient du fichier GPX enregistré sur le terrain.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <Milestone size={20} className="text-brand-sand shrink-0 mt-0.5" />
-            <div>
-              <h4 className="font-display font-bold text-xs uppercase text-text-on">Mise à jour auto</h4>
-              <p className="text-[11px] text-text-dim text-opacity-70 leading-relaxed font-light mt-1">
-                Un dossier déposé sur Drive ajoute le tracé automatiquement.
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-3">
-            <Compass size={20} className="text-brand-sand shrink-0 mt-0.5" />
-            <div>
-              <h4 className="font-display font-bold text-xs uppercase text-text-on">OpenStreetMap</h4>
-              <p className="text-[11px] text-text-dim text-opacity-70 leading-relaxed font-light mt-1">
-                Cartographie libre et gratuite, sans clé API ni limite.
-              </p>
-            </div>
           </div>
         </div>
       </div>
