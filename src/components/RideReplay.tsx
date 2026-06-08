@@ -50,15 +50,17 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       container: containerRef.current,
       style: `https://api.maptiler.com/maps/satellite/style.json?key=${MAPTILER_KEY}`,
       center: coords[0],
-      zoom: 13,
-      pitch: 60,
+      zoom: 12,
+      pitch: 0,
       bearing: 0,
       antialias: true,
+      maxPitch: 85,
     });
     mapRef.current = map;
 
     // Le conteneur peut avoir une taille nulle si l'onglet vient de s'ouvrir
     setTimeout(() => { try { map.resize(); } catch {} }, 100);
+    setTimeout(() => { try { map.resize(); } catch {} }, 500);
 
     // Si le style échoue, on log mais on n'empêche pas l'affichage
     map.on("error", (e: any) => {
@@ -70,15 +72,21 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     });
 
     map.on("load", () => {
-      // Terrain 3D (optionnel — n'empêche pas l'affichage si échec)
+      // Terrain 3D — source DEM MapTiler
       try {
-        map.addSource("terrain", {
+        map.addSource("terrainSource", {
           type: "raster-dem",
           url: `https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=${MAPTILER_KEY}`,
+          tileSize: 256,
         });
-        map.setTerrain({ source: "terrain", exaggeration: 1.4 });
+        map.setTerrain({ source: "terrainSource", exaggeration: 1.5 });
+        // Incline la caméra une fois le terrain prêt
+        map.once("idle", () => {
+          map.easeTo({ pitch: 62, duration: 1500 });
+        });
       } catch (err) {
         console.warn("Terrain 3D indisponible:", err);
+        map.easeTo({ pitch: 55, duration: 1000 });
       }
 
       // Tracé
@@ -104,9 +112,9 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       const rider = new maplibregl.Marker({ element: riderEl }).setLngLat(coords[0]).addTo(map);
       (map as any)._rider = rider;
 
-      // Cadre la vue sur tout le tracé
+      // Cadre la vue sur tout le tracé (à plat, le pitch est appliqué après)
       const bounds = coords.reduce((b: any, c: any) => b.extend(c), new maplibregl.LngLatBounds(coords[0], coords[0]));
-      map.fitBounds(bounds, { padding: 60, pitch: 60, duration: 0 });
+      map.fitBounds(bounds, { padding: 60, duration: 0 });
       setReady(true);
     });
 
@@ -148,7 +156,13 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
 
     rider?.setLngLat([lng, lat]);
-    map.easeTo({ center: [lng, lat], bearing, pitch: 65, zoom: 15, duration: 100, easing: (x: number) => x });
+    // Suit la caméra en douceur : on garde le zoom courant, on ajuste juste centre/cap
+    map.jumpTo({
+      center: [lng, lat],
+      bearing,
+      pitch: 62,
+      zoom: 14.5,
+    });
 
     if (progressRef.current < 1 && playing) {
       animRef.current = requestAnimationFrame(animate);
@@ -157,7 +171,12 @@ export default function RideReplay({ track, t }: RideReplayProps) {
 
   useEffect(() => {
     if (playing) {
-      animRef.current = requestAnimationFrame(animate);
+      // Laisse le zoom d'entrée se faire avant de lancer le survol
+      const delay = progressRef.current === 0 ? 1500 : 0;
+      const tid = setTimeout(() => {
+        animRef.current = requestAnimationFrame(animate);
+      }, delay);
+      return () => { clearTimeout(tid); if (animRef.current) cancelAnimationFrame(animRef.current); };
     } else if (animRef.current) {
       cancelAnimationFrame(animRef.current);
     }
@@ -166,6 +185,14 @@ export default function RideReplay({ track, t }: RideReplayProps) {
 
   const handlePlayPause = () => {
     if (progressRef.current >= 1) progressRef.current = 0;
+    const map = mapRef.current;
+    // Au démarrage, zoom doux vers le point courant avant de lancer le survol
+    if (map && !playing && progressRef.current === 0 && coords.length > 1) {
+      const dx = coords[1][0] - coords[0][0];
+      const dy = coords[1][1] - coords[0][1];
+      const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
+      map.easeTo({ center: coords[0], zoom: 14.5, pitch: 62, bearing, duration: 1500 });
+    }
     setPlaying(p => !p);
   };
 
@@ -177,7 +204,7 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       const maplibregl = (window as any).maplibregl;
       (map as any)._rider?.setLngLat(coords[0]);
       const bounds = coords.reduce((b: any, c: any) => b.extend(c), new maplibregl.LngLatBounds(coords[0], coords[0]));
-      map.fitBounds(bounds, { padding: 60, pitch: 60, duration: 1000 });
+      map.fitBounds(bounds, { padding: 60, pitch: 0, bearing: 0, duration: 1000 });
     }
   };
 
