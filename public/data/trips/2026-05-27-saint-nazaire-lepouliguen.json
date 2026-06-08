@@ -1,10 +1,11 @@
 {
   "slug": "2026-05-27-saint-nazaire-lepouliguen",
   "date": "2026-05-27",
-  "title": "Paris → Le Pouliguen",
+  "title": "Saint Nazaire → Lepouliguen",
   "day": "Jour 2",
   "location": "Saint Nazaire → Lepouliguen",
   "country": "France",
+  "region": "Pays de la Loire",
   "startCity": "La Baule-Escoublac",
   "endCity": "La Baule-Escoublac",
   "distanceKm": 24.8,
@@ -12,52 +13,52 @@
   "maxAltitude": 40,
   "coverImage": "/media/2026-05-27-saint-nazaire-lepouliguen/le dîner de roi.webp",
   "heroVideo": null,
-  "summary": "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon.",
+  "summary": "",
   "fullStory": [
-    "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
+    "Cette étape sera bientôt documentée."
   ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon.",
+      "summary": "",
       "quote": null,
       "fullStory": [
-        "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
+        "Cette étape sera bientôt documentée."
       ]
     },
     "en": {
-      "summary": "Train from Paris to Saint-Nazaire, with the bike in the luggage car.",
+      "summary": "",
       "quote": null,
       "fullStory": [
-        "Took the train from Paris to Saint-Nazaire, with my bike in the baggage car. Then drove to Le Pouliguen. It was hot."
+        "This step will be documented shortly."
       ]
     },
     "es": {
-      "summary": "Tren de París a Saint-Nazaire, con la bicicleta en el maletero.",
+      "summary": "",
       "quote": null,
       "fullStory": [
-        "Tren de París a Saint-Nazaire, con la bicicleta en el vagón de carga. Después, por carretera hasta Le Pouliguen. Hacía calor."
+        "Esta etapa se documentará en breve."
       ]
     },
     "it": {
-      "summary": "Treno da Parigi a Saint-Nazaire, con la bicicletta nel bagagliaio.",
+      "summary": "",
       "quote": null,
       "fullStory": [
-        "Treno da Parigi a Saint-Nazaire, con la bici nel bagagliaio. Poi in auto fino a Le Pouliguen. Faceva caldo."
+        "Questa fase sarà presto documentata."
       ]
     },
     "de": {
-      "summary": "Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen.",
+      "summary": "",
       "quote": null,
       "fullStory": [
-        "Mit dem Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen. Dann weiter mit dem Auto nach Le Pouliguen. Es war heiß."
+        "Dieser Schritt wird in Kürze dokumentiert."
       ]
     },
     "nl": {
-      "summary": "Trein van Parijs naar Saint-Nazaire, fiets in de bagageruimte.",
+      "summary": "",
       "quote": null,
       "fullStory": [
-        "Met de trein van Parijs naar Saint-Nazaire, de fiets in de bagageruimte. Daarna over de weg naar Le Pouliguen. Het was warm."
+        "Deze stap wordt binnenkort beschreven."
       ]
     }
   },
@@ -7393,6 +7394,497 @@
       ]
     ]
   ],
+  "elevProfile": [
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0.1,
+      4
+    ],
+    [
+      0.2,
+      5
+    ],
+    [
+      0.2,
+      5
+    ],
+    [
+      0.3,
+      5
+    ],
+    [
+      0.3,
+      4
+    ],
+    [
+      0.4,
+      4
+    ],
+    [
+      0.5,
+      4
+    ],
+    [
+      0.5,
+      4
+    ],
+    [
+      0.6,
+      4
+    ],
+    [
+      0.6,
+      4
+    ],
+    [
+      0.7,
+      4
+    ],
+    [
+      0.7,
+      4
+    ],
+    [
+      0.8,
+      4
+    ],
+    [
+      0.8,
+      4
+    ],
+    [
+      0.9,
+      3
+    ],
+    [
+      0.9,
+      3
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1.1,
+      3
+    ],
+    [
+      1.1,
+      3
+    ],
+    [
+      1.2,
+      3
+    ],
+    [
+      1.2,
+      4
+    ],
+    [
+      1.3,
+      5
+    ],
+    [
+      1.3,
+      6
+    ],
+    [
+      1.4,
+      6
+    ],
+    [
+      1.4,
+      5
+    ],
+    [
+      1.5,
+      5
+    ],
+    [
+      1.5,
+      5
+    ],
+    [
+      1.6,
+      5
+    ],
+    [
+      1.6,
+      5
+    ],
+    [
+      1.6,
+      5
+    ],
+    [
+      1.7,
+      5
+    ],
+    [
+      1.7,
+      5
+    ],
+    [
+      1.7,
+      4
+    ],
+    [
+      1.8,
+      5
+    ],
+    [
+      1.8,
+      5
+    ],
+    [
+      1.8,
+      5
+    ],
+    [
+      1.9,
+      5
+    ],
+    [
+      1.9,
+      5
+    ],
+    [
+      1.9,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2.1,
+      5
+    ],
+    [
+      2.1,
+      6
+    ],
+    [
+      2.1,
+      6
+    ],
+    [
+      2.1,
+      5
+    ],
+    [
+      2.2,
+      5
+    ],
+    [
+      2.2,
+      4
+    ],
+    [
+      2.3,
+      4
+    ],
+    [
+      2.3,
+      4
+    ],
+    [
+      2.3,
+      4
+    ],
+    [
+      2.4,
+      3
+    ],
+    [
+      2.4,
+      4
+    ],
+    [
+      2.4,
+      4
+    ],
+    [
+      2.5,
+      4
+    ],
+    [
+      2.5,
+      4
+    ],
+    [
+      2.5,
+      4
+    ],
+    [
+      2.5,
+      4
+    ],
+    [
+      2.5,
+      9
+    ],
+    [
+      2.8,
+      9
+    ],
+    [
+      3.1,
+      7
+    ],
+    [
+      3.5,
+      7
+    ],
+    [
+      3.9,
+      7
+    ],
+    [
+      4.3,
+      6
+    ],
+    [
+      4.7,
+      7
+    ],
+    [
+      5.2,
+      7
+    ],
+    [
+      5.6,
+      6
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      6.5,
+      16
+    ],
+    [
+      6.9,
+      22
+    ],
+    [
+      7.3,
+      29
+    ],
+    [
+      7.6,
+      31
+    ],
+    [
+      8,
+      26
+    ],
+    [
+      8.3,
+      22
+    ],
+    [
+      8.6,
+      26
+    ],
+    [
+      8.9,
+      34
+    ],
+    [
+      9.2,
+      39
+    ],
+    [
+      9.4,
+      39
+    ],
+    [
+      9.8,
+      37
+    ],
+    [
+      10.2,
+      29
+    ],
+    [
+      10.7,
+      13
+    ],
+    [
+      11,
+      6
+    ],
+    [
+      11.3,
+      4
+    ],
+    [
+      11.6,
+      9
+    ],
+    [
+      11.9,
+      10
+    ],
+    [
+      12.1,
+      21
+    ],
+    [
+      12.4,
+      25
+    ],
+    [
+      12.9,
+      26
+    ],
+    [
+      13.3,
+      27
+    ],
+    [
+      13.8,
+      21
+    ],
+    [
+      14.4,
+      12
+    ],
+    [
+      14.8,
+      11
+    ],
+    [
+      15.2,
+      19
+    ],
+    [
+      15.8,
+      11
+    ],
+    [
+      16.2,
+      8
+    ],
+    [
+      16.6,
+      8
+    ],
+    [
+      17.1,
+      7
+    ],
+    [
+      17.6,
+      5
+    ],
+    [
+      17.8,
+      5
+    ],
+    [
+      18,
+      7
+    ],
+    [
+      18.4,
+      7
+    ],
+    [
+      18.7,
+      8
+    ],
+    [
+      19,
+      7
+    ],
+    [
+      19.4,
+      7
+    ],
+    [
+      19.7,
+      7
+    ],
+    [
+      20.2,
+      5
+    ],
+    [
+      20.6,
+      9
+    ],
+    [
+      21,
+      8
+    ],
+    [
+      21.4,
+      8
+    ],
+    [
+      21.7,
+      8
+    ],
+    [
+      22.1,
+      8
+    ],
+    [
+      22.5,
+      7
+    ],
+    [
+      22.9,
+      8
+    ],
+    [
+      23.2,
+      8
+    ],
+    [
+      23.5,
+      8
+    ],
+    [
+      23.8,
+      7
+    ],
+    [
+      24.1,
+      6
+    ],
+    [
+      24.4,
+      6
+    ],
+    [
+      24.7,
+      6
+    ]
+  ],
+  "minAltitude": 3,
   "highlights": [],
   "tags": [],
   "weather": null
