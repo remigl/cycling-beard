@@ -160,18 +160,21 @@ async function processImage(srcPath, destDir, baseName) {
 // ─── Reverse Geocoding (Nominatim / OpenStreetMap, gratuit) ──────────────────
 
 async function reverseGeocode(lat, lng) {
-  if (lat == null || lng == null) return null;
+  if (lat == null || lng == null) return { city: null, region: null };
   try {
     const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`;
     const res = await fetch(url, {
       headers: { "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync)" },
     });
-    if (!res.ok) return null;
+    if (!res.ok) return { city: null, region: null };
     const data = await res.json();
     const a = data.address || {};
-    return a.city || a.town || a.village || a.municipality || a.county || null;
+    return {
+      city: a.city || a.town || a.village || a.municipality || a.county || null,
+      region: a.state || a.region || null,  // ex: Pays de la Loire, Bourgogne-Franche-Comté
+    };
   } catch {
-    return null;
+    return { city: null, region: null };
   }
 }
 
@@ -221,10 +224,28 @@ function parseOneGpx(gpxContent) {
     trackPoints.push(last);
   }
 
+  // Profil altimétrique : ~60 points [distance_km, altitude_m]
+  const profilePoints = 60;
+  const elevProfile = [];
+  let cumDist = 0;
+  const profStep = Math.max(1, Math.floor(points.length / profilePoints));
+  for (let i = 0; i < points.length; i += profStep) {
+    if (i > 0) {
+      // distance cumulée approximée
+      cumDist = (track.distance.cumul?.[i] ?? (i / points.length) * track.distance.total) / 1000;
+    }
+    elevProfile.push([
+      Math.round(cumDist * 10) / 10,
+      Math.round(points[i].ele),
+    ]);
+  }
+
   return {
     distanceKm,
     elevationGain: Math.round(elevationGain),
     maxAltitude: Math.round(maxAlt),
+    minAltitude: Math.round(Math.min(...points.map(p => p.ele))),
+    elevProfile,
     endLat: lastPoint?.lat ?? null,
     endLng: lastPoint?.lon ?? null,
     startLat: points[0]?.lat ?? null,
@@ -240,16 +261,27 @@ function mergeGpxFiles(gpxContents) {
   let totalDistance = 0;
   let totalElevation = 0;
   let maxAltitude = 0;
+  let minAltitude = Infinity;
   let startLat = null, startLng = null;
-  const segments = [];  // chaque GPX = un segment séparé
+  const segments = [];
+  let fullProfile = [];
+  let distOffset = 0;
 
   for (const content of gpxContents) {
     const r = parseOneGpx(content);
     totalDistance += r.distanceKm;
     totalElevation += r.elevationGain;
     if (r.maxAltitude > maxAltitude) maxAltitude = r.maxAltitude;
+    if (r.minAltitude < minAltitude) minAltitude = r.minAltitude;
     if (startLat === null) { startLat = r.startLat; startLng = r.startLng; }
     if (r.track && r.track.length > 1) segments.push(r.track);
+    // Concatène les profils en décalant la distance
+    if (r.elevProfile) {
+      for (const [d, ele] of r.elevProfile) {
+        fullProfile.push([Math.round((distOffset + d) * 10) / 10, ele]);
+      }
+      distOffset += r.distanceKm;
+    }
   }
 
   const lastResult = parseOneGpx(gpxContents[gpxContents.length - 1]);
@@ -257,11 +289,12 @@ function mergeGpxFiles(gpxContents) {
     distanceKm: Math.round(totalDistance * 10) / 10,
     elevationGain: Math.round(totalElevation),
     maxAltitude: Math.round(maxAltitude),
+    minAltitude: minAltitude === Infinity ? 0 : Math.round(minAltitude),
+    elevProfile: fullProfile,
     endLat: lastResult.endLat,
     endLng: lastResult.endLng,
     startLat,
     startLng,
-    // track = premier segment (rétrocompat), segments = tous les tracés séparés
     track: segments[0] || [],
     segments,
   };
@@ -469,16 +502,18 @@ async function syncFolder(drive, folder) {
     thumbWebp = photos[0].thumb;
   }
 
-  // ── Reverse geocoding : noms de villes début/fin ──
-  let startCity = null, endCity = null;
+  // ── Reverse geocoding : noms de villes + région ──
+  let startCity = null, endCity = null, region = null;
   if (gpxStats.startLat != null) {
-    startCity = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
-    // Pause pour respecter la limite Nominatim (1 req/sec)
+    const startGeo = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
+    startCity = startGeo.city;
     await new Promise(r => setTimeout(r, 1100));
-    endCity = await reverseGeocode(gpxStats.endLat, gpxStats.endLng);
+    const endGeo = await reverseGeocode(gpxStats.endLat, gpxStats.endLng);
+    endCity = endGeo.city;
+    region = endGeo.region || startGeo.region;
     await new Promise(r => setTimeout(r, 1100));
     if (startCity || endCity) {
-      console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"}`);
+      console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"} (${region || "région ?"})`);
     }
   }
 
@@ -498,6 +533,7 @@ async function syncFolder(drive, folder) {
     day: `Jour ${computeDayNumber(date)}`,
     location: notes.location || titleRaw,
     country: detectCountry(slug),
+    region: region || null,
     startCity: startCity || null,
     endCity: endCity || null,
     distanceKm: gpxStats.distanceKm,
@@ -520,6 +556,8 @@ async function syncFolder(drive, folder) {
     startLng: gpxStats.startLng ?? null,
     track: gpxStats.track || [],
     segments: gpxStats.segments || [],
+    elevProfile: gpxStats.elevProfile || [],
+    minAltitude: gpxStats.minAltitude ?? null,
     highlights: notes.highlights || [],
     tags: notes.tags || [],
     weather: notes.weather || null,
@@ -714,6 +752,7 @@ async function main() {
     date: s.date,
     title: s.title,
     country: s.country,
+    region: s.region || null,
     startCity: s.startCity || null,
     endCity: s.endCity || null,
     distanceKm: s.distanceKm,
@@ -731,6 +770,8 @@ async function main() {
     fullStory: s.fullStory || [],
     photos: s.photos || [],
     translations: s.translations || null,
+    elevProfile: s.elevProfile || [],
+    minAltitude: s.minAltitude ?? null,
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
