@@ -1,11 +1,11 @@
 {
-  "totalKm": 1060,
+  "totalKm": 1034,
   "totalCountries": 1,
-  "totalDays": 11,
-  "totalElevation": 6105,
+  "totalDays": 12,
+  "totalElevation": 5969,
   "currentCountry": "—",
-  "currentLocation": "Bragny-sur-Saône",
+  "currentLocation": "Orchamps → Fourbanne",
   "startDate": "2026-05-26",
   "lastUpdate": "2026-06-08",
-  "latestStageSlug": "2026-06-07-verjux-orchamps"
+  "latestStageSlug": "2026-06-08-orchamps-fourbanne"
 }

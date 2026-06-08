@@ -15194,30 +15194,4 @@
      <gpxdata:speed>4.986</gpxdata:speed>
     </extensions>
    </trkpt>
-   <trkpt lat="47.2558736" lon="-2.3170404">
-    <ele>15</ele>
-    <time>2026-05-29T06:16:59Z</time>
-    <extensions>
-     <gpxdata:distance>10949.00</gpxdata:distance>
-     <gpxdata:speed>4.914</gpxdata:speed>
-    </extensions>
-   </trkpt>
-   <trkpt lat="47.2558530" lon="-2.3169879">
-    <ele>15</ele>
-    <time>2026-05-29T06:17:00Z</time>
-    <extensions>
-     <gpxdata:distance>10953.50</gpxdata:distance>
-     <gpxdata:speed>4.856</gpxdata:speed>
-    </extensions>
-   </trkpt>
-   <trkpt lat="47.2558323" lon="-2.3169452">
-    <ele>15</ele>
-    <time>2026-05-29T06:17:01Z</time>
-    <extensions>
-     <gpxdata:distance>10958.00</gpxdata:distance>
-     <gpxdata:speed>4.756</gpxdata:speed>
-    </extensions>
-   </trkpt>
-  </trkseg>
- </trk>
-</gpx>
+   <trkpt lat="47.2558736" lon="-2.317
