@@ -168,71 +168,74 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       </div>
 
       {/* ── PRÉSENTATION ── */}
-      <div className="w-full px-4 md:px-14 py-16 md:py-24">
-        <div className="max-w-5xl mx-auto flex flex-col gap-8">
-          <div className="bg-[#1c1b1b] border border-white/5 rounded-2xl p-6 md:p-10 grid md:grid-cols-5 gap-8 items-center">
+      <div className="w-full px-4 md:px-14 py-20 md:py-28 bg-surface-container/30">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="font-mono text-[10px] text-brand-sand font-bold tracking-[0.3em] uppercase mb-3">
+              {t("about.title")}
+            </p>
+            <div className="w-12 h-px bg-brand-sand mx-auto" />
+          </div>
 
-            {/* 2 photos miniatures à gauche */}
-            <div className="md:col-span-2 flex flex-col gap-4">
-              {about?.mePhoto ? (
-                <img
-                  src={about.mePhoto}
-                  alt="Rémi"
-                  referrerPolicy="no-referrer"
-                  className="w-full aspect-[4/3] object-cover rounded-xl"
-                />
-              ) : (
-                <div className="w-full aspect-[4/3] rounded-xl bg-bg-dark border border-white/5 flex items-center justify-center">
-                  <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">Photo de moi</span>
+          <div className="grid md:grid-cols-12 gap-10 md:gap-14 items-center">
+
+            {/* Photos à gauche avec légendes */}
+            <div className="md:col-span-5 flex flex-col gap-6">
+              <figure className="flex flex-col gap-2">
+                <div className="overflow-hidden rounded-2xl shadow-lg">
+                  {about?.mePhoto ? (
+                    <img src={about.mePhoto} alt="Rémi" referrerPolicy="no-referrer"
+                      className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500" />
+                  ) : (
+                    <div className="w-full aspect-[4/3] bg-bg-dark border border-text-on/5 flex items-center justify-center">
+                      <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">Photo de moi</span>
+                    </div>
+                  )}
                 </div>
-              )}
-              {about?.bikePhoto ? (
-                <img
-                  src={about.bikePhoto}
-                  alt="Le vélo"
-                  referrerPolicy="no-referrer"
-                  className="w-full aspect-[4/3] object-cover rounded-xl"
-                />
-              ) : (
-                <div className="w-full aspect-[4/3] rounded-xl bg-bg-dark border border-white/5 flex items-center justify-center">
-                  <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">Photo du vélo</span>
+                <figcaption className="font-mono text-[9px] text-text-dim uppercase tracking-widest text-center">
+                  {t("about.cap_me")}
+                </figcaption>
+              </figure>
+
+              <figure className="flex flex-col gap-2">
+                <div className="overflow-hidden rounded-2xl shadow-lg">
+                  {about?.bikePhoto ? (
+                    <img src={about.bikePhoto} alt="Le vélo" referrerPolicy="no-referrer"
+                      className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500" />
+                  ) : (
+                    <div className="w-full aspect-[4/3] bg-bg-dark border border-text-on/5 flex items-center justify-center">
+                      <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">Photo du vélo</span>
+                    </div>
+                  )}
                 </div>
-              )}
+                <figcaption className="font-mono text-[9px] text-text-dim uppercase tracking-widest text-center">
+                  {t("about.cap_bike")}
+                </figcaption>
+              </figure>
             </div>
 
             {/* Texte à droite */}
-            <div className="md:col-span-3 flex flex-col gap-4">
-              <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase">
-                {t("about.title")}
-              </p>
-              <div className="flex flex-col gap-3 text-sm md:text-base text-text-dim leading-relaxed font-light">
+            <div className="md:col-span-7 flex flex-col gap-5">
+              <h2 className="font-display text-2xl md:text-3xl font-black text-text-on leading-tight">Rémi</h2>
+              <div className="flex flex-col gap-4 text-base text-text-dim leading-relaxed font-light">
                 {presParagraphs.length > 0 ? (
-                  presParagraphs.map((para, i) => <p key={i}>{para}</p>)
+                  presParagraphs.map((para, i) => (
+                    <p key={i} className={i === 0 ? "text-lg text-text-on font-normal" : ""}>{para}</p>
+                  ))
                 ) : (
-                  <p className="italic text-text-dim text-opacity-50">
-                    Présentation à venir...
-                  </p>
+                  <p className="italic text-text-dim text-opacity-50">Présentation à venir...</p>
                 )}
+              </div>
+
+              <div className="mt-4">
+                <a href={BMC_URL} target="_blank" rel="noopener noreferrer"
+                  className="inline-block hover:opacity-90 hover:-translate-y-0.5 transition-all">
+                  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                    alt={t("support.cta")} style={{ height: "52px", width: "auto" }} referrerPolicy="no-referrer" />
+                </a>
               </div>
             </div>
 
-          </div>
-
-          {/* Bouton Buy Me a Coffee centré en dessous */}
-          <div className="flex justify-center">
-            <a
-              href={BMC_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block hover:opacity-90 transition-opacity"
-            >
-              <img
-                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                alt={t("support.cta")}
-                style={{ height: "54px", width: "auto" }}
-                referrerPolicy="no-referrer"
-              />
-            </a>
           </div>
         </div>
       </div>
