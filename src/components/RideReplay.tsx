@@ -56,26 +56,42 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     });
     mapRef.current = map;
 
+    // Le conteneur peut avoir une taille nulle si l'onglet vient de s'ouvrir
+    setTimeout(() => { try { map.resize(); } catch {} }, 100);
+
+    // Si le style échoue, on log mais on n'empêche pas l'affichage
+    map.on("error", (e: any) => {
+      console.warn("MapLibre error:", e?.error?.message || e);
+    });
+
     map.on("load", () => {
-      // Terrain 3D
-      map.addSource("terrain", {
-        type: "raster-dem",
-        url: `https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=${MAPTILER_KEY}`,
-      });
-      map.setTerrain({ source: "terrain", exaggeration: 1.4 });
+      // Terrain 3D (optionnel — n'empêche pas l'affichage si échec)
+      try {
+        map.addSource("terrain", {
+          type: "raster-dem",
+          url: `https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=${MAPTILER_KEY}`,
+        });
+        map.setTerrain({ source: "terrain", exaggeration: 1.4 });
+      } catch (err) {
+        console.warn("Terrain 3D indisponible:", err);
+      }
 
       // Tracé
-      map.addSource("route", {
-        type: "geojson",
-        data: { type: "Feature", geometry: { type: "LineString", coordinates: coords } },
-      });
-      map.addLayer({
-        id: "route-line",
-        type: "line",
-        source: "route",
-        layout: { "line-join": "round", "line-cap": "round" },
-        paint: { "line-color": "#E8620A", "line-width": 5 },
-      });
+      try {
+        map.addSource("route", {
+          type: "geojson",
+          data: { type: "Feature", geometry: { type: "LineString", coordinates: coords } },
+        });
+        map.addLayer({
+          id: "route-line",
+          type: "line",
+          source: "route",
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: { "line-color": "#E8620A", "line-width": 5 },
+        });
+      } catch (err) {
+        console.warn("Tracé indisponible:", err);
+      }
 
       // Marqueur du rider
       const riderEl = document.createElement("div");
@@ -89,7 +105,11 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       setReady(true);
     });
 
+    // Sécurité : si "load" ne se déclenche pas en 8s, on débloque quand même
+    const fallback = setTimeout(() => setReady(true), 8000);
+
     return () => {
+      clearTimeout(fallback);
       if (animRef.current) cancelAnimationFrame(animRef.current);
       map.remove();
       mapRef.current = null;
