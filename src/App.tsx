@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X, Share2, Search, ArrowRight } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react";
 import Navbar from "./components/Navbar";
 import HomeView from "./components/HomeView";
 import JourneyView from "./components/JourneyView";
@@ -216,6 +217,7 @@ export default function App() {
           </div>
         )}
       </AnimatePresence>
+      <Analytics />
     </div>
   );
 }
