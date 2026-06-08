@@ -84,6 +84,7 @@ export interface StageDetail {
   mapLat?: number;
   mapLng?: number;
   track?: [number, number][];
+  segments?: [number, number][][];
   tags?: string[];
   translations?: Record<string, { summary: string; quote: string | null; fullStory: string[] }>;
   highlights?: string[];
