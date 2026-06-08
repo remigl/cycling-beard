@@ -35,12 +35,12 @@ export default function RideReplay({ track, t }: RideReplayProps) {
   const progressRef = useRef(0);
   const speedRef = useRef(1);
   const lastGeocodeRef = useRef(0);
+  const distRef = useRef<HTMLSpanElement | null>(null);
+  const placeRef = useRef<HTMLSpanElement | null>(null);
   const [playing, setPlaying] = useState(false);
   const [ready, setReady] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [speed, setSpeed] = useState(1);
-  const [currentPlace, setCurrentPlace] = useState<string>("");
-  const [distDone, setDistDone] = useState(0);
 
   const keyMissing = MAPTILER_KEY === "TA_CLE_MAPTILER_ICI";
 
@@ -71,7 +71,7 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       const data = await res.json();
       const a = data.address || {};
       const place = a.city || a.town || a.village || a.municipality || a.county || a.state || "";
-      if (place) setCurrentPlace(place);
+      if (place && placeRef.current) placeRef.current.textContent = place;
     } catch { /* silencieux */ }
   };
 
@@ -221,8 +221,11 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       zoom: 15,
     });
 
-    // Distance parcourue + lieu actuel
-    setDistDone(Math.round(progressRef.current * totalDist * 10) / 10);
+    // Distance : écrit directement dans le DOM (zéro re-render React)
+    if (distRef.current) {
+      distRef.current.textContent = `${(progressRef.current * totalDist).toFixed(1)} / ${totalDist.toFixed(1)} km`;
+    }
+    // Lieu : throttlé à 1 appel / 3s, met à jour le DOM directement
     updatePlace(lat, lng);
 
     if (progressRef.current < 1 && playing) {
@@ -294,16 +297,14 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       <div ref={containerRef} className="w-full h-[480px] md:h-[560px]" />
 
       {/* Bandeau info : lieu traversé + distance */}
-      {ready && (currentPlace || distDone > 0) && (
+      {ready && (
         <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md rounded-xl px-4 py-2.5 border border-white/10">
-          {currentPlace && (
-            <div className="flex items-center gap-2">
-              <MapPin size={13} className="text-brand-sand" />
-              <span className="font-display font-bold text-sm text-white">{currentPlace}</span>
-            </div>
-          )}
+          <div className="flex items-center gap-2">
+            <MapPin size={13} className="text-brand-sand" />
+            <span ref={placeRef} className="font-display font-bold text-sm text-white">—</span>
+          </div>
           <div className="font-mono text-[10px] text-white/60 mt-0.5">
-            {distDone} / {totalDist.toFixed(1)} km
+            <span ref={distRef}>0 / {totalDist.toFixed(1)} km</span>
           </div>
         </div>
       )}
