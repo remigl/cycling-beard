@@ -602,11 +602,27 @@ async function syncAbout(drive, folder) {
   for (const file of files) {
     const name = file.name.toLowerCase();
     const tmpPath = path.join(tmpDir, file.name);
+
+    // Google Doc → export en texte brut
+    if (file.mimeType === "application/vnd.google-apps.document") {
+      try {
+        const res = await drive.files.export(
+          { fileId: file.id, mimeType: "text/plain" },
+          { responseType: "text" }
+        );
+        presentation = (typeof res.data === "string" ? res.data : "").trim();
+        console.log(`  📝 Présentation lue (Google Doc) — ${presentation.length} caractères`);
+      } catch (e) {
+        console.log(`  ⚠️  Erreur export Google Doc : ${e.message}`);
+      }
+      continue;
+    }
+
     await downloadFile(drive, file.id, tmpPath);
 
     if (name.endsWith(".md") || name.endsWith(".txt")) {
       presentation = fs.readFileSync(tmpPath, "utf-8").trim();
-      console.log(`  📝 Présentation lue`);
+      console.log(`  📝 Présentation lue — ${presentation.length} caractères`);
     }
 
     if (name.match(/\.(jpg|jpeg|png|webp)$/i)) {
@@ -626,10 +642,14 @@ async function syncAbout(drive, folder) {
   }
 
   // Découpe la présentation en paragraphes
+  // On retire les # de titre markdown au lieu de supprimer la ligne entière
   const paragraphs = presentation
-    .split("\n")
-    .map(l => l.trim())
-    .filter(l => l.length > 0 && !l.startsWith("#"));
+    .split(/\n\s*\n/)              // sépare par lignes vides (vrais paragraphes)
+    .flatMap(block => block.split("\n"))  // puis par retour ligne simple
+    .map(l => l.replace(/^#+\s*/, "").trim())  // retire les # de titre
+    .filter(l => l.length > 0);
+
+  console.log(`  📝 ${paragraphs.length} paragraphe(s) extraits`);
 
   // Traduit la présentation
   const frPres = { summary: "", quote: null, fullStory: paragraphs };
