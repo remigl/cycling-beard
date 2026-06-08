@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { StageDetail } from "../types";
 import { Lang } from "../i18n";
+import RideReplay from "./RideReplay";
 
 interface StageDetailViewProps {
   slug: string;
@@ -22,7 +23,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
   const [stage, setStage] = useState<StageDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [activeTab, setActiveTab] = useState<"story" | "technical">("story");
+  const [activeTab, setActiveTab] = useState<"story" | "technical" | "replay">("story");
   const [comments, setComments] = useState<Comment[]>([]);
   const [authorName, setAuthorName] = useState("");
   const [commentText, setCommentText] = useState("");
@@ -184,7 +185,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
       {/* Tab nav */}
       <div className="border-y border-white/5 bg-[#1c1b1b] px-6 md:px-14 py-3 sticky top-[48px] z-40">
         <div className="max-w-7xl mx-auto flex gap-6 font-display text-[10px] uppercase tracking-widest font-bold">
-          {(["story", "technical"] as const).map(tab => (
+          {(["story", "technical", "replay"] as const).map(tab => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -194,7 +195,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
                   : "text-text-dim text-opacity-60 hover:text-opacity-100"
               }`}
             >
-              {tab === "story" ? t("stage.story") : t("stage.technical")}
+              {tab === "story" ? t("stage.story") : tab === "technical" ? t("stage.technical") : t("stage.replay")}
             </button>
           ))}
         </div>
@@ -406,7 +407,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
               </div>
             </div>
           </div>
-        ) : (
+        ) : activeTab === "technical" ? (
           /* Technical tab */
           <div className="flex flex-col gap-8">
             <div className="grid md:grid-cols-3 gap-6">
@@ -490,6 +491,15 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
                 </a>
               </div>
             )}
+          </div>
+        ) : (
+          /* Replay 3D tab */
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-2 mb-1">
+              <Mountain size={16} className="text-brand-sand" />
+              <h4 className="font-display font-bold text-xs uppercase text-text-on tracking-wider">{t("stage.replay")}</h4>
+            </div>
+            <RideReplay track={stage.track || []} t={t} />
           </div>
         )}
       </div>
