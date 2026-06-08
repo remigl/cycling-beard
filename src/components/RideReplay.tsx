@@ -72,20 +72,33 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     });
 
     map.on("load", () => {
-      // Terrain 3D — source DEM MapTiler
+      // Terrain 3D — source DEM MapTiler (tuiles explicites pour fiabilité)
       try {
         map.addSource("terrainSource", {
           type: "raster-dem",
-          url: `https://api.maptiler.com/tiles/terrain-rgb-v2/tiles.json?key=${MAPTILER_KEY}`,
+          tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${MAPTILER_KEY}`],
+          minzoom: 0,
+          maxzoom: 12,
           tileSize: 256,
+          encoding: "mapbox",
         });
-        map.setTerrain({ source: "terrainSource", exaggeration: 1.5 });
-        // Incline la caméra une fois le terrain prêt
-        map.once("idle", () => {
-          map.easeTo({ pitch: 62, duration: 1500 });
-        });
+        map.setTerrain({ source: "terrainSource", exaggeration: 1.8 });
+        // Ciel pour un rendu 3D plus immersif
+        try {
+          map.setSky({
+            "sky-color": "#87CEEB",
+            "sky-horizon-blend": 0.5,
+            "horizon-color": "#ffffff",
+            "horizon-fog-blend": 0.5,
+            "fog-color": "#dddddd",
+            "fog-ground-blend": 0.5,
+          });
+        } catch {}
+        // Incline la caméra après chargement des tuiles terrain
+        setTimeout(() => map.easeTo({ pitch: 65, duration: 2000 }), 1200);
       } catch (err) {
         console.warn("Terrain 3D indisponible:", err);
+        setErrorMsg("Terrain 3D indisponible sur ce plan MapTiler");
         map.easeTo({ pitch: 55, duration: 1000 });
       }
 
@@ -130,12 +143,21 @@ export default function RideReplay({ track, t }: RideReplayProps) {
   }, [loaded, keyMissing]);
 
   // Animation de survol
-  const animate = () => {
+  const lastTimeRef = useRef<number>(0);
+  const animate = (timestamp?: number) => {
     const map = mapRef.current;
     if (!map || coords.length < 2) return;
     const rider = (map as any)._rider;
 
-    progressRef.current += 0.0012; // vitesse
+    // Animation basée sur le temps (indépendante du frame rate)
+    const now = timestamp ?? performance.now();
+    if (lastTimeRef.current === 0) lastTimeRef.current = now;
+    const dt = now - lastTimeRef.current;
+    lastTimeRef.current = now;
+
+    // Durée totale du survol ≈ 45 secondes
+    const DURATION_MS = 45000;
+    progressRef.current += dt / DURATION_MS;
     if (progressRef.current >= 1) {
       progressRef.current = 1;
       setPlaying(false);
@@ -150,18 +172,18 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     const lng = coords[i][0] + (coords[next][0] - coords[i][0]) * frac;
     const lat = coords[i][1] + (coords[next][1] - coords[i][1]) * frac;
 
-    // Cap (direction)
-    const dx = coords[next][0] - coords[i][0];
-    const dy = coords[next][1] - coords[i][1];
+    // Cap lissé (moyenne sur quelques points pour éviter les à-coups)
+    const ahead = Math.min(i + 5, coords.length - 1);
+    const dx = coords[ahead][0] - coords[i][0];
+    const dy = coords[ahead][1] - coords[i][1];
     const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
 
     rider?.setLngLat([lng, lat]);
-    // Suit la caméra en douceur : on garde le zoom courant, on ajuste juste centre/cap
     map.jumpTo({
       center: [lng, lat],
       bearing,
-      pitch: 62,
-      zoom: 14.5,
+      pitch: 65,
+      zoom: 15,
     });
 
     if (progressRef.current < 1 && playing) {
@@ -174,6 +196,7 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       // Laisse le zoom d'entrée se faire avant de lancer le survol
       const delay = progressRef.current === 0 ? 1500 : 0;
       const tid = setTimeout(() => {
+        lastTimeRef.current = 0;
         animRef.current = requestAnimationFrame(animate);
       }, delay);
       return () => { clearTimeout(tid); if (animRef.current) cancelAnimationFrame(animRef.current); };
