@@ -169,46 +169,10 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
       {/* ── PRÉSENTATION ── */}
       <div className="w-full px-4 md:px-14 py-16 md:py-24">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto flex flex-col gap-8">
           <div className="bg-[#1c1b1b] border border-white/5 rounded-2xl p-6 md:p-10 grid md:grid-cols-5 gap-8 items-center">
 
-            {/* Texte à gauche */}
-            <div className="md:col-span-3 flex flex-col gap-4">
-              <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase">
-                {t("about.title")}
-              </p>
-              <div className="flex flex-col gap-3 text-sm md:text-base text-text-dim leading-relaxed font-light">
-                {presParagraphs.length > 0 ? (
-                  presParagraphs.map((para, i) => <p key={i}>{para}</p>)
-                ) : (
-                  <p className="italic text-text-dim text-opacity-50">
-                    Présentation à venir...
-                  </p>
-                )}
-              </div>
-
-              {/* Lien soutien */}
-              <div className="mt-4 pt-5 border-t border-white/5">
-                <p className="text-xs text-text-dim text-opacity-70 font-light mb-3">
-                  {t("support.text")}
-                </p>
-                <a
-                  href={BMC_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block hover:opacity-90 transition-opacity"
-                >
-                  <img
-                    src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-                    alt={t("support.cta")}
-                    style={{ height: "50px", width: "auto" }}
-                    referrerPolicy="no-referrer"
-                  />
-                </a>
-              </div>
-            </div>
-
-            {/* 2 photos empilées à droite */}
+            {/* 2 photos miniatures à gauche */}
             <div className="md:col-span-2 flex flex-col gap-4">
               {about?.mePhoto ? (
                 <img
@@ -236,6 +200,39 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
               )}
             </div>
 
+            {/* Texte à droite */}
+            <div className="md:col-span-3 flex flex-col gap-4">
+              <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase">
+                {t("about.title")}
+              </p>
+              <div className="flex flex-col gap-3 text-sm md:text-base text-text-dim leading-relaxed font-light">
+                {presParagraphs.length > 0 ? (
+                  presParagraphs.map((para, i) => <p key={i}>{para}</p>)
+                ) : (
+                  <p className="italic text-text-dim text-opacity-50">
+                    Présentation à venir...
+                  </p>
+                )}
+              </div>
+            </div>
+
+          </div>
+
+          {/* Bouton Buy Me a Coffee centré en dessous */}
+          <div className="flex justify-center">
+            <a
+              href={BMC_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block hover:opacity-90 transition-opacity"
+            >
+              <img
+                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+                alt={t("support.cta")}
+                style={{ height: "54px", width: "auto" }}
+                referrerPolicy="no-referrer"
+              />
+            </a>
           </div>
         </div>
       </div>
