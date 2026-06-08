@@ -4,6 +4,7 @@ export interface TripSummary {
   date: string;
   title: string;
   country: string;
+  region?: string | null;
   startCity?: string | null;
   endCity?: string | null;
   distanceKm: number;
@@ -21,6 +22,8 @@ export interface TripSummary {
   fullStory?: string[];
   photos?: { src: string; thumb: string; alt: string }[];
   translations?: Record<string, { summary: string; quote: string | null; fullStory: string[] }>;
+  elevProfile?: [number, number][];
+  minAltitude?: number | null;
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────
@@ -62,11 +65,14 @@ export interface StageDetail {
   day: string;
   location: string;
   country: string;
+  region?: string | null;
   startCity?: string | null;
   endCity?: string | null;
   distanceKm: number;
   elevationGain: number;
   maxAltitude?: number;
+  minAltitude?: number | null;
+  elevProfile?: [number, number][];
   coverImage: string;
   heroVideo?: string | null;
   summary: string;
