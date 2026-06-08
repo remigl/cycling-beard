@@ -1,231 +1,259 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo } from "react";
 import { Play, Pause, RotateCcw, MapPin } from "lucide-react";
 
-// ─── Configure ta clé MapTiler ici ───────────────────────────────────────────
+// ─── Clé MapTiler ─────────────────────────────────────────────────────────────
 const MAPTILER_KEY = "QxAdnETuTrlBj2mnHXOB";
+const MAPLIBRE_VERSION = "4.7.1";
 // ──────────────────────────────────────────────────────────────────────────────
 
 interface RideReplayProps {
-  track: [number, number][]; // [lat, lng][]
+  // segments = liste de tracés [lat,lng][] (un par GPX). Fallback sur track simple.
+  segments?: [number, number][][];
+  track?: [number, number][];
   t: (key: string) => string;
 }
 
-// Charge MapLibre GL JS dynamiquement (CSS + JS)
+// Charge MapLibre GL JS dynamiquement, une seule fois
 function useMapLibre() {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(!!(window as any).maplibregl);
   useEffect(() => {
     if ((window as any).maplibregl) { setLoaded(true); return; }
-    const css = document.createElement("link");
-    css.rel = "stylesheet";
-    css.href = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css";
-    document.head.appendChild(css);
-    const script = document.createElement("script");
-    script.src = "https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js";
-    script.onload = () => setLoaded(true);
-    document.body.appendChild(script);
+    if (!document.getElementById("maplibre-css")) {
+      const css = document.createElement("link");
+      css.id = "maplibre-css";
+      css.rel = "stylesheet";
+      css.href = `https://unpkg.com/maplibre-gl@${MAPLIBRE_VERSION}/dist/maplibre-gl.css`;
+      document.head.appendChild(css);
+    }
+    let script = document.getElementById("maplibre-js") as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement("script");
+      script.id = "maplibre-js";
+      script.src = `https://unpkg.com/maplibre-gl@${MAPLIBRE_VERSION}/dist/maplibre-gl.js`;
+      document.body.appendChild(script);
+    }
+    const onLoad = () => setLoaded(true);
+    script.addEventListener("load", onLoad);
+    return () => script?.removeEventListener("load", onLoad);
   }, []);
   return loaded;
 }
 
-export default function RideReplay({ track, t }: RideReplayProps) {
+// Distance haversine entre 2 points [lat,lng] en km
+function haversine(a: [number, number], b: [number, number]): number {
+  const R = 6371;
+  const dLat = (b[0] - a[0]) * Math.PI / 180;
+  const dLng = (b[1] - a[1]) * Math.PI / 180;
+  const x = Math.sin(dLat / 2) ** 2 +
+    Math.cos(a[0] * Math.PI / 180) * Math.cos(b[0] * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+  return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
+}
+
+export default function RideReplay({ segments, track, t }: RideReplayProps) {
   const loaded = useMapLibre();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
   const animRef = useRef<number | null>(null);
   const progressRef = useRef(0);
   const speedRef = useRef(1);
+  const lastTimeRef = useRef(0);
   const lastGeocodeRef = useRef(0);
   const distRef = useRef<HTMLSpanElement | null>(null);
   const placeRef = useRef<HTMLSpanElement | null>(null);
+
   const [playing, setPlaying] = useState(false);
   const [ready, setReady] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [speed, setSpeed] = useState(1);
 
-  const keyMissing = MAPTILER_KEY === "TA_CLE_MAPTILER_ICI";
+  const keyMissing = MAPTILER_KEY === ("TA_CLE_MAPTILER_ICI" as string);
 
-  // Convertit le track [lat,lng] en [lng,lat] pour MapLibre
-  const coords = track.map(([lat, lng]) => [lng, lat]);
+  // ── Construit la liste des segments (tous les GPX) ──
+  // Chaque segment reste séparé pour le tracé (pas de ligne droite),
+  // mais on a aussi un parcours continu pour l'animation de la caméra.
+  const segs: [number, number][][] = useMemo(() => {
+    if (segments && segments.length > 0) return segments.filter(s => s && s.length > 1);
+    if (track && track.length > 1) return [track];
+    return [];
+  }, [segments, track]);
 
-  // Distance totale du tracé (km, approximation haversine)
-  const totalDist = (() => {
-    let d = 0;
-    for (let i = 1; i < track.length; i++) {
-      const [lat1, lng1] = track[i - 1], [lat2, lng2] = track[i];
-      const R = 6371;
-      const dLat = (lat2 - lat1) * Math.PI / 180;
-      const dLng = (lng2 - lng1) * Math.PI / 180;
-      const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
-      d += R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  // Parcours continu pour l'animation : on concatène tous les points (en [lng,lat])
+  const flatCoords: [number, number][] = useMemo(() => {
+    const out: [number, number][] = [];
+    for (const seg of segs) {
+      for (const [lat, lng] of seg) out.push([lng, lat]);
     }
-    return d;
-  })();
+    return out;
+  }, [segs]);
 
-  // Reverse geocoding léger pendant le survol (throttlé)
-  const updatePlace = async (lat: number, lng: number) => {
+  // Distance cumulée à chaque point (km) — pour afficher la distance réelle
+  const cumDist: number[] = useMemo(() => {
+    const out = [0];
+    let total = 0;
+    for (let i = 1; i < flatCoords.length; i++) {
+      const a: [number, number] = [flatCoords[i - 1][1], flatCoords[i - 1][0]];
+      const b: [number, number] = [flatCoords[i][1], flatCoords[i][0]];
+      total += haversine(a, b);
+      out.push(total);
+    }
+    return out;
+  }, [flatCoords]);
+
+  const totalDist = cumDist.length > 0 ? cumDist[cumDist.length - 1] : 0;
+
+  // Reverse geocoding throttlé (1 appel / 4s) — écrit directement dans le DOM
+  const updatePlace = (lat: number, lng: number) => {
     const now = Date.now();
-    if (now - lastGeocodeRef.current < 3000) return; // max 1 appel / 3s
+    if (now - lastGeocodeRef.current < 4000) return;
     lastGeocodeRef.current = now;
-    try {
-      const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`);
-      const data = await res.json();
-      const a = data.address || {};
-      const place = a.city || a.town || a.village || a.municipality || a.county || a.state || "";
-      if (place && placeRef.current) placeRef.current.textContent = place;
-    } catch { /* silencieux */ }
+    fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`)
+      .then(r => r.json())
+      .then(data => {
+        const a = data.address || {};
+        const place = a.city || a.town || a.village || a.municipality || a.county || a.state || "";
+        if (place && placeRef.current) placeRef.current.textContent = place;
+      })
+      .catch(() => { /* silencieux */ });
   };
 
+  // ── Init de la carte ──
   useEffect(() => {
-    if (!loaded || !containerRef.current || coords.length < 2 || keyMissing) return;
+    if (!loaded || !containerRef.current || flatCoords.length < 2 || keyMissing) return;
     const maplibregl = (window as any).maplibregl;
 
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: `https://api.maptiler.com/maps/satellite/style.json?key=${MAPTILER_KEY}`,
-      center: coords[0],
+      center: flatCoords[0],
       zoom: 12,
       pitch: 0,
       bearing: 0,
       antialias: true,
       maxPitch: 85,
+      attributionControl: { compact: true },
     });
     mapRef.current = map;
 
-    // Le conteneur peut avoir une taille nulle si l'onglet vient de s'ouvrir
-    setTimeout(() => { try { map.resize(); } catch {} }, 100);
-    setTimeout(() => { try { map.resize(); } catch {} }, 500);
+    const resizeTimers = [
+      setTimeout(() => { try { map.resize(); } catch {} }, 100),
+      setTimeout(() => { try { map.resize(); } catch {} }, 600),
+    ];
 
-    // Si le style échoue, on log mais on n'empêche pas l'affichage
     map.on("error", (e: any) => {
-      const msg = e?.error?.message || String(e);
-      console.warn("MapLibre error:", msg);
-      if (msg.toLowerCase().includes("403") || msg.toLowerCase().includes("forbidden") || msg.toLowerCase().includes("401")) {
-        setErrorMsg("Clé MapTiler refusée (vérifie les 'Allowed origins' sur cloud.maptiler.com)");
+      const msg = (e?.error?.message || String(e)).toLowerCase();
+      console.warn("MapLibre:", msg);
+      if (msg.includes("403") || msg.includes("401") || msg.includes("forbidden")) {
+        setErrorMsg(t("replay.key_error"));
       }
     });
 
     map.on("load", () => {
-      // Terrain 3D — source DEM MapTiler (tuiles explicites pour fiabilité)
+      // Terrain 3D
       try {
         map.addSource("terrainSource", {
           type: "raster-dem",
           tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${MAPTILER_KEY}`],
-          minzoom: 0,
-          maxzoom: 12,
-          tileSize: 256,
-          encoding: "mapbox",
+          minzoom: 0, maxzoom: 12, tileSize: 256, encoding: "mapbox",
         });
-        map.setTerrain({ source: "terrainSource", exaggeration: 1.8 });
-        // Ciel pour un rendu 3D plus immersif
+        map.setTerrain({ source: "terrainSource", exaggeration: 1.6 });
         try {
           map.setSky({
-            "sky-color": "#87CEEB",
-            "sky-horizon-blend": 0.5,
-            "horizon-color": "#ffffff",
-            "horizon-fog-blend": 0.5,
-            "fog-color": "#dddddd",
-            "fog-ground-blend": 0.5,
+            "sky-color": "#9ec8e8", "sky-horizon-blend": 0.5,
+            "horizon-color": "#ffffff", "horizon-fog-blend": 0.6,
+            "fog-color": "#e8e8e8", "fog-ground-blend": 0.4,
           });
         } catch {}
-        // Incline la caméra après chargement des tuiles terrain
-        setTimeout(() => map.easeTo({ pitch: 65, duration: 2000 }), 1200);
+        setTimeout(() => { try { map.easeTo({ pitch: 64, duration: 2000 }); } catch {} }, 1200);
       } catch (err) {
-        console.warn("Terrain 3D indisponible:", err);
-        setErrorMsg("Terrain 3D indisponible sur ce plan MapTiler");
-        map.easeTo({ pitch: 55, duration: 1000 });
+        console.warn("Terrain indisponible:", err);
       }
 
-      // Tracé
-      try {
-        map.addSource("route", {
+      // Trace chaque segment séparément (évite les lignes droites entre GPX)
+      segs.forEach((seg, idx) => {
+        const lngLat = seg.map(([lat, lng]) => [lng, lat]);
+        map.addSource(`route-${idx}`, {
           type: "geojson",
-          data: { type: "Feature", geometry: { type: "LineString", coordinates: coords } },
+          data: { type: "Feature", geometry: { type: "LineString", coordinates: lngLat } },
+        });
+        // Contour blanc pour la lisibilité
+        map.addLayer({
+          id: `route-casing-${idx}`, type: "line", source: `route-${idx}`,
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: { "line-color": "#ffffff", "line-width": 7, "line-opacity": 0.6 },
         });
         map.addLayer({
-          id: "route-line",
-          type: "line",
-          source: "route",
+          id: `route-line-${idx}`, type: "line", source: `route-${idx}`,
           layout: { "line-join": "round", "line-cap": "round" },
-          paint: { "line-color": "#E8620A", "line-width": 5 },
+          paint: { "line-color": "#E8620A", "line-width": 4 },
         });
-      } catch (err) {
-        console.warn("Tracé indisponible:", err);
-      }
+      });
 
       // Marqueur du rider
       const riderEl = document.createElement("div");
-      riderEl.style.cssText = "width:18px;height:18px;border-radius:50%;background:#2A6B73;border:3px solid #fff;box-shadow:0 0 8px rgba(0,0,0,.5);";
-      const rider = new maplibregl.Marker({ element: riderEl }).setLngLat(coords[0]).addTo(map);
+      riderEl.style.cssText = "width:20px;height:20px;border-radius:50%;background:#2A6B73;border:3px solid #fff;box-shadow:0 0 10px rgba(0,0,0,.6);";
+      const rider = new maplibregl.Marker({ element: riderEl }).setLngLat(flatCoords[0]).addTo(map);
       (map as any)._rider = rider;
 
-      // Cadre la vue sur tout le tracé (à plat, le pitch est appliqué après)
-      const bounds = coords.reduce((b: any, c: any) => b.extend(c), new maplibregl.LngLatBounds(coords[0], coords[0]));
-      map.fitBounds(bounds, { padding: 60, duration: 0 });
+      // Cadre toute la trace
+      const bounds = flatCoords.reduce(
+        (b: any, c: any) => b.extend(c),
+        new maplibregl.LngLatBounds(flatCoords[0], flatCoords[0])
+      );
+      map.fitBounds(bounds, { padding: 50, duration: 0 });
       setReady(true);
     });
 
-    // Sécurité : si "load" ne se déclenche pas en 8s, on débloque quand même
-    const fallback = setTimeout(() => setReady(true), 8000);
+    const fallback = setTimeout(() => setReady(true), 9000);
 
     return () => {
+      resizeTimers.forEach(clearTimeout);
       clearTimeout(fallback);
       if (animRef.current) cancelAnimationFrame(animRef.current);
-      map.remove();
+      try { map.remove(); } catch {}
       mapRef.current = null;
     };
-  }, [loaded, keyMissing]);
+  }, [loaded, keyMissing, flatCoords]);
 
-  // Animation de survol
-  const lastTimeRef = useRef<number>(0);
+  // ── Animation de survol (basée sur le temps) ──
   const animate = (timestamp?: number) => {
     const map = mapRef.current;
-    if (!map || coords.length < 2) return;
+    if (!map || flatCoords.length < 2) return;
     const rider = (map as any)._rider;
 
-    // Animation basée sur le temps (indépendante du frame rate)
     const now = timestamp ?? performance.now();
     if (lastTimeRef.current === 0) lastTimeRef.current = now;
     const dt = now - lastTimeRef.current;
     lastTimeRef.current = now;
 
-    // Durée proportionnelle à la distance : ~6s par km, base contemplative
-    // bornée entre 30s et 180s, divisée par la vitesse choisie
-    const baseDuration = Math.min(180000, Math.max(30000, totalDist * 6000));
-    const DURATION_MS = baseDuration / speedRef.current;
-    progressRef.current += dt / DURATION_MS;
+    // Durée ∝ distance : ~7s/km, bornée 30s–210s, ajustée par la vitesse
+    const baseDuration = Math.min(210000, Math.max(30000, totalDist * 7000));
+    progressRef.current += dt / (baseDuration / speedRef.current);
     if (progressRef.current >= 1) {
       progressRef.current = 1;
       setPlaying(false);
     }
 
-    const idx = progressRef.current * (coords.length - 1);
+    const idx = progressRef.current * (flatCoords.length - 1);
     const i = Math.floor(idx);
     const frac = idx - i;
-    const next = Math.min(i + 1, coords.length - 1);
+    const next = Math.min(i + 1, flatCoords.length - 1);
 
-    // Position interpolée
-    const lng = coords[i][0] + (coords[next][0] - coords[i][0]) * frac;
-    const lat = coords[i][1] + (coords[next][1] - coords[i][1]) * frac;
+    const lng = flatCoords[i][0] + (flatCoords[next][0] - flatCoords[i][0]) * frac;
+    const lat = flatCoords[i][1] + (flatCoords[next][1] - flatCoords[i][1]) * frac;
 
-    // Cap lissé (moyenne sur quelques points pour éviter les à-coups)
-    const ahead = Math.min(i + 5, coords.length - 1);
-    const dx = coords[ahead][0] - coords[i][0];
-    const dy = coords[ahead][1] - coords[i][1];
+    // Cap lissé (5 points d'avance)
+    const ahead = Math.min(i + 5, flatCoords.length - 1);
+    const dx = flatCoords[ahead][0] - flatCoords[i][0];
+    const dy = flatCoords[ahead][1] - flatCoords[i][1];
     const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
 
     rider?.setLngLat([lng, lat]);
-    map.jumpTo({
-      center: [lng, lat],
-      bearing,
-      pitch: 65,
-      zoom: 15,
-    });
+    map.jumpTo({ center: [lng, lat], bearing, pitch: 65, zoom: 14.8 });
 
-    // Distance : écrit directement dans le DOM (zéro re-render React)
+    // Distance réelle écrite directement dans le DOM (zéro re-render)
     if (distRef.current) {
-      distRef.current.textContent = `${(progressRef.current * totalDist).toFixed(1)} / ${totalDist.toFixed(1)} km`;
+      distRef.current.textContent = `${(cumDist[i] || 0).toFixed(1)} / ${totalDist.toFixed(1)} km`;
     }
-    // Lieu : throttlé à 1 appel / 3s, met à jour le DOM directement
     updatePlace(lat, lng);
 
     if (progressRef.current < 1 && playing) {
@@ -235,7 +263,6 @@ export default function RideReplay({ track, t }: RideReplayProps) {
 
   useEffect(() => {
     if (playing) {
-      // Laisse le zoom d'entrée se faire avant de lancer le survol
       const delay = progressRef.current === 0 ? 1500 : 0;
       const tid = setTimeout(() => {
         lastTimeRef.current = 0;
@@ -249,14 +276,13 @@ export default function RideReplay({ track, t }: RideReplayProps) {
   }, [playing]);
 
   const handlePlayPause = () => {
-    if (progressRef.current >= 1) progressRef.current = 0;
     const map = mapRef.current;
-    // Au démarrage, zoom doux vers le point courant avant de lancer le survol
-    if (map && !playing && progressRef.current === 0 && coords.length > 1) {
-      const dx = coords[1][0] - coords[0][0];
-      const dy = coords[1][1] - coords[0][1];
+    if (progressRef.current >= 1) progressRef.current = 0;
+    if (map && !playing && progressRef.current === 0 && flatCoords.length > 1) {
+      const dx = flatCoords[1][0] - flatCoords[0][0];
+      const dy = flatCoords[1][1] - flatCoords[0][1];
       const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
-      map.easeTo({ center: coords[0], zoom: 14.5, pitch: 62, bearing, duration: 1500 });
+      map.easeTo({ center: flatCoords[0], zoom: 14.8, pitch: 64, bearing, duration: 1500 });
     }
     setPlaying(p => !p);
   };
@@ -265,26 +291,30 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     setPlaying(false);
     progressRef.current = 0;
     const map = mapRef.current;
-    if (map && coords.length > 1) {
+    if (map && flatCoords.length > 1) {
       const maplibregl = (window as any).maplibregl;
-      (map as any)._rider?.setLngLat(coords[0]);
-      const bounds = coords.reduce((b: any, c: any) => b.extend(c), new maplibregl.LngLatBounds(coords[0], coords[0]));
-      map.fitBounds(bounds, { padding: 60, pitch: 0, bearing: 0, duration: 1000 });
+      (map as any)._rider?.setLngLat(flatCoords[0]);
+      if (distRef.current) distRef.current.textContent = `0 / ${totalDist.toFixed(1)} km`;
+      if (placeRef.current) placeRef.current.textContent = "—";
+      const bounds = flatCoords.reduce(
+        (b: any, c: any) => b.extend(c),
+        new maplibregl.LngLatBounds(flatCoords[0], flatCoords[0])
+      );
+      map.fitBounds(bounds, { padding: 50, pitch: 0, bearing: 0, duration: 1200 });
     }
   };
+
+  const setSpeedVal = (s: number) => { setSpeed(s); speedRef.current = s; };
 
   if (keyMissing) {
     return (
       <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-8 text-center">
-        <p className="font-mono text-xs text-brand-sand mb-2">⚙️ Survol 3D à configurer</p>
-        <p className="text-xs text-text-dim text-opacity-60 font-light">
-          Ajoute ta clé MapTiler dans le fichier RideReplay.tsx pour activer le survol 3D.
-        </p>
+        <p className="font-mono text-xs text-brand-sand mb-2">⚙️ {t("replay.config")}</p>
       </div>
     );
   }
 
-  if (coords.length < 2) {
+  if (flatCoords.length < 2) {
     return (
       <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-8 text-center">
         <p className="text-xs text-text-dim text-opacity-60 font-light">{t("replay.no_track")}</p>
@@ -296,9 +326,9 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     <div className="relative rounded-2xl overflow-hidden border border-white/5 bg-black">
       <div ref={containerRef} className="w-full h-[480px] md:h-[560px]" />
 
-      {/* Bandeau info : lieu traversé + distance */}
+      {/* Bandeau info */}
       {ready && (
-        <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md rounded-xl px-4 py-2.5 border border-white/10">
+        <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md rounded-xl px-4 py-2.5 border border-white/10 pointer-events-none">
           <div className="flex items-center gap-2">
             <MapPin size={13} className="text-brand-sand" />
             <span ref={placeRef} className="font-display font-bold text-sm text-white">—</span>
@@ -310,10 +340,11 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       )}
 
       {/* Contrôles */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/70 backdrop-blur-md rounded-full px-3 py-2 border border-white/10">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2.5 bg-black/70 backdrop-blur-md rounded-full px-3 py-2 border border-white/10">
         <button
           onClick={handlePlayPause}
           disabled={!ready}
+          aria-label={playing ? "Pause" : "Play"}
           className="w-11 h-11 rounded-full bg-brand-sand text-bg-dark flex items-center justify-center hover:bg-opacity-90 transition-all cursor-pointer disabled:opacity-40"
         >
           {playing ? <Pause size={18} /> : <Play size={18} className="ml-0.5" />}
@@ -321,17 +352,16 @@ export default function RideReplay({ track, t }: RideReplayProps) {
         <button
           onClick={handleReset}
           disabled={!ready}
+          aria-label="Reset"
           className="w-9 h-9 rounded-full bg-white/10 text-white flex items-center justify-center hover:bg-white/20 transition-all cursor-pointer disabled:opacity-40"
         >
           <RotateCcw size={15} />
         </button>
-
-        {/* Sélecteur de vitesse */}
-        <div className="flex items-center gap-1 ml-1 pl-2 border-l border-white/15">
+        <div className="flex items-center gap-1 ml-0.5 pl-2 border-l border-white/15">
           {[0.5, 1, 2].map(s => (
             <button
               key={s}
-              onClick={() => { setSpeed(s); speedRef.current = s; }}
+              onClick={() => setSpeedVal(s)}
               className={`px-2 py-1 rounded-full font-mono text-[10px] transition-all cursor-pointer ${
                 speed === s ? "bg-brand-sand text-bg-dark font-bold" : "text-white/60 hover:text-white"
               }`}
