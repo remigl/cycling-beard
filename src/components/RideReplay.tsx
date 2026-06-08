@@ -35,6 +35,7 @@ export default function RideReplay({ track, t }: RideReplayProps) {
   const progressRef = useRef(0);
   const [playing, setPlaying] = useState(false);
   const [ready, setReady] = useState(false);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const keyMissing = MAPTILER_KEY === "TA_CLE_MAPTILER_ICI";
 
@@ -47,7 +48,7 @@ export default function RideReplay({ track, t }: RideReplayProps) {
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: `https://api.maptiler.com/maps/hybrid/style.json?key=${MAPTILER_KEY}`,
+      style: `https://api.maptiler.com/maps/satellite/style.json?key=${MAPTILER_KEY}`,
       center: coords[0],
       zoom: 13,
       pitch: 60,
@@ -61,7 +62,11 @@ export default function RideReplay({ track, t }: RideReplayProps) {
 
     // Si le style échoue, on log mais on n'empêche pas l'affichage
     map.on("error", (e: any) => {
-      console.warn("MapLibre error:", e?.error?.message || e);
+      const msg = e?.error?.message || String(e);
+      console.warn("MapLibre error:", msg);
+      if (msg.toLowerCase().includes("403") || msg.toLowerCase().includes("forbidden") || msg.toLowerCase().includes("401")) {
+        setErrorMsg("Clé MapTiler refusée (vérifie les 'Allowed origins' sur cloud.maptiler.com)");
+      }
     });
 
     map.on("load", () => {
@@ -222,6 +227,12 @@ export default function RideReplay({ track, t }: RideReplayProps) {
           <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
             {t("replay.loading")}
           </span>
+        </div>
+      )}
+
+      {errorMsg && (
+        <div className="absolute top-3 left-3 right-3 bg-red-900/80 text-white font-mono text-[10px] p-3 rounded-lg">
+          ⚠️ {errorMsg}
         </div>
       )}
     </div>
