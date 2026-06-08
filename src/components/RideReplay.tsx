@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Play, Pause, RotateCcw } from "lucide-react";
+import { Play, Pause, RotateCcw, MapPin } from "lucide-react";
 
 // ─── Configure ta clé MapTiler ici ───────────────────────────────────────────
 const MAPTILER_KEY = "QxAdnETuTrlBj2mnHXOB";
@@ -33,14 +33,47 @@ export default function RideReplay({ track, t }: RideReplayProps) {
   const mapRef = useRef<any>(null);
   const animRef = useRef<number | null>(null);
   const progressRef = useRef(0);
+  const speedRef = useRef(1);
+  const lastGeocodeRef = useRef(0);
   const [playing, setPlaying] = useState(false);
   const [ready, setReady] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [speed, setSpeed] = useState(1);
+  const [currentPlace, setCurrentPlace] = useState<string>("");
+  const [distDone, setDistDone] = useState(0);
 
   const keyMissing = MAPTILER_KEY === "TA_CLE_MAPTILER_ICI";
 
   // Convertit le track [lat,lng] en [lng,lat] pour MapLibre
   const coords = track.map(([lat, lng]) => [lng, lat]);
+
+  // Distance totale du tracé (km, approximation haversine)
+  const totalDist = (() => {
+    let d = 0;
+    for (let i = 1; i < track.length; i++) {
+      const [lat1, lng1] = track[i - 1], [lat2, lng2] = track[i];
+      const R = 6371;
+      const dLat = (lat2 - lat1) * Math.PI / 180;
+      const dLng = (lng2 - lng1) * Math.PI / 180;
+      const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+      d += R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    }
+    return d;
+  })();
+
+  // Reverse geocoding léger pendant le survol (throttlé)
+  const updatePlace = async (lat: number, lng: number) => {
+    const now = Date.now();
+    if (now - lastGeocodeRef.current < 3000) return; // max 1 appel / 3s
+    lastGeocodeRef.current = now;
+    try {
+      const res = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`);
+      const data = await res.json();
+      const a = data.address || {};
+      const place = a.city || a.town || a.village || a.municipality || a.county || a.state || "";
+      if (place) setCurrentPlace(place);
+    } catch { /* silencieux */ }
+  };
 
   useEffect(() => {
     if (!loaded || !containerRef.current || coords.length < 2 || keyMissing) return;
@@ -155,8 +188,10 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     const dt = now - lastTimeRef.current;
     lastTimeRef.current = now;
 
-    // Durée totale du survol ≈ 45 secondes
-    const DURATION_MS = 45000;
+    // Durée proportionnelle à la distance : ~6s par km, base contemplative
+    // bornée entre 30s et 180s, divisée par la vitesse choisie
+    const baseDuration = Math.min(180000, Math.max(30000, totalDist * 6000));
+    const DURATION_MS = baseDuration / speedRef.current;
     progressRef.current += dt / DURATION_MS;
     if (progressRef.current >= 1) {
       progressRef.current = 1;
@@ -185,6 +220,10 @@ export default function RideReplay({ track, t }: RideReplayProps) {
       pitch: 65,
       zoom: 15,
     });
+
+    // Distance parcourue + lieu actuel
+    setDistDone(Math.round(progressRef.current * totalDist * 10) / 10);
+    updatePlace(lat, lng);
 
     if (progressRef.current < 1 && playing) {
       animRef.current = requestAnimationFrame(animate);
@@ -254,6 +293,21 @@ export default function RideReplay({ track, t }: RideReplayProps) {
     <div className="relative rounded-2xl overflow-hidden border border-white/5 bg-black">
       <div ref={containerRef} className="w-full h-[480px] md:h-[560px]" />
 
+      {/* Bandeau info : lieu traversé + distance */}
+      {ready && (currentPlace || distDone > 0) && (
+        <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md rounded-xl px-4 py-2.5 border border-white/10">
+          {currentPlace && (
+            <div className="flex items-center gap-2">
+              <MapPin size={13} className="text-brand-sand" />
+              <span className="font-display font-bold text-sm text-white">{currentPlace}</span>
+            </div>
+          )}
+          <div className="font-mono text-[10px] text-white/60 mt-0.5">
+            {distDone} / {totalDist.toFixed(1)} km
+          </div>
+        </div>
+      )}
+
       {/* Contrôles */}
       <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-3 bg-black/70 backdrop-blur-md rounded-full px-3 py-2 border border-white/10">
         <button
@@ -270,6 +324,21 @@ export default function RideReplay({ track, t }: RideReplayProps) {
         >
           <RotateCcw size={15} />
         </button>
+
+        {/* Sélecteur de vitesse */}
+        <div className="flex items-center gap-1 ml-1 pl-2 border-l border-white/15">
+          {[0.5, 1, 2].map(s => (
+            <button
+              key={s}
+              onClick={() => { setSpeed(s); speedRef.current = s; }}
+              className={`px-2 py-1 rounded-full font-mono text-[10px] transition-all cursor-pointer ${
+                speed === s ? "bg-brand-sand text-bg-dark font-bold" : "text-white/60 hover:text-white"
+              }`}
+            >
+              {s}×
+            </button>
+          ))}
+        </div>
       </div>
 
       {!ready && (
