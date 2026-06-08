@@ -337,7 +337,7 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
                         animate={{ opacity: 1, height: "auto" }}
                         className="mt-4 md:mt-2 overflow-hidden"
                       >
-                        <RideReplay track={trip.track || []} t={t} />
+                        <RideReplay segments={trip.segments} track={trip.track} t={t} />
                       </motion.div>
                     )}
                   </div>
