@@ -442,6 +442,42 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
               </div>
             </div>
 
+            {/* Profil altimétrique */}
+            {stage.elevProfile && stage.elevProfile.length > 1 && (
+              <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <Mountain size={16} className="text-brand-sand" />
+                  <h4 className="font-display font-bold text-xs uppercase text-text-on tracking-wider">{t("stage.profile")}</h4>
+                </div>
+                {(() => {
+                  const profile = stage.elevProfile!;
+                  const w = 800, h = 180, pad = 30;
+                  const elevs = profile.map(p => p[1]);
+                  const dists = profile.map(p => p[0]);
+                  const minE = Math.min(...elevs), maxE = Math.max(...elevs);
+                  const maxD = Math.max(...dists) || 1;
+                  const range = maxE - minE || 1;
+                  const pts = profile.map(([d, e]) => {
+                    const x = pad + (d / maxD) * (w - 2 * pad);
+                    const y = h - pad - ((e - minE) / range) * (h - 2 * pad);
+                    return [x, y];
+                  });
+                  const line = pts.map((p, i) => `${i === 0 ? "M" : "L"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
+                  const area = `${line} L${pts[pts.length - 1][0].toFixed(1)},${h - pad} L${pts[0][0].toFixed(1)},${h - pad} Z`;
+                  return (
+                    <svg viewBox={`0 0 ${w} ${h}`} className="w-full h-auto">
+                      <path d={area} fill="#E8620A" opacity="0.12" />
+                      <path d={line} fill="none" stroke="#E8620A" strokeWidth="2" />
+                      <text x={pad} y={h - pad + 18} className="fill-text-dim" style={{ fontSize: "11px", fontFamily: "monospace" }}>0 km</text>
+                      <text x={w - pad} y={h - pad + 18} textAnchor="end" className="fill-text-dim" style={{ fontSize: "11px", fontFamily: "monospace" }}>{maxD.toFixed(0)} km</text>
+                      <text x={pad - 4} y={pad} textAnchor="end" className="fill-text-dim" style={{ fontSize: "11px", fontFamily: "monospace" }}>{maxE} m</text>
+                      <text x={pad - 4} y={h - pad} textAnchor="end" className="fill-text-dim" style={{ fontSize: "11px", fontFamily: "monospace" }}>{minE} m</text>
+                    </svg>
+                  );
+                })()}
+              </div>
+            )}
+
             {stage.gpxFile && (
               <div className="bg-[#1c1b1b] border border-white/5 rounded-lg p-6">
                 <h3 className="font-display font-bold text-xs uppercase text-text-on tracking-wider mb-2">Fichier GPX</h3>
