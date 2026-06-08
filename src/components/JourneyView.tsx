@@ -14,12 +14,20 @@ interface JourneyViewProps {
 
 export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps) {
   const [selectedCountry, setSelectedCountry] = useState<string>("all");
+  const [selectedRegion, setSelectedRegion] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
 
   const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
+
+  // Régions du pays sélectionné (sous-filtres)
+  const regions = selectedCountry === "all"
+    ? []
+    : Array.from(new Set(
+        trips.filter(t => t.country === selectedCountry).map(t => t.region).filter(Boolean)
+      )) as string[];
 
   const toggleTag = (tag: string) => {
     setSelectedTags(prev => prev.includes(tag) ? prev.filter(x => x !== tag) : [...prev, tag]);
@@ -32,8 +40,39 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
     return trip.fullStory || [];
   };
 
+  // Mini graphique d'altitude (SVG)
+  const ElevationChart = ({ profile }: { profile: [number, number][] }) => {
+    if (!profile || profile.length < 2) return null;
+    const w = 280, h = 70, pad = 4;
+    const elevs = profile.map(p => p[1]);
+    const dists = profile.map(p => p[0]);
+    const minE = Math.min(...elevs), maxE = Math.max(...elevs);
+    const maxD = Math.max(...dists) || 1;
+    const range = maxE - minE || 1;
+    const pts = profile.map(([d, e]) => {
+      const x = pad + (d / maxD) * (w - 2 * pad);
+      const y = h - pad - ((e - minE) / range) * (h - 2 * pad);
+      return [x, y];
+    });
+    const line = pts.map((p, i) => `${i === 0 ? "M" : "L"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
+    const area = `${line} L${pts[pts.length - 1][0].toFixed(1)},${h - pad} L${pts[0][0].toFixed(1)},${h - pad} Z`;
+    return (
+      <div className="mt-2">
+        <svg viewBox={`0 0 ${w} ${h}`} className="w-full h-auto" preserveAspectRatio="none">
+          <path d={area} fill="#E8620A" opacity="0.12" />
+          <path d={line} fill="none" stroke="#E8620A" strokeWidth="1.5" />
+        </svg>
+        <div className="flex justify-between font-mono text-[8px] text-text-dim uppercase tracking-wider">
+          <span>{minE} m</span>
+          <span>↑ {maxE} m</span>
+        </div>
+      </div>
+    );
+  };
+
   const filtered = trips
     .filter(trip => selectedCountry === "all" || trip.country === selectedCountry)
+    .filter(trip => selectedRegion === "all" || trip.region === selectedRegion)
     .filter(trip =>
       trip.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       trip.country.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -110,7 +149,7 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
             {countries.map(c => (
               <button
                 key={c}
-                onClick={() => setSelectedCountry(c)}
+                onClick={() => { setSelectedCountry(c); setSelectedRegion("all"); }}
                 className={`px-3 py-2 rounded-md font-mono text-[9px] uppercase font-bold tracking-wider transition-all cursor-pointer ${
                   selectedCountry === c ? "bg-brand-sand text-surface-card" : "bg-surface-card border border-text-on/10 text-text-dim hover:text-text-on"
                 }`}
@@ -120,6 +159,34 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
             ))}
           </div>
         </div>
+
+        {/* Sous-filtres régions */}
+        {regions.length > 0 && (
+          <div className="flex items-center gap-2 flex-wrap mb-5">
+            <span className="font-mono text-[9px] text-text-dim uppercase tracking-wider mr-1">
+              {selectedCountry} :
+            </span>
+            <button
+              onClick={() => setSelectedRegion("all")}
+              className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border ${
+                selectedRegion === "all" ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
+              }`}
+            >
+              {t("journey.all")}
+            </button>
+            {regions.map(r => (
+              <button
+                key={r}
+                onClick={() => setSelectedRegion(r)}
+                className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border ${
+                  selectedRegion === r ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
+                }`}
+              >
+                {r}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Tag filters */}
         {allTags.length > 0 && (
@@ -170,6 +237,9 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
                       {trip.distanceKm > 0 && <span className="flex items-center gap-1"><TrendingUp size={10} /> {trip.distanceKm} km</span>}
                       {trip.elevationGain > 0 && <span className="flex items-center gap-1"><Mountain size={10} /> {trip.elevationGain} m</span>}
                     </div>
+                    {trip.elevProfile && trip.elevProfile.length > 1 && (
+                      <ElevationChart profile={trip.elevProfile} />
+                    )}
                     {story.length > 0 ? (
                       <div className="flex flex-col gap-2 text-sm text-text-dim leading-relaxed font-light mt-1">
                         {story.map((para, k) => <p key={k}>{para}</p>)}
