@@ -1,8 +1,9 @@
-import { Calendar, MapPin, TrendingUp, Mountain, Search, Tag } from "lucide-react";
+import { Calendar, MapPin, TrendingUp, Mountain, Search, Tag, Box } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
 import { Lang } from "../i18n";
+import RideReplay from "./RideReplay";
 
 interface JourneyViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -18,6 +19,7 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
+  const [replayOpen, setReplayOpen] = useState<string | null>(null);
 
   const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
@@ -262,6 +264,14 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
                         ))}
                       </div>
                     )}
+                    {trip.track && trip.track.length > 1 && (
+                      <button
+                        onClick={() => setReplayOpen(replayOpen === trip.slug ? null : trip.slug)}
+                        className="self-start mt-2 inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                      >
+                        <Box size={12} /> {replayOpen === trip.slug ? t("replay.close") : t("stage.replay")}
+                      </button>
+                    )}
                   </div>
                 );
 
@@ -289,36 +299,48 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
                 );
 
                 return (
-                  <motion.div
-                    key={trip.slug}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-50px" }}
-                    transition={{ duration: 0.4 }}
-                    className="relative md:grid md:grid-cols-2 md:gap-12 items-center"
-                  >
-                    {/* Point sur la ligne (desktop) */}
-                    <div className="hidden md:block absolute left-1/2 top-1/2 w-4 h-4 rounded-full bg-brand-sand border-4 border-bg-dark -translate-x-1/2 -translate-y-1/2 z-10" />
+                  <div key={trip.slug}>
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-50px" }}
+                      transition={{ duration: 0.4 }}
+                      className="relative md:grid md:grid-cols-2 md:gap-12 items-center"
+                    >
+                      {/* Point sur la ligne (desktop) */}
+                      <div className="hidden md:block absolute left-1/2 top-1/2 w-4 h-4 rounded-full bg-brand-sand border-4 border-bg-dark -translate-x-1/2 -translate-y-1/2 z-10" />
 
-                    {/* Mobile : tout empilé dans une carte */}
-                    <div className="md:hidden bg-surface-card border border-text-on/10 rounded-2xl p-5 flex flex-col gap-4">
-                      {textBlock}
-                      {photoBlock}
-                    </div>
+                      {/* Mobile : tout empilé dans une carte */}
+                      <div className="md:hidden bg-surface-card border border-text-on/10 rounded-2xl p-5 flex flex-col gap-4">
+                        {textBlock}
+                        {photoBlock}
+                      </div>
 
-                    {/* Desktop : alternance gauche/droite */}
-                    {isLeft ? (
-                      <>
-                        <div className="hidden md:block md:pr-10 md:text-right">{textBlock}</div>
-                        <div className="hidden md:block md:pl-10">{photoBlock}</div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="hidden md:block md:pr-10 md:order-1">{photoBlock}</div>
-                        <div className="hidden md:block md:pl-10 md:order-2">{textBlock}</div>
-                      </>
+                      {/* Desktop : alternance gauche/droite */}
+                      {isLeft ? (
+                        <>
+                          <div className="hidden md:block md:pr-10 md:text-right">{textBlock}</div>
+                          <div className="hidden md:block md:pl-10">{photoBlock}</div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="hidden md:block md:pr-10 md:order-1">{photoBlock}</div>
+                          <div className="hidden md:block md:pl-10 md:order-2">{textBlock}</div>
+                        </>
+                      )}
+                    </motion.div>
+
+                    {/* Survol 3D déplié (inline, sans changer de page) */}
+                    {replayOpen === trip.slug && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        className="mt-4 md:mt-2 overflow-hidden"
+                      >
+                        <RideReplay track={trip.track || []} t={t} />
+                      </motion.div>
                     )}
-                  </motion.div>
+                  </div>
                 );
               })}
             </div>
