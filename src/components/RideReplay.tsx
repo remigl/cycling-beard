@@ -61,6 +61,8 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
   const lastGeocodeRef = useRef(0);
   const distRef = useRef<HTMLSpanElement | null>(null);
   const placeRef = useRef<HTMLSpanElement | null>(null);
+  const riverRef = useRef<HTMLSpanElement | null>(null);
+  const lastCityRef = useRef(0);
 
   const [playing, setPlaying] = useState(false);
   const [ready, setReady] = useState(false);
@@ -87,8 +89,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     return out;
   }, [segs]);
 
-  // Distance cumulée normalisée sur la VRAIE distance (distanceKm du script)
-  // On calcule la proportion via haversine, puis on la met à l'échelle de distanceKm
+  // Distance cumulée — la VRAIE distance (distanceKm du script) fait foi
   const { cumDist, totalDist } = useMemo(() => {
     const raw = [0];
     let total = 0;
@@ -98,10 +99,12 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       total += haversine(a, b);
       raw.push(total);
     }
-    // Mise à l'échelle : la vraie distance prime (le tracé simplifié sous-estime/sur-estime)
-    const real = distanceKm && distanceKm > 0 ? distanceKm : total;
-    const scale = total > 0 ? real / total : 1;
-    return { cumDist: raw.map(d => d * scale), totalDist: real };
+    // Si on a la vraie distance, elle prime systématiquement et on met le cumul à l'échelle
+    if (distanceKm && distanceKm > 0) {
+      const scale = total > 0 ? distanceKm / total : 1;
+      return { cumDist: raw.map(d => d * scale), totalDist: distanceKm };
+    }
+    return { cumDist: raw, totalDist: total };
   }, [flatCoords, distanceKm]);
 
   // Détection du cours d'eau le plus proche via Overpass API (throttlé)
@@ -109,7 +112,6 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     const now = Date.now();
     if (now - lastGeocodeRef.current < 5000) return; // max 1 appel / 5s
     lastGeocodeRef.current = now;
-    // Cherche un waterway (rivière/fleuve) dans un rayon de ~600m
     const query = `[out:json][timeout:8];way(around:600,${lat},${lng})[waterway~"river|stream|canal"][name];out tags 1;`;
     fetch("https://overpass-api.de/api/interpreter", {
       method: "POST",
@@ -118,9 +120,24 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       .then(r => r.json())
       .then(data => {
         const el = data.elements?.find((e: any) => e.tags?.name);
-        if (el && placeRef.current) {
-          placeRef.current.textContent = el.tags.name;
+        if (riverRef.current) {
+          riverRef.current.textContent = el?.tags?.name ? `· ${el.tags.name}` : "";
         }
+      })
+      .catch(() => { /* silencieux */ });
+  };
+
+  // Détection de la ville la plus proche (Nominatim, throttlé)
+  const updateCity = (lat: number, lng: number) => {
+    const now = Date.now();
+    if (now - lastCityRef.current < 4000) return;
+    lastCityRef.current = now;
+    fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`)
+      .then(r => r.json())
+      .then(data => {
+        const a = data.address || {};
+        const city = a.city || a.town || a.village || a.municipality || a.county || a.state || "";
+        if (city && placeRef.current) placeRef.current.textContent = city;
       })
       .catch(() => { /* silencieux */ });
   };
@@ -132,7 +149,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: `https://api.maptiler.com/maps/satellite/style.json?key=${MAPTILER_KEY}`,
+      style: `https://api.maptiler.com/maps/hybrid/style.json?key=${MAPTILER_KEY}`,
       center: flatCoords[0],
       zoom: 12,
       pitch: 0,
@@ -175,6 +192,33 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
         setTimeout(() => { try { map.easeTo({ pitch: 64, duration: 2000 }); } catch {} }, 1200);
       } catch (err) {
         console.warn("Terrain indisponible:", err);
+      }
+
+      // Bâtiments 3D (si la source vectorielle MapTiler est dispo dans le style hybrid)
+      try {
+        const layers = map.getStyle().layers || [];
+        // Trouve la 1ère couche de symboles pour insérer les bâtiments dessous
+        const labelLayer = layers.find((l: any) => l.type === "symbol");
+        // La source vectorielle de MapTiler s'appelle généralement "maptiler_planet"
+        const sources = map.getStyle().sources || {};
+        const vectorSrc = Object.keys(sources).find(k => sources[k].type === "vector");
+        if (vectorSrc) {
+          map.addLayer({
+            id: "buildings-3d",
+            type: "fill-extrusion",
+            source: vectorSrc,
+            "source-layer": "building",
+            minzoom: 13,
+            paint: {
+              "fill-extrusion-color": "#d8d2c8",
+              "fill-extrusion-height": ["coalesce", ["get", "render_height"], ["get", "height"], 8],
+              "fill-extrusion-base": ["coalesce", ["get", "render_min_height"], 0],
+              "fill-extrusion-opacity": 0.85,
+            },
+          }, labelLayer?.id);
+        }
+      } catch (err) {
+        console.warn("Bâtiments 3D indisponibles:", err);
       }
 
       // Trace complète en fond (semi-transparente) + trace parcourue (vive) par-dessus
@@ -286,6 +330,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       distRef.current.textContent = `${(cumDist[i] || 0).toFixed(1)} / ${totalDist.toFixed(1)} km`;
     }
     updateRiver(lat, lng);
+    updateCity(lat, lng);
 
     if (progressRef.current < 1 && playing) {
       animRef.current = requestAnimationFrame(animate);
@@ -327,6 +372,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       (map as any)._rider?.setLngLat(flatCoords[0]);
       if (distRef.current) distRef.current.textContent = `0 / ${totalDist.toFixed(1)} km`;
       if (placeRef.current) placeRef.current.textContent = "—";
+      if (riverRef.current) riverRef.current.textContent = "";
       // Réinitialise la trace parcourue
       const ts = map.getSource("traveled");
       if (ts) ts.setData({ type: "Feature", geometry: { type: "LineString", coordinates: [flatCoords[0]] } });
@@ -366,6 +412,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
           <div className="flex items-center gap-2">
             <MapPin size={13} className="text-brand-sand" />
             <span ref={placeRef} className="font-display font-bold text-sm text-white">—</span>
+            <span ref={riverRef} className="font-mono text-[11px] text-sky-300"></span>
           </div>
           <div className="font-mono text-[10px] text-white/60 mt-0.5">
             <span ref={distRef}>0 / {totalDist.toFixed(1)} km</span>
