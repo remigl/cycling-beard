@@ -194,9 +194,170 @@ async function reverseGeocode(lat, lng) {
   }
 }
 
-// ─── GPX parsing ─────────────────────────────────────────────────────────────
+// ─── Traitement de l'inbox (GPX bruts → dossiers d'étape) ────────────────────
 
-function parseOneGpx(gpxContent) {
+// Normalise un nom de ville pour le slug : minuscules, accents retirés, espaces→tirets
+function slugifyCity(name) {
+  return (name || "etape")
+    .toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")  // retire les accents
+    .replace(/[^a-z0-9]+/g, "-")                        // tout le reste → tiret
+    .replace(/^-+|-+$/g, "");                           // trim des tirets
+}
+
+// Extrait coords départ/arrivée + date depuis le contenu GPX
+function extractGpxMeta(gpxContent) {
+  // Premier et dernier point (trkpt ou rtept ou wpt)
+  const ptRegex = /<(?:trkpt|rtept|wpt)[^>]*lat="([-\d.]+)"[^>]*lon="([-\d.]+)"/g;
+  const pts = [];
+  let m;
+  while ((m = ptRegex.exec(gpxContent)) !== null) {
+    pts.push([parseFloat(m[1]), parseFloat(m[2])]);
+  }
+  // Première balise <time> = date de l'étape
+  const timeMatch = gpxContent.match(/<time>([^<]+)<\/time>/);
+  let date = null;
+  if (timeMatch) {
+    const d = new Date(timeMatch[1]);
+    if (!isNaN(d.getTime())) date = d.toISOString().slice(0, 10);
+  }
+  if (pts.length < 2) return null;
+  return {
+    startLat: pts[0][0], startLng: pts[0][1],
+    endLat: pts[pts.length - 1][0], endLng: pts[pts.length - 1][1],
+    date,
+  };
+}
+
+// Trouve un dossier par nom, ou le crée s'il n'existe pas
+async function findOrCreateFolder(drive, parentId, name) {
+  const q = `'${parentId}' in parents and name='${name}' and mimeType='application/vnd.google-apps.folder' and trashed=false`;
+  const list = await drive.files.list({ q, fields: "files(id,name)" });
+  if (list.data.files.length > 0) return list.data.files[0].id;
+  const created = await drive.files.create({
+    requestBody: { name, mimeType: "application/vnd.google-apps.folder", parents: [parentId] },
+    fields: "id",
+  });
+  return created.data.id;
+}
+
+// Vrai si un fichier de ce nom existe déjà dans le dossier
+async function fileExistsInFolder(drive, folderId, filename) {
+  const q = `'${folderId}' in parents and name='${filename}' and trashed=false`;
+  const list = await drive.files.list({ q, fields: "files(id)" });
+  return list.data.files.length > 0;
+}
+
+// Déplace un fichier vers un autre dossier (retire l'ancien parent, ajoute le nouveau) + renomme
+async function moveAndRename(drive, fileId, newParentId, oldParentId, newName) {
+  await drive.files.update({
+    fileId,
+    addParents: newParentId,
+    removeParents: oldParentId,
+    requestBody: { name: newName },
+    fields: "id, parents",
+  });
+}
+
+// Crée un fichier texte (markdown) dans un dossier
+async function uploadText(drive, folderId, filename, content) {
+  await drive.files.create({
+    requestBody: { name: filename, parents: [folderId] },
+    media: { mimeType: "text/markdown", body: content },
+    fields: "id",
+  });
+}
+
+// Gabarit notes.md : sections vides à remplir
+function buildNotesTemplate(startCity, endCity, date) {
+  return `# ${startCity} → ${endCity}
+<!-- Étape du ${date}. Remplis les sections : ce qui reste vide ne sera pas affiché. -->
+
+## Description
+<!-- Le récit de l'étape : la route, les paysages, ce qui s'est passé. -->
+
+
+## Camping
+<!-- Où as-tu dormi ? Lieu, type (camping, Welcome to my Garden, chez l'habitant…), ressenti. -->
+
+
+## Remerciements
+<!-- Les personnes rencontrées, hôtes, coups de main à remercier. -->
+
+`;
+}
+
+// Traite le dossier "_inbox" : chaque GPX brut → dossier d'étape nommé + notes.md
+async function processInbox(drive, rootId) {
+  // Cherche le sous-dossier _inbox
+  const q = `'${rootId}' in parents and name='_inbox' and mimeType='application/vnd.google-apps.folder' and trashed=false`;
+  const inboxList = await drive.files.list({ q, fields: "files(id,name)" });
+  if (inboxList.data.files.length === 0) {
+    console.log("📥 Pas de dossier _inbox, rien à traiter.");
+    return;
+  }
+  const inboxId = inboxList.data.files[0].id;
+
+  // Liste les GPX de l'inbox
+  const files = await listFilesInFolder(drive, inboxId);
+  const gpxFiles = files.filter(f => f.name.toLowerCase().endsWith(".gpx"));
+  if (gpxFiles.length === 0) {
+    console.log("📥 _inbox vide (aucun GPX).");
+    return;
+  }
+  console.log(`📥 ${gpxFiles.length} GPX à traiter dans _inbox`);
+
+  let geocodes = 0;
+  for (const file of gpxFiles) {
+    console.log(`\n  📄 ${file.name}`);
+    // Télécharge pour lire son contenu
+    const tmpPath = path.join("/tmp", `inbox_${file.id}.gpx`);
+    await downloadFile(drive, file.id, tmpPath);
+    const content = fs.readFileSync(tmpPath, "utf-8");
+
+    const meta = extractGpxMeta(content);
+    if (!meta) {
+      console.log("    ⚠️  GPX sans points exploitables, ignoré.");
+      continue;
+    }
+    const date = meta.date || new Date().toISOString().slice(0, 10);
+
+    // Géocode départ / arrivée (respect du 1 req/s Nominatim)
+    const startGeo = await reverseGeocode(meta.startLat, meta.startLng);
+    await new Promise(r => setTimeout(r, 1100));
+    const endGeo = await reverseGeocode(meta.endLat, meta.endLng);
+    await new Promise(r => setTimeout(r, 1100));
+    geocodes += 2;
+
+    const startCity = startGeo.city || "depart";
+    const endCity = endGeo.city || "arrivee";
+    const folderName = `${date}-${slugifyCity(startCity)}_${slugifyCity(endCity)}`;
+    console.log(`    📂 ${folderName}  (${startCity} → ${endCity})`);
+
+    const folderId = await findOrCreateFolder(drive, rootId, folderName);
+
+    // Nom du GPX cible : ride.gpx, sinon ride-2.gpx…
+    let gpxName = "ride.gpx";
+    let n = 2;
+    while (await fileExistsInFolder(drive, folderId, gpxName)) {
+      gpxName = `ride-${n}.gpx`;
+      n++;
+    }
+
+    // Déplace le GPX de l'inbox vers le dossier d'étape, renommé
+    await moveAndRename(drive, file.id, folderId, inboxId, gpxName);
+    console.log(`    ✅ déplacé → ${gpxName}`);
+
+    // Crée notes.md s'il n'existe pas
+    if (!(await fileExistsInFolder(drive, folderId, "notes.md"))) {
+      await uploadText(drive, folderId, "notes.md", buildNotesTemplate(startCity, endCity, date));
+      console.log(`    📝 notes.md créé`);
+    }
+  }
+  console.log(`\n📥 Inbox traitée (${geocodes} géocodages).`);
+}
+
+
   const gpx = new GpxParser();
   gpx.parse(gpxContent);
 
@@ -742,6 +903,9 @@ async function main() {
 
   const auth = getAuthClient();
   const drive = google.drive({ version: "v3", auth });
+
+  // ── Étape 0 : traite les GPX bruts déposés dans _inbox ──
+  await processInbox(drive, ROOT_FOLDER_ID);
 
   // List stage folders
   const folders = await listSubFolders(drive, ROOT_FOLDER_ID);
