@@ -52,8 +52,8 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
 
     const map = L.map(containerRef.current, {
       center: [lat, lng],
-      zoom: 8,
-      maxZoom: 11,
+      zoom: 7,
+      maxZoom: 10,
       minZoom: 4,
       zoomControl: true,
       attributionControl: false,
@@ -77,15 +77,20 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
         const host = data.host;
         const past = data.radar?.past || [];
         const nowcast = data.radar?.nowcast || [];
-        const frames = [...past, ...nowcast];
+        // On garde la dernière demi-heure de passé + toute la prévision
+        const recentPast = past.slice(-3); // ~30 dernières minutes
+        const frames = [...recentPast, ...nowcast];
         framesRef.current = frames.map((f: any) => ({
           ...f,
           // Format: {host}{path}/{size}/{z}/{x}/{y}/{color}/{options}.png
-          // size 256, color scheme 4 (Universal Blue), smooth=1, snow=1
           url: `${host}${f.path}/256/{z}/{x}/{y}/4/1_1.png`,
         }));
+        // Index du 1er créneau futur (= maintenant), sinon début
+        const nowIdx = framesRef.current.findIndex((f: any) => f.time * 1000 >= Date.now());
+        const startIdx = nowIdx >= 0 ? nowIdx : 0;
+        idxRef.current = startIdx;
         setReady(true);
-        showFrame(0);
+        showFrame(startIdx);
         startAnimation();
       })
       .catch(() => setReady(true));
@@ -109,8 +114,8 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
       layersRef.current[frame.path] = L.tileLayer(frame.url, {
         opacity: 0,
         tileSize: 256,
-        maxNativeZoom: 10,  // RainViewer ne fournit pas au-delà
-        maxZoom: 12,
+        maxNativeZoom: 9,  // RainViewer ne fournit pas au-delà ; au-delà Leaflet agrandit
+        maxZoom: 10,
       });
       layersRef.current[frame.path].addTo(map);
     }
@@ -119,12 +124,16 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
       layer.setOpacity(path === frame.path ? 0.75 : 0);
     });
 
-    // Label horaire
+    // Label horaire avec indication passé / maintenant / prévision
     const d = new Date(frame.time * 1000);
     const hh = d.getHours().toString().padStart(2, "0");
     const mm = d.getMinutes().toString().padStart(2, "0");
-    const isFuture = frame.time * 1000 > Date.now();
-    setTimeLabel(`${hh}:${mm}${isFuture ? " ⟶" : ""}`);
+    const deltaMin = Math.round((frame.time * 1000 - Date.now()) / 60000);
+    let suffix = "";
+    if (deltaMin > 2) suffix = ` (+${deltaMin} min)`;
+    else if (deltaMin < -2) suffix = ` (${deltaMin} min)`;
+    else suffix = " (maintenant)";
+    setTimeLabel(`${hh}:${mm}${suffix}`);
     idxRef.current = i;
   };
 
