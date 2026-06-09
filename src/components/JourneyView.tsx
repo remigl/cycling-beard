@@ -1,4 +1,4 @@
-import { Calendar, MapPin, TrendingUp, Mountain, Search, Tag, Box } from "lucide-react";
+import { Calendar, TrendingUp, Mountain, Search, Tag, Box } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
@@ -13,7 +13,7 @@ interface JourneyViewProps {
   lang: Lang;
 }
 
-export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps) {
+export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [selectedCountry, setSelectedCountry] = useState<string>("all");
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
@@ -114,30 +114,8 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
           </div>
         )}
 
-        {/* Header */}
-        <div className="mb-10">
-          <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase mb-2">
-            {t("journey.label")}
-          </p>
-          <h1 className="font-display text-3xl md:text-5xl font-black uppercase text-text-on">
-            {t("journey.title")}
-          </h1>
-          <p className="text-xs text-text-dim text-opacity-80 mt-2 font-light max-w-xl">
-            {t("journey.intro")}
-          </p>
-
-          {stats && (
-            <div className="mt-6 flex flex-wrap gap-6 font-mono text-[10px] text-text-dim">
-              <span className="flex items-center gap-1.5"><TrendingUp size={11} className="text-brand-sand" /><strong className="text-text-on">{stats.totalKm.toLocaleString("fr-FR")} km</strong> {t("journey.km")}</span>
-              <span className="flex items-center gap-1.5"><Mountain size={11} className="text-brand-sand" /><strong className="text-text-on">{stats.totalElevation.toLocaleString("fr-FR")} m</strong> {t("journey.elevation")}</span>
-              <span className="flex items-center gap-1.5"><MapPin size={11} className="text-brand-sand" /><strong className="text-text-on">{stats.totalCountries}</strong> {t("journey.countries")}</span>
-              <span className="flex items-center gap-1.5"><Calendar size={11} className="text-brand-sand" /><strong className="text-text-on">{stats.totalDays}</strong> {t("journey.days")}</span>
-            </div>
-          )}
-        </div>
-
         {/* Filters */}
-        <div className="flex flex-col sm:flex-row gap-3 mb-5">
+        <div className="flex flex-col sm:flex-row gap-3 mb-5 mt-2">
           <div className="relative flex-1">
             <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-dim" />
             <input
