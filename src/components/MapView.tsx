@@ -69,20 +69,13 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
 
     const allBounds: any[] = [];
 
-    // Trace chaque étape — chaque segment GPX séparément (pas de ligne droite entre étapes)
+    // Pas de tracé affiché : on collecte seulement les points pour cadrer la carte
     tripsWithTrack.forEach(trip => {
-      // Utilise les segments si dispo, sinon le track simple
       const segments = (trip.segments && trip.segments.length > 0)
         ? trip.segments
         : (trip.track ? [trip.track] : []);
-
       segments.forEach(seg => {
         if (seg.length < 2) return;
-        L.polyline(seg, {
-          color: "#E8620A",
-          weight: 4,
-          opacity: 0.85,
-        }).addTo(map);
         allBounds.push(...seg);
       });
     });
@@ -164,10 +157,7 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
 
         {/* Header */}
         <div className="mb-8">
-          <p className="font-mono text-[10px] text-brand-sand font-bold tracking-widest uppercase">
-            {t("map.label")}
-          </p>
-          <h1 className="font-display text-3xl md:text-5xl font-black uppercase mt-1 text-text-on">
+          <h1 className="font-display text-3xl md:text-5xl font-black uppercase text-text-on">
             {t("map.title")}
           </h1>
           <p className="text-xs text-text-dim text-opacity-80 mt-2 font-light">
