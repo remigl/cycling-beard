@@ -13,6 +13,7 @@ interface FoodInfoProps {
 interface FoodData {
   title: string;
   extract: string;
+  dishes: string[];
   thumb: string | null;
   url: string;
 }
@@ -27,9 +28,39 @@ async function fetchGastronomy(query: string, lang: string): Promise<FoodData | 
     const sdata = await sres.json();
     const hit = sdata.query?.search?.[0];
     if (!hit) return null;
-
-    // 2. Récupère résumé + image de cette page
     const title = hit.title;
+
+    // 2. Récupère la liste des sections de l'article
+    const secUrl = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=sections&format=json&origin=*`;
+    const secRes = await fetch(secUrl);
+    const secData = secRes.ok ? await secRes.json() : null;
+    const sections = secData?.parse?.sections || [];
+
+    // Cherche une section "plats typiques", "spécialités", "mets"...
+    const wanted = /(plats?\s*typiques?|sp[ée]cialit[ée]s?|mets|dishes|specialties|gerichte|piatti|platos)/i;
+    const target = sections.find((s: any) => wanted.test(s.line));
+
+    // 3a. Si une section dédiée existe, on récupère son texte
+    if (target) {
+      const extUrl = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&section=${target.index}&prop=text&format=json&origin=*`;
+      const extRes = await fetch(extUrl);
+      if (extRes.ok) {
+        const extData = await extRes.json();
+        const html = extData?.parse?.text?.["*"] || "";
+        // Extrait les éléments de liste (plats) du HTML de la section
+        const items: string[] = [];
+        const liMatches = html.match(/<li[^>]*>([\s\S]*?)<\/li>/gi) || [];
+        for (const li of liMatches) {
+          const clean = li.replace(/<[^>]+>/g, "").replace(/\[\d+\]/g, "").replace(/\s+/g, " ").trim();
+          if (clean.length > 2 && clean.length < 120) items.push(clean);
+        }
+        if (items.length >= 2) {
+          return { title, extract: "", dishes: items.slice(0, 25), thumb: null, url: `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}` };
+        }
+      }
+    }
+
+    // 3b. Sinon, résumé intro classique
     const sumUrl = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=5&pithumbsize=200&format=json&origin=*&redirects=1`;
     const res = await fetch(sumUrl);
     if (!res.ok) return null;
@@ -37,14 +68,8 @@ async function fetchGastronomy(query: string, lang: string): Promise<FoodData | 
     const pages = data.query?.pages || {};
     for (const k of Object.keys(pages)) {
       const page = pages[k];
-      let extract = page.extract || "";
-      extract = extract.replace(/\s+/g, " ").trim();
-      return {
-        title: page.title,
-        extract,
-        thumb: page.thumbnail?.source || null,
-        url: `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(page.title)}`,
-      };
+      let extract = (page.extract || "").replace(/\s+/g, " ").trim();
+      return { title: page.title, extract, dishes: [], thumb: page.thumbnail?.source || null, url: `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(page.title)}` };
     }
     return null;
   } catch {
@@ -72,7 +97,7 @@ export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
     (async () => {
       for (const q of queries) {
         const result = await fetchGastronomy(q, wikiLang);
-        if (result && result.extract && result.extract.length > 60) {
+        if (result && (result.dishes.length >= 2 || (result.extract && result.extract.length > 60))) {
           setData(result);
           setLoading(false);
           return;
@@ -118,7 +143,17 @@ export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
               )}
               <div>
                 <h4 className="font-display font-bold text-sm text-white mb-2">{data.title}</h4>
-                <p className="text-xs text-text-dim leading-relaxed font-light">{data.extract}</p>
+                {data.dishes.length > 0 ? (
+                  <ul className="flex flex-col gap-1.5">
+                    {data.dishes.map((dish, i) => (
+                      <li key={i} className="text-xs text-text-dim leading-relaxed font-light flex gap-2">
+                        <span className="text-brand-sand shrink-0">•</span> {dish}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-xs text-text-dim leading-relaxed font-light">{data.extract}</p>
+                )}
               </div>
               <a
                 href={data.url}
