@@ -20,6 +20,7 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
   const [replayOpen, setReplayOpen] = useState<string | null>(null);
+  const [elevOpen, setElevOpen] = useState<string | null>(null);
 
   const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
@@ -239,7 +240,7 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
                       {trip.distanceKm > 0 && <span className="flex items-center gap-1"><TrendingUp size={10} /> {trip.distanceKm} km</span>}
                       {trip.elevationGain > 0 && <span className="flex items-center gap-1"><Mountain size={10} /> {trip.elevationGain} m</span>}
                     </div>
-                    {trip.elevProfile && trip.elevProfile.length > 1 && (
+                    {elevOpen === trip.slug && trip.elevProfile && trip.elevProfile.length > 1 && (
                       <ElevationChart profile={trip.elevProfile} />
                     )}
                     {story.length > 0 ? (
@@ -264,13 +265,25 @@ export default function JourneyView({ trips, stats, t, lang }: JourneyViewProps)
                         ))}
                       </div>
                     )}
-                    {trip.track && trip.track.length > 1 && (
-                      <button
-                        onClick={() => setReplayOpen(replayOpen === trip.slug ? null : trip.slug)}
-                        className="self-start mt-2 inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
-                      >
-                        <Box size={12} /> {replayOpen === trip.slug ? t("replay.close") : t("stage.replay")}
-                      </button>
+                    {(trip.track && trip.track.length > 1 || (trip.elevProfile && trip.elevProfile.length > 1)) && (
+                      <div className={`flex gap-2 mt-3 flex-wrap ${isLeft ? "md:justify-end" : ""}`}>
+                        {trip.elevProfile && trip.elevProfile.length > 1 && (
+                          <button
+                            onClick={() => setElevOpen(elevOpen === trip.slug ? null : trip.slug)}
+                            className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                          >
+                            <Mountain size={12} /> {t("journey.elevation_btn")}
+                          </button>
+                        )}
+                        {trip.track && trip.track.length > 1 && (
+                          <button
+                            onClick={() => setReplayOpen(replayOpen === trip.slug ? null : trip.slug)}
+                            className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                          >
+                            <Box size={12} /> {replayOpen === trip.slug ? t("replay.close") : t("stage.replay")}
+                          </button>
+                        )}
+                      </div>
                     )}
                   </div>
                 );
