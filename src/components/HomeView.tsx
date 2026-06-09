@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { SiteStats, TripSummary } from "../types";
 import { Lang } from "../i18n";
+import RainRadar from "./RainRadar";
 
 // URL Buy Me a Coffee
 const BMC_URL = "https://buymeacoffee.com/cyclingBeard";
@@ -49,6 +50,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
     "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1600";
 
   const [weather, setWeather] = useState<WeatherDay[]>([]);
+  const [radarOpen, setRadarOpen] = useState(false);
 
   // Récupère la météo 2 jours de la position actuelle (dernier point GPS)
   useEffect(() => {
@@ -162,10 +164,25 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                   ))}
                 </div>
               )}
+
+              {/* Bouton radar de pluie */}
+              {weather.length > 0 && latest?.mapLat && latest?.mapLng && (
+                <button
+                  onClick={() => setRadarOpen(true)}
+                  className="mt-2 inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-4 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-bg-dark transition-all cursor-pointer"
+                >
+                  🌧️ {t("radar.button")}
+                </button>
+              )}
             </div>
           </motion.div>
         </div>
       </div>
+
+      {/* Popup radar de pluie */}
+      {radarOpen && latest?.mapLat && latest?.mapLng && (
+        <RainRadar lat={latest.mapLat} lng={latest.mapLng} onClose={() => setRadarOpen(false)} t={t} />
+      )}
 
       {/* ── PRÉSENTATION ── */}
       <div className="w-full px-4 md:px-14 py-20 md:py-28 bg-surface-container/30">
