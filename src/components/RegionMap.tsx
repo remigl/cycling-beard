@@ -83,24 +83,20 @@ export default function RegionMap({ region, trips, onClose, t }: RegionMapProps)
   }, [region]);
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-black/80 flex items-end sm:items-center justify-center" onClick={onClose}>
-      <div
-        className="relative w-full sm:max-w-2xl bg-[#1c1b1b] sm:rounded-2xl rounded-t-2xl border border-white/10 overflow-hidden flex flex-col h-[75vh] sm:h-[70vh]"
-        onClick={(e) => e.stopPropagation()}
-      >
-        <div className="flex items-center justify-between px-5 py-4 border-b border-white/10 shrink-0">
-          <div className="min-w-0">
-            <div className="font-display font-bold text-sm text-white uppercase tracking-wider truncate">{region}</div>
-            <div className="font-mono text-[9px] text-text-dim">
-              {regionTrips.length} {regionTrips.length > 1 ? t("journey.stages") : t("journey.stage")}
-            </div>
+    <div className="mb-8 bg-[#1c1b1b] rounded-2xl border border-white/10 overflow-hidden animate-[slideDown_0.25s_ease-out]">
+      <style>{`@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }`}</style>
+      <div className="flex items-center justify-between px-5 py-3 border-b border-white/10">
+        <div className="min-w-0">
+          <div className="font-display font-bold text-sm text-white uppercase tracking-wider truncate">{region}</div>
+          <div className="font-mono text-[9px] text-text-dim">
+            {regionTrips.length} {regionTrips.length > 1 ? t("journey.stages") : t("journey.stage")}
           </div>
-          <button onClick={onClose} className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/15 flex items-center justify-center text-white cursor-pointer shrink-0">
-            <X size={18} />
-          </button>
         </div>
-        <div ref={mapRef} className="flex-1 w-full bg-[#0f0f0f]" />
+        <button onClick={onClose} className="w-8 h-8 rounded-full bg-white/5 hover:bg-white/15 flex items-center justify-center text-white cursor-pointer shrink-0">
+          <X size={16} />
+        </button>
       </div>
+      <div ref={mapRef} className="w-full h-[340px] bg-[#0f0f0f]" />
     </div>
   );
 }
