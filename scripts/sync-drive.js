@@ -513,9 +513,8 @@ async function syncFolder(drive, folder) {
     thumbWebp = photos[0].thumb;
   }
 
-  // ── Reverse geocoding : noms de villes + région + départements ──
+  // ── Reverse geocoding : noms de villes + région ──
   let startCity = null, endCity = null, region = null;
-  const geoTags = [];
   if (gpxStats.startLat != null) {
     const startGeo = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
     startCity = startGeo.city;
@@ -524,14 +523,9 @@ async function syncFolder(drive, folder) {
     endCity = endGeo.city;
     region = endGeo.region || startGeo.region;
     await new Promise(r => setTimeout(r, 1100));
-    // Tags géographiques automatiques : région + département(s) traversé(s)
-    for (const tag of [region, startGeo.department, endGeo.department]) {
-      if (tag && !geoTags.includes(tag)) geoTags.push(tag);
-    }
     if (startCity || endCity) {
       console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"} (${region || "région ?"})`);
     }
-    if (geoTags.length) console.log(`  🏷️  Tags auto : ${geoTags.join(", ")}`);
   }
 
   // ── Traduction du contenu (FR → EN/ES/IT/DE) ──
@@ -576,7 +570,7 @@ async function syncFolder(drive, folder) {
     elevProfile: gpxStats.elevProfile || [],
     minAltitude: gpxStats.minAltitude ?? null,
     highlights: notes.highlights || [],
-    tags: [...new Set([...(notes.tags || []), ...geoTags])],
+    tags: notes.tags || [],
     weather: notes.weather || null,
   };
 
