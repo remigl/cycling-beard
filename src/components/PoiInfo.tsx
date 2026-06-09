@@ -86,9 +86,17 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
     const tryFetch = async (): Promise<any> => {
       for (const url of mirrors) {
         try {
-          const res = await fetch(url, { method: "POST", body: "data=" + encodeURIComponent(query) });
+          // Timeout de 12s par miroir pour éviter le chargement infini
+          const controller = new AbortController();
+          const timer = setTimeout(() => controller.abort(), 12000);
+          const res = await fetch(url, {
+            method: "POST",
+            body: "data=" + encodeURIComponent(query),
+            signal: controller.signal,
+          });
+          clearTimeout(timer);
           if (res.ok) return await res.json();
-        } catch { /* essaie le miroir suivant */ }
+        } catch { /* timeout ou erreur : essaie le miroir suivant */ }
       }
       throw new Error("all mirrors failed");
     };
