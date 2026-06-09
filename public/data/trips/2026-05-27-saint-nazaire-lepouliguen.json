@@ -33,7 +33,7 @@
       "quote": null,
       "fullStory": [
         "Paris → Le Pouliguen",
-        "Took the train from Paris to Saint-Nazaire, with my bike in the baggage car. Then drove to Le Pouliguen. It was hot."
+        "Took the train from Paris to Saint-Nazaire, with my bike in the luggage car. Then drove to Le Pouliguen. It was hot."
       ]
     },
     "es": {
@@ -81,14 +81,14 @@
       "alt": "Le DîNer De Roi"
     },
     {
-      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/premier café au pouliguen.webp",
-      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_premier café au pouliguen.webp",
-      "alt": "Premier Café Au Pouliguen"
-    },
-    {
       "src": "/media/2026-05-27-saint-nazaire-lepouliguen/le moment le plus dur.webp",
       "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_le moment le plus dur.webp",
       "alt": "Le Moment Le Plus Dur"
+    },
+    {
+      "src": "/media/2026-05-27-saint-nazaire-lepouliguen/premier café au pouliguen.webp",
+      "thumb": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_premier café au pouliguen.webp",
+      "alt": "Premier Café Au Pouliguen"
     }
   ],
   "videos": [],
@@ -7893,6 +7893,9 @@
   ],
   "minAltitude": 3,
   "highlights": [],
-  "tags": [],
+  "tags": [
+    "Pays de la Loire",
+    "Loire-Atlantique"
+  ],
   "weather": null
 }

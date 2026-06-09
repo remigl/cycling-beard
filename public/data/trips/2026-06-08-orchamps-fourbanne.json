@@ -11,7 +11,7 @@
   "distanceKm": 78.7,
   "elevationGain": 404,
   "maxAltitude": 276,
-  "coverImage": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
+  "coverImage": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -64,9 +64,14 @@
   },
   "photos": [
     {
-      "src": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
-      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église saint pierre de besançon.webp",
+      "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
       "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
+      "alt": "BesançOn"
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
@@ -79,19 +84,14 @@
       "alt": "éGlise Sainte Madeleine De BesançOn"
     },
     {
-      "src": "/media/2026-06-08-orchamps-fourbanne/juste avant besançon.webp",
-      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_juste avant besançon.webp",
-      "alt": "Juste Avant BesançOn"
-    },
-    {
-      "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
-      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
-      "alt": "BesançOn"
-    },
-    {
       "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3446.webp",
       "alt": "Img 3446"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/juste avant besançon.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_juste avant besançon.webp",
+      "alt": "Juste Avant BesançOn"
     }
   ],
   "videos": [],
@@ -6414,6 +6414,10 @@
   ],
   "minAltitude": 215,
   "highlights": [],
-  "tags": [],
+  "tags": [
+    "Bourgogne-Franche-Comté",
+    "Jura",
+    "Doubs"
+  ],
   "weather": null
 }
