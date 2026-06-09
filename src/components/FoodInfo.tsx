@@ -21,33 +21,40 @@ interface FoodData {
 // Cherche une page Wikipédia sur la gastronomie de la région/ville
 async function fetchGastronomy(query: string, lang: string): Promise<FoodData | null> {
   try {
-    // 1. Recherche la page la plus pertinente
-    const searchUrl = `https://${lang}.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=1&format=json&origin=*`;
+    // 1. Recherche les pages pertinentes (on en prend plusieurs pour filtrer)
+    const searchUrl = `https://${lang}.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=5&format=json&origin=*`;
     const sres = await fetch(searchUrl);
     if (!sres.ok) return null;
     const sdata = await sres.json();
-    const hit = sdata.query?.search?.[0];
-    if (!hit) return null;
-    const title = hit.title;
+    const hits = sdata.query?.search || [];
+    if (hits.length === 0) return null;
 
-    // 2. Récupère la liste des sections de l'article
+    // Mots-clés qui valident qu'une page parle bien de gastronomie
+    const foodWords = /(cuisine|gastronomie|gastronomy|culinair|culinaire|specialit|spécialit|plats?|dishes|food|cucina|küche|keuken)/i;
+
+    // Choisit le 1er résultat dont le TITRE contient un mot gastronomique
+    let title = "";
+    for (const h of hits) {
+      if (foodWords.test(h.title)) { title = h.title; break; }
+    }
+    if (!title) return null; // aucun résultat gastronomique → on rejette (évite "Orléans")
+
+    // 2. Liste des sections de l'article
     const secUrl = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=sections&format=json&origin=*`;
     const secRes = await fetch(secUrl);
     const secData = secRes.ok ? await secRes.json() : null;
     const sections = secData?.parse?.sections || [];
 
-    // Cherche une section "plats typiques", "spécialités", "mets"...
     const wanted = /(plats?\s*typiques?|sp[ée]cialit[ée]s?|mets|dishes|specialties|gerichte|piatti|platos)/i;
     const target = sections.find((s: any) => wanted.test(s.line));
 
-    // 3a. Si une section dédiée existe, on récupère son texte
+    // 3a. Section dédiée → liste de plats
     if (target) {
       const extUrl = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&section=${target.index}&prop=text&format=json&origin=*`;
       const extRes = await fetch(extUrl);
       if (extRes.ok) {
         const extData = await extRes.json();
         const html = extData?.parse?.text?.["*"] || "";
-        // Extrait les éléments de liste (plats) du HTML de la section
         const items: string[] = [];
         const liMatches = html.match(/<li[^>]*>([\s\S]*?)<\/li>/gi) || [];
         for (const li of liMatches) {
@@ -60,7 +67,7 @@ async function fetchGastronomy(query: string, lang: string): Promise<FoodData | 
       }
     }
 
-    // 3b. Sinon, résumé intro classique
+    // 3b. Sinon résumé intro (de la page gastronomique validée)
     const sumUrl = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=5&pithumbsize=200&format=json&origin=*&redirects=1`;
     const res = await fetch(sumUrl);
     if (!res.ok) return null;
@@ -84,15 +91,17 @@ export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
 
   useEffect(() => {
     const wikiLang = ["en", "fr", "es", "it", "de", "nl"].includes(lang) ? lang : "en";
-    // On cherche par région si dispo, sinon par ville
-    const place = trip.region || trip.endCity || trip.startCity || "";
-    if (!place) { setError(true); setLoading(false); return; }
+    // On essaie la région puis la ville
+    const places = [trip.region, trip.endCity, trip.startCity].filter(Boolean) as string[];
+    if (places.length === 0) { setError(true); setLoading(false); return; }
 
-    const queries = [
-      `${t("food.query_cuisine")} ${place}`,
-      `${t("food.query_gastronomy")} ${place}`,
-      `${t("food.query_specialty")} ${place}`,
-    ];
+    // Pour chaque lieu, plusieurs formulations de requête
+    const queries: string[] = [];
+    for (const place of places) {
+      queries.push(`${t("food.query_cuisine")} ${place}`);
+      queries.push(`${t("food.query_gastronomy")} ${place}`);
+      queries.push(`${t("food.query_specialty")} ${place}`);
+    }
 
     (async () => {
       for (const q of queries) {
