@@ -9,6 +9,7 @@ declare global {
 interface RegionMapProps {
   region: string;
   trips: TripSummary[];   // toutes les étapes (on filtre celles de la région)
+  lang: string;
   onClose: () => void;
   t: (key: string) => string;
 }
@@ -28,7 +29,7 @@ function loadLeaflet(): Promise<void> {
   });
 }
 
-export default function RegionMap({ region, trips, onClose, t }: RegionMapProps) {
+export default function RegionMap({ region, trips, lang, onClose, t }: RegionMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<any>(null);
 
@@ -43,9 +44,13 @@ export default function RegionMap({ region, trips, onClose, t }: RegionMapProps)
       const map = L.map(mapRef.current, { zoomControl: true, attributionControl: false });
       mapInstance.current = map;
 
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-        maxZoom: 19,
-      }).addTo(map);
+      // Tuiles MapTiler avec labels dans la langue du site
+      const MAPTILER_KEY = "QxAdnETuTrlBj2mnHXOB";
+      const tileLang = ["fr", "en", "es", "it", "de", "nl"].includes(lang) ? lang : "en";
+      L.tileLayer(
+        `https://api.maptiler.com/maps/streets-v2/{z}/{x}/{y}.png?key=${MAPTILER_KEY}&language=${tileLang}`,
+        { maxZoom: 19, tileSize: 512, zoomOffset: -1 }
+      ).addTo(map);
 
       // Trace chaque tronçon de la région
       const allLatLngs: [number, number][] = [];
@@ -96,7 +101,7 @@ export default function RegionMap({ region, trips, onClose, t }: RegionMapProps)
           <X size={16} />
         </button>
       </div>
-      <div ref={mapRef} className="w-full h-[340px] bg-[#0f0f0f]" />
+      <div ref={mapRef} className="w-full h-[260px] bg-[#0f0f0f]" />
     </div>
   );
 }
