@@ -73,17 +73,27 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
     if (trip.mapLat == null || trip.mapLng == null) { setError(true); setLoading(false); return; }
     const lat = trip.mapLat, lng = trip.mapLng;
 
-    // Overpass : lieux touristiques/patrimoniaux notables dans 40 km, avec nom + tag wikipedia
-    const query = `[out:json][timeout:25];
-(
-  node(around:40000,${lat},${lng})["tourism"~"museum|attraction|viewpoint|artwork"]["name"];
-  node(around:40000,${lat},${lng})["historic"~"castle|monument|memorial|ruins|archaeological_site"]["name"];
-  way(around:40000,${lat},${lng})["historic"~"castle|monument|ruins"]["name"];
-);
-out center 60;`;
+    // Requête simplifiée : nodes seulement (plus rapide), rayon 30 km
+    const query = `[out:json][timeout:20];(node(around:30000,${lat},${lng})["tourism"~"museum|attraction|viewpoint"]["name"];node(around:30000,${lat},${lng})["historic"~"castle|monument|ruins|archaeological_site"]["name"];);out 80;`;
 
-    fetch("https://overpass-api.de/api/interpreter", { method: "POST", body: "data=" + encodeURIComponent(query) })
-      .then((r) => { if (!r.ok) throw new Error("overpass"); return r.json(); })
+    // Plusieurs miroirs Overpass (si l'un est occupé, on essaie le suivant)
+    const mirrors = [
+      "https://overpass-api.de/api/interpreter",
+      "https://overpass.kumi.systems/api/interpreter",
+      "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+    ];
+
+    const tryFetch = async (): Promise<any> => {
+      for (const url of mirrors) {
+        try {
+          const res = await fetch(url, { method: "POST", body: "data=" + encodeURIComponent(query) });
+          if (res.ok) return await res.json();
+        } catch { /* essaie le miroir suivant */ }
+      }
+      throw new Error("all mirrors failed");
+    };
+
+    tryFetch()
       .then(async (data: any) => {
         const seen = new Set<string>();
         const list: Poi[] = [];
@@ -105,6 +115,7 @@ out center 60;`;
           });
         }
         const sorted = list.sort((a, b) => a.dist - b.dist).slice(0, 15);
+        if (sorted.length === 0) { setError(true); setLoading(false); return; }
         setPois(sorted);
         setLoading(false);
 
