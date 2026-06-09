@@ -107,6 +107,12 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     return { cumDist: raw, totalDist: total };
   }, [flatCoords, distanceKm]);
 
+  // Clé stable pour éviter de recréer la carte à chaque render (sinon freeze)
+  const coordsKey = useMemo(
+    () => `${flatCoords.length}:${flatCoords[0]?.join(",") || ""}:${flatCoords[flatCoords.length - 1]?.join(",") || ""}`,
+    [flatCoords]
+  );
+
   // Détection du cours d'eau le plus proche via Overpass API (throttlé)
   const updateRiver = (lat: number, lng: number) => {
     const now = Date.now();
@@ -276,7 +282,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       try { map.remove(); } catch {}
       mapRef.current = null;
     };
-  }, [loaded, keyMissing, flatCoords]);
+  }, [loaded, keyMissing, coordsKey]);
 
   // ── Animation de survol (basée sur le temps) ──
   const animate = (timestamp?: number) => {
