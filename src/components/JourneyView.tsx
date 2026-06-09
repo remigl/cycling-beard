@@ -1,4 +1,4 @@
-import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed } from "lucide-react";
+import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
@@ -7,6 +7,7 @@ import RideReplay from "./RideReplay";
 import PlaceInfo from "./PlaceInfo";
 import PoiInfo from "./PoiInfo";
 import FoodInfo from "./FoodInfo";
+import RegionMap from "./RegionMap";
 
 interface JourneyViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -17,7 +18,12 @@ interface JourneyViewProps {
 }
 
 export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
-  const [selectedCountry, setSelectedCountry] = useState<string>("all");
+  // Pays par défaut = dernier pays où je suis (dernière étape)
+  const lastCountry = (() => {
+    const last = trips[trips.length - 1];
+    return last?.country && last.country !== "—" ? last.country : "all";
+  })();
+  const [selectedCountry, setSelectedCountry] = useState<string>(lastCountry);
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -27,6 +33,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [birdsTrip, setBirdsTrip] = useState<TripSummary | null>(null);
   const [poiTrip, setPoiTrip] = useState<TripSummary | null>(null);
   const [foodTrip, setFoodTrip] = useState<TripSummary | null>(null);
+  const [regionMap, setRegionMap] = useState<string | null>(null);
 
   const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
@@ -107,6 +114,11 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           <FoodInfo trip={foodTrip} lang={lang} onClose={() => setFoodTrip(null)} t={t} />
         )}
 
+        {/* Tiroir carte de région */}
+        {regionMap && (
+          <RegionMap region={regionMap} trips={trips} onClose={() => setRegionMap(null)} t={t} />
+        )}
+
         {/* Lightbox */}
         {lightbox && (
           <div
@@ -182,15 +194,17 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
               {t("journey.all")}
             </button>
             {regions.map(r => (
-              <button
-                key={r}
-                onClick={() => setSelectedRegion(r)}
-                className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border ${
-                  selectedRegion === r ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
-                }`}
-              >
-                {r}
-              </button>
+              <div key={r} className="inline-flex items-center">
+                <button
+                  onClick={() => { setSelectedRegion(r); setRegionMap(r); }}
+                  className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border inline-flex items-center gap-1.5 ${
+                    selectedRegion === r ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
+                  }`}
+                >
+                  {r}
+                  <Map size={11} className={selectedRegion === r ? "text-surface-card" : "text-brand-sand"} />
+                </button>
+              </div>
             ))}
           </div>
         )}
