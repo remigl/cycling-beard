@@ -1,4 +1,4 @@
-import { Navigation, ArrowRight, Info } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { TripSummary } from "../types";
 
@@ -33,9 +33,11 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
   const leafletLoaded = useLeaflet();
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
-  const [activeTrip, setActiveTrip] = useState<TripSummary | null>(
-    trips.length > 0 ? trips[trips.length - 1] : null
-  );
+  // Étape sélectionnée à afficher en popup plein écran par-dessus la carte
+  const [popupTrip, setPopupTrip] = useState<TripSummary | null>(null);
+  // Référence pour que les popups Leaflet (HTML brut) puissent déclencher React
+  const setPopupTripRef = useRef(setPopupTrip);
+  setPopupTripRef.current = setPopupTrip;
 
   const tripsWithTrack = trips.filter(t =>
     (t.track && t.track.length > 0) || (t.segments && t.segments.length > 0)
@@ -57,6 +59,16 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
         attribution: '© OpenStreetMap',
         maxZoom: 19,
       }).addTo(mapRef.current);
+
+      // Délégation : clic sur le bouton "Voir l'étape" dans une bulle Leaflet
+      mapRef.current.getContainer().addEventListener("click", (e: any) => {
+        const btn = e.target.closest("[data-stage-slug]");
+        if (btn) {
+          const slug = btn.getAttribute("data-stage-slug");
+          const trip = trips.find(tr => tr.slug === slug);
+          if (trip) setPopupTripRef.current(trip);
+        }
+      });
     }
 
     const map = mapRef.current;
@@ -69,18 +81,30 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
 
     const allBounds: any[] = [];
 
-    // Trace chaque étape — chaque segment GPX séparément (pas de ligne droite entre étapes)
+    // Construit le HTML d'une bulle avec bouton "Voir l'étape"
+    const popupHtml = (trip: TripSummary) => `
+      <div style="min-width:160px;text-align:center;">
+        <strong style="font-size:13px;">${trip.title}</strong><br>
+        <span style="font-size:11px;color:#666;">${trip.date}${trip.distanceKm > 0 ? ` · ${trip.distanceKm} km` : ""}</span><br>
+        <button data-stage-slug="${trip.slug}"
+          style="margin-top:8px;background:#8D7A68;color:#fff;border:none;border-radius:4px;padding:6px 12px;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;font-family:monospace;">
+          ${t("map.see_stage")}
+        </button>
+      </div>`;
+
+    // Trace chaque étape — chaque segment GPX séparément, CLIQUABLE
     tripsWithTrack.forEach(trip => {
       const segments = (trip.segments && trip.segments.length > 0)
         ? trip.segments
         : (trip.track ? [trip.track] : []);
       segments.forEach(seg => {
         if (seg.length < 2) return;
-        L.polyline(seg, {
+        const line = L.polyline(seg, {
           color: "#E8620A",
-          weight: 4,
+          weight: 5,
           opacity: 0.85,
         }).addTo(map);
+        line.bindPopup(popupHtml(trip));
         allBounds.push(...seg);
       });
     });
@@ -110,7 +134,7 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
       });
       L.marker(departurePoint, { icon: startIcon, zIndexOffset: 500 })
         .addTo(map)
-        .bindPopup(`<strong>Départ</strong><br>${firstTrip.title}`);
+        .bindPopup(popupHtml(firstTrip));
       allBounds.push(departurePoint);
     }
 
@@ -129,19 +153,17 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
           iconAnchor: [17, 17],
         });
         const m = L.marker([trip.mapLat, trip.mapLng], { icon: currentIcon, zIndexOffset: 1000 }).addTo(map);
-        m.bindPopup(`<strong>📍 Position actuelle</strong><br>${trip.title}<br>${trip.date}`);
-        m.on("click", () => setActiveTrip(trip));
+        m.bindPopup(popupHtml(trip));
       } else if (idx > 0) {
         // Étapes intermédiaires (le départ idx 0 a déjà son drapeau)
         const marker = L.circleMarker([trip.mapLat, trip.mapLng], {
-          radius: 6,
+          radius: 7,
           fillColor: "#2A6B73",
           color: "#fff",
           weight: 2,
           fillOpacity: 1,
         }).addTo(map);
-        marker.bindPopup(`<strong>${trip.title}</strong><br>${trip.date} · ${trip.distanceKm} km`);
-        marker.on("click", () => setActiveTrip(trip));
+        marker.bindPopup(popupHtml(trip));
       }
       allBounds.push([trip.mapLat, trip.mapLng]);
     });
@@ -183,10 +205,10 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-8 items-stretch">
+        <div>
 
           {/* Vraie carte Leaflet */}
-          <div className="lg:col-span-8 bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative min-h-[440px]">
+          <div className="bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative min-h-[440px]">
             {!leafletLoaded && (
               <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
                 <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
@@ -207,65 +229,69 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
               </div>
             )}
           </div>
+        </div>
 
-          {/* Sidebar */}
-          <div className="lg:col-span-4 flex flex-col justify-between bg-[#1c1b1b] border border-white/5 rounded-lg p-6 text-left">
-            <div>
-              <div className="flex items-center gap-2 mb-4">
-                <Navigation size={15} className="text-brand-sand" />
-                <span className="font-mono text-[10px] uppercase font-bold tracking-widest text-brand-sand">{t("map.point")}</span>
+        {/* Popup étape par-dessus la carte */}
+        {popupTrip && (
+          <div
+            className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3 overflow-y-auto"
+            onClick={() => setPopupTrip(null)}
+          >
+            <div
+              className="relative w-full max-w-lg bg-[#1c1b1b] rounded-2xl overflow-hidden border border-white/10 my-8"
+              onClick={e => e.stopPropagation()}
+            >
+              {/* Bouton fermer */}
+              <button
+                onClick={() => setPopupTrip(null)}
+                className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/50 backdrop-blur hover:bg-black/70 flex items-center justify-center text-white cursor-pointer"
+              >
+                <X size={18} />
+              </button>
+
+              {/* Image */}
+              <div className="relative aspect-video">
+                <img
+                  src={popupTrip.thumbnail}
+                  alt={popupTrip.title}
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b1b] to-transparent" />
               </div>
 
-              {activeTrip ? (
-                <div>
-                  <div className="relative aspect-video rounded overflow-hidden mb-5">
-                    <img
-                      src={activeTrip.thumbnail}
-                      alt={activeTrip.title}
-                      referrerPolicy="no-referrer"
-                      className="w-full h-full object-cover filter brightness-90"
-                    />
-                  </div>
-                  <span className="font-mono text-[9px] text-brand-sand uppercase tracking-widest font-bold block mb-1">
-                    {activeTrip.country} · {activeTrip.date}
-                  </span>
-                  <h3 className="font-display text-xl font-bold uppercase text-text-on">{activeTrip.title}</h3>
-                  <p className="mt-3 text-xs text-text-dim text-opacity-80 leading-relaxed font-light">{activeTrip.shortDescription}</p>
-                  <div className="mt-6 pt-5 border-t border-white/5 grid grid-cols-2 gap-4 font-mono text-xs">
-                    <div>
-                      <span className="text-text-dim text-opacity-40 text-[9px] uppercase font-semibold block">Distance</span>
-                      <span className="text-brand-sand font-bold mt-1 text-sm block">
-                        {activeTrip.distanceKm > 0 ? `${activeTrip.distanceKm} km` : "—"}
-                      </span>
-                    </div>
-                    <div>
-                      <span className="text-text-dim text-opacity-40 text-[9px] uppercase font-semibold block">Dénivelé</span>
-                      <span className="text-text-on font-semibold mt-1 text-sm block">
-                        {activeTrip.elevationGain > 0 ? `+${activeTrip.elevationGain} m` : "—"}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <div className="h-64 flex flex-col items-center justify-center text-center text-xs text-text-dim text-opacity-40">
-                  <Info size={24} className="mb-2 opacity-50" />
-                  {t("map.click_point")}
-                </div>
-              )}
-            </div>
+              <div className="px-6 pb-6 -mt-8 relative">
+                <span className="font-mono text-[9px] text-brand-sand uppercase tracking-widest font-bold block mb-1">
+                  {popupTrip.country} · {popupTrip.date}
+                </span>
+                <h3 className="font-display text-2xl font-bold uppercase text-text-on">{popupTrip.title}</h3>
+                <p className="mt-3 text-xs text-text-dim text-opacity-80 leading-relaxed font-light">{popupTrip.shortDescription}</p>
 
-            {activeTrip && (
-              <div className="mt-8 pt-5 border-t border-white/5">
+                <div className="mt-5 pt-4 border-t border-white/5 grid grid-cols-2 gap-4 font-mono text-xs">
+                  <div>
+                    <span className="text-text-dim text-opacity-40 text-[9px] uppercase font-semibold block">Distance</span>
+                    <span className="text-brand-sand font-bold mt-1 text-sm block">
+                      {popupTrip.distanceKm > 0 ? `${popupTrip.distanceKm} km` : "—"}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="text-text-dim text-opacity-40 text-[9px] uppercase font-semibold block">Dénivelé</span>
+                    <span className="text-text-on font-semibold mt-1 text-sm block">
+                      {popupTrip.elevationGain > 0 ? `+${popupTrip.elevationGain} m` : "—"}
+                    </span>
+                  </div>
+                </div>
+
                 <button
-                  onClick={() => onNavigate("stage", activeTrip.slug)}
-                  className="w-full bg-brand-sand text-bg-dark font-display text-[10px] font-bold uppercase tracking-widest py-3 rounded hover:bg-opacity-95 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                  onClick={() => onNavigate("stage", popupTrip.slug)}
+                  className="mt-6 w-full bg-brand-sand text-bg-dark font-display text-[10px] font-bold uppercase tracking-widest py-3 rounded hover:bg-opacity-95 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
                 >
                   {t("map.explore")} <ArrowRight size={11} />
                 </button>
               </div>
-            )}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
