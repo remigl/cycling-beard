@@ -164,7 +164,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
             {countries.map(c => (
               <button
                 key={c}
-                onClick={() => { setSelectedCountry(c); setSelectedRegion("all"); }}
+                onClick={() => { setSelectedCountry(c); setSelectedRegion("all"); setRegionMap(null); }}
                 className={`px-3 py-2 rounded-md font-mono text-[9px] uppercase font-bold tracking-wider transition-all cursor-pointer ${
                   selectedCountry === c ? "bg-brand-sand text-surface-card" : "bg-surface-card border border-text-on/10 text-text-dim hover:text-text-on"
                 }`}
@@ -182,7 +182,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
               {selectedCountry} :
             </span>
             <button
-              onClick={() => setSelectedRegion("all")}
+              onClick={() => { setSelectedRegion("all"); setRegionMap(null); }}
               className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border ${
                 selectedRegion === "all" ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
               }`}
@@ -192,7 +192,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
             {regions.map(r => (
               <div key={r} className="inline-flex items-center">
                 <button
-                  onClick={() => { setSelectedRegion(r); setRegionMap(r); }}
+                  onClick={() => { setSelectedRegion(r); setRegionMap(regionMap === r ? null : r); }}
                   className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border inline-flex items-center gap-1.5 ${
                     selectedRegion === r ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
                   }`}
@@ -230,7 +230,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
 
         {/* Tiroir carte de région (inline, prend la place des tags) */}
         {regionMap && (
-          <RegionMap region={regionMap} trips={trips} onClose={() => setRegionMap(null)} t={t} />
+          <RegionMap region={regionMap} trips={trips} lang={lang} onClose={() => setRegionMap(null)} t={t} />
         )}
 
         {/* TIMELINE */}
