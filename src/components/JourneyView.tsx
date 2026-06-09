@@ -1,10 +1,12 @@
-import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird } from "lucide-react";
+import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
 import { Lang } from "../i18n";
 import RideReplay from "./RideReplay";
 import PlaceInfo from "./PlaceInfo";
+import PoiInfo from "./PoiInfo";
+import FoodInfo from "./FoodInfo";
 
 interface JourneyViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -22,7 +24,9 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
   const [replayOpen, setReplayOpen] = useState<string | null>(null);
   const [elevOpen, setElevOpen] = useState<string | null>(null);
-  const [infoTrip, setInfoTrip] = useState<TripSummary | null>(null);
+  const [birdsTrip, setBirdsTrip] = useState<TripSummary | null>(null);
+  const [poiTrip, setPoiTrip] = useState<TripSummary | null>(null);
+  const [foodTrip, setFoodTrip] = useState<TripSummary | null>(null);
 
   const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
@@ -90,9 +94,17 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     <div className="w-full min-h-screen pt-24 pb-20 px-4 md:px-14 bg-bg-dark text-text-on">
       <div className="max-w-6xl mx-auto">
 
-        {/* Popup Infos IA */}
-        {infoTrip && (
-          <PlaceInfo trip={infoTrip} lang={lang} onClose={() => setInfoTrip(null)} t={t} />
+        {/* Popup eBird */}
+        {birdsTrip && (
+          <PlaceInfo trip={birdsTrip} lang={lang} onClose={() => setBirdsTrip(null)} t={t} />
+        )}
+        {/* Popup Points d'intérêt */}
+        {poiTrip && (
+          <PoiInfo trip={poiTrip} lang={lang} onClose={() => setPoiTrip(null)} t={t} />
+        )}
+        {/* Popup Spécialités */}
+        {foodTrip && (
+          <FoodInfo trip={foodTrip} lang={lang} onClose={() => setFoodTrip(null)} t={t} />
         )}
 
         {/* Lightbox */}
@@ -258,30 +270,46 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                       </div>
                     )}
                     {(trip.track && trip.track.length > 1 || (trip.elevProfile && trip.elevProfile.length > 1) || trip.startCity || trip.endCity) && (
-                      <div className={`flex gap-2 mt-3 flex-wrap ${isLeft ? "md:justify-end" : ""}`}>
-                        {trip.elevProfile && trip.elevProfile.length > 1 && (
+                      <div className="flex flex-col gap-2 mt-3">
+                        {/* Rangée 1 : Dénivelé · Survol 3D · eBird */}
+                        <div className="grid grid-cols-3 gap-2">
                           <button
                             onClick={() => setElevOpen(elevOpen === trip.slug ? null : trip.slug)}
-                            className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                            disabled={!(trip.elevProfile && trip.elevProfile.length > 1)}
+                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer disabled:opacity-30 disabled:cursor-default"
                           >
                             <Mountain size={12} /> {t("journey.elevation_btn")}
                           </button>
-                        )}
-                        {trip.track && trip.track.length > 1 && (
                           <button
                             onClick={() => setReplayOpen(replayOpen === trip.slug ? null : trip.slug)}
-                            className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                            disabled={!(trip.track && trip.track.length > 1)}
+                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer disabled:opacity-30 disabled:cursor-default"
                           >
                             <Box size={12} /> {replayOpen === trip.slug ? t("replay.close") : t("stage.replay")}
                           </button>
-                        )}
-                        {(trip.startCity || trip.endCity) && (
                           <button
-                            onClick={() => setInfoTrip(trip)}
-                            className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                            onClick={() => setBirdsTrip(trip)}
+                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
                           >
                             <Bird size={12} /> {t("journey.birds_btn")}
                           </button>
+                        </div>
+                        {/* Rangée 2 : Points d'intérêt · Spécialités */}
+                        {(trip.startCity || trip.endCity) && (
+                          <div className="grid grid-cols-2 gap-2">
+                            <button
+                              onClick={() => setPoiTrip(trip)}
+                              className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                            >
+                              <MapPin size={12} /> {t("journey.poi_btn")}
+                            </button>
+                            <button
+                              onClick={() => setFoodTrip(trip)}
+                              className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                            >
+                              <UtensilsCrossed size={12} /> {t("journey.food_btn")}
+                            </button>
+                          </div>
                         )}
                       </div>
                     )}
