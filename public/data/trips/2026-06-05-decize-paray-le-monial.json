@@ -11,7 +11,7 @@
   "distanceKm": 94.1,
   "elevationGain": 579,
   "maxAltitude": 264,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,23 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
+      "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
+      "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
+      "alt": "083906"
+    },
+    {
+      "src": "/media/2026-06-05-decize-paray-le-monial/img_3403.webp",
+      "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_img_3403.webp",
+      "alt": "Img 3403"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-05-decize-paray-le-monial_1.gpx",
   "mapLat": 46.7216114,

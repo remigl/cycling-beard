@@ -11,7 +11,7 @@
   "distanceKm": 78.7,
   "elevationGain": 404,
   "maxAltitude": 276,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,38 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
+      "alt": "Img 3434"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/img_3437.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3437.webp",
+      "alt": "Img 3437"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/img_3438.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3438.webp",
+      "alt": "Img 3438"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/img_3442.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3442.webp",
+      "alt": "Img 3442"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3446.webp",
+      "alt": "Img 3446"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-08-orchamps-fourbanne_1.gpx",
   "mapLat": 47.3302444,

@@ -11,7 +11,7 @@
   "distanceKm": 92.4,
   "elevationGain": 400,
   "maxAltitude": 219,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,23 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
+      "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
+      "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
+      "alt": "Img 3426"
+    },
+    {
+      "src": "/media/2026-06-07-verjux-orchamps/img_3430.webp",
+      "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3430.webp",
+      "alt": "Img 3430"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-07-verjux-orchamps_1.gpx",
   "mapLat": 46.9032212,

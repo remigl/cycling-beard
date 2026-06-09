@@ -89106,8 +89106,8 @@
     "endCity": "Cronat",
     "distanceKm": 94.1,
     "elevationGain": 579,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
+    "thumbnail": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -98301,7 +98301,23 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
+        "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
+        "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
+        "alt": "083906"
+      },
+      {
+        "src": "/media/2026-06-05-decize-paray-le-monial/img_3403.webp",
+        "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_img_3403.webp",
+        "alt": "Img 3403"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -98848,8 +98864,8 @@
     "endCity": "Chalon-sur-Saône",
     "distanceKm": 133.7,
     "elevationGain": 957,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
+    "thumbnail": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -108403,7 +108419,48 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
+        "alt": "Img 3404"
+      },
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img_3406.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3406.webp",
+        "alt": "Img 3406"
+      },
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img_3408.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3408.webp",
+        "alt": "Img 3408"
+      },
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img_3411.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3411.webp",
+        "alt": "Img 3411"
+      },
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img_3415.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3415.webp",
+        "alt": "Img 3415"
+      },
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img_3422.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3422.webp",
+        "alt": "Img 3422"
+      },
+      {
+        "src": "/media/2026-06-06-paray-le-monial-verjux/img-20260606-wa0003.webp",
+        "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img-20260606-wa0003.webp",
+        "alt": "Img 20260606 Wa0003"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -108954,8 +109011,8 @@
     "endCity": "Bragny-sur-Saône",
     "distanceKm": 92.4,
     "elevationGain": 400,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
+    "thumbnail": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -122105,7 +122162,23 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
+        "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
+        "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
+        "alt": "Img 3426"
+      },
+      {
+        "src": "/media/2026-06-07-verjux-orchamps/img_3430.webp",
+        "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3430.webp",
+        "alt": "Img 3430"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -123188,8 +123261,8 @@
     "endCity": "Fourbanne",
     "distanceKm": 78.7,
     "elevationGain": 404,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
+    "thumbnail": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -129269,7 +129342,38 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
+        "alt": "Img 3434"
+      },
+      {
+        "src": "/media/2026-06-08-orchamps-fourbanne/img_3437.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3437.webp",
+        "alt": "Img 3437"
+      },
+      {
+        "src": "/media/2026-06-08-orchamps-fourbanne/img_3438.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3438.webp",
+        "alt": "Img 3438"
+      },
+      {
+        "src": "/media/2026-06-08-orchamps-fourbanne/img_3442.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3442.webp",
+        "alt": "Img 3442"
+      },
+      {
+        "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3446.webp",
+        "alt": "Img 3446"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",

@@ -11,7 +11,7 @@
   "distanceKm": 133.7,
   "elevationGain": 957,
   "maxAltitude": 370,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,48 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
+      "alt": "Img 3404"
+    },
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img_3406.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3406.webp",
+      "alt": "Img 3406"
+    },
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img_3408.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3408.webp",
+      "alt": "Img 3408"
+    },
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img_3411.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3411.webp",
+      "alt": "Img 3411"
+    },
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img_3415.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3415.webp",
+      "alt": "Img 3415"
+    },
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img_3422.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3422.webp",
+      "alt": "Img 3422"
+    },
+    {
+      "src": "/media/2026-06-06-paray-le-monial-verjux/img-20260606-wa0003.webp",
+      "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img-20260606-wa0003.webp",
+      "alt": "Img 20260606 Wa0003"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-06-paray-le-monial-verjux_1.gpx",
   "mapLat": 46.7823685,
