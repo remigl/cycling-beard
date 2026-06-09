@@ -543,7 +543,7 @@ async function syncFolder(drive, folder) {
     title: notes.title || titleRaw,
     day: `Jour ${computeDayNumber(date)}`,
     location: notes.location || titleRaw,
-    country: detectCountry(slug),
+    country: detectCountry(slug, region),
     region: region || null,
     startCity: startCity || null,
     endCity: endCity || null,
@@ -591,7 +591,7 @@ function computeDayNumber(dateStr) {
 }
 
 // Crude country detection from slug keywords — étendre selon les besoins
-function detectCountry(slug) {
+function detectCountry(slug, region) {
   const s = slug.toLowerCase();
   // France — villes et régions
   if (s.includes("france") || s.includes("paris") || s.includes("lyon") || 
@@ -629,6 +629,17 @@ function detectCountry(slug) {
   if (s.includes("tajikistan") || s.includes("pamir") || s.includes("dushanbe")) return "Tajikistan";
   if (s.includes("kyrgyzstan") || s.includes("bishkek")) return "Kyrgyzstan";
   if (s.includes("kazakhstan") || s.includes("almaty")) return "Kazakhstan";
+
+  // Repli : déduit le pays depuis la région obtenue par géocodage inverse
+  if (region) {
+    const r = region.toLowerCase();
+    const frenchRegions = ["loire", "bretagne", "normandie", "centre", "bourgogne", "franche-comté",
+      "grand est", "alsace", "occitanie", "nouvelle-aquitaine", "auvergne", "rhône", "provence",
+      "hauts-de-france", "île-de-france", "ile-de-france", "pays de la loire", "corse"];
+    if (frenchRegions.some(fr => r.includes(fr))) return "France";
+    if (r.includes("piemonte") || r.includes("piedmont") || r.includes("lombard")) return "Italy";
+    if (r.includes("tirol") || r.includes("tyrol") || r.includes("steiermark") || r.includes("wien")) return "Austria";
+  }
   return "—";
 }
 
