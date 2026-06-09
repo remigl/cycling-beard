@@ -18,10 +18,12 @@ interface JourneyViewProps {
 }
 
 export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
-  // Pays par défaut = dernier pays où je suis (dernière étape)
+  // Pays par défaut = pays de l'étape la plus récente (par date, peu importe l'ordre du tableau)
   const lastCountry = (() => {
-    const last = trips[trips.length - 1];
-    return last?.country && last.country !== "—" ? last.country : "all";
+    const withCountry = trips.filter(tr => tr.country && tr.country !== "—");
+    if (withCountry.length === 0) return "all";
+    const latest = withCountry.reduce((a, b) => (a.date || "") >= (b.date || "") ? a : b);
+    return latest.country;
   })();
   const [selectedCountry, setSelectedCountry] = useState<string>(lastCountry);
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
