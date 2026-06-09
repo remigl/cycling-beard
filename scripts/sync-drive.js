@@ -119,14 +119,29 @@ async function listFilesInFolder(drive, folderId) {
   return res.data.files || [];
 }
 
-async function downloadFile(drive, fileId, destPath) {
-  const dest = fs.createWriteStream(destPath);
-  const res = await drive.files.get({ fileId, alt: "media" }, { responseType: "stream" });
-  await new Promise((resolve, reject) => {
-    res.data.pipe(dest);
-    res.data.on("end", resolve);
-    res.data.on("error", reject);
-  });
+async function downloadFile(drive, fileId, destPath, attempt = 1) {
+  try {
+    const res = await drive.files.get({ fileId, alt: "media" }, { responseType: "stream" });
+    await new Promise((resolve, reject) => {
+      const dest = fs.createWriteStream(destPath);
+      let errored = false;
+      res.data.on("error", (err) => { errored = true; reject(err); });
+      dest.on("error", (err) => { errored = true; reject(err); });
+      // On attend "finish" du flux d'ÉCRITURE (fichier réellement écrit sur disque)
+      dest.on("finish", () => { if (!errored) resolve(); });
+      res.data.pipe(dest);
+    });
+    // Vérifie que le fichier n'est pas vide
+    const stats = fs.statSync(destPath);
+    if (stats.size === 0) throw new Error("fichier vide");
+  } catch (err) {
+    if (attempt < 3) {
+      console.log(`  ⏳ Téléchargement échoué (essai ${attempt}), nouvelle tentative...`);
+      await new Promise((r) => setTimeout(r, 1000 * attempt));
+      return downloadFile(drive, fileId, destPath, attempt + 1);
+    }
+    throw err;
+  }
 }
 
 // ─── Image processing ─────────────────────────────────────────────────────────
@@ -494,6 +509,9 @@ async function syncFolder(drive, folder) {
   if (gpxContents.length > 0) {
     gpxStats = mergeGpxFiles(gpxContents);
     console.log(`  📍 Total GPX (${gpxContents.length} fichier(s)): ${gpxStats.distanceKm}km, +${gpxStats.elevationGain}m, max ${gpxStats.maxAltitude}m`);
+    if (gpxStats.distanceKm === 0) {
+      console.warn(`  ⚠️  ATTENTION : distance = 0 km pour ${slug}. GPX vide ou corrompu ?`);
+    }
   }
 
   // Fallback cover
