@@ -116,7 +116,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             transition={{ duration: 1.0 }}
             className="mb-10"
           >
-            <h1 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl text-text-on uppercase tracking-[0.05em] leading-tight">
+            <h1 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl text-brand-sand uppercase tracking-[0.05em] leading-tight">
               THE CYCLING BEARD
             </h1>
           </motion.div>
