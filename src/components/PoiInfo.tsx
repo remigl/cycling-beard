@@ -65,7 +65,10 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
           const pg = pagesById[k];
           let desc = (pg.extract || "").replace(/\s+/g, " ").trim();
           if (desc.length > 160) desc = desc.slice(0, 157) + "…";
-          detailByTitle[pg.title] = { thumb: pg.thumbnail?.source || null, desc: desc || null };
+          let thumb = pg.thumbnail?.source || null;
+          // Écarte les cartes de localisation génériques (pas de vraie photo)
+          if (thumb && /(Localisation|location_map|France_location|_map|\.svg)/i.test(thumb)) thumb = null;
+          detailByTitle[pg.title] = { thumb, desc: desc || null };
         }
 
         // 3. Construit la liste avec score touristique
