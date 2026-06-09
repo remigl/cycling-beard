@@ -127,7 +127,7 @@ export default function App() {
               <StageDetailView slug={activeStageSlug} onNavigate={handleCustomNavigate} lang={lang} t={t} />
             )}
             {activeTab === "map" && (
-              <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} />
+              <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} lang={lang} />
             )}
           </motion.div>
         </AnimatePresence>
