@@ -7361,7 +7361,7 @@
         "quote": null,
         "fullStory": [
           "Paris → Le Pouliguen",
-          "Took the train from Paris to Saint-Nazaire, with my bike in the baggage car. Then drove to Le Pouliguen. It was hot."
+          "Took the train from Paris to Saint-Nazaire, with my bike in the luggage car. Then drove to Le Pouliguen. It was hot."
         ]
       },
       "es": {
@@ -7385,7 +7385,7 @@
         "quote": null,
         "fullStory": [
           "Paris → Le Pouliguen",
-          "Mit dem Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen. Dann weiter mit dem Auto bis nach Le Pouliguen. Es war heiß."
+          "Mit dem Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen. Dann weiter mit dem Auto nach Le Pouliguen. Es war heiß."
         ]
       },
       "nl": {
@@ -37863,7 +37863,7 @@
         "summary": "Soy desviaciones de desviaciones.",
         "quote": null,
         "fullStory": [
-          "Estoy siguiendo desvíos de desvíos. Qué bien...",
+          "Estoy siguiendo desvíos de desvíos. Qué alegría...",
           "Para comer, una tartiflette en un sitio agradable.",
           "Noche en el camping. Los franceses con los que me crucé en el camping, que recorren 50 km en kayak al día, eran muy simpáticos."
         ]
@@ -37872,7 +37872,7 @@
         "summary": "Sono deviazioni di deviazioni.",
         "quote": null,
         "fullStory": [
-          "Sono deviazioni di deviazioni. È bello...",
+          "Sono deviazioni di deviazioni. È un piacere...",
           "A pranzo, una tartiflette in un posticino carino.",
           "Notte in campeggio. I francesi che ho incontrato al campeggio, che percorrono 50 km al giorno in kayak, erano simpatici."
         ]
@@ -37881,7 +37881,7 @@
         "summary": "Ich folge Umleitungen von Umleitungen.",
         "quote": null,
         "fullStory": [
-          "Ich folge Umleitungen von Umleitungen. Das tut gut...",
+          "Ich folge Umleitungen von Umleitungen. Das freut mich..",
           "Mittags Tartiflette in einem gemütlichen Lokal.",
           "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren sehr nett."
         ]
@@ -37891,7 +37891,7 @@
         "quote": null,
         "fullStory": [
           "Ik volg omleidingen van omleidingen. Dat is leuk...",
-          "'s Middags een tartiflette in een gezellig restaurantje.",
+          "'s Middags een tartiflette op een gezellig plekje.",
           "Overnachting op de camping. De Fransen die ik op de camping tegenkwam en die elke dag 50 km kajakken, waren aardig."
         ]
       }
@@ -99373,7 +99373,7 @@
     "slug": "2026-06-06-paray-le-monial-verjux",
     "date": "2026-06-06",
     "title": "Paray Le Monial → Verjux",
-    "country": "—",
+    "country": "France",
     "region": "Bourgogne-Franche-Comté",
     "startCity": "Chalon-sur-Saône",
     "endCity": "Chalon-sur-Saône",
@@ -109515,7 +109515,7 @@
     "slug": "2026-06-07-verjux-orchamps",
     "date": "2026-06-07",
     "title": "Verjux → Orchamps",
-    "country": "—",
+    "country": "France",
     "region": "Bourgogne-Franche-Comté",
     "startCity": "Bragny-sur-Saône",
     "endCity": "Bragny-sur-Saône",
@@ -121765,7 +121765,7 @@
     "slug": "2026-06-08-orchamps-fourbanne",
     "date": "2026-06-08",
     "title": "Orchamps → Fourbanne",
-    "country": "—",
+    "country": "France",
     "region": "Bourgogne-Franche-Comté",
     "startCity": "Orchamps",
     "endCity": "Fourbanne",
