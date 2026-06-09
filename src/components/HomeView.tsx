@@ -21,11 +21,30 @@ function weatherIcon(code: number): string {
   return "🌥️";
 }
 
+// Flèche indiquant la direction VERS LAQUELLE le vent souffle
+function windArrow(deg: number): string {
+  const arrows = ["↓", "↙", "←", "↖", "↑", "↗", "→", "↘"];
+  // deg = provenance ; on ajoute 180° pour la direction du déplacement
+  const idx = Math.round((((deg + 180) % 360) / 45)) % 8;
+  return arrows[idx];
+}
+
+// Couleur selon l'indice UV (faible→vert, modéré→jaune, élevé→orange, très élevé→rouge)
+function uvColor(uv: number): string {
+  if (uv <= 2) return "text-green-400";
+  if (uv <= 5) return "text-yellow-400";
+  if (uv <= 7) return "text-orange-400";
+  return "text-red-400";
+}
+
 interface WeatherDay {
   label: string;
   icon: string;
   tempMax: number;
   tempMin: number;
+  uvMax: number;
+  windMax: number;     // km/h
+  windDir: number;     // degrés
 }
 
 interface AboutData {
@@ -62,14 +81,14 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
     };
     const [todayLbl, tomorrowLbl] = labels[lang] || labels.fr;
 
-    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latest.mapLat}&longitude=${latest.mapLng}&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=2`)
+    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latest.mapLat}&longitude=${latest.mapLng}&daily=weather_code,temperature_2m_max,temperature_2m_min,uv_index_max,wind_speed_10m_max,wind_direction_10m_dominant&timezone=auto&forecast_days=2`)
       .then(r => r.json())
       .then(data => {
         const d = data.daily;
         if (!d) return;
         setWeather([
-          { label: todayLbl, icon: weatherIcon(d.weather_code[0]), tempMax: Math.round(d.temperature_2m_max[0]), tempMin: Math.round(d.temperature_2m_min[0]) },
-          { label: tomorrowLbl, icon: weatherIcon(d.weather_code[1]), tempMax: Math.round(d.temperature_2m_max[1]), tempMin: Math.round(d.temperature_2m_min[1]) },
+          { label: todayLbl, icon: weatherIcon(d.weather_code[0]), tempMax: Math.round(d.temperature_2m_max[0]), tempMin: Math.round(d.temperature_2m_min[0]), uvMax: Math.round(d.uv_index_max[0]), windMax: Math.round(d.wind_speed_10m_max[0]), windDir: d.wind_direction_10m_dominant[0] },
+          { label: tomorrowLbl, icon: weatherIcon(d.weather_code[1]), tempMax: Math.round(d.temperature_2m_max[1]), tempMin: Math.round(d.temperature_2m_min[1]), uvMax: Math.round(d.uv_index_max[1]), windMax: Math.round(d.wind_speed_10m_max[1]), windDir: d.wind_direction_10m_dominant[1] },
         ]);
       })
       .catch(() => setWeather([]));
@@ -148,16 +167,25 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
               {/* Météo 2 jours */}
               {weather.length > 0 && (
-                <div className="flex items-center gap-6 mt-1">
+                <div className="flex flex-wrap gap-x-8 gap-y-3 mt-1">
                   {weather.map((day, i) => (
-                    <div key={i} className="flex items-center gap-2">
-                      <span className="text-2xl">{day.icon}</span>
-                      <div className="flex flex-col leading-tight">
-                        <span className="text-[9px] uppercase tracking-wider text-brand-sand font-bold">{day.label}</span>
+                    <div key={i} className="flex flex-col gap-1.5">
+                      <span className="text-[9px] uppercase tracking-wider text-brand-sand font-bold">{day.label}</span>
+                      <div className="flex items-center gap-2">
+                        <span className="text-2xl">{day.icon}</span>
                         <span className="text-[11px] text-text-on">
                           <span className="text-red-400">{day.tempMax}°</span>
                           {" / "}
                           <span className="text-sky-400">{day.tempMin}°</span>
+                        </span>
+                      </div>
+                      {/* UV + vent */}
+                      <div className="flex items-center gap-3 font-mono text-[10px] text-text-dim">
+                        <span className="flex items-center gap-1">
+                          ☀️ <span className={uvColor(day.uvMax)}>{t("weather.uv")} {day.uvMax}</span>
+                        </span>
+                        <span className="flex items-center gap-1">
+                          💨 {day.windMax} <span className="text-[8px]">km/h</span> {windArrow(day.windDir)}
                         </span>
                       </div>
                     </div>
