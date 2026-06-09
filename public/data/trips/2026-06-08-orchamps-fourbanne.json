@@ -11,7 +11,7 @@
   "distanceKm": 78.7,
   "elevationGain": 404,
   "maxAltitude": 276,
-  "coverImage": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
+  "coverImage": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -64,9 +64,14 @@
   },
   "photos": [
     {
-      "src": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
-      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église sainte madeleine de besançon.webp",
+      "src": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église saint pierre de besançon.webp",
       "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
+      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église saint pierre de besançon.webp",
+      "alt": "éGlise Saint Pierre De BesançOn"
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
@@ -82,11 +87,6 @@
       "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
       "alt": "BesançOn"
-    },
-    {
-      "src": "/media/2026-06-08-orchamps-fourbanne/img_3438.webp",
-      "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3438.webp",
-      "alt": "Img 3438"
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",
