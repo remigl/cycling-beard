@@ -357,7 +357,9 @@ async function processInbox(drive, rootId) {
   console.log(`\n📥 Inbox traitée (${geocodes} géocodages).`);
 }
 
+// ─── GPX parsing ─────────────────────────────────────────────────────────────
 
+function parseOneGpx(gpxContent) {
   const gpx = new GpxParser();
   gpx.parse(gpxContent);
 
