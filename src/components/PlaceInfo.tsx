@@ -8,11 +8,11 @@ const EBIRD_KEY = "6fuv5j5odi8b";
 // ──────────────────────────────────────────────────────────────────────────────
 
 interface BirdObs {
-  comName: string;  // nom commun
-  sciName: string;  // nom scientifique
+  comName: string;
+  sciName: string;
   howMany?: number;
-  locName?: string;
   obsDt?: string;
+  thumb?: string | null; // vignette Wikipedia (chargée après)
 }
 
 interface PlaceInfoProps {
@@ -20,6 +20,24 @@ interface PlaceInfoProps {
   lang: Lang;
   onClose: () => void;
   t: (key: string) => string;
+}
+
+// Récupère une vignette Wikipedia à partir du nom scientifique
+async function fetchThumb(sciName: string, lang: string): Promise<string | null> {
+  try {
+    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(sciName)}&prop=pageimages&pithumbsize=120&format=json&origin=*&redirects=1`;
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const data = await res.json();
+    const pages = data.query?.pages || {};
+    for (const k of Object.keys(pages)) {
+      const thumb = pages[k]?.thumbnail?.source;
+      if (thumb) return thumb;
+    }
+    return null;
+  } catch {
+    return null;
+  }
 }
 
 export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
@@ -36,22 +54,14 @@ export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
       return;
     }
 
-    // Langue des noms communs eBird (locale)
-    const localeMap: Record<string, string> = {
-      fr: "fr", en: "en", es: "es", it: "it", de: "de", nl: "nl",
-    };
+    const localeMap: Record<string, string> = { fr: "fr", en: "en", es: "es", it: "it", de: "de", nl: "nl" };
     const locale = localeMap[lang] || "en";
-
-    // Observations récentes (14 derniers jours, rayon 25 km)
-    const url = `https://api.ebird.org/v2/data/obs/geo/recent?lat=${trip.mapLat}&lng=${trip.mapLng}&dist=25&back=14&maxResults=60&sppLocale=${locale}`;
+    const url = `https://api.ebird.org/v2/data/obs/geo/recent?lat=${trip.mapLat}&lng=${trip.mapLng}&dist=25&back=14&maxResults=40&sppLocale=${locale}`;
 
     fetch(url, { headers: { "X-eBirdApiToken": EBIRD_KEY } })
-      .then((r) => {
-        if (!r.ok) throw new Error("ebird");
-        return r.json();
-      })
-      .then((obs: BirdObs[]) => {
-        // Dédoublonne par espèce, garde la 1ère observation de chaque
+      .then((r) => { if (!r.ok) throw new Error("ebird"); return r.json(); })
+      .then(async (obs: BirdObs[]) => {
+        // Dédoublonne par espèce
         const seen = new Set<string>();
         const unique: BirdObs[] = [];
         for (const o of obs) {
@@ -62,49 +72,67 @@ export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
         }
         setBirds(unique);
         setLoading(false);
+
+        // Charge les vignettes Wikipedia en parallèle (langue locale, fallback latin)
+        unique.forEach(async (b, i) => {
+          let thumb = await fetchThumb(b.sciName, locale);
+          if (!thumb && locale !== "en") thumb = await fetchThumb(b.sciName, "en");
+          if (thumb) {
+            setBirds((prev) => {
+              const next = [...prev];
+              if (next[i]) next[i] = { ...next[i], thumb };
+              return next;
+            });
+          }
+        });
       })
-      .catch(() => {
-        setError(true);
-        setLoading(false);
-      });
+      .catch(() => { setError(true); setLoading(false); });
   }, [trip.slug, lang]);
 
+  // Formate la date d'observation
+  const fmtDate = (dt?: string) => {
+    if (!dt) return "";
+    const d = new Date(dt.replace(" ", "T"));
+    if (isNaN(d.getTime())) return "";
+    return d.toLocaleDateString(lang, { day: "numeric", month: "short" });
+  };
+
   return (
-    <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3 overflow-y-auto">
-      <div className="relative w-full max-w-lg bg-[#1c1b1b] rounded-2xl overflow-hidden border border-white/10 my-8">
-        {/* Header */}
-        <div className="flex items-center justify-between px-5 py-4 border-b border-white/10 sticky top-0 bg-[#1c1b1b] z-10">
-          <div className="flex items-center gap-2">
-            <Bird size={16} className="text-brand-sand" />
-            <span className="font-display font-bold text-sm text-white uppercase tracking-wider">
-              {t("birds.title")}
-            </span>
+    <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3" onClick={onClose}>
+      <div
+        className="relative w-full max-w-lg bg-[#1c1b1b] rounded-2xl border border-white/10 flex flex-col max-h-[85vh]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Header fixe */}
+        <div className="flex items-center justify-between px-5 py-4 border-b border-white/10 shrink-0">
+          <div className="flex items-center gap-2 min-w-0">
+            <Bird size={16} className="text-brand-sand shrink-0" />
+            <div className="min-w-0">
+              <div className="font-display font-bold text-sm text-white uppercase tracking-wider truncate">
+                {t("birds.title")}
+              </div>
+              <div className="font-mono text-[9px] text-text-dim truncate">
+                {trip.startCity || trip.title} · {t("birds.subtitle")}
+              </div>
+            </div>
           </div>
-          <button onClick={onClose} className="w-8 h-8 rounded-full hover:bg-white/10 flex items-center justify-center text-white cursor-pointer">
+          <button onClick={onClose} className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/15 flex items-center justify-center text-white cursor-pointer shrink-0 ml-2">
             <X size={18} />
           </button>
         </div>
 
-        <div className="px-5 py-5">
-          {/* Sous-titre : lieu */}
-          <p className="font-mono text-[10px] text-text-dim mb-4">
-            {trip.startCity || trip.title} · {t("birds.subtitle")}
-          </p>
-
+        {/* Contenu défilable */}
+        <div className="overflow-y-auto px-5 py-4">
           {loading && (
             <div className="py-16 text-center">
               <Bird size={24} className="text-brand-sand mx-auto mb-3 animate-pulse" />
-              <p className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
-                {t("birds.loading")}
-              </p>
+              <p className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">{t("birds.loading")}</p>
             </div>
           )}
 
           {error && !loading && (
             <div className="py-16 text-center">
-              <p className="font-mono text-xs text-text-dim">
-                {keyMissing ? t("birds.config") : t("birds.error")}
-              </p>
+              <p className="font-mono text-xs text-text-dim">{keyMissing ? t("birds.config") : t("birds.error")}</p>
             </div>
           )}
 
@@ -115,16 +143,34 @@ export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
           )}
 
           {!loading && !error && birds.length > 0 && (
-            <div className="flex flex-col gap-1.5">
+            <div className="flex flex-col gap-2">
               {birds.map((b, i) => (
-                <div key={i} className="flex items-baseline justify-between py-2 border-b border-white/5">
-                  <span className="text-sm text-text-on font-light">{b.comName}</span>
-                  <span className="font-mono text-[9px] text-text-dim/60 italic ml-3 text-right">{b.sciName}</span>
+                <div key={i} className="flex items-center gap-3 py-2 border-b border-white/5">
+                  {/* Vignette */}
+                  <div className="w-12 h-12 rounded-lg overflow-hidden bg-white/5 shrink-0 flex items-center justify-center">
+                    {b.thumb ? (
+                      <img src={b.thumb} alt={b.comName} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                    ) : (
+                      <Bird size={16} className="text-white/20" />
+                    )}
+                  </div>
+                  {/* Nom + latin */}
+                  <div className="flex-1 min-w-0">
+                    <div className="text-sm text-text-on font-light truncate">{b.comName}</div>
+                    <div className="font-mono text-[9px] text-text-dim/60 italic truncate">{b.sciName}</div>
+                  </div>
+                  {/* Chiffres */}
+                  <div className="text-right shrink-0">
+                    {b.howMany != null && (
+                      <div className="font-mono text-sm text-brand-sand font-bold">
+                        {b.howMany > 0 ? `×${b.howMany}` : "✓"}
+                      </div>
+                    )}
+                    <div className="font-mono text-[8px] text-text-dim/50">{fmtDate(b.obsDt)}</div>
+                  </div>
                 </div>
               ))}
-              <p className="font-mono text-[8px] text-text-dim/50 pt-3">
-                {t("birds.source")}
-              </p>
+              <p className="font-mono text-[8px] text-text-dim/50 pt-3">{t("birds.source")}</p>
             </div>
           )}
         </div>
