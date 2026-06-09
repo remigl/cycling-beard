@@ -114,8 +114,15 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           </div>
         )}
 
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="font-display text-3xl md:text-5xl font-black uppercase text-text-on">
+            {t("journey.title")}
+          </h1>
+        </div>
+
         {/* Filters */}
-        <div className="flex flex-col sm:flex-row gap-3 mb-5 mt-2">
+        <div className="flex flex-col sm:flex-row gap-3 mb-5">
           <div className="relative flex-1">
             <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-text-dim" />
             <input
