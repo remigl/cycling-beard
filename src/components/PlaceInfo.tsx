@@ -12,7 +12,9 @@ interface BirdObs {
   sciName: string;
   howMany?: number;
   obsDt?: string;
+  locName?: string;
   count?: number;        // nombre d'observations (fréquence)
+  totalSeen?: number;    // total d'individus vus (cumul)
   thumb?: string | null; // vignette Wikipedia
   desc?: string | null;  // courte description Wikipedia
 }
@@ -68,15 +70,21 @@ export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
     fetch(url, { headers: { "X-eBirdApiToken": EBIRD_KEY } })
       .then((r) => { if (!r.ok) throw new Error("ebird"); return r.json(); })
       .then(async (obs: BirdObs[]) => {
-        // Compte la fréquence réelle : nombre d'observations par espèce
-        const freq = new Map<string, BirdObs & { count: number }>();
+        // Compte la fréquence réelle + cumule les infos d'observation par espèce
+        const freq = new Map<string, BirdObs & { count: number; totalSeen: number }>();
         for (const o of obs) {
           if (!o.comName) continue;
           const existing = freq.get(o.comName);
           if (existing) {
             existing.count += 1;
+            existing.totalSeen += (o.howMany || 0);
+            // Garde l'observation la plus récente pour la date/lieu
+            if (o.obsDt && (!existing.obsDt || o.obsDt > existing.obsDt)) {
+              existing.obsDt = o.obsDt;
+              existing.locName = o.locName;
+            }
           } else {
-            freq.set(o.comName, { ...o, count: 1 });
+            freq.set(o.comName, { ...o, count: 1, totalSeen: o.howMany || 0 });
           }
         }
         // Trie par fréquence décroissante
@@ -102,6 +110,14 @@ export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
       })
       .catch(() => { setError(true); setLoading(false); });
   }, [trip.slug, lang]);
+
+  // Formate la date d'observation
+  const fmtDate = (dt?: string) => {
+    if (!dt) return "";
+    const d = new Date(dt.replace(" ", "T"));
+    if (isNaN(d.getTime())) return "";
+    return d.toLocaleDateString(lang, { day: "numeric", month: "short" });
+  };
 
   return (
     <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3" onClick={onClose}>
@@ -172,6 +188,14 @@ export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
                     {b.desc && (
                       <p className="text-[11px] text-text-dim leading-snug mt-1 font-light">{b.desc}</p>
                     )}
+                    {/* Détails d'observation */}
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 mt-1.5 font-mono text-[9px] text-text-dim/70">
+                      {b.totalSeen != null && b.totalSeen > 0 && (
+                        <span className="text-brand-sand">{b.totalSeen} {t("birds.individuals")}</span>
+                      )}
+                      {b.obsDt && <span>· {fmtDate(b.obsDt)}</span>}
+                      {b.locName && <span className="truncate">· {b.locName}</span>}
+                    </div>
                   </div>
                 </div>
               ))}
