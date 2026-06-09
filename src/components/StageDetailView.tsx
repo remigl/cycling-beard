@@ -4,12 +4,14 @@ import { motion } from "motion/react";
 import { StageDetail } from "../types";
 import { Lang } from "../i18n";
 import RideReplay from "./RideReplay";
+import BirdList from "./BirdList";
 
 interface StageDetailViewProps {
   slug: string;
   onNavigate: (tab: string, arg?: string) => void;
   lang: Lang;
   t: (key: string) => string;
+  embedded?: boolean; // true = affiché dans un popup (pas de navbar à compenser, pas de bouton retour)
 }
 
 interface Comment {
@@ -19,11 +21,11 @@ interface Comment {
   date: string;
 }
 
-export default function StageDetailView({ slug, onNavigate, lang, t }: StageDetailViewProps) {
+export default function StageDetailView({ slug, onNavigate, lang, t, embedded = false }: StageDetailViewProps) {
   const [stage, setStage] = useState<StageDetail | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
-  const [activeTab, setActiveTab] = useState<"story" | "technical" | "replay">("story");
+  const [activeTab, setActiveTab] = useState<"story" | "technical" | "replay" | "birds">("story");
   const [comments, setComments] = useState<Comment[]>([]);
   const [authorName, setAuthorName] = useState("");
   const [commentText, setCommentText] = useState("");
@@ -109,7 +111,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
   const hasSummary = dispSummary && dispSummary.trim().length > 0;
 
   return (
-    <div className="w-full flex flex-col pt-16 bg-bg-dark text-text-on text-left">
+    <div className={`w-full flex flex-col bg-bg-dark text-text-on text-left ${embedded ? "" : "pt-16"}`}>
 
       {/* Lightbox */}
       {lightbox !== null && (
@@ -156,12 +158,14 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
           className="absolute inset-0 w-full h-full object-cover filter brightness-80 saturate-90 scale-102"
         />
         <div className="relative z-20 px-6 md:px-14 pb-10 max-w-4xl">
-          <button
-            onClick={() => onNavigate("journey")}
-            className="flex items-center gap-1.5 font-mono text-[9px] text-brand-sand uppercase tracking-wider mb-4 hover:underline cursor-pointer"
-          >
-            <ChevronLeft size={12} /> {t("stage.back")}
-          </button>
+          {!embedded && (
+            <button
+              onClick={() => onNavigate("journey")}
+              className="flex items-center gap-1.5 font-mono text-[9px] text-brand-sand uppercase tracking-wider mb-4 hover:underline cursor-pointer"
+            >
+              <ChevronLeft size={12} /> {t("stage.back")}
+            </button>
+          )}
           <span className="bg-brand-sand/30 text-brand-sand border border-brand-sand/30 font-mono text-[9px] uppercase tracking-widest px-3 py-1 rounded">
             {stage.day} — {stage.country}
           </span>
@@ -183,9 +187,9 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
       </div>
 
       {/* Tab nav */}
-      <div className="border-y border-white/5 bg-[#1c1b1b] px-6 md:px-14 py-3 sticky top-[48px] z-40">
+      <div className={`border-y border-white/5 bg-[#1c1b1b] px-6 md:px-14 py-3 sticky z-40 ${embedded ? "top-0" : "top-[48px]"}`}>
         <div className="max-w-7xl mx-auto flex gap-6 font-display text-[10px] uppercase tracking-widest font-bold">
-          {(["story", "technical", "replay"] as const).map(tab => (
+          {(["story", "technical", "replay", "birds"] as const).map(tab => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
@@ -195,7 +199,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
                   : "text-text-dim text-opacity-60 hover:text-opacity-100"
               }`}
             >
-              {tab === "story" ? t("stage.story") : tab === "technical" ? t("stage.technical") : t("stage.replay")}
+              {tab === "story" ? t("stage.story") : tab === "technical" ? t("stage.technical") : tab === "replay" ? t("stage.replay") : t("journey.birds_btn")}
             </button>
           ))}
         </div>
@@ -492,7 +496,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
               </div>
             )}
           </div>
-        ) : (
+        ) : activeTab === "replay" ? (
           /* Replay 3D tab */
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2 mb-1">
@@ -501,6 +505,9 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
             </div>
             <RideReplay segments={stage.segments} track={stage.track} distanceKm={stage.distanceKm} t={t} />
           </div>
+        ) : (
+          /* eBird tab */
+          <BirdList lat={stage.mapLat} lng={stage.mapLng} lang={lang} t={t} />
         )}
       </div>
     </div>
