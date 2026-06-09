@@ -350,7 +350,7 @@ function parseNotes(content) {
     let inStory = false;
     for (const line of lines) {
       collectTags(line);
-      if (line.startsWith("# ")) { result.title = stripTags(line.slice(2)); continue; }
+      if (line.startsWith("# ")) { continue; } // titre ignoré : on utilise départ → arrivée
       if (line.startsWith("summary:")) { result.summary = stripTags(line.slice(8)); continue; }
       if (line.startsWith("quote:")) { result.quote = stripTags(line.slice(6)); continue; }
       if (line.startsWith("location:")) { result.location = line.slice(9).trim(); continue; }
@@ -372,25 +372,15 @@ function parseNotes(content) {
     }
   } else {
     // ── Texte libre ──
-    // 1ère ligne = titre (retire "# ", "Jour X —", etc.)
-    // Reste = paragraphes du récit
-    let titleSet = false;
+    // Tout le contenu de notes.md = récit. Le titre vient du nom de dossier.
     for (let idx = 0; idx < lines.length; idx++) {
       const line = lines[idx];
       collectTags(line);
 
-      if (!titleSet) {
-        // La première ligne non vide devient le titre
-        let titleLine = line.replace(/^#+\s*/, "");
-        // Retire "Jour X —" ou "Jour X -" du début
-        titleLine = titleLine.replace(/^jour\s*\d+\s*[—\-–:]\s*/i, "");
-        result.title = stripTags(titleLine);
-        titleSet = true;
-        continue;
-      }
-
-      // Tout le reste = récit
-      const cleanLine = stripTags(line);
+      // Retire un éventuel "# " ou "Jour X —" en début de ligne (mise en forme)
+      let cleanLine = line.replace(/^#+\s*/, "");
+      cleanLine = cleanLine.replace(/^jour\s*\d+\s*[—\-–:]\s*/i, "");
+      cleanLine = stripTags(cleanLine);
       if (cleanLine.length > 3) result.fullStory.push(cleanLine);
     }
 
