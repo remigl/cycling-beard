@@ -101,7 +101,7 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
             <MapPin size={16} className="text-brand-sand shrink-0" />
             <div className="min-w-0">
               <div className="font-display font-bold text-sm text-white uppercase tracking-wider truncate">{t("poi.title")}</div>
-              <div className="font-mono text-[9px] text-text-dim truncate">{trip.startCity || trip.title} · {t("poi.subtitle")}</div>
+              <div className="font-mono text-[9px] text-text-dim truncate">{trip.endCity || trip.startCity || trip.title} · {t("poi.subtitle")}</div>
             </div>
           </div>
           <button onClick={onClose} className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/15 flex items-center justify-center text-white cursor-pointer shrink-0 ml-2">
