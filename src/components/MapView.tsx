@@ -1,11 +1,14 @@
-import { ArrowRight, X } from "lucide-react";
+import { X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { TripSummary } from "../types";
+import { Lang } from "../i18n";
+import StageDetailView from "./StageDetailView";
 
 interface MapViewProps {
   onNavigate: (tab: string, arg?: string) => void;
   trips: TripSummary[];
   t: (key: string) => string;
+  lang: Lang;
 }
 
 // Charge Leaflet dynamiquement (CSS + JS) depuis le CDN
@@ -29,7 +32,7 @@ function useLeaflet() {
   return loaded;
 }
 
-export default function MapView({ onNavigate, trips, t }: MapViewProps) {
+export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
   const leafletLoaded = useLeaflet();
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -99,12 +102,19 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
         : (trip.track ? [trip.track] : []);
       segments.forEach(seg => {
         if (seg.length < 2) return;
-        const line = L.polyline(seg, {
+        // Ligne visible (orange)
+        L.polyline(seg, {
           color: "#E8620A",
           weight: 5,
           opacity: 0.85,
         }).addTo(map);
-        line.bindPopup(popupHtml(trip));
+        // Ligne invisible épaisse PAR-DESSUS : agrandit la zone cliquable
+        const hit = L.polyline(seg, {
+          color: "#000",
+          weight: 22,
+          opacity: 0,
+        }).addTo(map);
+        hit.bindPopup(popupHtml(trip));
         allBounds.push(...seg);
       });
     });
@@ -231,64 +241,33 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
           </div>
         </div>
 
-        {/* Popup étape par-dessus la carte */}
+        {/* Popup étape complète par-dessus la carte */}
         {popupTrip && (
           <div
-            className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3 overflow-y-auto"
+            className="fixed inset-0 z-[9999] bg-black/90 flex items-start justify-center overflow-y-auto"
             onClick={() => setPopupTrip(null)}
           >
             <div
-              className="relative w-full max-w-lg bg-[#1c1b1b] rounded-2xl overflow-hidden border border-white/10 my-8"
+              className="relative w-full max-w-3xl bg-bg-dark min-h-screen md:min-h-0 md:my-6 md:rounded-2xl overflow-hidden border border-white/10"
               onClick={e => e.stopPropagation()}
             >
-              {/* Bouton fermer */}
+              {/* Bouton fermer (fixe en haut) */}
               <button
                 onClick={() => setPopupTrip(null)}
-                className="absolute top-3 right-3 z-10 w-9 h-9 rounded-full bg-black/50 backdrop-blur hover:bg-black/70 flex items-center justify-center text-white cursor-pointer"
+                className="fixed md:absolute top-4 right-4 z-[10000] w-10 h-10 rounded-full bg-black/60 backdrop-blur hover:bg-black/80 flex items-center justify-center text-white cursor-pointer"
+                aria-label="Fermer"
               >
-                <X size={18} />
+                <X size={20} />
               </button>
 
-              {/* Image */}
-              <div className="relative aspect-video">
-                <img
-                  src={popupTrip.thumbnail}
-                  alt={popupTrip.title}
-                  referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1c1b1b] to-transparent" />
-              </div>
-
-              <div className="px-6 pb-6 -mt-8 relative">
-                <span className="font-mono text-[9px] text-brand-sand uppercase tracking-widest font-bold block mb-1">
-                  {popupTrip.country} · {popupTrip.date}
-                </span>
-                <h3 className="font-display text-2xl font-bold uppercase text-text-on">{popupTrip.title}</h3>
-                <p className="mt-3 text-xs text-text-dim text-opacity-80 leading-relaxed font-light">{popupTrip.shortDescription}</p>
-
-                <div className="mt-5 pt-4 border-t border-white/5 grid grid-cols-2 gap-4 font-mono text-xs">
-                  <div>
-                    <span className="text-text-dim text-opacity-40 text-[9px] uppercase font-semibold block">Distance</span>
-                    <span className="text-brand-sand font-bold mt-1 text-sm block">
-                      {popupTrip.distanceKm > 0 ? `${popupTrip.distanceKm} km` : "—"}
-                    </span>
-                  </div>
-                  <div>
-                    <span className="text-text-dim text-opacity-40 text-[9px] uppercase font-semibold block">Dénivelé</span>
-                    <span className="text-text-on font-semibold mt-1 text-sm block">
-                      {popupTrip.elevationGain > 0 ? `+${popupTrip.elevationGain} m` : "—"}
-                    </span>
-                  </div>
-                </div>
-
-                <button
-                  onClick={() => onNavigate("stage", popupTrip.slug)}
-                  className="mt-6 w-full bg-brand-sand text-bg-dark font-display text-[10px] font-bold uppercase tracking-widest py-3 rounded hover:bg-opacity-95 transition-all flex items-center justify-center gap-1.5 cursor-pointer"
-                >
-                  {t("map.explore")} <ArrowRight size={11} />
-                </button>
-              </div>
+              {/* Étape complète : récit, photos, dénivelé, survol 3D, eBird */}
+              <StageDetailView
+                slug={popupTrip.slug}
+                onNavigate={(tab, arg) => { setPopupTrip(null); onNavigate(tab, arg); }}
+                lang={lang}
+                t={t}
+                embedded
+              />
             </div>
           </div>
         )}
