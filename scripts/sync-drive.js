@@ -175,21 +175,22 @@ async function processImage(srcPath, destDir, baseName) {
 // ─── Reverse Geocoding (Nominatim / OpenStreetMap, gratuit) ──────────────────
 
 async function reverseGeocode(lat, lng) {
-  if (lat == null || lng == null) return { city: null, region: null };
+  if (lat == null || lng == null) return { city: null, region: null, department: null };
   try {
     const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`;
     const res = await fetch(url, {
       headers: { "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync)" },
     });
-    if (!res.ok) return { city: null, region: null };
+    if (!res.ok) return { city: null, region: null, department: null };
     const data = await res.json();
     const a = data.address || {};
     return {
       city: a.city || a.town || a.village || a.municipality || a.county || null,
-      region: a.state || a.region || null,  // ex: Pays de la Loire, Bourgogne-Franche-Comté
+      region: a.state || a.region || null,        // ex: Bourgogne-Franche-Comté
+      department: a.county || a.state_district || null,  // ex: Doubs, Saône-et-Loire
     };
   } catch {
-    return { city: null, region: null };
+    return { city: null, region: null, department: null };
   }
 }
 
@@ -412,6 +413,8 @@ async function syncFolder(drive, folder) {
   const stageJsonPath = path.join(TRIPS_DIR, `${slug}.json`);
 
   const files = await listFilesInFolder(drive, folder.id);
+  // Trie par nom pour que les GPX (01.gpx, 02.gpx…) soient dans l'ordre du trajet
+  files.sort((a, b) => (a.name || "").localeCompare(b.name || "", undefined, { numeric: true }));
   console.log(`  → ${files.length} fichier(s) trouvé(s)`);
 
   const mediaDir = path.join(MEDIA_DIR, slug);
@@ -510,8 +513,9 @@ async function syncFolder(drive, folder) {
     thumbWebp = photos[0].thumb;
   }
 
-  // ── Reverse geocoding : noms de villes + région ──
+  // ── Reverse geocoding : noms de villes + région + départements ──
   let startCity = null, endCity = null, region = null;
+  const geoTags = [];
   if (gpxStats.startLat != null) {
     const startGeo = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
     startCity = startGeo.city;
@@ -520,9 +524,14 @@ async function syncFolder(drive, folder) {
     endCity = endGeo.city;
     region = endGeo.region || startGeo.region;
     await new Promise(r => setTimeout(r, 1100));
+    // Tags géographiques automatiques : région + département(s) traversé(s)
+    for (const tag of [region, startGeo.department, endGeo.department]) {
+      if (tag && !geoTags.includes(tag)) geoTags.push(tag);
+    }
     if (startCity || endCity) {
       console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"} (${region || "région ?"})`);
     }
+    if (geoTags.length) console.log(`  🏷️  Tags auto : ${geoTags.join(", ")}`);
   }
 
   // ── Traduction du contenu (FR → EN/ES/IT/DE) ──
@@ -567,7 +576,7 @@ async function syncFolder(drive, folder) {
     elevProfile: gpxStats.elevProfile || [],
     minAltitude: gpxStats.minAltitude ?? null,
     highlights: notes.highlights || [],
-    tags: notes.tags || [],
+    tags: [...new Set([...(notes.tags || []), ...geoTags])],
     weather: notes.weather || null,
   };
 
