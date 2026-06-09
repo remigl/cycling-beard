@@ -69,13 +69,18 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
 
     const allBounds: any[] = [];
 
-    // Pas de tracé affiché : on collecte seulement les points pour cadrer la carte
+    // Trace chaque étape — chaque segment GPX séparément (pas de ligne droite entre étapes)
     tripsWithTrack.forEach(trip => {
       const segments = (trip.segments && trip.segments.length > 0)
         ? trip.segments
         : (trip.track ? [trip.track] : []);
       segments.forEach(seg => {
         if (seg.length < 2) return;
+        L.polyline(seg, {
+          color: "#E8620A",
+          weight: 4,
+          opacity: 0.85,
+        }).addTo(map);
         allBounds.push(...seg);
       });
     });
@@ -95,13 +100,13 @@ export default function MapView({ onNavigate, trips, t }: MapViewProps) {
       }
     }
 
-    // Marqueur de départ (vert avec drapeau)
+    // Marqueur de départ : drapeau seul (sans pastille verte)
     if (departurePoint) {
       const startIcon = L.divIcon({
-        html: `<div style="background:#16a34a;width:26px;height:26px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);border:3px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;"><span style="transform:rotate(45deg);font-size:13px;">🚩</span></div>`,
+        html: `<div style="font-size:26px;line-height:1;filter:drop-shadow(0 2px 3px rgba(0,0,0,.5));">🚩</div>`,
         className: "",
         iconSize: [26, 26],
-        iconAnchor: [13, 26],
+        iconAnchor: [6, 24],
       });
       L.marker(departurePoint, { icon: startIcon, zIndexOffset: 500 })
         .addTo(map)
