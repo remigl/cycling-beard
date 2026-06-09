@@ -10,94 +10,97 @@ interface FoodInfoProps {
   t: (key: string) => string;
 }
 
-interface Dish {
-  label: string;
-  desc: string | null;
+interface FoodData {
+  title: string;
+  extract: string;
+  dishes: string[];
   thumb: string | null;
-  url: string | null;
+  url: string;
 }
 
-const WD_LANGS = ["en", "fr", "es", "it", "de", "nl"];
-
-// Résout un nom de lieu en QID Wikidata (ex "Bourgogne-Franche-Comté" → Q18578265)
-async function resolvePlace(name: string, lang: string): Promise<string | null> {
+// Fetch avec timeout pour ne jamais rester bloqué
+async function fetchJson(url: string, ms = 8000): Promise<any | null> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), ms);
   try {
-    const url = `https://www.wikidata.org/w/api.php?action=wbsearchentities&search=${encodeURIComponent(name)}&language=${lang}&format=json&origin=*&limit=1&type=item`;
-    const res = await fetch(url);
-    if (!res.ok) return null;
-    const data = await res.json();
-    return data.search?.[0]?.id || null;
+    const res = await fetch(url, { signal: controller.signal });
+    clearTimeout(timer);
+    return res.ok ? await res.json() : null;
   } catch {
+    clearTimeout(timer);
     return null;
   }
 }
 
-// Requête SPARQL : plats/aliments dont l'origine est cette région (ou une sous-région)
-async function fetchDishesFromWikidata(qid: string, lang: string): Promise<Dish[]> {
-  // P495 = pays/région d'origine ; P276 = localisation ; on remonte via located-in (P131)
-  // On cherche tout item qui est une instance/sous-classe de "aliment" (Q2095) ou "plat" (Q746549)
-  // ayant pour origine soit le QID, soit un lieu situé dans le QID.
-  const sparql = `
-SELECT DISTINCT ?item ?itemLabel ?itemDescription ?img WHERE {
-  VALUES ?region { wd:${qid} }
-  ?item (wdt:P495|wdt:P276|wdt:P1071) ?origin .
-  ?origin (wdt:P131*) ?region .
-  ?item wdt:P31/wdt:P279* ?type .
-  VALUES ?type { wd:Q2095 wd:Q746549 wd:Q746549 wd:Q25403900 }
-  OPTIONAL { ?item wdt:P18 ?img . }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "${lang},en". }
-}
-LIMIT 30`;
+// Cherche une page Wikipédia de cuisine régionale et en extrait les plats
+async function fetchGastronomy(query: string, lang: string): Promise<FoodData | null> {
+  // 1. Recherche : on prend plusieurs résultats pour filtrer
+  const sdata = await fetchJson(`https://${lang}.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(query)}&srlimit=5&format=json&origin=*`);
+  const hits = sdata?.query?.search || [];
+  if (hits.length === 0) return null;
 
-  const url = `https://query.wikidata.org/sparql?query=${encodeURIComponent(sparql)}&format=json`;
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 15000);
-  try {
-    const res = await fetch(url, { headers: { Accept: "application/sparql-results+json" }, signal: controller.signal });
-    clearTimeout(timer);
-    if (!res.ok) return [];
-    const data = await res.json();
-    const rows = data.results?.bindings || [];
-    const seen = new Set<string>();
-    const dishes: Dish[] = [];
-    for (const r of rows) {
-      const label = r.itemLabel?.value;
-      if (!label || seen.has(label) || /^Q\d+$/.test(label)) continue;
-      seen.add(label);
-      let img = r.img?.value || null;
-      // Réduit la taille de l'image Commons
-      if (img) img = img.replace("/commons/", "/commons/thumb/") + `/200px-${img.split("/").pop()}`;
-      dishes.push({
-        label,
-        desc: r.itemDescription?.value || null,
-        thumb: img,
-        url: r.item?.value || null,
-      });
-    }
-    return dishes;
-  } catch {
-    clearTimeout(timer);
-    return [];
+  // Le titre doit contenir un mot gastronomique (évite les pages de ville)
+  const foodWords = /(cuisine|gastronomie|gastronomy|culinair|culinaire|specialit|spécialit|plats?|dishes|food|cucina|küche|keuken)/i;
+  let title = "";
+  for (const h of hits) {
+    if (foodWords.test(h.title)) { title = h.title; break; }
   }
+  if (!title) return null;
+
+  // 2. Sections de l'article
+  const secData = await fetchJson(`https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=sections&format=json&origin=*`);
+  const sections = secData?.parse?.sections || [];
+  const wanted = /(plats?\s*typiques?|sp[ée]cialit[ée]s?|mets|dishes|specialties|gerichte|piatti|platos)/i;
+  const target = sections.find((s: any) => wanted.test(s.line));
+
+  // 3a. Section dédiée → liste de plats
+  if (target) {
+    const extData = await fetchJson(`https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&section=${target.index}&prop=text&format=json&origin=*`);
+    const html = extData?.parse?.text?.["*"] || "";
+    const items: string[] = [];
+    const liMatches = html.match(/<li[^>]*>([\s\S]*?)<\/li>/gi) || [];
+    for (const li of liMatches) {
+      const clean = li.replace(/<[^>]+>/g, "").replace(/\[\d+\]/g, "").replace(/\s+/g, " ").trim();
+      if (clean.length > 2 && clean.length < 120) items.push(clean);
+    }
+    if (items.length >= 2) {
+      return { title, extract: "", dishes: items.slice(0, 25), thumb: null, url: `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(title)}` };
+    }
+  }
+
+  // 3b. Sinon résumé intro
+  const data = await fetchJson(`https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=5&pithumbsize=200&format=json&origin=*&redirects=1`);
+  const pages = data?.query?.pages || {};
+  for (const k of Object.keys(pages)) {
+    const page = pages[k];
+    const extract = (page.extract || "").replace(/\s+/g, " ").trim();
+    return { title: page.title, extract, dishes: [], thumb: page.thumbnail?.source || null, url: `https://${lang}.wikipedia.org/wiki/${encodeURIComponent(page.title)}` };
+  }
+  return null;
 }
 
 export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
-  const [dishes, setDishes] = useState<Dish[]>([]);
+  const [data, setData] = useState<FoodData | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    const wdLang = WD_LANGS.includes(lang) ? lang : "en";
+    const wikiLang = ["en", "fr", "es", "it", "de", "nl"].includes(lang) ? lang : "en";
+    // Région d'abord (meilleure couverture des pages "Cuisine régionale"), puis arrivée
     const places = [trip.region, trip.endCity, trip.startCity].filter(Boolean) as string[];
     if (places.length === 0) { setError(true); setLoading(false); return; }
 
+    const queries: string[] = [];
+    for (const place of places) {
+      queries.push(`${t("food.query_cuisine")} ${place}`);
+      queries.push(`${t("food.query_gastronomy")} ${place}`);
+    }
+
     (async () => {
-      for (const place of places) {
-        const qid = await resolvePlace(place, wdLang);
-        if (!qid) continue;
-        const found = await fetchDishesFromWikidata(qid, wdLang);
-        if (found.length >= 1) {
-          setDishes(found);
+      for (const q of queries) {
+        const result = await fetchGastronomy(q, wikiLang);
+        if (result && (result.dishes.length >= 2 || (result.extract && result.extract.length > 60))) {
+          setData(result);
           setLoading(false);
           return;
         }
@@ -133,30 +136,31 @@ export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
           {error && !loading && (
             <p className="font-mono text-xs text-text-dim py-8 text-center">{t("food.none")}</p>
           )}
-          {!loading && !error && dishes.length > 0 && (
-            <div className="flex flex-col gap-2">
-              {dishes.map((d, i) => (
-                <a
-                  key={i}
-                  href={d.url || "#"}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-3 py-2.5 border-b border-white/5 hover:bg-white/[0.03] transition-colors -mx-2 px-2 rounded"
-                >
-                  <div className="w-14 h-14 rounded-lg overflow-hidden bg-white/5 shrink-0 flex items-center justify-center">
-                    {d.thumb ? (
-                      <img src={d.thumb} alt={d.label} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
-                    ) : (
-                      <UtensilsCrossed size={16} className="text-white/20" />
-                    )}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <span className="text-sm text-text-on font-medium">{d.label}</span>
-                    {d.desc && <p className="text-[11px] text-text-dim leading-snug mt-1 font-light">{d.desc}</p>}
-                  </div>
-                </a>
-              ))}
-              <p className="font-mono text-[8px] text-text-dim/50 pt-3">{t("food.source")}</p>
+          {data && !loading && (
+            <div className="flex flex-col gap-4">
+              {data.thumb && (
+                <div className="w-full aspect-video rounded-lg overflow-hidden bg-white/5">
+                  <img src={data.thumb} alt={data.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                </div>
+              )}
+              <div>
+                <h4 className="font-display font-bold text-sm text-white mb-2">{data.title}</h4>
+                {data.dishes.length > 0 ? (
+                  <ul className="flex flex-col gap-1.5">
+                    {data.dishes.map((dish, i) => (
+                      <li key={i} className="text-xs text-text-dim leading-relaxed font-light flex gap-2">
+                        <span className="text-brand-sand shrink-0">•</span> {dish}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-xs text-text-dim leading-relaxed font-light">{data.extract}</p>
+                )}
+              </div>
+              <a href={data.url} target="_blank" rel="noopener noreferrer" className="font-mono text-[10px] text-brand-sand hover:underline">
+                {t("food.readmore")} →
+              </a>
+              <p className="font-mono text-[8px] text-text-dim/50 pt-2 border-t border-white/5">{t("food.source")}</p>
             </div>
           )}
         </div>
