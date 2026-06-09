@@ -10,6 +10,7 @@ interface RideReplayProps {
   // segments = liste de tracés [lat,lng][] (un par GPX). Fallback sur track simple.
   segments?: [number, number][][];
   track?: [number, number][];
+  distanceKm?: number; // vraie distance calculée par le script
   t: (key: string) => string;
 }
 
@@ -49,7 +50,7 @@ function haversine(a: [number, number], b: [number, number]): number {
   return R * 2 * Math.atan2(Math.sqrt(x), Math.sqrt(1 - x));
 }
 
-export default function RideReplay({ segments, track, t }: RideReplayProps) {
+export default function RideReplay({ segments, track, distanceKm, t }: RideReplayProps) {
   const loaded = useMapLibre();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
@@ -86,32 +87,40 @@ export default function RideReplay({ segments, track, t }: RideReplayProps) {
     return out;
   }, [segs]);
 
-  // Distance cumulée à chaque point (km) — pour afficher la distance réelle
-  const cumDist: number[] = useMemo(() => {
-    const out = [0];
+  // Distance cumulée normalisée sur la VRAIE distance (distanceKm du script)
+  // On calcule la proportion via haversine, puis on la met à l'échelle de distanceKm
+  const { cumDist, totalDist } = useMemo(() => {
+    const raw = [0];
     let total = 0;
     for (let i = 1; i < flatCoords.length; i++) {
       const a: [number, number] = [flatCoords[i - 1][1], flatCoords[i - 1][0]];
       const b: [number, number] = [flatCoords[i][1], flatCoords[i][0]];
       total += haversine(a, b);
-      out.push(total);
+      raw.push(total);
     }
-    return out;
-  }, [flatCoords]);
+    // Mise à l'échelle : la vraie distance prime (le tracé simplifié sous-estime/sur-estime)
+    const real = distanceKm && distanceKm > 0 ? distanceKm : total;
+    const scale = total > 0 ? real / total : 1;
+    return { cumDist: raw.map(d => d * scale), totalDist: real };
+  }, [flatCoords, distanceKm]);
 
-  const totalDist = cumDist.length > 0 ? cumDist[cumDist.length - 1] : 0;
-
-  // Reverse geocoding throttlé (1 appel / 4s) — écrit directement dans le DOM
-  const updatePlace = (lat: number, lng: number) => {
+  // Détection du cours d'eau le plus proche via Overpass API (throttlé)
+  const updateRiver = (lat: number, lng: number) => {
     const now = Date.now();
-    if (now - lastGeocodeRef.current < 4000) return;
+    if (now - lastGeocodeRef.current < 5000) return; // max 1 appel / 5s
     lastGeocodeRef.current = now;
-    fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`)
+    // Cherche un waterway (rivière/fleuve) dans un rayon de ~600m
+    const query = `[out:json][timeout:8];way(around:600,${lat},${lng})[waterway~"river|stream|canal"][name];out tags 1;`;
+    fetch("https://overpass-api.de/api/interpreter", {
+      method: "POST",
+      body: "data=" + encodeURIComponent(query),
+    })
       .then(r => r.json())
       .then(data => {
-        const a = data.address || {};
-        const place = a.city || a.town || a.village || a.municipality || a.county || a.state || "";
-        if (place && placeRef.current) placeRef.current.textContent = place;
+        const el = data.elements?.find((e: any) => e.tags?.name);
+        if (el && placeRef.current) {
+          placeRef.current.textContent = el.tags.name;
+        }
       })
       .catch(() => { /* silencieux */ });
   };
@@ -168,24 +177,35 @@ export default function RideReplay({ segments, track, t }: RideReplayProps) {
         console.warn("Terrain indisponible:", err);
       }
 
-      // Trace chaque segment séparément (évite les lignes droites entre GPX)
+      // Trace complète en fond (semi-transparente) + trace parcourue (vive) par-dessus
       segs.forEach((seg, idx) => {
         const lngLat = seg.map(([lat, lng]) => [lng, lat]);
         map.addSource(`route-${idx}`, {
           type: "geojson",
           data: { type: "Feature", geometry: { type: "LineString", coordinates: lngLat } },
         });
-        // Contour blanc pour la lisibilité
+        // Trace future : discrète
         map.addLayer({
-          id: `route-casing-${idx}`, type: "line", source: `route-${idx}`,
+          id: `route-bg-${idx}`, type: "line", source: `route-${idx}`,
           layout: { "line-join": "round", "line-cap": "round" },
-          paint: { "line-color": "#ffffff", "line-width": 7, "line-opacity": 0.6 },
+          paint: { "line-color": "#ffffff", "line-width": 3, "line-opacity": 0.35, "line-dasharray": [2, 2] },
         });
-        map.addLayer({
-          id: `route-line-${idx}`, type: "line", source: `route-${idx}`,
-          layout: { "line-join": "round", "line-cap": "round" },
-          paint: { "line-color": "#E8620A", "line-width": 4 },
-        });
+      });
+
+      // Source unique pour la trace parcourue (se dessine au fur et à mesure)
+      map.addSource("traveled", {
+        type: "geojson",
+        data: { type: "Feature", geometry: { type: "LineString", coordinates: [flatCoords[0]] } },
+      });
+      map.addLayer({
+        id: "traveled-casing", type: "line", source: "traveled",
+        layout: { "line-join": "round", "line-cap": "round" },
+        paint: { "line-color": "#ffffff", "line-width": 7, "line-opacity": 0.7 },
+      });
+      map.addLayer({
+        id: "traveled-line", type: "line", source: "traveled",
+        layout: { "line-join": "round", "line-cap": "round" },
+        paint: { "line-color": "#E8620A", "line-width": 4.5 },
       });
 
       // Marqueur du rider
@@ -250,11 +270,22 @@ export default function RideReplay({ segments, track, t }: RideReplayProps) {
     rider?.setLngLat([lng, lat]);
     map.jumpTo({ center: [lng, lat], bearing, pitch: 65, zoom: 14.8 });
 
+    // Dessine la trace parcourue jusqu'au point courant
+    const traveledSource = map.getSource("traveled");
+    if (traveledSource) {
+      const traveled = flatCoords.slice(0, i + 1);
+      traveled.push([lng, lat]); // point interpolé courant
+      traveledSource.setData({
+        type: "Feature",
+        geometry: { type: "LineString", coordinates: traveled },
+      });
+    }
+
     // Distance réelle écrite directement dans le DOM (zéro re-render)
     if (distRef.current) {
       distRef.current.textContent = `${(cumDist[i] || 0).toFixed(1)} / ${totalDist.toFixed(1)} km`;
     }
-    updatePlace(lat, lng);
+    updateRiver(lat, lng);
 
     if (progressRef.current < 1 && playing) {
       animRef.current = requestAnimationFrame(animate);
@@ -296,6 +327,9 @@ export default function RideReplay({ segments, track, t }: RideReplayProps) {
       (map as any)._rider?.setLngLat(flatCoords[0]);
       if (distRef.current) distRef.current.textContent = `0 / ${totalDist.toFixed(1)} km`;
       if (placeRef.current) placeRef.current.textContent = "—";
+      // Réinitialise la trace parcourue
+      const ts = map.getSource("traveled");
+      if (ts) ts.setData({ type: "Feature", geometry: { type: "LineString", coordinates: [flatCoords[0]] } });
       const bounds = flatCoords.reduce(
         (b: any, c: any) => b.extend(c),
         new maplibregl.LngLatBounds(flatCoords[0], flatCoords[0])
