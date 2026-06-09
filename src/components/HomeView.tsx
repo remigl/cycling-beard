@@ -135,7 +135,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             transition={{ duration: 1.0 }}
             className="mb-10"
           >
-            <h1 className="font-display font-bold text-4xl md:text-6xl lg:text-7xl text-brand-sand uppercase tracking-[0.05em] leading-tight">
+            <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-brand-sand uppercase tracking-[0.03em] leading-tight">
               THE CYCLING BEARD
             </h1>
           </motion.div>
@@ -167,25 +167,25 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
               {/* Météo 2 jours : aujourd'hui | demain */}
               {weather.length >= 2 && (
-                <div className="mt-2 bg-black/25 backdrop-blur-sm rounded-2xl border border-white/10 p-4">
+                <div className="mt-3 w-full border-t border-white/10 pt-5">
                   <div className="grid grid-cols-2 divide-x divide-white/10">
                     {weather.slice(0, 2).map((day, i) => (
-                      <div key={i} className={`flex flex-col items-center text-center gap-2 ${i === 0 ? "pr-4" : "pl-4"}`}>
-                        <span className="text-[9px] uppercase tracking-widest text-brand-sand font-bold">{day.label}</span>
-                        <span className="text-3xl leading-none">{day.icon}</span>
-                        <div className="text-sm font-semibold">
+                      <div key={i} className={`flex flex-col items-center text-center gap-2.5 ${i === 0 ? "pr-5" : "pl-5"}`}>
+                        <span className="text-[10px] uppercase tracking-widest text-brand-sand font-bold">{day.label}</span>
+                        <span className="text-4xl leading-none">{day.icon}</span>
+                        <div className="text-base font-semibold">
                           <span className="text-red-400">{day.tempMax}°</span>
-                          <span className="text-text-dim/40 mx-1">/</span>
+                          <span className="text-text-dim/40 mx-1.5">/</span>
                           <span className="text-sky-400">{day.tempMin}°</span>
                         </div>
-                        <div className="flex flex-col gap-1 font-mono text-[10px] text-text-dim mt-1">
-                          <span className="flex items-center justify-center gap-1.5">
-                            <span>{t("weather.uv")}</span>
+                        <div className="flex items-center gap-4 font-mono text-[11px] text-text-dim mt-1">
+                          <span className="flex items-center gap-1.5">
+                            <span className="text-text-dim/60">{t("weather.uv")}</span>
                             <span className={`font-bold ${uvColor(day.uvMax)}`}>{day.uvMax}</span>
                           </span>
-                          <span className="flex items-center justify-center gap-1.5">
-                            <span className="text-base leading-none">{windArrow(day.windDir)}</span>
-                            {day.windMax} <span className="text-[8px] text-text-dim/60">km/h</span>
+                          <span className="flex items-center gap-1.5">
+                            <span className="text-lg leading-none text-brand-sand">{windArrow(day.windDir)}</span>
+                            <span>{day.windMax}<span className="text-[8px] text-text-dim/60 ml-0.5">km/h</span></span>
                           </span>
                         </div>
                       </div>
@@ -196,7 +196,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                   {latest?.mapLat && latest?.mapLng && (
                     <button
                       onClick={() => setRadarOpen(true)}
-                      className="mt-4 w-full inline-flex items-center justify-center gap-2 font-mono text-[9px] uppercase tracking-widest py-2.5 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-bg-dark transition-all cursor-pointer"
+                      className="mt-5 w-full inline-flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-widest py-3 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-bg-dark transition-all cursor-pointer"
                     >
                       🌧️ {t("radar.button")}
                     </button>
