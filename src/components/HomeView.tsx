@@ -165,42 +165,43 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                 {stats ? `${t("home.current")} : ${stats.currentLocation}` : t("home.locating")}
               </span>
 
-              {/* Météo 2 jours */}
-              {weather.length > 0 && (
-                <div className="flex flex-wrap gap-x-8 gap-y-3 mt-1">
-                  {weather.map((day, i) => (
-                    <div key={i} className="flex flex-col gap-1.5">
-                      <span className="text-[9px] uppercase tracking-wider text-brand-sand font-bold">{day.label}</span>
-                      <div className="flex items-center gap-2">
-                        <span className="text-2xl">{day.icon}</span>
-                        <span className="text-[11px] text-text-on">
+              {/* Météo 2 jours : aujourd'hui | demain */}
+              {weather.length >= 2 && (
+                <div className="mt-2 bg-black/25 backdrop-blur-sm rounded-2xl border border-white/10 p-4">
+                  <div className="grid grid-cols-2 divide-x divide-white/10">
+                    {weather.slice(0, 2).map((day, i) => (
+                      <div key={i} className={`flex flex-col items-center text-center gap-2 ${i === 0 ? "pr-4" : "pl-4"}`}>
+                        <span className="text-[9px] uppercase tracking-widest text-brand-sand font-bold">{day.label}</span>
+                        <span className="text-3xl leading-none">{day.icon}</span>
+                        <div className="text-sm font-semibold">
                           <span className="text-red-400">{day.tempMax}°</span>
-                          {" / "}
+                          <span className="text-text-dim/40 mx-1">/</span>
                           <span className="text-sky-400">{day.tempMin}°</span>
-                        </span>
+                        </div>
+                        <div className="flex flex-col gap-1 font-mono text-[10px] text-text-dim mt-1">
+                          <span className="flex items-center justify-center gap-1.5">
+                            <span>{t("weather.uv")}</span>
+                            <span className={`font-bold ${uvColor(day.uvMax)}`}>{day.uvMax}</span>
+                          </span>
+                          <span className="flex items-center justify-center gap-1.5">
+                            <span className="text-base leading-none">{windArrow(day.windDir)}</span>
+                            {day.windMax} <span className="text-[8px] text-text-dim/60">km/h</span>
+                          </span>
+                        </div>
                       </div>
-                      {/* UV + vent */}
-                      <div className="flex items-center gap-3 font-mono text-[10px] text-text-dim">
-                        <span className="flex items-center gap-1">
-                          ☀️ <span className={uvColor(day.uvMax)}>{t("weather.uv")} {day.uvMax}</span>
-                        </span>
-                        <span className="flex items-center gap-1">
-                          💨 {day.windMax} <span className="text-[8px]">km/h</span> {windArrow(day.windDir)}
-                        </span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              )}
+                    ))}
+                  </div>
 
-              {/* Bouton radar de pluie */}
-              {weather.length > 0 && latest?.mapLat && latest?.mapLng && (
-                <button
-                  onClick={() => setRadarOpen(true)}
-                  className="mt-2 inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-4 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-bg-dark transition-all cursor-pointer"
-                >
-                  🌧️ {t("radar.button")}
-                </button>
+                  {/* Bouton radar sous la météo */}
+                  {latest?.mapLat && latest?.mapLng && (
+                    <button
+                      onClick={() => setRadarOpen(true)}
+                      className="mt-4 w-full inline-flex items-center justify-center gap-2 font-mono text-[9px] uppercase tracking-widest py-2.5 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-bg-dark transition-all cursor-pointer"
+                    >
+                      🌧️ {t("radar.button")}
+                    </button>
+                  )}
+                </div>
               )}
             </div>
           </motion.div>
