@@ -52,7 +52,9 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
 
     const map = L.map(containerRef.current, {
       center: [lat, lng],
-      zoom: 9,
+      zoom: 8,
+      maxZoom: 11,
+      minZoom: 4,
       zoomControl: true,
       attributionControl: false,
     });
@@ -78,7 +80,9 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
         const frames = [...past, ...nowcast];
         framesRef.current = frames.map((f: any) => ({
           ...f,
-          url: `${host}${f.path}/256/{z}/{x}/{y}/2/1_1.png`,
+          // Format: {host}{path}/{size}/{z}/{x}/{y}/{color}/{options}.png
+          // size 256, color scheme 4 (Universal Blue), smooth=1, snow=1
+          url: `${host}${f.path}/256/{z}/{x}/{y}/4/1_1.png`,
         }));
         setReady(true);
         showFrame(0);
@@ -102,7 +106,12 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
 
     // Crée la couche si pas encore faite
     if (!layersRef.current[frame.path]) {
-      layersRef.current[frame.path] = L.tileLayer(frame.url, { opacity: 0, tileSize: 256 });
+      layersRef.current[frame.path] = L.tileLayer(frame.url, {
+        opacity: 0,
+        tileSize: 256,
+        maxNativeZoom: 10,  // RainViewer ne fournit pas au-delà
+        maxZoom: 12,
+      });
       layersRef.current[frame.path].addTo(map);
     }
     // Masque toutes les couches sauf la courante
