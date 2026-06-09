@@ -21,12 +21,20 @@ function weatherIcon(code: number): string {
   return "🌥️";
 }
 
-// Flèche indiquant la direction VERS LAQUELLE le vent souffle
-function windArrow(deg: number): string {
-  const arrows = ["↓", "↙", "←", "↖", "↑", "↗", "→", "↘"];
-  // deg = provenance ; on ajoute 180° pour la direction du déplacement
-  const idx = Math.round((((deg + 180) % 360) / 45)) % 8;
-  return arrows[idx];
+// Direction d'où vient le vent, en points cardinaux (convention météo)
+function windCardinal(deg: number, lang: string): string {
+  // Labels localisés (N/E/S + O ou W selon la langue)
+  const sets: Record<string, string[]> = {
+    fr: ["N", "NE", "E", "SE", "S", "SO", "O", "NO"],
+    en: ["N", "NE", "E", "SE", "S", "SW", "W", "NW"],
+    es: ["N", "NE", "E", "SE", "S", "SO", "O", "NO"],
+    it: ["N", "NE", "E", "SE", "S", "SO", "O", "NO"],
+    de: ["N", "NO", "O", "SO", "S", "SW", "W", "NW"],
+    nl: ["N", "NO", "O", "ZO", "Z", "ZW", "W", "NW"],
+  };
+  const labels = sets[lang] || sets.fr;
+  const idx = Math.round((deg % 360) / 45) % 8;
+  return labels[idx];
 }
 
 // Couleur selon l'indice UV (faible→vert, modéré→jaune, élevé→orange, très élevé→rouge)
@@ -65,11 +73,31 @@ interface HomeViewProps {
 
 export default function HomeView({ onNavigate, stats, trips, t, about, lang }: HomeViewProps) {
   const latest = trips[trips.length - 1];
-  const heroImage = latest?.coverImage ||
-    "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1600";
 
+  // Diaporama : les 3 dernières étapes (cover en priorité, sinon 1ère photo)
+  const heroImages = (() => {
+    const imgs = trips
+      .slice(-3)
+      .reverse()
+      .map(tr => tr.coverImage || tr.thumbnail)
+      .filter(Boolean) as string[];
+    return imgs.length > 0
+      ? imgs
+      : ["https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1600"];
+  })();
+
+  const [slideIdx, setSlideIdx] = useState(0);
   const [weather, setWeather] = useState<WeatherDay[]>([]);
   const [radarOpen, setRadarOpen] = useState(false);
+
+  // Fait défiler le diaporama toutes les 5 secondes
+  useEffect(() => {
+    if (heroImages.length < 2) return;
+    const id = setInterval(() => {
+      setSlideIdx(i => (i + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(id);
+  }, [heroImages.length]);
 
   // Récupère la météo 2 jours de la position actuelle (dernier point GPS)
   useEffect(() => {
@@ -120,13 +148,33 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       <div className="relative w-full h-[100vh] min-h-[680px] overflow-hidden flex items-center justify-center font-sans">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10" />
-          <img
-            src={heroImage}
-            alt="The Cycling Beard"
-            referrerPolicy="no-referrer"
-            className="w-full h-full object-cover scale-102 filter brightness-[0.80] contrast-105"
-          />
+          {heroImages.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt="The Cycling Beard"
+              referrerPolicy="no-referrer"
+              className="absolute inset-0 w-full h-full object-cover scale-102 filter brightness-[0.80] contrast-105 transition-opacity duration-[1500ms] ease-in-out"
+              style={{ opacity: i === slideIdx ? 1 : 0 }}
+            />
+          ))}
         </div>
+
+        {/* Indicateurs de diaporama */}
+        {heroImages.length > 1 && (
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+            {heroImages.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setSlideIdx(i)}
+                aria-label={`Photo ${i + 1}`}
+                className={`h-1.5 rounded-full transition-all cursor-pointer ${
+                  i === slideIdx ? "w-6 bg-brand-sand" : "w-1.5 bg-white/40 hover:bg-white/60"
+                }`}
+              />
+            ))}
+          </div>
+        )}
 
         <div className="relative z-20 w-full max-w-5xl px-4 md:px-10 flex flex-col justify-center items-center text-center">
           <motion.div
@@ -184,7 +232,8 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                             <span className={`font-bold ${uvColor(day.uvMax)}`}>{day.uvMax}</span>
                           </span>
                           <span className="flex items-center gap-1.5">
-                            <span className="text-lg leading-none text-brand-sand">{windArrow(day.windDir)}</span>
+                            <span className="text-sm leading-none">💨</span>
+                            <span className="text-brand-sand font-bold">{windCardinal(day.windDir, lang)}</span>
                             <span>{day.windMax}<span className="text-[8px] text-text-dim/60 ml-0.5">km/h</span></span>
                           </span>
                         </div>
