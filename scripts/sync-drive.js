@@ -95,7 +95,7 @@ function getAuthClient() {
   const keyFile = JSON.parse(fs.readFileSync(SERVICE_ACCOUNT_PATH, "utf-8"));
   const auth = new google.auth.GoogleAuth({
     credentials: keyFile,
-    scopes: ["https://www.googleapis.com/auth/drive.readonly"],
+    scopes: ["https://www.googleapis.com/auth/drive"],
   });
   return auth;
 }
@@ -115,13 +115,15 @@ async function listFilesInFolder(drive, folderId) {
   const res = await drive.files.list({
     q: `'${folderId}' in parents and trashed = false`,
     fields: "files(id, name, mimeType, size)",
+    supportsAllDrives: true,
+    includeItemsFromAllDrives: true,
   });
   return res.data.files || [];
 }
 
 async function downloadFile(drive, fileId, destPath, attempt = 1) {
   try {
-    const res = await drive.files.get({ fileId, alt: "media" }, { responseType: "stream" });
+    const res = await drive.files.get({ fileId, alt: "media", supportsAllDrives: true }, { responseType: "stream" });
     await new Promise((resolve, reject) => {
       const dest = fs.createWriteStream(destPath);
       let errored = false;
@@ -309,11 +311,26 @@ async function processInbox(drive, rootId) {
 
   let geocodes = 0;
   for (const file of gpxFiles) {
-    console.log(`\n  📄 ${file.name}`);
-    // Télécharge pour lire son contenu
-    const tmpPath = path.join("/tmp", `inbox_${file.id}.gpx`);
-    await downloadFile(drive, file.id, tmpPath);
-    const content = fs.readFileSync(tmpPath, "utf-8");
+    console.log(`\n  📄 ${file.name}  (${file.size ?? "?"} octets)`);
+
+    // Si Drive signale un fichier vide, on le saute proprement
+    if (file.size != null && Number(file.size) === 0) {
+      console.log("    ⚠️  Fichier vide sur Drive, ignoré.");
+      continue;
+    }
+
+    // Télécharge pour lire son contenu (dans un dossier tmp dédié)
+    const tmpDir = path.join("/tmp", "_inbox");
+    fs.mkdirSync(tmpDir, { recursive: true });
+    const tmpPath = path.join(tmpDir, `${file.id}.gpx`);
+    let content;
+    try {
+      await downloadFile(drive, file.id, tmpPath);
+      content = fs.readFileSync(tmpPath, "utf-8");
+    } catch (err) {
+      console.log(`    ⚠️  Téléchargement impossible (${err.message}), GPX ignoré.`);
+      continue;
+    }
 
     const meta = extractGpxMeta(content);
     if (!meta) {
