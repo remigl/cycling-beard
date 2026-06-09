@@ -40,7 +40,7 @@
       ]
     },
     "es": {
-      "summary": "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
+      "summary": "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
       "quote": null,
       "fullStory": [
         "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
@@ -53,7 +53,7 @@
       "quote": null,
       "fullStory": [
         "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
-        "Notte da Jeff e il suo gatto Bada. Davvero simpatici, serata a base di pizza e pastis analcolico.",
+        "Notte da Jeff e il suo gatto Bada. Sono stati davvero gentili, abbiamo passato la serata a mangiare pizza e a bere pastis analcolico.",
         "Una sveglia da duri."
       ]
     },
@@ -61,7 +61,7 @@
       "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
       "quote": null,
       "fullStory": [
-        "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
+        "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
         "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
         "Ein Weckruf für die Hartgesottenen."
       ]
@@ -12236,9 +12236,6 @@
   ],
   "minAltitude": -1,
   "highlights": [],
-  "tags": [
-    "Pays de la Loire",
-    "Loire-Atlantique"
-  ],
+  "tags": [],
   "weather": null
 }
