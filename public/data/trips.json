@@ -2,7 +2,7 @@
   {
     "slug": "2026-05-27-saint-nazaire-lepouliguen",
     "date": "2026-05-27",
-    "title": "Paris → Le Pouliguen",
+    "title": "Saint Nazaire → Lepouliguen",
     "country": "France",
     "region": "Pays de la Loire",
     "startCity": "La Baule-Escoublac",
@@ -11,7 +11,7 @@
     "elevationGain": 185,
     "coverImage": "/media/2026-05-27-saint-nazaire-lepouliguen/le dîner de roi.webp",
     "thumbnail": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_le dîner de roi.webp",
-    "shortDescription": "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon.",
+    "shortDescription": "Paris → Le Pouliguen",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 47.280427,
@@ -7322,6 +7322,7 @@
     ],
     "tags": [],
     "fullStory": [
+      "Paris → Le Pouliguen",
       "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
     ],
     "photos": [
@@ -7348,44 +7349,50 @@
     ],
     "translations": {
       "fr": {
-        "summary": "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon.",
+        "summary": "Paris → Le Pouliguen",
         "quote": null,
         "fullStory": [
+          "Paris → Le Pouliguen",
           "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
         ]
       },
       "en": {
-        "summary": "Train from Paris to Saint-Nazaire, with the bike in the luggage car.",
+        "summary": "Paris → Le Pouliguen",
         "quote": null,
         "fullStory": [
+          "Paris → Le Pouliguen",
           "Took the train from Paris to Saint-Nazaire, with my bike in the luggage car. Then drove to Le Pouliguen. It was hot."
         ]
       },
       "es": {
-        "summary": "Tren de París a Saint-Nazaire, con la bicicleta en el maletero.",
+        "summary": "París → Le Pouliguen",
         "quote": null,
         "fullStory": [
+          "París → Le Pouliguen",
           "Tren de París a Saint-Nazaire, con la bicicleta en el vagón de carga. Después, por carretera hasta Le Pouliguen. Hacía calor."
         ]
       },
       "it": {
-        "summary": "Treno da Parigi a Saint-Nazaire, con la bicicletta nel bagagliaio.",
+        "summary": "Parigi → Le Pouliguen",
         "quote": null,
         "fullStory": [
+          "Parigi → Le Pouliguen",
           "Treno da Parigi a Saint-Nazaire, con la bici nel bagagliaio. Poi in auto fino a Le Pouliguen. Faceva caldo."
         ]
       },
       "de": {
-        "summary": "Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen.",
+        "summary": "Paris → Le Pouliguen",
         "quote": null,
         "fullStory": [
+          "Paris → Le Pouliguen",
           "Mit dem Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen. Dann weiter mit dem Auto nach Le Pouliguen. Es war heiß."
         ]
       },
       "nl": {
-        "summary": "Trein van Parijs naar Saint-Nazaire, fiets in de bagageruimte.",
+        "summary": "Parijs → Le Pouliguen",
         "quote": null,
         "fullStory": [
+          "Parijs → Le Pouliguen",
           "Met de trein van Parijs naar Saint-Nazaire, de fiets in de bagageruimte. Daarna over de weg naar Le Pouliguen. Het was warm."
         ]
       }
@@ -7885,7 +7892,7 @@
   {
     "slug": "2026-05-29-le-pouliguen-mauves-sur-loire",
     "date": "2026-05-29",
-    "title": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
+    "title": "Le Pouliguen → Mauves Sur Loire",
     "country": "France",
     "region": "Pays de la Loire",
     "startCity": "Le Pouliguen",
@@ -7894,7 +7901,7 @@
     "elevationGain": 561,
     "coverImage": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/saint naze.webp",
     "thumbnail": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_saint naze.webp",
-    "shortDescription": "Nuit chez Jeff et son chat Bada.",
+    "shortDescription": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 47.2935937,
@@ -19263,6 +19270,7 @@
     ],
     "tags": [],
     "fullStory": [
+      "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
       "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
       "Reveil des plus durs."
     ],
@@ -19320,49 +19328,55 @@
     ],
     "translations": {
       "fr": {
-        "summary": "Nuit chez Jeff et son chat Bada.",
+        "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
         "quote": null,
         "fullStory": [
+          "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
           "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
           "Reveil des plus durs."
         ]
       },
       "en": {
-        "summary": "Spent the night at Jeff's place with his cat, Bada.",
+        "summary": "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're just tempting fate.",
         "quote": null,
         "fullStory": [
+          "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're asking for trouble.",
           "Spent the night at Jeff's place with his cat, Bada. Really nice—we had pizza and non-alcoholic pastis.",
           "A rough wake-up call."
         ]
       },
       "es": {
-        "summary": "Noche en casa de Jeff y su gato Bada.",
+        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
         "quote": null,
         "fullStory": [
+          "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
           "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable: una velada con pizza y pastis sin alcohol.",
           "Un despertar de lo más duro."
         ]
       },
       "it": {
-        "summary": "Notte a casa di Jeff e del suo gatto Bada.",
+        "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
         "quote": null,
         "fullStory": [
-          "Notte da Jeff e il suo gatto Bada. Sono stati davvero gentili, serata a base di pizza e pastis analcolico.",
+          "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
+          "Notte da Jeff e il suo gatto Bada. Sono stati davvero gentili, abbiamo passato la serata a mangiare pizza e a bere pastis analcolico.",
           "Una sveglia da duri."
         ]
       },
       "de": {
-        "summary": "Übernachtung bei Jeff und seiner Katze Bada.",
+        "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
         "quote": null,
         "fullStory": [
+          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
           "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
           "Ein Weckruf für die Hartgesottenen."
         ]
       },
       "nl": {
-        "summary": "Overnachting bij Jeff en zijn kat Bada.",
+        "summary": "De brug van Saint-Nazaire moet je maar één keer in je leven op de fiets oversteken; daarna is het een gok.",
         "quote": null,
         "fullStory": [
+          "De brug van Saint-Nazaire moet je maar één keer in je leven op de fiets oversteken; daarna is het een gok.",
           "Overnachting bij Jeff en zijn kat Bada. Heel gezellig, een avondje pizza en alcoholvrije pastis.",
           "Een ontwaken voor de echte doorzetters."
         ]
@@ -20111,7 +20125,7 @@
   {
     "slug": "2026-05-30-mauves-sur-loire-le-menitre",
     "date": "2026-05-30",
-    "title": "Je suis des déviations de déviations. Ca fait plaisir..",
+    "title": "Mauves Sur Loire → Le Menitre",
     "country": "France",
     "region": "Pays de la Loire",
     "startCity": "Loire-Authion",
@@ -20120,7 +20134,7 @@
     "elevationGain": 607,
     "coverImage": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
     "thumbnail": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_tartiflette a la guinchette.webp",
-    "shortDescription": "Le midi tartiflette dans un coin sympa.",
+    "shortDescription": "Je suis des déviations de déviations.",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 47.3479893,
@@ -37785,6 +37799,7 @@
     ],
     "tags": [],
     "fullStory": [
+      "Je suis des déviations de déviations. Ca fait plaisir..",
       "Le midi tartiflette dans un coin sympa.",
       "Nuit au camping. Les français que j'ai croisé au camping qui font 50km de kayak par jour étaient sympas."
     ],
@@ -37827,50 +37842,56 @@
     ],
     "translations": {
       "fr": {
-        "summary": "Le midi tartiflette dans un coin sympa.",
+        "summary": "Je suis des déviations de déviations.",
         "quote": null,
         "fullStory": [
+          "Je suis des déviations de déviations. Ca fait plaisir..",
           "Le midi tartiflette dans un coin sympa.",
           "Nuit au camping. Les français que j'ai croisé au camping qui font 50km de kayak par jour étaient sympas."
         ]
       },
       "en": {
-        "summary": "Tartiflette for lunch at a nice spot.",
+        "summary": "I am a deviation of a deviation.",
         "quote": null,
         "fullStory": [
+          "I'm following detours of detours. That's nice...",
           "Tartiflette for lunch at a nice spot.",
           "Spent the night at the campground. The French people I met there, who were kayaking 50 km a day, were really nice."
         ]
       },
       "es": {
-        "summary": "Para comer, una tartiflette en un sitio agradable.",
+        "summary": "Soy desviaciones de desviaciones.",
         "quote": null,
         "fullStory": [
+          "Estoy siguiendo desvíos de desvíos. Qué alegría...",
           "Para comer, una tartiflette en un sitio agradable.",
           "Noche en el camping. Los franceses con los que me crucé en el camping, que recorren 50 km en kayak al día, eran muy simpáticos."
         ]
       },
       "it": {
-        "summary": "A pranzo, una tartiflette in un posticino carino.",
+        "summary": "Sono deviazioni di deviazioni.",
         "quote": null,
         "fullStory": [
+          "Sono deviazioni di deviazioni. È un piacere...",
           "A pranzo, una tartiflette in un posticino carino.",
           "Notte in campeggio. I francesi che ho incontrato al campeggio, che percorrono 50 km al giorno in kayak, erano simpatici."
         ]
       },
       "de": {
-        "summary": "Mittags Tartiflette in einem gemütlichen Lokal.",
+        "summary": "Ich folge Umleitungen von Umleitungen.",
         "quote": null,
         "fullStory": [
+          "Ich folge Umleitungen von Umleitungen. Das freut mich..",
           "Mittags Tartiflette in einem gemütlichen Lokal.",
           "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren sehr nett."
         ]
       },
       "nl": {
-        "summary": "'s Middags een tartiflette op een gezellig plekje.",
+        "summary": "Ik volg omleidingen van omleidingen.",
         "quote": null,
         "fullStory": [
-          "'s Middags een tartiflette op een gezellig plekje.",
+          "Ik volg omleidingen van omleidingen. Dat is leuk...",
+          "'s Middags een tartiflette in een gezellig restaurantje.",
           "Overnachting op de camping. De Fransen die ik op de camping tegenkwam en die elke dag 50 km kajakken, waren aardig."
         ]
       }
@@ -109117,8 +109138,8 @@
     "endCity": "Bragny-sur-Saône",
     "distanceKm": 92.4,
     "elevationGain": 400,
-    "coverImage": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
-    "thumbnail": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
+    "coverImage": "/media/2026-06-07-verjux-orchamps/dôle.webp",
+    "thumbnail": "/media/2026-06-07-verjux-orchamps/thumb_dôle.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -122270,19 +122291,19 @@
     ],
     "photos": [
       {
-        "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
-        "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
+        "src": "/media/2026-06-07-verjux-orchamps/dôle.webp",
+        "thumb": "/media/2026-06-07-verjux-orchamps/thumb_dôle.webp",
         "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-07-verjux-orchamps/dôle.webp",
+        "thumb": "/media/2026-06-07-verjux-orchamps/thumb_dôle.webp",
+        "alt": "DôLe"
       },
       {
         "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
         "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
         "alt": "Img 3426"
-      },
-      {
-        "src": "/media/2026-06-07-verjux-orchamps/img_3430.webp",
-        "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3430.webp",
-        "alt": "Img 3430"
       }
     ],
     "translations": {
@@ -123367,8 +123388,8 @@
     "endCity": "Fourbanne",
     "distanceKm": 78.7,
     "elevationGain": 404,
-    "coverImage": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
-    "thumbnail": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
+    "coverImage": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
+    "thumbnail": "/media/2026-06-08-orchamps-fourbanne/thumb_église sainte madeleine de besançon.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -129450,29 +129471,29 @@
     ],
     "photos": [
       {
-        "src": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
-        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
+        "src": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église sainte madeleine de besançon.webp",
         "alt": "Cover"
       },
       {
-        "src": "/media/2026-06-08-orchamps-fourbanne/img_3434.webp",
-        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3434.webp",
-        "alt": "Img 3434"
+        "src": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église sainte madeleine de besançon.webp",
+        "alt": "éGlise Sainte Madeleine De BesançOn"
       },
       {
-        "src": "/media/2026-06-08-orchamps-fourbanne/img_3437.webp",
-        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3437.webp",
-        "alt": "Img 3437"
+        "src": "/media/2026-06-08-orchamps-fourbanne/juste avant besançon.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_juste avant besançon.webp",
+        "alt": "Juste Avant BesançOn"
+      },
+      {
+        "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
+        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
+        "alt": "BesançOn"
       },
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/img_3438.webp",
         "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3438.webp",
         "alt": "Img 3438"
-      },
-      {
-        "src": "/media/2026-06-08-orchamps-fourbanne/img_3442.webp",
-        "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3442.webp",
-        "alt": "Img 3442"
       },
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",

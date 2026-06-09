@@ -11,7 +11,7 @@
   "distanceKm": 92.4,
   "elevationGain": 400,
   "maxAltitude": 219,
-  "coverImage": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
+  "coverImage": "/media/2026-06-07-verjux-orchamps/dôle.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -64,19 +64,19 @@
   },
   "photos": [
     {
-      "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
-      "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
+      "src": "/media/2026-06-07-verjux-orchamps/dôle.webp",
+      "thumb": "/media/2026-06-07-verjux-orchamps/thumb_dôle.webp",
       "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-07-verjux-orchamps/dôle.webp",
+      "thumb": "/media/2026-06-07-verjux-orchamps/thumb_dôle.webp",
+      "alt": "DôLe"
     },
     {
       "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
       "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
       "alt": "Img 3426"
-    },
-    {
-      "src": "/media/2026-06-07-verjux-orchamps/img_3430.webp",
-      "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3430.webp",
-      "alt": "Img 3430"
     }
   ],
   "videos": [],

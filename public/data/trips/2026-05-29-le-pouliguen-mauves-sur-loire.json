@@ -1,7 +1,7 @@
 {
   "slug": "2026-05-29-le-pouliguen-mauves-sur-loire",
   "date": "2026-05-29",
-  "title": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
+  "title": "Le Pouliguen → Mauves Sur Loire",
   "day": "Jour 4",
   "location": "Le Pouliguen → Mauves Sur Loire",
   "country": "France",
@@ -13,57 +13,64 @@
   "maxAltitude": 58,
   "coverImage": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/saint naze.webp",
   "heroVideo": null,
-  "summary": "Nuit chez Jeff et son chat Bada.",
+  "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
   "fullStory": [
+    "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
     "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
     "Reveil des plus durs."
   ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "Nuit chez Jeff et son chat Bada.",
+      "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
       "quote": null,
       "fullStory": [
+        "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
         "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
         "Reveil des plus durs."
       ]
     },
     "en": {
-      "summary": "Spent the night at Jeff's place with his cat, Bada.",
+      "summary": "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're just tempting fate.",
       "quote": null,
       "fullStory": [
+        "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're asking for trouble.",
         "Spent the night at Jeff's place with his cat, Bada. Really nice—we had pizza and non-alcoholic pastis.",
         "A rough wake-up call."
       ]
     },
     "es": {
-      "summary": "Noche en casa de Jeff y su gato Bada.",
+      "summary": "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
       "quote": null,
       "fullStory": [
+        "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
         "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable: una velada con pizza y pastis sin alcohol.",
         "Un despertar de lo más duro."
       ]
     },
     "it": {
-      "summary": "Notte a casa di Jeff e del suo gatto Bada.",
+      "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
       "quote": null,
       "fullStory": [
-        "Notte da Jeff e il suo gatto Bada. Sono stati davvero gentili, serata a base di pizza e pastis analcolico.",
+        "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
+        "Notte da Jeff e il suo gatto Bada. Sono stati davvero gentili, abbiamo passato la serata a mangiare pizza e a bere pastis analcolico.",
         "Una sveglia da duri."
       ]
     },
     "de": {
-      "summary": "Übernachtung bei Jeff und seiner Katze Bada.",
+      "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
       "quote": null,
       "fullStory": [
+        "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
         "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
         "Ein Weckruf für die Hartgesottenen."
       ]
     },
     "nl": {
-      "summary": "Overnachting bij Jeff en zijn kat Bada.",
+      "summary": "De brug van Saint-Nazaire moet je maar één keer in je leven op de fiets oversteken; daarna is het een gok.",
       "quote": null,
       "fullStory": [
+        "De brug van Saint-Nazaire moet je maar één keer in je leven op de fiets oversteken; daarna is het een gok.",
         "Overnachting bij Jeff en zijn kat Bada. Heel gezellig, een avondje pizza en alcoholvrije pastis.",
         "Een ontwaken voor de echte doorzetters."
       ]
