@@ -11,7 +11,7 @@
   "distanceKm": 105.8,
   "elevationGain": 615,
   "maxAltitude": 70,
-  "coverImage": "/media/2026-05-31-le-menitre-tours/20260531_134726.webp",
+  "coverImage": "/media/2026-05-31-le-menitre-tours/château de saumur.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -64,14 +64,34 @@
   },
   "photos": [
     {
-      "src": "/media/2026-05-31-le-menitre-tours/20260531_134726.webp",
-      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_20260531_134726.webp",
+      "src": "/media/2026-05-31-le-menitre-tours/château de saumur.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_château de saumur.webp",
       "alt": "Cover"
     },
     {
-      "src": "/media/2026-05-31-le-menitre-tours/20260531_134726.webp",
-      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_20260531_134726.webp",
-      "alt": "134726"
+      "src": "/media/2026-05-31-le-menitre-tours/château de saumur.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_château de saumur.webp",
+      "alt": "ChâTeau De Saumur"
+    },
+    {
+      "src": "/media/2026-05-31-le-menitre-tours/vignes de saumur.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_vignes de saumur.webp",
+      "alt": "Vignes De Saumur"
+    },
+    {
+      "src": "/media/2026-05-31-le-menitre-tours/saint lambert des levées.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_saint lambert des levées.webp",
+      "alt": "Saint Lambert Des LevéEs"
+    },
+    {
+      "src": "/media/2026-05-31-le-menitre-tours/église dans les hauteurs de saumur.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_église dans les hauteurs de saumur.webp",
+      "alt": "éGlise Dans Les Hauteurs De Saumur"
+    },
+    {
+      "src": "/media/2026-05-31-le-menitre-tours/château de saumur.webp",
+      "thumb": "/media/2026-05-31-le-menitre-tours/thumb_château de saumur.webp",
+      "alt": "ChâTeau De Saumur"
     }
   ],
   "videos": [],

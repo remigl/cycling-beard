@@ -11,7 +11,7 @@
   "distanceKm": 124.5,
   "elevationGain": 745,
   "maxAltitude": 98,
-  "coverImage": "/media/2026-06-01-tours-meung-sur-loire/img_3358.webp",
+  "coverImage": "/media/2026-06-01-tours-meung-sur-loire/velo en bambou, 4500e.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -64,39 +64,39 @@
   },
   "photos": [
     {
-      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3358.webp",
-      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3358.webp",
+      "src": "/media/2026-06-01-tours-meung-sur-loire/velo en bambou, 4500e.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_velo en bambou, 4500e.webp",
       "alt": "Cover"
     },
     {
-      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3358.webp",
-      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3358.webp",
-      "alt": "Img 3358"
+      "src": "/media/2026-06-01-tours-meung-sur-loire/velo en bambou, 4500e.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_velo en bambou, 4500e.webp",
+      "alt": "Velo En Bambou, 4500e"
     },
     {
-      "src": "/media/2026-06-01-tours-meung-sur-loire/20260601_114005.webp",
-      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_20260601_114005.webp",
-      "alt": "114005"
+      "src": "/media/2026-06-01-tours-meung-sur-loire/cathédrale saint-gatien, tours.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_cathédrale saint-gatien, tours.webp",
+      "alt": "CathéDrale Saint Gatien, Tours"
     },
     {
-      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3362.webp",
-      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3362.webp",
-      "alt": "Img 3362"
+      "src": "/media/2026-06-01-tours-meung-sur-loire/pont d'amboise.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_pont d'amboise.webp",
+      "alt": "Pont D'Amboise"
     },
     {
-      "src": "/media/2026-06-01-tours-meung-sur-loire/20260601_151710.webp",
-      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_20260601_151710.webp",
-      "alt": "151710"
+      "src": "/media/2026-06-01-tours-meung-sur-loire/amboise.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_amboise.webp",
+      "alt": "Amboise"
     },
     {
-      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3363.webp",
-      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3363.webp",
-      "alt": "Img 3363"
+      "src": "/media/2026-06-01-tours-meung-sur-loire/château d'amboise.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_château d'amboise.webp",
+      "alt": "ChâTeau D'Amboise"
     },
     {
-      "src": "/media/2026-06-01-tours-meung-sur-loire/img_3365.webp",
-      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_img_3365.webp",
-      "alt": "Img 3365"
+      "src": "/media/2026-06-01-tours-meung-sur-loire/gare de tours.webp",
+      "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_gare de tours.webp",
+      "alt": "Gare De Tours"
     }
   ],
   "videos": [],

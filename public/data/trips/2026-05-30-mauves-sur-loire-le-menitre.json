@@ -1,7 +1,7 @@
 {
   "slug": "2026-05-30-mauves-sur-loire-le-menitre",
   "date": "2026-05-30",
-  "title": "Mauves Sur Loire → Le Menitre",
+  "title": "Je suis des déviations de déviations. Ca fait plaisir..",
   "day": "Jour 5",
   "location": "Mauves Sur Loire → Le Menitre",
   "country": "France",
@@ -11,58 +11,101 @@
   "distanceKm": 118.2,
   "elevationGain": 607,
   "maxAltitude": 60,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
   "heroVideo": null,
-  "summary": "",
+  "summary": "Le midi tartiflette dans un coin sympa.",
   "fullStory": [
-    "Cette étape sera bientôt documentée."
+    "Le midi tartiflette dans un coin sympa.",
+    "Nuit au camping. Les français que j'ai croisé au camping qui font 50km de kayak par jour étaient sympas."
   ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "",
+      "summary": "Le midi tartiflette dans un coin sympa.",
       "quote": null,
       "fullStory": [
-        "Cette étape sera bientôt documentée."
+        "Le midi tartiflette dans un coin sympa.",
+        "Nuit au camping. Les français que j'ai croisé au camping qui font 50km de kayak par jour étaient sympas."
       ]
     },
     "en": {
-      "summary": "",
+      "summary": "Tartiflette for lunch at a nice spot.",
       "quote": null,
       "fullStory": [
-        "This step will be documented shortly."
+        "Tartiflette for lunch at a nice spot.",
+        "Spent the night at the campground. The French people I met there, who were kayaking 50 km a day, were really nice."
       ]
     },
     "es": {
-      "summary": "",
+      "summary": "Para comer, una tartiflette en un sitio agradable.",
       "quote": null,
       "fullStory": [
-        "Esta etapa se documentará en breve."
+        "Para comer, una tartiflette en un sitio agradable.",
+        "Noche en el camping. Los franceses con los que me crucé en el camping, que recorren 50 km en kayak al día, eran muy simpáticos."
       ]
     },
     "it": {
-      "summary": "",
+      "summary": "A pranzo, una tartiflette in un posticino carino.",
       "quote": null,
       "fullStory": [
-        "Questa fase sarà presto documentata."
+        "A pranzo, una tartiflette in un posticino carino.",
+        "Notte in campeggio. I francesi che ho incontrato al campeggio, che percorrono 50 km al giorno in kayak, erano simpatici."
       ]
     },
     "de": {
-      "summary": "",
+      "summary": "Mittags Tartiflette in einem gemütlichen Lokal.",
       "quote": null,
       "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
+        "Mittags Tartiflette in einem gemütlichen Lokal.",
+        "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren nett."
       ]
     },
     "nl": {
-      "summary": "",
+      "summary": "'s Middags een tartiflette op een gezellig plekje.",
       "quote": null,
       "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
+        "'s Middags een tartiflette in een gezellig restaurantje.",
+        "Overnachting op de camping. De Fransen die ik op de camping tegenkwam en die elke dag 50 km kajakken, waren aardig."
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
+      "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_tartiflette a la guinchette.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
+      "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_tartiflette a la guinchette.webp",
+      "alt": "Tartiflette A La Guinchette"
+    },
+    {
+      "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/pont d'ancenis.webp",
+      "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_pont d'ancenis.webp",
+      "alt": "Pont D'Ancenis"
+    },
+    {
+      "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/petit château sur le chemin.webp",
+      "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_petit château sur le chemin.webp",
+      "alt": "Petit ChâTeau Sur Le Chemin"
+    },
+    {
+      "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/on va dire que c'est ok.webp",
+      "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_on va dire que c'est ok.webp",
+      "alt": "On Va Dire Que C'Est Ok"
+    },
+    {
+      "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/la guinchette.webp",
+      "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_la guinchette.webp",
+      "alt": "La Guinchette"
+    },
+    {
+      "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/angers.webp",
+      "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_angers.webp",
+      "alt": "Angers"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-05-30-mauves-sur-loire-le-menitre_1.gpx",
   "mapLat": 47.3479893,
