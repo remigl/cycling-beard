@@ -4,12 +4,11 @@ import { TripSummary } from "../types";
 import { Lang } from "../i18n";
 
 interface Poi {
-  name: string;
+  title: string;
   dist: number;        // mètres
-  kind: string;        // type OSM (château, musée…)
-  wikipedia?: string;  // tag wikipedia OSM (ex "fr:Besançon")
   thumb?: string | null;
   desc?: string | null;
+  score: number;       // pertinence touristique (plus haut = prioritaire)
 }
 
 interface PoiInfoProps {
@@ -19,47 +18,17 @@ interface PoiInfoProps {
   t: (key: string) => string;
 }
 
-// Distance haversine en mètres
-function haversine(lat1: number, lng1: number, lat2: number, lng2: number): number {
-  const R = 6371000;
-  const dLat = (lat2 - lat1) * Math.PI / 180;
-  const dLng = (lng2 - lng1) * Math.PI / 180;
-  const a = Math.sin(dLat / 2) ** 2 + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
-  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-
-// Image + description Wikipedia depuis un titre d'article
-async function fetchWiki(title: string, lang: string): Promise<{ thumb: string | null; desc: string | null }> {
-  try {
-    const url = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(title)}&prop=pageimages|extracts&pithumbsize=120&exintro=1&explaintext=1&exsentences=2&format=json&origin=*&redirects=1`;
-    const res = await fetch(url);
-    if (!res.ok) return { thumb: null, desc: null };
-    const data = await res.json();
-    const pages = data.query?.pages || {};
-    for (const k of Object.keys(pages)) {
-      const thumb = pages[k]?.thumbnail?.source || null;
-      let desc = pages[k]?.extract || null;
-      if (desc) { desc = desc.replace(/\s+/g, " ").trim(); if (desc.length > 160) desc = desc.slice(0, 157) + "…"; }
-      return { thumb, desc };
-    }
-    return { thumb: null, desc: null };
-  } catch {
-    return { thumb: null, desc: null };
-  }
-}
-
-// Joli libellé du type de lieu
-function kindLabel(tags: any): string {
-  if (tags.tourism === "museum") return "Musée";
-  if (tags.historic === "castle" || tags.castle_type) return "Château";
-  if (tags.historic === "monument" || tags.historic === "memorial") return "Monument";
-  if (tags.historic === "ruins") return "Ruines";
-  if (tags.tourism === "viewpoint") return "Point de vue";
-  if (tags.tourism === "attraction") return "Attraction";
-  if (tags.natural) return "Site naturel";
-  if (tags.historic) return "Patrimoine";
-  if (tags.amenity === "place_of_worship" || tags.building === "church") return "Édifice religieux";
-  return "Site";
+// Calcule un score touristique à partir du résumé Wikipédia
+function touristScore(extract: string): number {
+  if (!extract) return 0;
+  const txt = extract.toLowerCase();
+  let score = 0;
+  // Mots évoquant un lieu visitable
+  const strong = /(château|cathédrale|basilique|abbaye|musée|monument|forteresse|citadelle|palais|patrimoine mondial|unesco|grotte|cascade|réserve naturelle|parc national|site classé|monument historique)/g;
+  const medium = /(église|chapelle|pont|tour|ruines|vestiges|jardin|parc|lac|belvédère|panorama|site|gorges|viaduc)/g;
+  score += (txt.match(strong) || []).length * 3;
+  score += (txt.match(medium) || []).length * 1;
+  return score;
 }
 
 export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
@@ -73,80 +42,55 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
     if (trip.mapLat == null || trip.mapLng == null) { setError(true); setLoading(false); return; }
     const lat = trip.mapLat, lng = trip.mapLng;
 
-    // Requête simplifiée : nodes seulement (plus rapide), rayon 30 km
-    const query = `[out:json][timeout:20];(node(around:30000,${lat},${lng})["tourism"~"museum|attraction|viewpoint"]["name"];node(around:30000,${lat},${lng})["historic"~"castle|monument|ruins|archaeological_site"]["name"];);out 80;`;
+    const run = async () => {
+      try {
+        // 1. GeoSearch : articles Wikipédia géolocalisés dans 20 km (max GeoSearch = 10 km par requête → on prend le max)
+        const gsUrl = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&list=geosearch&gscoord=${lat}|${lng}&gsradius=10000&gslimit=50&format=json&origin=*`;
+        const gsRes = await fetch(gsUrl);
+        if (!gsRes.ok) throw new Error("geosearch");
+        const gsData = await gsRes.json();
+        const places = gsData.query?.geosearch || [];
+        if (places.length === 0) { setError(true); setLoading(false); return; }
 
-    // Plusieurs miroirs Overpass (si l'un est occupé, on essaie le suivant)
-    const mirrors = [
-      "https://overpass-api.de/api/interpreter",
-      "https://overpass.kumi.systems/api/interpreter",
-      "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
-    ];
+        // 2. Récupère résumé + vignette pour tous les titres en un appel groupé
+        const titles = places.map((p: any) => p.title).slice(0, 40);
+        const exUrl = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(titles.join("|"))}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=2&pithumbsize=120&format=json&origin=*&redirects=1`;
+        const exRes = await fetch(exUrl);
+        const exData = exRes.ok ? await exRes.json() : null;
+        const pagesById = exData?.query?.pages || {};
 
-    const tryFetch = async (): Promise<any> => {
-      for (const url of mirrors) {
-        try {
-          // Timeout de 12s par miroir pour éviter le chargement infini
-          const controller = new AbortController();
-          const timer = setTimeout(() => controller.abort(), 12000);
-          const res = await fetch(url, {
-            method: "POST",
-            body: "data=" + encodeURIComponent(query),
-            signal: controller.signal,
-          });
-          clearTimeout(timer);
-          if (res.ok) return await res.json();
-        } catch { /* timeout ou erreur : essaie le miroir suivant */ }
+        // Indexe les détails par titre
+        const detailByTitle: Record<string, { thumb: string | null; desc: string | null }> = {};
+        for (const k of Object.keys(pagesById)) {
+          const pg = pagesById[k];
+          let desc = (pg.extract || "").replace(/\s+/g, " ").trim();
+          if (desc.length > 160) desc = desc.slice(0, 157) + "…";
+          detailByTitle[pg.title] = { thumb: pg.thumbnail?.source || null, desc: desc || null };
+        }
+
+        // 3. Construit la liste avec score touristique
+        const list: Poi[] = places.map((p: any) => {
+          const d = detailByTitle[p.title] || { thumb: null, desc: null };
+          return {
+            title: p.title,
+            dist: p.dist,
+            thumb: d.thumb,
+            desc: d.desc,
+            score: touristScore(d.desc || ""),
+          };
+        });
+
+        // Tri : sites touristiques d'abord (score), puis par distance
+        list.sort((a, b) => (b.score - a.score) || (a.dist - b.dist));
+        setPois(list.slice(0, 20));
+        setLoading(false);
+      } catch {
+        setError(true);
+        setLoading(false);
       }
-      throw new Error("all mirrors failed");
     };
 
-    tryFetch()
-      .then(async (data: any) => {
-        const seen = new Set<string>();
-        const list: Poi[] = [];
-        for (const el of data.elements || []) {
-          const tags = el.tags || {};
-          const name = tags.name;
-          if (!name || seen.has(name)) continue;
-          seen.add(name);
-          const elLat = el.lat ?? el.center?.lat;
-          const elLng = el.lon ?? el.center?.lon;
-          if (elLat == null || elLng == null) continue;
-          // Préfère le tag wikipedia dans la bonne langue
-          let wiki = tags[`wikipedia:${wikiLang}`] || tags.wikipedia || "";
-          list.push({
-            name,
-            dist: haversine(lat, lng, elLat, elLng),
-            kind: kindLabel(tags),
-            wikipedia: wiki,
-          });
-        }
-        const sorted = list.sort((a, b) => a.dist - b.dist).slice(0, 15);
-        if (sorted.length === 0) { setError(true); setLoading(false); return; }
-        setPois(sorted);
-        setLoading(false);
-
-        // Charge image + description Wikipedia
-        sorted.forEach(async (p, i) => {
-          // Le tag wikipedia est de la forme "fr:Citadelle de Besançon"
-          let title = p.name, articleLang = wikiLang;
-          if (p.wikipedia && p.wikipedia.includes(":")) {
-            const [l, ...rest] = p.wikipedia.split(":");
-            if (l.length === 2) { articleLang = l; title = rest.join(":"); }
-          }
-          let info = await fetchWiki(title, articleLang);
-          if (!info.thumb && !info.desc && articleLang !== wikiLang) info = await fetchWiki(p.name, wikiLang);
-          if (info.thumb || info.desc) {
-            setPois((prev) => {
-              const next = [...prev];
-              if (next[i]) next[i] = { ...next[i], ...info };
-              return next;
-            });
-          }
-        });
-      })
-      .catch(() => { setError(true); setLoading(false); });
+    run();
   }, [trip.slug, lang]);
 
   return (
@@ -173,31 +117,33 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
             </div>
           )}
           {error && !loading && (
-            <p className="font-mono text-xs text-text-dim py-8 text-center">{t("poi.error")}</p>
-          )}
-          {!loading && !error && pois.length === 0 && (
             <p className="font-mono text-xs text-text-dim py-8 text-center">{t("poi.none")}</p>
           )}
           {!loading && !error && pois.length > 0 && (
             <div className="flex flex-col gap-2">
               {pois.map((p, i) => (
-                <div key={i} className="flex items-start gap-3 py-2.5 border-b border-white/5">
+                <a
+                  key={i}
+                  href={`https://${wikiLang}.wikipedia.org/wiki/${encodeURIComponent(p.title)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 py-2.5 border-b border-white/5 hover:bg-white/[0.03] transition-colors -mx-2 px-2 rounded"
+                >
                   <div className="w-14 h-14 rounded-lg overflow-hidden bg-white/5 shrink-0 flex items-center justify-center">
                     {p.thumb ? (
-                      <img src={p.thumb} alt={p.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                      <img src={p.thumb} alt={p.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                     ) : (
                       <MapPin size={16} className="text-white/20" />
                     )}
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-baseline gap-2">
-                      <span className="text-sm text-text-on font-medium truncate">{p.name}</span>
+                      <span className="text-sm text-text-on font-medium truncate">{p.title}</span>
                       <span className="font-mono text-[9px] text-brand-sand shrink-0">{(p.dist / 1000).toFixed(1)} km</span>
                     </div>
-                    <div className="font-mono text-[9px] text-text-dim/60">{p.kind}</div>
                     {p.desc && <p className="text-[11px] text-text-dim leading-snug mt-1 font-light">{p.desc}</p>}
                   </div>
-                </div>
+                </a>
               ))}
               <p className="font-mono text-[8px] text-text-dim/50 pt-3">{t("poi.source")}</p>
             </div>
