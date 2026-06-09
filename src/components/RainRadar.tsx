@@ -45,6 +45,7 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
   const [playing, setPlaying] = useState(true);
   const [timeLabel, setTimeLabel] = useState("");
   const [ready, setReady] = useState(false);
+  const [noData, setNoData] = useState(false);
 
   useEffect(() => {
     if (!loaded || !containerRef.current) return;
@@ -80,18 +81,24 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
       .then(r => r.json())
       .then(data => {
         const host = data.host;
+        const past = data.radar?.past || [];
         const nowcast = data.radar?.nowcast || [];
-        // Uniquement la prévision : de maintenant à +1h environ
-        const frames = nowcast.filter((f: any) => f.time * 1000 >= Date.now() - 5 * 60000);
+        // Prévision (futur). Si vide, on prend les dernières frames passées en secours.
+        let frames = nowcast.filter((f: any) => f.time * 1000 >= Date.now() - 5 * 60000);
+        if (frames.length === 0) frames = past.slice(-3).concat(nowcast);
         framesRef.current = frames.map((f: any) => ({
           ...f,
-          // Tuiles 512px (plus net), schéma couleur 4
-          url: `${host}${f.path}/512/{z}/{x}/{y}/4/1_1.png`,
+          // Tuiles 256px, schéma couleur 4
+          url: `${host}${f.path}/256/{z}/{x}/{y}/4/1_1.png`,
         }));
         idxRef.current = 0;
         setReady(true);
-        showFrame(0);
-        startAnimation();
+        if (framesRef.current.length > 0) {
+          showFrame(0);
+          startAnimation();
+        } else {
+          setNoData(true);
+        }
       })
       .catch(() => setReady(true));
 
@@ -113,8 +120,7 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
     if (!layersRef.current[frame.path]) {
       layersRef.current[frame.path] = L.tileLayer(frame.url, {
         opacity: 0,
-        tileSize: 512,
-        zoomOffset: -1,
+        tileSize: 256,
         maxNativeZoom: 10,
         maxZoom: 12,
       });
@@ -169,7 +175,15 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
         </div>
 
         {/* Carte radar */}
-        <div ref={containerRef} className="w-full h-[420px] bg-[#0d0d0d]" />
+        <div className="relative">
+          <div ref={containerRef} className="w-full h-[420px] bg-[#0d0d0d]" />
+          {/* Note : radar opérationnel, pluie affichée si présente */}
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/70 backdrop-blur-sm rounded-full px-3 py-1 pointer-events-none">
+            <span className="font-mono text-[9px] text-white/70">
+              {noData ? t("radar.no_forecast") : t("radar.hint")}
+            </span>
+          </div>
+        </div>
 
         {/* Contrôles + légende */}
         <div className="flex items-center justify-between px-4 py-3 border-t border-white/10">
