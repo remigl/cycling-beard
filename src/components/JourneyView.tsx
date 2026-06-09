@@ -1,9 +1,10 @@
-import { Calendar, TrendingUp, Mountain, Search, Tag, Box } from "lucide-react";
+import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird } from "lucide-react";
 import { useState } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
 import { Lang } from "../i18n";
 import RideReplay from "./RideReplay";
+import PlaceInfo from "./PlaceInfo";
 
 interface JourneyViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -21,6 +22,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
   const [replayOpen, setReplayOpen] = useState<string | null>(null);
   const [elevOpen, setElevOpen] = useState<string | null>(null);
+  const [infoTrip, setInfoTrip] = useState<TripSummary | null>(null);
 
   const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
@@ -87,6 +89,11 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   return (
     <div className="w-full min-h-screen pt-24 pb-20 px-4 md:px-14 bg-bg-dark text-text-on">
       <div className="max-w-6xl mx-auto">
+
+        {/* Popup Infos IA */}
+        {infoTrip && (
+          <PlaceInfo trip={infoTrip} lang={lang} onClose={() => setInfoTrip(null)} t={t} />
+        )}
 
         {/* Lightbox */}
         {lightbox && (
@@ -250,7 +257,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                         ))}
                       </div>
                     )}
-                    {(trip.track && trip.track.length > 1 || (trip.elevProfile && trip.elevProfile.length > 1)) && (
+                    {(trip.track && trip.track.length > 1 || (trip.elevProfile && trip.elevProfile.length > 1) || trip.startCity || trip.endCity) && (
                       <div className={`flex gap-2 mt-3 flex-wrap ${isLeft ? "md:justify-end" : ""}`}>
                         {trip.elevProfile && trip.elevProfile.length > 1 && (
                           <button
@@ -266,6 +273,14 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                             className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
                           >
                             <Box size={12} /> {replayOpen === trip.slug ? t("replay.close") : t("stage.replay")}
+                          </button>
+                        )}
+                        {(trip.startCity || trip.endCity) && (
+                          <button
+                            onClick={() => setInfoTrip(trip)}
+                            className="inline-flex items-center gap-2 font-mono text-[9px] uppercase tracking-widest px-3 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                          >
+                            <Bird size={12} /> {t("journey.birds_btn")}
                           </button>
                         )}
                       </div>
