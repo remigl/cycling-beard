@@ -455,8 +455,8 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
                   const w = 800, h = 180, pad = 30;
                   const elevs = profile.map(p => p[1]);
                   const dists = profile.map(p => p[0]);
-                  const minE = Math.min(...elevs), maxE = Math.max(...elevs);
-                  const maxD = Math.max(...dists) || 1;
+                  const minE = elevs.reduce((m,v)=>v<m?v:m, elevs[0]), maxE = elevs.reduce((m,v)=>v>m?v:m, elevs[0]);
+                  const maxD = dists.reduce((m,v)=>v>m?v:m, dists[0]) || 1;
                   const range = maxE - minE || 1;
                   const pts = profile.map(([d, e]) => {
                     const x = pad + (d / maxD) * (w - 2 * pad);
@@ -499,7 +499,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t }: StageDeta
               <Mountain size={16} className="text-brand-sand" />
               <h4 className="font-display font-bold text-xs uppercase text-text-on tracking-wider">{t("stage.replay")}</h4>
             </div>
-            <RideReplay segments={stage.segments} track={stage.track} t={t} />
+            <RideReplay segments={stage.segments} track={stage.track} distanceKm={stage.distanceKm} t={t} />
           </div>
         )}
       </div>
