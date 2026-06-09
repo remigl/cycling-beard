@@ -53,9 +53,9 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
 
     const map = L.map(containerRef.current, {
       center: [lat, lng],
-      zoom: 9,
-      maxZoom: 12,
-      minZoom: 5,
+      zoom: 7,
+      maxZoom: 11,
+      minZoom: 4,
       zoomControl: true,
       attributionControl: false,
     });
@@ -121,8 +121,8 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
       layersRef.current[frame.path] = L.tileLayer(frame.url, {
         opacity: 0,
         tileSize: 256,
-        maxNativeZoom: 10,
-        maxZoom: 12,
+        maxNativeZoom: 7,  // RainViewer fiable jusqu'à ~7 ; au-delà Leaflet agrandit la tuile
+        maxZoom: 11,
       });
       layersRef.current[frame.path].addTo(map);
     }
