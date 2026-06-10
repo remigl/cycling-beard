@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { X } from "lucide-react";
+import { X, ChevronDown } from "lucide-react";
 import { TripSummary } from "../types";
 
 declare global {
@@ -41,7 +41,16 @@ export default function RegionMap({ region, trips, lang, onClose, t }: RegionMap
     loadLeaflet().then(() => {
       if (cancelled || !mapRef.current || mapInstance.current) return;
       const L = window.L;
-      const map = L.map(mapRef.current, { zoomControl: true, attributionControl: false });
+      const map = L.map(mapRef.current, {
+        zoomControl: true,
+        attributionControl: false,
+        dragging: false,          // pas de déplacement à la main
+        touchZoom: true,          // zoom au pinch OK
+        scrollWheelZoom: false,   // pas de zoom à la molette (gêne le scroll de page)
+        doubleClickZoom: true,
+        boxZoom: false,
+        keyboard: false,
+      });
       mapInstance.current = map;
 
       // Tuiles MapTiler avec labels dans la langue du site
@@ -101,7 +110,11 @@ export default function RegionMap({ region, trips, lang, onClose, t }: RegionMap
           <X size={16} />
         </button>
       </div>
-      <div ref={mapRef} className="w-full h-[260px] bg-[#0f0f0f]" />
+      <div ref={mapRef} className="w-full h-[180px] bg-[#0f0f0f]" />
+      <div className="px-5 py-2.5 border-t border-white/10 flex items-center justify-center gap-1.5 text-text-dim">
+        <span className="font-mono text-[9px] uppercase tracking-wider">{t("journey.stages_below")}</span>
+        <ChevronDown size={13} className="text-brand-sand" />
+      </div>
     </div>
   );
 }
