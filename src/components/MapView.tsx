@@ -188,21 +188,21 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
   }, [leafletLoaded, trips]);
 
   return (
-    <div className="w-full h-screen pt-20 pb-4 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on overflow-hidden">
+    <div className="w-full min-h-screen pt-24 pb-20 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
-      <div className="max-w-6xl w-full text-left flex flex-col flex-1 min-h-0">
+      <div className="max-w-6xl w-full text-left">
 
-        {/* Header (compact) */}
-        <div className="mb-3 shrink-0">
-          <h1 className="font-display text-2xl md:text-4xl font-black uppercase text-text-on">
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="font-display text-3xl md:text-5xl font-black uppercase text-text-on">
             {t("map.title")}
           </h1>
-          <p className="text-xs text-text-dim text-opacity-80 mt-1 font-light">
+          <p className="text-xs text-text-dim text-opacity-80 mt-2 font-light">
             {t("map.intro")}
           </p>
 
           {/* Légende */}
-          <div className="flex items-center gap-5 mt-2 font-mono text-[10px] text-text-dim">
+          <div className="flex items-center gap-5 mt-4 font-mono text-[10px] text-text-dim">
             <span className="flex items-center gap-1.5">
               <span className="text-sm">🚩</span> {t("map.start")}
             </span>
@@ -215,27 +215,30 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
           </div>
         </div>
 
-        {/* Carte Leaflet : occupe toute la hauteur restante */}
-        <div className="flex-1 min-h-0 bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative">
-          {!leafletLoaded && (
-            <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
-              <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
-                {t("map.loading")}
-              </span>
-            </div>
-          )}
-          <div
-            ref={mapContainerRef}
-            className="w-full h-full"
-            style={{ background: "#1c1b1b" }}
-          />
-          {tripsWithTrack.length === 0 && tripsWithCoords.length === 0 && leafletLoaded && (
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
-              <p className="font-mono text-[10px] text-text-dim bg-bg-dark/80 px-4 py-2 rounded uppercase tracking-wider">
-                {t("map.no_track")}
-              </p>
-            </div>
-          )}
+        <div>
+
+          {/* Vraie carte Leaflet */}
+          <div className="bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative min-h-[440px]">
+            {!leafletLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
+                <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
+                  {t("map.loading")}
+                </span>
+              </div>
+            )}
+            <div
+              ref={mapContainerRef}
+              className="w-full h-[440px] md:h-[520px]"
+              style={{ background: "#1c1b1b" }}
+            />
+            {tripsWithTrack.length === 0 && tripsWithCoords.length === 0 && leafletLoaded && (
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
+                <p className="font-mono text-[10px] text-text-dim bg-bg-dark/80 px-4 py-2 rounded uppercase tracking-wider">
+                  {t("map.no_track")}
+                </p>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Popup étape complète par-dessus la carte */}
