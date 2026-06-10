@@ -235,6 +235,15 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           <RegionMap region={regionMap} trips={trips} lang={lang} onClose={() => setRegionMap(null)} t={t} />
         )}
 
+        {/* En-tête de résultats : rend explicite que les étapes sont listées en dessous */}
+        <div className="mb-6 flex items-baseline gap-2 border-b border-text-on/10 pb-3">
+          <span className="font-display font-bold text-lg text-text-on">{filtered.length}</span>
+          <span className="font-mono text-[10px] uppercase tracking-wider text-text-dim">
+            {filtered.length > 1 ? t("journey.stages") : t("journey.stage")}
+            {selectedRegion !== "all" ? ` · ${selectedRegion}` : selectedCountry !== "all" ? ` · ${selectedCountry}` : ""}
+          </span>
+        </div>
+
         {/* TIMELINE */}
         {filtered.length === 0 ? (
           <div className="text-center py-20 text-text-dim font-mono text-xs">{t("journey.empty")}</div>
