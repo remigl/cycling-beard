@@ -311,7 +311,6 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
             {/* Texte à droite */}
             <div className="md:col-span-7 flex flex-col gap-5">
-              <h2 className="font-display text-2xl md:text-3xl font-black text-text-on leading-tight">Rémi</h2>
               <div className="flex flex-col gap-4 text-base text-text-dim leading-relaxed font-light">
                 {presParagraphs.length > 0 ? (
                   presParagraphs.map((para, i) => (
@@ -322,7 +321,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                 )}
               </div>
 
-              <div className="mt-4">
+              <div className="mt-4 flex justify-center">
                 <a href={BMC_URL} target="_blank" rel="noopener noreferrer"
                   className="inline-block hover:opacity-90 hover:-translate-y-0.5 transition-all">
                   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
