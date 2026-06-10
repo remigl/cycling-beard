@@ -1,11 +1,11 @@
 {
-  "totalKm": 1153,
+  "totalKm": 1228,
   "totalCountries": 1,
-  "totalDays": 12,
-  "totalElevation": 6555,
+  "totalDays": 13,
+  "totalElevation": 6931,
   "currentCountry": "France",
-  "currentLocation": "Fourbanne",
+  "currentLocation": "L'Isle-sur-le-Doubs",
   "startDate": "2026-05-26",
-  "lastUpdate": "2026-06-09",
-  "latestStageSlug": "2026-06-08-orchamps-fourbanne"
+  "lastUpdate": "2026-06-10",
+  "latestStageSlug": "2026-06-09-fourbanne-l-isle-sur-le-doubs"
 }
