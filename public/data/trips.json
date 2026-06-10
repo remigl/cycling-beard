@@ -7361,7 +7361,7 @@
         "quote": null,
         "fullStory": [
           "Paris → Le Pouliguen",
-          "Took the train from Paris to Saint-Nazaire, with my bike in the baggage car. Then drove to Le Pouliguen. It was hot."
+          "Took the train from Paris to Saint-Nazaire, with my bike in the luggage car. Then drove to Le Pouliguen. It was hot."
         ]
       },
       "es": {
@@ -19346,10 +19346,10 @@
         ]
       },
       "es": {
-        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
+        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
         "quote": null,
         "fullStory": [
-          "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
+          "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
           "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable: una velada con pizza y pastis sin alcohol.",
           "Un despertar de lo más duro."
         ]
@@ -19359,7 +19359,7 @@
         "quote": null,
         "fullStory": [
           "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
-          "Notte da Jeff e il suo gatto Bada. Sono stati davvero gentili, abbiamo passato la serata con pizza e pastis analcolico.",
+          "Notte da Jeff e il suo gatto Bada. Davvero simpatici, serata a base di pizza e pastis analcolico.",
           "Una sveglia da duri."
         ]
       },
@@ -37872,7 +37872,7 @@
         "summary": "Sono deviazioni di deviazioni.",
         "quote": null,
         "fullStory": [
-          "Sono deviazioni di deviazioni. È un piacere...",
+          "Sono deviazioni di deviazioni. È bello...",
           "A pranzo, una tartiflette in un posticino carino.",
           "Notte in campeggio. I francesi che ho incontrato al campeggio, che percorrono 50 km al giorno in kayak, erano simpatici."
         ]
@@ -37881,7 +37881,7 @@
         "summary": "Ich folge Umleitungen von Umleitungen.",
         "quote": null,
         "fullStory": [
-          "Ich folge Umleitungen von Umleitungen. Das tut gut...",
+          "Ich folge Umleitungen von Umleitungen. Das ist schön..",
           "Mittags Tartiflette in einem gemütlichen Lokal.",
           "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren sehr nett."
         ]
@@ -128182,8 +128182,8 @@
     "endCity": "L'Isle-sur-le-Doubs",
     "distanceKm": 74.6,
     "elevationGain": 376,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
+    "thumbnail": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_camping.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -139135,7 +139135,28 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
+        "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_camping.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
+        "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_camping.webp",
+        "alt": "Camping"
+      },
+      {
+        "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/img_3451.webp",
+        "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_img_3451.webp",
+        "alt": "Img 3451"
+      },
+      {
+        "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/temple de montbeliard.webp",
+        "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_temple de montbeliard.webp",
+        "alt": "Temple De Montbeliard"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",

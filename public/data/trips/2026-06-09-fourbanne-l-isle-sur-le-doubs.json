@@ -11,7 +11,7 @@
   "distanceKm": 74.6,
   "elevationGain": 376,
   "maxAltitude": 352,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,28 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
+      "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_camping.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
+      "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_camping.webp",
+      "alt": "Camping"
+    },
+    {
+      "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/img_3451.webp",
+      "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_img_3451.webp",
+      "alt": "Img 3451"
+    },
+    {
+      "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/temple de montbeliard.webp",
+      "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_temple de montbeliard.webp",
+      "alt": "Temple De Montbeliard"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-09-fourbanne-l-isle-sur-le-doubs_1.gpx",
   "mapLat": 47.4501485,
