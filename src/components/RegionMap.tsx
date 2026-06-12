@@ -110,7 +110,7 @@ export default function RegionMap({ region, trips, lang, onClose, t }: RegionMap
           <X size={16} />
         </button>
       </div>
-      <div ref={mapRef} className="w-full h-[180px] bg-[#0f0f0f]" />
+      <div ref={mapRef} className="w-full h-[180px] bg-[#0f0f0f] isolate z-0" />
       <div className="px-5 py-2.5 border-t border-white/10 flex items-center justify-center gap-1.5 text-text-dim">
         <span className="font-mono text-[9px] uppercase tracking-wider">{t("journey.stages_below")}</span>
         <ChevronDown size={13} className="text-brand-sand" />
