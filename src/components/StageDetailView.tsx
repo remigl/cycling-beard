@@ -32,13 +32,23 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
   const [success, setSuccess] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
 
-  // Bloque le défilement de la page en arrière-plan quand la photo plein écran est ouverte
+  // Verrou de défilement robuste mobile quand la photo plein écran est ouverte
   useEffect(() => {
-    if (lightbox !== null) {
-      const prev = document.body.style.overflow;
-      document.body.style.overflow = "hidden";
-      return () => { document.body.style.overflow = prev; };
-    }
+    if (lightbox === null) return;
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const prev = { position: body.style.position, top: body.style.top, width: body.style.width, overflow: body.style.overflow };
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    return () => {
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.width = prev.width;
+      body.style.overflow = prev.overflow;
+      window.scrollTo(0, scrollY);
+    };
   }, [lightbox]);
 
   useEffect(() => {
