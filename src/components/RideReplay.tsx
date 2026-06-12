@@ -368,6 +368,28 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     }
   };
 
+  // Empêche l'écran de s'éteindre pendant la lecture du survol (Wake Lock API)
+  const wakeLockRef = useRef<any>(null);
+  useEffect(() => {
+    const nav: any = navigator;
+    if (playing && nav?.wakeLock?.request) {
+      nav.wakeLock.request("screen").then((wl: any) => {
+        wakeLockRef.current = wl;
+      }).catch(() => {});
+    }
+    // Réacquiert le verrou si l'onglet redevient visible pendant la lecture
+    const onVisible = () => {
+      if (playing && document.visibilityState === "visible" && nav?.wakeLock?.request) {
+        nav.wakeLock.request("screen").then((wl: any) => { wakeLockRef.current = wl; }).catch(() => {});
+      }
+    };
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      document.removeEventListener("visibilitychange", onVisible);
+      if (wakeLockRef.current) { try { wakeLockRef.current.release(); } catch {} wakeLockRef.current = null; }
+    };
+  }, [playing]);
+
   useEffect(() => {
     if (playing) {
       lastTimeRef.current = 0;
@@ -449,7 +471,13 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
   }
 
   return (
-    <div className="relative rounded-2xl overflow-hidden border border-white/5 bg-black">
+    <div className="relative rounded-2xl overflow-hidden border border-white/5 bg-black isolate z-0">
+      {/* Rend l'attribution non cliquable (on évite de quitter la page par erreur),
+          tout en gardant le texte visible (obligatoire pour la licence). */}
+      <style>{`
+        .maplibregl-ctrl-attrib a { pointer-events: none !important; cursor: default !important; }
+        .maplibregl-ctrl-attrib-button { pointer-events: auto !important; }
+      `}</style>
       <div ref={containerRef} className="w-full h-[480px] md:h-[560px]" />
 
       {/* Bandeau info */}
