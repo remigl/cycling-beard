@@ -1,3 +1,4 @@
+
 import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
@@ -149,8 +150,8 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           if (!rt) return null;
           return (
             <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3" onClick={() => setReplayOpen(null)}>
-              <div className="w-full max-w-4xl" onClick={e => e.stopPropagation()}>
-                <div className="flex items-center justify-between mb-3">
+              <div className="w-full max-w-4xl max-h-[92vh] flex flex-col" onClick={e => e.stopPropagation()}>
+                <div className="flex items-center justify-between mb-3 shrink-0">
                   <h3 className="font-display font-bold text-white text-sm md:text-base">
                     {rt.startCity || rt.title} {rt.endCity ? `→ ${rt.endCity}` : ""}
                   </h3>
@@ -162,7 +163,9 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                     <X size={18} />
                   </button>
                 </div>
-                <RideReplay segments={rt.segments} track={rt.track} distanceKm={rt.distanceKm} t={t} />
+                <div className="flex-1 min-h-0">
+                  <RideReplay segments={rt.segments} track={rt.track} distanceKm={rt.distanceKm} t={t} />
+                </div>
               </div>
             </div>
           );
