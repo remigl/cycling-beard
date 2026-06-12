@@ -32,27 +32,38 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
   const [success, setSuccess] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
 
+  // Filet de sécurité : au montage de la vue d'étape, on s'assure que la page
+  // n'est PAS restée figée par un verrou de défilement précédent.
+  useEffect(() => {
+    const body = document.body;
+    if (body.style.position === "fixed") {
+      body.style.position = "";
+      body.style.top = "";
+      body.style.width = "";
+      body.style.overflow = "";
+    }
+  }, []);
+
   // Verrou de défilement robuste mobile quand la photo plein écran est ouverte
   useEffect(() => {
     if (lightbox === null) return;
     const scrollY = window.scrollY;
     const body = document.body;
-    const prev = { position: body.style.position, top: body.style.top, width: body.style.width, overflow: body.style.overflow };
     body.style.position = "fixed";
     body.style.top = `-${scrollY}px`;
     body.style.width = "100%";
     body.style.overflow = "hidden";
     return () => {
-      body.style.position = prev.position;
-      body.style.top = prev.top;
-      body.style.width = prev.width;
-      body.style.overflow = prev.overflow;
+      body.style.position = "";
+      body.style.top = "";
+      body.style.width = "";
+      body.style.overflow = "";
       window.scrollTo(0, scrollY);
     };
   }, [lightbox]);
 
   useEffect(() => {
-    if (!slug) return;
+    if (!slug) { setLoading(false); setError(true); return; }
     setLoading(true);
     setError(false);
     fetch(`/data/trips/${slug}.json`)
