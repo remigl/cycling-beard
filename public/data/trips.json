@@ -20093,7 +20093,7 @@
         ]
       },
       "en": {
-        "summary": "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you’re asking for trouble.",
+        "summary": "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're asking for trouble.",
         "quote": null,
         "fullStory": [
           "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're asking for trouble.",
@@ -20102,7 +20102,7 @@
         ]
       },
       "es": {
-        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
+        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
         "quote": null,
         "fullStory": [
           "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
@@ -20120,10 +20120,10 @@
         ]
       },
       "de": {
-        "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
+        "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
         "quote": null,
         "fullStory": [
-          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
+          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach ist es reine Risikobereitschaft.",
           "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
           "Ein Weckruf für die Hartgesottenen."
         ]
@@ -38647,7 +38647,7 @@
         ]
       },
       "en": {
-        "summary": "I am a deviation of a deviation.",
+        "summary": "I am a deviation of deviations.",
         "quote": null,
         "fullStory": [
           "I'm following detours of detours. That's nice...",
@@ -38668,7 +38668,7 @@
         "summary": "Sono deviazioni di deviazioni.",
         "quote": null,
         "fullStory": [
-          "Sono deviazioni di deviazioni. Che bello...",
+          "Sono deviazioni di deviazioni. È un piacere...",
           "A pranzo, una tartiflette in un posticino carino.",
           "Notte in campeggio. I francesi che ho incontrato al campeggio, che percorrono 50 km al giorno in kayak, erano simpatici."
         ]
@@ -38677,9 +38677,9 @@
         "summary": "Ich folge Umleitungen von Umleitungen.",
         "quote": null,
         "fullStory": [
-          "Ich folge Umleitungen von Umleitungen. Das tut gut...",
+          "Ich folge Umleitungen von Umleitungen. Das ist schön..",
           "Mittags Tartiflette in einem gemütlichen Lokal.",
-          "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren nett."
+          "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren sehr nett."
         ]
       },
       "nl": {
@@ -38687,7 +38687,7 @@
         "quote": null,
         "fullStory": [
           "Ik volg omleidingen van omleidingen. Dat is leuk...",
-          "'s Middags een tartiflette in een gezellig restaurantje.",
+          "'s Middags een tartiflette op een gezellig plekje.",
           "Overnachting op de camping. De Fransen die ik op de camping tegenkwam en die elke dag 50 km kajakken, waren aardig."
         ]
       }
@@ -142579,8 +142579,8 @@
     "endCity": "Möhlin",
     "distanceKm": 113.3,
     "elevationGain": 464,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
+    "thumbnail": "/media/2026-06-10-allenjoie-mohlin/thumb_bâtiment a cote du temple de mulhouse.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -157274,7 +157274,53 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_bâtiment a cote du temple de mulhouse.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_bâtiment a cote du temple de mulhouse.webp",
+        "alt": "BâTiment A Cote Du Temple De Mulhouse"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/i felt threatened.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_i felt threatened.webp",
+        "alt": "I Felt Threatened"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/img_3481.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_img_3481.webp",
+        "alt": "Img 3481"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/img_3485.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_img_3485.webp",
+        "alt": "Img 3485"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/pont au centre historique de bale.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont au centre historique de bale.webp",
+        "alt": "Pont Au Centre Historique De Bale"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/pont de bale.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont de bale.webp",
+        "alt": "Pont De Bale"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/temple saint-étienne de mulhouse.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_temple saint-étienne de mulhouse.webp",
+        "alt": "Temple Saint éTienne De Mulhouse"
+      },
+      {
+        "src": "/media/2026-06-10-allenjoie-mohlin/vue du pont de bale.webp",
+        "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_vue du pont de bale.webp",
+        "alt": "Vue Du Pont De Bale"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -158313,8 +158359,8 @@
     "endCity": "Wangen",
     "distanceKm": 122.7,
     "elevationGain": 1105,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
+    "thumbnail": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -167732,7 +167778,53 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
+        "alt": "ChûTes Du Rhin"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/img_3500.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3500.webp",
+        "alt": "Img 3500"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/img_3514.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3514.webp",
+        "alt": "Img 3514"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/img_3517.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3517.webp",
+        "alt": "Img 3517"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/juste après avoir quitté sandro et anja.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_juste après avoir quitté sandro et anja.webp",
+        "alt": "Juste AprèS Avoir Quitté Sandro Et Anja"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/stein am rhein.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_stein am rhein.webp",
+        "alt": "Stein Am Rhein"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/stein am rhein2.webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_stein am rhein2.webp",
+        "alt": "Stein Am Rhein2"
+      },
+      {
+        "src": "/media/2026-06-11-mohlin-wangen/vue de la tente (untersee).webp",
+        "thumb": "/media/2026-06-11-mohlin-wangen/thumb_vue de la tente (untersee).webp",
+        "alt": "Vue De La Tente (Untersee)"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",

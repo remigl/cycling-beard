@@ -11,7 +11,7 @@
   "distanceKm": 113.3,
   "elevationGain": 464,
   "maxAltitude": 366,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,53 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_bâtiment a cote du temple de mulhouse.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_bâtiment a cote du temple de mulhouse.webp",
+      "alt": "BâTiment A Cote Du Temple De Mulhouse"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/i felt threatened.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_i felt threatened.webp",
+      "alt": "I Felt Threatened"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/img_3481.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_img_3481.webp",
+      "alt": "Img 3481"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/img_3485.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_img_3485.webp",
+      "alt": "Img 3485"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/pont au centre historique de bale.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont au centre historique de bale.webp",
+      "alt": "Pont Au Centre Historique De Bale"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/pont de bale.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont de bale.webp",
+      "alt": "Pont De Bale"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/temple saint-étienne de mulhouse.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_temple saint-étienne de mulhouse.webp",
+      "alt": "Temple Saint éTienne De Mulhouse"
+    },
+    {
+      "src": "/media/2026-06-10-allenjoie-mohlin/vue du pont de bale.webp",
+      "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_vue du pont de bale.webp",
+      "alt": "Vue Du Pont De Bale"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-10-allenjoie-mohlin_1.gpx",
   "mapLat": 47.5601215,

@@ -11,7 +11,7 @@
   "distanceKm": 122.7,
   "elevationGain": 1105,
   "maxAltitude": 455,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,53 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
+      "alt": "ChûTes Du Rhin"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/img_3500.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3500.webp",
+      "alt": "Img 3500"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/img_3514.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3514.webp",
+      "alt": "Img 3514"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/img_3517.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3517.webp",
+      "alt": "Img 3517"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/juste après avoir quitté sandro et anja.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_juste après avoir quitté sandro et anja.webp",
+      "alt": "Juste AprèS Avoir Quitté Sandro Et Anja"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/stein am rhein.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_stein am rhein.webp",
+      "alt": "Stein Am Rhein"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/stein am rhein2.webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_stein am rhein2.webp",
+      "alt": "Stein Am Rhein2"
+    },
+    {
+      "src": "/media/2026-06-11-mohlin-wangen/vue de la tente (untersee).webp",
+      "thumb": "/media/2026-06-11-mohlin-wangen/thumb_vue de la tente (untersee).webp",
+      "alt": "Vue De La Tente (Untersee)"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-11-mohlin-wangen_1.gpx",
   "mapLat": 47.6596966,
