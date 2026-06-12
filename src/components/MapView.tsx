@@ -36,6 +36,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
   const leafletLoaded = useLeaflet();
   const mapContainerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<any>(null);
+  const hasFittedRef = useRef(false);
   // Étape sélectionnée à afficher en popup plein écran par-dessus la carte
   const [popupTrip, setPopupTrip] = useState<TripSummary | null>(null);
   // Référence pour que les popups Leaflet (HTML brut) puissent déclencher React
@@ -180,24 +181,31 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
 
     // La carte ayant une hauteur dynamique (flex), on recalcule sa taille
     // puis on réajuste la vue pour que le tracé remplisse l'espace.
-    const refit = () => {
+    // Cadre le tracé UNE SEULE FOIS à l'arrivée. Ensuite, on laisse l'utilisateur
+    // explorer librement : un déplacement/zoom ne recentre plus la carte.
+    const fitOnce = () => {
       map.invalidateSize();
-      if (allBounds.length > 0) {
+      if (!hasFittedRef.current && allBounds.length > 0) {
         map.fitBounds(allBounds, { padding: [40, 40], maxZoom: 12 });
+        hasFittedRef.current = true;
       }
     };
-    setTimeout(refit, 200);
-    window.addEventListener("resize", refit);
-    return () => window.removeEventListener("resize", refit);
+    setTimeout(fitOnce, 200);
+
+    // Au redimensionnement (rotation, etc.) : on recalcule juste la taille,
+    // SANS recadrer (on ne touche pas à la position choisie par l'utilisateur).
+    const onResize = () => map.invalidateSize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, [leafletLoaded, trips]);
 
   return (
-    <div className="w-full h-screen pt-24 pb-6 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on overflow-hidden">
+    <div className="w-full pt-24 pb-6 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
-      <div className="max-w-6xl w-full text-left flex flex-col flex-1 min-h-0">
+      <div className="max-w-6xl w-full text-left flex flex-col">
 
         {/* Header (taille inchangée) */}
-        <div className="mb-8 shrink-0">
+        <div className="mb-6 shrink-0">
           <h1 className="font-display text-3xl md:text-5xl font-black uppercase text-text-on">
             {t("map.title")}
           </h1>
@@ -219,8 +227,8 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
           </div>
         </div>
 
-        {/* Carte Leaflet : remplit toute la hauteur restante de l'écran */}
-        <div className="flex-1 min-h-0 bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative">
+        {/* Carte Leaflet : hauteur = écran moins l'espace pris par le header/footer */}
+        <div className="h-[calc(100vh-280px)] min-h-[300px] bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative">
           {!leafletLoaded && (
             <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
               <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
