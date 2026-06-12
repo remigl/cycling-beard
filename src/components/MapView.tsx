@@ -200,9 +200,9 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
   }, [leafletLoaded, trips]);
 
   return (
-    <div className="w-full pt-16 pb-6 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
+    <div className="w-full h-[100dvh] overflow-hidden pt-16 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
-      <div className="max-w-6xl w-full text-left flex flex-col">
+      <div className="max-w-6xl w-full text-left flex flex-col flex-1 min-h-0">
 
         {/* Header (taille inchangée) */}
         <div className="mb-3 shrink-0">
@@ -228,7 +228,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         </div>
 
         {/* Carte Leaflet : hauteur = écran moins l'espace pris par le header/footer */}
-        <div className="h-[calc(100vh-250px)] min-h-[300px] bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative isolate z-0">
+        <div className="flex-1 min-h-0 bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative isolate z-0">
           {!leafletLoaded && (
             <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
               <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
