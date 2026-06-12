@@ -205,7 +205,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
       <div className="max-w-6xl w-full text-left flex flex-col">
 
         {/* Header (taille inchangée) */}
-        <div className="mb-6 shrink-0">
+        <div className="mb-3 shrink-0">
           <h1 className="font-display text-3xl md:text-5xl font-black uppercase text-text-on">
             {t("map.title")}
           </h1>
