@@ -81,11 +81,31 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     return [];
   }, [segments, track]);
 
-  // Parcours continu pour l'animation : on concatène tous les points (en [lng,lat])
+  // Lissage de Chaikin (coupe les angles) : transforme la polyligne anguleuse du GPX
+  // en courbe douce. Appliqué PAR SEGMENT pour ne pas arrondir les jonctions entre
+  // GPX distincts. 1 passe = nombre de points ×2, largement suffisant visuellement.
+  const chaikin = (pts: [number, number][]): [number, number][] => {
+    if (pts.length < 3) return pts;
+    const out: [number, number][] = [pts[0]];
+    for (let k = 0; k < pts.length - 1; k++) {
+      const p = pts[k], q = pts[k + 1];
+      out.push([p[0] * 0.75 + q[0] * 0.25, p[1] * 0.75 + q[1] * 0.25]);
+      out.push([p[0] * 0.25 + q[0] * 0.75, p[1] * 0.25 + q[1] * 0.75]);
+    }
+    out.push(pts[pts.length - 1]);
+    return out;
+  };
+
+  // Parcours continu pour l'animation : on concatène tous les points (en [lng,lat]),
+  // chaque segment étant lissé. Garde-fou : on ne lisse pas les très longues traces
+  // (> 20 000 points) pour préserver les performances.
   const flatCoords: [number, number][] = useMemo(() => {
+    const totalPts = segs.reduce((n, s) => n + s.length, 0);
     const out: [number, number][] = [];
     for (const seg of segs) {
-      for (const [lat, lng] of seg) out.push([lng, lat]);
+      const lnglat: [number, number][] = seg.map(([lat, lng]) => [lng, lat]);
+      const smooth = totalPts <= 20000 ? chaikin(lnglat) : lnglat;
+      out.push(...smooth);
     }
     return out;
   }, [segs]);
@@ -163,6 +183,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       bearing: 0,
       antialias: true,
       maxPitch: 85,
+      maxTileCacheSize: 1024,  // garde plus de tuiles en mémoire → moins de rechargements
       attributionControl: { compact: true },
     });
     mapRef.current = map;
@@ -198,7 +219,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
           tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${MAPTILER_KEY}`],
           minzoom: 0, maxzoom: 12, tileSize: 256, encoding: "mapbox",
         });
-        map.setTerrain({ source: "terrainSource", exaggeration: 1.3 });
+        map.setTerrain({ source: "terrainSource", exaggeration: 1.5 });
         try {
           map.setSky({
             "sky-color": "#9ec8e8", "sky-horizon-blend": 0.5,
@@ -240,11 +261,13 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       }
 
       // Trace complète en fond (semi-transparente) + trace parcourue (vive) par-dessus
+      // Même lissage de Chaikin que le parcours d'animation → les deux lignes coïncident.
       segs.forEach((seg, idx) => {
-        const lngLat = seg.map(([lat, lng]) => [lng, lat]);
+        const lngLat: [number, number][] = seg.map(([lat, lng]) => [lng, lat]);
+        const smooth = lngLat.length <= 20000 ? chaikin(lngLat) : lngLat;
         map.addSource(`route-${idx}`, {
           type: "geojson",
-          data: { type: "Feature", geometry: { type: "LineString", coordinates: lngLat } },
+          data: { type: "Feature", geometry: { type: "LineString", coordinates: smooth } },
         });
         // Trace future : discrète
         map.addLayer({
