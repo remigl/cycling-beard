@@ -85,6 +85,12 @@ export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = prev; };
+  }, []);
+
+  useEffect(() => {
     const wikiLang = ["en", "fr", "es", "it", "de", "nl"].includes(lang) ? lang : "en";
     // Région d'abord (meilleure couverture des pages "Cuisine régionale"), puis arrivée
     const places = [trip.region, trip.endCity, trip.startCity].filter(Boolean) as string[];
