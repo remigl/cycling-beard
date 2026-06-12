@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { X } from "lucide-react";
 import { TripSummary } from "../types";
 import { Lang } from "../i18n";
@@ -12,6 +13,13 @@ interface PlaceInfoProps {
 
 // Popup eBird : simple habillage autour de BirdList (aucune logique dupliquée)
 export default function PlaceInfo({ trip, lang, onClose, t }: PlaceInfoProps) {
+  // Bloque le défilement de la page en arrière-plan tant que la popup est ouverte
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = prev; };
+  }, []);
+
   return (
     <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3" onClick={onClose}>
       <div
