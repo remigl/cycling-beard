@@ -17,7 +17,24 @@ interface JourneyViewProps {
   lang: Lang;
 }
 
+// Noms de pays localisés — les données du sync sont en français (Nominatim accept-language=fr)
+const COUNTRY_LABELS: Record<string, Record<string, string>> = {
+  France:    { en: "France",      es: "Francia",    it: "Francia",    de: "Frankreich",  nl: "Frankrijk" },
+  Suisse:    { en: "Switzerland", es: "Suiza",      it: "Svizzera",   de: "Schweiz",     nl: "Zwitserland" },
+  Allemagne: { en: "Germany",     es: "Alemania",   it: "Germania",   de: "Deutschland", nl: "Duitsland" },
+  Autriche:  { en: "Austria",     es: "Austria",    it: "Austria",    de: "Österreich",  nl: "Oostenrijk" },
+  Slovaquie: { en: "Slovakia",    es: "Eslovaquia", it: "Slovacchia", de: "Slowakei",    nl: "Slowakije" },
+  Hongrie:   { en: "Hungary",     es: "Hungría",    it: "Ungheria",   de: "Ungarn",      nl: "Hongarije" },
+  Croatie:   { en: "Croatia",     es: "Croacia",    it: "Croazia",    de: "Kroatien",    nl: "Kroatië" },
+  Serbie:    { en: "Serbia",      es: "Serbia",     it: "Serbia",     de: "Serbien",     nl: "Servië" },
+  Roumanie:  { en: "Romania",     es: "Rumanía",    it: "Romania",    de: "Rumänien",    nl: "Roemenië" },
+  Bulgarie:  { en: "Bulgaria",    es: "Bulgaria",   it: "Bulgaria",   de: "Bulgarien",   nl: "Bulgarije" },
+};
+
 export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
+  // Traduit un nom de pays selon la langue active (les données restent en français)
+  const countryLabel = (c: string) => (lang === "fr" ? c : COUNTRY_LABELS[c]?.[lang] ?? c);
+
   // Pays par défaut = pays de l'étape la plus récente (par date, peu importe l'ordre du tableau)
   const lastCountry = (() => {
     const withCountry = trips.filter(tr => tr.country && tr.country !== "—");
@@ -247,11 +264,13 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
               <button
                 key={c}
                 onClick={() => { setSelectedCountry(c); setSelectedRegion("all"); setRegionMap(null); }}
-                className={`px-3 py-2 rounded-md font-mono text-[9px] uppercase font-bold tracking-wider transition-all cursor-pointer ${
-                  selectedCountry === c ? "bg-brand-sand text-surface-card" : "bg-surface-card border border-text-on/10 text-text-dim hover:text-text-on"
+                className={`px-4 py-2 rounded-full font-mono text-[10px] uppercase tracking-wider transition-all duration-200 cursor-pointer ${
+                  selectedCountry === c
+                    ? "bg-brand-sand text-surface-card font-bold shadow-md scale-105"
+                    : "bg-transparent border border-text-on/15 text-text-dim hover:border-brand-sand/60 hover:text-text-on"
                 }`}
               >
-                {c === "all" ? t("journey.all") : c}
+                {c === "all" ? t("journey.all") : countryLabel(c)}
               </button>
             ))}
           </div>
@@ -261,7 +280,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
         {regions.length > 0 && (
           <div className="flex items-center gap-2 flex-wrap mb-5">
             <span className="font-mono text-[9px] text-text-dim uppercase tracking-wider mr-1">
-              {selectedCountry} :
+              {countryLabel(selectedCountry)} :
             </span>
             <button
               onClick={() => { setSelectedRegion("all"); setRegionMap(null); }}
@@ -320,7 +339,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           <span className="font-display font-bold text-lg text-text-on">{filtered.length}</span>
           <span className="font-mono text-[10px] uppercase tracking-wider text-text-dim">
             {filtered.length > 1 ? t("journey.stages") : t("journey.stage")}
-            {selectedRegion !== "all" ? ` · ${selectedRegion}` : selectedCountry !== "all" ? ` · ${selectedCountry}` : ""}
+            {selectedRegion !== "all" ? ` · ${selectedRegion}` : selectedCountry !== "all" ? ` · ${countryLabel(selectedCountry)}` : ""}
           </span>
         </div>
 
@@ -342,7 +361,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                 const textBlock = (
                   <div className="flex flex-col gap-2">
                     <span className="font-mono text-[9px] text-brand-sand font-bold uppercase tracking-widest">
-                      {trip.country !== "—" ? trip.country : "France"}
+                      {trip.country !== "—" ? countryLabel(trip.country) : "France"}
                     </span>
                     <h3 className="font-display font-bold text-xl text-text-on leading-tight">{trip.title}</h3>
                     <div className="flex gap-3 font-mono text-[9px] text-text-dim">
