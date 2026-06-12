@@ -58,6 +58,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
   const progressRef = useRef(0);
   const speedRef = useRef(1);
   const lastTimeRef = useRef(0);
+  const smoothBearingRef = useRef<number | null>(null); // cap lissé de la caméra
   const lastGeocodeRef = useRef(0);
   const distRef = useRef<HTMLSpanElement | null>(null);
   const placeRef = useRef<HTMLSpanElement | null>(null);
@@ -331,13 +332,23 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     const lng = flatCoords[i][0] + (flatCoords[next][0] - flatCoords[i][0]) * frac;
     const lat = flatCoords[i][1] + (flatCoords[next][1] - flatCoords[i][1]) * frac;
 
-    // Cap lissé : vise un point à ~150 m d'avance en distance
+    // Cap CIBLE : vise un point à ~250 m d'avance (anticipe les virages plus tôt)
     let aheadIdx = i;
-    const lookahead = targetDist + 0.15; // km
+    const lookahead = targetDist + 0.25; // km
     while (aheadIdx < cumDist.length - 1 && cumDist[aheadIdx] < lookahead) aheadIdx++;
     const dx = flatCoords[aheadIdx][0] - lng;
     const dy = flatCoords[aheadIdx][1] - lat;
-    const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
+    const targetBearing = (Math.atan2(dx, dy) * 180) / Math.PI;
+
+    // Cap LISSÉ : la caméra tourne progressivement vers le cap cible au lieu de
+    // sauter dessus. Lissage exponentiel basé sur le temps (indépendant des FPS),
+    // avec gestion du passage -180/180 (plus court chemin angulaire).
+    if (smoothBearingRef.current === null) smoothBearingRef.current = targetBearing;
+    let deltaAngle = targetBearing - smoothBearingRef.current;
+    deltaAngle = ((deltaAngle + 540) % 360) - 180;           // ramène dans [-180, 180]
+    const alpha = 1 - Math.exp(-dt / 900);                   // ~0.9 s pour rejoindre le cap
+    smoothBearingRef.current += deltaAngle * alpha;
+    const bearing = smoothBearingRef.current;
 
     rider?.setLngLat([lng, lat]);
     // Centre TOUJOURS exactement sur le marqueur. Zoom reculé (13.4) pour que les
@@ -411,6 +422,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
 
       // 1) Place la caméra au départ, à plat (pas de plongée dans le terrain)
       try { map.resize(); } catch {}
+      smoothBearingRef.current = bearing;  // amorce le lissage sur le cap initial
       map.jumpTo({ center: flatCoords[0], zoom: 13.4, pitch: 0, bearing });
 
       // 2) Attend que les tuiles (relief + satellite) soient chargées,
@@ -448,6 +460,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       const dx0 = flatCoords[1][0] - flatCoords[0][0];
       const dy0 = flatCoords[1][1] - flatCoords[0][1];
       const bearing0 = (Math.atan2(dx0, dy0) * 180) / Math.PI;
+      smoothBearingRef.current = bearing0;  // réamorce le lissage
       map.easeTo({ center: flatCoords[0], zoom: 13.4, pitch: 0, bearing: bearing0, duration: 1000 });
     }
   };
