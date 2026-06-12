@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cycling-beard.vercel.app/sitemap.xml
