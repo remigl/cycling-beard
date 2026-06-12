@@ -195,7 +195,8 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
             "fog-color": "#e8e8e8", "fog-ground-blend": 0.4,
           });
         } catch {}
-        setTimeout(() => { try { map.easeTo({ pitch: 64, duration: 2000 }); } catch {} }, 1200);
+        // PAS de bascule auto en 3D ici : on reste en vue de dessus (pitch 0)
+        // tant que les tuiles ne sont pas chargées. La bascule se fait au Play.
       } catch (err) {
         console.warn("Terrain indisponible:", err);
       }
@@ -328,7 +329,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
 
     rider?.setLngLat([lng, lat]);
     // Centre TOUJOURS exactement sur le marqueur
-    map.jumpTo({ center: [lng, lat], bearing, pitch: 65, zoom: 14.8 });
+    map.jumpTo({ center: [lng, lat], bearing, pitch: 60, zoom: 14.6 });
 
     // Dessine la trace parcourue jusqu'au point courant
     const traveledSource = map.getSource("traveled");
@@ -355,12 +356,9 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
 
   useEffect(() => {
     if (playing) {
-      const delay = progressRef.current === 0 ? 1500 : 0;
-      const tid = setTimeout(() => {
-        lastTimeRef.current = 0;
-        animRef.current = requestAnimationFrame(animate);
-      }, delay);
-      return () => { clearTimeout(tid); if (animRef.current) cancelAnimationFrame(animRef.current); };
+      lastTimeRef.current = 0;
+      animRef.current = requestAnimationFrame(animate);
+      return () => { if (animRef.current) cancelAnimationFrame(animRef.current); };
     } else if (animRef.current) {
       cancelAnimationFrame(animRef.current);
     }
@@ -374,7 +372,25 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       const dx = flatCoords[1][0] - flatCoords[0][0];
       const dy = flatCoords[1][1] - flatCoords[0][1];
       const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
-      map.easeTo({ center: flatCoords[0], zoom: 14.8, pitch: 64, bearing, duration: 1500 });
+
+      // 1) Place la caméra au départ, à plat (pas de plongée dans le terrain)
+      map.jumpTo({ center: flatCoords[0], zoom: 14.8, pitch: 0, bearing });
+
+      // 2) Attend que les tuiles (relief + satellite) soient chargées,
+      //    PUIS bascule en 3D en douceur. Évite le « mur vert » et le clignotement.
+      const tiltThenPlay = () => {
+        try { map.easeTo({ pitch: 64, duration: 1800 }); } catch {}
+        setTimeout(() => setPlaying(true), 1900);
+      };
+      if (map.areTilesLoaded && map.areTilesLoaded()) {
+        tiltThenPlay();
+      } else {
+        const onIdle = () => { map.off("idle", onIdle); tiltThenPlay(); };
+        map.on("idle", onIdle);
+        // Sécurité : si "idle" tarde trop, on lance quand même après 4 s
+        setTimeout(() => { map.off("idle", onIdle); tiltThenPlay(); }, 4000);
+      }
+      return;  // setPlaying est géré dans tiltThenPlay
     }
     setPlaying(p => !p);
   };
