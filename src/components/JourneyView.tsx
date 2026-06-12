@@ -1,5 +1,5 @@
-import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map } from "lucide-react";
-import { useState } from "react";
+import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X } from "lucide-react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
 import { Lang } from "../i18n";
@@ -36,6 +36,34 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [foodTrip, setFoodTrip] = useState<TripSummary | null>(null);
   const [regionMap, setRegionMap] = useState<string | null>(null);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+
+  // Verrou de défilement robuste mobile : tant qu'une fenêtre est ouverte
+  // (photo, survol 3D, dénivelé, oiseaux, POI, spécialités), la page de fond
+  // est figée. position:fixed empêche le scroll tactile (overflow:hidden seul
+  // ne suffit pas sur mobile).
+  const anyOverlayOpen =
+    lightbox !== null || replayOpen !== null || elevOpen !== null ||
+    birdsTrip !== null || poiTrip !== null || foodTrip !== null;
+  useEffect(() => {
+    if (!anyOverlayOpen) return;
+    const scrollY = window.scrollY;
+    const body = document.body;
+    const prev = {
+      position: body.style.position, top: body.style.top,
+      width: body.style.width, overflow: body.style.overflow,
+    };
+    body.style.position = "fixed";
+    body.style.top = `-${scrollY}px`;
+    body.style.width = "100%";
+    body.style.overflow = "hidden";
+    return () => {
+      body.style.position = prev.position;
+      body.style.top = prev.top;
+      body.style.width = prev.width;
+      body.style.overflow = prev.overflow;
+      window.scrollTo(0, scrollY);
+    };
+  }, [anyOverlayOpen]);
 
   const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
@@ -116,6 +144,31 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
         {foodTrip && (
           <FoodInfo trip={foodTrip} lang={lang} onClose={() => setFoodTrip(null)} t={t} />
         )}
+
+        {/* Fenêtre Survol 3D (plein écran, comme les autres popups) */}
+        {replayOpen && (() => {
+          const rt = filtered.find(tr => tr.slug === replayOpen);
+          if (!rt) return null;
+          return (
+            <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3" onClick={() => setReplayOpen(null)}>
+              <div className="w-full max-w-4xl" onClick={e => e.stopPropagation()}>
+                <div className="flex items-center justify-between mb-3">
+                  <h3 className="font-display font-bold text-white text-sm md:text-base">
+                    {rt.startCity || rt.title} {rt.endCity ? `→ ${rt.endCity}` : ""}
+                  </h3>
+                  <button
+                    onClick={() => setReplayOpen(null)}
+                    className="w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white cursor-pointer shrink-0"
+                    aria-label={t("replay.close")}
+                  >
+                    <X size={18} />
+                  </button>
+                </div>
+                <RideReplay segments={rt.segments} track={rt.track} distanceKm={rt.distanceKm} t={t} />
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Lightbox */}
         {lightbox && (
@@ -344,13 +397,14 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
 
                 // Bloc photos
                 const photoBlock = galleryPhotos.length > 0 ? (
-                  <div className="grid grid-cols-2 gap-2">
-                    {galleryPhotos.slice(0, 4).map((photo, k) => (
+                  <div className="grid grid-cols-3 gap-2">
+                    {galleryPhotos.map((photo, k) => (
                       <img
                         key={k}
                         src={photo.thumb || photo.src}
                         alt={photo.alt}
                         referrerPolicy="no-referrer"
+                        loading="lazy"
                         onClick={() => setLightbox({ photos: galleryPhotos, index: k })}
                         className="w-full aspect-square object-cover rounded-lg cursor-pointer hover:opacity-85 transition-opacity"
                       />
@@ -397,16 +451,6 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                       )}
                     </motion.div>
 
-                    {/* Survol 3D déplié (inline, sans changer de page) */}
-                    {replayOpen === trip.slug && (
-                      <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: "auto" }}
-                        className="mt-4 md:mt-2 overflow-hidden"
-                      >
-                        <RideReplay segments={trip.segments} track={trip.track} distanceKm={trip.distanceKm} t={t} />
-                      </motion.div>
-                    )}
                   </div>
                 );
               })}
