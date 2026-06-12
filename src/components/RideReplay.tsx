@@ -478,7 +478,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
         .maplibregl-ctrl-attrib a { pointer-events: none !important; cursor: default !important; }
         .maplibregl-ctrl-attrib-button { pointer-events: auto !important; }
       `}</style>
-      <div ref={containerRef} className="w-full h-full min-h-[300px]" />
+      <div ref={containerRef} className="w-full h-full" />
 
       {/* Bandeau info */}
       {ready && (
