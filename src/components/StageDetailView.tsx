@@ -92,7 +92,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
 
   if (loading) {
     return (
-      <div className="w-full min-h-screen pt-24 flex items-center justify-center bg-bg-dark">
+      <div className="w-full min-h-screen pt-16 flex items-center justify-center bg-bg-dark">
         <div className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
           {t("loading")}
         </div>
@@ -102,7 +102,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
 
   if (error || !stage) {
     return (
-      <div className="w-full min-h-screen pt-24 flex flex-col items-center justify-center bg-bg-dark gap-4">
+      <div className="w-full min-h-screen pt-16 flex flex-col items-center justify-center bg-bg-dark gap-4">
         <AlertTriangle size={32} className="text-brand-sand" />
         <p className="font-mono text-xs text-text-dim">{t("not_found")}</p>
         <button onClick={() => onNavigate("journey")} className="text-brand-sand text-xs font-mono underline cursor-pointer">
