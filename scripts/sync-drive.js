@@ -319,17 +319,14 @@ async function processInbox(drive, rootId) {
   }
   console.log(`📥 ${gpxFiles.length} GPX à traiter dans _inbox`);
 
-  let geocodes = 0;
+  // ── Étape 1 : lire chaque GPX (date, coords départ/arrivée, heure de départ) ──
+  const items = [];
   for (const file of gpxFiles) {
     console.log(`\n  📄 ${file.name}  (${file.size ?? "?"} octets)`);
-
-    // Si Drive signale un fichier vide, on le saute proprement
     if (file.size != null && Number(file.size) === 0) {
       console.log("    ⚠️  Fichier vide sur Drive, ignoré.");
       continue;
     }
-
-    // Télécharge pour lire son contenu (dans un dossier tmp dédié)
     const tmpDir = path.join("/tmp", "_inbox");
     fs.mkdirSync(tmpDir, { recursive: true });
     const tmpPath = path.join(tmpDir, `${file.id}.gpx`);
@@ -338,48 +335,69 @@ async function processInbox(drive, rootId) {
       await downloadFile(drive, file.id, tmpPath);
       content = fs.readFileSync(tmpPath, "utf-8");
     } catch (err) {
-      console.log(`    ⚠️  Téléchargement impossible (${err.message}), GPX ignoré.`);
+      console.log(`    ⚠️  Téléchargement impossible (${err.message}), ignoré.`);
       continue;
     }
-
     const meta = extractGpxMeta(content);
     if (!meta) {
       console.log("    ⚠️  GPX sans points exploitables, ignoré.");
       continue;
     }
     const date = meta.date || new Date().toISOString().slice(0, 10);
+    // Heure de départ précise (pour ordonner les GPX d'un même jour)
+    const tm = content.match(/<time>([^<]+)<\/time>/);
+    const startTime = tm ? new Date(tm[1]).getTime() : Number.MAX_SAFE_INTEGER;
+    items.push({ file, date, startTime, meta });
+  }
 
-    // Géocode départ / arrivée (respect du 1 req/s Nominatim)
-    const startGeo = await reverseGeocode(meta.startLat, meta.startLng);
+  if (items.length === 0) {
+    console.log("\n📥 Aucun GPX exploitable.");
+    return;
+  }
+
+  // ── Étape 2 : regrouper les GPX par JOUR ──
+  const byDay = {};
+  for (const it of items) {
+    (byDay[it.date] = byDay[it.date] || []).push(it);
+  }
+
+  // ── Étape 3 : un dossier par jour ──
+  let geocodes = 0;
+  for (const date of Object.keys(byDay).sort()) {
+    const dayItems = byDay[date].sort((a, b) => a.startTime - b.startTime);
+    const first = dayItems[0];                       // GPX le plus tôt → départ
+    const last = dayItems[dayItems.length - 1];      // GPX le plus tard → arrivée
+
+    console.log(`\n  📅 ${date} — ${dayItems.length} GPX`);
+
+    // Géocode le VRAI départ (début du 1er GPX) et la VRAIE arrivée (fin du dernier)
+    const startGeo = await reverseGeocode(first.meta.startLat, first.meta.startLng);
     await new Promise(r => setTimeout(r, 1100));
-    const endGeo = await reverseGeocode(meta.endLat, meta.endLng);
+    const endGeo = await reverseGeocode(last.meta.endLat, last.meta.endLng);
     await new Promise(r => setTimeout(r, 1100));
     geocodes += 2;
 
     const startCity = startGeo.city || "depart";
     const endCity = endGeo.city || "arrivee";
     const folderName = `${date}-${slugifyCity(startCity)}_${slugifyCity(endCity)}`;
-
-    // Un dossier par étape (nommé d'après le jour + trajet). Si le dossier existe
-    // déjà (autre GPX du même jour), on réutilise le MÊME dossier : les fichiers
-    // y sont déposés côte à côte, sans renommage ni fusion.
     console.log(`    📂 ${folderName}  (${startCity} → ${endCity})`);
+
     const folderId = await findOrCreateFolder(drive, rootId, folderName);
 
-    // Si un fichier du même nom existe déjà dans le dossier, on évite l'écrasement
-    let targetName = file.name;
-    if (await fileExistsInFolder(drive, folderId, targetName)) {
-      const dot = targetName.lastIndexOf(".");
-      const base = dot > 0 ? targetName.slice(0, dot) : targetName;
-      const ext = dot > 0 ? targetName.slice(dot) : "";
-      let n = 2;
-      while (await fileExistsInFolder(drive, folderId, `${base}-${n}${ext}`)) n++;
-      targetName = `${base}-${n}${ext}`;
+    // Déplace TOUS les GPX du jour dans ce dossier, sans renommer (anti-écrasement)
+    for (const it of dayItems) {
+      let targetName = it.file.name;
+      if (await fileExistsInFolder(drive, folderId, targetName)) {
+        const dot = targetName.lastIndexOf(".");
+        const base = dot > 0 ? targetName.slice(0, dot) : targetName;
+        const ext = dot > 0 ? targetName.slice(dot) : "";
+        let n = 2;
+        while (await fileExistsInFolder(drive, folderId, `${base}-${n}${ext}`)) n++;
+        targetName = `${base}-${n}${ext}`;
+      }
+      await moveAndRename(drive, it.file.id, folderId, inboxId, targetName);
+      console.log(`    ✅ déplacé → ${targetName}`);
     }
-
-    // Déplace le GPX dans le dossier SANS le renommer (nom d'origine conservé)
-    await moveAndRename(drive, file.id, folderId, inboxId, targetName);
-    console.log(`    ✅ déplacé → ${targetName}`);
   }
   console.log(`\n📥 Inbox traitée (${geocodes} géocodages).`);
 }
@@ -491,14 +509,24 @@ function mergeGpxFiles(gpxContents) {
   }
 
   const lastResult = parseOneGpx(gpxContents[gpxContents.length - 1]);
+  // Point d'arrivée : dernier point du dernier GPX, ou à défaut le dernier point
+  // du dernier segment valide (robustesse si le dernier GPX est mal formé).
+  let endLat = lastResult.endLat;
+  let endLng = lastResult.endLng;
+  if ((endLat == null || endLng == null) && segments.length > 0) {
+    const lastSeg = segments[segments.length - 1];
+    const lastPt = lastSeg[lastSeg.length - 1];
+    if (lastPt) { endLat = lastPt[0]; endLng = lastPt[1]; }
+  }
+
   return {
     distanceKm: Math.round(totalDistance * 10) / 10,
     elevationGain: Math.round(totalElevation),
     maxAltitude: Math.round(maxAltitude),
     minAltitude: minAltitude === Infinity ? 0 : Math.round(minAltitude),
     elevProfile: fullProfile,
-    endLat: lastResult.endLat,
-    endLng: lastResult.endLng,
+    endLat,
+    endLng,
     startLat,
     startLng,
     track: segments[0] || [],
@@ -618,7 +646,7 @@ async function syncFolder(drive, folder) {
   const photos = [];
   let gpxStats = { distanceKm: 0, elevationGain: 0, maxAltitude: 0 };
   let gpxPublicPath = null;
-  const gpxContents = [];
+  const gpxRaw = [];   // { content, startTime } pour tri chronologique
   let notes = {};
 
   // Parse date and title from rawSlug
@@ -644,15 +672,14 @@ async function syncFolder(drive, folder) {
     // Download
     await downloadFile(drive, file.id, tmpPath);
 
-    // GPX — accumule tous les fichiers .gpx
+    // GPX — accumule tous les fichiers .gpx avec leur heure de départ
     if (name.endsWith(".gpx")) {
       const gpxContent = fs.readFileSync(tmpPath, "utf-8");
-      gpxContents.push(gpxContent);
-      // Copie chaque GPX sous son nom original
-      const gpxDest = path.join(GPX_DIR, `${slug}_${gpxContents.length}.gpx`);
-      fs.copyFileSync(tmpPath, gpxDest);
-      if (!gpxPublicPath) gpxPublicPath = `/gpx/${slug}_1.gpx`;
-      console.log(`  📍 GPX #${gpxContents.length}: ${file.name}`);
+      // Première balise <time> = heure de départ de ce GPX (pour le tri chronologique)
+      const tm = gpxContent.match(/<time>([^<]+)<\/time>/);
+      const startTime = tm ? new Date(tm[1]).getTime() : Number.MAX_SAFE_INTEGER;
+      gpxRaw.push({ content: gpxContent, startTime, name: file.name });
+      console.log(`  📍 GPX trouvé : ${file.name}`);
     }
 
     // Notes
@@ -688,10 +715,19 @@ async function syncFolder(drive, folder) {
     }
   }
 
-  // Fusion de tous les GPX
-  if (gpxContents.length > 0) {
-    gpxStats = mergeGpxFiles(gpxContents);
-    console.log(`  📍 Total GPX (${gpxContents.length} fichier(s)): ${gpxStats.distanceKm}km, +${gpxStats.elevationGain}m, max ${gpxStats.maxAltitude}m`);
+  // Fusion de tous les GPX, dans l'ORDRE CHRONOLOGIQUE (par heure de départ)
+  if (gpxRaw.length > 0) {
+    gpxRaw.sort((a, b) => a.startTime - b.startTime);
+    const orderedContents = gpxRaw.map(g => g.content);
+
+    // Écrit les GPX publics dans le bon ordre (_1, _2, …)
+    orderedContents.forEach((content, i) => {
+      fs.writeFileSync(path.join(GPX_DIR, `${slug}_${i + 1}.gpx`), content);
+    });
+    gpxPublicPath = `/gpx/${slug}_1.gpx`;
+
+    gpxStats = mergeGpxFiles(orderedContents);
+    console.log(`  📍 Total GPX (${orderedContents.length} fichier(s), triés par heure): ${gpxStats.distanceKm}km, +${gpxStats.elevationGain}m, max ${gpxStats.maxAltitude}m`);
     if (gpxStats.distanceKm === 0) {
       console.warn(`  ⚠️  ATTENTION : distance = 0 km pour ${slug}. GPX vide ou corrompu ?`);
     }
@@ -775,7 +811,9 @@ async function syncFolder(drive, folder) {
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
-const START_DATE = new Date("2026-05-26");
+// Date du 1er jour de vélo — recalculée dynamiquement au début du sync
+// (repli sur cette valeur si aucune date n'est trouvée).
+let START_DATE = new Date("2026-05-26");
 
 function computeDayNumber(dateStr) {
   const d = new Date(dateStr);
@@ -948,6 +986,16 @@ async function main() {
     return;
   }
 
+  // Détermine la date du 1er jour de vélo = plus ancien dossier daté
+  const datedFolders = folders
+    .map(f => (f.name.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1])
+    .filter(Boolean)
+    .sort();
+  if (datedFolders.length > 0) {
+    START_DATE = new Date(datedFolders[0]);
+    console.log(`🚴 Premier jour de vélo : ${datedFolders[0]}`);
+  }
+
   const stages = [];
   for (const folder of folders) {
     // Dossier spécial _about → page de présentation
@@ -1001,14 +1049,27 @@ async function main() {
   const countries = [...new Set(stages.map(s => s.country).filter(c => c !== "—"))];
   const lastStage = stages[stages.length - 1];
 
+  // Nombre de jours d'aventure = du premier GPX (1ère étape par date) jusqu'à aujourd'hui
+  const dates = stages.map(s => s.date).filter(Boolean).sort();
+  const firstDate = dates[0] || null;
+  let totalDays = stages.length;  // repli si aucune date
+  if (firstDate) {
+    const start = new Date(firstDate);
+    const now = new Date();
+    // +1 pour inclure le jour de départ (jour 1 = premier jour de vélo)
+    totalDays = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1;
+    if (totalDays < 1) totalDays = 1;
+  }
+
   const stats = {
     totalKm: Math.round(totalKm),
     totalCountries: countries.length || 1,
-    totalDays: stages.length,
+    totalDays,
+    totalStages: stages.length,
     totalElevation: Math.round(totalElevation),
     currentCountry: lastStage?.country || "France",
     currentLocation: lastStage?.endCity || lastStage?.location || "Saint-Nazaire",
-    startDate: "2026-05-26",
+    startDate: firstDate || "2026-05-26",
     lastUpdate: new Date().toISOString().split("T")[0],
     latestStageSlug: lastStage?.slug || "",
   };
