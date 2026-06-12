@@ -1,4 +1,3 @@
-
 import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
@@ -149,8 +148,8 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           const rt = filtered.find(tr => tr.slug === replayOpen);
           if (!rt) return null;
           return (
-            <div className="fixed inset-0 z-[9999] bg-black/90 flex items-center justify-center p-3" onClick={() => setReplayOpen(null)}>
-              <div className="w-full max-w-4xl max-h-[92vh] flex flex-col" onClick={e => e.stopPropagation()}>
+            <div className="fixed inset-0 z-[9999] bg-black flex flex-col p-3" onClick={() => setReplayOpen(null)}>
+              <div className="w-full h-full max-w-4xl mx-auto flex flex-col" onClick={e => e.stopPropagation()}>
                 <div className="flex items-center justify-between mb-3 shrink-0">
                   <h3 className="font-display font-bold text-white text-sm md:text-base">
                     {rt.startCity || rt.title} {rt.endCity ? `→ ${rt.endCity}` : ""}
