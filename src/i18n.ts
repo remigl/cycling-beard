@@ -16,6 +16,7 @@ type Dict = Record<string, string>;
 
 export const UI: Record<Lang, Dict> = {
   fr: {
+    "common.retry": "Réessayer",
     "nav.home": "Accueil",
     "nav.journey": "Itinéraire",
     "nav.map": "Carte de Suivi",
@@ -133,6 +134,7 @@ export const UI: Record<Lang, Dict> = {
     "not_found": "Étape introuvable.",
   },
   en: {
+    "common.retry": "Retry",
     "nav.home": "Home",
     "nav.journey": "Journey",
     "nav.map": "Tracking Map",
@@ -250,6 +252,7 @@ export const UI: Record<Lang, Dict> = {
     "not_found": "Stage not found.",
   },
   es: {
+    "common.retry": "Reintentar",
     "nav.home": "Inicio",
     "nav.journey": "Itinerario",
     "nav.map": "Mapa de Seguimiento",
@@ -367,6 +370,7 @@ export const UI: Record<Lang, Dict> = {
     "not_found": "Etapa no encontrada.",
   },
   it: {
+    "common.retry": "Riprova",
     "nav.home": "Home",
     "nav.journey": "Itinerario",
     "nav.map": "Mappa di Percorso",
@@ -484,6 +488,7 @@ export const UI: Record<Lang, Dict> = {
     "not_found": "Tappa non trovata.",
   },
   de: {
+    "common.retry": "Erneut versuchen",
     "nav.home": "Startseite",
     "nav.journey": "Reiseroute",
     "nav.map": "Streckenkarte",
@@ -601,6 +606,7 @@ export const UI: Record<Lang, Dict> = {
     "not_found": "Etappe nicht gefunden.",
   },
   nl: {
+    "common.retry": "Opnieuw proberen",
     "nav.home": "Home",
     "nav.journey": "Route",
     "nav.map": "Volgkaart",
