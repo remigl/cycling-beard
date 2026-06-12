@@ -10,7 +10,7 @@
  *
  * Variables d'environnement requises (.env) :
  *   GOOGLE_SERVICE_ACCOUNT_KEY_PATH=./service-account.json
- *   DRIVE_FOLDER_ID=<id du dossier BikeTrip sur Drive>
+ *   DRIVE_FOLDER_ID=<id du dossier racine sur Drive>
  *
  * Packages requis :
  *   npm install googleapis sharp gpxparser dotenv
@@ -92,6 +92,8 @@ async function translateContent(fr) {
 // ─── Auth Google Drive ────────────────────────────────────────────────────────
 
 function getAuthClient() {
+  // Compte de service : lecture + déplacement de fichiers (pas de création de
+  // fichier possible faute de quota — OAuth utilisateur viendra plus tard).
   const keyFile = JSON.parse(fs.readFileSync(SERVICE_ACCOUNT_PATH, "utf-8"));
   const auth = new google.auth.GoogleAuth({
     credentials: keyFile,
@@ -177,23 +179,58 @@ async function processImage(srcPath, destDir, baseName) {
 // ─── Reverse Geocoding (Nominatim / OpenStreetMap, gratuit) ──────────────────
 
 async function reverseGeocode(lat, lng) {
-  if (lat == null || lng == null) return { city: null, region: null, department: null };
-  try {
-    const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`;
-    const res = await fetch(url, {
-      headers: { "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync)" },
-    });
-    if (!res.ok) return { city: null, region: null, department: null };
-    const data = await res.json();
-    const a = data.address || {};
-    return {
-      city: a.city || a.town || a.village || a.municipality || a.county || null,
-      region: a.state || a.region || null,        // ex: Bourgogne-Franche-Comté
-      department: a.county || a.state_district || null,  // ex: Doubs, Saône-et-Loire
-    };
-  } catch {
-    return { city: null, region: null, department: null };
+  const empty = { city: null, region: null, department: null, country: null, countryCode: null };
+  if (lat == null || lng == null) return empty;
+
+  const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=jsonv2&addressdetails=1&zoom=12&accept-language=fr`;
+
+  // 3 tentatives avec timeout + délai croissant, car Nominatim peut être lent/occupé
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 15000);
+      const res = await fetch(url, {
+        headers: { "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync; contact@cyclingbeard.fr)" },
+        signal: controller.signal,
+      });
+      clearTimeout(timer);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      const a = data.address || {};
+      const result = {
+        city: a.city || a.town || a.village || a.municipality || a.hamlet || a.suburb || a.county || null,
+        region: a.state || a.region || a.province || a.state_district || null,
+        department: a.county || a.state_district || null,
+        country: a.country || null,                                   // ex: France, Italie
+        countryCode: a.country_code ? a.country_code.toUpperCase() : null,  // ex: FR, IT
+      };
+      // Si le pays manque encore, on considère l'essai comme incomplet et on réessaie
+      if (!result.countryCode && !result.country && attempt < 3) {
+        await new Promise(r => setTimeout(r, 1500));
+        continue;
+      }
+      return result;
+    } catch (err) {
+      if (attempt < 3) {
+        await new Promise(r => setTimeout(r, 1500 * attempt));
+        continue;
+      }
+      console.log(`    ⚠️  Géocodage échoué (${err.message})`);
+    }
   }
+  return empty;
+}
+
+// Nom de pays propre depuis le code ISO (fiable, indépendant de la langue Nominatim)
+function countryFromCode(code) {
+  const map = {
+    FR: "France", IT: "Italie", DE: "Allemagne", AT: "Autriche", CH: "Suisse",
+    BE: "Belgique", NL: "Pays-Bas", ES: "Espagne", PT: "Portugal", LU: "Luxembourg",
+    SK: "Slovaquie", HU: "Hongrie", RO: "Roumanie", RS: "Serbie", HR: "Croatie",
+    BG: "Bulgarie", SI: "Slovénie", CZ: "Tchéquie", PL: "Pologne",
+    GE: "Géorgie", TR: "Turquie", KG: "Kirghizistan", KZ: "Kazakhstan",
+  };
+  return map[code] || null;
 }
 
 // ─── Traitement de l'inbox (GPX bruts → dossiers d'étape) ────────────────────
@@ -231,6 +268,7 @@ function extractGpxMeta(gpxContent) {
   };
 }
 
+// Vrai si un dossier de ce nom existe déjà sous le parent
 // Trouve un dossier par nom, ou le crée s'il n'existe pas
 async function findOrCreateFolder(drive, parentId, name) {
   const q = `'${parentId}' in parents and name='${name}' and mimeType='application/vnd.google-apps.folder' and trashed=false`;
@@ -259,34 +297,6 @@ async function moveAndRename(drive, fileId, newParentId, oldParentId, newName) {
     requestBody: { name: newName },
     fields: "id, parents",
   });
-}
-
-// Crée un fichier texte (markdown) dans un dossier
-async function uploadText(drive, folderId, filename, content) {
-  await drive.files.create({
-    requestBody: { name: filename, parents: [folderId] },
-    media: { mimeType: "text/markdown", body: content },
-    fields: "id",
-  });
-}
-
-// Gabarit notes.md : sections vides à remplir
-function buildNotesTemplate(startCity, endCity, date) {
-  return `# ${startCity} → ${endCity}
-<!-- Étape du ${date}. Remplis les sections : ce qui reste vide ne sera pas affiché. -->
-
-## Description
-<!-- Le récit de l'étape : la route, les paysages, ce qui s'est passé. -->
-
-
-## Camping
-<!-- Où as-tu dormi ? Lieu, type (camping, Welcome to my Garden, chez l'habitant…), ressenti. -->
-
-
-## Remerciements
-<!-- Les personnes rencontrées, hôtes, coups de main à remercier. -->
-
-`;
 }
 
 // Traite le dossier "_inbox" : chaque GPX brut → dossier d'étape nommé + notes.md
@@ -349,27 +359,27 @@ async function processInbox(drive, rootId) {
     const startCity = startGeo.city || "depart";
     const endCity = endGeo.city || "arrivee";
     const folderName = `${date}-${slugifyCity(startCity)}_${slugifyCity(endCity)}`;
-    console.log(`    📂 ${folderName}  (${startCity} → ${endCity})`);
 
+    // Un dossier par étape (nommé d'après le jour + trajet). Si le dossier existe
+    // déjà (autre GPX du même jour), on réutilise le MÊME dossier : les fichiers
+    // y sont déposés côte à côte, sans renommage ni fusion.
+    console.log(`    📂 ${folderName}  (${startCity} → ${endCity})`);
     const folderId = await findOrCreateFolder(drive, rootId, folderName);
 
-    // Nom du GPX cible : ride.gpx, sinon ride-2.gpx…
-    let gpxName = "ride.gpx";
-    let n = 2;
-    while (await fileExistsInFolder(drive, folderId, gpxName)) {
-      gpxName = `ride-${n}.gpx`;
-      n++;
+    // Si un fichier du même nom existe déjà dans le dossier, on évite l'écrasement
+    let targetName = file.name;
+    if (await fileExistsInFolder(drive, folderId, targetName)) {
+      const dot = targetName.lastIndexOf(".");
+      const base = dot > 0 ? targetName.slice(0, dot) : targetName;
+      const ext = dot > 0 ? targetName.slice(dot) : "";
+      let n = 2;
+      while (await fileExistsInFolder(drive, folderId, `${base}-${n}${ext}`)) n++;
+      targetName = `${base}-${n}${ext}`;
     }
 
-    // Déplace le GPX de l'inbox vers le dossier d'étape, renommé
-    await moveAndRename(drive, file.id, folderId, inboxId, gpxName);
-    console.log(`    ✅ déplacé → ${gpxName}`);
-
-    // Crée notes.md s'il n'existe pas
-    if (!(await fileExistsInFolder(drive, folderId, "notes.md"))) {
-      await uploadText(drive, folderId, "notes.md", buildNotesTemplate(startCity, endCity, date));
-      console.log(`    📝 notes.md créé`);
-    }
+    // Déplace le GPX dans le dossier SANS le renommer (nom d'origine conservé)
+    await moveAndRename(drive, file.id, folderId, inboxId, targetName);
+    console.log(`    ✅ déplacé → ${targetName}`);
   }
   console.log(`\n📥 Inbox traitée (${geocodes} géocodages).`);
 }
@@ -693,8 +703,8 @@ async function syncFolder(drive, folder) {
     thumbWebp = photos[0].thumb;
   }
 
-  // ── Reverse geocoding : noms de villes + région ──
-  let startCity = null, endCity = null, region = null;
+  // ── Reverse geocoding : noms de villes + région + pays ──
+  let startCity = null, endCity = null, region = null, geoCountry = null;
   if (gpxStats.startLat != null) {
     const startGeo = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
     startCity = startGeo.city;
@@ -702,9 +712,12 @@ async function syncFolder(drive, folder) {
     const endGeo = await reverseGeocode(gpxStats.endLat, gpxStats.endLng);
     endCity = endGeo.city;
     region = endGeo.region || startGeo.region;
+    // Pays via le code ISO (fiable) ; repli sur le nom brut Nominatim
+    geoCountry = countryFromCode(endGeo.countryCode || startGeo.countryCode)
+      || endGeo.country || startGeo.country || null;
     await new Promise(r => setTimeout(r, 1100));
     if (startCity || endCity) {
-      console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"} (${region || "région ?"})`);
+      console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"} (${region || "région ?"}, ${geoCountry || "pays ?"})`);
     }
   }
 
@@ -723,7 +736,7 @@ async function syncFolder(drive, folder) {
     title: notes.title || titleRaw,
     day: `Jour ${computeDayNumber(date)}`,
     location: notes.location || titleRaw,
-    country: detectCountry(slug, region),
+    country: geoCountry || detectCountry(slug, region),
     region: region || null,
     startCity: startCity || null,
     endCity: endCity || null,
