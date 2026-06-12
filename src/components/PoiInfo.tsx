@@ -39,6 +39,12 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
   const wikiLang = ["en", "fr", "es", "it", "de", "nl"].includes(lang) ? lang : "en";
 
   useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = prev; };
+  }, []);
+
+  useEffect(() => {
     if (trip.mapLat == null || trip.mapLng == null) { setError(true); setLoading(false); return; }
     const lat = trip.mapLat, lng = trip.mapLng;
 
