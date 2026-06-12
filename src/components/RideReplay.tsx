@@ -303,21 +303,31 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       setPlaying(false);
     }
 
-    const idx = progressRef.current * (flatCoords.length - 1);
-    const i = Math.floor(idx);
-    const frac = idx - i;
+    // ── Position par DISTANCE (pas par index) → vitesse visuelle constante ──
+    // On cherche le point correspondant à `progress × distance totale`.
+    const targetDist = progressRef.current * totalDist;
+    // Recherche du segment [i, i+1] contenant cette distance cumulée
+    let i = 0;
+    while (i < cumDist.length - 1 && cumDist[i + 1] < targetDist) i++;
     const next = Math.min(i + 1, flatCoords.length - 1);
+    // Fraction à l'intérieur du segment, basée sur la distance (pas l'index)
+    const segStart = cumDist[i] || 0;
+    const segEnd = cumDist[next] || segStart;
+    const frac = segEnd > segStart ? (targetDist - segStart) / (segEnd - segStart) : 0;
 
     const lng = flatCoords[i][0] + (flatCoords[next][0] - flatCoords[i][0]) * frac;
     const lat = flatCoords[i][1] + (flatCoords[next][1] - flatCoords[i][1]) * frac;
 
-    // Cap lissé (5 points d'avance)
-    const ahead = Math.min(i + 5, flatCoords.length - 1);
-    const dx = flatCoords[ahead][0] - flatCoords[i][0];
-    const dy = flatCoords[ahead][1] - flatCoords[i][1];
+    // Cap lissé : vise un point à ~150 m d'avance en distance
+    let aheadIdx = i;
+    const lookahead = targetDist + 0.15; // km
+    while (aheadIdx < cumDist.length - 1 && cumDist[aheadIdx] < lookahead) aheadIdx++;
+    const dx = flatCoords[aheadIdx][0] - lng;
+    const dy = flatCoords[aheadIdx][1] - lat;
     const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
 
     rider?.setLngLat([lng, lat]);
+    // Centre TOUJOURS exactement sur le marqueur
     map.jumpTo({ center: [lng, lat], bearing, pitch: 65, zoom: 14.8 });
 
     // Dessine la trace parcourue jusqu'au point courant
@@ -333,7 +343,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
 
     // Distance réelle écrite directement dans le DOM (zéro re-render)
     if (distRef.current) {
-      distRef.current.textContent = `${(cumDist[i] || 0).toFixed(1)} / ${totalDist.toFixed(1)} km`;
+      distRef.current.textContent = `${targetDist.toFixed(1)} / ${totalDist.toFixed(1)} km`;
     }
     updateRiver(lat, lng);
     updateCity(lat, lng);
