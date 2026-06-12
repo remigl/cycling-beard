@@ -8,7 +8,7 @@ const BMC_CONFIGURED = true; // Passe à true quand tu as créé ton compte
 
 export default function SupportView() {
   return (
-    <div className="w-full min-h-screen pt-24 pb-20 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
+    <div className="w-full min-h-screen pt-16 pb-20 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
       <div className="max-w-3xl w-full text-left">
 
         {/* Header */}
