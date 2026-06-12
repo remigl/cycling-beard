@@ -1,5 +1,5 @@
 import { ChevronLeft, MapPin, TrendingUp, Calendar, Mountain, Send, Sparkles, AlertTriangle } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { StageDetail } from "../types";
 import { Lang } from "../i18n";
@@ -31,6 +31,16 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
   const [commentText, setCommentText] = useState("");
   const [success, setSuccess] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
+  const [retryKey, setRetryKey] = useState(0);
+
+  // Swipe tactile + touche Échap pour la photo plein écran
+  const touchStartX = useRef<number | null>(null);
+  useEffect(() => {
+    if (lightbox === null) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setLightbox(null); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightbox !== null]);
 
   // Filet de sécurité : au montage de la vue d'étape, on s'assure que la page
   // n'est PAS restée figée par un verrou de défilement précédent.
@@ -81,7 +91,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
         setError(true);
         setLoading(false);
       });
-  }, [slug]);
+  }, [slug, retryKey]);
 
   const handlePostComment = (e: React.FormEvent) => {
     e.preventDefault();
@@ -116,6 +126,9 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
       <div className="w-full min-h-screen pt-16 flex flex-col items-center justify-center bg-bg-dark gap-4">
         <AlertTriangle size={32} className="text-brand-sand" />
         <p className="font-mono text-xs text-text-dim">{t("not_found")}</p>
+        <button onClick={() => setRetryKey(k => k + 1)} className="text-brand-sand text-xs font-mono border border-brand-sand/40 rounded-full px-4 py-1.5 cursor-pointer hover:bg-brand-sand/10">
+          {t("common.retry")}
+        </button>
         <button onClick={() => onNavigate("journey")} className="text-brand-sand text-xs font-mono underline cursor-pointer">
           {t("stage.back")}
         </button>
@@ -148,6 +161,14 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
         <div
           className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4"
           onClick={() => setLightbox(null)}
+          onTouchStart={e => { touchStartX.current = e.touches[0].clientX; }}
+          onTouchEnd={e => {
+            if (touchStartX.current === null) return;
+            const delta = e.changedTouches[0].clientX - touchStartX.current;
+            touchStartX.current = null;
+            if (delta < -50) setLightbox(i => i !== null && i < galleryPhotos.length - 1 ? i + 1 : 0);
+            else if (delta > 50) setLightbox(i => i !== null && i > 0 ? i - 1 : galleryPhotos.length - 1);
+          }}
         >
           <div className="max-w-5xl w-full flex flex-col items-center gap-3" onClick={e => e.stopPropagation()}>
             <img
