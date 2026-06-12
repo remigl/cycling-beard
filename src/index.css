@@ -195,3 +195,51 @@ input:focus, select:focus, textarea:focus {
   background-color: #292928 !important;
   opacity: 0.95;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   CORRECTIF Z-INDEX — Garder les menus AU-DESSUS des cartes
+   Les cartes Leaflet/MapLibre posaient des z-index internes élevés
+   qui passaient devant le header et le menu de langue.
+   ───────────────────────────────────────────────────────────── */
+
+/* 1) Plafonne les couches internes de Leaflet (panes + contrôles) */
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 1 !important;
+}
+.leaflet-control {
+  z-index: 2 !important;
+}
+
+/* 2) Plafonne MapLibre (survol 3D) */
+.maplibregl-map,
+.maplibregl-canvas-container,
+.maplibregl-control-container {
+  z-index: 1 !important;
+}
+
+/* 3) La barre de navigation TOUJOURS au-dessus des cartes */
+.glass-nav,
+header,
+[data-nav],
+.navbar {
+  position: relative;
+  z-index: 1000 !important;
+}
+
+/* 4) Le menu déroulant de langue au-dessus de tout (cartes incluses) */
+.language-menu,
+[data-language-menu] {
+  z-index: 2000 !important;
+}
+
+/* 5) Attribution MapLibre visible mais non cliquable (évite de quitter
+      la page par erreur en changeant la vitesse du survol) */
+.maplibregl-ctrl-attrib a {
+  pointer-events: none !important;
+  cursor: default !important;
+}
+.maplibregl-ctrl-attrib-button {
+  pointer-events: auto !important;
+}
