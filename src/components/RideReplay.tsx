@@ -166,10 +166,20 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     });
     mapRef.current = map;
 
+    // Filets de sécurité : quelques resize programmés…
     const resizeTimers = [
       setTimeout(() => { try { map.resize(); } catch {} }, 100),
       setTimeout(() => { try { map.resize(); } catch {} }, 600),
+      setTimeout(() => { try { map.resize(); } catch {} }, 1500),
     ];
+
+    // …MAIS surtout un ResizeObserver : il déclenche un resize EXACTEMENT quand
+    // le conteneur obtient/modifie sa taille réelle (ce que le pinch faisait à la main).
+    let ro: ResizeObserver | null = null;
+    if (typeof ResizeObserver !== "undefined" && containerRef.current) {
+      ro = new ResizeObserver(() => { try { map.resize(); } catch {} });
+      ro.observe(containerRef.current);
+    }
 
     map.on("error", (e: any) => {
       const msg = (e?.error?.message || String(e)).toLowerCase();
@@ -279,6 +289,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     return () => {
       resizeTimers.forEach(clearTimeout);
       clearTimeout(fallback);
+      if (ro) ro.disconnect();
       if (animRef.current) cancelAnimationFrame(animRef.current);
       try { map.remove(); } catch {}
       mapRef.current = null;
@@ -374,6 +385,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
 
       // 1) Place la caméra au départ, à plat (pas de plongée dans le terrain)
+      try { map.resize(); } catch {}
       map.jumpTo({ center: flatCoords[0], zoom: 14.8, pitch: 0, bearing });
 
       // 2) Attend que les tuiles (relief + satellite) soient chargées,
