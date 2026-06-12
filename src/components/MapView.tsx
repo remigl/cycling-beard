@@ -228,7 +228,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         </div>
 
         {/* Carte Leaflet : hauteur = écran moins l'espace pris par le header/footer */}
-        <div className="h-[calc(100vh-280px)] min-h-[300px] bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative">
+        <div className="h-[calc(100vh-280px)] min-h-[300px] bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative isolate z-0">
           {!leafletLoaded && (
             <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
               <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
