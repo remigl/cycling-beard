@@ -197,7 +197,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
           tiles: [`https://api.maptiler.com/tiles/terrain-rgb-v2/{z}/{x}/{y}.webp?key=${MAPTILER_KEY}`],
           minzoom: 0, maxzoom: 12, tileSize: 256, encoding: "mapbox",
         });
-        map.setTerrain({ source: "terrainSource", exaggeration: 1.6 });
+        map.setTerrain({ source: "terrainSource", exaggeration: 1.3 });
         try {
           map.setSky({
             "sky-color": "#9ec8e8", "sky-horizon-blend": 0.5,
@@ -275,12 +275,13 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       const rider = new maplibregl.Marker({ element: riderEl }).setLngLat(flatCoords[0]).addTo(map);
       (map as any)._rider = rider;
 
-      // Cadre toute la trace
-      const bounds = flatCoords.reduce(
-        (b: any, c: any) => b.extend(c),
-        new maplibregl.LngLatBounds(flatCoords[0], flatCoords[0])
-      );
-      map.fitBounds(bounds, { padding: 50, duration: 0 });
+      // Vue initiale : CENTRÉE sur le marqueur de départ (pas un aperçu global),
+      // à plat, au zoom du survol. Ainsi le curseur est déjà au centre de l'écran
+      // dès l'arrivée, sans avoir à dézoomer.
+      const dx0 = flatCoords.length > 1 ? flatCoords[1][0] - flatCoords[0][0] : 0;
+      const dy0 = flatCoords.length > 1 ? flatCoords[1][1] - flatCoords[0][1] : 0;
+      const bearing0 = (Math.atan2(dx0, dy0) * 180) / Math.PI;
+      map.jumpTo({ center: flatCoords[0], zoom: 13.4, pitch: 0, bearing: bearing0 });
       setReady(true);
     });
 
@@ -339,8 +340,10 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
 
     rider?.setLngLat([lng, lat]);
-    // Centre TOUJOURS exactement sur le marqueur
-    map.jumpTo({ center: [lng, lat], bearing, pitch: 60, zoom: 14.6 });
+    // Centre TOUJOURS exactement sur le marqueur. Zoom reculé (13.4) pour que les
+    // tuiles satellite aient le temps de charger pendant le survol (moins de tuiles,
+    // plus grandes, mieux mises en cache → pas de fond vert).
+    map.jumpTo({ center: [lng, lat], bearing, pitch: 58, zoom: 13.4 });
 
     // Dessine la trace parcourue jusqu'au point courant
     const traveledSource = map.getSource("traveled");
@@ -386,12 +389,12 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
 
       // 1) Place la caméra au départ, à plat (pas de plongée dans le terrain)
       try { map.resize(); } catch {}
-      map.jumpTo({ center: flatCoords[0], zoom: 14.8, pitch: 0, bearing });
+      map.jumpTo({ center: flatCoords[0], zoom: 13.4, pitch: 0, bearing });
 
       // 2) Attend que les tuiles (relief + satellite) soient chargées,
       //    PUIS bascule en 3D en douceur. Évite le « mur vert » et le clignotement.
       const tiltThenPlay = () => {
-        try { map.easeTo({ pitch: 64, duration: 1800 }); } catch {}
+        try { map.easeTo({ pitch: 58, duration: 1800 }); } catch {}
         setTimeout(() => setPlaying(true), 1900);
       };
       if (map.areTilesLoaded && map.areTilesLoaded()) {
@@ -412,7 +415,6 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     progressRef.current = 0;
     const map = mapRef.current;
     if (map && flatCoords.length > 1) {
-      const maplibregl = (window as any).maplibregl;
       (map as any)._rider?.setLngLat(flatCoords[0]);
       if (distRef.current) distRef.current.textContent = `0 / ${totalDist.toFixed(1)} km`;
       if (placeRef.current) placeRef.current.textContent = "—";
@@ -420,11 +422,11 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       // Réinitialise la trace parcourue
       const ts = map.getSource("traveled");
       if (ts) ts.setData({ type: "Feature", geometry: { type: "LineString", coordinates: [flatCoords[0]] } });
-      const bounds = flatCoords.reduce(
-        (b: any, c: any) => b.extend(c),
-        new maplibregl.LngLatBounds(flatCoords[0], flatCoords[0])
-      );
-      map.fitBounds(bounds, { padding: 50, pitch: 0, bearing: 0, duration: 1200 });
+      // Recentre sur le marqueur de départ (à plat), cohérent avec la vue initiale
+      const dx0 = flatCoords[1][0] - flatCoords[0][0];
+      const dy0 = flatCoords[1][1] - flatCoords[0][1];
+      const bearing0 = (Math.atan2(dx0, dy0) * 180) / Math.PI;
+      map.easeTo({ center: flatCoords[0], zoom: 13.4, pitch: 0, bearing: bearing0, duration: 1000 });
     }
   };
 
