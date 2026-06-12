@@ -133,6 +133,7 @@ export default function App() {
         </AnimatePresence>
       </main>
 
+      {activeTab !== "map" && (
       <footer className="bg-bg-dark border-t border-white/5 py-12 px-6 md:px-14 items-center">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left text-xs text-text-dim text-opacity-50 font-mono">
           <div className="flex flex-col gap-1.5 md:items-start">
@@ -154,6 +155,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      )}
 
       {/* Search drawer */}
       <AnimatePresence>
