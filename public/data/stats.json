@@ -1,11 +1,11 @@
 {
-  "totalKm": 1341,
+  "totalKm": 1464,
   "totalCountries": 1,
-  "totalDays": 17,
-  "totalElevation": 7395,
+  "totalDays": 19,
+  "totalElevation": 8500,
   "currentCountry": "—",
-  "currentLocation": "Rheinfelden (Baden)",
+  "currentLocation": "Laufen-Uhwiesen",
   "startDate": "2026-05-26",
   "lastUpdate": "2026-06-12",
-  "latestStageSlug": "2026-06-10-weil-am-rhein-rheinfelden-baden"
+  "latestStageSlug": "2026-06-11-mohlin-laufen-uhwiesen"
 }
