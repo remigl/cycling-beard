@@ -178,22 +178,26 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
       allBounds.push([trip.mapLat, trip.mapLng]);
     });
 
-    // Ajuste la vue pour tout afficher
-    if (allBounds.length > 0) {
-      map.fitBounds(allBounds, { padding: [40, 40], maxZoom: 12 });
-    }
-
-    // Fix display bug
-    setTimeout(() => map.invalidateSize(), 200);
+    // La carte ayant une hauteur dynamique (flex), on recalcule sa taille
+    // puis on réajuste la vue pour que le tracé remplisse l'espace.
+    const refit = () => {
+      map.invalidateSize();
+      if (allBounds.length > 0) {
+        map.fitBounds(allBounds, { padding: [40, 40], maxZoom: 12 });
+      }
+    };
+    setTimeout(refit, 200);
+    window.addEventListener("resize", refit);
+    return () => window.removeEventListener("resize", refit);
   }, [leafletLoaded, trips]);
 
   return (
-    <div className="w-full min-h-screen pt-24 pb-20 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
+    <div className="w-full h-screen pt-24 pb-6 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on overflow-hidden">
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
-      <div className="max-w-6xl w-full text-left">
+      <div className="max-w-6xl w-full text-left flex flex-col flex-1 min-h-0">
 
-        {/* Header */}
-        <div className="mb-8">
+        {/* Header (taille inchangée) */}
+        <div className="mb-8 shrink-0">
           <h1 className="font-display text-3xl md:text-5xl font-black uppercase text-text-on">
             {t("map.title")}
           </h1>
@@ -215,30 +219,27 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
           </div>
         </div>
 
-        <div>
-
-          {/* Vraie carte Leaflet */}
-          <div className="bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative min-h-[440px]">
-            {!leafletLoaded && (
-              <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
-                <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
-                  {t("map.loading")}
-                </span>
-              </div>
-            )}
-            <div
-              ref={mapContainerRef}
-              className="w-full h-[440px] md:h-[520px]"
-              style={{ background: "#1c1b1b" }}
-            />
-            {tripsWithTrack.length === 0 && tripsWithCoords.length === 0 && leafletLoaded && (
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
-                <p className="font-mono text-[10px] text-text-dim bg-bg-dark/80 px-4 py-2 rounded uppercase tracking-wider">
-                  {t("map.no_track")}
-                </p>
-              </div>
-            )}
-          </div>
+        {/* Carte Leaflet : remplit toute la hauteur restante de l'écran */}
+        <div className="flex-1 min-h-0 bg-[#1c1b1b] border border-white/5 rounded-lg overflow-hidden relative">
+          {!leafletLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center z-10 bg-[#1c1b1b]">
+              <span className="font-mono text-[10px] text-brand-sand uppercase tracking-widest animate-pulse">
+                {t("map.loading")}
+              </span>
+            </div>
+          )}
+          <div
+            ref={mapContainerRef}
+            className="w-full h-full"
+            style={{ background: "#1c1b1b" }}
+          />
+          {tripsWithTrack.length === 0 && tripsWithCoords.length === 0 && leafletLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
+              <p className="font-mono text-[10px] text-text-dim bg-bg-dark/80 px-4 py-2 rounded uppercase tracking-wider">
+                {t("map.no_track")}
+              </p>
+            </div>
+          )}
         </div>
 
         {/* Popup étape complète par-dessus la carte */}
