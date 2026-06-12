@@ -1,5 +1,5 @@
 import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
 import { Lang } from "../i18n";
@@ -29,6 +29,31 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
+
+  // Navigation tactile dans la photo plein écran : swipe gauche/droite
+  const touchStartX = useRef<number | null>(null);
+  const lightboxPrev = () => setLightbox(l => l && ({ ...l, index: l.index > 0 ? l.index - 1 : l.photos.length - 1 }));
+  const lightboxNext = () => setLightbox(l => l && ({ ...l, index: l.index < l.photos.length - 1 ? l.index + 1 : 0 }));
+  const onLightboxTouchStart = (e: any) => { touchStartX.current = e.touches[0].clientX; };
+  const onLightboxTouchEnd = (e: any) => {
+    if (touchStartX.current === null) return;
+    const delta = e.changedTouches[0].clientX - touchStartX.current;
+    touchStartX.current = null;
+    if (delta < -50) lightboxNext();   // swipe vers la gauche → photo suivante
+    else if (delta > 50) lightboxPrev(); // swipe vers la droite → photo précédente
+  };
+
+  // Touche Échap : ferme la photo plein écran
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+      else if (e.key === "ArrowLeft") lightboxPrev();
+      else if (e.key === "ArrowRight") lightboxNext();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [lightbox !== null]);
   const [replayOpen, setReplayOpen] = useState<string | null>(null);
   const [elevOpen, setElevOpen] = useState<string | null>(null);
   const [birdsTrip, setBirdsTrip] = useState<TripSummary | null>(null);
@@ -175,6 +200,8 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           <div
             className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4"
             onClick={() => setLightbox(null)}
+            onTouchStart={onLightboxTouchStart}
+            onTouchEnd={onLightboxTouchEnd}
           >
             <div className="max-w-5xl w-full flex flex-col items-center gap-3" onClick={e => e.stopPropagation()}>
               <img
@@ -187,9 +214,9 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                 <p className="font-mono text-xs text-brand-sand uppercase tracking-wider">{lightbox.photos[lightbox.index].alt}</p>
               )}
               <div className="flex items-center gap-6 mt-2">
-                <button onClick={() => setLightbox(l => l && ({ ...l, index: l.index > 0 ? l.index - 1 : l.photos.length - 1 }))} className="text-white/70 hover:text-white font-mono text-xs cursor-pointer">← Préc.</button>
+                <button onClick={lightboxPrev} className="text-white/70 hover:text-white font-mono text-xs cursor-pointer">← Préc.</button>
                 <span className="font-mono text-[10px] text-white/50">{lightbox.index + 1} / {lightbox.photos.length}</span>
-                <button onClick={() => setLightbox(l => l && ({ ...l, index: l.index < l.photos.length - 1 ? l.index + 1 : 0 }))} className="text-white/70 hover:text-white font-mono text-xs cursor-pointer">Suiv. →</button>
+                <button onClick={lightboxNext} className="text-white/70 hover:text-white font-mono text-xs cursor-pointer">Suiv. →</button>
               </div>
               <button onClick={() => setLightbox(null)} className="mt-2 font-mono text-[10px] text-white/50 hover:text-white cursor-pointer uppercase tracking-wider">Fermer ✕</button>
             </div>
