@@ -81,12 +81,11 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       .reverse()
       .map(tr => tr.coverImage || tr.thumbnail)
       .filter(Boolean) as string[];
-    return imgs.length > 0
-      ? imgs
-      : ["https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=1600"];
+    return imgs; // pas de photo factice : fond sombre tant que les vraies photos n'ont pas chargé
   })();
 
   const [slideIdx, setSlideIdx] = useState(0);
+  const [heroReady, setHeroReady] = useState(false); // 1re image chargée → fondu d'entrée
   const [weather, setWeather] = useState<WeatherDay[]>([]);
   const [radarOpen, setRadarOpen] = useState(false);
 
@@ -154,8 +153,10 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
               src={src}
               alt="The Cycling Beard"
               referrerPolicy="no-referrer"
+              onLoad={() => { if (i === 0) setHeroReady(true); }}
+              fetchPriority={i === 0 ? "high" : "low"}
               className="absolute inset-0 w-full h-full object-cover scale-102 filter brightness-[0.80] contrast-105 transition-opacity duration-[1500ms] ease-in-out"
-              style={{ opacity: i === slideIdx ? 1 : 0 }}
+              style={{ opacity: heroReady && i === slideIdx ? 1 : 0 }}
             />
           ))}
         </div>
