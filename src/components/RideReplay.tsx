@@ -482,7 +482,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
 
       {/* Bandeau info */}
       {ready && (
-        <div className="absolute top-3 left-3 bg-black/70 backdrop-blur-md rounded-xl px-4 py-2.5 border border-white/10 pointer-events-none">
+        <div className="absolute top-3 left-3 z-[20] bg-black/70 backdrop-blur-md rounded-xl px-4 py-2.5 border border-white/10 pointer-events-none">
           <div className="flex items-center gap-2">
             <MapPin size={13} className="text-brand-sand" />
             <span ref={placeRef} className="font-display font-bold text-sm text-white">—</span>
@@ -495,7 +495,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
       )}
 
       {/* Contrôles */}
-      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 flex items-center gap-2.5 bg-black/70 backdrop-blur-md rounded-full px-3 py-2 border border-white/10">
+      <div className="absolute bottom-5 left-1/2 -translate-x-1/2 z-[20] flex items-center gap-2.5 bg-black/70 backdrop-blur-md rounded-full px-3 py-2 border border-white/10">
         <button
           onClick={handlePlayPause}
           disabled={!ready}
