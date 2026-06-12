@@ -1,11 +1,11 @@
 {
-  "totalKm": 1228,
+  "totalKm": 1341,
   "totalCountries": 1,
-  "totalDays": 13,
-  "totalElevation": 6931,
-  "currentCountry": "France",
-  "currentLocation": "L'Isle-sur-le-Doubs",
+  "totalDays": 17,
+  "totalElevation": 7395,
+  "currentCountry": "—",
+  "currentLocation": "Rheinfelden (Baden)",
   "startDate": "2026-05-26",
-  "lastUpdate": "2026-06-10",
-  "latestStageSlug": "2026-06-09-fourbanne-l-isle-sur-le-doubs"
+  "lastUpdate": "2026-06-12",
+  "latestStageSlug": "2026-06-10-weil-am-rhein-rheinfelden-baden"
 }
