@@ -32,6 +32,15 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
   const [success, setSuccess] = useState(false);
   const [lightbox, setLightbox] = useState<number | null>(null);
 
+  // Bloque le défilement de la page en arrière-plan quand la photo plein écran est ouverte
+  useEffect(() => {
+    if (lightbox !== null) {
+      const prev = document.body.style.overflow;
+      document.body.style.overflow = "hidden";
+      return () => { document.body.style.overflow = prev; };
+    }
+  }, [lightbox]);
+
   useEffect(() => {
     if (!slug) return;
     setLoading(true);
@@ -257,26 +266,22 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
                     <span className="w-1 h-4 bg-brand-sand rounded" />
                     {t("stage.photos")} ({galleryPhotos.length})
                   </h3>
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-3 gap-2">
                     {galleryPhotos.map((photo, i) => (
                       <div
                         key={i}
-                        className="flex flex-col gap-1 cursor-pointer group"
+                        className="cursor-pointer group"
                         onClick={() => setLightbox(i)}
                       >
-                        <div className="overflow-hidden rounded-lg aspect-video">
+                        <div className="overflow-hidden rounded-lg aspect-square">
                           <img
                             src={photo.src}
                             alt={photo.alt}
                             referrerPolicy="no-referrer"
+                            loading="lazy"
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                           />
                         </div>
-                        {photo.alt && (
-                          <p className="font-mono text-[9px] text-text-dim text-opacity-60 uppercase tracking-wider px-0.5">
-                            {photo.alt}
-                          </p>
-                        )}
                       </div>
                     ))}
                   </div>
