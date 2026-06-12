@@ -471,14 +471,14 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
   }
 
   return (
-    <div className="relative rounded-2xl overflow-hidden border border-white/5 bg-black isolate z-0">
+    <div className="relative rounded-2xl overflow-hidden border border-white/5 bg-black isolate z-0 h-full">
       {/* Rend l'attribution non cliquable (on évite de quitter la page par erreur),
           tout en gardant le texte visible (obligatoire pour la licence). */}
       <style>{`
         .maplibregl-ctrl-attrib a { pointer-events: none !important; cursor: default !important; }
         .maplibregl-ctrl-attrib-button { pointer-events: auto !important; }
       `}</style>
-      <div ref={containerRef} className="w-full h-[480px] md:h-[560px]" />
+      <div ref={containerRef} className="w-full h-full min-h-[300px]" />
 
       {/* Bandeau info */}
       {ready && (
