@@ -1,12 +1,12 @@
 {
-  "totalKm": 1464,
+  "totalKm": 1578,
   "totalCountries": 3,
   "totalDays": 18,
-  "totalStages": 15,
-  "totalElevation": 8500,
+  "totalStages": 16,
+  "totalElevation": 9907,
   "currentCountry": "Allemagne",
-  "currentLocation": "Wangen",
+  "currentLocation": "Sigmaringen",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-06-13",
-  "latestStageSlug": "2026-06-11-mohlin-wangen"
+  "latestStageSlug": "2026-06-13-wangen-sigmaringen"
 }
