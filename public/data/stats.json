@@ -1,12 +1,12 @@
 {
   "totalKm": 1464,
   "totalCountries": 3,
-  "totalDays": 17,
+  "totalDays": 18,
   "totalStages": 15,
   "totalElevation": 8500,
   "currentCountry": "Allemagne",
   "currentLocation": "Wangen",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-06-12",
+  "lastUpdate": "2026-06-13",
   "latestStageSlug": "2026-06-11-mohlin-wangen"
 }
