@@ -8117,7 +8117,7 @@
         "quote": null,
         "fullStory": [
           "Paris → Le Pouliguen",
-          "Took the train from Paris to Saint-Nazaire, with my bike in the luggage car. Then drove to Le Pouliguen. It was hot."
+          "Took the train from Paris to Saint-Nazaire, with my bike in the baggage car. Then drove to Le Pouliguen. It was hot."
         ]
       },
       "es": {
@@ -20093,16 +20093,16 @@
         ]
       },
       "en": {
-        "summary": "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're asking for trouble.",
+        "summary": "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you’re asking for trouble.",
         "quote": null,
         "fullStory": [
-          "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you're asking for trouble.",
-          "Spent the night at Jeff's place with his cat Bada. Really nice—we had pizza and non-alcoholic pastis.",
+          "You should only cross the Saint-Nazaire Bridge by bike once in your life; after that, you’re asking for trouble.",
+          "Spent the night at Jeff's place with his cat, Bada. Really nice—we had pizza and non-alcoholic pastis.",
           "A rough wake-up call."
         ]
       },
       "es": {
-        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
+        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
         "quote": null,
         "fullStory": [
           "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
@@ -38652,14 +38652,14 @@
         "fullStory": [
           "I'm following detours of detours. That's nice...",
           "Tartiflette for lunch at a nice spot.",
-          "Spent the night at the campground. The French people I met there, who were kayaking 50 km a day, were really nice."
+          "Spent the night at the campground. The French people I met there, who kayak 50 km a day, were really nice."
         ]
       },
       "es": {
         "summary": "Soy desviaciones de desviaciones.",
         "quote": null,
         "fullStory": [
-          "Estoy siguiendo desvíos de desvíos. Qué alegría...",
+          "Estoy siguiendo desvíos de desvíos. Qué bien...",
           "Para comer, una tartiflette en un sitio agradable.",
           "Noche en el camping. Los franceses con los que me crucé en el camping, que recorren 50 km en kayak al día, eran muy simpáticos."
         ]
@@ -38677,7 +38677,7 @@
         "summary": "Ich folge Umleitungen von Umleitungen.",
         "quote": null,
         "fullStory": [
-          "Ich folge Umleitungen von Umleitungen. Das tut gut...",
+          "Ich folge Umleitungen von Umleitungen. Das freut mich..",
           "Mittags Tartiflette in einem gemütlichen Lokal.",
           "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren sehr nett."
         ]
@@ -168371,8 +168371,8 @@
     "endCity": "Sigmaringen",
     "distanceKm": 114.3,
     "elevationGain": 1407,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
+    "thumbnail": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -174676,7 +174676,43 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
+        "alt": "155654"
+      },
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/img_3538.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3538.webp",
+        "alt": "Img 3538"
+      },
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/img_3552.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3552.webp",
+        "alt": "Img 3552"
+      },
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/img_3562.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3562.webp",
+        "alt": "Img 3562"
+      },
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/img_3570.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3570.webp",
+        "alt": "Img 3570"
+      },
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/img_3578.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3578.webp",
+        "alt": "Img 3578"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",

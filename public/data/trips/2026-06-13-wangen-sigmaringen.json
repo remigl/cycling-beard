@@ -11,7 +11,7 @@
   "distanceKm": 114.3,
   "elevationGain": 1407,
   "maxAltitude": 864,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,43 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
+      "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
+      "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
+      "alt": "155654"
+    },
+    {
+      "src": "/media/2026-06-13-wangen-sigmaringen/img_3538.webp",
+      "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3538.webp",
+      "alt": "Img 3538"
+    },
+    {
+      "src": "/media/2026-06-13-wangen-sigmaringen/img_3552.webp",
+      "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3552.webp",
+      "alt": "Img 3552"
+    },
+    {
+      "src": "/media/2026-06-13-wangen-sigmaringen/img_3562.webp",
+      "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3562.webp",
+      "alt": "Img 3562"
+    },
+    {
+      "src": "/media/2026-06-13-wangen-sigmaringen/img_3570.webp",
+      "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3570.webp",
+      "alt": "Img 3570"
+    },
+    {
+      "src": "/media/2026-06-13-wangen-sigmaringen/img_3578.webp",
+      "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3578.webp",
+      "alt": "Img 3578"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-13-wangen-sigmaringen_1.gpx",
   "mapLat": 48.0883042,
