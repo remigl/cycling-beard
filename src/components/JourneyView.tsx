@@ -83,8 +83,10 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   // (photo, survol 3D, dénivelé, oiseaux, POI, spécialités), la page de fond
   // est figée. position:fixed empêche le scroll tactile (overflow:hidden seul
   // ne suffit pas sur mobile).
+  // Verrou de défilement : UNIQUEMENT pour les vraies fenêtres plein écran.
+  // Le dénivelé (elevOpen) est un tiroir inline → il ne doit PAS bloquer le scroll.
   const anyOverlayOpen =
-    lightbox !== null || replayOpen !== null || elevOpen !== null ||
+    lightbox !== null || replayOpen !== null ||
     birdsTrip !== null || poiTrip !== null || foodTrip !== null;
   useEffect(() => {
     if (!anyOverlayOpen) return;
@@ -225,17 +227,36 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                 src={lightbox.photos[lightbox.index]?.src}
                 alt={lightbox.photos[lightbox.index]?.alt}
                 referrerPolicy="no-referrer"
-                className="max-h-[80vh] w-auto object-contain rounded"
+                className="max-h-[68vh] w-auto object-contain rounded"
               />
               {lightbox.photos[lightbox.index]?.alt && (
                 <p className="font-mono text-xs text-brand-sand uppercase tracking-wider">{lightbox.photos[lightbox.index].alt}</p>
               )}
-              <div className="flex items-center gap-6 mt-2">
-                <button onClick={lightboxPrev} className="text-white/70 hover:text-white font-mono text-xs cursor-pointer">← Préc.</button>
+
+              {/* Bande de vignettes : aperçu des autres photos, clic pour y aller */}
+              {lightbox.photos.length > 1 && (
+                <div className="flex gap-2 overflow-x-auto max-w-full px-1 py-1">
+                  {lightbox.photos.map((p, k) => (
+                    <img
+                      key={k}
+                      src={p.src}
+                      alt={p.alt}
+                      referrerPolicy="no-referrer"
+                      onClick={() => setLightbox(l => l && ({ ...l, index: k }))}
+                      className={`h-14 w-14 object-cover rounded cursor-pointer shrink-0 transition-all ${
+                        k === lightbox.index
+                          ? "ring-2 ring-brand-sand opacity-100"
+                          : "opacity-50 hover:opacity-90"
+                      }`}
+                    />
+                  ))}
+                </div>
+              )}
+
+              <div className="flex items-center gap-4 mt-1">
                 <span className="font-mono text-[10px] text-white/50">{lightbox.index + 1} / {lightbox.photos.length}</span>
-                <button onClick={lightboxNext} className="text-white/70 hover:text-white font-mono text-xs cursor-pointer">Suiv. →</button>
+                <button onClick={() => setLightbox(null)} className="font-mono text-[10px] text-white/50 hover:text-white cursor-pointer uppercase tracking-wider">Fermer ✕</button>
               </div>
-              <button onClick={() => setLightbox(null)} className="mt-2 font-mono text-[10px] text-white/50 hover:text-white cursor-pointer uppercase tracking-wider">Fermer ✕</button>
             </div>
           </div>
         )}
