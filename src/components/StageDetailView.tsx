@@ -174,27 +174,38 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
             <img
               src={galleryPhotos[lightbox]?.src}
               alt={galleryPhotos[lightbox]?.alt}
-              className="max-h-[80vh] w-auto object-contain rounded"
+              className="max-h-[68vh] w-auto object-contain rounded"
             />
             {galleryPhotos[lightbox]?.alt && (
               <p className="font-mono text-xs text-brand-sand uppercase tracking-wider">
                 {galleryPhotos[lightbox].alt}
               </p>
             )}
-            <div className="flex items-center gap-6 mt-2">
-              <button
-                onClick={() => setLightbox(i => i !== null && i > 0 ? i - 1 : galleryPhotos.length - 1)}
-                className="text-text-dim hover:text-white font-mono text-xs cursor-pointer"
-              >← Préc.</button>
+
+            {/* Bande de vignettes : aperçu des autres photos, clic pour y aller */}
+            {galleryPhotos.length > 1 && (
+              <div className="flex gap-2 overflow-x-auto max-w-full px-1 py-1">
+                {galleryPhotos.map((p, k) => (
+                  <img
+                    key={k}
+                    src={p.src}
+                    alt={p.alt}
+                    referrerPolicy="no-referrer"
+                    onClick={() => setLightbox(k)}
+                    className={`h-14 w-14 object-cover rounded cursor-pointer shrink-0 transition-all ${
+                      k === lightbox ? "ring-2 ring-brand-sand opacity-100" : "opacity-50 hover:opacity-90"
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
+
+            <div className="flex items-center gap-4 mt-1">
               <span className="font-mono text-[10px] text-text-dim">{lightbox + 1} / {galleryPhotos.length}</span>
-              <button
-                onClick={() => setLightbox(i => i !== null && i < galleryPhotos.length - 1 ? i + 1 : 0)}
-                className="text-text-dim hover:text-white font-mono text-xs cursor-pointer"
-              >Suiv. →</button>
+              <button onClick={() => setLightbox(null)} className="font-mono text-[10px] text-text-dim hover:text-white cursor-pointer uppercase tracking-wider">
+                Fermer ✕
+              </button>
             </div>
-            <button onClick={() => setLightbox(null)} className="mt-2 font-mono text-[10px] text-text-dim hover:text-white cursor-pointer uppercase tracking-wider">
-              Fermer ✕
-            </button>
           </div>
         </div>
       )}
