@@ -11,7 +11,7 @@
   "distanceKm": 105,
   "elevationGain": 700,
   "maxAltitude": 562,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-14-sigmaringen-ulm/20260614_141553.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -62,7 +62,33 @@
       ]
     }
   },
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-14-sigmaringen-ulm/20260614_141553.webp",
+      "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_20260614_141553.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-14-sigmaringen-ulm/20260614_141553.webp",
+      "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_20260614_141553.webp",
+      "alt": "141553"
+    },
+    {
+      "src": "/media/2026-06-14-sigmaringen-ulm/20260614_172522.webp",
+      "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_20260614_172522.webp",
+      "alt": "172522"
+    },
+    {
+      "src": "/media/2026-06-14-sigmaringen-ulm/img_3589.webp",
+      "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_img_3589.webp",
+      "alt": "Img 3589"
+    },
+    {
+      "src": "/media/2026-06-14-sigmaringen-ulm/img_3599.webp",
+      "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_img_3599.webp",
+      "alt": "Img 3599"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-14-sigmaringen-ulm_1.gpx",
   "mapLat": 48.3889281,
