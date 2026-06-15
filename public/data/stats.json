@@ -1,12 +1,12 @@
 {
-  "totalKm": 1578,
+  "totalKm": 1683,
   "totalCountries": 3,
-  "totalDays": 19,
-  "totalStages": 16,
-  "totalElevation": 9907,
+  "totalDays": 20,
+  "totalStages": 17,
+  "totalElevation": 10607,
   "currentCountry": "Allemagne",
-  "currentLocation": "Sigmaringen",
+  "currentLocation": "Ulm",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-06-14",
-  "latestStageSlug": "2026-06-13-wangen-sigmaringen"
+  "lastUpdate": "2026-06-15",
+  "latestStageSlug": "2026-06-14-sigmaringen-ulm"
 }
