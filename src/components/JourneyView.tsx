@@ -35,6 +35,27 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   // Traduit un nom de pays selon la langue active (les données restent en français)
   const countryLabel = (c: string) => (lang === "fr" ? c : COUNTRY_LABELS[c]?.[lang] ?? c);
 
+  // Régions qui ont une VRAIE traduction. Celles absentes de la table gardent
+  // leur nom français/local (ex : "Pays de la Loire" ne se traduit pas).
+  const REGION_LABELS: Record<string, Record<string, string>> = {
+    // Suisse
+    "Argovie":        { en: "Aargau",          es: "Argovia",          it: "Argovia",          de: "Aargau",          nl: "Aargau" },
+    "Bâle-Campagne":  { en: "Basel-Country",    es: "Basilea-Campiña",  it: "Basilea Campagna", de: "Basel-Landschaft", nl: "Bazel-Land" },
+    "Bâle-Ville":     { en: "Basel-City",       es: "Basilea-Ciudad",   it: "Basilea Città",    de: "Basel-Stadt",     nl: "Bazel-Stad" },
+    "Argovie (Aargau)": { en: "Aargau",         es: "Argovia",          it: "Argovia",          de: "Aargau",          nl: "Aargau" },
+    "Thurgovie":      { en: "Thurgau",          es: "Turgovia",         it: "Turgovia",         de: "Thurgau",         nl: "Thurgau" },
+    // Allemagne
+    "Bade-Wurtemberg":{ en: "Baden-Württemberg",es: "Baden-Wurtemberg", it: "Baden-Württemberg",de: "Baden-Württemberg",nl: "Baden-Württemberg" },
+    "Bavière":        { en: "Bavaria",          es: "Baviera",          it: "Baviera",          de: "Bayern",          nl: "Beieren" },
+    // Autriche
+    "Haute-Autriche": { en: "Upper Austria",    es: "Alta Austria",     it: "Alta Austria",     de: "Oberösterreich",  nl: "Opper-Oostenrijk" },
+    "Basse-Autriche": { en: "Lower Austria",    es: "Baja Austria",     it: "Bassa Austria",    de: "Niederösterreich",nl: "Neder-Oostenrijk" },
+    "Vienne":         { en: "Vienna",           es: "Viena",            it: "Vienna",           de: "Wien",            nl: "Wenen" },
+    // Hongrie
+    "Hongrie-Occidentale": { en: "Western Transdanubia", es: "Transdanubio Occidental", it: "Transdanubio occidentale", de: "Westtransdanubien", nl: "West-Transdanubië" },
+  };
+  const regionLabel = (r: string) => (lang === "fr" ? r : REGION_LABELS[r]?.[lang] ?? r);
+
   // Pays par défaut = pays de l'étape la plus récente (par date, peu importe l'ordre du tableau)
   const lastCountry = (() => {
     const withCountry = trips.filter(tr => tr.country && tr.country !== "—");
@@ -319,7 +340,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                     selectedRegion === r ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
                   }`}
                 >
-                  {r}
+                  {regionLabel(r)}
                   <Map size={11} className={selectedRegion === r ? "text-surface-card" : "text-brand-sand"} />
                 </button>
               </div>
@@ -352,7 +373,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
 
         {/* Tiroir carte de région (inline, prend la place des tags) */}
         {regionMap && (
-          <RegionMap region={regionMap} trips={trips} lang={lang} onClose={() => setRegionMap(null)} t={t} />
+          <RegionMap region={regionMap} regionLabel={regionLabel(regionMap)} trips={trips} lang={lang} onClose={() => setRegionMap(null)} t={t} />
         )}
 
         {/* En-tête de résultats : rend explicite que les étapes sont listées en dessous */}
@@ -360,7 +381,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           <span className="font-display font-bold text-lg text-text-on">{filtered.length}</span>
           <span className="font-mono text-[10px] uppercase tracking-wider text-text-dim">
             {filtered.length > 1 ? t("journey.stages") : t("journey.stage")}
-            {selectedRegion !== "all" ? ` · ${selectedRegion}` : selectedCountry !== "all" ? ` · ${countryLabel(selectedCountry)}` : ""}
+            {selectedRegion !== "all" ? ` · ${regionLabel(selectedRegion)}` : selectedCountry !== "all" ? ` · ${countryLabel(selectedCountry)}` : ""}
           </span>
         </div>
 
