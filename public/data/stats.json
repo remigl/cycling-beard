@@ -1,12 +1,12 @@
 {
-  "totalKm": 1683,
+  "totalKm": 1782,
   "totalCountries": 3,
   "totalDays": 20,
-  "totalStages": 17,
-  "totalElevation": 10607,
+  "totalStages": 18,
+  "totalElevation": 10979,
   "currentCountry": "Allemagne",
-  "currentLocation": "Ulm",
+  "currentLocation": "Donauwörth",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-06-15",
-  "latestStageSlug": "2026-06-14-sigmaringen-ulm"
+  "latestStageSlug": "2026-06-15-ulm-donauworth"
 }
