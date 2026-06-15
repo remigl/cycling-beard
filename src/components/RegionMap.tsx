@@ -8,6 +8,7 @@ declare global {
 
 interface RegionMapProps {
   region: string;
+  regionLabel?: string;
   trips: TripSummary[];   // toutes les étapes (on filtre celles de la région)
   lang: string;
   onClose: () => void;
@@ -29,7 +30,7 @@ function loadLeaflet(): Promise<void> {
   });
 }
 
-export default function RegionMap({ region, trips, lang, onClose, t }: RegionMapProps) {
+export default function RegionMap({ region, regionLabel, trips, lang, onClose, t }: RegionMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<any>(null);
 
@@ -101,7 +102,7 @@ export default function RegionMap({ region, trips, lang, onClose, t }: RegionMap
       <style>{`@keyframes slideDown { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }`}</style>
       <div className="flex items-center justify-between px-5 py-3 border-b border-white/10">
         <div className="min-w-0">
-          <div className="font-display font-bold text-sm text-white uppercase tracking-wider truncate">{region}</div>
+          <div className="font-display font-bold text-sm text-white uppercase tracking-wider truncate">{regionLabel ?? region}</div>
           <div className="font-mono text-[9px] text-text-dim">
             {regionTrips.length} {regionTrips.length > 1 ? t("journey.stages") : t("journey.stage")}
           </div>
