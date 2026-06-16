@@ -24,7 +24,7 @@ export default function Navbar({ activeTab, setActiveTab, lang, changeLang, t }:
 
   return (
     <nav className="fixed top-0 w-full z-50 glass-nav transition-all duration-300">
-      <div className="flex justify-between items-center px-4 md:px-10 py-3.5 w-full">
+      <div className="flex justify-between items-center px-4 md:px-10 py-2.5 w-full">
 
         {/* Logo */}
         <div
