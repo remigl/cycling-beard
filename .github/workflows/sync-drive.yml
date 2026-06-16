@@ -1,0 +1,43 @@
+name: Sync Drive
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      force_resync:
+        description: "Resync complet (ignore le cache)"
+        type: boolean
+        default: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm install --include=dev
+
+      - name: Run sync script
+        env:
+          DRIVE_FOLDER_ID: ${{ secrets.DRIVE_FOLDER_ID }}
+          GOOGLE_OAUTH_CLIENT_ID: ${{ secrets.GOOGLE_OAUTH_CLIENT_ID }}
+          GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
+          GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+          FORCE_RESYNC: ${{ inputs.force_resync && '1' || '0' }}
+        run: node scripts/sync-drive.js
+
+      - name: Commit updated data
+        run: |
+          git config user.name "sync-bot"
+          git config user.email "bot@cycling-beard.com"
+          git add public/data/ public/media/ public/gpx/
+          git diff --staged --quiet || git commit -m "sync: $(date +%Y-%m-%d)"
+          git push
