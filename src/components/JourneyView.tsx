@@ -1,4 +1,4 @@
-import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X } from "lucide-react";
+import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X, Home, Heart } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
@@ -434,6 +434,29 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                             #{tag}
                           </button>
                         ))}
+                      </div>
+                    )}
+
+                    {/* Hébergement (lien) & Remerciements */}
+                    {(trip.lodgingUrl || trip.thanks) && (
+                      <div className="flex flex-col gap-2 mt-3">
+                        {trip.lodgingUrl && (
+                          <a
+                            href={trip.lodgingUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-sm text-brand-sand hover:underline w-fit"
+                          >
+                            <Home size={15} className="shrink-0" />
+                            <span className="font-medium">{trip.lodgingName || trip.lodgingUrl}</span>
+                          </a>
+                        )}
+                        {trip.thanks && (
+                          <div className="flex items-start gap-2 text-sm text-text-dim">
+                            <Heart size={15} className="shrink-0 mt-0.5 text-brand-sand" />
+                            <span>{(trip.thanksTranslations?.[lang]) || trip.thanks}</span>
+                          </div>
+                        )}
                       </div>
                     )}
                     {(trip.track && trip.track.length > 1 || (trip.elevProfile && trip.elevProfile.length > 1) || trip.startCity || trip.endCity) && (
