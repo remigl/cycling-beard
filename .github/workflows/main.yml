@@ -4,6 +4,16 @@ on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
+    inputs:
+      force_resync:
+        description: "Resync complet (ignore le cache)"
+        type: boolean
+        default: false
+
+# Empeche deux runs de ce workflow de tourner en meme temps (evite les courses au push)
+concurrency:
+  group: sync-drive
+  cancel-in-progress: false
 
 jobs:
   sync:
@@ -26,6 +36,7 @@ jobs:
           GOOGLE_OAUTH_CLIENT_SECRET: ${{ secrets.GOOGLE_OAUTH_CLIENT_SECRET }}
           GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+          FORCE_RESYNC: ${{ inputs.force_resync && '1' || '0' }}
         run: node scripts/sync-drive.js
 
       - name: Commit updated data
@@ -33,5 +44,9 @@ jobs:
           git config user.name "sync-bot"
           git config user.email "bot@cycling-beard.com"
           git add public/data/ public/media/ public/gpx/
-          git diff --staged --quiet || git commit -m "sync: $(date +%Y-%m-%d)"
+          git diff --staged --quiet && echo "Rien a commit" && exit 0
+          git commit -m "sync: $(date +%Y-%m-%d)"
+          # Recupere les changements distants AVANT de pousser (evite le rejet
+          # "fetch first" si un autre commit est arrive entre-temps).
+          git pull --rebase origin main
           git push
