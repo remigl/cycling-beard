@@ -119,11 +119,38 @@ async function listSubFolders(drive, parentId) {
 async function listFilesInFolder(drive, folderId) {
   const res = await drive.files.list({
     q: `'${folderId}' in parents and trashed = false`,
-    fields: "files(id, name, mimeType, size)",
+    fields: "files(id, name, mimeType, size, modifiedTime, md5Checksum)",
     supportsAllDrives: true,
     includeItemsFromAllDrives: true,
   });
   return res.data.files || [];
+}
+
+// Empreinte d'une étape : signature stable de TOUT son contenu Drive.
+// Si un fichier est ajouté/supprimé/modifié (y compris le Google Doc de notes,
+// dont le modifiedTime change à chaque édition), l'empreinte change → resync.
+function fingerprintFiles(files) {
+  return files
+    .map(f => `${f.id}:${f.name}:${f.size || 0}:${f.md5Checksum || ""}:${f.modifiedTime || ""}`)
+    .sort()
+    .join("|");
+}
+
+// Version du format de cache : à incrémenter si la structure des étapes change,
+// pour forcer un resync complet propre lors d'un déploiement de nouvelle logique.
+const SYNC_CACHE_VERSION = 1;
+
+function loadSyncCache(cachePath) {
+  try {
+    const raw = JSON.parse(fs.readFileSync(cachePath, "utf8"));
+    if (raw.version !== SYNC_CACHE_VERSION) {
+      console.log(`  ♻️  Cache version ${raw.version} ≠ ${SYNC_CACHE_VERSION} → resync complet`);
+      return { version: SYNC_CACHE_VERSION, stages: {} };
+    }
+    return raw;
+  } catch {
+    return { version: SYNC_CACHE_VERSION, stages: {} };
+  }
 }
 
 async function downloadFile(drive, fileId, destPath, attempt = 1) {
@@ -731,7 +758,7 @@ function parseNotes(content) {
 
 // ─── Main sync logic ──────────────────────────────────────────────────────────
 
-async function syncFolder(drive, folder) {
+async function syncFolder(drive, folder, cache, force) {
   // rawSlug garde l'underscore pour parser le titre (ville_ville)
   const rawSlug = folder.name
     .toLowerCase()
@@ -749,6 +776,17 @@ async function syncFolder(drive, folder) {
   // Trie par nom pour que les GPX (01.gpx, 02.gpx…) soient dans l'ordre du trajet
   files.sort((a, b) => (a.name || "").localeCompare(b.name || "", undefined, { numeric: true }));
   console.log(`  → ${files.length} fichier(s) trouvé(s)`);
+
+  // ── Sync incrémental : si l'empreinte n'a pas changé ET que le JSON existe
+  //    encore sur disque ET qu'on a l'étape en cache → on saute tout le travail
+  //    coûteux (géocodage, DeepL, conversion d'images) et on réutilise le cache.
+  const fingerprint = fingerprintFiles(files);
+  const cached = cache?.stages?.[slug];
+  if (!force && cached && cached.fingerprint === fingerprint && cached.stage
+      && fs.existsSync(stageJsonPath)) {
+    console.log(`  ⏭  Inchangé → réutilisé depuis le cache`);
+    return { stage: cached.stage, fingerprint, fromCache: true };
+  }
 
   // ── Notes Google Doc : crée le Doc pré-structuré s'il manque, sinon le lit ──
   let docNotes = { description: "", lodgingUrl: "", lodgingName: "", thanks: "" };
@@ -974,7 +1012,7 @@ async function syncFolder(drive, folder) {
   fs.writeFileSync(stageJsonPath, JSON.stringify(stage, null, 2));
   console.log(`  ✅ ${stageJsonPath} généré`);
 
-  return stage;
+  return { stage, fingerprint, fromCache: false };
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -1165,6 +1203,15 @@ async function main() {
     console.log(`🚴 Premier jour de vélo : ${datedFolders[0]}`);
   }
 
+  // ── Cache de sync incrémental ──
+  const CACHE_PATH = path.join(DATA_DIR, ".sync-cache.json");
+  const cache = loadSyncCache(CACHE_PATH);
+  // Force un resync complet si la variable d'env FORCE_RESYNC=1 est passée
+  // (utile pour un "vider le cache" manuel depuis GitHub Actions).
+  const force = process.env.FORCE_RESYNC === "1";
+  if (force) console.log("⚙️  FORCE_RESYNC=1 → resync complet force");
+  const newCache = { version: SYNC_CACHE_VERSION, stages: {} };
+
   const stages = [];
   for (const folder of folders) {
     // Dossier spécial _about → page de présentation
@@ -1177,9 +1224,21 @@ async function main() {
       console.log(`⚠️  Dossier ignoré (format inattendu): ${folder.name}`);
       continue;
     }
-    const stage = await syncFolder(drive, folder);
-    if (stage) stages.push(stage);
+    const result = await syncFolder(drive, folder, cache, force);
+    if (result && result.stage) {
+      stages.push(result.stage);
+      // Alimente le nouveau cache (empreinte + étape complète réutilisable)
+      newCache.stages[result.stage.slug] = {
+        fingerprint: result.fingerprint,
+        stage: result.stage,
+      };
+    }
   }
+
+  // Sauvegarde le cache (versionne dans le repo via le commit du workflow)
+  fs.writeFileSync(CACHE_PATH, JSON.stringify(newCache));
+  const reused = Object.values(newCache.stages).length;
+  console.log(`\n💾 Cache de sync mis à jour (${reused} étape(s))`);
 
   // ── Generate trips.json ──
   const trips = stages.map(s => ({
