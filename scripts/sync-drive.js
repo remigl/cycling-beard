@@ -92,14 +92,17 @@ async function translateContent(fr) {
 // ─── Auth Google Drive ────────────────────────────────────────────────────────
 
 function getAuthClient() {
-  // Compte de service : lecture + déplacement de fichiers (pas de création de
-  // fichier possible faute de quota — OAuth utilisateur viendra plus tard).
-  const keyFile = JSON.parse(fs.readFileSync(SERVICE_ACCOUNT_PATH, "utf-8"));
-  const auth = new google.auth.GoogleAuth({
-    credentials: keyFile,
-    scopes: ["https://www.googleapis.com/auth/drive"],
-  });
-  return auth;
+  // OAuth utilisateur : le script agit « en tant que toi » (ton quota Drive),
+  // ce qui permet de CRÉER des fichiers (Google Docs de notes).
+  const clientId = process.env.GOOGLE_OAUTH_CLIENT_ID;
+  const clientSecret = process.env.GOOGLE_OAUTH_CLIENT_SECRET;
+  const refreshToken = process.env.GOOGLE_OAUTH_REFRESH_TOKEN;
+  if (!clientId || !clientSecret || !refreshToken) {
+    throw new Error("OAuth manquant : GOOGLE_OAUTH_CLIENT_ID / _SECRET / _REFRESH_TOKEN.");
+  }
+  const oauth2 = new google.auth.OAuth2(clientId, clientSecret);
+  oauth2.setCredentials({ refresh_token: refreshToken });
+  return oauth2;
 }
 
 // ─── Drive helpers ────────────────────────────────────────────────────────────
@@ -534,6 +537,79 @@ function mergeGpxFiles(gpxContents) {
   };
 }
 
+// ─── Notes Google Doc ─────────────────────────────────────────────────────────
+// Le fichier de notes est un GOOGLE DOC (éditable depuis l'app Drive sur mobile),
+// nommé "notes", avec 3 sections repérées par leurs titres.
+const NOTES_DOC_NAME = "notes";
+let docsClient = null; // client Google Docs partagé, initialisé dans main()
+const NOTES_TEMPLATE =
+  "Description\n\n\n" +
+  "Camping\n\n\n" +
+  "Remerciements\n\n";
+
+async function findNotesDoc(drive, folderId) {
+  const res = await drive.files.list({
+    q: `'${folderId}' in parents and name = '${NOTES_DOC_NAME}' and mimeType = 'application/vnd.google-apps.document' and trashed = false`,
+    fields: "files(id, name)",
+    supportsAllDrives: true,
+    includeItemsFromAllDrives: true,
+  });
+  return res.data.files && res.data.files[0] ? res.data.files[0] : null;
+}
+
+async function createNotesDoc(drive, folderId) {
+  const created = await drive.files.create({
+    requestBody: {
+      name: NOTES_DOC_NAME,
+      mimeType: "application/vnd.google-apps.document",
+      parents: [folderId],
+    },
+    fields: "id",
+    supportsAllDrives: true,
+  });
+  const docId = created.data.id;
+  try {
+    await docsClient.documents.batchUpdate({
+      documentId: docId,
+      requestBody: {
+        requests: [{ insertText: { location: { index: 1 }, text: NOTES_TEMPLATE } }],
+      },
+    });
+  } catch (e) {
+    console.log(`    ⚠️  Doc créé mais gabarit non inséré (${e.message})`);
+  }
+  return docId;
+}
+
+async function exportDocText(drive, docId) {
+  const res = await drive.files.export(
+    { fileId: docId, mimeType: "text/plain" },
+    { responseType: "text" }
+  );
+  return typeof res.data === "string" ? res.data : String(res.data || "");
+}
+
+function parseNotesDoc(text) {
+  const clean = (text || "").replace(/\r/g, "");
+  const sections = { description: "", camping: "", thanks: "" };
+  const map = [
+    ["description", /^\s*description\s*$/i],
+    ["camping", /^\s*camping\s*$/i],
+    ["thanks", /^\s*(remerciements?|merci)\s*$/i],
+  ];
+  let current = null;
+  for (const line of clean.split("\n")) {
+    const header = map.find(([, re]) => re.test(line));
+    if (header) { current = header[0]; continue; }
+    if (current) sections[current] += line + "\n";
+  }
+  return {
+    description: sections.description.trim(),
+    camping: sections.camping.trim(),
+    thanks: sections.thanks.trim(),
+  };
+}
+
 // ─── Notes parsing ────────────────────────────────────────────────────────────
 
 function parseNotes(content) {
@@ -634,6 +710,24 @@ async function syncFolder(drive, folder) {
   // Trie par nom pour que les GPX (01.gpx, 02.gpx…) soient dans l'ordre du trajet
   files.sort((a, b) => (a.name || "").localeCompare(b.name || "", undefined, { numeric: true }));
   console.log(`  → ${files.length} fichier(s) trouvé(s)`);
+
+  // ── Notes Google Doc : crée le Doc pré-structuré s'il manque, sinon le lit ──
+  let docNotes = { description: "", camping: "", thanks: "" };
+  try {
+    let doc = await findNotesDoc(drive, folder.id);
+    if (!doc) {
+      const id = await createNotesDoc(drive, folder.id);
+      console.log(`  📝 Google Doc "notes" créé (à remplir)`);
+      doc = { id };
+    } else {
+      const text = await exportDocText(drive, doc.id);
+      docNotes = parseNotesDoc(text);
+      const filled = docNotes.description || docNotes.camping || docNotes.thanks;
+      console.log(filled ? `  📝 Notes lues depuis le Google Doc` : `  📝 Google Doc "notes" encore vide`);
+    }
+  } catch (e) {
+    console.log(`  ⚠️  Notes Doc : ${e.message}`);
+  }
 
   const mediaDir = path.join(MEDIA_DIR, slug);
   fs.mkdirSync(mediaDir, { recursive: true });
@@ -757,13 +851,33 @@ async function syncFolder(drive, folder) {
     }
   }
 
-  // ── Traduction du contenu (FR → EN/ES/IT/DE) ──
+  // ── Contenu : le Google Doc fait foi ──
+  // Si la Description du Doc est remplie, elle devient le récit de l'étape.
+  // Sinon, on retombe sur les anciennes notes (notes.md) ou le placeholder.
+  const docStory = docNotes.description
+    ? docNotes.description.split(/\n{2,}/).map(p => p.replace(/\n/g, " ").trim()).filter(Boolean)
+    : [];
+
   const frContent = {
-    summary: notes.summary || "",
+    summary: docNotes.description ? docStory[0] : (notes.summary || ""),
     quote: notes.quote || null,
-    fullStory: (notes.fullStory?.length > 0) ? notes.fullStory : ["Cette étape sera bientôt documentée."],
+    fullStory: docStory.length > 0
+      ? docStory
+      : (notes.fullStory?.length > 0 ? notes.fullStory : ["Cette étape sera bientôt documentée."]),
   };
   const translations = await translateContent(frContent);
+
+  // Camping & remerciements : traduits aussi (texte simple, une entrée par langue)
+  const campingTr = {};
+  const thanksTr = {};
+  if (docNotes.camping || docNotes.thanks) {
+    for (const [code, deeplCode] of Object.entries({ en: "EN", es: "ES", it: "IT", de: "DE", nl: "NL" })) {
+      campingTr[code] = docNotes.camping ? await deeplTranslate(docNotes.camping, deeplCode) : "";
+      thanksTr[code] = docNotes.thanks ? await deeplTranslate(docNotes.thanks, deeplCode) : "";
+    }
+    campingTr.fr = docNotes.camping || "";
+    thanksTr.fr = docNotes.thanks || "";
+  }
 
   // ── Build stage JSON ──
   const stage = {
@@ -787,6 +901,11 @@ async function syncFolder(drive, folder) {
     quote: frContent.quote,
     // Toutes les traductions
     translations,
+    // Sections supplémentaires du Google Doc (vides si non remplies)
+    camping: docNotes.camping || "",
+    thanks: docNotes.thanks || "",
+    campingTranslations: campingTr,
+    thanksTranslations: thanksTr,
     photos: coverWebp ? [{ src: coverWebp, thumb: thumbWebp, alt: "Cover" }, ...photos] : photos,
     videos: [],
     gpxFile: gpxPublicPath,
@@ -973,6 +1092,7 @@ async function main() {
 
   const auth = getAuthClient();
   const drive = google.drive({ version: "v3", auth });
+  docsClient = google.docs({ version: "v1", auth }); // client Docs partagé (création du gabarit)
 
   // ── Étape 0 : traite les GPX bruts déposés dans _inbox ──
   await processInbox(drive, ROOT_FOLDER_ID);
