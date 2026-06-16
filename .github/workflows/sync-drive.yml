@@ -1,4 +1,4 @@
-name: Sync Drive
+name: Sync Drive forced
 
 on:
   schedule:
