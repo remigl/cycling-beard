@@ -24,6 +24,10 @@ export interface TripSummary {
   translations?: Record<string, { summary: string; quote: string | null; fullStory: string[] }>;
   elevProfile?: [number, number][];
   minAltitude?: number | null;
+  lodgingUrl?: string;
+  lodgingName?: string;
+  thanks?: string;
+  thanksTranslations?: Record<string, string>;
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────
