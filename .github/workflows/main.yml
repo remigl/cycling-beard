@@ -43,10 +43,21 @@ jobs:
         run: |
           git config user.name "sync-bot"
           git config user.email "bot@cycling-beard.com"
-          git add public/data/ public/media/ public/gpx/
-          git diff --staged --quiet && echo "Rien a commit" && exit 0
-          git commit -m "sync: $(date +%Y-%m-%d)"
-          # Recupere les changements distants AVANT de pousser (evite le rejet
-          # "fetch first" si un autre commit est arrive entre-temps).
+
+          # Ajoute TOUT ce que le sync a produit/modifie (evite les "unstaged changes"
+          # qui bloquent le rebase). Inclut sync-cache.json, data, media, gpx, etc.
+          git add -A
+
+          # Rien a commit ? on s'arrete proprement.
+          if git diff --staged --quiet; then
+            echo "Rien a commit"
+            exit 0
+          fi
+
+          git commit -m "sync: $(date +%Y-%m-%d %H:%M)"
+
+          # Recupere les changements distants AVANT de pousser. Comme tout est
+          # commit (working tree propre), le rebase ne sera plus bloque.
           git pull --rebase origin main
+
           git push
