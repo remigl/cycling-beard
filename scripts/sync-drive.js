@@ -126,14 +126,24 @@ async function listFilesInFolder(drive, folderId) {
   return res.data.files || [];
 }
 
-// Empreinte d'une étape : signature stable de TOUT son contenu Drive.
-// Si un fichier est ajouté/supprimé/modifié (y compris le Google Doc de notes,
-// dont le modifiedTime change à chaque édition), l'empreinte change → resync.
+// Empreinte d'une étape : signature stable de son contenu Drive.
+// IMPORTANT : on EXCLUT les fichiers Google natifs (le Doc "notes") du calcul,
+// car leur création/réinsertion de gabarit fait bouger leur modifiedTime à
+// chaque run → cela cassait le cache. Le contenu des notes est capté à part
+// (via docModified ci-dessous), uniquement quand le Doc existe vraiment.
 function fingerprintFiles(files) {
   return files
-    .map(f => `${f.id}:${f.name}:${f.size || 0}:${f.md5Checksum || ""}:${f.modifiedTime || ""}`)
+    .filter(f => !(f.mimeType || "").startsWith("application/vnd.google-apps"))
+    .map(f => `${f.id}:${f.name}:${f.size || 0}:${f.md5Checksum || ""}`)
     .sort()
     .join("|");
+}
+
+// modifiedTime du Doc "notes" s'il existe (capte tes éditions de notes).
+function notesDocModified(files) {
+  const doc = files.find(f => f.mimeType === "application/vnd.google-apps.document"
+    && f.name.toLowerCase() === "notes");
+  return doc?.modifiedTime || "";
 }
 
 // Version du format de cache : à incrémenter si la structure des étapes change,
@@ -786,7 +796,10 @@ async function syncFolder(drive, folder, cache, force) {
   // ── Sync incrémental : si l'empreinte n'a pas changé ET que le JSON existe
   //    encore sur disque ET qu'on a l'étape en cache → on saute tout le travail
   //    coûteux (géocodage, DeepL, conversion d'images) et on réutilise le cache.
-  const fingerprint = fingerprintFiles(files);
+  // Clé de cache = empreinte des fichiers binaires + date de modif du Doc notes.
+  // Ainsi : si tu modifies une photo/GPX OU si tu édites tes notes, ça resync ;
+  // mais la simple présence/création du Doc ne casse plus le cache.
+  const fingerprint = fingerprintFiles(files) + "##notes:" + notesDocModified(files);
   const cached = cache?.stages?.[slug];
   if (!force && cached && cached.fingerprint === fingerprint && cached.stage
       && fs.existsSync(stageJsonPath)) {
@@ -1223,7 +1236,7 @@ async function main() {
   }
 
   // ── Cache de sync incrémental ──
-  const CACHE_PATH = path.join(DATA_DIR, ".sync-cache.json");
+  const CACHE_PATH = path.join(DATA_DIR, "sync-cache.json");
   const cache = loadSyncCache(CACHE_PATH);
   // Force un resync complet si la variable d'env FORCE_RESYNC=1 est passée
   // (utile pour un "vider le cache" manuel depuis GitHub Actions).
