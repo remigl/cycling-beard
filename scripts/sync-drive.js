@@ -797,14 +797,23 @@ async function syncFolder(drive, folder, cache, force) {
   //    encore sur disque ET qu'on a l'étape en cache → on saute tout le travail
   //    coûteux (géocodage, DeepL, conversion d'images) et on réutilise le cache.
   // Clé de cache = empreinte des fichiers binaires + date de modif du Doc notes.
-  // Ainsi : si tu modifies une photo/GPX OU si tu édites tes notes, ça resync ;
-  // mais la simple présence/création du Doc ne casse plus le cache.
   const fingerprint = fingerprintFiles(files) + "##notes:" + notesDocModified(files);
   const cached = cache?.stages?.[slug];
   if (!force && cached && cached.fingerprint === fingerprint && cached.stage
       && fs.existsSync(stageJsonPath)) {
     console.log(`  ⏭  Inchangé → réutilisé depuis le cache`);
     return { stage: cached.stage, fingerprint, fromCache: true };
+  }
+  // Diagnostic : pourquoi cette étape se resync-t-elle ?
+  if (cached) {
+    if (cached.fingerprint !== fingerprint) {
+      console.log(`  🔍 Empreinte différente :`);
+      console.log(`     ancienne : ${cached.fingerprint}`);
+      console.log(`     nouvelle : ${fingerprint}`);
+    } else if (!cached.stage) console.log(`  🔍 Cache sans 'stage' → resync`);
+    else if (!fs.existsSync(stageJsonPath)) console.log(`  🔍 JSON absent du disque → resync`);
+  } else {
+    console.log(`  🔍 Aucune entrée de cache pour cette étape → resync`);
   }
 
   // ── Notes Google Doc : crée le Doc pré-structuré s'il manque, sinon le lit ──
@@ -817,13 +826,14 @@ async function syncFolder(drive, folder, cache, force) {
       doc = { id };
     } else {
       let text = await exportDocText(drive, doc.id);
-      // Doc sans aucun de nos titres (ex : cree avant l'activation de l'API
-      // Docs) → on (re)insère le gabarit, puis on re-exporte.
-      const hasTitles = /^\s*(description|h[ée]bergement|logement|camping|remerciements?|merci)\s*$/im.test(text);
-      if (!hasTitles) {
+      // (Re)insère le gabarit UNIQUEMENT si le Doc est vraiment VIDE (aucun texte).
+      // S'il contient déjà quoi que ce soit (titres OU texte libre), on n'y touche
+      // pas — sinon on réécrirait le Doc à chaque run, faisant bouger sa date de
+      // modification et cassant le cache incrémental.
+      if (text.trim().length === 0) {
         try {
           await ensureTemplate(doc.id);
-          console.log(`  📝 Gabarit (re)inséré dans le Doc "notes"`);
+          console.log(`  📝 Gabarit inséré dans le Doc "notes" vide`);
           text = await exportDocText(drive, doc.id);
         } catch (e) {
           console.log(`  ⚠️  Gabarit non inséré (${e.message})`);
