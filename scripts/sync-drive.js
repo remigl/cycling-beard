@@ -169,6 +169,12 @@ async function downloadFile(drive, fileId, destPath, attempt = 1) {
     const stats = fs.statSync(destPath);
     if (stats.size === 0) throw new Error("fichier vide");
   } catch (err) {
+    // Fichier Google natif (Doc/Sheet/Slides) : non téléchargeable en binaire.
+    // Ce n'est pas une vraie erreur réseau → on ne réessaie pas, on signale juste.
+    const reason = err?.errors?.[0]?.reason || err?.response?.data?.error?.errors?.[0]?.reason;
+    if (reason === "fileNotDownloadable" || (err.message || "").includes("binary content")) {
+      throw new Error("fichier Google natif non téléchargeable (ignoré)");
+    }
     if (attempt < 3) {
       console.log(`  ⏳ Téléchargement échoué (essai ${attempt}), nouvelle tentative...`);
       await new Promise((r) => setTimeout(r, 1000 * attempt));
@@ -852,6 +858,13 @@ async function syncFolder(drive, folder, cache, force) {
     const name = file.name.toLowerCase();
     const tmpPath = path.join(tmpDir, file.name);
 
+    // Ignore les fichiers Google natifs (Docs/Sheets/Slides) : ils ne sont pas
+    // téléchargeables en binaire (erreur "Only files with binary content can be
+    // downloaded"). Le Google Doc "notes" est déjà traité plus haut via export.
+    if ((file.mimeType || "").startsWith("application/vnd.google-apps")) {
+      continue;
+    }
+
     // Download
     await downloadFile(drive, file.id, tmpPath);
 
@@ -1112,6 +1125,12 @@ async function syncAbout(drive, folder) {
       } catch (e) {
         console.log(`  ⚠️  Erreur export Google Doc : ${e.message}`);
       }
+      continue;
+    }
+
+    // Tout autre fichier Google natif (Sheet, Slides, raccourci…) : non
+    // téléchargeable en binaire → on l'ignore.
+    if ((file.mimeType || "").startsWith("application/vnd.google-apps")) {
       continue;
     }
 
