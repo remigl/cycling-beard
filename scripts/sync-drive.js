@@ -544,7 +544,7 @@ const NOTES_DOC_NAME = "notes";
 let docsClient = null; // client Google Docs partagé, initialisé dans main()
 const NOTES_TEMPLATE =
   "Description\n\n\n" +
-  "Camping\n\n\n" +
+  "Hébergement\n\n\n" +
   "Remerciements\n\n";
 
 async function findNotesDoc(drive, folderId) {
@@ -589,12 +589,33 @@ async function exportDocText(drive, docId) {
   return typeof res.data === "string" ? res.data : String(res.data || "");
 }
 
+// Déduit un nom lisible à partir d'une URL d'hébergement.
+// Ex : https://www.google.com/maps/place/Camping+du+Lac/... -> "Camping du Lac"
+//      https://camping-du-lac.fr -> "camping-du-lac.fr"
+function lodgingNameFromUrl(url) {
+  try {
+    const u = new URL(url);
+    // Google Maps : /maps/place/<NOM>/...
+    const placeMatch = u.pathname.match(/\/maps\/place\/([^/@]+)/);
+    if (placeMatch) {
+      return decodeURIComponent(placeMatch[1]).replace(/\+/g, " ").trim();
+    }
+    // Paramètre ?q=<NOM> (recherche Maps)
+    const q = u.searchParams.get("q");
+    if (q && u.hostname.includes("google")) return q.replace(/\+/g, " ").trim();
+    // Sinon : nom de domaine sans "www."
+    return u.hostname.replace(/^www\./, "");
+  } catch {
+    return url; // pas une URL valide : on renvoie le texte tel quel
+  }
+}
+
 function parseNotesDoc(text) {
   const clean = (text || "").replace(/\r/g, "");
-  const sections = { description: "", camping: "", thanks: "" };
+  const sections = { description: "", lodging: "", thanks: "" };
   const map = [
     ["description", /^\s*description\s*$/i],
-    ["camping", /^\s*camping\s*$/i],
+    ["lodging", /^\s*(h[ée]bergement|logement|camping)\s*$/i],
     ["thanks", /^\s*(remerciements?|merci)\s*$/i],
   ];
   let current = null;
@@ -603,9 +624,15 @@ function parseNotesDoc(text) {
     if (header) { current = header[0]; continue; }
     if (current) sections[current] += line + "\n";
   }
+  const lodgingRaw = sections.lodging.trim();
+  // L'hébergement est censé être une URL : on extrait l'URL et son nom lisible.
+  const urlMatch = lodgingRaw.match(/https?:\/\/\S+/);
+  const lodgingUrl = urlMatch ? urlMatch[0] : "";
+  const lodgingName = lodgingUrl ? lodgingNameFromUrl(lodgingUrl) : lodgingRaw;
   return {
     description: sections.description.trim(),
-    camping: sections.camping.trim(),
+    lodgingUrl,
+    lodgingName,
     thanks: sections.thanks.trim(),
   };
 }
@@ -712,7 +739,7 @@ async function syncFolder(drive, folder) {
   console.log(`  → ${files.length} fichier(s) trouvé(s)`);
 
   // ── Notes Google Doc : crée le Doc pré-structuré s'il manque, sinon le lit ──
-  let docNotes = { description: "", camping: "", thanks: "" };
+  let docNotes = { description: "", lodgingUrl: "", lodgingName: "", thanks: "" };
   try {
     let doc = await findNotesDoc(drive, folder.id);
     if (!doc) {
@@ -722,7 +749,7 @@ async function syncFolder(drive, folder) {
     } else {
       const text = await exportDocText(drive, doc.id);
       docNotes = parseNotesDoc(text);
-      const filled = docNotes.description || docNotes.camping || docNotes.thanks;
+      const filled = docNotes.description || docNotes.lodgingUrl || docNotes.thanks;
       console.log(filled ? `  📝 Notes lues depuis le Google Doc` : `  📝 Google Doc "notes" encore vide`);
     }
   } catch (e) {
@@ -867,16 +894,14 @@ async function syncFolder(drive, folder) {
   };
   const translations = await translateContent(frContent);
 
-  // Camping & remerciements : traduits aussi (texte simple, une entrée par langue)
-  const campingTr = {};
+  // Remerciements : traduits (texte libre). L'hébergement est un nom propre +
+  // une URL → pas de traduction, on le garde tel quel pour toutes les langues.
   const thanksTr = {};
-  if (docNotes.camping || docNotes.thanks) {
+  if (docNotes.thanks) {
     for (const [code, deeplCode] of Object.entries({ en: "EN", es: "ES", it: "IT", de: "DE", nl: "NL" })) {
-      campingTr[code] = docNotes.camping ? await deeplTranslate(docNotes.camping, deeplCode) : "";
-      thanksTr[code] = docNotes.thanks ? await deeplTranslate(docNotes.thanks, deeplCode) : "";
+      thanksTr[code] = await deeplTranslate(docNotes.thanks, deeplCode);
     }
-    campingTr.fr = docNotes.camping || "";
-    thanksTr.fr = docNotes.thanks || "";
+    thanksTr.fr = docNotes.thanks;
   }
 
   // ── Build stage JSON ──
@@ -902,9 +927,9 @@ async function syncFolder(drive, folder) {
     // Toutes les traductions
     translations,
     // Sections supplémentaires du Google Doc (vides si non remplies)
-    camping: docNotes.camping || "",
+    lodgingUrl: docNotes.lodgingUrl || "",
+    lodgingName: docNotes.lodgingName || "",
     thanks: docNotes.thanks || "",
-    campingTranslations: campingTr,
     thanksTranslations: thanksTr,
     photos: coverWebp ? [{ src: coverWebp, thumb: thumbWebp, alt: "Cover" }, ...photos] : photos,
     videos: [],
