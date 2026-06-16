@@ -144,7 +144,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
     <div className="w-full bg-bg-dark">
 
       {/* ── HERO ── */}
-      <div className="relative w-full h-[100vh] min-h-[680px] overflow-hidden flex items-center justify-center font-sans">
+      <div className="relative w-full h-[100dvh] min-h-[600px] overflow-hidden flex items-center justify-center font-sans">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-black/60 z-10" />
           {heroImages.map((src, i) => (
