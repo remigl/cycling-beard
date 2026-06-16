@@ -589,6 +589,18 @@ async function exportDocText(drive, docId) {
   return typeof res.data === "string" ? res.data : String(res.data || "");
 }
 
+// Réinsère le gabarit (titres) dans un Doc EXISTANT mais vide — utile pour
+// les Docs créés sans gabarit (ex : Docs API pas encore activée au moment
+// de leur création). N'écrase JAMAIS un Doc déjà rempli.
+async function ensureTemplate(docId) {
+  await docsClient.documents.batchUpdate({
+    documentId: docId,
+    requestBody: {
+      requests: [{ insertText: { location: { index: 1 }, text: NOTES_TEMPLATE } }],
+    },
+  });
+}
+
 // Déduit un nom lisible à partir d'une URL d'hébergement.
 // Ex : https://www.google.com/maps/place/Camping+du+Lac/... -> "Camping du Lac"
 //      https://camping-du-lac.fr -> "camping-du-lac.fr"
@@ -747,7 +759,19 @@ async function syncFolder(drive, folder) {
       console.log(`  📝 Google Doc "notes" créé (à remplir)`);
       doc = { id };
     } else {
-      const text = await exportDocText(drive, doc.id);
+      let text = await exportDocText(drive, doc.id);
+      // Doc sans aucun de nos titres (ex : cree avant l'activation de l'API
+      // Docs) → on (re)insère le gabarit, puis on re-exporte.
+      const hasTitles = /^\s*(description|h[ée]bergement|logement|camping|remerciements?|merci)\s*$/im.test(text);
+      if (!hasTitles) {
+        try {
+          await ensureTemplate(doc.id);
+          console.log(`  📝 Gabarit (re)inséré dans le Doc "notes"`);
+          text = await exportDocText(drive, doc.id);
+        } catch (e) {
+          console.log(`  ⚠️  Gabarit non inséré (${e.message})`);
+        }
+      }
       docNotes = parseNotesDoc(text);
       const filled = docNotes.description || docNotes.lodgingUrl || docNotes.thanks;
       console.log(filled ? `  📝 Notes lues depuis le Google Doc` : `  📝 Google Doc "notes" encore vide`);
