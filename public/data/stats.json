@@ -1,12 +1,12 @@
 {
   "totalKm": 1782,
   "totalCountries": 3,
-  "totalDays": 20,
+  "totalDays": 21,
   "totalStages": 18,
   "totalElevation": 10979,
   "currentCountry": "Allemagne",
   "currentLocation": "Donauwörth",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-06-15",
+  "lastUpdate": "2026-06-16",
   "latestStageSlug": "2026-06-15-ulm-donauworth"
 }
