@@ -1,12 +1,12 @@
 {
   "totalKm": 1866,
   "totalCountries": 3,
-  "totalDays": 21,
+  "totalDays": 22,
   "totalStages": 19,
   "totalElevation": 11503,
   "currentCountry": "Allemagne",
   "currentLocation": "Vohburg an der Donau",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-06-16",
+  "lastUpdate": "2026-06-17",
   "latestStageSlug": "2026-06-16-donauworth-vohburg-an-der-donau"
 }
