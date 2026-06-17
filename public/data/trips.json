@@ -197541,8 +197541,8 @@
     "endCity": "Ratisbonne",
     "distanceKm": 77.7,
     "elevationGain": 366,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3640.webp",
+    "thumbnail": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3640.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -203758,7 +203758,33 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3640.webp",
+        "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3640.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3640.webp",
+        "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3640.webp",
+        "alt": "Img 3640"
+      },
+      {
+        "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3648.webp",
+        "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3648.webp",
+        "alt": "Img 3648"
+      },
+      {
+        "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3663.webp",
+        "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3663.webp",
+        "alt": "Img 3663"
+      },
+      {
+        "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3664.webp",
+        "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3664.webp",
+        "alt": "Img 3664"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
