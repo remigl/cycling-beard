@@ -11,7 +11,7 @@
   "distanceKm": 99.2,
   "elevationGain": 372,
   "maxAltitude": 621,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-15-ulm-donauworth/20260615_101246.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -66,7 +66,33 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-15-ulm-donauworth/20260615_101246.webp",
+      "thumb": "/media/2026-06-15-ulm-donauworth/thumb_20260615_101246.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-15-ulm-donauworth/20260615_101246.webp",
+      "thumb": "/media/2026-06-15-ulm-donauworth/thumb_20260615_101246.webp",
+      "alt": "101246"
+    },
+    {
+      "src": "/media/2026-06-15-ulm-donauworth/20260615_110146.webp",
+      "thumb": "/media/2026-06-15-ulm-donauworth/thumb_20260615_110146.webp",
+      "alt": "110146"
+    },
+    {
+      "src": "/media/2026-06-15-ulm-donauworth/img_3601.webp",
+      "thumb": "/media/2026-06-15-ulm-donauworth/thumb_img_3601.webp",
+      "alt": "Img 3601"
+    },
+    {
+      "src": "/media/2026-06-15-ulm-donauworth/img_3604.webp",
+      "thumb": "/media/2026-06-15-ulm-donauworth/thumb_img_3604.webp",
+      "alt": "Img 3604"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-15-ulm-donauworth_1.gpx",
   "mapLat": 48.7144362,

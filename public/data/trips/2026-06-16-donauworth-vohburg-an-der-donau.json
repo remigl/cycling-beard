@@ -11,7 +11,7 @@
   "distanceKm": 84.2,
   "elevationGain": 524,
   "maxAltitude": 447,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3622.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -37,7 +37,7 @@
       "summary": "",
       "quote": null,
       "fullStory": [
-        "Esta etapa se documentará próximamente."
+        "Esta etapa se documentará en breve."
       ]
     },
     "it": {
@@ -66,7 +66,23 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3622.webp",
+      "thumb": "/media/2026-06-16-donauworth-vohburg-an-der-donau/thumb_img_3622.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3622.webp",
+      "thumb": "/media/2026-06-16-donauworth-vohburg-an-der-donau/thumb_img_3622.webp",
+      "alt": "Img 3622"
+    },
+    {
+      "src": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3631.webp",
+      "thumb": "/media/2026-06-16-donauworth-vohburg-an-der-donau/thumb_img_3631.webp",
+      "alt": "Img 3631"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-16-donauworth-vohburg-an-der-donau_1.gpx",
   "mapLat": 48.7727215,

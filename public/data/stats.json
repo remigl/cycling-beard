@@ -1,12 +1,12 @@
 {
-  "totalKm": 1866,
+  "totalKm": 1944,
   "totalCountries": 3,
   "totalDays": 22,
-  "totalStages": 19,
-  "totalElevation": 11503,
+  "totalStages": 20,
+  "totalElevation": 11869,
   "currentCountry": "Allemagne",
-  "currentLocation": "Vohburg an der Donau",
+  "currentLocation": "Ratisbonne",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-06-17",
-  "latestStageSlug": "2026-06-16-donauworth-vohburg-an-der-donau"
+  "latestStageSlug": "2026-06-17-vohburg-an-der-donau-ratisbonne"
 }
