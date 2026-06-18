@@ -56,6 +56,36 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   };
   const regionLabel = (r: string) => (lang === "fr" ? r : REGION_LABELS[r]?.[lang] ?? r);
 
+  // Villes à EXONYME : seules les villes dont le nom change vraiment selon la
+  // langue (Ratisbonne/Regensburg…). 95 % des villes n'en ont pas → elles gardent
+  // leur nom local. La clé est le nom français (tel que renvoyé par le géocodage).
+  const CITY_LABELS: Record<string, Record<string, string>> = {
+    "Ratisbonne": { en: "Regensburg", es: "Ratisbona",  it: "Ratisbona", de: "Regensburg", nl: "Regensburg" },
+    "Vienne":     { en: "Vienna",     es: "Viena",      it: "Vienna",    de: "Wien",       nl: "Wenen" },
+    "Bâle":       { en: "Basel",      es: "Basilea",    it: "Basilea",   de: "Basel",      nl: "Bazel" },
+    "Genève":     { en: "Geneva",     es: "Ginebra",    it: "Ginevra",   de: "Genf",       nl: "Genève" },
+    "Belgrade":   { en: "Belgrade",   es: "Belgrado",   it: "Belgrado",  de: "Belgrad",    nl: "Belgrado" },
+    "Budapest":   { en: "Budapest",   es: "Budapest",   it: "Budapest",  de: "Budapest",   nl: "Boedapest" },
+    "Bratislava": { en: "Bratislava", es: "Bratislava", it: "Bratislava",de: "Pressburg",  nl: "Bratislava" },
+    "Munich":     { en: "Munich",     es: "Múnich",     it: "Monaco di Baviera", de: "München", nl: "München" },
+    "Nuremberg":  { en: "Nuremberg",  es: "Núremberg",  it: "Norimberga",de: "Nürnberg",   nl: "Neurenberg" },
+    "Cologne":    { en: "Cologne",    es: "Colonia",    it: "Colonia",   de: "Köln",       nl: "Keulen" },
+    "Strasbourg": { en: "Strasbourg", es: "Estrasburgo",it: "Strasburgo",de: "Straßburg",  nl: "Straatsburg" },
+    "Nantes":     { en: "Nantes",     es: "Nantes",     it: "Nantes",    de: "Nantes",     nl: "Nantes" },
+  };
+  // Traduit une ville si elle a un exonyme, sinon garde le nom local.
+  const cityLabel = (c: string) => {
+    if (!c || lang === "fr") return c;
+    return CITY_LABELS[c.trim()]?.[lang] ?? c;
+  };
+  // Traduit un titre "Ville A → Ville B" en traduisant chaque ville séparément.
+  const titleLabel = (title: string) => {
+    if (!title || lang === "fr") return title;
+    const m = title.split(/\s*(→|->|-)\s*/);
+    if (m.length >= 3) return `${cityLabel(m[0])} → ${cityLabel(m[m.length - 1])}`;
+    return cityLabel(title);
+  };
+
   // Pays par défaut = pays de l'étape la plus récente (par date, peu importe l'ordre du tableau)
   const lastCountry = (() => {
     const withCountry = trips.filter(tr => tr.country && tr.country !== "—");
@@ -217,7 +247,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
               <div className="w-full h-full max-w-4xl mx-auto flex flex-col" onClick={e => e.stopPropagation()}>
                 <div className="flex items-center justify-between mb-3 shrink-0">
                   <h3 className="font-display font-bold text-white text-sm md:text-base">
-                    {rt.startCity || rt.title} {rt.endCity ? `→ ${rt.endCity}` : ""}
+                    {cityLabel(rt.startCity) || titleLabel(rt.title)} {rt.endCity ? `→ ${cityLabel(rt.endCity)}` : ""}
                   </h3>
                   <button
                     onClick={() => setReplayOpen(null)}
@@ -405,7 +435,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                     <span className="font-mono text-[9px] text-brand-sand font-bold uppercase tracking-widest">
                       {trip.country !== "—" ? countryLabel(trip.country) : "France"}
                     </span>
-                    <h3 className="font-display font-bold text-xl text-text-on leading-tight">{trip.title}</h3>
+                    <h3 className="font-display font-bold text-xl text-text-on leading-tight">{titleLabel(trip.title)}</h3>
                     <div className="flex gap-3 font-mono text-[9px] text-text-dim">
                       <span className="flex items-center gap-1"><Calendar size={10} /> {trip.date}</span>
                       {trip.distanceKm > 0 && <span className="flex items-center gap-1"><TrendingUp size={10} /> {trip.distanceKm} km</span>}
