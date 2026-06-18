@@ -126,15 +126,21 @@ async function listFilesInFolder(drive, folderId) {
   return res.data.files || [];
 }
 
-// Empreinte d'une étape : signature stable de son contenu Drive.
-// IMPORTANT : on EXCLUT les fichiers Google natifs (le Doc "notes") du calcul,
-// car leur création/réinsertion de gabarit fait bouger leur modifiedTime à
-// chaque run → cela cassait le cache. Le contenu des notes est capté à part
-// (via docModified ci-dessous), uniquement quand le Doc existe vraiment.
+// Empreinte d'une étape : signature stable de TOUT son contenu Drive.
+// - Fichiers binaires (photos, GPX) : id + nom + taille + md5 (le md5 capte un
+//   remplacement de contenu même à nom identique ; le nom capte un renommage).
+// - Fichiers Google natifs (Docs) : id + nom + modifiedTime (pas de md5/taille
+//   fiables) → capte une édition, un renommage ou l'ajout d'un Doc.
+// Tout changement (ajout, suppression, renommage, édition) modifie l'empreinte.
 function fingerprintFiles(files) {
   return files
-    .filter(f => !(f.mimeType || "").startsWith("application/vnd.google-apps"))
-    .map(f => `${f.id}:${f.name}:${f.size || 0}:${f.md5Checksum || ""}`)
+    .map(f => {
+      const isGoogle = (f.mimeType || "").startsWith("application/vnd.google-apps");
+      const content = isGoogle
+        ? (f.modifiedTime || "")           // Doc : la date capte l'édition
+        : `${f.size || 0}:${f.md5Checksum || ""}`; // binaire : taille + checksum
+      return `${f.id}:${f.name}:${content}`;
+    })
     .sort()
     .join("|");
 }
@@ -647,6 +653,21 @@ async function ensureTemplate(docId) {
 // Déduit un nom lisible à partir d'une URL d'hébergement.
 // Ex : https://www.google.com/maps/place/Camping+du+Lac/... -> "Camping du Lac"
 //      https://camping-du-lac.fr -> "camping-du-lac.fr"
+// Déplie un lien court (maps.app.goo.gl, goo.gl/maps, bit.ly…) vers son URL
+// longue en suivant les redirections, sans télécharger la page (méthode HEAD,
+// repli GET). Renvoie l'URL d'origine si le dépliage échoue.
+async function expandShortUrl(url) {
+  try {
+    const isShort = /(maps\.app\.goo\.gl|goo\.gl|bit\.ly|tinyurl\.com)/i.test(url);
+    if (!isShort) return url;
+    // fetch suit les redirections par défaut → res.url contient l'URL finale.
+    const res = await fetch(url, { method: "GET", redirect: "follow" });
+    return res.url || url;
+  } catch {
+    return url;
+  }
+}
+
 function lodgingNameFromUrl(url) {
   try {
     const u = new URL(url);
@@ -665,7 +686,7 @@ function lodgingNameFromUrl(url) {
   }
 }
 
-function parseNotesDoc(text) {
+async function parseNotesDoc(text) {
   const clean = (text || "").replace(/\r/g, "");
   const sections = { description: "", lodging: "", thanks: "" };
   const map = [
@@ -680,10 +701,17 @@ function parseNotesDoc(text) {
     if (current) sections[current] += line + "\n";
   }
   const lodgingRaw = sections.lodging.trim();
-  // L'hébergement est censé être une URL : on extrait l'URL et son nom lisible.
+  // L'hébergement est censé être une URL : on extrait l'URL, on déplie si c'est
+  // un lien court, puis on en déduit un nom lisible.
   const urlMatch = lodgingRaw.match(/https?:\/\/\S+/);
-  const lodgingUrl = urlMatch ? urlMatch[0] : "";
-  const lodgingName = lodgingUrl ? lodgingNameFromUrl(lodgingUrl) : lodgingRaw;
+  let lodgingUrl = urlMatch ? urlMatch[0] : "";
+  let lodgingName = lodgingRaw;
+  if (lodgingUrl) {
+    const expanded = await expandShortUrl(lodgingUrl);
+    lodgingName = lodgingNameFromUrl(expanded);
+    // On garde l'URL longue dépliée (plus fiable que le lien court).
+    lodgingUrl = expanded;
+  }
   return {
     description: sections.description.trim(),
     lodgingUrl,
@@ -817,6 +845,7 @@ async function syncFolder(drive, folder, cache, force) {
   }
 
   // ── Notes Google Doc : crée le Doc pré-structuré s'il manque, sinon le lit ──
+  let docCreatedOrChanged = false;
   let docNotes = { description: "", lodgingUrl: "", lodgingName: "", thanks: "" };
   try {
     let doc = await findNotesDoc(drive, folder.id);
@@ -824,22 +853,21 @@ async function syncFolder(drive, folder, cache, force) {
       const id = await createNotesDoc(drive, folder.id);
       console.log(`  📝 Google Doc "notes" créé (à remplir)`);
       doc = { id };
+      docCreatedOrChanged = true;
     } else {
       let text = await exportDocText(drive, doc.id);
       // (Re)insère le gabarit UNIQUEMENT si le Doc est vraiment VIDE (aucun texte).
-      // S'il contient déjà quoi que ce soit (titres OU texte libre), on n'y touche
-      // pas — sinon on réécrirait le Doc à chaque run, faisant bouger sa date de
-      // modification et cassant le cache incrémental.
       if (text.trim().length === 0) {
         try {
           await ensureTemplate(doc.id);
           console.log(`  📝 Gabarit inséré dans le Doc "notes" vide`);
           text = await exportDocText(drive, doc.id);
+          docCreatedOrChanged = true;
         } catch (e) {
           console.log(`  ⚠️  Gabarit non inséré (${e.message})`);
         }
       }
-      docNotes = parseNotesDoc(text);
+      docNotes = await parseNotesDoc(text);
       const filled = docNotes.description || docNotes.lodgingUrl || docNotes.thanks;
       console.log(filled ? `  📝 Notes lues depuis le Google Doc` : `  📝 Google Doc "notes" encore vide`);
     }
@@ -1048,7 +1076,16 @@ async function syncFolder(drive, folder, cache, force) {
   fs.writeFileSync(stageJsonPath, JSON.stringify(stage, null, 2));
   console.log(`  ✅ ${stageJsonPath} généré`);
 
-  return { stage, fingerprint, fromCache: false };
+  // Si le Doc a été créé ou modifié pendant CE run, sa date a changé → on
+  // recalcule l'empreinte pour que le cache stocke l'état FINAL. Sinon le run
+  // suivant verrait une date différente et resyncerait pour rien.
+  let finalFingerprint = fingerprint;
+  if (docCreatedOrChanged) {
+    const refreshed = await listFilesInFolder(drive, folder.id);
+    finalFingerprint = fingerprintFiles(refreshed) + "##notes:" + notesDocModified(refreshed);
+  }
+
+  return { stage, fingerprint: finalFingerprint, fromCache: false };
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
