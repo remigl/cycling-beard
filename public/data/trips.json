@@ -11,7 +11,7 @@
     "elevationGain": 185,
     "coverImage": "/media/2026-05-27-saint-nazaire-lepouliguen/le dîner de roi.webp",
     "thumbnail": "/media/2026-05-27-saint-nazaire-lepouliguen/thumb_le dîner de roi.webp",
-    "shortDescription": "Paris → Le Pouliguen",
+    "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 47.2708497,
@@ -8078,8 +8078,7 @@
     ],
     "tags": [],
     "fullStory": [
-      "Paris → Le Pouliguen",
-      "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
+      "Cette étape sera bientôt documentée."
     ],
     "photos": [
       {
@@ -8105,51 +8104,45 @@
     ],
     "translations": {
       "fr": {
-        "summary": "Paris → Le Pouliguen",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Paris → Le Pouliguen",
-          "Train de Paris jusqu'à Saint-Nazaire, vélo dans le fourgon. Ensuite la route jusqu'au Pouliguen. Il faisait chaud."
+          "Cette étape sera bientôt documentée."
         ]
       },
       "en": {
-        "summary": "Paris → Le Pouliguen",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Paris → Le Pouliguen",
-          "Took the train from Paris to Saint-Nazaire, with my bike in the baggage car. Then drove to Le Pouliguen. It was hot."
+          "This step will be documented soon."
         ]
       },
       "es": {
-        "summary": "París → Le Pouliguen",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "París → Le Pouliguen",
-          "Tren desde París hasta Saint-Nazaire, con la bicicleta en el vagón de carga. Después, por carretera hasta Le Pouliguen. Hacía calor."
+          "Esta etapa se documentará en breve."
         ]
       },
       "it": {
-        "summary": "Parigi → Le Pouliguen",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Parigi → Le Pouliguen",
-          "Treno da Parigi a Saint-Nazaire, con la bicicletta nel vagone bagagli. Poi in auto fino a Le Pouliguen. Faceva caldo."
+          "Questa fase sarà presto documentata."
         ]
       },
       "de": {
-        "summary": "Paris → Le Pouliguen",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Paris → Le Pouliguen",
-          "Mit dem Zug von Paris nach Saint-Nazaire, das Fahrrad im Gepäckwagen. Dann weiter mit dem Auto bis nach Le Pouliguen. Es war heiß."
+          "Dieser Schritt wird in Kürze dokumentiert."
         ]
       },
       "nl": {
-        "summary": "Parijs → Le Pouliguen",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Parijs → Le Pouliguen",
-          "Met de trein van Parijs naar Saint-Nazaire, met de fiets in de bagagewagen. Daarna over de weg naar Le Pouliguen. Het was warm."
+          "Deze stap wordt binnenkort beschreven."
         ]
       }
     },
@@ -20102,16 +20095,16 @@
         ]
       },
       "es": {
-        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bici al menos una vez en la vida; después, es jugársela.",
+        "summary": "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
         "quote": null,
         "fullStory": [
-          "El puente de Saint-Nazaire hay que cruzarlo en bicicleta solo una vez en la vida; después, es jugársela.",
+          "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
           "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable, una velada con pizza y pastis sin alcohol.",
           "Un despertar de lo más duro."
         ]
       },
       "it": {
-        "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
+        "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare il destino.",
         "quote": null,
         "fullStory": [
           "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
@@ -20120,7 +20113,7 @@
         ]
       },
       "de": {
-        "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
+        "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
         "quote": null,
         "fullStory": [
           "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
@@ -122988,7 +122981,7 @@
         "summary": "",
         "quote": null,
         "fullStory": [
-          "Esta etapa se documentará próximamente."
+          "Esta etapa se documentará en breve."
         ]
       },
       "it": {
