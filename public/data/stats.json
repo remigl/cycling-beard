@@ -1,12 +1,12 @@
 {
   "totalKm": 1944,
   "totalCountries": 3,
-  "totalDays": 22,
+  "totalDays": 23,
   "totalStages": 20,
   "totalElevation": 11869,
   "currentCountry": "Allemagne",
   "currentLocation": "Ratisbonne",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-06-17",
+  "lastUpdate": "2026-06-18",
   "latestStageSlug": "2026-06-17-vohburg-an-der-donau-ratisbonne"
 }
