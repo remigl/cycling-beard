@@ -463,9 +463,9 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                       <div className="flex flex-col gap-2 text-sm text-text-dim leading-relaxed font-light mt-1">
                         {story.map((para, k) => <p key={k}>{para}</p>)}
                       </div>
-                    ) : (
+                    ) : (trip.shortDescription && !/bient[ôo]t document/i.test(trip.shortDescription)) ? (
                       <p className="text-sm text-text-dim text-opacity-60 italic mt-1">{trip.shortDescription}</p>
-                    )}
+                    ) : null}
                     {trip.tags && trip.tags.length > 0 && (
                       <div className="flex gap-1.5 flex-wrap mt-2">
                         {trip.tags.map(tag => (
