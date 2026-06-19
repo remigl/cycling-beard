@@ -1,12 +1,12 @@
 {
   "totalKm": 2074,
   "totalCountries": 3,
-  "totalDays": 23,
+  "totalDays": 24,
   "totalStages": 21,
   "totalElevation": 12407,
   "currentCountry": "Allemagne",
   "currentLocation": "Osterhofen",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-06-18",
+  "lastUpdate": "2026-06-19",
   "latestStageSlug": "2026-06-18-zeitlarn-osterhofen"
 }
