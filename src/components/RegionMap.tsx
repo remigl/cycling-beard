@@ -9,7 +9,8 @@ declare global {
 interface RegionMapProps {
   region: string;
   regionLabel?: string;
-  trips: TripSummary[];   // toutes les étapes (on filtre celles de la région)
+  country?: string;       // si fourni, on filtre par pays au lieu de région
+  trips: TripSummary[];   // toutes les étapes (on filtre celles de la région/pays)
   lang: string;
   onClose: () => void;
   t: (key: string) => string;
@@ -30,12 +31,14 @@ function loadLeaflet(): Promise<void> {
   });
 }
 
-export default function RegionMap({ region, regionLabel, trips, lang, onClose, t }: RegionMapProps) {
+export default function RegionMap({ region, regionLabel, country, trips, lang, onClose, t }: RegionMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<any>(null);
 
   // Étapes de cette région ayant un tracé
-  const regionTrips = trips.filter(tr => tr.region === region);
+  const regionTrips = country
+    ? trips.filter(tr => tr.country === country)
+    : trips.filter(tr => tr.region === region);
 
   useEffect(() => {
     let cancelled = false;
@@ -95,7 +98,7 @@ export default function RegionMap({ region, regionLabel, trips, lang, onClose, t
       cancelled = true;
       if (mapInstance.current) { mapInstance.current.remove(); mapInstance.current = null; }
     };
-  }, [region]);
+  }, [region, country]);
 
   return (
     <div className="mb-8 bg-[#1c1b1b] rounded-2xl border border-white/10 overflow-hidden animate-[slideDown_0.25s_ease-out]">
