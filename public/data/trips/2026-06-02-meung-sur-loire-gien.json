@@ -13,59 +13,66 @@
   "maxAltitude": 150,
   "coverImage": "/media/2026-06-02-meung-sur-loire-gien/château de sully.webp",
   "heroVideo": null,
-  "summary": "",
+  "summary": "Sam et Dada avec leurs vélos de compétition",
   "fullStory": [
-    "Cette étape sera bientôt documentée."
+    "Sam et Dada avec leurs vélos de compétition"
   ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "",
+      "summary": "Sam et Dada avec leurs vélos de compétition",
       "quote": null,
       "fullStory": [
-        "Cette étape sera bientôt documentée."
+        "Sam et Dada avec leurs vélos de compétition"
       ]
     },
     "en": {
-      "summary": "",
+      "summary": "Sam and Dada with their racing bikes",
       "quote": null,
       "fullStory": [
-        "This step will be documented soon."
+        "Sam and Dada with their racing bikes"
       ]
     },
     "es": {
-      "summary": "",
+      "summary": "Sam y Dada con sus bicicletas de competición",
       "quote": null,
       "fullStory": [
-        "Esta etapa se documentará en breve."
+        "Sam y Dada con sus bicicletas de competición"
       ]
     },
     "it": {
-      "summary": "",
+      "summary": "Sam e Dada con le loro bici da gara",
       "quote": null,
       "fullStory": [
-        "Questa fase sarà presto documentata."
+        "Sam e Dada con le loro biciclette da gara"
       ]
     },
     "de": {
-      "summary": "",
+      "summary": "Sam und Dada mit ihren Rennrädern",
       "quote": null,
       "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
+        "Sam und Dada mit ihren Rennrädern"
       ]
     },
     "nl": {
-      "summary": "",
+      "summary": "Sam en Dada met hun racefietsen",
       "quote": null,
       "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
+        "Sam en Dada met hun racefietsen"
       ]
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+  "thanksTranslations": {
+    "en": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+    "es": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+    "it": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+    "de": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+    "nl": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+    "fr": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac"
+  },
   "photos": [
     {
       "src": "/media/2026-06-02-meung-sur-loire-gien/château de sully.webp",

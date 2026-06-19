@@ -60815,14 +60815,14 @@
     "minAltitude": 28,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "Stéphanie et son conjoint",
+    "thanks": "Stéphanie",
     "thanksTranslations": {
-      "en": "Stéphanie and her partner",
-      "es": "Stéphanie y su pareja",
-      "it": "Stéphanie e il suo compagno",
-      "de": "Stéphanie und ihr Partner",
-      "nl": "Stéphanie en haar partner",
-      "fr": "Stéphanie et son conjoint"
+      "en": "Stephanie",
+      "es": "Stéphanie",
+      "it": "Stéphanie",
+      "de": "Stéphanie",
+      "nl": "Stéphanie",
+      "fr": "Stéphanie"
     }
   },
   {
@@ -60837,7 +60837,7 @@
     "elevationGain": 626,
     "coverImage": "/media/2026-06-02-meung-sur-loire-gien/château de sully.webp",
     "thumbnail": "/media/2026-06-02-meung-sur-loire-gien/thumb_château de sully.webp",
-    "shortDescription": "",
+    "shortDescription": "Sam et Dada avec leurs vélos de compétition",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 47.656709,
@@ -70128,7 +70128,7 @@
     ],
     "tags": [],
     "fullStory": [
-      "Cette étape sera bientôt documentée."
+      "Sam et Dada avec leurs vélos de compétition"
     ],
     "photos": [
       {
@@ -70149,45 +70149,45 @@
     ],
     "translations": {
       "fr": {
-        "summary": "",
+        "summary": "Sam et Dada avec leurs vélos de compétition",
         "quote": null,
         "fullStory": [
-          "Cette étape sera bientôt documentée."
+          "Sam et Dada avec leurs vélos de compétition"
         ]
       },
       "en": {
-        "summary": "",
+        "summary": "Sam and Dada with their racing bikes",
         "quote": null,
         "fullStory": [
-          "This step will be documented soon."
+          "Sam and Dada with their racing bikes"
         ]
       },
       "es": {
-        "summary": "",
+        "summary": "Sam y Dada con sus bicicletas de competición",
         "quote": null,
         "fullStory": [
-          "Esta etapa se documentará en breve."
+          "Sam y Dada con sus bicicletas de competición"
         ]
       },
       "it": {
-        "summary": "",
+        "summary": "Sam e Dada con le loro bici da gara",
         "quote": null,
         "fullStory": [
-          "Questa fase sarà presto documentata."
+          "Sam e Dada con le loro biciclette da gara"
         ]
       },
       "de": {
-        "summary": "",
+        "summary": "Sam und Dada mit ihren Rennrädern",
         "quote": null,
         "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
+          "Sam und Dada mit ihren Rennrädern"
         ]
       },
       "nl": {
-        "summary": "",
+        "summary": "Sam en Dada met hun racefietsen",
         "quote": null,
         "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
+          "Sam en Dada met hun racefietsen"
         ]
       }
     },
@@ -70680,8 +70680,15 @@
     "minAltitude": 96,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+    "thanksTranslations": {
+      "en": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+      "es": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+      "it": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+      "de": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+      "nl": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
+      "fr": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac"
+    }
   },
   {
     "slug": "2026-06-03-gien-sauvigny-les-bois",
@@ -168461,7 +168468,7 @@
     "elevationGain": 1407,
     "coverImage": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
     "thumbnail": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
-    "shortDescription": "Repas avec @AstridEtOliv",
+    "shortDescription": "Repas avec @AstridEtOlivier",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 48.0883042,
@@ -174762,7 +174769,7 @@
     ],
     "tags": [],
     "fullStory": [
-      "Repas avec @AstridEtOliv"
+      "Repas avec @AstridEtOlivier"
     ],
     "photos": [
       {
@@ -174803,45 +174810,45 @@
     ],
     "translations": {
       "fr": {
-        "summary": "Repas avec @AstridEtOliv",
+        "summary": "Repas avec @AstridEtOlivier",
         "quote": null,
         "fullStory": [
-          "Repas avec @AstridEtOliv"
+          "Repas avec @AstridEtOlivier"
         ]
       },
       "en": {
-        "summary": "Dinner with @AstridEtOliv",
+        "summary": "Dinner with @AstridEtOlivier",
         "quote": null,
         "fullStory": [
-          "Dinner with @AstridEtOliv"
+          "Dinner with @AstridEtOlivier"
         ]
       },
       "es": {
-        "summary": "Comida con @AstridEtOliv",
+        "summary": "Cena con @AstridEtOlivier",
         "quote": null,
         "fullStory": [
-          "Comida con @AstridEtOliv"
+          "Cena con @AstridEtOlivier"
         ]
       },
       "it": {
-        "summary": "Cena con @AstridEtOliv",
+        "summary": "Cena con @AstridEtOlivier",
         "quote": null,
         "fullStory": [
-          "Cena con @AstridEtOliv"
+          "Cena con @AstridEtOlivier"
         ]
       },
       "de": {
-        "summary": "Essen mit @AstridEtOliv",
+        "summary": "Essen mit @AstridEtOlivier",
         "quote": null,
         "fullStory": [
-          "Essen mit @AstridEtOliv"
+          "Essen mit @AstridEtOlivier"
         ]
       },
       "nl": {
-        "summary": "Maaltijd met @AstridEtOliv",
+        "summary": "Maaltijd met @AstridEtOlivier",
         "quote": null,
         "fullStory": [
-          "Maaltijd met @AstridEtOliv"
+          "Maaltijd met @AstridEtOlivier"
         ]
       }
     },
@@ -175092,8 +175099,8 @@
       ]
     ],
     "minAltitude": 417,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Jugendzeltplatz+Aisnau,+72488+Sigmaringen,+Allemagne/data=!4m2!3m1!1s0x479a15a3f0c52d7d:0x86cc76194db4e55a!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=7f918ed2-8037-481c-bb5c-cd57eec5bfda&g_st=ac",
+    "lodgingName": "Jugendzeltplatz Aisnau, 72488 Sigmaringen, Allemagne",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -181763,7 +181770,7 @@
     ],
     "minAltitude": 468,
     "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingName": "Anita and Martin",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -191146,8 +191153,8 @@
       ]
     ],
     "minAltitude": 398,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Kanu-Club+Zeltplatz,+86602,+An+der+Westspange,+86609+Donauw%C3%B6rth,+Allemagne/data=!4m2!3m1!1s0x479ed1f765a366c9:0x1c8455f094a1eafa!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8a7b9cbe-37c0-44f7-bcea-8589bdec09b6&g_st=ac",
+    "lodgingName": "Kanu-Club Zeltplatz, 86602, An der Westspange, 86609 Donauwörth, Allemagne",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -197630,17 +197637,10 @@
       ]
     ],
     "minAltitude": 360,
-    "lodgingUrl": "",
-    "lodgingName": "",
-    "thanks": "Anita et Martin",
-    "thanksTranslations": {
-      "en": "Anita and Martin",
-      "es": "Anita y Martin",
-      "it": "Anita e Martin",
-      "de": "Anita und Martin",
-      "nl": "Anita en Martin",
-      "fr": "Anita et Martin"
-    }
+    "lodgingUrl": "https://www.google.com/maps/place/Rest+Stop+and+Campsite+For+Canoers+and+Cyclists,+85088+Vohburg+an+der+Donau,+Allemagne/data=!4m2!3m1!1s0x479e53497d08132d:0xee53bb09aa8eae14!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8d566ef6-0d83-48e4-a050-b7758e98dea6&g_st=ac",
+    "lodgingName": "Rest Stop and Campsite For Canoers and Cyclists, 85088 Vohburg an der Donau, Allemagne",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-17-vohburg-an-der-donau-ratisbonne",

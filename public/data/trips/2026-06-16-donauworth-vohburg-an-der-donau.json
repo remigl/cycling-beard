@@ -62,17 +62,10 @@
       ]
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
-  "thanks": "Anita et Martin",
-  "thanksTranslations": {
-    "en": "Anita and Martin",
-    "es": "Anita y Martin",
-    "it": "Anita e Martin",
-    "de": "Anita und Martin",
-    "nl": "Anita en Martin",
-    "fr": "Anita et Martin"
-  },
+  "lodgingUrl": "https://www.google.com/maps/place/Rest+Stop+and+Campsite+For+Canoers+and+Cyclists,+85088+Vohburg+an+der+Donau,+Allemagne/data=!4m2!3m1!1s0x479e53497d08132d:0xee53bb09aa8eae14!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8d566ef6-0d83-48e4-a050-b7758e98dea6&g_st=ac",
+  "lodgingName": "Rest Stop and Campsite For Canoers and Cyclists, 85088 Vohburg an der Donau, Allemagne",
+  "thanks": "",
+  "thanksTranslations": {},
   "photos": [
     {
       "src": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3622.webp",
