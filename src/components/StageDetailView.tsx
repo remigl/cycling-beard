@@ -151,7 +151,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
 
   const placeholderTexts = ["Cette étape sera bientôt documentée.", "This stage will be documented soon."];
   const hasStory = dispStory.length > 0 && !placeholderTexts.includes(dispStory[0]);
-  const hasSummary = dispSummary && dispSummary.trim().length > 0;
+  const hasSummary = dispSummary && dispSummary.trim().length > 0 && !placeholderTexts.includes(dispSummary.trim());
 
   return (
     <div className={`w-full flex flex-col bg-bg-dark text-text-on text-left ${embedded ? "" : "pt-14"}`}>
