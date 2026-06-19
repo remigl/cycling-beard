@@ -204209,8 +204209,8 @@
     "endCity": "Osterhofen",
     "distanceKm": 130.2,
     "elevationGain": 538,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-18-zeitlarn-osterhofen/bratwurstkipferl.webp",
+    "thumbnail": "/media/2026-06-18-zeitlarn-osterhofen/thumb_bratwurstkipferl.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -216112,7 +216112,23 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-18-zeitlarn-osterhofen/bratwurstkipferl.webp",
+        "thumb": "/media/2026-06-18-zeitlarn-osterhofen/thumb_bratwurstkipferl.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-18-zeitlarn-osterhofen/bratwurstkipferl.webp",
+        "thumb": "/media/2026-06-18-zeitlarn-osterhofen/thumb_bratwurstkipferl.webp",
+        "alt": "Bratwurstkipferl"
+      },
+      {
+        "src": "/media/2026-06-18-zeitlarn-osterhofen/straubing.webp",
+        "thumb": "/media/2026-06-18-zeitlarn-osterhofen/thumb_straubing.webp",
+        "alt": "Straubing"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
