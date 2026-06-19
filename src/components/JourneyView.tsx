@@ -401,6 +401,21 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           </div>
         )}
 
+        {/* Tiroir carte du PAYS : quand un pays précis est sélectionné et qu'aucune
+            carte de région n'est ouverte → trace de toutes les étapes du pays. */}
+        {selectedCountry !== "all" && !regionMap && (
+          <RegionMap
+            key={`country-${selectedCountry}`}
+            region={selectedCountry}
+            regionLabel={countryLabel(selectedCountry)}
+            country={selectedCountry}
+            trips={trips}
+            lang={lang}
+            onClose={() => setSelectedCountry("all")}
+            t={t}
+          />
+        )}
+
         {/* Tiroir carte de région (inline, prend la place des tags) */}
         {regionMap && (
           <RegionMap region={regionMap} regionLabel={regionLabel(regionMap)} trips={trips} lang={lang} onClose={() => setRegionMap(null)} t={t} />
