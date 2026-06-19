@@ -63,9 +63,16 @@
     }
   },
   "lodgingUrl": "",
-  "lodgingName": "Anita and Martin",
-  "thanks": "",
-  "thanksTranslations": {},
+  "lodgingName": "",
+  "thanks": "Anita et Martin",
+  "thanksTranslations": {
+    "en": "Anita and Martin",
+    "es": "Anita y Martin",
+    "it": "Anita e Martin",
+    "de": "Anita und Martin",
+    "nl": "Anita en Martin",
+    "fr": "Anita et Martin"
+  },
   "photos": [
     {
       "src": "/media/2026-06-14-sigmaringen-ulm/20260614_141553.webp",

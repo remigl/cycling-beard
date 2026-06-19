@@ -181763,9 +181763,16 @@
     ],
     "minAltitude": 468,
     "lodgingUrl": "",
-    "lodgingName": "Anita and Martin",
-    "thanks": "",
-    "thanksTranslations": {}
+    "lodgingName": "",
+    "thanks": "Anita et Martin",
+    "thanksTranslations": {
+      "en": "Anita and Martin",
+      "es": "Anita y Martin",
+      "it": "Anita e Martin",
+      "de": "Anita und Martin",
+      "nl": "Anita en Martin",
+      "fr": "Anita et Martin"
+    }
   },
   {
     "slug": "2026-06-15-ulm-donauworth",
