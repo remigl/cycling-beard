@@ -8636,7 +8636,11 @@
         4
       ]
     ],
-    "minAltitude": 3
+    "minAltitude": 3,
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+du+Clein,+22+Av.+de+Kerdun,+44510+Le+Pouliguen/data=!4m2!3m1!1s0x48055b4a069bea63:0xdf3b91f67c9d3f3a!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=510968ac-14f1-4b7a-b613-593e2833c31a&g_st=ac",
+    "lodgingName": "Camping du Clein, 22 Av. de Kerdun, 44510 Le Pouliguen",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-05-29-le-pouliguen-mauves-sur-loire",
@@ -20869,7 +20873,11 @@
         6
       ]
     ],
-    "minAltitude": -1
+    "minAltitude": -1,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-05-30-mauves-sur-loire-le-menitre",
@@ -39931,7 +39939,11 @@
         19
       ]
     ],
-    "minAltitude": 3
+    "minAltitude": 3,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-05-31-le-menitre-tours",
@@ -49940,7 +49952,11 @@
         70
       ]
     ],
-    "minAltitude": 19
+    "minAltitude": 19,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-01-tours-meung-sur-loire",
@@ -60796,7 +60812,11 @@
         88
       ]
     ],
-    "minAltitude": 28
+    "minAltitude": 28,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-02-meung-sur-loire-gien",
@@ -70650,7 +70670,11 @@
         132
       ]
     ],
-    "minAltitude": 96
+    "minAltitude": 96,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-03-gien-sauvigny-les-bois",
@@ -80541,7 +80565,11 @@
         183
       ]
     ],
-    "minAltitude": 121
+    "minAltitude": 121,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-04-sauvigny-les-bois-decize",
@@ -90134,7 +90162,11 @@
         192
       ]
     ],
-    "minAltitude": 182
+    "minAltitude": 182,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-05-decize-paray-le-monial",
@@ -99864,7 +99896,11 @@
         248
       ]
     ],
-    "minAltitude": 192
+    "minAltitude": 192,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-06-paray-le-monial-verjux",
@@ -110002,7 +110038,11 @@
         182
       ]
     ],
-    "minAltitude": 179
+    "minAltitude": 179,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-07-verjux-orchamps",
@@ -124032,7 +124072,11 @@
         215
       ]
     ],
-    "minAltitude": 172
+    "minAltitude": 172,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-08-orchamps-fourbanne",
@@ -130443,7 +130487,11 @@
         268
       ]
     ],
-    "minAltitude": 215
+    "minAltitude": 215,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-09-fourbanne-l-isle-sur-le-doubs",
@@ -142560,7 +142608,11 @@
         326
       ]
     ],
-    "minAltitude": 262
+    "minAltitude": 262,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-10-allenjoie-mohlin",
@@ -158340,7 +158392,11 @@
         322
       ]
     ],
-    "minAltitude": 232
+    "minAltitude": 232,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-11-mohlin-wangen",
@@ -168352,7 +168408,11 @@
         397
       ]
     ],
-    "minAltitude": 289
+    "minAltitude": 289,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-13-wangen-sigmaringen",
@@ -174996,7 +175056,11 @@
         622
       ]
     ],
-    "minAltitude": 417
+    "minAltitude": 417,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-14-sigmaringen-ulm",
@@ -181662,7 +181726,11 @@
         469
       ]
     ],
-    "minAltitude": 468
+    "minAltitude": 468,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-15-ulm-donauworth",
@@ -191042,7 +191110,11 @@
         400
       ]
     ],
-    "minAltitude": 398
+    "minAltitude": 398,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-16-donauworth-vohburg-an-der-donau",
@@ -197522,7 +197594,11 @@
         360
       ]
     ],
-    "minAltitude": 360
+    "minAltitude": 360,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-17-vohburg-an-der-donau-ratisbonne",
@@ -204068,7 +204144,11 @@
         351
       ]
     ],
-    "minAltitude": 345
+    "minAltitude": 345,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-18-zeitlarn-osterhofen",
@@ -217078,6 +217158,10 @@
         307
       ]
     ],
-    "minAltitude": 306
+    "minAltitude": 306,
+    "lodgingUrl": "",
+    "lodgingName": "",
+    "thanks": "",
+    "thanksTranslations": {}
   }
 ]
