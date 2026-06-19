@@ -70678,17 +70678,10 @@
       ]
     ],
     "minAltitude": 96,
-    "lodgingUrl": "",
-    "lodgingName": "",
-    "thanks": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
-    "thanksTranslations": {
-      "en": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
-      "es": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
-      "it": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
-      "de": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
-      "nl": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac",
-      "fr": "https://maps.app.goo.gl/XBSBExmomsVYYeji6?g_st=ac"
-    }
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+2+roues+%2F+Le+Refuge+de+la+Patte+d'Oie,+La+Patte+d'Oie,+45500+Saint-Brisson-sur-Loire/data=!4m2!3m1!1s0x47e55ff35c46f881:0x34d9714699817e41!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=ec0ae814-1412-4a7d-8a77-7cb7eeeb3e43&g_st=ac",
+    "lodgingName": "Camping 2 roues / Le Refuge de la Patte d'Oie, La Patte d'Oie, 45500 Saint-Brisson-sur-Loire",
+    "thanks": "",
+    "thanksTranslations": {}
   },
   {
     "slug": "2026-06-03-gien-sauvigny-les-bois",
