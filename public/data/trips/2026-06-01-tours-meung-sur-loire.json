@@ -64,8 +64,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Stéphanie et son conjoint",
+  "thanksTranslations": {
+    "en": "Stéphanie and her partner",
+    "es": "Stéphanie y su pareja",
+    "it": "Stéphanie e il suo compagno",
+    "de": "Stéphanie und ihr Partner",
+    "nl": "Stéphanie en haar partner",
+    "fr": "Stéphanie et son conjoint"
+  },
   "photos": [
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/amboise.webp",

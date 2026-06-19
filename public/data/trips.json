@@ -20108,10 +20108,10 @@
         ]
       },
       "it": {
-        "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare il destino.",
+        "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
         "quote": null,
         "fullStory": [
-          "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
+          "Il ponte di Saint-Nazaire va attraversato in bicicletta solo una volta nella vita; dopo, è come sfidare il destino.",
           "Notte a casa di Jeff e del suo gatto Bada. Sono stati davvero gentili, serata a base di pizza e pastis analcolico.",
           "Un risveglio da veri duri."
         ]
@@ -20120,7 +20120,7 @@
         "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
         "quote": null,
         "fullStory": [
-          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
+          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
           "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
           "Ein echt hartes Erwachen."
         ]
@@ -20876,8 +20876,15 @@
     "minAltitude": -1,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Jeff et son chat Bada",
+    "thanksTranslations": {
+      "en": "Jeff and his cat Bada",
+      "es": "Jeff y su gato Bada",
+      "it": "Jeff e il suo gatto Bada",
+      "de": "Jeff und seine Katze Bada",
+      "nl": "Jeff en zijn kat Bada",
+      "fr": "Jeff et son chat Bada"
+    }
   },
   {
     "slug": "2026-05-30-mauves-sur-loire-le-menitre",
@@ -20891,7 +20898,7 @@
     "elevationGain": 607,
     "coverImage": "/media/2026-05-30-mauves-sur-loire-le-menitre/angers.webp",
     "thumbnail": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_angers.webp",
-    "shortDescription": "Je suis des déviations de déviations.",
+    "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 47.3935205,
@@ -38596,9 +38603,7 @@
     ],
     "tags": [],
     "fullStory": [
-      "Je suis des déviations de déviations. Ca fait plaisir..",
-      "Le midi tartiflette dans un coin sympa.",
-      "Nuit au camping. Les français que j'ai croisé au camping qui font 50km de kayak par jour étaient sympas."
+      "Cette étape sera bientôt documentée."
     ],
     "photos": [
       {
@@ -38639,57 +38644,45 @@
     ],
     "translations": {
       "fr": {
-        "summary": "Je suis des déviations de déviations.",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Je suis des déviations de déviations. Ca fait plaisir..",
-          "Le midi tartiflette dans un coin sympa.",
-          "Nuit au camping. Les français que j'ai croisé au camping qui font 50km de kayak par jour étaient sympas."
+          "Cette étape sera bientôt documentée."
         ]
       },
       "en": {
-        "summary": "I am deviations from deviations.",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "I'm following detours off of detours. That's nice...",
-          "Tartiflette for lunch at a nice spot.",
-          "Spent the night at the campground. The French people I met there—who were kayaking 50 km a day—were really nice."
+          "This step will be documented soon."
         ]
       },
       "es": {
-        "summary": "Soy desviaciones de desviaciones.",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Estoy siguiendo desviaciones de desviaciones. Me alegro...",
-          "A la hora de comer, una tartiflette en un sitio agradable.",
-          "Noche en el camping. Los franceses con los que me crucé en el camping, que recorren 50 km en kayak al día, eran muy simpáticos."
+          "Esta etapa se documentará en breve."
         ]
       },
       "it": {
-        "summary": "Sono deviazioni di deviazioni.",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Sono deviazioni di deviazioni. Che bello...",
-          "A pranzo, una tartiflette in un posticino carino.",
-          "Notte in campeggio. I francesi che ho incontrato al campeggio, che percorrono 50 km al giorno in kayak, erano simpatici."
+          "Questa fase sarà presto documentata."
         ]
       },
       "de": {
-        "summary": "Ich bin Abweichungen von Abweichungen.",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Ich verfolge Umleitungen von Umleitungen. Das macht Spaß...",
-          "Mittags Tartiflette in einem gemütlichen Lokal.",
-          "Übernachtung auf dem Campingplatz. Die Franzosen, die ich dort getroffen habe und die täglich 50 km mit dem Kajak zurücklegen, waren nett."
+          "Dieser Schritt wird in Kürze dokumentiert."
         ]
       },
       "nl": {
-        "summary": "Ik volg omleidingen van omleidingen.",
+        "summary": "",
         "quote": null,
         "fullStory": [
-          "Ik volg omleidingen van omleidingen. Dat is leuk...",
-          "'s Middags een tartiflette in een gezellig restaurantje.",
-          "Overnachting op de camping. De Fransen die ik op de camping tegenkwam en die elke dag 50 km kajakken, waren aardig."
+          "Deze stap wordt binnenkort beschreven."
         ]
       }
     },
@@ -39940,8 +39933,8 @@
       ]
     ],
     "minAltitude": 3,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Terre+de+Loire,+6+route+du,+6+Port+Saint-Maur+route+du,+49250+La+M%C3%A9nitr%C3%A9/data=!4m2!3m1!1s0x4807e15967645c8d:0x2b33091340191ec9!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=51510666-4544-4cfb-be24-15fa3edb56ab&g_st=ac",
+    "lodgingName": "Camping Terre de Loire, 6 route du, 6 Port Saint-Maur route du, 49250 La Ménitré",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -49955,8 +49948,15 @@
     "minAltitude": 19,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Aurelie",
+    "thanksTranslations": {
+      "en": "Aurelie",
+      "es": "Aurelie",
+      "it": "Aurelie",
+      "de": "Aurelie",
+      "nl": "Aurelie",
+      "fr": "Aurelie"
+    }
   },
   {
     "slug": "2026-06-01-tours-meung-sur-loire",
@@ -60815,8 +60815,15 @@
     "minAltitude": 28,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Stéphanie et son conjoint",
+    "thanksTranslations": {
+      "en": "Stéphanie and her partner",
+      "es": "Stéphanie y su pareja",
+      "it": "Stéphanie e il suo compagno",
+      "de": "Stéphanie und ihr Partner",
+      "nl": "Stéphanie en haar partner",
+      "fr": "Stéphanie et son conjoint"
+    }
   },
   {
     "slug": "2026-06-02-meung-sur-loire-gien",
@@ -80568,8 +80575,15 @@
     "minAltitude": 121,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Danielle et Pierre",
+    "thanksTranslations": {
+      "en": "Danielle and Pierre",
+      "es": "Danielle y Pierre",
+      "it": "Danielle e Pierre",
+      "de": "Danielle und Pierre",
+      "nl": "Danielle en Pierre",
+      "fr": "Danielle et Pierre"
+    }
   },
   {
     "slug": "2026-06-04-sauvigny-les-bois-decize",
@@ -90163,8 +90177,8 @@
       ]
     ],
     "minAltitude": 182,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+des+Halles+-+Onlycamp,+All.+Marcel+Merle,+58300+Decize/data=!4m2!3m1!1s0x47f1a8944c09110d:0x33f29553d2b08427!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=b091aa0e-5591-471c-8c36-cb2b8a2e5afc&g_st=ac",
+    "lodgingName": "Camping des Halles - Onlycamp, All. Marcel Merle, 58300 Decize",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -99899,8 +99913,15 @@
     "minAltitude": 192,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Pierre Emmanuel",
+    "thanksTranslations": {
+      "en": "Pierre Emmanuel",
+      "es": "Pierre Emmanuel",
+      "it": "Pierre Emmanuel",
+      "de": "Pierre Emmanuel",
+      "nl": "Pierre Emmanuel",
+      "fr": "Pierre Emmanuel"
+    }
   },
   {
     "slug": "2026-06-06-paray-le-monial-verjux",
@@ -110041,8 +110062,15 @@
     "minAltitude": 179,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Fanny",
+    "thanksTranslations": {
+      "en": "Fanny",
+      "es": "Fanny",
+      "it": "Fanny",
+      "de": "Fanny",
+      "nl": "Fanny",
+      "fr": "Fanny"
+    }
   },
   {
     "slug": "2026-06-07-verjux-orchamps",
@@ -124073,8 +124101,8 @@
       ]
     ],
     "minAltitude": 172,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Municipal+Orchamps,+22+%C3%80+la+Fenotte,+39700+Orchamps/data=!4m2!3m1!1s0x478d4ffb2d2fc723:0xa2a32722186c8b68!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e117c4c6-535c-45ae-ab7e-0ad5fbeca91d&g_st=ac",
+    "lodgingName": "Camping Municipal Orchamps, 22 À la Fenotte, 39700 Orchamps",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -130488,8 +130516,8 @@
       ]
     ],
     "minAltitude": 215,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/naturcamping+fourbanne,+5+Chem.+du+Tunnel,+25110+Fourbanne/data=!4m2!3m1!1s0x47927f1b1dbc7bdb:0x6f9b01a2b307a195!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=adafd3e3-aab5-44d4-b0b1-df083c157ec2&g_st=ac",
+    "lodgingName": "naturcamping fourbanne, 5 Chem. du Tunnel, 25110 Fourbanne",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -142609,8 +142637,8 @@
       ]
     ],
     "minAltitude": 262,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/%C3%89tape+bivouac,+28+Rue+de+Brognard,+25490+Allenjoie/data=!4m2!3m1!1s0x4792190047954f75:0x2431a32c60dde140!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e84e42f8-1f09-45e0-a517-23503ff32925&g_st=ac",
+    "lodgingName": "Étape bivouac, 28 Rue de Brognard, 25490 Allenjoie",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -158395,8 +158423,15 @@
     "minAltitude": 232,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Anja et Sandro",
+    "thanksTranslations": {
+      "en": "Anja and Sandro",
+      "es": "Anja y Sandro",
+      "it": "Anja e Sandro",
+      "de": "Anja und Sandro",
+      "nl": "Anja en Sandro",
+      "fr": "Anja et Sandro"
+    }
   },
   {
     "slug": "2026-06-11-mohlin-wangen",
@@ -168409,8 +168444,8 @@
       ]
     ],
     "minAltitude": 289,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Wangen,+Seeweg+30,+78337+%C3%96hningen-Wangen,+Allemagne/data=!4m2!3m1!1s0x479a8bfbb1320ef5:0xcbbdeb827acaead4!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=656b6a84-390b-479e-bcee-630730a682d7&g_st=ac",
+    "lodgingName": "Camping Wangen, Seeweg 30, 78337 Öhningen-Wangen, Allemagne",
     "thanks": "",
     "thanksTranslations": {}
   },
@@ -168426,7 +168461,7 @@
     "elevationGain": 1407,
     "coverImage": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
     "thumbnail": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
-    "shortDescription": "",
+    "shortDescription": "Repas avec @AstridEtOliv",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 48.0883042,
@@ -174727,7 +174762,7 @@
     ],
     "tags": [],
     "fullStory": [
-      "Cette étape sera bientôt documentée."
+      "Repas avec @AstridEtOliv"
     ],
     "photos": [
       {
@@ -174768,45 +174803,45 @@
     ],
     "translations": {
       "fr": {
-        "summary": "",
+        "summary": "Repas avec @AstridEtOliv",
         "quote": null,
         "fullStory": [
-          "Cette étape sera bientôt documentée."
+          "Repas avec @AstridEtOliv"
         ]
       },
       "en": {
-        "summary": "",
+        "summary": "Dinner with @AstridEtOliv",
         "quote": null,
         "fullStory": [
-          "This step will be documented soon."
+          "Dinner with @AstridEtOliv"
         ]
       },
       "es": {
-        "summary": "",
+        "summary": "Comida con @AstridEtOliv",
         "quote": null,
         "fullStory": [
-          "Esta etapa se documentará en breve."
+          "Comida con @AstridEtOliv"
         ]
       },
       "it": {
-        "summary": "",
+        "summary": "Cena con @AstridEtOliv",
         "quote": null,
         "fullStory": [
-          "Questa fase sarà presto documentata."
+          "Cena con @AstridEtOliv"
         ]
       },
       "de": {
-        "summary": "",
+        "summary": "Essen mit @AstridEtOliv",
         "quote": null,
         "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
+          "Essen mit @AstridEtOliv"
         ]
       },
       "nl": {
-        "summary": "",
+        "summary": "Maaltijd met @AstridEtOliv",
         "quote": null,
         "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
+          "Maaltijd met @AstridEtOliv"
         ]
       }
     },
@@ -197597,8 +197632,15 @@
     "minAltitude": 360,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Anita et Martin",
+    "thanksTranslations": {
+      "en": "Anita and Martin",
+      "es": "Anita y Martin",
+      "it": "Anita e Martin",
+      "de": "Anita und Martin",
+      "nl": "Anita en Martin",
+      "fr": "Anita et Martin"
+    }
   },
   {
     "slug": "2026-06-17-vohburg-an-der-donau-ratisbonne",
@@ -204147,8 +204189,15 @@
     "minAltitude": 345,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {}
+    "thanks": "Uli et Christian",
+    "thanksTranslations": {
+      "en": "Uli and Christian",
+      "es": "Uli y Christian",
+      "it": "Uli e Christian",
+      "de": "Uli und Christian",
+      "nl": "Uli en Christian",
+      "fr": "Uli et Christian"
+    }
   },
   {
     "slug": "2026-06-18-zeitlarn-osterhofen",
@@ -217159,8 +217208,8 @@
       ]
     ],
     "minAltitude": 306,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Meier,+Ro%C3%9Ffelden+1A,+94486+Osterhofen,+Allemagne/data=!4m2!3m1!1s0x47750539c2b11c3d:0x8a0c5785a8b52d43!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e1b5c017-3a1f-420e-9262-8e53636424ec&g_st=ac",
+    "lodgingName": "Camping Meier, Roßfelden 1A, 94486 Osterhofen, Allemagne",
     "thanks": "",
     "thanksTranslations": {}
   }

@@ -64,8 +64,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Danielle et Pierre",
+  "thanksTranslations": {
+    "en": "Danielle and Pierre",
+    "es": "Danielle y Pierre",
+    "it": "Danielle e Pierre",
+    "de": "Danielle und Pierre",
+    "nl": "Danielle en Pierre",
+    "fr": "Danielle et Pierre"
+  },
   "photos": [
     {
       "src": "/media/2026-06-03-gien-sauvigny-les-bois/café sancerre à sancerre.webp",

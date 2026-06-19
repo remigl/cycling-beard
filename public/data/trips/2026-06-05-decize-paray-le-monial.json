@@ -64,8 +64,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Pierre Emmanuel",
+  "thanksTranslations": {
+    "en": "Pierre Emmanuel",
+    "es": "Pierre Emmanuel",
+    "it": "Pierre Emmanuel",
+    "de": "Pierre Emmanuel",
+    "nl": "Pierre Emmanuel",
+    "fr": "Pierre Emmanuel"
+  },
   "photos": [
     {
       "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",

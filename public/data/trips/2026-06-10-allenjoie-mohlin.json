@@ -64,8 +64,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Anja et Sandro",
+  "thanksTranslations": {
+    "en": "Anja and Sandro",
+    "es": "Anja y Sandro",
+    "it": "Anja e Sandro",
+    "de": "Anja und Sandro",
+    "nl": "Anja en Sandro",
+    "fr": "Anja et Sandro"
+  },
   "photos": [
     {
       "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",

@@ -64,8 +64,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Aurelie",
+  "thanksTranslations": {
+    "en": "Aurelie",
+    "es": "Aurelie",
+    "it": "Aurelie",
+    "de": "Aurelie",
+    "nl": "Aurelie",
+    "fr": "Aurelie"
+  },
   "photos": [
     {
       "src": "/media/2026-05-31-le-menitre-tours/château de saumur 2.webp",

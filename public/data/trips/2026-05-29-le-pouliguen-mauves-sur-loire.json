@@ -49,10 +49,10 @@
       ]
     },
     "it": {
-      "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare il destino.",
+      "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
       "quote": null,
       "fullStory": [
-        "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
+        "Il ponte di Saint-Nazaire va attraversato in bicicletta solo una volta nella vita; dopo, è come sfidare il destino.",
         "Notte a casa di Jeff e del suo gatto Bada. Sono stati davvero gentili, serata a base di pizza e pastis analcolico.",
         "Un risveglio da veri duri."
       ]
@@ -61,7 +61,7 @@
       "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
       "quote": null,
       "fullStory": [
-        "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
+        "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
         "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
         "Ein echt hartes Erwachen."
       ]
@@ -78,8 +78,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Jeff et son chat Bada",
+  "thanksTranslations": {
+    "en": "Jeff and his cat Bada",
+    "es": "Jeff y su gato Bada",
+    "it": "Jeff e il suo gatto Bada",
+    "de": "Jeff und seine Katze Bada",
+    "nl": "Jeff en zijn kat Bada",
+    "fr": "Jeff et son chat Bada"
+  },
   "photos": [
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/arrêt a saint nazaire.webp",

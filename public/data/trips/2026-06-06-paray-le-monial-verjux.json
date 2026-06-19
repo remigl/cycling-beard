@@ -64,8 +64,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Fanny",
+  "thanksTranslations": {
+    "en": "Fanny",
+    "es": "Fanny",
+    "it": "Fanny",
+    "de": "Fanny",
+    "nl": "Fanny",
+    "fr": "Fanny"
+  },
   "photos": [
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",

@@ -64,8 +64,15 @@
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Uli et Christian",
+  "thanksTranslations": {
+    "en": "Uli and Christian",
+    "es": "Uli y Christian",
+    "it": "Uli e Christian",
+    "de": "Uli und Christian",
+    "nl": "Uli en Christian",
+    "fr": "Uli et Christian"
+  },
   "photos": [
     {
       "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3640.webp",
