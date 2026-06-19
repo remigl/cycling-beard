@@ -689,15 +689,28 @@ function lodgingNameFromUrl(url) {
 async function parseNotesDoc(text) {
   const clean = (text || "").replace(/\r/g, "");
   const sections = { description: "", lodging: "", thanks: "" };
+  // Les titres acceptent un ":" final optionnel ET du contenu sur la même ligne
+  // (ex : "Hébergement : https://..."). Le contenu après le titre est conservé.
   const map = [
-    ["description", /^\s*description\s*$/i],
-    ["lodging", /^\s*(h[ée]bergement|logement|camping)\s*$/i],
-    ["thanks", /^\s*(remerciements?|merci)\s*$/i],
+    ["description", /^\s*description\s*:?\s*(.*)$/i],
+    ["lodging", /^\s*(?:h[ée]bergement|logement|camping)\s*:?\s*(.*)$/i],
+    ["thanks", /^\s*(?:remerciements?|merci)\s*:?\s*(.*)$/i],
   ];
   let current = null;
   for (const line of clean.split("\n")) {
-    const header = map.find(([, re]) => re.test(line));
-    if (header) { current = header[0]; continue; }
+    let matched = false;
+    for (const [key, re] of map) {
+      const m = line.match(re);
+      if (m) {
+        current = key;
+        // Si du texte suit le titre sur la même ligne, on le garde.
+        const inline = (m[1] || "").trim();
+        if (inline) sections[current] += inline + "\n";
+        matched = true;
+        break;
+      }
+    }
+    if (matched) continue;
     if (current) sections[current] += line + "\n";
   }
   const lodgingRaw = sections.lodging.trim();
@@ -709,7 +722,6 @@ async function parseNotesDoc(text) {
   if (lodgingUrl) {
     const expanded = await expandShortUrl(lodgingUrl);
     lodgingName = lodgingNameFromUrl(expanded);
-    // On garde l'URL longue dépliée (plus fiable que le lien court).
     lodgingUrl = expanded;
   }
   return {
@@ -1345,6 +1357,10 @@ async function main() {
     translations: s.translations || null,
     elevProfile: s.elevProfile || [],
     minAltitude: s.minAltitude ?? null,
+    lodgingUrl: s.lodgingUrl || "",
+    lodgingName: s.lodgingName || "",
+    thanks: s.thanks || "",
+    thanksTranslations: s.thanksTranslations || {},
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
