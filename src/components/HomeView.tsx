@@ -72,6 +72,21 @@ interface HomeViewProps {
 }
 
 export default function HomeView({ onNavigate, stats, trips, t, about, lang }: HomeViewProps) {
+  // Traduit le nom du pays courant selon la langue (données en français).
+  const COUNTRY_LABELS: Record<string, Record<string, string>> = {
+    France:    { en: "France",      es: "Francia",    it: "Francia",    de: "Frankreich",  nl: "Frankrijk" },
+    Suisse:    { en: "Switzerland", es: "Suiza",      it: "Svizzera",   de: "Schweiz",     nl: "Zwitserland" },
+    Allemagne: { en: "Germany",     es: "Alemania",   it: "Germania",   de: "Deutschland", nl: "Duitsland" },
+    Autriche:  { en: "Austria",     es: "Austria",    it: "Austria",    de: "Österreich",  nl: "Oostenrijk" },
+    Slovaquie: { en: "Slovakia",    es: "Eslovaquia", it: "Slovacchia", de: "Slowakei",    nl: "Slowakije" },
+    Hongrie:   { en: "Hungary",     es: "Hungría",    it: "Ungheria",   de: "Ungarn",      nl: "Hongarije" },
+    Croatie:   { en: "Croatia",     es: "Croacia",    it: "Croazia",    de: "Kroatien",    nl: "Kroatië" },
+    Serbie:    { en: "Serbia",      es: "Serbia",     it: "Serbia",     de: "Serbien",     nl: "Servië" },
+    Roumanie:  { en: "Romania",     es: "Rumanía",    it: "Romania",    de: "Rumänien",    nl: "Roemenië" },
+    Bulgarie:  { en: "Bulgaria",    es: "Bulgaria",   it: "Bulgaria",   de: "Bulgarien",   nl: "Bulgarije" },
+  };
+  const countryLabel = (c: string) => (!c || lang === "fr" ? c : COUNTRY_LABELS[c]?.[lang] ?? c);
+
   const latest = trips[trips.length - 1];
 
   // Diaporama : les 3 dernières étapes (cover en priorité, sinon 1ère photo)
@@ -211,7 +226,9 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             <div className="border-t border-white/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
               <span className="text-brand-sand flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                {stats ? `${t("home.current")} : ${stats.currentLocation}` : t("home.locating")}
+                {stats
+                  ? `${t("home.current")} : ${stats.currentLocation}${stats.currentCountry ? `, ${countryLabel(stats.currentCountry)}` : ""}`
+                  : t("home.locating")}
               </span>
 
               {/* Météo 2 jours : aujourd'hui | demain */}
