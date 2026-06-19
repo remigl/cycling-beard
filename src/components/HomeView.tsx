@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import { SiteStats, TripSummary } from "../types";
 import { Lang } from "../i18n";
 import RainRadar from "./RainRadar";
+import Globe from "./Globe";
 
 // URL Buy Me a Coffee
 const BMC_URL = "https://buymeacoffee.com/cyclingBeard";
@@ -89,29 +90,21 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
   const latest = trips[trips.length - 1];
 
-  // Diaporama : les 3 dernières étapes (cover en priorité, sinon 1ère photo)
-  const heroImages = (() => {
-    const imgs = trips
-      .slice(-3)
-      .reverse()
-      .map(tr => tr.coverImage || tr.thumbnail)
-      .filter(Boolean) as string[];
-    return imgs; // pas de photo factice : fond sombre tant que les vraies photos n'ont pas chargé
+  // Construit le tracé du globe à partir des vrais GPX (segments → [lng,lat]).
+  // Les segments sont stockés en [lat,lng] dans les données → on inverse.
+  const globeRoute: [number, number][] = (() => {
+    const out: [number, number][] = [];
+    for (const tr of trips) {
+      const segs = (tr.segments && tr.segments.length ? tr.segments : (tr.track ? [tr.track] : []));
+      for (const seg of segs) for (const [lat, lng] of seg) out.push([lng, lat]);
+    }
+    return out;
   })();
+  const globeHere: [number, number] | null =
+    (latest?.mapLng != null && latest?.mapLat != null) ? [latest.mapLng, latest.mapLat] : null;
 
-  const [slideIdx, setSlideIdx] = useState(0);
-  const [heroReady, setHeroReady] = useState(false); // 1re image chargée → fondu d'entrée
   const [weather, setWeather] = useState<WeatherDay[]>([]);
   const [radarOpen, setRadarOpen] = useState(false);
-
-  // Fait défiler le diaporama toutes les 5 secondes
-  useEffect(() => {
-    if (heroImages.length < 2) return;
-    const id = setInterval(() => {
-      setSlideIdx(i => (i + 1) % heroImages.length);
-    }, 5000);
-    return () => clearInterval(id);
-  }, [heroImages.length]);
 
   // Récupère la météo 2 jours de la position actuelle (dernier point GPS)
   useEffect(() => {
@@ -158,39 +151,12 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
   return (
     <div className="w-full bg-bg-dark">
 
-      {/* ── HERO ── */}
+      {/* ── HERO : globe interactif ── */}
       <div className="relative w-full h-[100dvh] min-h-[600px] overflow-hidden flex items-center justify-center font-sans">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-black/60 z-10" />
-          {heroImages.map((src, i) => (
-            <img
-              key={i}
-              src={src}
-              alt="The Cycling Beard"
-              referrerPolicy="no-referrer"
-              onLoad={() => { if (i === 0) setHeroReady(true); }}
-              fetchPriority={i === 0 ? "high" : "low"}
-              className="absolute inset-0 w-full h-full object-cover scale-102 filter brightness-[0.80] contrast-105 transition-opacity duration-[1500ms] ease-in-out"
-              style={{ opacity: heroReady && i === slideIdx ? 1 : 0 }}
-            />
-          ))}
-        </div>
-
-        {/* Indicateurs de diaporama */}
-        {heroImages.length > 1 && (
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-            {heroImages.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setSlideIdx(i)}
-                aria-label={`Photo ${i + 1}`}
-                className={`h-1.5 rounded-full transition-all cursor-pointer ${
-                  i === slideIdx ? "w-6 bg-brand-sand" : "w-1.5 bg-white/40 hover:bg-white/60"
-                }`}
-              />
-            ))}
-          </div>
-        )}
+        {/* Globe en fond (Three.js) */}
+        <Globe route={globeRoute} here={globeHere} />
+        {/* Léger voile pour la lisibilité du texte par-dessus le globe */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-[#0a0a0f]/80 pointer-events-none z-[5]" />
 
         <div className="relative z-20 w-full max-w-5xl px-4 md:px-10 flex flex-col justify-center items-center text-center">
           <motion.div
