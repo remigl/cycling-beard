@@ -18,7 +18,9 @@
     "react": "^19.0.1",
     "react-dom": "^19.0.1",
     "vite": "^6.2.3",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4", 
+    "react-globe.gl": "^2.38.0",
+    "three": "^0.160.0",
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
