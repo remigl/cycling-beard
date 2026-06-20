@@ -155,8 +155,8 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       <div className="relative w-full h-[100dvh] min-h-[600px] overflow-hidden flex items-center justify-center font-sans">
         {/* Globe en fond (Three.js) */}
         <Globe route={globeRoute} here={globeHere} />
-        {/* Léger voile pour la lisibilité du texte par-dessus le globe */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-[#0a0a0f]/80 pointer-events-none z-[5]" />
+        {/* Transition douce vers le fond de page en bas */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FAF9F6] pointer-events-none z-[5]" />
 
         <div className="relative z-20 w-full max-w-5xl px-4 md:px-10 flex flex-col justify-center items-center text-center">
           <motion.div
@@ -165,7 +165,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             transition={{ duration: 1.0 }}
             className="mb-10"
           >
-            <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-brand-sand uppercase tracking-[0.03em] leading-tight">
+            <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight drop-shadow-[0_2px_8px_rgba(255,255,255,0.6)]">
               THE CYCLING BEARD
             </h1>
           </motion.div>
