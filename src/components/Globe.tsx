@@ -54,14 +54,14 @@ export default function Globe({ route, here }: GlobeProps) {
       const texCanvas = document.createElement("canvas");
       texCanvas.width = 2048; texCanvas.height = 1024;
       const ctx = texCanvas.getContext("2d");
-      ctx.fillStyle = "#bfe0e3"; ctx.fillRect(0, 0, 2048, 1024);
+      ctx.fillStyle = "#0f2547"; ctx.fillRect(0, 0, 2048, 1024);
       const tex = new THREE.CanvasTexture(texCanvas);
       const img = new Image();
       img.crossOrigin = "anonymous";
       img.onload = () => {
         ctx.drawImage(img, 0, 0, 2048, 1024);
         ctx.globalCompositeOperation = "source-in";
-        ctx.fillStyle = "#c9a86a"; ctx.fillRect(0, 0, 2048, 1024);
+        ctx.fillStyle = "#3d6ea8"; ctx.fillRect(0, 0, 2048, 1024);
         ctx.globalCompositeOperation = "source-over";
         tex.needsUpdate = true;
       };
@@ -69,14 +69,14 @@ export default function Globe({ route, here }: GlobeProps) {
 
       globe.add(new THREE.Mesh(
         new THREE.SphereGeometry(R, 64, 64),
-        new THREE.MeshPhongMaterial({ map: tex, shininess: 8, specular: 0x335555 })
+        new THREE.MeshPhongMaterial({ map: tex, shininess: 12, specular: 0x1a3a5a })
       ));
 
       globe.add(new THREE.Mesh(
         new THREE.SphereGeometry(R * 1.14, 64, 64),
         new THREE.ShaderMaterial({
           transparent: true, side: THREE.BackSide, blending: THREE.AdditiveBlending,
-          uniforms: { c: { value: new THREE.Color(0x2a6b73) } },
+          uniforms: { c: { value: new THREE.Color(0x4a90d9) } },
           vertexShader: "varying vec3 vN;void main(){vN=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}",
           fragmentShader: "varying vec3 vN;uniform vec3 c;void main(){float i=pow(.55-dot(vN,vec3(0,0,1.)),3.);gl_FragColor=vec4(c,1.)*i*.7;}",
         })
@@ -108,7 +108,7 @@ export default function Globe({ route, here }: GlobeProps) {
         m.position.copy(lle(lon, lat, R * 1.012)); return m;
       };
       const start = sampled[0];
-      globe.add(mk(start[0], start[1], TEAL, 0.014));
+      globe.add(mk(start[0], start[1], 0xffffff, 0.014));
       const hp = here || sampled[sampled.length - 1];
       const hereMesh = mk(hp[0], hp[1], BRAND, 0.018);
       globe.add(hereMesh);
