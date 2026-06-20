@@ -165,7 +165,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             transition={{ duration: 1.0 }}
             className="mb-10"
           >
-            <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight drop-shadow-[0_2px_8px_rgba(255,255,255,0.6)]">
+            <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.3)]">
               THE CYCLING BEARD
             </h1>
           </motion.div>
@@ -174,15 +174,15 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.0, delay: 0.2 }}
-            className="w-full max-w-4xl bg-black/45 backdrop-blur-md rounded-2xl border border-white/10 p-6 md:p-8 flex flex-col gap-6 shadow-2xl"
+            className="w-full max-w-4xl bg-[#0f2547]/55 backdrop-blur-xl rounded-3xl border border-white/15 p-6 md:p-8 flex flex-col gap-6 shadow-[0_8px_40px_rgba(15,37,71,0.4)]"
           >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-white/5 md:divide-y-0 md:divide-x divide-white/10">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-white/10 md:divide-y-0 md:divide-x divide-white/15">
               {metrics.map((m, i) => (
                 <div key={i} className="flex flex-col items-center justify-center pt-3 md:pt-0 pb-3 md:pb-0 px-2 first:pt-0 last:pb-0">
-                  <div className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-brand-sand tracking-tight">
+                  <div className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight">
                     {m.value}
                   </div>
-                  <div className="font-display font-extrabold text-[10px] text-brand-sand uppercase tracking-[0.15em] mt-2">
+                  <div className="font-display font-extrabold text-[10px] text-white/70 uppercase tracking-[0.15em] mt-2">
                     {m.label}
                   </div>
                 </div>
@@ -190,8 +190,8 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             </div>
 
             <div className="border-t border-white/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
-              <span className="text-brand-sand flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              <span className="text-white flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
                 {stats
                   ? `${t("home.current")} : ${stats.currentLocation}${stats.currentCountry ? `, ${countryLabel(stats.currentCountry)}` : ""}`
                   : t("home.locating")}
