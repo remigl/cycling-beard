@@ -168459,9 +168459,9 @@
     "endCity": "Sigmaringen",
     "distanceKm": 114.3,
     "elevationGain": 1407,
-    "coverImage": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
-    "thumbnail": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
-    "shortDescription": "Repas avec Astrid et Olivier !",
+    "coverImage": "/media/2026-06-13-wangen-sigmaringen/die donauwelle.webp",
+    "thumbnail": "/media/2026-06-13-wangen-sigmaringen/thumb_die donauwelle.webp",
+    "shortDescription": "Repas avec Astrid et Oliver !",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 48.0883042,
@@ -174762,28 +174762,23 @@
     ],
     "tags": [],
     "fullStory": [
-      "Repas avec Astrid et Olivier !"
+      "Repas avec Astrid et Oliver !"
     ],
     "photos": [
       {
-        "src": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
-        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
+        "src": "/media/2026-06-13-wangen-sigmaringen/die donauwelle.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_die donauwelle.webp",
         "alt": "Cover"
       },
       {
-        "src": "/media/2026-06-13-wangen-sigmaringen/20260613_155654.webp",
-        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_20260613_155654.webp",
-        "alt": "155654"
+        "src": "/media/2026-06-13-wangen-sigmaringen/die donauwelle.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_die donauwelle.webp",
+        "alt": "Die Donauwelle"
       },
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/img_3538.webp",
         "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3538.webp",
         "alt": "Img 3538"
-      },
-      {
-        "src": "/media/2026-06-13-wangen-sigmaringen/img_3552.webp",
-        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3552.webp",
-        "alt": "Img 3552"
       },
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/img_3562.webp",
@@ -174799,49 +174794,54 @@
         "src": "/media/2026-06-13-wangen-sigmaringen/img_3578.webp",
         "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3578.webp",
         "alt": "Img 3578"
+      },
+      {
+        "src": "/media/2026-06-13-wangen-sigmaringen/le danube a tuttlingen.webp",
+        "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_le danube a tuttlingen.webp",
+        "alt": "Le Danube A Tuttlingen"
       }
     ],
     "translations": {
       "fr": {
-        "summary": "Repas avec Astrid et Olivier !",
+        "summary": "Repas avec Astrid et Oliver !",
         "quote": null,
         "fullStory": [
-          "Repas avec Astrid et Olivier !"
+          "Repas avec Astrid et Oliver !"
         ]
       },
       "en": {
-        "summary": "Dinner with Astrid and Olivier!",
+        "summary": "Dinner with Astrid and Oliver!",
         "quote": null,
         "fullStory": [
-          "Dinner with Astrid and Olivier!"
+          "Dinner with Astrid and Oliver!"
         ]
       },
       "es": {
-        "summary": "¡Cena con Astrid y Olivier!",
+        "summary": "¡Cena con Astrid y Oliver!",
         "quote": null,
         "fullStory": [
-          "¡Cena con Astrid y Olivier!"
+          "¡Cena con Astrid y Oliver!"
         ]
       },
       "it": {
-        "summary": "Cena con Astrid e Olivier!",
+        "summary": "Cena con Astrid e Oliver!",
         "quote": null,
         "fullStory": [
-          "Cena con Astrid e Olivier!"
+          "Cena con Astrid e Oliver!"
         ]
       },
       "de": {
-        "summary": "Essen mit Astrid und Olivier!",
+        "summary": "Essen mit Astrid und Oliver!",
         "quote": null,
         "fullStory": [
-          "Essen mit Astrid und Olivier!"
+          "Essen mit Astrid und Oliver!"
         ]
       },
       "nl": {
-        "summary": "Etentje met Astrid en Olivier!",
+        "summary": "Etentje met Astrid en Oliver!",
         "quote": null,
         "fullStory": [
-          "Etentje met Astrid en Olivier!"
+          "Etentje met Astrid en Oliver!"
         ]
       }
     },
