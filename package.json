@@ -20,7 +20,7 @@
     "vite": "^6.2.3",
     "leaflet": "^1.9.4", 
     "react-globe.gl": "^2.38.0",
-    "three": "0.160.1",
+    "three": "0.160.1"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
