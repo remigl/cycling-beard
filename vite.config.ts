@@ -10,8 +10,7 @@ export default defineConfig(() => {
       alias: {
         '@': path.resolve(__dirname, '.'),
         'three/webgpu': path.resolve(__dirname, 'node_modules/three/build/three.webgpu.js'),
-        'three/tsl': path.resolve(__dirname, 'node_modules/three/build/three.tsl.js'),
-      },
+             },
     },
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
