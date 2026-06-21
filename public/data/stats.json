@@ -1,12 +1,12 @@
 {
-  "totalKm": 2218,
+  "totalKm": 2316,
   "totalCountries": 4,
   "totalDays": 26,
-  "totalStages": 22,
-  "totalElevation": 12949,
+  "totalStages": 23,
+  "totalElevation": 13323,
   "currentCountry": "Autriche",
-  "currentLocation": "Linz",
+  "currentLocation": "Pöchlarn",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-06-21",
-  "latestStageSlug": "2026-06-20-osterhofen-linz"
+  "latestStageSlug": "2026-06-21-linz-pochlarn"
 }
