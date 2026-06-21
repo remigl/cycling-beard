@@ -52,7 +52,6 @@ export default function Globe({ route, here }: GlobeProps) {
     const g = globeRef.current;
     if (!g || !size.w) return;
 
-    // Réglages de base (protégés : ne doivent jamais casser la page)
     try {
       const controls = g.controls();
       controls.autoRotate = true;
@@ -66,30 +65,45 @@ export default function Globe({ route, here }: GlobeProps) {
     } catch {}
     try { g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch {}
 
-    // ── Jour/nuit + nuages : chaque effet est isolé, une erreur n'affecte rien ──
     let cleanup = () => {};
-    try {
+    let raf = 0, sunTimer: any = null, clouds: any = null, cloudsMat: any = null;
+    let cancelled = false;
+
+    // Attend que le globe soit initialisé (scene + material prêts), puis applique
+    // jour/nuit + nuages. Réessaie quelques fois si pas encore prêt.
+    let tries = 0;
+    const setup = () => {
+      if (cancelled) return;
+      tries++;
+      let scene: any = null, material: any = null, R = 100;
+      try { scene = g.scene(); } catch {}
+      try { material = g.globeMaterial && g.globeMaterial(); } catch {}
+      try { R = g.getGlobeRadius(); } catch {}
+
+      if ((!scene || !material) && tries < 20) {
+        setTimeout(setup, 200); // pas encore prêt → réessaie
+        return;
+      }
+      if (!scene) return;
+
       const loader = new THREE.TextureLoader();
       loader.setCrossOrigin("anonymous");
       const base = "//cdn.jsdelivr.net/npm/three-globe/example/img/";
 
-      // Jour/nuit (optionnel : si le shader échoue, on garde la texture de jour)
-      let sunTimer: any = null;
+      // ── Jour / nuit ──
       try {
-        const dayTex = loader.load(base + "earth-day.jpg");
-        const nightTex = loader.load(base + "earth-night.jpg");
-        const material = g.globeMaterial && g.globeMaterial();
         if (material) {
+          const dayTex = loader.load(base + "earth-day.jpg");
+          const nightTex = loader.load(base + "earth-night.jpg");
           material.onBeforeCompile = (shader: any) => {
             shader.uniforms.dayTexture = { value: dayTex };
             shader.uniforms.nightTexture = { value: nightTex };
             shader.uniforms.sunDirection = { value: new THREE.Vector3(1, 0, 0) };
             material.userData.shader = shader;
-            shader.fragmentShader = "uniform sampler2D dayTexture;\nuniform sampler2D nightTexture;\nuniform vec3 sunDirection;\n" + shader.fragmentShader;
-            const marker = shader.fragmentShader.includes("#include <map_fragment>") ? "#include <map_fragment>" : null;
             const uvVar = shader.fragmentShader.includes("vMapUv") ? "vMapUv" : "vUv";
-            if (marker) {
-              shader.fragmentShader = shader.fragmentShader.replace(marker,
+            shader.fragmentShader = "uniform sampler2D dayTexture;\nuniform sampler2D nightTexture;\nuniform vec3 sunDirection;\n" + shader.fragmentShader;
+            if (shader.fragmentShader.includes("#include <map_fragment>")) {
+              shader.fragmentShader = shader.fragmentShader.replace("#include <map_fragment>",
                 `#ifdef USE_MAP
                   vec4 dayC = texture2D(dayTexture, ${uvVar});
                   vec4 nightC = texture2D(nightTexture, ${uvVar});
@@ -103,11 +117,9 @@ export default function Globe({ route, here }: GlobeProps) {
             try {
               const now = new Date();
               const utcH = now.getUTCHours() + now.getUTCMinutes() / 60;
-              const sunLng = 180 - utcH * 15;
-              const theta = (90 - sunLng) * Math.PI / 180;
-              const dir = new THREE.Vector3(Math.cos(theta), 0, Math.sin(theta));
+              const theta = (90 - (180 - utcH * 15)) * Math.PI / 180;
               const sh = material.userData.shader;
-              if (sh) sh.uniforms.sunDirection.value.copy(dir);
+              if (sh) sh.uniforms.sunDirection.value.set(Math.cos(theta), 0, Math.sin(theta));
             } catch {}
           };
           updateSun();
@@ -115,28 +127,27 @@ export default function Globe({ route, here }: GlobeProps) {
         }
       } catch {}
 
-      // Nuages (optionnel)
-      let raf = 0; let clouds: any = null; let cloudsMat: any = null;
+      // ── Nuages ──
       try {
-        const R = g.getGlobeRadius();
         cloudsMat = new THREE.MeshPhongMaterial({
           map: loader.load(base + "clouds.png"),
           transparent: true, opacity: 0.4, depthWrite: false,
         });
         clouds = new THREE.Mesh(new THREE.SphereGeometry(R * 1.012, 64, 64), cloudsMat);
-        g.scene().add(clouds);
+        scene.add(clouds);
         const spin = () => { raf = requestAnimationFrame(spin); if (clouds) clouds.rotation.y += 0.0004; };
         spin();
       } catch {}
+    };
+    setup();
 
-      cleanup = () => {
-        try { if (sunTimer) clearInterval(sunTimer); } catch {}
-        try { cancelAnimationFrame(raf); } catch {}
-        try { if (clouds) g.scene().remove(clouds); } catch {}
-        try { if (cloudsMat) cloudsMat.dispose(); } catch {}
-      };
-    } catch {}
-
+    cleanup = () => {
+      cancelled = true;
+      try { if (sunTimer) clearInterval(sunTimer); } catch {}
+      try { cancelAnimationFrame(raf); } catch {}
+      try { if (clouds) g.scene().remove(clouds); } catch {}
+      try { if (cloudsMat) cloudsMat.dispose(); } catch {}
+    };
     return () => cleanup();
   }, [size.w, size.h, hp[0], hp[1]]);
 
