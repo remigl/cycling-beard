@@ -64,7 +64,7 @@ export default function Globe({ route, here }: GlobeProps) {
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.55;
     controls.enableZoom = false;
-    g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.8 }, 0);
+    g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.5 }, 0);
     // Laisse le scroll vertical de la page passer : le doigt qui glisse vers le
     // haut/bas fait défiler, seul le glissement horizontal tourne le globe.
     const canvas = wrapRef.current?.querySelector("canvas");
