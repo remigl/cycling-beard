@@ -155,40 +155,40 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
   return (
     <div className="w-full bg-bg-dark">
 
-      {/* ── HERO : globe SEUL en plein écran ── */}
+      {/* ── HERO : titre + globe rapprochés ── */}
       <div
-        className="relative w-full overflow-hidden flex flex-col items-center justify-between font-sans"
+        className="relative w-full overflow-hidden flex flex-col items-center font-sans"
         style={{ height: heroH ? `${heroH}px` : "100vh" }}
       >
-        {/* Globe en fond, décalé vers le haut pour être proche du titre */}
-        <div className="absolute inset-x-0 top-0 h-[85%] z-0">
-          <Globe route={globeRoute} here={globeHere} />
-        </div>
-
-        {/* Titre discret en haut, par-dessus le globe */}
+        {/* Titre */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0 }}
-          className="relative z-20 pt-8 px-4 text-center pointer-events-none"
+          className="relative z-20 pt-10 px-4 text-center pointer-events-none shrink-0"
         >
           <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight">
             THE CYCLING BEARD
           </h1>
         </motion.div>
 
-        {/* Indicateur de scroll en bas */}
+        {/* Globe : remplit l'espace restant entre le titre et la flèche */}
+        <div className="relative flex-1 w-full min-h-0 z-0">
+          <Globe route={globeRoute} here={globeHere} />
+        </div>
+
+        {/* Indicateur de scroll */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1, 1], y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="relative z-20 mb-8 flex flex-col items-center gap-2 text-[#2A6B73]/70 pointer-events-none"
+          className="relative z-20 mb-6 flex flex-col items-center gap-2 text-[#2A6B73]/70 pointer-events-none shrink-0"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </motion.div>
 
         {/* Léger dégradé bas pour fondre vers la section stats */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#FAF9F6] pointer-events-none z-[5]" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#FAF9F6] pointer-events-none z-[5]" />
       </div>
 
       {/* ── STATS + MÉTÉO (révélées au scroll, juste sous le globe) ── */}
