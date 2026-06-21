@@ -64,13 +64,95 @@ export default function Globe({ route, here }: GlobeProps) {
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.55;
     controls.enableZoom = false;
-    g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.5 }, 0);
-    // Laisse le scroll vertical de la page passer : le doigt qui glisse vers le
-    // haut/bas fait défiler, seul le glissement horizontal tourne le globe.
+    g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.4 }, 0);
     const canvas = wrapRef.current?.querySelector("canvas");
     if (canvas) (canvas as HTMLElement).style.touchAction = "pan-y";
-    // Rendu plus net (densité de pixels du écran, plafonnée à 2 pour la perf)
     try { g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch {}
+
+    // ── Jour / nuit + nuages ──────────────────────────────────────────────
+    let cleanupExtra = () => {};
+    (async () => {
+      const T = await import("three");
+      const loader = new T.TextureLoader();
+      loader.setCrossOrigin("anonymous");
+      const base = "//cdn.jsdelivr.net/npm/three-globe/example/img/";
+
+      const dayTex = loader.load(base + "earth-day.jpg");
+      const nightTex = loader.load(base + "earth-night.jpg");
+
+      // Shader jour/nuit : mélange selon l'angle entre la normale et la direction du soleil
+      const material = g.globeMaterial();
+      material.onBeforeCompile = (shader: any) => {
+        shader.uniforms.dayTexture = { value: dayTex };
+        shader.uniforms.nightTexture = { value: nightTex };
+        shader.uniforms.sunDirection = { value: new T.Vector3(1, 0, 0) };
+        (material as any).userData.shader = shader;
+
+        shader.fragmentShader = "uniform sampler2D dayTexture;\nuniform sampler2D nightTexture;\nuniform vec3 sunDirection;\n" + shader.fragmentShader;
+        shader.fragmentShader = shader.fragmentShader.replace(
+          "#include <map_fragment>",
+          `
+          #ifdef USE_MAP
+            vec4 dayColor = texture2D(dayTexture, vMapUv);
+            vec4 nightColor = texture2D(nightTexture, vMapUv);
+            float intensity = dot(normalize(vNormal), normalize(sunDirection));
+            float mixAmount = smoothstep(-0.15, 0.25, intensity);
+            vec4 earthColor = mix(nightColor, dayColor, mixAmount);
+            diffuseColor *= earthColor;
+          #endif
+          `
+        );
+      };
+      material.needsUpdate = true;
+
+      // Position du soleil en temps réel (approximation : longitude = heure UTC)
+      const updateSun = () => {
+        const now = new Date();
+        const utcHours = now.getUTCHours() + now.getUTCMinutes() / 60;
+        // Le soleil est au zénith à la longitude = 180 - (heure UTC * 15)
+        const sunLng = 180 - utcHours * 15;
+        const sunLat = 0; // approximation (on ignore l'inclinaison saisonnière)
+        const phi = (90 - sunLat) * Math.PI / 180;
+        const theta = (90 - sunLng) * Math.PI / 180;
+        const dir = new T.Vector3(
+          Math.sin(phi) * Math.cos(theta),
+          Math.cos(phi),
+          Math.sin(phi) * Math.sin(theta)
+        );
+        const sh = (material as any).userData.shader;
+        if (sh) sh.uniforms.sunDirection.value.copy(dir);
+      };
+      updateSun();
+      const sunTimer = setInterval(updateSun, 60000); // maj chaque minute
+
+      // ── Couche de nuages ──
+      const R = g.getGlobeRadius();
+      const cloudsGeo = new T.SphereGeometry(R * 1.01, 64, 64);
+      const cloudsMat = new T.MeshPhongMaterial({
+        map: loader.load(base + "clouds.png"),
+        transparent: true,
+        opacity: 0.45,
+        depthWrite: false,
+      });
+      const clouds = new T.Mesh(cloudsGeo, cloudsMat);
+      g.scene().add(clouds);
+
+      let raf = 0;
+      const spin = () => {
+        raf = requestAnimationFrame(spin);
+        clouds.rotation.y += 0.0003; // rotation lente des nuages
+      };
+      spin();
+
+      cleanupExtra = () => {
+        clearInterval(sunTimer);
+        cancelAnimationFrame(raf);
+        g.scene().remove(clouds);
+        cloudsGeo.dispose(); cloudsMat.dispose();
+      };
+    })();
+
+    return () => cleanupExtra();
   }, [size.w, size.h, hp[0], hp[1]]);
 
   return (
