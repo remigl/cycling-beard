@@ -64,11 +64,13 @@ export default function Globe({ route, here }: GlobeProps) {
     controls.autoRotate = true;
     controls.autoRotateSpeed = 0.55;
     controls.enableZoom = false;
-    g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.2 }, 0);
+    g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.8 }, 0);
     // Laisse le scroll vertical de la page passer : le doigt qui glisse vers le
     // haut/bas fait défiler, seul le glissement horizontal tourne le globe.
     const canvas = wrapRef.current?.querySelector("canvas");
     if (canvas) (canvas as HTMLElement).style.touchAction = "pan-y";
+    // Rendu plus net (densité de pixels du écran, plafonnée à 2 pour la perf)
+    try { g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch {}
   }, [size.w, size.h, hp[0], hp[1]]);
 
   return (
@@ -79,7 +81,7 @@ export default function Globe({ route, here }: GlobeProps) {
           width={size.w}
           height={size.h}
           backgroundColor="rgba(0,0,0,0)"
-          globeImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg"
+          globeImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-day.jpg"
           bumpImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png"
           showAtmosphere={true}
           atmosphereColor="#9ec9ff"
