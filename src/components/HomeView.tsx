@@ -160,8 +160,10 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
         className="relative w-full overflow-hidden flex flex-col items-center justify-between font-sans"
         style={{ height: heroH ? `${heroH}px` : "100vh" }}
       >
-        {/* Globe en fond plein écran */}
-        <Globe route={globeRoute} here={globeHere} />
+        {/* Globe en fond, décalé vers le haut pour être proche du titre */}
+        <div className="absolute inset-x-0 top-0 h-[85%] z-0">
+          <Globe route={globeRoute} here={globeHere} />
+        </div>
 
         {/* Titre discret en haut, par-dessus le globe */}
         <motion.div
