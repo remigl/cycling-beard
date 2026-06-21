@@ -11,7 +11,7 @@
   "distanceKm": 143.7,
   "elevationGain": 542,
   "maxAltitude": 319,
-  "coverImage": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
+  "coverImage": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -68,9 +68,19 @@
   "thanksTranslations": {},
   "photos": [
     {
-      "src": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
-      "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3700.webp",
+      "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
+      "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
       "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
+      "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
+      "alt": "Img 3674"
+    },
+    {
+      "src": "/media/2026-06-20-osterhofen-linz/img_3682.webp",
+      "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3682.webp",
+      "alt": "Img 3682"
     },
     {
       "src": "/media/2026-06-20-osterhofen-linz/img_3700.webp",

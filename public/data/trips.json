@@ -217239,8 +217239,8 @@
     "endCity": "Linz",
     "distanceKm": 143.7,
     "elevationGain": 542,
-    "coverImage": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
-    "thumbnail": "/media/2026-06-20-osterhofen-linz/thumb_img_3700.webp",
+    "coverImage": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
+    "thumbnail": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -223490,9 +223490,19 @@
     ],
     "photos": [
       {
-        "src": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
-        "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3700.webp",
+        "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
+        "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
         "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
+        "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
+        "alt": "Img 3674"
+      },
+      {
+        "src": "/media/2026-06-20-osterhofen-linz/img_3682.webp",
+        "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3682.webp",
+        "alt": "Img 3682"
       },
       {
         "src": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
