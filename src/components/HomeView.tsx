@@ -105,6 +105,10 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
   const [weather, setWeather] = useState<WeatherDay[]>([]);
   const [radarOpen, setRadarOpen] = useState(false);
+  // Hauteur du hero figée au chargement → ne bouge plus quand la barre d'adresse
+  // mobile apparaît/disparaît au scroll (évite le redimensionnement saccadé).
+  const [heroH, setHeroH] = useState<number | null>(null);
+  useEffect(() => { setHeroH(window.innerHeight); }, []);
 
   // Récupère la météo 2 jours de la position actuelle (dernier point GPS)
   useEffect(() => {
@@ -152,7 +156,10 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
     <div className="w-full bg-bg-dark">
 
       {/* ── HERO : globe SEUL en plein écran ── */}
-      <div className="relative w-full h-[100dvh] overflow-hidden flex flex-col items-center justify-between font-sans">
+      <div
+        className="relative w-full overflow-hidden flex flex-col items-center justify-between font-sans"
+        style={{ height: heroH ? `${heroH}px` : "100vh" }}
+      >
         {/* Globe en fond plein écran */}
         <Globe route={globeRoute} here={globeHere} />
 
@@ -163,10 +170,10 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
           transition={{ duration: 1.0 }}
           className="relative z-20 pt-16 px-4 text-center pointer-events-none"
         >
-          <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight drop-shadow-[0_2px_16px_rgba(0,0,0,0.6)]">
+          <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight">
             THE CYCLING BEARD
           </h1>
-          <p className="mt-3 font-mono text-[11px] md:text-xs uppercase tracking-[0.3em] text-white/70 drop-shadow-[0_1px_8px_rgba(0,0,0,0.8)]">
+          <p className="mt-3 font-mono text-[11px] md:text-xs uppercase tracking-[0.3em] text-[#2A6B73]">
             EuroVelo 6 · Saint-Nazaire → Constanța
           </p>
         </motion.div>
@@ -176,9 +183,8 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1, 1], y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="relative z-20 mb-8 flex flex-col items-center gap-2 text-white/60 pointer-events-none"
+          className="relative z-20 mb-8 flex flex-col items-center gap-2 text-[#2A6B73]/70 pointer-events-none"
         >
-          <span className="font-mono text-[9px] uppercase tracking-[0.25em]">{t("home.current")}</span>
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </motion.div>
 
@@ -187,30 +193,30 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       </div>
 
       {/* ── STATS + MÉTÉO (révélées au scroll, juste sous le globe) ── */}
-      <div className="relative w-full flex justify-center px-4 md:px-10 -mt-4 mb-4 font-sans">
+      <div className="relative w-full flex justify-center px-4 md:px-10 -mt-8 mb-4 font-sans">
         <div className="relative z-20 w-full max-w-5xl flex flex-col justify-center items-center text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="w-full max-w-4xl bg-[#0f2547] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col gap-6 shadow-[0_8px_40px_rgba(15,37,71,0.25)]"
+            className="w-full max-w-4xl bg-white/70 backdrop-blur-sm rounded-3xl border border-[#2A6B73]/15 p-6 md:p-8 flex flex-col gap-6 shadow-[0_4px_30px_rgba(42,107,115,0.08)]"
           >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-white/10 md:divide-y-0 md:divide-x divide-white/15">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-[#2A6B73]/10 md:divide-y-0 md:divide-x md:divide-[#2A6B73]/10">
               {metrics.map((m, i) => (
                 <div key={i} className="flex flex-col items-center justify-center pt-3 md:pt-0 pb-3 md:pb-0 px-2 first:pt-0 last:pb-0">
-                  <div className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-white tracking-tight">
+                  <div className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-[#2A6B73] tracking-tight">
                     {m.value}
                   </div>
-                  <div className="font-display font-extrabold text-[10px] text-white/70 uppercase tracking-[0.15em] mt-2">
+                  <div className="font-display font-extrabold text-[10px] text-[#121212]/50 uppercase tracking-[0.15em] mt-2">
                     {m.label}
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="border-t border-white/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
-              <span className="text-white flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+            <div className="border-t border-[#2A6B73]/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
+              <span className="text-[#121212]/80 flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 {stats
                   ? `${t("home.current")} : ${stats.currentLocation}${stats.currentCountry ? `, ${countryLabel(stats.currentCountry)}` : ""}`
                   : t("home.locating")}
@@ -218,26 +224,26 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
               {/* Météo 2 jours : aujourd'hui | demain */}
               {weather.length >= 2 && (
-                <div className="mt-3 w-full border-t border-white/10 pt-5">
-                  <div className="grid grid-cols-2 divide-x divide-white/10">
+                <div className="mt-3 w-full border-t border-[#2A6B73]/10 pt-5">
+                  <div className="grid grid-cols-2 divide-x divide-[#2A6B73]/10">
                     {weather.slice(0, 2).map((day, i) => (
                       <div key={i} className={`flex flex-col items-center text-center gap-2.5 ${i === 0 ? "pr-5" : "pl-5"}`}>
-                        <span className="text-[10px] uppercase tracking-widest text-brand-sand font-bold">{day.label}</span>
+                        <span className="text-[10px] uppercase tracking-widest text-[#2A6B73] font-bold">{day.label}</span>
                         <span className="text-4xl leading-none">{day.icon}</span>
                         <div className="text-base font-semibold">
-                          <span className="text-red-400">{day.tempMax}°</span>
-                          <span className="text-text-dim/40 mx-1.5">/</span>
-                          <span className="text-sky-400">{day.tempMin}°</span>
+                          <span className="text-red-500">{day.tempMax}°</span>
+                          <span className="text-[#121212]/30 mx-1.5">/</span>
+                          <span className="text-sky-600">{day.tempMin}°</span>
                         </div>
-                        <div className="flex items-center gap-4 font-mono text-[11px] text-text-dim mt-1">
+                        <div className="flex items-center gap-4 font-mono text-[11px] text-[#121212]/60 mt-1">
                           <span className="flex items-center gap-1.5">
-                            <span className="text-text-dim/60">{t("weather.uv")}</span>
+                            <span className="text-[#121212]/40">{t("weather.uv")}</span>
                             <span className={`font-bold ${uvColor(day.uvMax)}`}>{day.uvMax}</span>
                           </span>
                           <span className="flex items-center gap-1.5">
                             <span className="text-sm leading-none">💨</span>
-                            <span className="text-brand-sand font-bold">{windCardinal(day.windDir, lang)}</span>
-                            <span>{day.windMax}<span className="text-[8px] text-text-dim/60 ml-0.5">km/h</span></span>
+                            <span className="text-[#2A6B73] font-bold">{windCardinal(day.windDir, lang)}</span>
+                            <span>{day.windMax}<span className="text-[8px] text-[#121212]/40 ml-0.5">km/h</span></span>
                           </span>
                         </div>
                       </div>
@@ -248,7 +254,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                   {latest?.mapLat && latest?.mapLng && (
                     <button
                       onClick={() => setRadarOpen(true)}
-                      className="mt-5 w-full inline-flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-widest py-3 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-bg-dark transition-all cursor-pointer"
+                      className="mt-5 w-full inline-flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-widest py-3 rounded-full border border-[#2A6B73]/40 text-[#2A6B73] hover:bg-[#2A6B73] hover:text-white transition-all cursor-pointer"
                     >
                       🌧️ {t("radar.button")}
                     </button>
