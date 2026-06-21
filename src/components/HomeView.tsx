@@ -173,9 +173,6 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
           <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight">
             THE CYCLING BEARD
           </h1>
-          <p className="mt-3 font-mono text-[11px] md:text-xs uppercase tracking-[0.3em] text-[#2A6B73]">
-            EuroVelo 6 · Saint-Nazaire → Constanța
-          </p>
         </motion.div>
 
         {/* Indicateur de scroll en bas */}
