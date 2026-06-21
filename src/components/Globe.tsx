@@ -80,10 +80,12 @@ export default function Globe({ route, here }: GlobeProps) {
         const loader = new THREE.TextureLoader();
         loader.setCrossOrigin("anonymous");
         loader.load(
-          "https://unpkg.com/three-globe/example/clouds/clouds.png",
+          // Nuages quasi temps réel (maj toutes les 3h, CORS activé, prévu pour three.js).
+          // Source : live-cloud-maps de Matt Eason. Repli silencieux si indispo.
+          "https://clouds.matteason.co.uk/images/2048x1024/clouds-alpha.png",
           (tex) => {
             if (cancelled) return;
-            cloudsMat = new THREE.MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.45, depthWrite: false });
+            cloudsMat = new THREE.MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.85, depthWrite: false });
             clouds = new THREE.Mesh(new THREE.SphereGeometry(R * 1.012, 75, 75), cloudsMat);
             scene.add(clouds);
             const spin = () => { raf = requestAnimationFrame(spin); if (clouds) clouds.rotation.y += 0.0004; };
