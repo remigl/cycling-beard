@@ -168,7 +168,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0 }}
-          className="relative z-20 pt-16 px-4 text-center pointer-events-none"
+          className="relative z-20 pt-8 px-4 text-center pointer-events-none"
         >
           <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight">
             THE CYCLING BEARD
