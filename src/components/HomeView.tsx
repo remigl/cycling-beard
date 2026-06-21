@@ -151,30 +151,50 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
   return (
     <div className="w-full bg-bg-dark">
 
-      {/* ── HERO : globe interactif ── */}
-      <div className="relative w-full h-[100dvh] min-h-[600px] overflow-hidden flex items-center justify-center font-sans">
-        {/* Globe en fond (Three.js) */}
+      {/* ── HERO : globe SEUL en plein écran ── */}
+      <div className="relative w-full h-[100dvh] overflow-hidden flex flex-col items-center justify-between font-sans">
+        {/* Globe en fond plein écran */}
         <Globe route={globeRoute} here={globeHere} />
-        {/* Transition douce vers le fond de page en bas */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FAF9F6] pointer-events-none z-[5]" />
 
-        <div className="relative z-20 w-full max-w-5xl px-4 md:px-10 flex flex-col justify-center items-center text-center">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1.0 }}
-            className="mb-10"
-          >
-            <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight drop-shadow-[0_2px_12px_rgba(0,0,0,0.3)]">
-              THE CYCLING BEARD
-            </h1>
-          </motion.div>
+        {/* Titre discret en haut, par-dessus le globe */}
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0 }}
+          className="relative z-20 pt-16 px-4 text-center pointer-events-none"
+        >
+          <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight drop-shadow-[0_2px_16px_rgba(0,0,0,0.6)]">
+            THE CYCLING BEARD
+          </h1>
+          <p className="mt-3 font-mono text-[11px] md:text-xs uppercase tracking-[0.3em] text-white/70 drop-shadow-[0_1px_8px_rgba(0,0,0,0.8)]">
+            EuroVelo 6 · Saint-Nazaire → Constanța
+          </p>
+        </motion.div>
 
+        {/* Indicateur de scroll en bas */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: [0, 1, 1], y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="relative z-20 mb-8 flex flex-col items-center gap-2 text-white/60 pointer-events-none"
+        >
+          <span className="font-mono text-[9px] uppercase tracking-[0.25em]">{t("home.current")}</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+        </motion.div>
+
+        {/* Léger dégradé bas pour fondre vers la section stats */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#FAF9F6] pointer-events-none z-[5]" />
+      </div>
+
+      {/* ── STATS + MÉTÉO (révélées au scroll, juste sous le globe) ── */}
+      <div className="relative w-full flex justify-center px-4 md:px-10 -mt-4 mb-4 font-sans">
+        <div className="relative z-20 w-full max-w-5xl flex flex-col justify-center items-center text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.0, delay: 0.2 }}
-            className="w-full max-w-4xl bg-[#0f2547]/55 backdrop-blur-xl rounded-3xl border border-white/15 p-6 md:p-8 flex flex-col gap-6 shadow-[0_8px_40px_rgba(15,37,71,0.4)]"
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="w-full max-w-4xl bg-[#0f2547] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col gap-6 shadow-[0_8px_40px_rgba(15,37,71,0.25)]"
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-white/10 md:divide-y-0 md:divide-x divide-white/15">
               {metrics.map((m, i) => (
