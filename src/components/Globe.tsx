@@ -12,8 +12,18 @@ export default function Globe({ route, here }: GlobeProps) {
   const [size, setSize] = useState({ w: 0, h: 0 });
 
   useEffect(() => {
+    let lastW = 0, lastH = 0;
     const measure = () => {
-      if (wrapRef.current) setSize({ w: wrapRef.current.clientWidth, h: wrapRef.current.clientHeight });
+      if (!wrapRef.current) return;
+      const w = wrapRef.current.clientWidth;
+      const h = wrapRef.current.clientHeight;
+      // On ignore les petits changements de hauteur dus à la barre d'adresse
+      // mobile (qui apparaît/disparaît au scroll) : ça évite le redimensionnement
+      // saccadé du globe. On ne resize que si la largeur change vraiment.
+      if (w !== lastW || Math.abs(h - lastH) > 120) {
+        lastW = w; lastH = h;
+        setSize({ w, h });
+      }
     };
     measure();
     window.addEventListener("resize", measure);
@@ -62,7 +72,7 @@ export default function Globe({ route, here }: GlobeProps) {
   }, [size.w, size.h, hp[0], hp[1]]);
 
   return (
-    <div ref={wrapRef} className="absolute inset-0 bg-[#0a0a0f]">
+    <div ref={wrapRef} className="absolute inset-0 bg-[#FAF9F6]">
       {size.w > 0 && (
         <GlobeGL
           ref={globeRef}
@@ -72,8 +82,8 @@ export default function Globe({ route, here }: GlobeProps) {
           globeImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg"
           bumpImageUrl="//cdn.jsdelivr.net/npm/three-globe/example/img/earth-topology.png"
           showAtmosphere={true}
-          atmosphereColor="#6bb6ff"
-          atmosphereAltitude={0.2}
+          atmosphereColor="#9ec9ff"
+          atmosphereAltitude={0.22}
           // ── Tracé : arcs animés qui circulent en boucle (traînée lumineuse) ──
           arcsData={arcs}
           arcColor={() => ["rgba(232,98,10,0)", "#E8620A", "rgba(232,98,10,0)"]}
