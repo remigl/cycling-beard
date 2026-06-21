@@ -190,10 +190,9 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       <div className="relative w-full flex justify-center px-4 md:px-10 -mt-4 mb-4 font-sans">
         <div className="relative z-20 w-full max-w-5xl flex flex-col justify-center items-center text-center">
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
             className="w-full max-w-4xl bg-[#0f2547] rounded-3xl border border-white/10 p-6 md:p-8 flex flex-col gap-6 shadow-[0_8px_40px_rgba(15,37,71,0.25)]"
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-white/10 md:divide-y-0 md:divide-x divide-white/15">
