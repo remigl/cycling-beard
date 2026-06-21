@@ -11,6 +11,7 @@ export default function Globe({ route, here }: GlobeProps) {
   const globeRef = useRef<any>(null);
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const [size, setSize] = useState({ w: 0, h: 0 });
+  const [dbg, setDbg] = useState("init");
 
   useEffect(() => {
     let lastW = 0, lastH = 0;
@@ -84,11 +85,13 @@ export default function Globe({ route, here }: GlobeProps) {
         setTimeout(setup, 200); // pas encore prêt → réessaie
         return;
       }
-      if (!scene) return;
+      if (!scene) { setDbg("no scene after retries"); return; }
+      setDbg(`scene OK, material=${material ? "yes" : "no"}, R=${Math.round(R)}`);
 
       const loader = new THREE.TextureLoader();
       loader.setCrossOrigin("anonymous");
       const base = "//cdn.jsdelivr.net/npm/three-globe/example/img/";
+
 
       // ── Jour / nuit ──
       try {
@@ -130,14 +133,15 @@ export default function Globe({ route, here }: GlobeProps) {
       // ── Nuages ──
       try {
         cloudsMat = new THREE.MeshPhongMaterial({
-          map: loader.load(base + "clouds.png"),
+          map: loader.load(base + "clouds.png", () => setDbg(d => d + " | clouds-tex-loaded"), undefined, () => setDbg(d => d + " | clouds-tex-FAIL")),
           transparent: true, opacity: 0.4, depthWrite: false,
         });
         clouds = new THREE.Mesh(new THREE.SphereGeometry(R * 1.012, 64, 64), cloudsMat);
         scene.add(clouds);
+        setDbg(d => d + " | clouds-added");
         const spin = () => { raf = requestAnimationFrame(spin); if (clouds) clouds.rotation.y += 0.0004; };
         spin();
-      } catch {}
+      } catch (e: any) { setDbg(d => d + " | clouds-ERR:" + (e?.message || "?")); }
     };
     setup();
 
@@ -153,6 +157,7 @@ export default function Globe({ route, here }: GlobeProps) {
 
   return (
     <div ref={wrapRef} className="absolute inset-0 bg-[#FAF9F6]">
+      <div className="absolute bottom-1 left-1 z-50 text-[8px] font-mono text-black/60 bg-white/70 px-1 rounded max-w-[90%] break-all">{dbg}</div>
       {size.w > 0 && (
         <GlobeGL
           ref={globeRef}
