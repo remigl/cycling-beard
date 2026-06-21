@@ -39,6 +39,10 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
   const hasFittedRef = useRef(false);
   // Étape sélectionnée à afficher en popup plein écran par-dessus la carte
   const [popupTrip, setPopupTrip] = useState<TripSummary | null>(null);
+  // Hauteur figée au chargement → la carte ne saute plus quand la barre d'adresse
+  // mobile apparaît/disparaît, et tout (header + carte + bas) tient sans scroll.
+  const [vh, setVh] = useState<number | null>(null);
+  useEffect(() => { setVh(window.innerHeight); }, []);
   // Référence pour que les popups Leaflet (HTML brut) puissent déclencher React
   const setPopupTripRef = useRef(setPopupTrip);
   setPopupTripRef.current = setPopupTrip;
@@ -200,7 +204,10 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
   }, [leafletLoaded, trips]);
 
   return (
-    <div className="w-full h-[100dvh] overflow-hidden pt-14 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on">
+    <div
+      className="w-full overflow-hidden pt-14 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on"
+      style={{ height: vh ? `${vh}px` : "100vh" }}
+    >
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
       <div className="max-w-6xl w-full text-left flex flex-col flex-1 min-h-0">
 
