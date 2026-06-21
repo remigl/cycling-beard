@@ -11,7 +11,6 @@ export default function Globe({ route, here }: GlobeProps) {
   const globeRef = useRef<any>(null);
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const [size, setSize] = useState({ w: 0, h: 0 });
-  const [dbg, setDbg] = useState("init");
 
   useEffect(() => {
     let lastW = 0, lastH = 0;
@@ -66,75 +65,35 @@ export default function Globe({ route, here }: GlobeProps) {
     } catch {}
     try { g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch {}
 
-    // ── Nuages + jour/nuit ──
-    let raf = 0, clouds: any = null, cloudsMat: any = null, cancelled = false;
-    let sunTimer: any = null;
-    let tries = 0;
+    // ── Nuages en temps réel (couverture nuageuse mondiale du moment) ──
+    // Attachés à la Terre → ils tournent avec elle et restent à leur vraie
+    // position géographique. Source : live-cloud-maps (maj ~toutes les 3h).
+    let clouds: any = null, cloudsMat: any = null, cancelled = false, tries = 0;
     const setup = () => {
       if (cancelled) return;
       tries++;
-      let scene: any = null, R = 100, material: any = null;
+      let scene: any = null, R = 100;
       try { scene = g.scene(); } catch {}
       try { R = g.getGlobeRadius(); } catch {}
-      try { material = g.globeMaterial && g.globeMaterial(); } catch {}
-      // On attend que la scène ET le matériau soient prêts (jusqu'à ~4s)
-      if ((!scene || !material) && tries < 20) { setTimeout(setup, 200); return; }
-      if (!scene) { setDbg("no scene"); return; }
-      setDbg(`scene=ok material=${material ? "OK" : "null"} R=${Math.round(R)}`);
-
-      const loader = new THREE.TextureLoader();
-      loader.setCrossOrigin("anonymous");
-
-      // ── Jour / nuit ──
-      if (material) {
-        try {
-          const dayTex = loader.load("//cdn.jsdelivr.net/npm/three-globe/example/img/earth-day.jpg");
-          const nightTex = loader.load("//cdn.jsdelivr.net/npm/three-globe/example/img/earth-night.jpg");
-          material.onBeforeCompile = (shader: any) => {
-            shader.uniforms.dayTexture = { value: dayTex };
-            shader.uniforms.nightTexture = { value: nightTex };
-            shader.uniforms.sunDirection = { value: new THREE.Vector3(1, 0, 0) };
-            material.userData.shader = shader;
-            const uvVar = shader.fragmentShader.includes("vMapUv") ? "vMapUv" : "vUv";
-            const hasMarker = shader.fragmentShader.includes("#include <map_fragment>");
-            setDbg(d => d + ` | shader uv=${uvVar} marker=${hasMarker}`);
-            shader.fragmentShader = "uniform sampler2D dayTexture;\nuniform sampler2D nightTexture;\nuniform vec3 sunDirection;\n" + shader.fragmentShader;
-            if (hasMarker) {
-              shader.fragmentShader = shader.fragmentShader.replace("#include <map_fragment>",
-                `#ifdef USE_MAP
-                  vec4 dayC = texture2D(dayTexture, ${uvVar});
-                  vec4 nightC = texture2D(nightTexture, ${uvVar});
-                  float ii = dot(normalize(vNormal), normalize(sunDirection));
-                  diffuseColor *= mix(nightC, dayC, smoothstep(-0.12, 0.25, ii));
-                #endif`);
-            }
-          };
-          material.needsUpdate = true;
-          const updateSun = () => {
-            try {
-              const now = new Date();
-              const utcH = now.getUTCHours() + now.getUTCMinutes() / 60;
-              const theta = (90 - (180 - utcH * 15)) * Math.PI / 180;
-              const sh = material.userData.shader;
-              if (sh) sh.uniforms.sunDirection.value.set(Math.cos(theta), 0, Math.sin(theta));
-            } catch {}
-          };
-          updateSun();
-          sunTimer = setInterval(updateSun, 60000);
-        } catch (e: any) { setDbg(d => d + " | daynight-ERR:" + (e?.message || "?")); }
-      }
-
-      // ── Nuages temps réel ──
+      if (!scene && tries < 20) { setTimeout(setup, 200); return; }
+      if (!scene) return;
       try {
+        const loader = new THREE.TextureLoader();
+        loader.setCrossOrigin("anonymous");
         loader.load(
           "https://clouds.matteason.co.uk/images/2048x1024/clouds-alpha.png",
           (tex) => {
             if (cancelled) return;
             cloudsMat = new THREE.MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.85, depthWrite: false });
             clouds = new THREE.Mesh(new THREE.SphereGeometry(R * 1.012, 75, 75), cloudsMat);
-            scene.add(clouds);
-            const spin = () => { raf = requestAnimationFrame(spin); if (clouds) clouds.rotation.y += 0.0004; };
-            spin();
+            clouds.rotation.y = -Math.PI / 2; // aligne sur la géographie de la Terre
+            let attached = false;
+            try {
+              const globeObj = (scene.children || []).find((c: any) =>
+                c && c.type === "Group" && typeof c.globeImageUrl === "function");
+              if (globeObj) { globeObj.add(clouds); attached = true; }
+            } catch {}
+            if (!attached) scene.add(clouds);
           }
         );
       } catch {}
@@ -143,16 +102,13 @@ export default function Globe({ route, here }: GlobeProps) {
 
     return () => {
       cancelled = true;
-      try { if (sunTimer) clearInterval(sunTimer); } catch {}
-      try { cancelAnimationFrame(raf); } catch {}
-      try { if (clouds) g.scene().remove(clouds); } catch {}
+      try { if (clouds && clouds.parent) clouds.parent.remove(clouds); } catch {}
       try { if (cloudsMat) cloudsMat.dispose(); } catch {}
     };
   }, [size.w, size.h, hp[0], hp[1]]);
 
   return (
     <div ref={wrapRef} className="absolute inset-0 bg-[#FAF9F6]">
-      <div className="absolute bottom-1 left-1 z-50 text-[8px] font-mono text-black/60 bg-white/70 px-1 rounded max-w-[92%] break-all">{dbg}</div>
       {size.w > 0 && (
         <GlobeGL
           ref={globeRef}
