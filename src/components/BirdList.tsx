@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Bird } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Bird, Volume2, Loader2 } from "lucide-react";
 import { Lang } from "../i18n";
 
 // ─── Clé eBird (lecture de données publiques) ─────────────────────────────────
@@ -50,6 +50,60 @@ async function fetchWiki(sciName: string, lang: string): Promise<{ thumb: string
 export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
   const [birds, setBirds] = useState<BirdObs[]>([]);
   const [loading, setLoading] = useState(true);
+
+  // ── Chant des oiseaux (Xeno-canto) ──
+  // Lecture à la demande : un clic récupère un enregistrement du chant de l'espèce
+  // (par nom scientifique) et le joue. Un seul son à la fois.
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [playing, setPlaying] = useState<string | null>(null);   // sciName en cours
+  const [loadingSong, setLoadingSong] = useState<string | null>(null);
+  const songCache = useRef<Map<string, string | null>>(new Map());
+
+  const stopSong = () => {
+    if (audioRef.current) { audioRef.current.pause(); audioRef.current = null; }
+    setPlaying(null);
+  };
+
+  const fetchSongUrl = async (sciName: string): Promise<string | null> => {
+    if (songCache.current.has(sciName)) return songCache.current.get(sciName)!;
+    try {
+      // On privilégie les chants ("song") de bonne qualité (q:A)
+      const q = encodeURIComponent(`${sciName} type:song q:A`);
+      let res = await fetch(`https://xeno-canto.org/api/2/recordings?query=${q}`);
+      let data = await res.json();
+      // Repli : sans filtre qualité/type si rien trouvé
+      if (!data.recordings || data.recordings.length === 0) {
+        res = await fetch(`https://xeno-canto.org/api/2/recordings?query=${encodeURIComponent(sciName)}`);
+        data = await res.json();
+      }
+      const rec = data.recordings && data.recordings[0];
+      // 'file' est l'URL de l'audio (parfois protocole-relative)
+      let url: string | null = rec?.file || null;
+      if (url && url.startsWith("//")) url = "https:" + url;
+      songCache.current.set(sciName, url);
+      return url;
+    } catch {
+      songCache.current.set(sciName, null);
+      return null;
+    }
+  };
+
+  const toggleSong = async (sciName: string) => {
+    if (playing === sciName) { stopSong(); return; }
+    stopSong();
+    setLoadingSong(sciName);
+    const url = await fetchSongUrl(sciName);
+    setLoadingSong(null);
+    if (!url) return; // pas d'enregistrement trouvé
+    const audio = new Audio(url);
+    audioRef.current = audio;
+    audio.onended = () => setPlaying(null);
+    audio.play().then(() => setPlaying(sciName)).catch(() => setPlaying(null));
+  };
+
+  // Stoppe le son si le composant est démonté
+  useEffect(() => () => stopSong(), []);
+
   const [error, setError] = useState(false);
 
   const keyMissing = EBIRD_KEY === ("TA_CLE_EBIRD_ICI" as string);
@@ -151,6 +205,19 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
                   {b.count != null && b.count > 1 && (
                     <span className="font-mono text-[9px] text-brand-sand shrink-0">{b.count}×</span>
                   )}
+                  <button
+                    onClick={() => toggleSong(b.sciName)}
+                    aria-label={t("birds.listen")}
+                    className={`shrink-0 ml-auto inline-flex items-center justify-center w-7 h-7 rounded-full border transition-all cursor-pointer ${
+                      playing === b.sciName
+                        ? "bg-brand-sand text-bg-dark border-brand-sand"
+                        : "border-brand-sand/40 text-brand-sand hover:bg-brand-sand/15"
+                    }`}
+                  >
+                    {loadingSong === b.sciName
+                      ? <Loader2 size={13} className="animate-spin" />
+                      : <Volume2 size={13} />}
+                  </button>
                 </div>
                 <div className="font-mono text-[9px] text-text-dim/60 italic truncate">{b.sciName}</div>
                 {b.desc && <p className="text-[11px] text-text-dim leading-snug mt-1 font-light">{b.desc}</p>}
