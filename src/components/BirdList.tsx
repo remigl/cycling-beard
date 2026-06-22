@@ -6,7 +6,7 @@ import { Lang } from "../i18n";
 const EBIRD_KEY = "6fuv5j5odi8b";
 // Clé Xeno-canto API v3 (chants d'oiseaux). Crée-la gratuitement sur
 // xeno-canto.org → page de compte → API Keys, puis colle-la ici.
-const XC_KEY = "TA_CLE_XENOCANTO_ICI";
+const XC_KEY = "00bd53d71e66c252690677702a08080dd43e959f";
 // ──────────────────────────────────────────────────────────────────────────────
 
 interface BirdObs {
