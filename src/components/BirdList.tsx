@@ -6,7 +6,7 @@ import { Lang } from "../i18n";
 const EBIRD_KEY = "6fuv5j5odi8b";
 // Clé Xeno-canto API v3 (chants d'oiseaux). Crée-la gratuitement sur
 // xeno-canto.org → page de compte → API Keys, puis colle-la ici.
-const XC_KEY = "00bd53d71e66c252690677702a08080dd43e959f";
+const XC_KEY = "TA_CLE_XENOCANTO_ICI";
 // ──────────────────────────────────────────────────────────────────────────────
 
 interface BirdObs {
@@ -218,7 +218,12 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-baseline gap-2">
-                  <span className="text-sm text-text-on font-medium truncate">{b.comName}</span>
+                  <a
+                    href={`https://${lang}.wikipedia.org/wiki/${encodeURIComponent(b.sciName.replace(/ /g, "_"))}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-text-on font-medium truncate hover:text-brand-sand hover:underline transition-colors"
+                  >{b.comName}</a>
                   {b.count != null && b.count > 1 && (
                     <span className="font-mono text-[9px] text-brand-sand shrink-0">{b.count}×</span>
                   )}
