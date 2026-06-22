@@ -71,20 +71,29 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
   const fetchSongUrl = async (sciName: string): Promise<string | null> => {
     if (songCache.current.has(sciName)) return songCache.current.get(sciName)!;
     try {
-      // API v3 : nécessite une clé. On filtre sur les chants ("song"), qualité A.
-      const q = encodeURIComponent(`${sciName} type:song q:A`);
-      let res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${q}&key=${XC_KEY}`);
+      // API v3 : la recherche par nom scientifique se fait via les champs
+      // gen: (genre) et sp: (espèce), PAS en texte libre. Le sciName "Turdus
+      // merula" devient gen:Turdus sp:merula.
+      const parts = sciName.trim().split(/\s+/);
+      const gen = parts[0] || "";
+      const sp = parts[1] || "";
+      const baseQ = sp ? `gen:${gen} sp:${sp}` : `gen:${gen}`;
+
+      // 1) chants de bonne qualité
+      let res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(baseQ + " type:song q:A")}&key=${XC_KEY}`);
       if (!res.ok) { setSongErr(`HTTP ${res.status}`); }
       let data = await res.json();
-      // Repli : sans filtre type/qualité
+      // 2) repli : n'importe quel enregistrement de l'espèce
       if (!data.recordings || data.recordings.length === 0) {
-        res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(sciName)}&key=${XC_KEY}`);
+        res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(baseQ)}&key=${XC_KEY}`);
         data = await res.json();
       }
       const rec = data.recordings && data.recordings[0];
-      if (!rec) { setSongErr("aucun enregistrement"); }
+      if (!rec) { setSongErr(`aucun enregistrement (${baseQ})`); }
+      // v3 : le champ audio peut être 'file' ou dans sono/oss ; on prend 'file'
       let url: string | null = rec?.file || null;
       if (url && url.startsWith("//")) url = "https:" + url;
+      if (rec && !url) setSongErr("trouvé mais pas d'URL audio");
       songCache.current.set(sciName, url);
       return url;
     } catch (e: any) {
