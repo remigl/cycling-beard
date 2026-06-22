@@ -67,13 +67,30 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
         setDbg(`coords ${lat.toFixed(3)},${lng.toFixed(3)} — requête…`);
         const radius = 12000;
         const q = `[out:json][timeout:25];(node["tourism"~"attraction|museum|gallery|viewpoint|artwork|theme_park|zoo|aquarium"](around:${radius},${lat},${lng});way["tourism"~"attraction|museum|gallery|viewpoint|theme_park|zoo"](around:${radius},${lat},${lng});node["historic"~"castle|fort|monument|memorial|ruins|archaeological_site|city_gate|church|monastery"](around:${radius},${lat},${lng});way["historic"~"castle|fort|monument|ruins|archaeological_site"](around:${radius},${lat},${lng});node["natural"~"waterfall|peak|cave_entrance"](around:${radius},${lat},${lng}););out center 80;`;
-        const res = await fetch("https://overpass-api.de/api/interpreter", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: "data=" + encodeURIComponent(q),
-        });
-        if (!res.ok) { setDbg(`Overpass HTTP ${res.status}`); throw new Error("overpass"); }
-        const data = await res.json();
+
+        // Plusieurs miroirs Overpass : si l'un échoue (down, CORS, surcharge),
+        // on passe au suivant. Ça règle les "Failed to fetch".
+        const mirrors = [
+          "https://overpass-api.de/api/interpreter",
+          "https://overpass.kumi.systems/api/interpreter",
+          "https://maps.mail.ru/osm/tools/overpass/api/interpreter",
+          "https://overpass.private.coffee/api/interpreter",
+        ];
+        let data: any = null;
+        for (const url of mirrors) {
+          try {
+            setDbg(`essai ${url.split("/")[2]}…`);
+            const res = await fetch(url, {
+              method: "POST",
+              headers: { "Content-Type": "application/x-www-form-urlencoded" },
+              body: "data=" + encodeURIComponent(q),
+            });
+            if (!res.ok) { continue; }
+            data = await res.json();
+            break;
+          } catch { /* miroir suivant */ }
+        }
+        if (!data) { setDbg("tous les miroirs Overpass ont échoué (réseau/CORS)"); setError(true); setLoading(false); return; }
         const elements = data.elements || [];
         setDbg(`${elements.length} éléments OSM bruts`);
         if (elements.length === 0) { setError(true); setLoading(false); return; }
