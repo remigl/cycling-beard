@@ -4,6 +4,9 @@ import { Lang } from "../i18n";
 
 // ─── Clé eBird (lecture de données publiques) ─────────────────────────────────
 const EBIRD_KEY = "6fuv5j5odi8b";
+// Clé Xeno-canto API v3 (chants d'oiseaux). Crée-la gratuitement sur
+// xeno-canto.org → page de compte → API Keys, puis colle-la ici.
+const XC_KEY = "00bd53d71e66c252690677702a08080dd43e959f";
 // ──────────────────────────────────────────────────────────────────────────────
 
 interface BirdObs {
@@ -57,6 +60,7 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);   // sciName en cours
   const [loadingSong, setLoadingSong] = useState<string | null>(null);
+  const [songErr, setSongErr] = useState<string | null>(null);
   const songCache = useRef<Map<string, string | null>>(new Map());
 
   const stopSong = () => {
@@ -67,22 +71,24 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
   const fetchSongUrl = async (sciName: string): Promise<string | null> => {
     if (songCache.current.has(sciName)) return songCache.current.get(sciName)!;
     try {
-      // On privilégie les chants ("song") de bonne qualité (q:A)
+      // API v3 : nécessite une clé. On filtre sur les chants ("song"), qualité A.
       const q = encodeURIComponent(`${sciName} type:song q:A`);
-      let res = await fetch(`https://xeno-canto.org/api/2/recordings?query=${q}`);
+      let res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${q}&key=${XC_KEY}`);
+      if (!res.ok) { setSongErr(`HTTP ${res.status}`); }
       let data = await res.json();
-      // Repli : sans filtre qualité/type si rien trouvé
+      // Repli : sans filtre type/qualité
       if (!data.recordings || data.recordings.length === 0) {
-        res = await fetch(`https://xeno-canto.org/api/2/recordings?query=${encodeURIComponent(sciName)}`);
+        res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(sciName)}&key=${XC_KEY}`);
         data = await res.json();
       }
       const rec = data.recordings && data.recordings[0];
-      // 'file' est l'URL de l'audio (parfois protocole-relative)
+      if (!rec) { setSongErr("aucun enregistrement"); }
       let url: string | null = rec?.file || null;
       if (url && url.startsWith("//")) url = "https:" + url;
       songCache.current.set(sciName, url);
       return url;
-    } catch {
+    } catch (e: any) {
+      setSongErr("erreur: " + (e?.message || "réseau/CORS"));
       songCache.current.set(sciName, null);
       return null;
     }
@@ -91,6 +97,7 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
   const toggleSong = async (sciName: string) => {
     if (playing === sciName) { stopSong(); return; }
     stopSong();
+    setSongErr(null);
     setLoadingSong(sciName);
     const url = await fetchSongUrl(sciName);
     setLoadingSong(null);
@@ -98,7 +105,7 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
     const audio = new Audio(url);
     audioRef.current = audio;
     audio.onended = () => setPlaying(null);
-    audio.play().then(() => setPlaying(sciName)).catch(() => setPlaying(null));
+    audio.play().then(() => setPlaying(sciName)).catch((e) => { setSongErr("audio: " + (e?.message || "lecture refusée")); setPlaying(null); });
   };
 
   // Stoppe le son si le composant est démonté
@@ -172,6 +179,7 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
         <h4 className="font-display font-bold text-xs uppercase text-text-on tracking-wider">{t("birds.title")}</h4>
       </div>
       <p className="font-mono text-[10px] text-text-dim -mt-2">{t("birds.subtitle")}</p>
+      {songErr && <p className="font-mono text-[10px] text-red-400 mt-1">🔊 {songErr}</p>}
 
       {loading && (
         <div className="py-12 text-center">
