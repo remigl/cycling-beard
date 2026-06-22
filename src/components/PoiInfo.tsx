@@ -48,6 +48,7 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
   const [pois, setPois] = useState<Poi[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [dbg, setDbg] = useState("");
 
   const wikiLang = ["en", "fr", "es", "it", "de", "nl"].includes(lang) ? lang : "en";
 
@@ -58,30 +59,23 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
   }, []);
 
   useEffect(() => {
-    if (trip.mapLat == null || trip.mapLng == null) { setError(true); setLoading(false); return; }
+    if (trip.mapLat == null || trip.mapLng == null) { setDbg("pas de coordonnées pour cette étape"); setError(true); setLoading(false); return; }
     const lat = trip.mapLat, lng = trip.mapLng;
 
     const run = async () => {
       try {
-        // 1. Overpass (OpenStreetMap) : vrais lieux touristiques dans un rayon de 12 km.
-        // On cible les tags qui correspondent à des lieux qu'on visite vraiment.
+        setDbg(`coords ${lat.toFixed(3)},${lng.toFixed(3)} — requête…`);
         const radius = 12000;
-        const q = `[out:json][timeout:25];
-          (
-            node["tourism"~"attraction|museum|gallery|viewpoint|artwork|theme_park|zoo|aquarium"](around:${radius},${lat},${lng});
-            way["tourism"~"attraction|museum|gallery|viewpoint|theme_park|zoo"](around:${radius},${lat},${lng});
-            node["historic"~"castle|fort|monument|memorial|ruins|archaeological_site|city_gate|church|monastery"](around:${radius},${lat},${lng});
-            way["historic"~"castle|fort|monument|ruins|archaeological_site"](around:${radius},${lat},${lng});
-            node["natural"~"waterfall|peak|cave_entrance"](around:${radius},${lat},${lng});
-          );
-          out center 80;`;
+        const q = `[out:json][timeout:25];(node["tourism"~"attraction|museum|gallery|viewpoint|artwork|theme_park|zoo|aquarium"](around:${radius},${lat},${lng});way["tourism"~"attraction|museum|gallery|viewpoint|theme_park|zoo"](around:${radius},${lat},${lng});node["historic"~"castle|fort|monument|memorial|ruins|archaeological_site|city_gate|church|monastery"](around:${radius},${lat},${lng});way["historic"~"castle|fort|monument|ruins|archaeological_site"](around:${radius},${lat},${lng});node["natural"~"waterfall|peak|cave_entrance"](around:${radius},${lat},${lng}););out center 80;`;
         const res = await fetch("https://overpass-api.de/api/interpreter", {
           method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: "data=" + encodeURIComponent(q),
         });
-        if (!res.ok) throw new Error("overpass");
+        if (!res.ok) { setDbg(`Overpass HTTP ${res.status}`); throw new Error("overpass"); }
         const data = await res.json();
         const elements = data.elements || [];
+        setDbg(`${elements.length} éléments OSM bruts`);
         if (elements.length === 0) { setError(true); setLoading(false); return; }
 
         // 2. Transforme en POI, calcule distance + rang, garde ceux qui ont un nom
@@ -114,6 +108,7 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
         // 3. Tri : lieux majeurs d'abord, puis les plus proches
         list.sort((a, b) => (b.rank - a.rank) || (a.dist - b.dist));
         list = list.slice(0, 18);
+        setDbg(`${list.length} sites retenus`);
 
         // 4. Enrichit avec photo + description Wikipédia (pour ceux qui ont un lien wiki)
         const wikiTitles = list.filter(p => p.wikiTitle).map(p => p.wikiTitle!) as string[];
@@ -143,7 +138,8 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
 
         setPois(list);
         setLoading(false);
-      } catch {
+      } catch (e: any) {
+        setDbg(d => (d || "") + " | catch: " + (e?.message || "?"));
         setError(true);
         setLoading(false);
       }
@@ -176,7 +172,10 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
             </div>
           )}
           {error && !loading && (
-            <p className="font-mono text-xs text-text-dim py-8 text-center">{t("poi.none")}</p>
+            <div className="py-8 text-center">
+              <p className="font-mono text-xs text-text-dim">{t("poi.none")}</p>
+              {dbg && <p className="font-mono text-[9px] text-red-400 mt-2 break-all">{dbg}</p>}
+            </div>
           )}
           {!loading && !error && pois.length > 0 && (
             <div className="flex flex-col gap-2">
