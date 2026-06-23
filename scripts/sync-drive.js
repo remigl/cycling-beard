@@ -351,6 +351,77 @@ async function fetchPois(lat, lng, wikiLang = "fr") {
   return list;
 }
 
+// Spécialités culinaires d'un pays via Wikidata (SPARQL). Côté serveur → pas de
+// CORS. Renvoie une liste de plats {title, image, wikipedia} ou [] si échec.
+const COUNTRY_QID = {
+  FR: "Q142", CH: "Q39", DE: "Q183", AT: "Q40", SK: "Q214",
+  HU: "Q28", HR: "Q224", RS: "Q403", RO: "Q218", BG: "Q219",
+  BE: "Q31", NL: "Q55", IT: "Q38", ES: "Q29",
+};
+async function fetchSpecialties(countryCode, lang = "fr") {
+  if (!countryCode) return [];
+  const qid = COUNTRY_QID[countryCode.toUpperCase()];
+  if (!qid) return [];
+
+  // Vrais plats/spécialités du pays. On cible les sous-classes de "dish" (Q746549)
+  // et "food" mais en exigeant un article Wikipédia (gage de notoriété, évite les
+  // ingrédients obscurs), et on trie par notoriété (nb de sitelinks) + présence
+  // d'image. Résultat : des spécialités connues, pas des entrées génériques.
+  const sparql = `SELECT DISTINCT ?dish ?dishLabel ?image ?article ?linkcount WHERE {
+    ?dish wdt:P495 wd:${qid} .
+    {
+      ?dish wdt:P31/wdt:P279* wd:Q746549 .   # plat
+    } UNION {
+      ?dish wdt:P31/wdt:P279* wd:Q2095 .      # aliment
+      ?dish wdt:P279|wdt:P31 ?cls .
+      FILTER(?cls != wd:Q2095)
+    }
+    ?dish wikibase:sitelinks ?linkcount .
+    FILTER(?linkcount >= 3)                    # au moins 3 wikis → notable
+    OPTIONAL { ?dish wdt:P18 ?image . }
+    # Article dans la langue de l'utilisateur si dispo, sinon en anglais
+    OPTIONAL { ?artLang schema:about ?dish ; schema:isPartOf <https://${lang}.wikipedia.org/> . }
+    OPTIONAL { ?artEn schema:about ?dish ; schema:isPartOf <https://en.wikipedia.org/> . }
+    BIND(COALESCE(?artLang, ?artEn) AS ?article)
+    FILTER(BOUND(?article))
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "${lang},en". }
+  }
+  ORDER BY DESC(?linkcount)
+  LIMIT 24`;
+
+  try {
+    const url = "https://query.wikidata.org/sparql?format=json&query=" + encodeURIComponent(sparql);
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 30000);
+    const res = await fetch(url, {
+      headers: { "Accept": "application/sparql-results+json", "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync)" },
+      signal: controller.signal,
+    });
+    clearTimeout(timer);
+    if (!res.ok) { console.log(`    ⚠️  Wikidata HTTP ${res.status} (spécialités ignorées)`); return []; }
+    const data = await res.json();
+    const rows = data?.results?.bindings || [];
+    const seen = new Set();
+    const dishes = [];
+    for (const r of rows) {
+      const title = r.dishLabel?.value;
+      if (!title || /^Q\d+$/.test(title) || seen.has(title)) continue;
+      seen.add(title);
+      dishes.push({
+        title,
+        image: r.image?.value || null,
+        wikipedia: r.article?.value || null,
+      });
+      if (dishes.length >= 24) break;
+    }
+    console.log(`    🍽️  ${dishes.length} spécialités (${countryCode})`);
+    return dishes;
+  } catch (e) {
+    console.log(`    ⚠️  Spécialités Wikidata échouées (${e.message})`);
+    return [];
+  }
+}
+
 // Nom de pays propre depuis le code ISO (fiable, indépendant de la langue Nominatim)
 function countryFromCode(code) {
   const map = {
@@ -1077,7 +1148,7 @@ async function syncFolder(drive, folder, cache, force) {
   }
 
   // ── Reverse geocoding : noms de villes + région + pays ──
-  let startCity = null, endCity = null, region = null, geoCountry = null;
+  let startCity = null, endCity = null, region = null, geoCountry = null, geoCountryCode = null;
   if (gpxStats.startLat != null) {
     const startGeo = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
     startCity = startGeo.city;
@@ -1088,6 +1159,7 @@ async function syncFolder(drive, folder, cache, force) {
     // Pays via le code ISO (fiable) ; repli sur le nom brut Nominatim
     geoCountry = countryFromCode(endGeo.countryCode || startGeo.countryCode)
       || endGeo.country || startGeo.country || null;
+    geoCountryCode = endGeo.countryCode || startGeo.countryCode || null;
     await new Promise(r => setTimeout(r, 1100));
     if (startCity || endCity) {
       console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"} (${region || "région ?"}, ${geoCountry || "pays ?"})`);
@@ -1122,6 +1194,8 @@ async function syncFolder(drive, folder, cache, force) {
 
   // ── Points d'intérêt touristiques (Overpass/OSM, côté serveur) ──
   const pois = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
+  // ── Spécialités culinaires du pays (Wikidata, côté serveur) ──
+  const specialties = await fetchSpecialties(geoCountryCode, "fr");
 
   // ── Build stage JSON ──
   const stage = {
@@ -1165,6 +1239,7 @@ async function syncFolder(drive, folder, cache, force) {
     tags: notes.tags || [],
     weather: notes.weather || null,
     pois,
+    specialties,
   };
 
   fs.writeFileSync(stageJsonPath, JSON.stringify(stage, null, 2));
@@ -1444,6 +1519,7 @@ async function main() {
     thanks: s.thanks || "",
     thanksTranslations: s.thanksTranslations || {},
     pois: s.pois || [],
+    specialties: s.specialties || [],
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
