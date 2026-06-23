@@ -6652,5 +6652,112 @@
   "minAltitude": 417,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": [
+    {
+      "title": "Ruine Hertenstein",
+      "dist": 2954,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Burg Altgutenstein",
+      "dist": 7366,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Burg Altgutenstein"
+    },
+    {
+      "title": "Ruine Unterfalkenstein",
+      "dist": 9862,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Unterfalkenstein"
+    },
+    {
+      "title": "Abbundplatz",
+      "dist": 10227,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Alamannenplatz",
+      "dist": 10237,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Küfer",
+      "dist": 10332,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Schauenburg",
+      "dist": 10618,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Schauenburg (Stetten am kalten Markt)"
+    },
+    {
+      "title": "Schlösslefels",
+      "dist": 10636,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ruine Benzenberg",
+      "dist": 10874,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Lenzenburg",
+      "dist": 10971,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Heidenschloss",
+      "dist": 11933,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Neidinger Heidenschloss"
+    },
+    {
+      "title": "Fürstliches Museum",
+      "dist": 154,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Marstallmuseum",
+      "dist": 166,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Schloss Sigmaringen#Marstallmuseum"
+    },
+    {
+      "title": "Schwäbisches Bauernmuseum",
+      "dist": 3096,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Klostermuseum Inzigkofen",
+      "dist": 3117,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    }
+  ]
 }

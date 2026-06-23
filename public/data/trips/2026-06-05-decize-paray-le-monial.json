@@ -9745,5 +9745,6 @@
   "minAltitude": 192,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": []
 }

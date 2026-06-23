@@ -19056,5 +19056,112 @@
   "minAltitude": 3,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": [
+    {
+      "title": "Château de Montsabert",
+      "dist": 5604,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Château de Montsabert"
+    },
+    {
+      "title": "Château de Pimpéan",
+      "dist": 9485,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Château de Pimpéan"
+    },
+    {
+      "title": "Le Moulin de Gasté",
+      "dist": 9709,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Moulin-cavier de Gasté"
+    },
+    {
+      "title": "Manoir de la Cour Condé",
+      "dist": 10383,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Manoir de la Cour Condé"
+    },
+    {
+      "title": "Manoir de la Grand'Maison",
+      "dist": 11437,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Manoir de la Grand'Maison"
+    },
+    {
+      "title": "Manoir de Vau",
+      "dist": 11730,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Manoir de Vau"
+    },
+    {
+      "title": "Joseph Denais",
+      "dist": 6685,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Musée Joseph-Denais"
+    },
+    {
+      "title": "Menhir dit la Pierre Longue",
+      "dist": 2080,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Menhir de Saint-Gondon",
+      "dist": 2784,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Menhir de la Butte aux Houx",
+      "dist": 2798,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Menhir du Vallon du Bois de la Bodinière",
+      "dist": 2842,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Menhir du Bois de la Bodinière",
+      "dist": 2859,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour de Galles",
+      "dist": 2945,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Pierre de Nézan",
+      "dist": 3026,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dolmen de la Bajoulière",
+      "dist": 3346,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ]
 }

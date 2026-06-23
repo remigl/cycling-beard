@@ -8640,7 +8640,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Camping+du+Clein,+22+Av.+de+Kerdun,+44510+Le+Pouliguen/data=!4m2!3m1!1s0x48055b4a069bea63:0xdf3b91f67c9d3f3a!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=510968ac-14f1-4b7a-b613-593e2833c31a&g_st=ac",
     "lodgingName": "Camping du Clein, 22 Av. de Kerdun, 44510 Le Pouliguen",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Château de Villeneuve",
+        "dist": 5646,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Poterne du Tricot",
+        "dist": 6167,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Visite des remparts",
+        "dist": 6224,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rocher de l'Ours",
+        "dist": 8224,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Atelier galerie",
+        "dist": 6260,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Galerie 380",
+        "dist": 6744,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Maison de la Pêche",
+        "dist": 10549,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Maison de la Pêche"
+      },
+      {
+        "title": "Camp celtique",
+        "dist": 1421,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Camp celtique (Le Pouliguen)"
+      },
+      {
+        "title": "Camp gaulois de Penchâteau",
+        "dist": 1489,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Camp gaulois de Penchâteau"
+      },
+      {
+        "title": "La Pierre Longue",
+        "dist": 3812,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tour Saint-Guénolé",
+        "dist": 3827,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Carrefour des 4 Routes",
+        "dist": 4123,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pierre de Saillé",
+        "dist": 4348,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Pierre de Saillé"
+      },
+      {
+        "title": "Lluís Companys",
+        "dist": 5094,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Croix du Bourg d'Escoublac Ensablé / Cross of Escoublac Town buried in sand",
+        "dist": 5255,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-05-29-le-pouliguen-mauves-sur-loire",
@@ -20103,15 +20210,15 @@
         "quote": null,
         "fullStory": [
           "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
-          "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable, una velada con pizza y pastis sin alcohol.",
+          "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable: una velada con pizza y pastis sin alcohol.",
           "Un despertar de lo más duro."
         ]
       },
       "it": {
-        "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
+        "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare il destino.",
         "quote": null,
         "fullStory": [
-          "Il ponte di Saint-Nazaire va attraversato in bicicletta solo una volta nella vita; dopo, è come sfidare il destino.",
+          "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare il destino.",
           "Notte a casa di Jeff e del suo gatto Bada. Sono stati davvero gentili, serata a base di pizza e pastis analcolico.",
           "Un risveglio da veri duri."
         ]
@@ -20120,7 +20227,7 @@
         "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
         "quote": null,
         "fullStory": [
-          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
+          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
           "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
           "Ein echt hartes Erwachen."
         ]
@@ -20884,7 +20991,114 @@
       "de": "Jeff und seine Katze Bada",
       "nl": "Jeff en zijn kat Bada",
       "fr": "Jeff et son chat Bada"
-    }
+    },
+    "pois": [
+      {
+        "title": "Château de la Vrillière",
+        "dist": 3077,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Vrillière"
+      },
+      {
+        "title": "Croix des Renards",
+        "dist": 3570,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Berrière",
+        "dist": 5513,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Berrière"
+      },
+      {
+        "title": "Ruines",
+        "dist": 5804,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Manoir de la Dixmerie",
+        "dist": 5923,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Manoir de la Dixmerie"
+      },
+      {
+        "title": "Beau Soleil",
+        "dist": 5938,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Monderie",
+        "dist": 6256,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Folies Siffait",
+        "dist": 7291,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Folies Siffait"
+      },
+      {
+        "title": "Château du Chassay",
+        "dist": 8874,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Chassay"
+      },
+      {
+        "title": "Ruines de l'ancienne citadelle de Châteauceaux",
+        "dist": 9707,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Embarcadère de la Luce",
+        "dist": 9858,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Colinière",
+        "dist": 10080,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Four à pain",
+        "dist": 10767,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de La Poterie",
+        "dist": 10804,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Poterie"
+      },
+      {
+        "title": "La Guilletière",
+        "dist": 10926,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-05-30-mauves-sur-loire-le-menitre",
@@ -39936,7 +40150,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Camping+Terre+de+Loire,+6+route+du,+6+Port+Saint-Maur+route+du,+49250+La+M%C3%A9nitr%C3%A9/data=!4m2!3m1!1s0x4807e15967645c8d:0x2b33091340191ec9!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=51510666-4544-4cfb-be24-15fa3edb56ab&g_st=ac",
     "lodgingName": "Camping Terre de Loire, 6 route du, 6 Port Saint-Maur route du, 49250 La Ménitré",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Château de Montsabert",
+        "dist": 5604,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Montsabert"
+      },
+      {
+        "title": "Château de Pimpéan",
+        "dist": 9485,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Château de Pimpéan"
+      },
+      {
+        "title": "Le Moulin de Gasté",
+        "dist": 9709,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Moulin-cavier de Gasté"
+      },
+      {
+        "title": "Manoir de la Cour Condé",
+        "dist": 10383,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Manoir de la Cour Condé"
+      },
+      {
+        "title": "Manoir de la Grand'Maison",
+        "dist": 11437,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Manoir de la Grand'Maison"
+      },
+      {
+        "title": "Manoir de Vau",
+        "dist": 11730,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Manoir de Vau"
+      },
+      {
+        "title": "Joseph Denais",
+        "dist": 6685,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Musée Joseph-Denais"
+      },
+      {
+        "title": "Menhir dit la Pierre Longue",
+        "dist": 2080,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Menhir de Saint-Gondon",
+        "dist": 2784,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Menhir de la Butte aux Houx",
+        "dist": 2798,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Menhir du Vallon du Bois de la Bodinière",
+        "dist": 2842,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Menhir du Bois de la Bodinière",
+        "dist": 2859,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tour de Galles",
+        "dist": 2945,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pierre de Nézan",
+        "dist": 3026,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dolmen de la Bajoulière",
+        "dist": 3346,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-05-31-le-menitre-tours",
@@ -49956,7 +50277,114 @@
       "de": "Aurelie",
       "nl": "Aurelie",
       "fr": "Aurelie"
-    }
+    },
+    "pois": [
+      {
+        "title": "La ruche",
+        "dist": 711,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Bel-Air",
+        "dist": 4620,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Manoir des Hamardières",
+        "dist": 6087,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Manoir des Hamardières"
+      },
+      {
+        "title": "Le Gros Chêne",
+        "dist": 8206,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de l'Aubrière",
+        "dist": 8707,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Donjon de Montbazon",
+        "dist": 8832,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Donjon de Montbazon"
+      },
+      {
+        "title": "Château de la Dorée",
+        "dist": 10065,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Grottes pétrifiantes de Savonnières",
+        "dist": 10951,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Grottes Pétrifiantes de Savonnières"
+      },
+      {
+        "title": "Château de Vaugrignon",
+        "dist": 11372,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château d'Esvres",
+        "dist": 11775,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Classe musée René Granger",
+        "dist": 1293,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Nanza",
+        "dist": 3247,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Chapelle Saint-Anne",
+        "dist": 3544,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Laverie - lieu de cultures",
+        "dist": 3582,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Carré d'artistes",
+        "dist": 3770,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-01-tours-meung-sur-loire",
@@ -60823,7 +61251,114 @@
       "de": "Stéphanie",
       "nl": "Stéphanie",
       "fr": "Stéphanie"
-    }
+    },
+    "pois": [
+      {
+        "title": "Espace naturel sensible des courtils des Mauves",
+        "dist": 142,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Jardins de Roquelin",
+        "dist": 2262,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La promenade des Mauves et des moulins",
+        "dist": 2292,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Meung sur Loire",
+        "dist": 2325,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "L'orangerie du Château de Meung sur Loire",
+        "dist": 2345,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "De Cléry à la Butte des Elus",
+        "dist": 4813,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Basilique royale Notre-Dame-de-Cléry",
+        "dist": 4832,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Basilique Notre-Dame de Cléry"
+      },
+      {
+        "title": "Château de Mardereau",
+        "dist": 5563,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château du Bouchet",
+        "dist": 6356,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La butte des Élus",
+        "dist": 7092,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Mézières-lez-Cléry et le chemin des Vallées",
+        "dist": 8181,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Montpipeau",
+        "dist": 8204,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Fontpertuis",
+        "dist": 8739,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tour de César",
+        "dist": 9053,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tour du Diable",
+        "dist": 9057,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-02-meung-sur-loire-gien",
@@ -70681,7 +71216,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Camping+2+roues+%2F+Le+Refuge+de+la+Patte+d'Oie,+La+Patte+d'Oie,+45500+Saint-Brisson-sur-Loire/data=!4m2!3m1!1s0x47e55ff35c46f881:0x34d9714699817e41!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=ec0ae814-1412-4a7d-8a77-7cb7eeeb3e43&g_st=ac",
     "lodgingName": "Camping 2 roues / Le Refuge de la Patte d'Oie, La Patte d'Oie, 45500 Saint-Brisson-sur-Loire",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Domaine de Saint-Brisson",
+        "dist": 759,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Château de Saint-Brisson"
+      },
+      {
+        "title": "Clos de Beauvoir",
+        "dist": 2983,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Station Location Loisirs",
+        "dist": 4001,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Trousse-Barrière",
+        "dist": 4174,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Trousse-Barrière"
+      },
+      {
+        "title": "Canal de Briare",
+        "dist": 4366,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pont-Canal de Briare",
+        "dist": 4881,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Le Petit Train de Briare",
+        "dist": 4891,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Canalous Briare",
+        "dist": 4897,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Bateaux Touristiques",
+        "dist": 4907,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Gien",
+        "dist": 5007,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Schloss Gien"
+      },
+      {
+        "title": "Château de Pont-Chevron",
+        "dist": 7421,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Château de Pont-Chevron"
+      },
+      {
+        "title": "Gite 'La Poudre d'Escampette' de la Ferme du Buisson",
+        "dist": 7995,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de la Guilbarderie",
+        "dist": 8282,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Montrenault",
+        "dist": 8616,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Petit Château",
+        "dist": 9309,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-03-gien-sauvigny-les-bois",
@@ -80583,7 +81225,114 @@
       "de": "Danielle und Pierre",
       "nl": "Danielle en Pierre",
       "fr": "Danielle et Pierre"
-    }
+    },
+    "pois": [
+      {
+        "title": "Château de Sermoise",
+        "dist": 1282,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Sermoise"
+      },
+      {
+        "title": "chateau de Maucouvent",
+        "dist": 2757,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Cathédrale Saint-Cyr et Sainte-Julitte",
+        "dist": 3569,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Cathédrale Saint-Cyr-et-Sainte-Julitte de Nevers"
+      },
+      {
+        "title": "Palais ducal",
+        "dist": 3622,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Palais ducal de Nevers"
+      },
+      {
+        "title": "Avant-Porte du Croux",
+        "dist": 3674,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Avant-Porte du Croux"
+      },
+      {
+        "title": "Porte du Croux",
+        "dist": 3680,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Porte du Croux"
+      },
+      {
+        "title": "Porte de Paris",
+        "dist": 3965,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Porte de Paris (Nevers)"
+      },
+      {
+        "title": "La Châsse de Bernadette",
+        "dist": 4253,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château du Marais",
+        "dist": 5688,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château du Marais (Nièvre)"
+      },
+      {
+        "title": "Château de Luanges",
+        "dist": 7236,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Fertot",
+        "dist": 7391,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kilomètre 0 - Loire à vélo",
+        "dist": 8015,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Le Bec d'Allier",
+        "dist": 8518,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pont Canal du Guétin",
+        "dist": 8542,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de la Rocherie",
+        "dist": 9276,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-04-sauvigny-les-bois-decize",
@@ -90180,7 +90929,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Camping+des+Halles+-+Onlycamp,+All.+Marcel+Merle,+58300+Decize/data=!4m2!3m1!1s0x47f1a8944c09110d:0x33f29553d2b08427!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=b091aa0e-5591-471c-8c36-cb2b8a2e5afc&g_st=ac",
     "lodgingName": "Camping des Halles - Onlycamp, All. Marcel Merle, 58300 Decize",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Échauguette",
+        "dist": 666,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Porte du Marquis d'Ancre",
+        "dist": 894,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château des comtes de Nevers",
+        "dist": 991,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Germancy",
+        "dist": 2168,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Rosières",
+        "dist": 3189,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Champrobert",
+        "dist": 5055,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Devay",
+        "dist": 5414,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Bateau",
+        "dist": 5879,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Saint-Loup",
+        "dist": 6509,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château",
+        "dist": 7939,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Vierge dans l'Arbre",
+        "dist": 8417,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Verneuil",
+        "dist": 8447,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Verneuil (Nièvre)"
+      },
+      {
+        "title": "Château de la Motte-Farchat",
+        "dist": 10497,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Toury",
+        "dist": 11043,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Goujon",
+        "dist": 11288,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Goujon"
+      }
+    ]
   },
   {
     "slug": "2026-06-05-decize-paray-le-monial",
@@ -99921,7 +100777,8 @@
       "de": "Pierre Emmanuel",
       "nl": "Pierre Emmanuel",
       "fr": "Pierre Emmanuel"
-    }
+    },
+    "pois": []
   },
   {
     "slug": "2026-06-06-paray-le-monial-verjux",
@@ -110070,7 +110927,107 @@
       "de": "Fanny",
       "nl": "Fanny",
       "fr": "Fanny"
-    }
+    },
+    "pois": [
+      {
+        "title": "Château d'Allerey",
+        "dist": 3480,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château d'Allerey"
+      },
+      {
+        "title": "Château Bresse-Et Castille",
+        "dist": 5116,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Domaine du château",
+        "dist": 9480,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Domaine du château"
+      },
+      {
+        "title": "Château",
+        "dist": 10881,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Demigny"
+      },
+      {
+        "title": "Château de Laborde",
+        "dist": 10941,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Maison du Blé et du Pain",
+        "dist": 4856,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Maison du Pain",
+        "dist": 4935,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument à Marguerite Boucicaut",
+        "dist": 619,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "monument au mort",
+        "dist": 5913,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux Morts",
+        "dist": 7106,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jean Louis Barollet",
+        "dist": 7314,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument commémoratif de la Libération",
+        "dist": 9362,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Église Saint-Pancrace",
+        "dist": 10115,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stèle commémorative des fusillés juillet-août 1944",
+        "dist": 11184,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-07-verjux-orchamps",
@@ -124104,7 +125061,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Camping+Municipal+Orchamps,+22+%C3%80+la+Fenotte,+39700+Orchamps/data=!4m2!3m1!1s0x478d4ffb2d2fc723:0xa2a32722186c8b68!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e117c4c6-535c-45ae-ab7e-0ad5fbeca91d&g_st=ac",
     "lodgingName": "Camping Municipal Orchamps, 22 À la Fenotte, 39700 Orchamps",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Château de Bellevue",
+        "dist": 8781,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Baraques du 14",
+        "dist": 10214,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Baraques du 14 de la forêt de Chaux"
+      },
+      {
+        "title": "Motte féodale",
+        "dist": 3004,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Four à pain",
+        "dist": 3193,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vue sur fougere",
+        "dist": 3718,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux Morts",
+        "dist": 3777,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Baraque du 3",
+        "dist": 7251,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ermitage Saint-Bonnot",
+        "dist": 7584,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jardin du souvenir",
+        "dist": 8135,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stèle groupe Panthère",
+        "dist": 8150,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Maquis de Saligney",
+        "dist": 8247,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux Morts de Taxenne",
+        "dist": 9065,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Point de Vue du Bermont",
+        "dist": 9068,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux mort (seconde guerre mondiale)",
+        "dist": 9781,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument commémoratif du Bermont",
+        "dist": 9867,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-08-orchamps-fourbanne",
@@ -130519,7 +131583,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/naturcamping+fourbanne,+5+Chem.+du+Tunnel,+25110+Fourbanne/data=!4m2!3m1!1s0x47927f1b1dbc7bdb:0x6f9b01a2b307a195!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=adafd3e3-aab5-44d4-b0b1-df083c157ec2&g_st=ac",
     "lodgingName": "naturcamping fourbanne, 5 Chem. du Tunnel, 25110 Fourbanne",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Château de la Roche",
+        "dist": 11626,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de La Roche (Doubs)"
+      },
+      {
+        "title": "Belvédère de Chassignole",
+        "dist": 1252,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Saut de Gamache",
+        "dist": 1852,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Belvédère Grange Vuillotey",
+        "dist": 2976,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rechandet",
+        "dist": 3867,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jouffroy d'Abbans",
+        "dist": 4374,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Belvédère Croix de Châtard",
+        "dist": 4763,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vallée du Cusancin",
+        "dist": 4968,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Vierge du Choléra",
+        "dist": 5190,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Fente de Babre",
+        "dist": 5823,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Lonot",
+        "dist": 6148,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Roche Blanche",
+        "dist": 8220,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vue sur l'abbaye",
+        "dist": 9643,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux morts",
+        "dist": 10835,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Grotte de Fourbanne",
+        "dist": 536,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-09-fourbanne-l-isle-sur-le-doubs",
@@ -142640,7 +143811,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/%C3%89tape+bivouac,+28+Rue+de+Brognard,+25490+Allenjoie/data=!4m2!3m1!1s0x4792190047954f75:0x2431a32c60dde140!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e84e42f8-1f09-45e0-a517-23503ff32925&g_st=ac",
     "lodgingName": "Étape bivouac, 28 Rue de Brognard, 25490 Allenjoie",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "La fontaine de Galilée",
+        "dist": 7475,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Fontaine de Galilée"
+      },
+      {
+        "title": "Pendule de Foucault",
+        "dist": 7695,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pont Sarrazin",
+        "dist": 8145,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Puits à Balancier",
+        "dist": 10450,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Le 19",
+        "dist": 7190,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Musée d'Art et d'Histoire",
+        "dist": 7401,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Musée de l'Artisanat et des Traditions Populaires",
+        "dist": 8048,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Musée Roger Comte",
+        "dist": 9033,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux morts",
+        "dist": 1172,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Observatoire",
+        "dist": 1857,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Emplacement de la nécropole mérovingienne",
+        "dist": 3755,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux Morts",
+        "dist": 4304,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stèle pour la 2e Division d'Infanterie Marocaine",
+        "dist": 5122,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Point de vue",
+        "dist": 6167,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stèle des Fusilés",
+        "dist": 6542,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-10-allenjoie-mohlin",
@@ -158431,7 +159709,114 @@
       "de": "Anja und Sandro",
       "nl": "Anja en Sandro",
       "fr": "Anja et Sandro"
-    }
+    },
+    "pois": [
+      {
+        "title": "Tschamberhöhle",
+        "dist": 3891,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Tschamberhöhle"
+      },
+      {
+        "title": "Burg Werrach",
+        "dist": 8852,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Ruine Werrach"
+      },
+      {
+        "title": "Pflughof",
+        "dist": 10181,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dr.-Max-Picard-Platz",
+        "dist": 10253,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museumsplatz",
+        "dist": 10254,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Voliere Exotic",
+        "dist": 10701,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sonnenkalender",
+        "dist": 11427,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burgruine Alt-Tierstein",
+        "dist": 11659,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Burgruine_Alt-Tierstein"
+      },
+      {
+        "title": "Ausstellung zur Geologie des Dinkelbergs",
+        "dist": 3888,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dinkelbergmuseum",
+        "dist": 6366,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mineralienmuseum",
+        "dist": 6935,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museum Augusta Raurica",
+        "dist": 9978,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Römermuseum Augst"
+      },
+      {
+        "title": "Kraftwerk Rheinfelden",
+        "dist": 2727,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Aussichtspunkt auf neues Kraftwerk Rheinfelden",
+        "dist": 2874,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Wegkreuz 1778",
+        "dist": 3131,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-11-mohlin-wangen",
@@ -168447,7 +169832,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Camping+Wangen,+Seeweg+30,+78337+%C3%96hningen-Wangen,+Allemagne/data=!4m2!3m1!1s0x479a8bfbb1320ef5:0xcbbdeb827acaead4!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=656b6a84-390b-479e-bcee-630730a682d7&g_st=ac",
     "lodgingName": "Camping Wangen, Seeweg 30, 78337 Öhningen-Wangen, Allemagne",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Restaurant Burg Hohenklingen",
+        "dist": 5944,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ruine Wolkenstein",
+        "dist": 7733,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Ruine Wolkenstein (Hemishofen)"
+      },
+      {
+        "title": "Urkundenhäuschen",
+        "dist": 8722,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Obertor",
+        "dist": 8964,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Schloss Wellenberg",
+        "dist": 10402,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Schloss Wellenberg (Frauenfeld)"
+      },
+      {
+        "title": "Museum Fischerhaus",
+        "dist": 600,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museum Haus Dix",
+        "dist": 2350,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museum Haus Dix"
+      },
+      {
+        "title": "Mia-und-Hermann-Hesse-Haus",
+        "dist": 3809,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Klostermuseum St. Georgen",
+        "dist": 5734,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stadtmuseum Radolfzell in der alten Stadtapotheke",
+        "dist": 8903,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kunstmuseum Thurgau",
+        "dist": 9960,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ittinger Museum",
+        "dist": 9976,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museum St. Georg",
+        "dist": 11226,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Naturmuseum des Kantons Thurgau",
+        "dist": 11816,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Naturmuseum Thurgau"
+      },
+      {
+        "title": "Museum für Archäologie des Kantons Thurgau",
+        "dist": 11833,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museum für Archäologie Thurgau"
+      }
+    ]
   },
   {
     "slug": "2026-06-13-wangen-sigmaringen",
@@ -175095,7 +176587,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Jugendzeltplatz+Aisnau,+72488+Sigmaringen,+Allemagne/data=!4m2!3m1!1s0x479a15a3f0c52d7d:0x86cc76194db4e55a!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=7f918ed2-8037-481c-bb5c-cd57eec5bfda&g_st=ac",
     "lodgingName": "Jugendzeltplatz Aisnau, 72488 Sigmaringen, Allemagne",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Ruine Hertenstein",
+        "dist": 2954,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burg Altgutenstein",
+        "dist": 7366,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Burg Altgutenstein"
+      },
+      {
+        "title": "Ruine Unterfalkenstein",
+        "dist": 9862,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Unterfalkenstein"
+      },
+      {
+        "title": "Abbundplatz",
+        "dist": 10227,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Alamannenplatz",
+        "dist": 10237,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Küfer",
+        "dist": 10332,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Schauenburg",
+        "dist": 10618,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Schauenburg (Stetten am kalten Markt)"
+      },
+      {
+        "title": "Schlösslefels",
+        "dist": 10636,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ruine Benzenberg",
+        "dist": 10874,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Lenzenburg",
+        "dist": 10971,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Heidenschloss",
+        "dist": 11933,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Neidinger Heidenschloss"
+      },
+      {
+        "title": "Fürstliches Museum",
+        "dist": 154,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Marstallmuseum",
+        "dist": 166,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Schloss Sigmaringen#Marstallmuseum"
+      },
+      {
+        "title": "Schwäbisches Bauernmuseum",
+        "dist": 3096,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Klostermuseum Inzigkofen",
+        "dist": 3117,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-14-sigmaringen-ulm",
@@ -181772,7 +183371,114 @@
       "de": "Anita und Martin",
       "nl": "Anita en Martin",
       "fr": "Anita et Martin"
-    }
+    },
+    "pois": [
+      {
+        "title": "Bierwirtschaft Lochmühle",
+        "dist": 915,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Fischkasten Brunnen",
+        "dist": 1048,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Grabenhäuser",
+        "dist": 1691,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stampfe",
+        "dist": 2649,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burgstall",
+        "dist": 11619,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Donauschwäbisches Zentralmuseum",
+        "dist": 384,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museum Ulm",
+        "dist": 1137,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museum Ulm"
+      },
+      {
+        "title": "Kunsthalle Weishaupt",
+        "dist": 1137,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Kunsthalle Weishaupt"
+      },
+      {
+        "title": "Museum Brot und Kunst",
+        "dist": 1380,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museum Brot und Kunst"
+      },
+      {
+        "title": "Naturmuseum Ulm",
+        "dist": 1433,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Galerie Sebastianskapelle",
+        "dist": 1640,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museum im Konventbau",
+        "dist": 3079,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Kloster Wiblingen"
+      },
+      {
+        "title": "Heimatmuseum Pfuhl",
+        "dist": 4605,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Aussicht Galgenberg",
+        "dist": 676,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Bastion Lauseck / Wilhelmshöhe",
+        "dist": 697,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-15-ulm-donauworth",
@@ -191156,7 +192862,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Kanu-Club+Zeltplatz,+86602,+An+der+Westspange,+86609+Donauw%C3%B6rth,+Allemagne/data=!4m2!3m1!1s0x479ed1f765a366c9:0x1c8455f094a1eafa!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8a7b9cbe-37c0-44f7-bcea-8589bdec09b6&g_st=ac",
     "lodgingName": "Kanu-Club Zeltplatz, 86602, An der Westspange, 86609 Donauwörth, Allemagne",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Karstbrunnen Brünsee",
+        "dist": 7733,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Schloss Tapfheim",
+        "dist": 8289,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Schloss Tapfheim"
+      },
+      {
+        "title": "Besichtigungstraktor",
+        "dist": 8790,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burgruine Graisbach",
+        "dist": 9525,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Blumenuhr",
+        "dist": 10098,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burgstall Thurneck",
+        "dist": 11201,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Burg Thurneck"
+      },
+      {
+        "title": "Haus der Stadtgeschichte",
+        "dist": 403,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Haus der Stadtgeschichte (Donauwörth)"
+      },
+      {
+        "title": "Käthe-Kruse-Puppen-Museum",
+        "dist": 781,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Hinter Gittern",
+        "dist": 6126,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Heimatmuseum",
+        "dist": 10484,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gebrüder-Lachner-Museum",
+        "dist": 10598,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sebastian Franck",
+        "dist": 195,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gefallenendenkmal",
+        "dist": 466,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "ehem. Hotel Krebs",
+        "dist": 601,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ehemaliger Bahnhof Donauwörth/Progymnasium",
+        "dist": 621,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-16-donauworth-vohburg-an-der-donau",
@@ -197640,7 +199453,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Rest+Stop+and+Campsite+For+Canoers+and+Cyclists,+85088+Vohburg+an+der+Donau,+Allemagne/data=!4m2!3m1!1s0x479e53497d08132d:0xee53bb09aa8eae14!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8d566ef6-0d83-48e4-a050-b7758e98dea6&g_st=ac",
     "lodgingName": "Rest Stop and Campsite For Canoers and Cyclists, 85088 Vohburg an der Donau, Allemagne",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Fort VI Prinz Karl",
+        "dist": 7208,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Katharinenberg (Großmehring)#Fort VI .E2.80.9EPrinz Karl.E2.80.9C"
+      },
+      {
+        "title": "Huey",
+        "dist": 9029,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Wandgemälde von der Grundschule Mailing",
+        "dist": 9707,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Starfighter",
+        "dist": 10762,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Phantom",
+        "dist": 10853,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tornado",
+        "dist": 10854,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jakobs-Rast",
+        "dist": 11007,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Wegweiser für Jakobspilger",
+        "dist": 11088,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mosaikboden von Santiago de Compostella",
+        "dist": 11215,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Partnerschaftsdenkmal",
+        "dist": 11244,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Denkmalbrett für Jakobspilger",
+        "dist": 11345,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gartenpavillon",
+        "dist": 11358,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Baumbilder",
+        "dist": 11586,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Geburtshaus Anna Schäffer",
+        "dist": 8836,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museum Kösching",
+        "dist": 9841,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museum Kösching"
+      }
+    ]
   },
   {
     "slug": "2026-06-17-vohburg-an-der-donau-ratisbonne",
@@ -204197,7 +206117,114 @@
       "de": "Uli und Christian",
       "nl": "Uli en Christian",
       "fr": "Uli et Christian"
-    }
+    },
+    "pois": [
+      {
+        "title": "Porta praetoria",
+        "dist": 485,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Porta praetoria (Regensburg)"
+      },
+      {
+        "title": "Historischer Hafenkran",
+        "dist": 1411,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "1. Cowboyclub Regensburg",
+        "dist": 2817,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Waldlabyrinth",
+        "dist": 5290,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Historischer Grenzstein",
+        "dist": 6364,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Möseleiche",
+        "dist": 7217,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "document Schnupftabakfabrik",
+        "dist": 89,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Reichstagsmuseum",
+        "dist": 231,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Besucherzentrum Welterbe",
+        "dist": 458,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Heimat und Bauernmuseum",
+        "dist": 7728,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Don Juan D'Austria",
+        "dist": 305,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Eustach-Graf-von-Schlitz-Goertz-Denkmal",
+        "dist": 351,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Römermauer (Castra Regina)",
+        "dist": 499,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kriegerdenkmal",
+        "dist": 661,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Österreicherdenkmal",
+        "dist": 1358,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-18-zeitlarn-osterhofen",
@@ -217227,7 +219254,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Camping+Meier,+Ro%C3%9Ffelden+1A,+94486+Osterhofen,+Allemagne/data=!4m2!3m1!1s0x47750539c2b11c3d:0x8a0c5785a8b52d43!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e1b5c017-3a1f-420e-9262-8e53636424ec&g_st=ac",
     "lodgingName": "Camping Meier, Roßfelden 1A, 94486 Osterhofen, Allemagne",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Infohaus Isarmündung",
+        "dist": 9575,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tipi",
+        "dist": 9587,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ausstellung \"Kraft im Fluss\"",
+        "dist": 9635,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Erlebnisstation Deich",
+        "dist": 9710,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Schloß Isarau",
+        "dist": 10832,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Schloss Aholming"
+      },
+      {
+        "title": "Museum Quintana",
+        "dist": 5447,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museum Quintana"
+      },
+      {
+        "title": "Jahrhundertflut 2013",
+        "dist": 1519,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Freilicht-Theater",
+        "dist": 9538,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Heiliger Gunther",
+        "dist": 10584,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kriegerdenkmal",
+        "dist": 11251,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Isarmündung",
+        "dist": 11254,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pledlberg",
+        "dist": 2417,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Metzgerhügel",
+        "dist": 2603,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kreuzhügel",
+        "dist": 3451,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rechenberg",
+        "dist": 3711,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-20-osterhofen-linz",
@@ -223804,7 +225938,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Campingplatz,+Heilhamer+W.+2,+4040+Linz,+Autriche/data=!4m2!3m1!1s0x4773982e08f218c5:0xf19ee683dcbe58dd!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=785574a0-cd49-4b93-9c40-acc8d423fae3&g_st=ac",
     "lodgingName": "Campingplatz, Heilhamer W. 2, 4040 Linz, Autriche",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Pestsäule Auerspergplatz",
+        "dist": 2544,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Linzer Grottenbahn",
+        "dist": 2889,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Linzer Grottenbahn"
+      },
+      {
+        "title": "Teufelsbrunnen",
+        "dist": 10456,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Drei Bezirke Stein",
+        "dist": 11601,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zahnheilkundemuseum",
+        "dist": 1669,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Atelier Galerie Moran",
+        "dist": 2117,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ars Electronica Futurelab / Roof",
+        "dist": 1307,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Donaublick",
+        "dist": 5353,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Römerturm",
+        "dist": 5393,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kriegerdenkmal Leonding 1. Weltkrieg",
+        "dist": 5628,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rosenfeldweg",
+        "dist": 8427,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Amonwarte",
+        "dist": 10691,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tisch der Austreibung",
+        "dist": 640,
+        "kind": "Œuvre / art",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Hommage à Anton Bruckner",
+        "dist": 706,
+        "kind": "Œuvre / art",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Die Schlange",
+        "dist": 784,
+        "kind": "Œuvre / art",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-21-linz-pochlarn",
@@ -230400,7 +232641,114 @@
     "lodgingUrl": "https://www.google.com/maps/place/Naturfreunde+P%C3%B6chlarn,+Schiffhausweg+4,+3380+Am+Rechen,+Autriche/data=!4m2!3m1!1s0x4772678ccdb7dabf:0x27665564a2e29f55!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=5f0c0b44-21fc-4888-8111-8d476808c2a0&g_st=ac",
     "lodgingName": "Naturfreunde Pöchlarn, Schiffhausweg 4, 3380 Am Rechen, Autriche",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Rogelstein",
+        "dist": 7089,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ereignisdenkmal 100. Jahrestag der Völkerschlacht bei Leipzig",
+        "dist": 9289,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Wachaulabor",
+        "dist": 10531,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museum für Rechtsgeschichte",
+        "dist": 11634,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Folterkammer",
+        "dist": 11713,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Nibelungendenkmal",
+        "dist": 1101,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kriegerdenkmal",
+        "dist": 1505,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Lourdesgrotte",
+        "dist": 3383,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Briafatonz",
+        "dist": 4610,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Hirschensprung",
+        "dist": 6299,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Naturfreundestein",
+        "dist": 6880,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Russenkreuz",
+        "dist": 8656,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Brand im Stift Melk 1805"
+      },
+      {
+        "title": "Friedenkreuz",
+        "dist": 9288,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dachberg-Warte",
+        "dist": 9347,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": "Dachberg-Warte"
+      },
+      {
+        "title": "Familiensäule",
+        "dist": 10346,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ]
   },
   {
     "slug": "2026-06-22-pochlarn-vienne",
@@ -239754,6 +242102,113 @@
     "lodgingUrl": "",
     "lodgingName": "",
     "thanks": "",
-    "thanksTranslations": {}
+    "thanksTranslations": {},
+    "pois": [
+      {
+        "title": "Heldenplatz",
+        "dist": 2266,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Heldenplatz"
+      },
+      {
+        "title": "Spanische Hofreitschule",
+        "dist": 2486,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Spanische Hofreitschule"
+      },
+      {
+        "title": "Kaisergruft",
+        "dist": 2503,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Kaisergruft"
+      },
+      {
+        "title": "Obelisk",
+        "dist": 2577,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Obeliskbrunnen"
+      },
+      {
+        "title": "Café Central",
+        "dist": 2731,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Café Central"
+      },
+      {
+        "title": "Fiaker",
+        "dist": 2900,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zum süßen Eck",
+        "dist": 3941,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Hundertwasserhaus",
+        "dist": 3973,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Hundertwasserhaus (Wien)"
+      },
+      {
+        "title": "Mammutbaum",
+        "dist": 6699,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Knappenhof",
+        "dist": 9671,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Architekturzentrum Wien",
+        "dist": 1864,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Architekturzentrum Wien"
+      },
+      {
+        "title": "Pfadfindermuseum",
+        "dist": 2090,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Albertina",
+        "dist": 2315,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Albertina (Wien)"
+      },
+      {
+        "title": "Sisi Museum",
+        "dist": 2480,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jüdisches Museum Wien",
+        "dist": 2580,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Jüdisches Museum Wien"
+      }
+    ]
   }
 ]

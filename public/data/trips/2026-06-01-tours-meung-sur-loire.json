@@ -10871,5 +10871,112 @@
   "minAltitude": 28,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": [
+    {
+      "title": "Espace naturel sensible des courtils des Mauves",
+      "dist": 142,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Les Jardins de Roquelin",
+      "dist": 2262,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "La promenade des Mauves et des moulins",
+      "dist": 2292,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Meung sur Loire",
+      "dist": 2325,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "L'orangerie du Château de Meung sur Loire",
+      "dist": 2345,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "De Cléry à la Butte des Elus",
+      "dist": 4813,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Basilique royale Notre-Dame-de-Cléry",
+      "dist": 4832,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Basilique Notre-Dame de Cléry"
+    },
+    {
+      "title": "Château de Mardereau",
+      "dist": 5563,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château du Bouchet",
+      "dist": 6356,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "La butte des Élus",
+      "dist": 7092,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Mézières-lez-Cléry et le chemin des Vallées",
+      "dist": 8181,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Montpipeau",
+      "dist": 8204,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Fontpertuis",
+      "dist": 8739,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour de César",
+      "dist": 9053,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour du Diable",
+      "dist": 9057,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    }
+  ]
 }

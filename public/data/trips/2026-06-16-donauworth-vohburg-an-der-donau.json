@@ -6488,5 +6488,112 @@
   "minAltitude": 360,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": [
+    {
+      "title": "Fort VI Prinz Karl",
+      "dist": 7208,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Katharinenberg (Großmehring)#Fort VI .E2.80.9EPrinz Karl.E2.80.9C"
+    },
+    {
+      "title": "Huey",
+      "dist": 9029,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Wandgemälde von der Grundschule Mailing",
+      "dist": 9707,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Starfighter",
+      "dist": 10762,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Phantom",
+      "dist": 10853,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tornado",
+      "dist": 10854,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jakobs-Rast",
+      "dist": 11007,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Wegweiser für Jakobspilger",
+      "dist": 11088,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mosaikboden von Santiago de Compostella",
+      "dist": 11215,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Partnerschaftsdenkmal",
+      "dist": 11244,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Denkmalbrett für Jakobspilger",
+      "dist": 11345,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gartenpavillon",
+      "dist": 11358,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Baumbilder",
+      "dist": 11586,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Geburtshaus Anna Schäffer",
+      "dist": 8836,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Museum Kösching",
+      "dist": 9841,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museum Kösching"
+    }
+  ]
 }

@@ -6419,5 +6419,112 @@
   "minAltitude": 215,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": [
+    {
+      "title": "Château de la Roche",
+      "dist": 11626,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Château de La Roche (Doubs)"
+    },
+    {
+      "title": "Belvédère de Chassignole",
+      "dist": 1252,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Saut de Gamache",
+      "dist": 1852,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Belvédère Grange Vuillotey",
+      "dist": 2976,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Rechandet",
+      "dist": 3867,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jouffroy d'Abbans",
+      "dist": 4374,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Belvédère Croix de Châtard",
+      "dist": 4763,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vallée du Cusancin",
+      "dist": 4968,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "La Vierge du Choléra",
+      "dist": 5190,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Fente de Babre",
+      "dist": 5823,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Lonot",
+      "dist": 6148,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Roche Blanche",
+      "dist": 8220,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vue sur l'abbaye",
+      "dist": 9643,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument aux morts",
+      "dist": 10835,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Grotte de Fourbanne",
+      "dist": 536,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ]
 }

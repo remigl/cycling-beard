@@ -15795,5 +15795,112 @@
   "minAltitude": 232,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": [
+    {
+      "title": "Tschamberhöhle",
+      "dist": 3891,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Tschamberhöhle"
+    },
+    {
+      "title": "Burg Werrach",
+      "dist": 8852,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Ruine Werrach"
+    },
+    {
+      "title": "Pflughof",
+      "dist": 10181,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dr.-Max-Picard-Platz",
+      "dist": 10253,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Museumsplatz",
+      "dist": 10254,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Voliere Exotic",
+      "dist": 10701,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sonnenkalender",
+      "dist": 11427,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Burgruine Alt-Tierstein",
+      "dist": 11659,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Burgruine_Alt-Tierstein"
+    },
+    {
+      "title": "Ausstellung zur Geologie des Dinkelbergs",
+      "dist": 3888,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dinkelbergmuseum",
+      "dist": 6366,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mineralienmuseum",
+      "dist": 6935,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Museum Augusta Raurica",
+      "dist": 9978,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Römermuseum Augst"
+    },
+    {
+      "title": "Kraftwerk Rheinfelden",
+      "dist": 2727,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aussichtspunkt auf neues Kraftwerk Rheinfelden",
+      "dist": 2874,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Wegkreuz 1778",
+      "dist": 3131,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ]
 }

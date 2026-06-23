@@ -10153,5 +10153,105 @@
   "minAltitude": 179,
   "highlights": [],
   "tags": [],
-  "weather": null
+  "weather": null,
+  "pois": [
+    {
+      "title": "Château d'Allerey",
+      "dist": 3480,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Château d'Allerey"
+    },
+    {
+      "title": "Château Bresse-Et Castille",
+      "dist": 5116,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Domaine du château",
+      "dist": 9480,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Domaine du château"
+    },
+    {
+      "title": "Château",
+      "dist": 10881,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Château de Demigny"
+    },
+    {
+      "title": "Château de Laborde",
+      "dist": 10941,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Maison du Blé et du Pain",
+      "dist": 4856,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "La Maison du Pain",
+      "dist": 4935,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument à Marguerite Boucicaut",
+      "dist": 619,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "monument au mort",
+      "dist": 5913,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument aux Morts",
+      "dist": 7106,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jean Louis Barollet",
+      "dist": 7314,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument commémoratif de la Libération",
+      "dist": 9362,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Église Saint-Pancrace",
+      "dist": 10115,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Stèle commémorative des fusillés juillet-août 1944",
+      "dist": 11184,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ]
 }
