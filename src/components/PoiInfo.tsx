@@ -67,18 +67,42 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
         }
 
         // 2) POI SANS tag wiki → recherche par nom (une requête chacun, en parallèle limité)
+        const cityCtx = trip.endCity || trip.startCity || "";
         const untagged = basePois.map((p, i) => ({ p, i })).filter(x => !x.p.wikiTitle);
         await Promise.all(untagged.map(async ({ p, i }) => {
           try {
-            // generator=search : trouve la page la plus pertinente pour ce nom
-            const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(p.title)}&gsrlimit=1&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*`;
+            // Recherche avec contexte ville pour viser le bon lieu (ex: "Stadtpark Wien")
+            const term = cityCtx ? `${p.title} ${cityCtx}` : p.title;
+            const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(term)}&gsrlimit=3&prop=extracts|pageimages|coordinates&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*`;
             const res = await fetch(url);
             const data = res.ok ? await res.json() : null;
-            const pages = data?.query?.pages || {};
-            const first = Object.values(pages)[0] as any;
-            if (first) {
-              const ex = extractPage(first);
-              enriched[i] = { ...ex, wikiTitle: first.title || null };
+            const pages = data?.query?.pages ? Object.values(data.query.pages) as any[] : [];
+            if (!pages.length) return;
+            // On garde le résultat dont le titre ressemble le plus au nom du POI,
+            // pour éviter les pages hors sujet renvoyées par la recherche.
+            const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").trim();
+            const target = norm(p.title);
+            const scored = pages.map(pg => {
+              const titleN = norm(pg.title || "");
+              let score = 0;
+              if (titleN === target) score = 100;
+              else if (titleN.includes(target) || target.includes(titleN)) score = 60;
+              else {
+                // mots communs
+                const tw = new Set(target.split(" ").filter(w => w.length > 2));
+                const pw = titleN.split(" ").filter(w => w.length > 2);
+                const common = pw.filter(w => tw.has(w)).length;
+                score = common * 20;
+              }
+              if (pg.index != null) score -= pg.index; // léger bonus au mieux classé
+              return { pg, score };
+            }).sort((a, b) => b.score - a.score);
+            const best = scored[0];
+            // Seuil : si le meilleur titre ne ressemble pas assez, on n'enrichit pas
+            // (mieux vaut pas de description qu'une mauvaise).
+            if (best && best.score >= 40) {
+              const ex = extractPage(best.pg);
+              enriched[i] = { ...ex, wikiTitle: best.pg.title || null };
             }
           } catch {}
         }));
