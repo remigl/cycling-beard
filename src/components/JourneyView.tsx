@@ -346,6 +346,20 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
               </button>
             ))}
           </div>
+
+          {/* Bouton unique "Spécialités" du pays sélectionné (par pays, pas par étape) */}
+          {selectedCountry !== "all" && (() => {
+            const countryTrip = trips.find(tr => tr.country === selectedCountry && tr.specialties && tr.specialties.length > 0);
+            if (!countryTrip) return null;
+            return (
+              <button
+                onClick={() => setFoodTrip(countryTrip)}
+                className="mt-3 inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest px-4 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+              >
+                <UtensilsCrossed size={13} /> {t("journey.food_btn")} · {countryLabel(selectedCountry)}
+              </button>
+            );
+          })()}
         </div>
 
         {/* Sous-filtres régions */}
@@ -529,22 +543,14 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                             <Bird size={12} /> {t("journey.birds_btn")}
                           </button>
                         </div>
-                        {/* Rangée 2 : Points d'intérêt · Spécialités */}
+                        {/* Points d'intérêt (les spécialités sont par pays, en haut) */}
                         {(trip.startCity || trip.endCity) && (
-                          <div className="grid grid-cols-2 gap-2">
-                            <button
-                              onClick={() => setPoiTrip(trip)}
-                              className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
-                            >
-                              <MapPin size={12} /> {t("journey.poi_btn")}
-                            </button>
-                            <button
-                              onClick={() => setFoodTrip(trip)}
-                              className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
-                            >
-                              <UtensilsCrossed size={12} /> {t("journey.food_btn")}
-                            </button>
-                          </div>
+                          <button
+                            onClick={() => setPoiTrip(trip)}
+                            className="w-full inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                          >
+                            <MapPin size={12} /> {t("journey.poi_btn")}
+                          </button>
                         )}
                       </div>
                     )}
