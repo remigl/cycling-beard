@@ -11,7 +11,7 @@
   "distanceKm": 98.3,
   "elevationGain": 374,
   "maxAltitude": 273,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -66,7 +66,38 @@
   "lodgingName": "Naturfreunde Pöchlarn, Schiffhausweg 4, 3380 Am Rechen, Autriche",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
+      "alt": "Img 3706"
+    },
+    {
+      "src": "/media/2026-06-21-linz-pochlarn/img_3712.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3712.webp",
+      "alt": "Img 3712"
+    },
+    {
+      "src": "/media/2026-06-21-linz-pochlarn/img_3731.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3731.webp",
+      "alt": "Img 3731"
+    },
+    {
+      "src": "/media/2026-06-21-linz-pochlarn/img_3745.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3745.webp",
+      "alt": "Img 3745"
+    },
+    {
+      "src": "/media/2026-06-21-linz-pochlarn/img_3753.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3753.webp",
+      "alt": "Img 3753"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-21-linz-pochlarn_1.gpx",
   "mapLat": 48.2128799,

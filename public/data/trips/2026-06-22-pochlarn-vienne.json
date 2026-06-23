@@ -11,7 +11,7 @@
   "distanceKm": 142.5,
   "elevationGain": 593,
   "maxAltitude": 203,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-06-22-pochlarn-vienne/img_3760.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [
@@ -66,7 +66,33 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-06-22-pochlarn-vienne/img_3760.webp",
+      "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3760.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-06-22-pochlarn-vienne/img_3760.webp",
+      "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3760.webp",
+      "alt": "Img 3760"
+    },
+    {
+      "src": "/media/2026-06-22-pochlarn-vienne/img_3761.webp",
+      "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3761.webp",
+      "alt": "Img 3761"
+    },
+    {
+      "src": "/media/2026-06-22-pochlarn-vienne/img_3767.webp",
+      "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3767.webp",
+      "alt": "Img 3767"
+    },
+    {
+      "src": "/media/2026-06-22-pochlarn-vienne/img_3773.webp",
+      "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3773.webp",
+      "alt": "Img 3773"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-06-22-pochlarn-vienne_1.gpx",
   "mapLat": 48.1885897,

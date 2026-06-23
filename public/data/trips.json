@@ -226057,8 +226057,8 @@
     "endCity": "Pöchlarn",
     "distanceKm": 98.3,
     "elevationGain": 374,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
+    "thumbnail": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -232346,7 +232346,38 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
+        "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
+        "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
+        "alt": "Img 3706"
+      },
+      {
+        "src": "/media/2026-06-21-linz-pochlarn/img_3712.webp",
+        "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3712.webp",
+        "alt": "Img 3712"
+      },
+      {
+        "src": "/media/2026-06-21-linz-pochlarn/img_3731.webp",
+        "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3731.webp",
+        "alt": "Img 3731"
+      },
+      {
+        "src": "/media/2026-06-21-linz-pochlarn/img_3745.webp",
+        "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3745.webp",
+        "alt": "Img 3745"
+      },
+      {
+        "src": "/media/2026-06-21-linz-pochlarn/img_3753.webp",
+        "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3753.webp",
+        "alt": "Img 3753"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -232760,8 +232791,8 @@
     "endCity": "Vienne",
     "distanceKm": 142.5,
     "elevationGain": 593,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-06-22-pochlarn-vienne/img_3760.webp",
+    "thumbnail": "/media/2026-06-22-pochlarn-vienne/thumb_img_3760.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -241559,7 +241590,33 @@
     "fullStory": [
       "Cette étape sera bientôt documentée."
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-06-22-pochlarn-vienne/img_3760.webp",
+        "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3760.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-06-22-pochlarn-vienne/img_3760.webp",
+        "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3760.webp",
+        "alt": "Img 3760"
+      },
+      {
+        "src": "/media/2026-06-22-pochlarn-vienne/img_3761.webp",
+        "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3761.webp",
+        "alt": "Img 3761"
+      },
+      {
+        "src": "/media/2026-06-22-pochlarn-vienne/img_3767.webp",
+        "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3767.webp",
+        "alt": "Img 3767"
+      },
+      {
+        "src": "/media/2026-06-22-pochlarn-vienne/img_3773.webp",
+        "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_img_3773.webp",
+        "alt": "Img 3773"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
