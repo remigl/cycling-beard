@@ -28,6 +28,15 @@ export interface TripSummary {
   lodgingName?: string;
   thanks?: string;
   thanksTranslations?: Record<string, string>;
+  pois?: Poi[];
+}
+
+export interface Poi {
+  title: string;
+  dist: number;
+  kind: string;
+  rank: number;
+  wikiTitle?: string | null;
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────
