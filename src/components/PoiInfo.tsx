@@ -15,6 +15,15 @@ interface PoiInfoProps {
   t: (key: string) => string;
 }
 
+// Extrait image + description courte d'une page Wikipédia (format API)
+function extractPage(pg: any): { thumb: string | null; desc: string | null } {
+  let desc = (pg.extract || "").replace(/\s+/g, " ").trim();
+  if (desc.length > 160) desc = desc.slice(0, 157) + "…";
+  let thumb = pg.thumbnail?.source || null;
+  if (thumb && /(Localisation|location_map|_map|\.svg)/i.test(thumb)) thumb = null;
+  return { thumb, desc: desc || null };
+}
+
 export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
   const basePois: Poi[] = trip.pois || [];
   const [pois, setPois] = useState<PoiView[]>(basePois);
@@ -28,32 +37,57 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
     return () => { document.body.style.overflow = prev; };
   }, []);
 
-  // Enrichit avec photo + description Wikipédia (Wikipédia accepte les appels
-  // navigateur, contrairement à Overpass). Les POI eux-mêmes viennent du sync.
+  // Enrichit avec photo + description Wikipédia. Les POI taggés wiki (depuis OSM)
+  // sont récupérés en lot ; ceux sans tag sont cherchés par leur nom sur Wikipédia.
   useEffect(() => {
-    const withWiki = basePois.filter(p => p.wikiTitle).map(p => p.wikiTitle!) as string[];
-    if (withWiki.length === 0) { setLoading(false); return; }
     let cancelled = false;
     (async () => {
       try {
-        const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(withWiki.slice(0, 40).join("|"))}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=2&pithumbsize=120&format=json&origin=*&redirects=1`;
-        const res = await fetch(url);
-        const data = res.ok ? await res.json() : null;
-        const pages = data?.query?.pages || {};
-        const byTitle: Record<string, { thumb: string | null; desc: string | null }> = {};
-        for (const k of Object.keys(pages)) {
-          const pg = pages[k];
-          let desc = (pg.extract || "").replace(/\s+/g, " ").trim();
-          if (desc.length > 160) desc = desc.slice(0, 157) + "…";
-          let thumb = pg.thumbnail?.source || null;
-          if (thumb && /(Localisation|location_map|_map|\.svg)/i.test(thumb)) thumb = null;
-          byTitle[pg.title] = { thumb, desc: desc || null };
+        const enriched: Record<number, { thumb: string | null; desc: string | null; wikiTitle: string | null }> = {};
+
+        // 1) POI avec tag wiki → requête en lot par titres
+        const tagged = basePois.map((p, i) => ({ p, i })).filter(x => x.p.wikiTitle);
+        if (tagged.length) {
+          const titles = tagged.map(x => x.p.wikiTitle!) as string[];
+          const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(titles.slice(0, 40).join("|"))}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*&redirects=1`;
+          try {
+            const res = await fetch(url);
+            const data = res.ok ? await res.json() : null;
+            const pages = data?.query?.pages || {};
+            const byTitle: Record<string, { thumb: string | null; desc: string | null }> = {};
+            for (const k of Object.keys(pages)) {
+              const pg = pages[k];
+              byTitle[pg.title] = extractPage(pg);
+            }
+            for (const { p, i } of tagged) {
+              const m = p.wikiTitle && byTitle[p.wikiTitle];
+              if (m) enriched[i] = { ...m, wikiTitle: p.wikiTitle! };
+            }
+          } catch {}
         }
+
+        // 2) POI SANS tag wiki → recherche par nom (une requête chacun, en parallèle limité)
+        const untagged = basePois.map((p, i) => ({ p, i })).filter(x => !x.p.wikiTitle);
+        await Promise.all(untagged.map(async ({ p, i }) => {
+          try {
+            // generator=search : trouve la page la plus pertinente pour ce nom
+            const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(p.title)}&gsrlimit=1&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*`;
+            const res = await fetch(url);
+            const data = res.ok ? await res.json() : null;
+            const pages = data?.query?.pages || {};
+            const first = Object.values(pages)[0] as any;
+            if (first) {
+              const ex = extractPage(first);
+              enriched[i] = { ...ex, wikiTitle: first.title || null };
+            }
+          } catch {}
+        }));
+
         if (cancelled) return;
-        setPois(basePois.map(p => p.wikiTitle && byTitle[p.wikiTitle]
-          ? { ...p, thumb: byTitle[p.wikiTitle].thumb, desc: byTitle[p.wikiTitle].desc }
+        setPois(basePois.map((p, i) => enriched[i]
+          ? { ...p, thumb: enriched[i].thumb, desc: enriched[i].desc, wikiTitle: enriched[i].wikiTitle || p.wikiTitle }
           : p));
-      } catch { /* enrichissement optionnel */ }
+      } catch {}
       if (!cancelled) setLoading(false);
     })();
     return () => { cancelled = true; };
