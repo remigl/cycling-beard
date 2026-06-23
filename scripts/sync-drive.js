@@ -273,6 +273,84 @@ async function reverseGeocode(lat, lng) {
   return empty;
 }
 
+// Récupère les vrais lieux touristiques autour d'un point via Overpass (OSM).
+// Côté serveur (GitHub Actions) → pas de CORS. Renvoie une liste triée par
+// pertinence touristique puis distance. Tolérant : [] si échec.
+async function fetchPois(lat, lng, wikiLang = "fr") {
+  if (lat == null || lng == null) return [];
+
+  const rank = (tags) => {
+    const h = tags.historic, to = tags.tourism, l = tags.leisure, a = tags.amenity, n = tags.natural;
+    if (to === "attraction") return { rank: 10, kind: "Attraction" };
+    if (h === "castle" || h === "fort" || h === "city_gate") return { rank: 10, kind: "Château / fort" };
+    if (to === "museum" || to === "gallery") return { rank: 9, kind: "Musée" };
+    if (h === "monument" || h === "memorial" || h === "ruins" || h === "archaeological_site") return { rank: 8, kind: "Monument / ruines" };
+    if (to === "viewpoint") return { rank: 8, kind: "Point de vue" };
+    if (a === "place_of_worship" || h === "church" || h === "monastery") return { rank: 7, kind: "Édifice religieux" };
+    if (to === "theme_park" || to === "zoo" || to === "aquarium") return { rank: 7, kind: "Parc à thème / zoo" };
+    if (n === "waterfall" || n === "peak" || n === "cave_entrance") return { rank: 6, kind: "Site naturel" };
+    if (to === "artwork") return { rank: 6, kind: "Œuvre / art" };
+    if (l === "park" || to === "park") return { rank: 5, kind: "Parc" };
+    return { rank: 0, kind: "" };
+  };
+  const haversine = (la1, lo1, la2, lo2) => {
+    const R = 6371000, toRad = (d) => d * Math.PI / 180;
+    const dLat = toRad(la2 - la1), dLng = toRad(lo2 - lo1);
+    const aa = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(la1)) * Math.cos(toRad(la2)) * Math.sin(dLng / 2) ** 2;
+    return Math.round(2 * R * Math.asin(Math.sqrt(aa)));
+  };
+
+  const radius = 12000;
+  const q = `[out:json][timeout:25];(node["tourism"~"attraction|museum|gallery|viewpoint|artwork|theme_park|zoo|aquarium"](around:${radius},${lat},${lng});way["tourism"~"attraction|museum|gallery|viewpoint|theme_park|zoo"](around:${radius},${lat},${lng});node["historic"~"castle|fort|monument|memorial|ruins|archaeological_site|city_gate|church|monastery"](around:${radius},${lat},${lng});way["historic"~"castle|fort|monument|ruins|archaeological_site"](around:${radius},${lat},${lng});node["natural"~"waterfall|peak|cave_entrance"](around:${radius},${lat},${lng}););out center 80;`;
+  const mirrors = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter",
+  ];
+
+  let data = null;
+  for (const url of mirrors) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 30000);
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync)" },
+        body: "data=" + encodeURIComponent(q),
+        signal: controller.signal,
+      });
+      clearTimeout(timer);
+      if (!res.ok) continue;
+      data = await res.json();
+      break;
+    } catch { /* miroir suivant */ }
+  }
+  if (!data) { console.log("    ⚠️  Overpass injoignable (POI ignorés)"); return []; }
+
+  const seen = new Set();
+  let list = [];
+  for (const el of (data.elements || [])) {
+    const tags = el.tags || {};
+    const name = tags["name:" + wikiLang] || tags.name;
+    if (!name || seen.has(name)) continue;
+    const { rank: r, kind } = rank(tags);
+    if (r === 0) continue;
+    const elat = el.lat ?? el.center?.lat, elng = el.lon ?? el.center?.lon;
+    if (elat == null || elng == null) continue;
+    seen.add(name);
+    let wikiTitle = null;
+    if (tags.wikipedia) {
+      const parts = tags.wikipedia.split(":");
+      wikiTitle = parts.length > 1 ? parts.slice(1).join(":") : tags.wikipedia;
+    }
+    list.push({ title: name, dist: haversine(lat, lng, elat, elng), kind, rank: r, wikiTitle });
+  }
+  list.sort((a, b) => (b.rank - a.rank) || (a.dist - b.dist));
+  list = list.slice(0, 15);
+  console.log(`    🏛️  ${list.length} sites touristiques trouvés`);
+  return list;
+}
+
 // Nom de pays propre depuis le code ISO (fiable, indépendant de la langue Nominatim)
 function countryFromCode(code) {
   const map = {
@@ -1042,6 +1120,9 @@ async function syncFolder(drive, folder, cache, force) {
     thanksTr.fr = docNotes.thanks;
   }
 
+  // ── Points d'intérêt touristiques (Overpass/OSM, côté serveur) ──
+  const pois = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
+
   // ── Build stage JSON ──
   const stage = {
     slug,
@@ -1083,6 +1164,7 @@ async function syncFolder(drive, folder, cache, force) {
     highlights: notes.highlights || [],
     tags: notes.tags || [],
     weather: notes.weather || null,
+    pois,
   };
 
   fs.writeFileSync(stageJsonPath, JSON.stringify(stage, null, 2));
@@ -1361,6 +1443,7 @@ async function main() {
     lodgingName: s.lodgingName || "",
     thanks: s.thanks || "",
     thanksTranslations: s.thanksTranslations || {},
+    pois: s.pois || [],
   }));
 
   fs.writeFileSync(path.join(DATA_DIR, "trips.json"), JSON.stringify(trips, null, 2));
