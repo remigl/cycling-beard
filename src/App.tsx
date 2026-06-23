@@ -33,7 +33,11 @@ export default function App() {
 
   // Fetch stats.json + trips.json on mount
   useEffect(() => {
-    fetch("/data/stats.json")
+    // Cache-busting : un paramètre qui change à chaque chargement de page force
+    // le navigateur à récupérer la dernière version des données (sinon il peut
+    // servir un ancien JSON en cache après une mise à jour du sync).
+    const v = `?v=${Date.now()}`;
+    fetch(`/data/stats.json${v}`)
       .then(r => r.json())
       .then((data: SiteStats) => {
         setStats(data);
@@ -41,12 +45,12 @@ export default function App() {
       })
       .catch(console.error);
 
-    fetch("/data/trips.json")
+    fetch(`/data/trips.json${v}`)
       .then(r => r.json())
       .then((data: TripSummary[]) => setTrips(data))
       .catch(console.error);
 
-    fetch("/data/about.json")
+    fetch(`/data/about.json${v}`)
       .then(r => r.json())
       .then((data) => setAbout(data))
       .catch(() => setAbout(null));
