@@ -12,7 +12,6 @@ interface FoodInfoProps {
 
 export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
   const specialties: Specialty[] = trip.specialties || [];
-  const dbg = `${specialties.length} plats · 1er: ${specialties[0]?.title || "—"} · img:${specialties[0]?.image ? "oui" : "non"} · wiki:${specialties[0]?.wikipedia ? "oui" : "non"}`;
 
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -31,7 +30,6 @@ export default function FoodInfo({ trip, lang, onClose, t }: FoodInfoProps) {
             <div className="min-w-0">
               <div className="font-display font-bold text-sm text-white uppercase tracking-wider truncate">{t("food.title")}</div>
               <div className="font-mono text-[9px] text-text-dim truncate">{trip.endCity || trip.region || trip.title} · {t("food.subtitle")}</div>
-              <div className="font-mono text-[8px] text-red-400 truncate">{dbg}</div>
             </div>
           </div>
           <button onClick={onClose} className="w-9 h-9 rounded-full bg-white/5 hover:bg-white/15 flex items-center justify-center text-white cursor-pointer shrink-0 ml-2">
