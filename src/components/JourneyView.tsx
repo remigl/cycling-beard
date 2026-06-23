@@ -349,8 +349,18 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
 
           {/* Bouton unique "Spécialités" du pays sélectionné (par pays, pas par étape) */}
           {selectedCountry !== "all" && (() => {
-            const countryTrip = trips.find(tr => tr.country === selectedCountry && tr.specialties && tr.specialties.length > 0);
-            if (!countryTrip) return null;
+            const inCountry = trips.filter(tr => tr.country === selectedCountry);
+            const withSpec = inCountry.filter(tr => tr.specialties && tr.specialties.length > 0);
+            const countryTrip = withSpec[0];
+            if (!countryTrip) {
+              // Diagnostic temporaire : pourquoi pas de bouton ?
+              return (
+                <p className="mt-3 font-mono text-[9px] text-red-400">
+                  debug: {inCountry.length} étapes "{selectedCountry}", {withSpec.length} avec spécialités
+                  {inCountry[0] ? ` · pays exemple: "${inCountry[0].country}"` : " · aucune étape ne matche"}
+                </p>
+              );
+            }
             return (
               <button
                 onClick={() => setFoodTrip(countryTrip)}
