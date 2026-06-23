@@ -325,7 +325,7 @@ async function fetchPois(lat, lng, wikiLang = "fr") {
       break;
     } catch { /* miroir suivant */ }
   }
-  if (!data) { console.log("    ⚠️  Overpass injoignable (POI ignorés)"); return []; }
+  if (!data) { console.log("    ⚠️  Overpass injoignable (POI à réessayer au prochain sync)"); return null; }
 
   const seen = new Set();
   let list = [];
@@ -398,7 +398,7 @@ async function fetchSpecialties(countryCode, lang = "fr") {
       signal: controller.signal,
     });
     clearTimeout(timer);
-    if (!res.ok) { console.log(`    ⚠️  Wikidata HTTP ${res.status} (spécialités ignorées)`); return []; }
+    if (!res.ok) { console.log(`    ⚠️  Wikidata HTTP ${res.status} (spécialités à réessayer)`); return null; }
     const data = await res.json();
     const rows = data?.results?.bindings || [];
     const seen = new Set();
@@ -417,8 +417,8 @@ async function fetchSpecialties(countryCode, lang = "fr") {
     console.log(`    🍽️  ${dishes.length} spécialités (${countryCode})`);
     return dishes;
   } catch (e) {
-    console.log(`    ⚠️  Spécialités Wikidata échouées (${e.message})`);
-    return [];
+    console.log(`    ⚠️  Spécialités Wikidata échouées (${e.message}) — à réessayer`);
+    return null;
   }
 }
 
@@ -1178,7 +1178,7 @@ async function syncFolder(drive, folder, cache, force) {
     quote: notes.quote || null,
     fullStory: docStory.length > 0
       ? docStory
-      : (notes.fullStory?.length > 0 ? notes.fullStory : ["Cette étape sera bientôt documentée."]),
+      : (notes.fullStory?.length > 0 ? notes.fullStory : []),
   };
   const translations = await translateContent(frContent);
 
@@ -1193,9 +1193,13 @@ async function syncFolder(drive, folder, cache, force) {
   }
 
   // ── Points d'intérêt touristiques (Overpass/OSM, côté serveur) ──
-  const pois = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
+  const poisRaw = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
   // ── Spécialités culinaires du pays (Wikidata, côté serveur) ──
-  const specialties = await fetchSpecialties(geoCountryCode, "fr");
+  const specialtiesRaw = await fetchSpecialties(geoCountryCode, "fr");
+  // null = échec réseau (à réessayer au prochain sync) ; [] = vraiment rien.
+  const enrichmentFailed = (poisRaw === null) || (specialtiesRaw === null);
+  const pois = poisRaw || [];
+  const specialties = specialtiesRaw || [];
 
   // ── Build stage JSON ──
   const stage = {
@@ -1252,6 +1256,13 @@ async function syncFolder(drive, folder, cache, force) {
   if (docCreatedOrChanged) {
     const refreshed = await listFilesInFolder(drive, folder.id);
     finalFingerprint = fingerprintFiles(refreshed) + "##notes:" + notesDocModified(refreshed);
+  }
+  // Si POI ou spécialités ont échoué (réseau), on rend l'empreinte du cache
+  // "incomplète" : au prochain sync, elle ne matchera pas → l'étape sera
+  // réessayée pour récupérer ce qui manquait. Une fois réussie, l'empreinte
+  // redevient normale et le cache reprend son rôle.
+  if (enrichmentFailed) {
+    finalFingerprint += "##retry:" + Date.now();
   }
 
   return { stage, fingerprint: finalFingerprint, fromCache: false };
