@@ -76,7 +76,7 @@ export default function StageDetailView({ slug, onNavigate, lang, t, embedded = 
     if (!slug) { setLoading(false); setError(true); return; }
     setLoading(true);
     setError(false);
-    fetch(`/data/trips/${slug}.json`)
+    fetch(`/data/trips/${slug}.json?v=${Date.now()}`)
       .then(r => {
         if (!r.ok) throw new Error("not found");
         return r.json();
