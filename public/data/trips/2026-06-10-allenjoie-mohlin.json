@@ -15902,5 +15902,67 @@
       "rank": 8,
       "wikiTitle": null
     }
+  ],
+  "specialties": [
+    {
+      "title": "muesli",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Muesli.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Muesli"
+    },
+    {
+      "title": "tête de moine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Girolle%20tete%20de%20moine.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/T%C3%AAte_de_moine"
+    },
+    {
+      "title": "mont d'or",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Vacherin%20du%20haut%20Doubs.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mont_d%27Or_(fromage)"
+    },
+    {
+      "title": "Basler Läckerli",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basler%20L%C3%A4ckerli%2001.jpeg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Basler_L%C3%A4ckerli"
+    },
+    {
+      "title": "Älplermagronen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%C3%84lplermagronen.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/%C3%84lplermagronen"
+    },
+    {
+      "title": "émincé de veau à la zurichoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Z%C3%BCrcher%20Geschnetzeltes%20at%20Zur%20rote%20Buech.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/%C3%89minc%C3%A9_de_veau_%C3%A0_la_zurichoise"
+    },
+    {
+      "title": "malakoff",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Malakoff.jpeg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Malakoff_(gastronomie)"
+    },
+    {
+      "title": "L'Étivaz",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2015-01-25%20L%E2%80%99Etivaz%20AOP%20-%20Der%20Schweizer%20-%20WikiLovesCheese%20Vienna%20-hu%20-%207802.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/L%27Etivaz"
+    },
+    {
+      "title": "Aromat",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Aromat2.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Aromat"
+    },
+    {
+      "title": "maluns",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "mont d'Or chaud",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mont%20d%27Or%20chaud%20003.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mont_d%27Or_chaud"
+    },
+    {
+      "title": "Totché",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Totche.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Totch%C3%A9"
+    }
   ]
 }

@@ -10131,5 +10131,122 @@
       "rank": 9,
       "wikiTitle": null
     }
+  ],
+  "specialties": [
+    {
+      "title": "mayonnaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mayonnaise%20%281%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
+    },
+    {
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+    },
+    {
+      "title": "baguette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+    },
+    {
+      "title": "crêpe",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+    },
+    {
+      "title": "roquefort",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Wikicheese%20-%20Roquefort%20-%2020150417%20-%20002.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roquefort_(fromage)"
+    },
+    {
+      "title": "raviole",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
+    },
+    {
+      "title": "aïoli",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Allioli.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/A%C3%AFoli"
+    },
+    {
+      "title": "steak tartare",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Steak%20Tartare%20in%20Dresden.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "bouillabaisse",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bullabessa.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
+    },
+    {
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+    },
+    {
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "spätzle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
+    },
+    {
+      "title": "Sauce veloutée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+    },
+    {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
+    },
+    {
+      "title": "Pérignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/DomPerignonChampagne.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
+    },
+    {
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+    },
+    {
+      "title": "munster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "reblochon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+    }
   ]
 }

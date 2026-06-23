@@ -9863,111 +9863,122 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
+  "pois": [],
+  "specialties": [
     {
-      "title": "Domaine de Saint-Brisson",
-      "dist": 759,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Château de Saint-Brisson"
+      "title": "mayonnaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mayonnaise%20%281%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "Clos de Beauvoir",
-      "dist": 2983,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "Station Location Loisirs",
-      "dist": 4001,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
-      "title": "Château de Trousse-Barrière",
-      "dist": 4174,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Trousse-Barrière"
+      "title": "crêpe",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
     },
     {
-      "title": "Canal de Briare",
-      "dist": 4366,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "baguette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
     },
     {
-      "title": "Pont-Canal de Briare",
-      "dist": 4881,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "roquefort",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Wikicheese%20-%20Roquefort%20-%2020150417%20-%20002.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roquefort_(fromage)"
     },
     {
-      "title": "Le Petit Train de Briare",
-      "dist": 4891,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "raviole",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
     },
     {
-      "title": "Les Canalous Briare",
-      "dist": 4897,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "aïoli",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Allioli.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/A%C3%AFoli"
     },
     {
-      "title": "Les Bateaux Touristiques",
-      "dist": 4907,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "steak tartare",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Steak%20Tartare%20in%20Dresden.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Château de Gien",
-      "dist": 5007,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Schloss Gien"
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Château de Pont-Chevron",
-      "dist": 7421,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Château de Pont-Chevron"
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
-      "title": "Gite 'La Poudre d'Escampette' de la Ferme du Buisson",
-      "dist": 7995,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "bouillabaisse",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bullabessa.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Château de la Guilbarderie",
-      "dist": 8282,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "Château de Montrenault",
-      "dist": 8616,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
-      "title": "Petit Château",
-      "dist": 9309,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "spätzle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "Sauce veloutée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+    },
+    {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
+    },
+    {
+      "title": "Pérignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/DomPerignonChampagne.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
+    },
+    {
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+    },
+    {
+      "title": "munster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "reblochon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
     }
   ]
 }
