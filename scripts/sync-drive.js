@@ -351,6 +351,84 @@ async function fetchPois(lat, lng, wikiLang = "fr") {
   return list;
 }
 
+// Les villes les plus peuplées TRAVERSÉES par le tracé GPX. Overpass (OSM) côté
+// serveur. Renvoie jusqu'à 3 noms triés par population, ou [] si échec/aucune.
+async function fetchMajorCities(trackPoints, wikiLang = "fr") {
+  if (!trackPoints || trackPoints.length < 2) return null;
+
+  const haversine = (la1, lo1, la2, lo2) => {
+    const R = 6371000, toRad = (d) => d * Math.PI / 180;
+    const dLat = toRad(la2 - la1), dLng = toRad(lo2 - lo1);
+    const aa = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(la1)) * Math.cos(toRad(la2)) * Math.sin(dLng / 2) ** 2;
+    return 2 * R * Math.asin(Math.sqrt(aa));
+  };
+
+  // Bounding box du tracé (un peu élargie)
+  let minLat = 90, maxLat = -90, minLng = 180, maxLng = -180;
+  for (const [la, lo] of trackPoints) {
+    if (la < minLat) minLat = la; if (la > maxLat) maxLat = la;
+    if (lo < minLng) minLng = lo; if (lo > maxLng) maxLng = lo;
+  }
+  const pad = 0.05;
+  const bbox = `${minLat - pad},${minLng - pad},${maxLat + pad},${maxLng + pad}`;
+
+  // Villes/villages avec population dans la bbox
+  const q = `[out:json][timeout:25];(node["place"~"city|town"]["population"](${bbox}););out;`;
+  const mirrors = [
+    "https://overpass-api.de/api/interpreter",
+    "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter",
+  ];
+  let data = null;
+  for (const url of mirrors) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 30000);
+      const res = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded", "User-Agent": "TheCyclingBeard/1.0" },
+        body: "data=" + encodeURIComponent(q),
+        signal: controller.signal,
+      });
+      clearTimeout(timer);
+      if (!res.ok) continue;
+      data = await res.json();
+      break;
+    } catch { /* miroir suivant */ }
+  }
+  if (!data) { console.log("    ⚠️  Overpass injoignable (villes à réessayer)"); return null; }
+
+  // Garde les villes RÉELLEMENT proches du tracé (< 4 km d'un point), pas juste
+  // dans la bbox (qui peut être large). Sous-échantillonne le tracé pour la perf.
+  const sample = [];
+  const sStep = Math.max(1, Math.floor(trackPoints.length / 200));
+  for (let i = 0; i < trackPoints.length; i += sStep) sample.push(trackPoints[i]);
+
+  const cities = [];
+  for (const el of (data.elements || [])) {
+    const tags = el.tags || {};
+    const name = tags["name:" + wikiLang] || tags.name;
+    const pop = parseInt((tags.population || "0").replace(/\D/g, ""), 10);
+    if (!name || !pop || el.lat == null || el.lon == null) continue;
+    // distance minimale au tracé
+    let near = false;
+    for (const [la, lo] of sample) {
+      if (haversine(el.lat, el.lon, la, lo) < 4000) { near = true; break; }
+    }
+    if (near) cities.push({ name, pop });
+  }
+
+  // Dédoublonne, trie par population, garde les 3 plus grandes
+  const seen = new Set();
+  const top = cities
+    .filter(c => { if (seen.has(c.name)) return false; seen.add(c.name); return true; })
+    .sort((a, b) => b.pop - a.pop)
+    .slice(0, 3)
+    .map(c => c.name);
+  console.log(`    🏙️  villes traversées : ${top.join(", ") || "—"}`);
+  return top;
+}
+
 // Spécialités culinaires d'un pays via Wikidata (SPARQL). Côté serveur → pas de
 // CORS. Renvoie une liste de plats {title, image, wikipedia} ou [] si échec.
 const COUNTRY_QID = {
@@ -1194,11 +1272,15 @@ async function syncFolder(drive, folder, cache, force) {
 
   // ── Points d'intérêt touristiques (Overpass/OSM, côté serveur) ──
   const poisRaw = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
+  // ── 3 plus grandes villes traversées par le tracé ──
+  const allTrackPts = (gpxStats.segments || []).flat();
+  const majorCitiesRaw = await fetchMajorCities(allTrackPts, "fr");
   // ── Spécialités culinaires du pays (Wikidata, côté serveur) ──
   const specialtiesRaw = await fetchSpecialties(geoCountryCode, "fr");
   // null = échec réseau (à réessayer au prochain sync) ; [] = vraiment rien.
-  const enrichmentFailed = (poisRaw === null) || (specialtiesRaw === null);
+  const enrichmentFailed = (poisRaw === null) || (specialtiesRaw === null) || (majorCitiesRaw === null);
   const pois = poisRaw || [];
+  const majorCities = majorCitiesRaw || [];
   const specialties = specialtiesRaw || [];
 
   // ── Build stage JSON ──
@@ -1244,6 +1326,7 @@ async function syncFolder(drive, folder, cache, force) {
     tags: notes.tags || [],
     weather: notes.weather || null,
     pois,
+    majorCities,
     specialties,
   };
 
@@ -1531,6 +1614,7 @@ async function main() {
     thanks: s.thanks || "",
     thanksTranslations: s.thanksTranslations || {},
     pois: s.pois || [],
+    majorCities: s.majorCities || [],
     specialties: s.specialties || [],
   }));
 
