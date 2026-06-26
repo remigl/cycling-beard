@@ -224,7 +224,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     .reverse();
 
   return (
-    <div className="w-full min-h-screen pt-12 pb-20 px-4 md:px-14 bg-bg-dark text-text-on">
+    <div className="w-full min-h-screen pt-20 pb-20 px-4 md:px-14 bg-bg-dark text-text-on">
       <div className="max-w-6xl mx-auto">
 
         {/* Popup eBird */}
@@ -497,6 +497,27 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                         ))}
                       </div>
                     )}
+
+                    {/* Villes traversées + sites majeurs (informatif, non cliquable) */}
+                    {(() => {
+                      const cities = trip.majorCities || [];
+                      const topPois = (trip.pois || []).slice(0, 3).map(p => p.title);
+                      const items = [...cities, ...topPois];
+                      if (items.length === 0) return null;
+                      return (
+                        <div className="flex gap-1.5 flex-wrap mt-2 items-center">
+                          <MapPin size={10} className="text-text-dim/60" />
+                          {items.map((label, idx) => (
+                            <span
+                              key={idx}
+                              className="font-mono text-[9px] px-2 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-text-dim"
+                            >
+                              {label}
+                            </span>
+                          ))}
+                        </div>
+                      );
+                    })()}
 
                     {/* Hébergement (lien) & Remerciements */}
                     {(trip.lodgingUrl || trip.thanks) && (
