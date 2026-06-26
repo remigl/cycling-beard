@@ -90,15 +90,25 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
     const allBounds: any[] = [];
 
     // Construit le HTML d'une bulle avec bouton "Voir l'étape"
-    const popupHtml = (trip: TripSummary) => `
-      <div style="min-width:160px;text-align:center;">
+    const popupHtml = (trip: TripSummary) => {
+      // Vignette : thumbnail de l'étape, sinon 1re photo
+      const img = trip.thumbnail || (trip.photos && trip.photos[0]?.thumb) || "";
+      // Description : version traduite si dispo, sinon shortDescription
+      const desc = (trip.translations?.[lang]?.summary || trip.shortDescription || "").trim();
+      const descShort = desc.length > 110 ? desc.slice(0, 107) + "…" : desc;
+      return `
+      <div style="width:200px;text-align:center;">
+        ${img ? `<img src="${img}" alt="${trip.title}" referrerpolicy="no-referrer"
+          style="width:100%;height:96px;object-fit:cover;border-radius:6px;margin-bottom:8px;display:block;" />` : ""}
         <strong style="font-size:13px;">${trip.title}</strong><br>
-        <span style="font-size:11px;color:#666;">${trip.date}${trip.distanceKm > 0 ? ` · ${trip.distanceKm} km` : ""}</span><br>
+        <span style="font-size:11px;color:#666;">${trip.date}${trip.distanceKm > 0 ? ` · ${trip.distanceKm} km` : ""}</span>
+        ${descShort ? `<p style="font-size:11px;color:#444;line-height:1.35;margin:6px 0 0;text-align:left;">${descShort}</p>` : ""}
         <button data-stage-slug="${trip.slug}"
-          style="margin-top:8px;background:#8D7A68;color:#fff;border:none;border-radius:4px;padding:6px 12px;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;font-family:monospace;">
+          style="margin-top:8px;background:#8D7A68;color:#fff;border:none;border-radius:4px;padding:6px 12px;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;font-family:monospace;width:100%;">
           ${t("map.see_stage")}
         </button>
       </div>`;
+    };
 
     // Trace chaque étape — chaque segment GPX séparément, CLIQUABLE
     tripsWithTrack.forEach(trip => {
@@ -201,11 +211,11 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
     const onResize = () => map.invalidateSize();
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
-  }, [leafletLoaded, trips]);
+  }, [leafletLoaded, trips, lang]);
 
   return (
     <div
-      className="w-full overflow-hidden pt-16 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on"
+      className="w-full overflow-hidden pt-20 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on"
       style={{ height: vh ? `${vh}px` : "100vh" }}
     >
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
