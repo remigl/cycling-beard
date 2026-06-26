@@ -29,6 +29,7 @@ export interface TripSummary {
   thanks?: string;
   thanksTranslations?: Record<string, string>;
   pois?: Poi[];
+  majorCities?: string[];
   specialties?: Specialty[];
 }
 
