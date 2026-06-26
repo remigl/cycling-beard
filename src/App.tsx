@@ -4,7 +4,6 @@ import { X, Share2, Search, ArrowRight } from "lucide-react";
 import Navbar from "./components/Navbar";
 import HomeView from "./components/HomeView";
 import JourneyView from "./components/JourneyView";
-import StageDetailView from "./components/StageDetailView";
 import MapView from "./components/MapView";
 import { SiteStats, TripSummary } from "./types";
 import { Lang, makeT } from "./i18n";
@@ -61,7 +60,8 @@ export default function App() {
   }, [activeTab]);
 
   const handleCustomNavigate = (tabId: string, argument?: string) => {
-    if (tabId === "stage" && argument) setActiveStageSlug(argument);
+    // Le détail d'étape a été retiré : toute navigation "stage" mène à l'Itinéraire.
+    if (tabId === "stage") { setActiveTab("journey"); return; }
     setActiveTab(tabId);
   };
 
@@ -126,9 +126,6 @@ export default function App() {
             )}
             {activeTab === "journey" && (
               <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} lang={lang} />
-            )}
-            {activeTab === "stage" && (
-              <StageDetailView slug={activeStageSlug} onNavigate={handleCustomNavigate} lang={lang} t={t} />
             )}
             {activeTab === "map" && (
               <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} lang={lang} />
