@@ -205,7 +205,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
 
   return (
     <div
-      className="w-full overflow-hidden pt-14 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on"
+      className="w-full overflow-hidden pt-20 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on"
       style={{ height: vh ? `${vh}px` : "100vh" }}
     >
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
