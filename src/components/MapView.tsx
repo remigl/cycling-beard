@@ -123,10 +123,6 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         <strong style="font-size:13px;">${trip.title}</strong><br>
         <span style="font-size:11px;color:#666;">${trip.date}${trip.distanceKm > 0 ? ` · ${trip.distanceKm} km` : ""}</span>
         ${descShort ? `<p style="font-size:11px;color:#444;line-height:1.35;margin:6px 0 0;text-align:left;">${descShort}</p>` : ""}
-        <button data-stage-slug="${trip.slug}"
-          style="margin-top:8px;background:#8D7A68;color:#fff;border:none;border-radius:4px;padding:6px 12px;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;font-family:monospace;width:100%;">
-          ${t("map.see_stage")}
-        </button>
       </div>`;
     };
 
