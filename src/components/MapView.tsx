@@ -91,15 +91,35 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
 
     // Construit le HTML d'une bulle avec bouton "Voir l'étape"
     const popupHtml = (trip: TripSummary) => {
-      // Vignette : thumbnail de l'étape, sinon 1re photo
-      const img = trip.thumbnail || (trip.photos && trip.photos[0]?.thumb) || "";
+      // Galerie : toutes les vignettes des photos de l'étape (jusqu'à 6)
+      const thumbs = (trip.photos || []).map(p => p.thumb).filter(Boolean).slice(0, 6);
+      // Si aucune photo détaillée, on retombe sur le thumbnail de couverture
+      if (thumbs.length === 0 && trip.thumbnail) thumbs.push(trip.thumbnail);
       // Description : version traduite si dispo, sinon shortDescription
       const desc = (trip.translations?.[lang]?.summary || trip.shortDescription || "").trim();
       const descShort = desc.length > 110 ? desc.slice(0, 107) + "…" : desc;
+
+      let gallery = "";
+      if (thumbs.length === 1) {
+        gallery = `<img src="${thumbs[0]}" referrerpolicy="no-referrer"
+          style="width:100%;height:96px;object-fit:cover;border-radius:6px;margin-bottom:8px;display:block;" />`;
+      } else if (thumbs.length > 1) {
+        // 1re photo en grand, le reste en rangée de vignettes
+        const big = `<img src="${thumbs[0]}" referrerpolicy="no-referrer"
+          style="width:100%;height:90px;object-fit:cover;border-radius:6px;display:block;" />`;
+        const rest = thumbs.slice(1).map(src =>
+          `<img src="${src}" referrerpolicy="no-referrer"
+            style="width:100%;height:38px;object-fit:cover;border-radius:4px;display:block;" />`
+        ).join("");
+        gallery = `<div style="margin-bottom:8px;">
+          ${big}
+          <div style="display:grid;grid-template-columns:repeat(${Math.min(thumbs.length - 1, 5)},1fr);gap:3px;margin-top:3px;">${rest}</div>
+        </div>`;
+      }
+
       return `
-      <div style="width:200px;text-align:center;">
-        ${img ? `<img src="${img}" alt="${trip.title}" referrerpolicy="no-referrer"
-          style="width:100%;height:96px;object-fit:cover;border-radius:6px;margin-bottom:8px;display:block;" />` : ""}
+      <div style="width:210px;text-align:center;">
+        ${gallery}
         <strong style="font-size:13px;">${trip.title}</strong><br>
         <span style="font-size:11px;color:#666;">${trip.date}${trip.distanceKm > 0 ? ` · ${trip.distanceKm} km` : ""}</span>
         ${descShort ? `<p style="font-size:11px;color:#444;line-height:1.35;margin:6px 0 0;text-align:left;">${descShort}</p>` : ""}
