@@ -224,7 +224,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     .reverse();
 
   return (
-    <div className="w-full min-h-screen pt-16 pb-20 px-4 md:px-14 bg-bg-dark text-text-on">
+    <div className="w-full min-h-screen pt-12 pb-20 px-4 md:px-14 bg-bg-dark text-text-on">
       <div className="max-w-6xl mx-auto">
 
         {/* Popup eBird */}
