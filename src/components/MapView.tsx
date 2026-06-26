@@ -91,8 +91,23 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
 
     // Construit le HTML d'une bulle avec bouton "Voir l'étape"
     const popupHtml = (trip: TripSummary) => {
-      // Galerie : grille 3×3 (jusqu'à 9 vignettes)
-      const thumbs = (trip.photos || []).map(p => p.thumb).filter(Boolean).slice(0, 9);
+      // Galerie : grille 3×3 (jusqu'à 9 vignettes), sans doublon.
+      // On dédoublonne sur le NOM DE FICHIER (deux variantes/tailles de la même
+      // image ont des URLs différentes mais le même fichier de base).
+      const baseName = (url: string) => {
+        const clean = url.split("?")[0].split("#")[0];
+        return clean.substring(clean.lastIndexOf("/") + 1).toLowerCase();
+      };
+      const seenNames = new Set<string>();
+      const thumbs: string[] = [];
+      for (const p of (trip.photos || [])) {
+        if (!p.thumb) continue;
+        const key = baseName(p.thumb);
+        if (seenNames.has(key)) continue;
+        seenNames.add(key);
+        thumbs.push(p.thumb);
+        if (thumbs.length >= 9) break;
+      }
       if (thumbs.length === 0 && trip.thumbnail) thumbs.push(trip.thumbnail);
       // Description : version traduite si dispo, sinon shortDescription
       const desc = (trip.translations?.[lang]?.summary || trip.shortDescription || "").trim();
