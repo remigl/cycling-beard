@@ -176,8 +176,10 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   // Récit localisé pour une étape
   const getStory = (trip: TripSummary): string[] => {
     const tr = trip.translations?.[lang];
-    if (tr && tr.fullStory && tr.fullStory.length > 0) return tr.fullStory;
-    return trip.fullStory || [];
+    const raw = (tr && tr.fullStory && tr.fullStory.length > 0) ? tr.fullStory : (trip.fullStory || []);
+    // Ignore l'ancien texte placeholder qui pourrait subsister dans des JSON non resyncés
+    if (raw.length > 0 && /bient[ôo]t document|documented soon/i.test(raw[0])) return [];
+    return raw;
   };
 
   // Mini graphique d'altitude (SVG)
