@@ -5,6 +5,7 @@
   "day": "Jour 26",
   "location": "Linz → Pochlarn",
   "country": "Autriche",
+  "countryCode": "AT",
   "region": "Basse-Autriche",
   "startCity": "Linz",
   "endCity": "Pöchlarn",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Naturfreunde+P%C3%B6chlarn,+Schiffhausweg+4,+3380+Am+Rechen,+Autriche/data=!4m2!3m1!1s0x4772678ccdb7dabf:0x27665564a2e29f55!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=5f0c0b44-21fc-4888-8111-8d476808c2a0&g_st=ac",
@@ -83,19 +70,19 @@
       "alt": "Img 3712"
     },
     {
-      "src": "/media/2026-06-21-linz-pochlarn/img_3731.webp",
-      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3731.webp",
-      "alt": "Img 3731"
+      "src": "/media/2026-06-21-linz-pochlarn/juste après le camping.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_juste après le camping.webp",
+      "alt": "Juste AprèS Le Camping"
     },
     {
-      "src": "/media/2026-06-21-linz-pochlarn/img_3745.webp",
-      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3745.webp",
-      "alt": "Img 3745"
+      "src": "/media/2026-06-21-linz-pochlarn/krems an der donau.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_krems an der donau.webp",
+      "alt": "Krems An Der Donau"
     },
     {
-      "src": "/media/2026-06-21-linz-pochlarn/img_3753.webp",
-      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3753.webp",
-      "alt": "Img 3753"
+      "src": "/media/2026-06-21-linz-pochlarn/sur un pont avant tulln.webp",
+      "thumb": "/media/2026-06-21-linz-pochlarn/thumb_sur un pont avant tulln.webp",
+      "alt": "Sur Un Pont Avant Tulln"
     }
   ],
   "videos": [],
