@@ -1562,7 +1562,7 @@ async function main() {
     totalStages: stages.length,
     totalElevation: Math.round(totalElevation),
     currentCountry: lastStage?.country || "France",
-    currentCountryCode: lastStage?.countryCode || "FR",
+    currentCountryCode: lastStage?.countryCode || "",
     currentLocation: lastStage?.endCity || lastStage?.location || "Saint-Nazaire",
     startDate: firstDate || "2026-05-26",
     lastUpdate: new Date().toISOString().split("T")[0],
