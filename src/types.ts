@@ -29,6 +29,13 @@ export interface TripSummary {
   thanks?: string;
   thanksTranslations?: Record<string, string>;
   pois?: Poi[];
+  specialties?: Specialty[];
+}
+
+export interface Specialty {
+  title: string;
+  image?: string | null;
+  wikipedia?: string | null;
 }
 
 export interface Poi {
@@ -46,6 +53,7 @@ export interface SiteStats {
   totalDays: number;
   totalElevation: number;
   currentCountry: string;
+  currentCountryCode?: string;
   currentLocation: string;
   startDate: string;
   lastUpdate: string;
