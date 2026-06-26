@@ -5,6 +5,7 @@
   "day": "Jour 23",
   "location": "Zeitlarn → Osterhofen",
   "country": "Allemagne",
+  "countryCode": "DE",
   "region": "Bavière",
   "startCity": "Zeitlarn",
   "endCity": "Osterhofen",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-18-zeitlarn-osterhofen/bratwurstkipferl.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Camping+Meier,+Ro%C3%9Ffelden+1A,+94486+Osterhofen,+Allemagne/data=!4m2!3m1!1s0x47750539c2b11c3d:0x8a0c5785a8b52d43!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e1b5c017-3a1f-420e-9262-8e53636424ec&g_st=ac",
@@ -13035,112 +13022,11 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Infohaus Isarmündung",
-      "dist": 9575,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tipi",
-      "dist": 9587,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ausstellung \"Kraft im Fluss\"",
-      "dist": 9635,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Erlebnisstation Deich",
-      "dist": 9710,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Schloß Isarau",
-      "dist": 10832,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Schloss Aholming"
-    },
-    {
-      "title": "Museum Quintana",
-      "dist": 5447,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museum Quintana"
-    },
-    {
-      "title": "Jahrhundertflut 2013",
-      "dist": 1519,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Freilicht-Theater",
-      "dist": 9538,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Heiliger Gunther",
-      "dist": 10584,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kriegerdenkmal",
-      "dist": 11251,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Isarmündung",
-      "dist": 11254,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pledlberg",
-      "dist": 2417,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Metzgerhügel",
-      "dist": 2603,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kreuzhügel",
-      "dist": 3451,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Rechenberg",
-      "dist": 3711,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    }
+  "pois": [],
+  "majorCities": [
+    "Ratisbonne",
+    "Straubing",
+    "Deggendorf"
   ],
   "specialties": [
     {
@@ -13199,14 +13085,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Mett",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-    },
-    {
       "title": "Fischbrötchen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+    },
+    {
+      "title": "Mett",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
     },
     {
       "title": "Pain de munition",
@@ -13214,14 +13100,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Leberknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-    },
-    {
       "title": "Pfälzer Saumagen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+    },
+    {
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
       "title": "Liebfraumilch",

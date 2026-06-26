@@ -5,6 +5,7 @@
   "day": "Jour 7",
   "location": "Meung Sur Loire → Gien",
   "country": "France",
+  "countryCode": "FR",
   "region": "Centre-Val de Loire",
   "startCity": "Meung-sur-Loire",
   "endCity": "Saint-Brisson-sur-Loire",
@@ -41,7 +42,7 @@
       ]
     },
     "it": {
-      "summary": "Sam e Dada con le loro bici da gara",
+      "summary": "Sam e Dada con le loro biciclette da gara",
       "quote": null,
       "fullStory": [
         "Sam e Dada con le loro bici da gara"
@@ -9864,6 +9865,7 @@
   "tags": [],
   "weather": null,
   "pois": [],
+  "majorCities": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -9871,14 +9873,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "sauce béchamel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-    },
-    {
       "title": "gaufre",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
       "title": "crêpe",
@@ -9926,14 +9928,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+    },
+    {
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "spätzle",
@@ -9941,14 +9943,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",
@@ -9976,9 +9978,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     },
     {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+      "title": "comté",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
     }
   ]
 }

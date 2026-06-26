@@ -5,6 +5,7 @@
   "day": "Jour 15",
   "location": "Allenjoie → Mohlin",
   "country": "Suisse",
+  "countryCode": "CH",
   "region": "Argovie",
   "startCity": "Allenjoie",
   "endCity": "Möhlin",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "",
@@ -15902,6 +15889,11 @@
       "rank": 8,
       "wikiTitle": null
     }
+  ],
+  "majorCities": [
+    "Bâle",
+    "Mulhouse",
+    "Rheinfelden (Baden)"
   ],
   "specialties": [
     {

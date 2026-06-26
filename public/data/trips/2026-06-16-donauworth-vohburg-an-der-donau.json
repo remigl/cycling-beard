@@ -5,6 +5,7 @@
   "day": "Jour 21",
   "location": "Donauworth → Vohburg An Der Donau",
   "country": "Allemagne",
+  "countryCode": "DE",
   "region": "Bavière",
   "startCity": "Donauwörth",
   "endCity": "Vohburg an der Donau",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3622.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Rest+Stop+and+Campsite+For+Canoers+and+Cyclists,+85088+Vohburg+an+der+Donau,+Allemagne/data=!4m2!3m1!1s0x479e53497d08132d:0xee53bb09aa8eae14!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8d566ef6-0d83-48e4-a050-b7758e98dea6&g_st=ac",
@@ -6596,6 +6583,11 @@
       "wikiTitle": "Museum Kösching"
     }
   ],
+  "majorCities": [
+    "Ingolstadt",
+    "Neuburg an der Donau",
+    "Donauwörth"
+  ],
   "specialties": [
     {
       "title": "hamburger",
@@ -6653,14 +6645,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Mett",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-    },
-    {
       "title": "Fischbrötchen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+    },
+    {
+      "title": "Mett",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
     },
     {
       "title": "Pain de munition",

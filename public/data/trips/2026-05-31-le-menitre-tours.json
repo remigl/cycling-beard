@@ -5,6 +5,7 @@
   "day": "Jour 5",
   "location": "Le Menitre → Tours",
   "country": "France",
+  "countryCode": "FR",
   "region": "Centre-Val de Loire",
   "startCity": "La Ménitré",
   "endCity": "Joué-lès-Tours",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-05-31-le-menitre-tours/château de saumur 2.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "",
@@ -10132,6 +10119,11 @@
       "wikiTitle": null
     }
   ],
+  "majorCities": [
+    "Tours",
+    "Joué-lès-Tours",
+    "Saumur"
+  ],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -10179,14 +10171,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -10194,19 +10186,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
@@ -10219,9 +10206,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
       "title": "Sauce veloutée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+    },
+    {
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
       "title": "tarte flambée",
@@ -10234,19 +10231,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "Consommé",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     },
     {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+      "title": "crème anglaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
     }
   ]
 }

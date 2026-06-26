@@ -5,6 +5,7 @@
   "day": "Jour 9",
   "location": "Sauvigny Les Bois → Decize",
   "country": "France",
+  "countryCode": "FR",
   "region": "Bourgogne-Franche-Comté",
   "startCity": "Sauvigny-les-Bois",
   "endCity": "Decize",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-04-sauvigny-les-bois-decize/lord of the ring.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Camping+des+Halles+-+Onlycamp,+All.+Marcel+Merle,+58300+Decize/data=!4m2!3m1!1s0x47f1a8944c09110d:0x33f29553d2b08427!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=b091aa0e-5591-471c-8c36-cb2b8a2e5afc&g_st=ac",
@@ -9709,6 +9696,7 @@
       "wikiTitle": "Château de Goujon"
     }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -9716,14 +9704,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "sauce béchamel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-    },
-    {
       "title": "gaufre",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
       "title": "crêpe",
@@ -9771,14 +9759,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+    },
+    {
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "spätzle",
@@ -9786,14 +9774,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",
@@ -9821,9 +9809,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     },
     {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+      "title": "comté",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
     }
   ]
 }

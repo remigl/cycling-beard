@@ -5,6 +5,7 @@
   "day": "Jour 20",
   "location": "Ulm → Donauworth",
   "country": "Allemagne",
+  "countryCode": "DE",
   "region": "Bavière",
   "startCity": "Ulm",
   "endCity": "Donauwörth",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-15-ulm-donauworth/20260615_101246.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Kanu-Club+Zeltplatz,+86602,+An+der+Westspange,+86609+Donauw%C3%B6rth,+Allemagne/data=!4m2!3m1!1s0x479ed1f765a366c9:0x1c8455f094a1eafa!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8a7b9cbe-37c0-44f7-bcea-8589bdec09b6&g_st=ac",
@@ -9496,6 +9483,7 @@
       "wikiTitle": null
     }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "hamburger",
@@ -9553,14 +9541,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Mett",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-    },
-    {
       "title": "Fischbrötchen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+    },
+    {
+      "title": "Mett",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
     },
     {
       "title": "Pain de munition",

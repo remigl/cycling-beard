@@ -5,6 +5,7 @@
   "day": "Jour 4",
   "location": "Mauves Sur Loire → Le Menitre",
   "country": "France",
+  "countryCode": "FR",
   "region": "Pays de la Loire",
   "startCity": "Mauves-sur-Loire",
   "endCity": "La Ménitré",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-05-30-mauves-sur-loire-le-menitre/angers.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Camping+Terre+de+Loire,+6+route+du,+6+Port+Saint-Maur+route+du,+49250+La+M%C3%A9nitr%C3%A9/data=!4m2!3m1!1s0x4807e15967645c8d:0x2b33091340191ec9!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=51510666-4544-4cfb-be24-15fa3edb56ab&g_st=ac",
@@ -19164,6 +19151,7 @@
       "wikiTitle": null
     }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -19211,14 +19199,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -19226,19 +19214,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
@@ -19251,9 +19234,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
       "title": "Sauce veloutée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+    },
+    {
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
       "title": "tarte flambée",
@@ -19266,19 +19259,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "Consommé",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     },
     {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+      "title": "crème anglaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
     }
   ]
 }

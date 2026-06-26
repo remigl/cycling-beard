@@ -5,6 +5,7 @@
   "day": "Jour 6",
   "location": "Tours → Meung Sur Loire",
   "country": "France",
+  "countryCode": "FR",
   "region": "Centre-Val de Loire",
   "startCity": "Joué-lès-Tours",
   "endCity": "Meung-sur-Loire",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-01-tours-meung-sur-loire/amboise.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "",
@@ -10872,7 +10859,118 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Espace naturel sensible des courtils des Mauves",
+      "dist": 142,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Les Jardins de Roquelin",
+      "dist": 2262,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "La promenade des Mauves et des moulins",
+      "dist": 2292,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Meung sur Loire",
+      "dist": 2325,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "L'orangerie du Château de Meung sur Loire",
+      "dist": 2345,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "De Cléry à la Butte des Elus",
+      "dist": 4813,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Basilique royale Notre-Dame-de-Cléry",
+      "dist": 4832,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Basilique Notre-Dame de Cléry"
+    },
+    {
+      "title": "Château de Mardereau",
+      "dist": 5563,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château du Bouchet",
+      "dist": 6356,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "La butte des Élus",
+      "dist": 7092,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Mézières-lez-Cléry et le chemin des Vallées",
+      "dist": 8181,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Montpipeau",
+      "dist": 8204,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Fontpertuis",
+      "dist": 8739,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour de César",
+      "dist": 9053,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour du Diable",
+      "dist": 9057,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    }
+  ],
+  "majorCities": [
+    "Tours",
+    "Blois",
+    "Joué-lès-Tours"
+  ],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -10920,14 +11018,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -10935,19 +11033,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
@@ -10960,9 +11053,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
       "title": "Sauce veloutée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+    },
+    {
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
       "title": "tarte flambée",
@@ -10975,19 +11078,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "Consommé",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     },
     {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+      "title": "crème anglaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
     }
   ]
 }

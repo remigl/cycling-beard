@@ -5,6 +5,7 @@
   "day": "Jour 16",
   "location": "Mohlin → Wangen",
   "country": "Allemagne",
+  "countryCode": "DE",
   "region": "Bade-Wurtemberg",
   "startCity": "Möhlin",
   "endCity": "Wangen",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Camping+Wangen,+Seeweg+30,+78337+%C3%96hningen-Wangen,+Allemagne/data=!4m2!3m1!1s0x479a8bfbb1320ef5:0xcbbdeb827acaead4!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=656b6a84-390b-479e-bcee-630730a682d7&g_st=ac",
@@ -10021,112 +10008,11 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Restaurant Burg Hohenklingen",
-      "dist": 5944,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ruine Wolkenstein",
-      "dist": 7733,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Ruine Wolkenstein (Hemishofen)"
-    },
-    {
-      "title": "Urkundenhäuschen",
-      "dist": 8722,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Obertor",
-      "dist": 8964,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Schloss Wellenberg",
-      "dist": 10402,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Schloss Wellenberg (Frauenfeld)"
-    },
-    {
-      "title": "Museum Fischerhaus",
-      "dist": 600,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museum Haus Dix",
-      "dist": 2350,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museum Haus Dix"
-    },
-    {
-      "title": "Mia-und-Hermann-Hesse-Haus",
-      "dist": 3809,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Klostermuseum St. Georgen",
-      "dist": 5734,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Stadtmuseum Radolfzell in der alten Stadtapotheke",
-      "dist": 8903,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kunstmuseum Thurgau",
-      "dist": 9960,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ittinger Museum",
-      "dist": 9976,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museum St. Georg",
-      "dist": 11226,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Naturmuseum des Kantons Thurgau",
-      "dist": 11816,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Naturmuseum Thurgau"
-    },
-    {
-      "title": "Museum für Archäologie des Kantons Thurgau",
-      "dist": 11833,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museum für Archäologie Thurgau"
-    }
+  "pois": [],
+  "majorCities": [
+    "Schaffhouse",
+    "Tiengen",
+    "Bülach"
   ],
   "specialties": [
     {
@@ -10185,14 +10071,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Mett",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-    },
-    {
       "title": "Fischbrötchen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+    },
+    {
+      "title": "Mett",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
     },
     {
       "title": "Pain de munition",

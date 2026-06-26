@@ -5,6 +5,7 @@
   "day": "Jour 10",
   "location": "Decize → Paray Le Monial",
   "country": "France",
+  "countryCode": "FR",
   "region": "Bourgogne-Franche-Comté",
   "startCity": "Decize",
   "endCity": "Paray-le-Monial",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "",
@@ -9853,6 +9840,7 @@
       "wikiTitle": null
     }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -9860,14 +9848,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "sauce béchamel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-    },
-    {
       "title": "gaufre",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
       "title": "crêpe",
@@ -9915,14 +9903,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+    },
+    {
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "spätzle",
@@ -9930,14 +9918,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",
@@ -9965,9 +9953,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     },
     {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+      "title": "comté",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
     }
   ]
 }

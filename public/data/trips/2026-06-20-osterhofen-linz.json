@@ -5,6 +5,7 @@
   "day": "Jour 25",
   "location": "Osterhofen → Linz",
   "country": "Autriche",
+  "countryCode": "AT",
   "region": "Haute-Autriche",
   "startCity": "Osterhofen",
   "endCity": "Linz",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Campingplatz,+Heilhamer+W.+2,+4040+Linz,+Autriche/data=!4m2!3m1!1s0x4773982e08f218c5:0xf19ee683dcbe58dd!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=785574a0-cd49-4b93-9c40-acc8d423fae3&g_st=ac",
@@ -6689,6 +6676,7 @@
       "wikiTitle": null
     }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",

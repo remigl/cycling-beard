@@ -5,6 +5,7 @@
   "day": "Jour 12",
   "location": "Verjux → Orchamps",
   "country": "France",
+  "countryCode": "FR",
   "region": "Bourgogne-Franche-Comté",
   "startCity": "Verjux",
   "endCity": "Orchamps",
@@ -14,52 +15,38 @@
   "coverImage": "/media/2026-06-07-verjux-orchamps/dôle.webp",
   "heroVideo": null,
   "summary": "",
-  "fullStory": [
-    "Cette étape sera bientôt documentée."
-  ],
+  "fullStory": [],
   "quote": null,
   "translations": {
     "fr": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Cette étape sera bientôt documentée."
-      ]
+      "fullStory": []
     },
     "en": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "This step will be documented soon."
-      ]
+      "fullStory": []
     },
     "es": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Esta etapa se documentará en breve."
-      ]
+      "fullStory": []
     },
     "it": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Questa fase sarà presto documentata."
-      ]
+      "fullStory": []
     },
     "de": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Dieser Schritt wird in Kürze dokumentiert."
-      ]
+      "fullStory": []
     },
     "nl": {
       "summary": "",
       "quote": null,
-      "fullStory": [
-        "Deze stap wordt binnenkort beschreven."
-      ]
+      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Camping+Municipal+Orchamps,+22+%C3%80+la+Fenotte,+39700+Orchamps/data=!4m2!3m1!1s0x478d4ffb2d2fc723:0xa2a32722186c8b68!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=e117c4c6-535c-45ae-ab7e-0ad5fbeca91d&g_st=ac",
@@ -14146,6 +14133,7 @@
       "wikiTitle": null
     }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -14153,14 +14141,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "sauce béchamel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-    },
-    {
       "title": "gaufre",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
       "title": "crêpe",
@@ -14208,14 +14196,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+    },
+    {
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "spätzle",
@@ -14223,14 +14211,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",

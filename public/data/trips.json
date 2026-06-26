@@ -8077,9 +8077,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-05-27-saint-nazaire-lepouliguen/le dîner de roi.webp",
@@ -8106,44 +8104,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -8748,7 +8734,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Saint-Nazaire",
+      "La Baule-Escoublac",
+      "Saint-Brevin-les-Pins"
+    ],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -8796,14 +8786,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -8811,19 +8801,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -8836,9 +8821,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
         "title": "Sauce veloutée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+      },
+      {
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "tarte flambée",
@@ -8851,19 +8846,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "crème anglaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
       }
     ]
   },
@@ -20342,10 +20332,10 @@
         ]
       },
       "de": {
-        "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
+        "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
         "quote": null,
         "fullStory": [
-          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – alles andere wäre ein Spiel mit dem Feuer.",
+          "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
           "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
           "Ein echt hartes Erwachen."
         ]
@@ -21110,8 +21100,118 @@
       "nl": "Jeff en zijn kat Bada",
       "fr": "Jeff et son chat Bada"
     },
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Château de la Vrillière",
+        "dist": 3077,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Vrillière"
+      },
+      {
+        "title": "Croix des Renards",
+        "dist": 3570,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Berrière",
+        "dist": 5513,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Berrière"
+      },
+      {
+        "title": "Ruines",
+        "dist": 5804,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Manoir de la Dixmerie",
+        "dist": 5923,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Manoir de la Dixmerie"
+      },
+      {
+        "title": "Beau Soleil",
+        "dist": 5938,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Monderie",
+        "dist": 6256,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Folies Siffait",
+        "dist": 7291,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Folies Siffait"
+      },
+      {
+        "title": "Château du Chassay",
+        "dist": 8874,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Chassay"
+      },
+      {
+        "title": "Ruines de l'ancienne citadelle de Châteauceaux",
+        "dist": 9707,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Embarcadère de la Luce",
+        "dist": 9858,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Colinière",
+        "dist": 10080,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Four à pain",
+        "dist": 10767,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de La Poterie",
+        "dist": 10804,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Poterie"
+      },
+      {
+        "title": "La Guilletière",
+        "dist": 10926,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Nantes",
+      "Saint-Nazaire",
+      "Rezé"
+    ],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -21159,14 +21259,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -21174,19 +21274,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -21199,9 +21294,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
         "title": "Sauce veloutée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+      },
+      {
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "tarte flambée",
@@ -21214,19 +21319,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "crème anglaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
       }
     ]
   },
@@ -38946,9 +39046,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/angers.webp",
@@ -38990,44 +39088,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -40436,14 +40522,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -40451,19 +40537,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -40476,9 +40557,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
         "title": "Sauce veloutée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+      },
+      {
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "tarte flambée",
@@ -40491,19 +40582,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "crème anglaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
       }
     ]
   },
@@ -49945,9 +50031,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-05-31-le-menitre-tours/château de saumur 2.webp",
@@ -49984,44 +50068,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -50633,7 +50705,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Tours",
+      "Joué-lès-Tours",
+      "Saumur"
+    ],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -50681,14 +50757,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -50696,19 +50772,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -50721,9 +50792,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
         "title": "Sauce veloutée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+      },
+      {
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "tarte flambée",
@@ -50736,19 +50817,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "crème anglaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
       }
     ]
   },
@@ -60784,9 +60860,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-01-tours-meung-sur-loire/amboise.webp",
@@ -60828,44 +60902,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -61618,8 +61680,118 @@
       "nl": "Stéphanie",
       "fr": "Stéphanie"
     },
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Espace naturel sensible des courtils des Mauves",
+        "dist": 142,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Jardins de Roquelin",
+        "dist": 2262,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La promenade des Mauves et des moulins",
+        "dist": 2292,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Meung sur Loire",
+        "dist": 2325,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "L'orangerie du Château de Meung sur Loire",
+        "dist": 2345,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "De Cléry à la Butte des Elus",
+        "dist": 4813,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Basilique royale Notre-Dame-de-Cléry",
+        "dist": 4832,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Basilique Notre-Dame de Cléry"
+      },
+      {
+        "title": "Château de Mardereau",
+        "dist": 5563,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château du Bouchet",
+        "dist": 6356,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La butte des Élus",
+        "dist": 7092,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Mézières-lez-Cléry et le chemin des Vallées",
+        "dist": 8181,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Montpipeau",
+        "dist": 8204,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Fontpertuis",
+        "dist": 8739,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tour de César",
+        "dist": 9053,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tour du Diable",
+        "dist": 9057,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Tours",
+      "Blois",
+      "Joué-lès-Tours"
+    ],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -61667,14 +61839,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -61682,19 +61854,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -61707,9 +61874,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
         "title": "Sauce veloutée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
+      },
+      {
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "tarte flambée",
@@ -61722,19 +61899,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "crème anglaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
       }
     ]
   },
@@ -71083,7 +71255,7 @@
         ]
       },
       "it": {
-        "summary": "Sam e Dada con le loro bici da gara",
+        "summary": "Sam e Dada con le loro biciclette da gara",
         "quote": null,
         "fullStory": [
           "Sam e Dada con le loro bici da gara"
@@ -71604,14 +71776,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -71659,14 +71831,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -71674,14 +71846,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -71709,9 +71881,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "comté",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
       }
     ]
   },
@@ -81045,9 +81217,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-03-gien-sauvigny-les-bois/café sancerre à sancerre.webp",
@@ -81074,44 +81244,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -81731,14 +81889,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -81786,14 +81944,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -81801,14 +81959,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -81836,9 +81994,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "comté",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
       }
     ]
   },
@@ -90876,9 +91034,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-04-sauvigny-les-bois-decize/lord of the ring.webp",
@@ -90895,44 +91051,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -91553,14 +91697,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -91608,14 +91752,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -91623,14 +91767,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -91658,9 +91802,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "comté",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
       }
     ]
   },
@@ -100838,9 +100982,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
@@ -100862,44 +101004,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -101519,14 +101649,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -101574,14 +101704,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -101589,14 +101719,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -101624,9 +101754,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "comté",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
       }
     ]
   },
@@ -111188,9 +111318,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
@@ -111232,44 +111360,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -111878,7 +111994,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Chalon-sur-Saône",
+      "Montceau-les-Mines",
+      "Paray-le-Monial"
+    ],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -111886,14 +112006,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -111941,14 +112061,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -111956,14 +112076,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -111991,9 +112111,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
       },
       {
-        "title": "reblochon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
+        "title": "comté",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
       }
     ]
   },
@@ -124935,9 +125055,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-07-verjux-orchamps/dôle.webp",
@@ -124959,44 +125077,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -126145,14 +126251,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -126200,14 +126306,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -126215,14 +126321,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -132344,9 +132450,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
@@ -132383,44 +132487,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -132670,8 +132762,116 @@
     "lodgingName": "naturcamping fourbanne, 5 Chem. du Tunnel, 25110 Fourbanne",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Château de la Roche",
+        "dist": 11626,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de La Roche (Doubs)"
+      },
+      {
+        "title": "Belvédère de Chassignole",
+        "dist": 1252,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Saut de Gamache",
+        "dist": 1852,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Belvédère Grange Vuillotey",
+        "dist": 2976,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rechandet",
+        "dist": 3867,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jouffroy d'Abbans",
+        "dist": 4374,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Belvédère Croix de Châtard",
+        "dist": 4763,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vallée du Cusancin",
+        "dist": 4968,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Vierge du Choléra",
+        "dist": 5190,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Fente de Babre",
+        "dist": 5823,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Lonot",
+        "dist": 6148,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Roche Blanche",
+        "dist": 8220,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vue sur l'abbaye",
+        "dist": 9643,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux morts",
+        "dist": 10835,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Grotte de Fourbanne",
+        "dist": 536,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Besançon"
+    ],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -132679,14 +132879,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -132734,14 +132934,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -132749,14 +132949,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -144098,9 +144298,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
@@ -144127,44 +144325,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -145017,7 +145203,10 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Montbéliard",
+      "Audincourt"
+    ],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -145025,14 +145214,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -145080,14 +145269,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "spätzle",
@@ -145095,14 +145284,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
       },
       {
-        "title": "bœuf bourguignon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-      },
-      {
         "title": "salade niçoise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      },
+      {
+        "title": "bœuf bourguignon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
       },
       {
         "title": "Sauce veloutée",
@@ -159838,9 +160027,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
@@ -159892,44 +160079,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -161033,7 +161208,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Bâle",
+      "Mulhouse",
+      "Rheinfelden (Baden)"
+    ],
     "specialties": [
       {
         "title": "muesli",
@@ -170523,9 +170702,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
@@ -170577,44 +170754,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -171112,114 +171277,12 @@
     "lodgingName": "Camping Wangen, Seeweg 30, 78337 Öhningen-Wangen, Allemagne",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Restaurant Burg Hohenklingen",
-        "dist": 5944,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ruine Wolkenstein",
-        "dist": 7733,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Ruine Wolkenstein (Hemishofen)"
-      },
-      {
-        "title": "Urkundenhäuschen",
-        "dist": 8722,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Obertor",
-        "dist": 8964,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Schloss Wellenberg",
-        "dist": 10402,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Schloss Wellenberg (Frauenfeld)"
-      },
-      {
-        "title": "Museum Fischerhaus",
-        "dist": 600,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Museum Haus Dix",
-        "dist": 2350,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museum Haus Dix"
-      },
-      {
-        "title": "Mia-und-Hermann-Hesse-Haus",
-        "dist": 3809,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Klostermuseum St. Georgen",
-        "dist": 5734,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Stadtmuseum Radolfzell in der alten Stadtapotheke",
-        "dist": 8903,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kunstmuseum Thurgau",
-        "dist": 9960,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ittinger Museum",
-        "dist": 9976,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Museum St. Georg",
-        "dist": 11226,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Naturmuseum des Kantons Thurgau",
-        "dist": 11816,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Naturmuseum Thurgau"
-      },
-      {
-        "title": "Museum für Archäologie des Kantons Thurgau",
-        "dist": 11833,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museum für Archäologie Thurgau"
-      }
+    "pois": [],
+    "majorCities": [
+      "Schaffhouse",
+      "Tiengen",
+      "Bülach"
     ],
-    "majorCities": [],
     "specialties": [
       {
         "title": "hamburger",
@@ -171277,14 +171340,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+      },
+      {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
       },
       {
         "title": "Pain de munition",
@@ -178062,7 +178125,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Tuttlingen",
+      "Radolfzell am Bodensee",
+      "Sigmaringen"
+    ],
     "specialties": [
       {
         "title": "hamburger",
@@ -178120,14 +178187,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+      },
+      {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
       },
       {
         "title": "Pain de munition",
@@ -184495,9 +184562,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-14-sigmaringen-ulm/20260614_141553.webp",
@@ -184529,44 +184594,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -184827,114 +184880,12 @@
       "nl": "Anita en Martin",
       "fr": "Anita et Martin"
     },
-    "pois": [
-      {
-        "title": "Bierwirtschaft Lochmühle",
-        "dist": 915,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Fischkasten Brunnen",
-        "dist": 1048,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Grabenhäuser",
-        "dist": 1691,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Stampfe",
-        "dist": 2649,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Burgstall",
-        "dist": 11619,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Donauschwäbisches Zentralmuseum",
-        "dist": 384,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Museum Ulm",
-        "dist": 1137,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museum Ulm"
-      },
-      {
-        "title": "Kunsthalle Weishaupt",
-        "dist": 1137,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Kunsthalle Weishaupt"
-      },
-      {
-        "title": "Museum Brot und Kunst",
-        "dist": 1380,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museum Brot und Kunst"
-      },
-      {
-        "title": "Naturmuseum Ulm",
-        "dist": 1433,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Galerie Sebastianskapelle",
-        "dist": 1640,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Museum im Konventbau",
-        "dist": 3079,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Kloster Wiblingen"
-      },
-      {
-        "title": "Heimatmuseum Pfuhl",
-        "dist": 4605,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Aussicht Galgenberg",
-        "dist": 676,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Bastion Lauseck / Wilhelmshöhe",
-        "dist": 697,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      }
+    "pois": [],
+    "majorCities": [
+      "Ulm",
+      "Nouvelle-Ulm",
+      "Ehingen (Donau)"
     ],
-    "majorCities": [],
     "specialties": [
       {
         "title": "hamburger",
@@ -184992,14 +184943,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+      },
+      {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
       },
       {
         "title": "Pain de munition",
@@ -193837,9 +193788,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-15-ulm-donauworth/20260615_101246.webp",
@@ -193871,44 +193820,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -194571,14 +194508,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+      },
+      {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
       },
       {
         "title": "Pain de munition",
@@ -200770,9 +200707,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3622.webp",
@@ -200794,44 +200729,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -201192,7 +201115,11 @@
         "wikiTitle": "Museum Kösching"
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Ingolstadt",
+      "Neuburg an der Donau",
+      "Donauwörth"
+    ],
     "specialties": [
       {
         "title": "hamburger",
@@ -201250,14 +201177,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+      },
+      {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
       },
       {
         "title": "Pain de munition",
@@ -207505,9 +207432,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3640.webp",
@@ -207539,44 +207464,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -207837,114 +207750,12 @@
       "nl": "Uli en Christian",
       "fr": "Uli et Christian"
     },
-    "pois": [
-      {
-        "title": "Porta praetoria",
-        "dist": 485,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Porta praetoria (Regensburg)"
-      },
-      {
-        "title": "Historischer Hafenkran",
-        "dist": 1411,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "1. Cowboyclub Regensburg",
-        "dist": 2817,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Waldlabyrinth",
-        "dist": 5290,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Historischer Grenzstein",
-        "dist": 6364,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Möseleiche",
-        "dist": 7217,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "document Schnupftabakfabrik",
-        "dist": 89,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Reichstagsmuseum",
-        "dist": 231,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Besucherzentrum Welterbe",
-        "dist": 458,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Heimat und Bauernmuseum",
-        "dist": 7728,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Don Juan D'Austria",
-        "dist": 305,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Eustach-Graf-von-Schlitz-Goertz-Denkmal",
-        "dist": 351,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Römermauer (Castra Regina)",
-        "dist": 499,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kriegerdenkmal",
-        "dist": 661,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Österreicherdenkmal",
-        "dist": 1358,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      }
+    "pois": [],
+    "majorCities": [
+      "Ratisbonne",
+      "Kelheim",
+      "Neustadt an der Donau"
     ],
-    "majorCities": [],
     "specialties": [
       {
         "title": "hamburger",
@@ -208002,14 +207813,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+      },
+      {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
       },
       {
         "title": "Pain de munition",
@@ -208017,14 +207828,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Pfälzer Saumagen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Liebfraumilch",
@@ -219943,9 +219754,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-18-zeitlarn-osterhofen/bratwurstkipferl.webp",
@@ -219967,44 +219776,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -221062,114 +220859,12 @@
     "lodgingName": "Camping Meier, Roßfelden 1A, 94486 Osterhofen, Allemagne",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Infohaus Isarmündung",
-        "dist": 9575,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Tipi",
-        "dist": 9587,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ausstellung \"Kraft im Fluss\"",
-        "dist": 9635,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Erlebnisstation Deich",
-        "dist": 9710,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Schloß Isarau",
-        "dist": 10832,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Schloss Aholming"
-      },
-      {
-        "title": "Museum Quintana",
-        "dist": 5447,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museum Quintana"
-      },
-      {
-        "title": "Jahrhundertflut 2013",
-        "dist": 1519,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Freilicht-Theater",
-        "dist": 9538,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Heiliger Gunther",
-        "dist": 10584,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kriegerdenkmal",
-        "dist": 11251,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Isarmündung",
-        "dist": 11254,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pledlberg",
-        "dist": 2417,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Metzgerhügel",
-        "dist": 2603,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kreuzhügel",
-        "dist": 3451,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Rechenberg",
-        "dist": 3711,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
+    "pois": [],
+    "majorCities": [
+      "Ratisbonne",
+      "Straubing",
+      "Deggendorf"
     ],
-    "majorCities": [],
     "specialties": [
       {
         "title": "hamburger",
@@ -221227,14 +220922,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+      },
+      {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
       },
       {
         "title": "Pain de munition",
@@ -221242,14 +220937,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Pfälzer Saumagen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Liebfraumilch",
@@ -227514,9 +227209,7 @@
       ]
     ],
     "tags": [],
-    "fullStory": [
-      "Cette étape sera bientôt documentée."
-    ],
+    "fullStory": [],
     "photos": [
       {
         "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
@@ -227543,44 +227236,32 @@
       "fr": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Cette étape sera bientôt documentée."
-        ]
+        "fullStory": []
       },
       "en": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "This step will be documented soon."
-        ]
+        "fullStory": []
       },
       "es": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Esta etapa se documentará en breve."
-        ]
+        "fullStory": []
       },
       "it": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Questa fase sarà presto documentata."
-        ]
+        "fullStory": []
       },
       "de": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Dieser Schritt wird in Kürze dokumentiert."
-        ]
+        "fullStory": []
       },
       "nl": {
         "summary": "",
         "quote": null,
-        "fullStory": [
-          "Deze stap wordt binnenkort beschreven."
-        ]
+        "fullStory": []
       }
     },
     "elevProfile": [
@@ -234714,7 +234395,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Linz",
+      "Enns",
+      "Ybbs an der Donau"
+    ],
     "specialties": [
       {
         "title": "escalope à la viennoise",
@@ -244240,7 +243925,11 @@
         "wikiTitle": "Jüdisches Museum Wien"
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Vienne",
+      "Klosterneuburg",
+      "Krems an der Donau"
+    ],
     "specialties": [
       {
         "title": "escalope à la viennoise",
