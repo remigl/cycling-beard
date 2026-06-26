@@ -173,7 +173,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
         </motion.div>
 
         {/* Globe : remplit l'espace restant entre le titre et la flèche */}
-        <div className="relative flex-1 w-full min-h-0 z-0">
+        <div className="relative flex-1 w-full min-h-0 z-0 -mt-6">
           <Globe route={globeRoute} here={globeHere} />
         </div>
 
