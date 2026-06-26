@@ -9372,7 +9372,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Heldenplatz",
+      "dist": 2266,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Heldenplatz"
+    },
+    {
+      "title": "Spanische Hofreitschule",
+      "dist": 2486,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Spanische Hofreitschule"
+    },
+    {
+      "title": "Kaisergruft",
+      "dist": 2503,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Kaisergruft"
+    },
+    {
+      "title": "Obelisk",
+      "dist": 2577,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Obeliskbrunnen"
+    },
+    {
+      "title": "Café Central",
+      "dist": 2731,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Café Central"
+    },
+    {
+      "title": "Fiaker",
+      "dist": 2900,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zum süßen Eck",
+      "dist": 3941,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Hundertwasserhaus",
+      "dist": 3973,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Hundertwasserhaus (Wien)"
+    },
+    {
+      "title": "Mammutbaum",
+      "dist": 6699,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Knappenhof",
+      "dist": 9671,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Architekturzentrum Wien",
+      "dist": 1864,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Architekturzentrum Wien"
+    },
+    {
+      "title": "Pfadfindermuseum",
+      "dist": 2090,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Albertina",
+      "dist": 2315,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Albertina (Wien)"
+    },
+    {
+      "title": "Sisi Museum",
+      "dist": 2480,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jüdisches Museum Wien",
+      "dist": 2580,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Jüdisches Museum Wien"
+    }
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",
