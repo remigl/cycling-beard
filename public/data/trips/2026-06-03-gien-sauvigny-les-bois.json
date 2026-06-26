@@ -10001,7 +10001,10 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Nevers",
+    "Cosne-Cours-sur-Loire"
+  ],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -10009,24 +10012,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "gaufre",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-    },
-    {
       "title": "sauce béchamel",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "crêpe",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
       "title": "baguette",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+    },
+    {
+      "title": "crêpe",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
     },
     {
       "title": "roquefort",
@@ -10064,19 +10067,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "spätzle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "salade niçoise",
@@ -10087,6 +10085,11 @@
       "title": "bœuf bourguignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "spätzle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
     },
     {
       "title": "Sauce veloutée",
@@ -10114,9 +10117,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     },
     {
-      "title": "comté",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
+      "title": "reblochon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
     }
   ]
 }

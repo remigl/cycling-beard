@@ -6676,7 +6676,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Linz",
+    "Passau",
+    "Leonding"
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",
