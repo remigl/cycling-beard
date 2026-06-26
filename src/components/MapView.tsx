@@ -91,9 +91,8 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
 
     // Construit le HTML d'une bulle avec bouton "Voir l'étape"
     const popupHtml = (trip: TripSummary) => {
-      // Galerie : toutes les vignettes des photos de l'étape (jusqu'à 6)
-      const thumbs = (trip.photos || []).map(p => p.thumb).filter(Boolean).slice(0, 6);
-      // Si aucune photo détaillée, on retombe sur le thumbnail de couverture
+      // Galerie : grille 3×3 (jusqu'à 9 vignettes)
+      const thumbs = (trip.photos || []).map(p => p.thumb).filter(Boolean).slice(0, 9);
       if (thumbs.length === 0 && trip.thumbnail) thumbs.push(trip.thumbnail);
       // Description : version traduite si dispo, sinon shortDescription
       const desc = (trip.translations?.[lang]?.summary || trip.shortDescription || "").trim();
@@ -104,17 +103,11 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         gallery = `<img src="${thumbs[0]}" referrerpolicy="no-referrer"
           style="width:100%;height:96px;object-fit:cover;border-radius:6px;margin-bottom:8px;display:block;" />`;
       } else if (thumbs.length > 1) {
-        // 1re photo en grand, le reste en rangée de vignettes
-        const big = `<img src="${thumbs[0]}" referrerpolicy="no-referrer"
-          style="width:100%;height:90px;object-fit:cover;border-radius:6px;display:block;" />`;
-        const rest = thumbs.slice(1).map(src =>
+        const cells = thumbs.map(src =>
           `<img src="${src}" referrerpolicy="no-referrer"
-            style="width:100%;height:38px;object-fit:cover;border-radius:4px;display:block;" />`
+            style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;" />`
         ).join("");
-        gallery = `<div style="margin-bottom:8px;">
-          ${big}
-          <div style="display:grid;grid-template-columns:repeat(${Math.min(thumbs.length - 1, 5)},1fr);gap:3px;margin-top:3px;">${rest}</div>
-        </div>`;
+        gallery = `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-bottom:8px;">${cells}</div>`;
       }
 
       return `
