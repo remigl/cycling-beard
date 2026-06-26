@@ -30,11 +30,6 @@ function countryFlag(code?: string): string {
   return code.toUpperCase().replace(/./g, c => String.fromCodePoint(127397 + c.charCodeAt(0)));
 }
 
-// Texte café générique : "Buy me a coffee in [Pays]" (pas de gentilé à hardcoder).
-function coffeeLabel(country: string): string {
-  return country?.trim() ? `Buy me a coffee in ${country.trim()}` : "Buy me a coffee";
-}
-
 // Direction d'où vient le vent, en points cardinaux (convention météo)
 function windCardinal(deg: number, lang: string): string {
   // Labels localisés (N/E/S + O ou W selon la langue)
@@ -230,7 +225,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
               <span className="text-[#121212]/80 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 {stats
-                  ? `${t("home.current")} : ${stats.currentLocation}`
+                  ? `${t("home.current")} : ${stats.currentLocation}${countryFlag(stats.currentCountryCode) ? "," : ""}`
                   : t("home.locating")}
                 {stats && countryFlag(stats.currentCountryCode) && (
                   <span className="text-sm leading-none" title={countryLabel(stats.currentCountry)}>{countryFlag(stats.currentCountryCode)}</span>
@@ -345,10 +340,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                 )}
               </div>
 
-              <div className="mt-4 flex flex-col items-center gap-2">
-                <span className="font-mono text-[11px] uppercase tracking-widest text-brand-sand">
-                  {coffeeLabel(stats ? countryLabel(stats.currentCountry) : "")}
-                </span>
+              <div className="mt-4 flex justify-center">
                 <a href={BMC_URL} target="_blank" rel="noopener noreferrer"
                   className="inline-block hover:opacity-90 hover:-translate-y-0.5 transition-all">
                   <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
