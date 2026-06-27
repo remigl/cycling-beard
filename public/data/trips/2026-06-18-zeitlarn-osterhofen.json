@@ -13129,7 +13129,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Ratisbonne",
+    "Straubing",
+    "Deggendorf"
+  ],
   "specialties": [
     {
       "title": "hamburger",
@@ -13202,14 +13206,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Leberknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-    },
-    {
       "title": "Pfälzer Saumagen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+    },
+    {
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
       "title": "Liebfraumilch",
