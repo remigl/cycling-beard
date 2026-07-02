@@ -1,13 +1,13 @@
 {
   "totalKm": 2459,
   "totalCountries": 4,
-  "totalDays": 36,
+  "totalDays": 37,
   "totalStages": 24,
   "totalElevation": 13916,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
   "currentLocation": "Vienne",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-01",
+  "lastUpdate": "2026-07-02",
   "latestStageSlug": "2026-06-22-pochlarn-vienne"
 }
