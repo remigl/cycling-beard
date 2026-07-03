@@ -14,45 +14,66 @@
   "maxAltitude": 203,
   "coverImage": "/media/2026-06-22-pochlarn-vienne/abbaye de melk.webp",
   "heroVideo": null,
-  "summary": "",
-  "fullStory": [],
+  "summary": "Donau Insel, Musikverein, Eis-MarillenKnodel",
+  "fullStory": [
+    "Donau Insel, Musikverein, Eis-MarillenKnodel"
+  ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "",
+      "summary": "Donau Insel, Musikverein, Eis-MarillenKnodel",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Donau Insel, Musikverein, Eis-MarillenKnodel"
+      ]
     },
     "en": {
-      "summary": "",
+      "summary": "Danube Island, Musikverein, Ice-Apricot Knödel",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Danube Island, Musikverein, Ice-Apricot Knödel"
+      ]
     },
     "es": {
-      "summary": "",
+      "summary": "Isla del Danubio, Musikverein, knödel de helado y albaricoque",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Isla del Danubio, Musikverein, knödel de helado y albaricoque"
+      ]
     },
     "it": {
-      "summary": "",
+      "summary": "Donau Insel, Musikverein, canederli di albicocche e gelato",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Donau Insel, Musikverein, canederli di albicocche e gelato"
+      ]
     },
     "de": {
-      "summary": "",
+      "summary": "Donauinsel, Musikverein, Eis-Marillenknödel",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Donauinsel, Musikverein, Eis-Marillenknödel"
+      ]
     },
     "nl": {
-      "summary": "",
+      "summary": "Donau-eiland, Musikverein, ijs-aprikozenknoedel",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Donau-eiland, Musikverein, ijs-aprikozenknoedel"
+      ]
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
-  "thanks": "",
-  "thanksTranslations": {},
+  "thanks": "Thanks Jérôme. Thanks Clara",
+  "thanksTranslations": {
+    "en": "Thanks, Jérôme. Thanks, Clara.",
+    "es": "Gracias, Jérôme. Gracias, Clara.",
+    "it": "Grazie, Jérôme. Grazie, Clara",
+    "de": "Danke, Jérôme. Danke, Clara.",
+    "nl": "Bedankt, Jérôme. Bedankt, Clara.",
+    "fr": "Thanks Jérôme. Thanks Clara"
+  },
   "photos": [
     {
       "src": "/media/2026-06-22-pochlarn-vienne/abbaye de melk.webp",
@@ -9479,11 +9500,7 @@
       "wikiTitle": "Jüdisches Museum Wien"
     }
   ],
-  "majorCities": [
-    "Vienne",
-    "Klosterneuburg",
-    "Krems an der Donau"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",
