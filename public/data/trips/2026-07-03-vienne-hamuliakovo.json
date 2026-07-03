@@ -12,7 +12,7 @@
   "distanceKm": 97.9,
   "elevationGain": 479,
   "maxAltitude": 197,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,43 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
+      "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3783.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
+      "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3783.webp",
+      "alt": "Img 3783"
+    },
+    {
+      "src": "/media/2026-07-03-vienne-hamuliakovo/img_3791.webp",
+      "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3791.webp",
+      "alt": "Img 3791"
+    },
+    {
+      "src": "/media/2026-07-03-vienne-hamuliakovo/img_3795.webp",
+      "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3795.webp",
+      "alt": "Img 3795"
+    },
+    {
+      "src": "/media/2026-07-03-vienne-hamuliakovo/img_3805.webp",
+      "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3805.webp",
+      "alt": "Img 3805"
+    },
+    {
+      "src": "/media/2026-07-03-vienne-hamuliakovo/img_3806.webp",
+      "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3806.webp",
+      "alt": "Img 3806"
+    },
+    {
+      "src": "/media/2026-07-03-vienne-hamuliakovo/img_3809.webp",
+      "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3809.webp",
+      "alt": "Img 3809"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-03-vienne-hamuliakovo_1.gpx",
   "mapLat": 48.030677,
