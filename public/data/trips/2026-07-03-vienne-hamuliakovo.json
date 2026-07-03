@@ -14,43 +14,57 @@
   "maxAltitude": 197,
   "coverImage": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
   "heroVideo": null,
-  "summary": "",
-  "fullStory": [],
+  "summary": "Les patates salées du camping, le concert, le saint Marcellin slovaque 🫠",
+  "fullStory": [
+    "Les patates salées du camping, le concert, le saint Marcellin slovaque 🫠"
+  ],
   "quote": null,
   "translations": {
     "fr": {
-      "summary": "",
+      "summary": "Les patates salées du camping, le concert, le saint Marcellin slovaque 🫠",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Les patates salées du camping, le concert, le saint Marcellin slovaque 🫠"
+      ]
     },
     "en": {
-      "summary": "",
+      "summary": "The campground's salted potatoes, the concert, and the Slovak Saint Marcellin 🫠",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "The campground's salted potatoes, the concert, and the Slovak Saint Marcellin 🫠"
+      ]
     },
     "es": {
-      "summary": "",
+      "summary": "Las patatas saladas del camping, el concierto, el San Marcelino eslovaco 🫠",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Las patatas saladas del camping, el concierto, el San Marcelino eslovaco 🫠"
+      ]
     },
     "it": {
-      "summary": "",
+      "summary": "Le patate salate del campeggio, il concerto, il San Marcellino slovacco 🫠",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Le patate salate del campeggio, il concerto, il San Marcellino slovacco 🫠"
+      ]
     },
     "de": {
-      "summary": "",
+      "summary": "Die salzigen Kartoffeln vom Campingplatz, das Konzert, der slowakische Saint Marcellin 🫠",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "Die salzigen Kartoffeln vom Campingplatz, das Konzert, der slowakische Saint Marcellin 🫠"
+      ]
     },
     "nl": {
-      "summary": "",
+      "summary": "De gezouten aardappelen op de camping, het concert, de Slowaakse Sint-Marcellinus 🫠",
       "quote": null,
-      "fullStory": []
+      "fullStory": [
+        "De gezouten aardappelen op de camping, het concert, de Slowaakse Sint-Marcellinus 🫠"
+      ]
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Camping+Divok%C3%A1+Voda,+Bratislava-%C4%8Cunovo+1113,+851+10,+%C4%8Cunovo,+Slovaquie/data=!4m2!3m1!1s0x476c7d0024d5c819:0xf57dcd7a36f9446b!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=2453ecdd-f644-4cd1-8f26-ff87c96eafcd&g_st=ac",
+  "lodgingName": "Camping Divoká Voda, Bratislava-Čunovo 1113, 851 10, Čunovo, Slovaquie",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [
@@ -6576,5 +6590,36 @@
     "Bratislava",
     "Hainburg an der Donau"
   ],
-  "specialties": []
+  "specialties": [
+    {
+      "title": "bryndzové halušky",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
+    },
+    {
+      "title": "oublie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
+    },
+    {
+      "title": "lokša",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
+    },
+    {
+      "title": "strapačky",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
+      "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
+    },
+    {
+      "title": "Oštiepok",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
+    },
+    {
+      "title": "balkánský sýr",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
+    }
+  ]
 }
