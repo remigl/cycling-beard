@@ -35,7 +35,7 @@
       ]
     },
     "es": {
-      "summary": "Donau Insel, Musikverein, Prater, Jägerschnitzel, Eis-MarillenKnodel. El encuentro con Clara. Dedicatoria: Emma, Paula y su novio, Tim, Jason y su novia. Unos compañeros de piso estupendos, una acogida estupenda.",
+      "summary": "Donau Insel, Musikverein, Prater, Jägerschnitzel, Eis-MarillenKnodel. El encuentro con Clara. Dedicatoria: Emma, Paula y su novio, Tim, Jason y su novia. Unos compañeros de piso estupendos, una acogida fantástica.",
       "quote": null,
       "fullStory": [
         "Donau Insel, Musikverein, Prater, Jägerschnitzel, Eis-MarillenKnodel. El encuentro con Clara. Dedicatoria: Emma, Paula y su novio, Tim, Jason y su novia. Unos compañeros de piso estupendos, una acogida fantástica."
@@ -56,10 +56,10 @@
       ]
     },
     "nl": {
-      "summary": "Donau-Insel, Musikverein, Prater, Jägerschnitzel, ijs-aprikozenknoedel. De ontmoeting met Clara. Opgedragen aan: Emma, Paula en haar vriend, Tim, Jason en zijn vriendin. Geweldige huisgenoten, geweldig onthaal",
+      "summary": "Donau-eiland, Musikverein, Prater, Jägerschnitzel, ijs-aprikozenknoedel. De ontmoeting met Clara. Opgedragen aan: Emma, Paula en haar vriend, Tim, Jason en zijn vriendin. Geweldige huisgenoten, geweldig onthaal",
       "quote": null,
       "fullStory": [
-        "Donau-Insel, Musikverein, Prater, Jägerschnitzel, ijs-aprikozenknoedel. De ontmoeting met Clara. Opgedragen aan: Emma, Paula en haar vriend, Tim, Jason en zijn vriendin. Geweldige huisgenoten, geweldig onthaal"
+        "Donau-Insel, Musikverein, Prater, Jägerschnitzel, ijs-aprikozenknödel. De ontmoeting met Clara. Opgedragen aan: Emma, Paula en haar vriend, Tim, Jason en zijn vriendin. Geweldige huisgenoten, geweldig onthaal"
       ]
     }
   },
@@ -9500,11 +9500,7 @@
       "wikiTitle": "Jüdisches Museum Wien"
     }
   ],
-  "majorCities": [
-    "Vienne",
-    "Klosterneuburg",
-    "Krems an der Donau"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",
