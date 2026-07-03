@@ -1,13 +1,13 @@
 {
-  "totalKm": 2459,
-  "totalCountries": 4,
+  "totalKm": 2557,
+  "totalCountries": 5,
   "totalDays": 38,
-  "totalStages": 24,
-  "totalElevation": 13916,
-  "currentCountry": "Autriche",
-  "currentCountryCode": "AT",
-  "currentLocation": "Vienne",
+  "totalStages": 25,
+  "totalElevation": 14395,
+  "currentCountry": "Slovaquie",
+  "currentCountryCode": "SK",
+  "currentLocation": "Hamuliakovo",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-03",
-  "latestStageSlug": "2026-06-22-pochlarn-vienne"
+  "latestStageSlug": "2026-07-03-vienne-hamuliakovo"
 }
