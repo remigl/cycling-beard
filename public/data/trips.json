@@ -251183,8 +251183,8 @@
     "endCity": "Kravany nad Dunajom",
     "distanceKm": 115,
     "elevationGain": 396,
-    "coverImage": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
-    "thumbnail": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_192705.webp",
+    "coverImage": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_171203.webp",
+    "thumbnail": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_171203.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -257528,9 +257528,14 @@
     "fullStory": [],
     "photos": [
       {
-        "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
-        "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_192705.webp",
+        "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_171203.webp",
+        "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_171203.webp",
         "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_171203.webp",
+        "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_171203.webp",
+        "alt": "171203"
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
