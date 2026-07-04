@@ -12,7 +12,7 @@
   "distanceKm": 115,
   "elevationGain": 396,
   "maxAltitude": 119,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -49,11 +49,62 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Bottkov+dvor,+M%C3%A1ria+355+94636,+946+36+Kravany+nad+Dunajom,+Slovaquie/data=!4m2!3m1!1s0x476a5bf140b6d1df:0x5d71791c0271082f!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=05eae075-be90-48bb-b876-dd84fe147f3f&g_st=ac",
+  "lodgingName": "Bottkov dvor, Mária 355 94636, 946 36 Kravany nad Dunajom, Slovaquie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_192705.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_192705.webp",
+      "alt": "192705"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3816.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3816.webp",
+      "alt": "Img 3816"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3819.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3819.webp",
+      "alt": "Img 3819"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3821.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3821.webp",
+      "alt": "Img 3821"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3827.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3827.webp",
+      "alt": "Img 3827"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3830.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3830.webp",
+      "alt": "Img 3830"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3834.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3834.webp",
+      "alt": "Img 3834"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3835.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3835.webp",
+      "alt": "Img 3835"
+    },
+    {
+      "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3838.webp",
+      "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3838.webp",
+      "alt": "Img 3838"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-04-bratislava-kravany-nad-dunajom_1.gpx",
   "mapLat": 47.776538,
