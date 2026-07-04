@@ -1,13 +1,13 @@
 {
-  "totalKm": 2557,
+  "totalKm": 2672,
   "totalCountries": 5,
   "totalDays": 39,
-  "totalStages": 25,
-  "totalElevation": 14395,
+  "totalStages": 26,
+  "totalElevation": 14791,
   "currentCountry": "Slovaquie",
   "currentCountryCode": "SK",
-  "currentLocation": "Hamuliakovo",
+  "currentLocation": "Kravany nad Dunajom",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-04",
-  "latestStageSlug": "2026-07-03-vienne-hamuliakovo"
+  "latestStageSlug": "2026-07-04-bratislava-kravany-nad-dunajom"
 }
