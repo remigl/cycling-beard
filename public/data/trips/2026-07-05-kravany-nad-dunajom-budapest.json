@@ -12,7 +12,7 @@
   "distanceKm": 112,
   "elevationGain": 579,
   "maxAltitude": 150,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3841.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -49,11 +49,62 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Budapest,+Island+Hostel,+Margitsziget,+Sir%C3%A1ly+Cs%C3%B3nakh%C3%A1z,+1138+Hongrie/data=!4m2!3m1!1s0x4741dc078ffec7ab:0xd0a9fae4725f7dc5!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=12e3fc45-3fa8-4288-af13-92993c9f25d5&g_st=ac",
+  "lodgingName": "Budapest, Island Hostel, Margitsziget, Sirály Csónakház, 1138 Hongrie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3841.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3841.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3841.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3841.webp",
+      "alt": "Img 3841"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3843.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3843.webp",
+      "alt": "Img 3843"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3852.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3852.webp",
+      "alt": "Img 3852"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3857.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3857.webp",
+      "alt": "Img 3857"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3875.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3875.webp",
+      "alt": "Img 3875"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3880.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3880.webp",
+      "alt": "Img 3880"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3886.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3886.webp",
+      "alt": "Img 3886"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3891.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3891.webp",
+      "alt": "Img 3891"
+    },
+    {
+      "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3899.webp",
+      "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3899.webp",
+      "alt": "Img 3899"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-05-kravany-nad-dunajom-budapest_1.gpx",
   "mapLat": 47.5700165,
@@ -11636,8 +11687,118 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
+  "pois": [
+    {
+      "title": "Asian Culture Wall",
+      "dist": 5512,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Vajdahunyad",
+      "dist": 6079,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Vajdahunyad vára"
+    },
+    {
+      "title": "Pál-völgyi-barlang",
+      "dist": 6349,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Pál-völgyi-barlangrendszer"
+    },
+    {
+      "title": "Retro Bistro",
+      "dist": 8109,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Szimpla Kert",
+      "dist": 8228,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Szimpla romkocsma"
+    },
+    {
+      "title": "Máriaremetei Szentkút",
+      "dist": 10471,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kodály Zoltán Emlékmúzeum és Archívum",
+      "dist": 6728,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Kodály Zoltán Emlékmúzeum és Archívum"
+    },
+    {
+      "title": "Kresz Géza Mentőmúzeum",
+      "dist": 7066,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Liszt Ferenc Emlékmúzeum és Kutatóközpont",
+      "dist": 7088,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museo Franz Liszt"
+    },
+    {
+      "title": "Állatorvos-történeti Gyűjtemény",
+      "dist": 7439,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Bélyegmúzeum",
+      "dist": 7581,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Bélyegmúzeum"
+    },
+    {
+      "title": "OTP Bank Pénzügytörténeti Gyűjtemény",
+      "dist": 8024,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Földalatti Vasúti Múzeum",
+      "dist": 8268,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Földalatti Vasúti Múzeum"
+    },
+    {
+      "title": "Arany Sas Patikamúzeum",
+      "dist": 8465,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Arany Sas Patikamúzeum"
+    },
+    {
+      "title": "Sziklakórház Atombunker Múzeum",
+      "dist": 8531,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Sziklakórház Atombunker Múzeum"
+    }
+  ],
+  "majorCities": [
+    "Dunakeszi",
+    "Vác",
+    "Esztergom"
+  ],
   "specialties": [
     {
       "title": "frybread",
