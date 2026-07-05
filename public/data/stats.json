@@ -1,13 +1,13 @@
 {
-  "totalKm": 2672,
-  "totalCountries": 5,
+  "totalKm": 2784,
+  "totalCountries": 6,
   "totalDays": 40,
-  "totalStages": 26,
-  "totalElevation": 14791,
-  "currentCountry": "Slovaquie",
-  "currentCountryCode": "SK",
-  "currentLocation": "Kravany nad Dunajom",
+  "totalStages": 27,
+  "totalElevation": 15370,
+  "currentCountry": "Hongrie",
+  "currentCountryCode": "HU",
+  "currentLocation": "Budapest",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-05",
-  "latestStageSlug": "2026-07-04-bratislava-kravany-nad-dunajom"
+  "latestStageSlug": "2026-07-05-kravany-nad-dunajom-budapest"
 }
