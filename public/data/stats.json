@@ -1,13 +1,13 @@
 {
   "totalKm": 2672,
   "totalCountries": 5,
-  "totalDays": 39,
+  "totalDays": 40,
   "totalStages": 26,
   "totalElevation": 14791,
   "currentCountry": "Slovaquie",
   "currentCountryCode": "SK",
   "currentLocation": "Kravany nad Dunajom",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-04",
+  "lastUpdate": "2026-07-05",
   "latestStageSlug": "2026-07-04-bratislava-kravany-nad-dunajom"
 }
