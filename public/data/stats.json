@@ -1,13 +1,13 @@
 {
   "totalKm": 2784,
   "totalCountries": 6,
-  "totalDays": 40,
+  "totalDays": 41,
   "totalStages": 27,
   "totalElevation": 15370,
   "currentCountry": "Hongrie",
   "currentCountryCode": "HU",
   "currentLocation": "Budapest",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-05",
+  "lastUpdate": "2026-07-06",
   "latestStageSlug": "2026-07-05-kravany-nad-dunajom-budapest"
 }
