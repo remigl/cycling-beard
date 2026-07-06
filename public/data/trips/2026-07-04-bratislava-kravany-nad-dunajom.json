@@ -6700,7 +6700,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Erzsébet királyné emlékfája",
+      "dist": 3547,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jankovich-barlang",
+      "dist": 10041,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Jankovich-barlang"
+    },
+    {
+      "title": "Millenniumi Gyűjtemény és Tájékoztató Központ",
+      "dist": 8944,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Emlékmű a forradalom és szabadságharc emlékére",
+      "dist": 3188,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "1848–49-es forradalom és szabadságharc"
+    },
+    {
+      "title": "Tulassay Tér Emlékkő",
+      "dist": 3351,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "I. világháborús emlékmű (1914-1918)",
+      "dist": 3407,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "kopjafa",
+      "dist": 3544,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Millennium emlékmű",
+      "dist": 3582,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "II. világháború hősi halált halt katonái és polgári áldozatai",
+      "dist": 3598,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "1956",
+      "dist": 3986,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kálvin János",
+      "dist": 4962,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "1848-49-es emlékmű",
+      "dist": 4973,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Nedeczky Sándor-emlékmű",
+      "dist": 5142,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "1848-49-es szabadságharc lábatlani résztvevői",
+      "dist": 5262,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Millenniumi emlékmű",
+      "dist": 5769,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Komárno",
     "Komárom",
