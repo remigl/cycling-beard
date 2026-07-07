@@ -6701,10 +6701,6 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [
-    "Komárno",
-    "Komárom",
-    "Šamorín"
-  ],
+  "majorCities": [],
   "specialties": []
 }
