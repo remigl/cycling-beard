@@ -15109,114 +15109,12 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Gárdonyi rönkvár",
-      "dist": 2599,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Beck-kastély (üdülő)",
-      "dist": 2952,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "1848-as obeliszk",
-      "dist": 3615,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kis-Cipó",
-      "dist": 6443,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Gomba-kő",
-      "dist": 6475,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Magos-kő",
-      "dist": 6842,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pandúr-kő",
-      "dist": 7178,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Izabella-kő",
-      "dist": 7206,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pogány-kő",
-      "dist": 7224,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Oroszlán-szikla",
-      "dist": 7247,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kocka",
-      "dist": 7259,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "pince rom",
-      "dist": 10520,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Zichy-Hadik-kastély",
-      "dist": 10714,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Aranybulla emlékmű (1222)",
-      "dist": 10802,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kovács kiállítás - Helytörténeti kiállítás",
-      "dist": 4481,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    }
+  "pois": [],
+  "majorCities": [
+    "Budapest",
+    "Budaörs",
+    "Biatorbágy"
   ],
-  "majorCities": [],
   "specialties": [
     {
       "title": "frybread",
