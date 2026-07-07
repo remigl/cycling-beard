@@ -1,13 +1,13 @@
 {
   "totalKm": 2873,
   "totalCountries": 6,
-  "totalDays": 41,
+  "totalDays": 42,
   "totalStages": 28,
   "totalElevation": 16171,
   "currentCountry": "Hongrie",
   "currentCountryCode": "HU",
   "currentLocation": "Gárdony",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-06",
+  "lastUpdate": "2026-07-07",
   "latestStageSlug": "2026-07-06-budapest-gardony"
 }
