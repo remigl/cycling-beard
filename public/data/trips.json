@@ -257866,113 +257866,7 @@
     "lodgingName": "Bottkov dvor, Mária 355 94636, 946 36 Kravany nad Dunajom, Slovaquie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Erzsébet királyné emlékfája",
-        "dist": 3547,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Jankovich-barlang",
-        "dist": 10041,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Jankovich-barlang"
-      },
-      {
-        "title": "Millenniumi Gyűjtemény és Tájékoztató Központ",
-        "dist": 8944,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Emlékmű a forradalom és szabadságharc emlékére",
-        "dist": 3188,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": "1848–49-es forradalom és szabadságharc"
-      },
-      {
-        "title": "Tulassay Tér Emlékkő",
-        "dist": 3351,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "I. világháborús emlékmű (1914-1918)",
-        "dist": 3407,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "kopjafa",
-        "dist": 3544,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Millennium emlékmű",
-        "dist": 3582,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "II. világháború hősi halált halt katonái és polgári áldozatai",
-        "dist": 3598,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "1956",
-        "dist": 3986,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kálvin János",
-        "dist": 4962,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "1848-49-es emlékmű",
-        "dist": 4973,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Nedeczky Sándor-emlékmű",
-        "dist": 5142,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "1848-49-es szabadságharc lábatlani résztvevői",
-        "dist": 5262,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Millenniumi emlékmű",
-        "dist": 5769,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Komárno",
       "Komárom",
@@ -284927,12 +284821,114 @@
     "lodgingName": "Gárdony, SURFCAMPING, Harcsa u. 2, 2483 Hongrie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [
-      "Budapest",
-      "Budaörs",
-      "Biatorbágy"
+    "pois": [
+      {
+        "title": "Gárdonyi rönkvár",
+        "dist": 2599,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Beck-kastély (üdülő)",
+        "dist": 2952,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "1848-as obeliszk",
+        "dist": 3615,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kis-Cipó",
+        "dist": 6443,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gomba-kő",
+        "dist": 6475,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Magos-kő",
+        "dist": 6842,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pandúr-kő",
+        "dist": 7178,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Izabella-kő",
+        "dist": 7206,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pogány-kő",
+        "dist": 7224,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Oroszlán-szikla",
+        "dist": 7247,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kocka",
+        "dist": 7259,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "pince rom",
+        "dist": 10520,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zichy-Hadik-kastély",
+        "dist": 10714,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Aranybulla emlékmű (1222)",
+        "dist": 10802,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kovács kiállítás - Helytörténeti kiállítás",
+        "dist": 4481,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
     ],
+    "majorCities": [],
     "specialties": [
       {
         "title": "frybread",
