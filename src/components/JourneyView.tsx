@@ -98,24 +98,82 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
 
+  // ── Zoom photo (double-tap + pincement) ──────────────────────────────────
+  const [zoom, setZoom] = useState(1);
+  const [pan, setPan] = useState({ x: 0, y: 0 });
+  const lastTapRef = useRef(0);
+  const pinchStartDist = useRef<number | null>(null);
+  const pinchStartZoom = useRef(1);
+  const panStart = useRef<{ x: number; y: number; px: number; py: number } | null>(null);
+  const isPanningRef = useRef(false);
+
+  const resetZoom = () => { setZoom(1); setPan({ x: 0, y: 0 }); };
+
+  const dist2 = (touches: any) => {
+    const dx = touches[0].clientX - touches[1].clientX;
+    const dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  };
+
   // Navigation tactile dans la photo plein écran : swipe gauche/droite
   const touchStartX = useRef<number | null>(null);
-  const lightboxPrev = () => setLightbox(l => l && ({ ...l, index: l.index > 0 ? l.index - 1 : l.photos.length - 1 }));
-  const lightboxNext = () => setLightbox(l => l && ({ ...l, index: l.index < l.photos.length - 1 ? l.index + 1 : 0 }));
-  const onLightboxTouchStart = (e: any) => { touchStartX.current = e.touches[0].clientX; };
+  const lightboxPrev = () => { resetZoom(); setLightbox(l => l && ({ ...l, index: l.index > 0 ? l.index - 1 : l.photos.length - 1 })); };
+  const lightboxNext = () => { resetZoom(); setLightbox(l => l && ({ ...l, index: l.index < l.photos.length - 1 ? l.index + 1 : 0 })); };
+
+  const onLightboxTouchStart = (e: any) => {
+    if (e.touches.length === 2) {
+      // Début d'un pincement
+      pinchStartDist.current = dist2(e.touches);
+      pinchStartZoom.current = zoom;
+      touchStartX.current = null; // annule le swipe pendant un pincement
+    } else if (e.touches.length === 1) {
+      if (zoom > 1) {
+        // Zoomé : on prépare un glissement (pan) plutôt qu'un swipe photo
+        isPanningRef.current = true;
+        panStart.current = { x: e.touches[0].clientX, y: e.touches[0].clientY, px: pan.x, py: pan.y };
+      } else {
+        touchStartX.current = e.touches[0].clientX;
+      }
+      // Détection double-tap
+      const now = Date.now();
+      if (now - lastTapRef.current < 300) {
+        if (zoom > 1) resetZoom(); else { setZoom(2.5); }
+      }
+      lastTapRef.current = now;
+    }
+  };
+  const onLightboxTouchMove = (e: any) => {
+    if (e.touches.length === 2 && pinchStartDist.current) {
+      const scale = dist2(e.touches) / pinchStartDist.current;
+      const next = Math.min(4, Math.max(1, pinchStartZoom.current * scale));
+      setZoom(next);
+      if (next <= 1) setPan({ x: 0, y: 0 });
+    } else if (e.touches.length === 1 && isPanningRef.current && panStart.current) {
+      const dx = e.touches[0].clientX - panStart.current.x;
+      const dy = e.touches[0].clientY - panStart.current.y;
+      setPan({ x: panStart.current.px + dx, y: panStart.current.py + dy });
+    }
+  };
   const onLightboxTouchEnd = (e: any) => {
-    if (touchStartX.current === null) return;
+    if (e.touches.length === 0) {
+      pinchStartDist.current = null;
+      isPanningRef.current = false;
+      panStart.current = null;
+    }
+    if (zoom > 1 || touchStartX.current === null) return; // pas de swipe si zoomé
     const delta = e.changedTouches[0].clientX - touchStartX.current;
     touchStartX.current = null;
     if (delta < -50) lightboxNext();   // swipe vers la gauche → photo suivante
     else if (delta > 50) lightboxPrev(); // swipe vers la droite → photo précédente
   };
+  // Double-clic souris (desktop) : même comportement que le double-tap
+  const onLightboxDoubleClick = () => { if (zoom > 1) resetZoom(); else setZoom(2.5); };
 
   // Touche Échap : ferme la photo plein écran
   useEffect(() => {
     if (!lightbox) return;
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setLightbox(null);
+      if (e.key === "Escape") { setLightbox(null); resetZoom(); }
       else if (e.key === "ArrowLeft") lightboxPrev();
       else if (e.key === "ArrowRight") lightboxNext();
     };
@@ -271,17 +329,27 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
         {lightbox && (
           <div
             className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4"
-            onClick={() => setLightbox(null)}
+            onClick={() => { if (zoom <= 1) setLightbox(null); }}
             onTouchStart={onLightboxTouchStart}
+            onTouchMove={onLightboxTouchMove}
             onTouchEnd={onLightboxTouchEnd}
           >
             <div className="max-w-5xl w-full flex flex-col items-center gap-3" onClick={e => e.stopPropagation()}>
-              <img
-                src={lightbox.photos[lightbox.index]?.src}
-                alt={lightbox.photos[lightbox.index]?.alt}
-                referrerPolicy="no-referrer"
-                className="max-h-[68vh] w-auto object-contain rounded"
-              />
+              <div className="overflow-hidden max-h-[68vh] w-full flex items-center justify-center touch-none">
+                <img
+                  src={lightbox.photos[lightbox.index]?.src}
+                  alt={lightbox.photos[lightbox.index]?.alt}
+                  referrerPolicy="no-referrer"
+                  onDoubleClick={onLightboxDoubleClick}
+                  draggable={false}
+                  style={{
+                    transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,
+                    transition: pinchStartDist.current ? "none" : "transform 0.2s ease-out",
+                    cursor: zoom > 1 ? "grab" : "zoom-in",
+                  }}
+                  className="max-h-[68vh] w-auto object-contain rounded select-none"
+                />
+              </div>
               {lightbox.photos[lightbox.index]?.alt && (
                 <p className="font-mono text-xs text-brand-sand uppercase tracking-wider">{lightbox.photos[lightbox.index].alt}</p>
               )}
@@ -295,7 +363,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                       src={p.src}
                       alt={p.alt}
                       referrerPolicy="no-referrer"
-                      onClick={() => setLightbox(l => l && ({ ...l, index: k }))}
+                      onClick={() => { resetZoom(); setLightbox(l => l && ({ ...l, index: k })); }}
                       className={`h-14 w-14 object-cover rounded cursor-pointer shrink-0 transition-all ${
                         k === lightbox.index
                           ? "ring-2 ring-brand-sand opacity-100"
@@ -308,7 +376,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
 
               <div className="flex items-center gap-4 mt-1">
                 <span className="font-mono text-[10px] text-white/50">{lightbox.index + 1} / {lightbox.photos.length}</span>
-                <button onClick={() => setLightbox(null)} className="font-mono text-[10px] text-white/50 hover:text-white cursor-pointer uppercase tracking-wider">Fermer ✕</button>
+                <button onClick={() => { setLightbox(null); resetZoom(); }} className="font-mono text-[10px] text-white/50 hover:text-white cursor-pointer uppercase tracking-wider">Fermer ✕</button>
               </div>
             </div>
           </div>
