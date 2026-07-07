@@ -257973,7 +257973,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Komárno",
+      "Komárom",
+      "Šamorín"
+    ],
     "specialties": []
   },
   {
@@ -285098,8 +285102,8 @@
     "endCity": "Révfülöp",
     "distanceKm": 128.6,
     "elevationGain": 851,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-07-gardony-revfulop/img_3936.webp",
+    "thumbnail": "/media/2026-07-07-gardony-revfulop/thumb_img_3936.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -291497,7 +291501,23 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3936.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3936.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3936.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3936.webp",
+        "alt": "Img 3936"
+      },
+      {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3967.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3967.webp",
+        "alt": "Img 3967"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -291777,11 +291797,117 @@
       ]
     ],
     "minAltitude": 82,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/R%C3%A9vf%C3%BCl%C3%B6p,+Balatontourist+Camping+Napf%C3%A9ny,+Hal%C3%A1sz+u.+5,+8253+Hongrie/data=!4m2!3m1!1s0x4769a8d83c51b81b:0x23ae4e72d7cc3de2!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=09646f76-082a-406b-95e0-e8fdcf17bea1&g_st=ac",
+    "lodgingName": "Révfülöp, Balatontourist Camping Napfény, Halász u. 5, 8253 Hongrie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Kővágóörsi kőtenger",
+        "dist": 3745,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Szalay-kúria",
+        "dist": 6248,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Salföldi kőtenger",
+        "dist": 6772,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Hegyestű Geológiai Bemutatóhely",
+        "dist": 6841,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sabar-hegyi templomrom",
+        "dist": 8931,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Szentbékkállai kőtenger",
+        "dist": 9526,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Szentimrepusztai kőtenger",
+        "dist": 9791,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gaál-kastély",
+        "dist": 10933,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rózsakő",
+        "dist": 11638,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Rózsakő"
+      },
+      {
+        "title": "Pincekiállítás",
+        "dist": 1156,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kapoli múzeum",
+        "dist": 6399,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Helytörténeti Gyűjtemény",
+        "dist": 6588,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kovácsműhely",
+        "dist": 6764,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jókai 7",
+        "dist": 8405,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pajtamúzeum",
+        "dist": 8802,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Székesfehérvár",
       "Gárdony",
