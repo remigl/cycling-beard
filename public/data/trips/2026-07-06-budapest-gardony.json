@@ -12,7 +12,7 @@
   "distanceKm": 89,
   "elevationGain": 801,
   "maxAltitude": 256,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-06-budapest-gardony/img_3908.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,33 @@
   "lodgingName": "Gárdony, SURFCAMPING, Harcsa u. 2, 2483 Hongrie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-06-budapest-gardony/img_3908.webp",
+      "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3908.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-06-budapest-gardony/img_3908.webp",
+      "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3908.webp",
+      "alt": "Img 3908"
+    },
+    {
+      "src": "/media/2026-07-06-budapest-gardony/img_3910.webp",
+      "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3910.webp",
+      "alt": "Img 3910"
+    },
+    {
+      "src": "/media/2026-07-06-budapest-gardony/img_3918.webp",
+      "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3918.webp",
+      "alt": "Img 3918"
+    },
+    {
+      "src": "/media/2026-07-06-budapest-gardony/img_3928.webp",
+      "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3928.webp",
+      "alt": "Img 3928"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-06-budapest-gardony_1.gpx",
   "mapLat": 47.208786,
