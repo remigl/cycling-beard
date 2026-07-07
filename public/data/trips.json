@@ -291513,6 +291513,31 @@
         "alt": "Img 3936"
       },
       {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3944.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3944.webp",
+        "alt": "Img 3944"
+      },
+      {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3947.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3947.webp",
+        "alt": "Img 3947"
+      },
+      {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3948.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3948.webp",
+        "alt": "Img 3948"
+      },
+      {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3950.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3950.webp",
+        "alt": "Img 3950"
+      },
+      {
+        "src": "/media/2026-07-07-gardony-revfulop/img_3964.webp",
+        "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3964.webp",
+        "alt": "Img 3964"
+      },
+      {
         "src": "/media/2026-07-07-gardony-revfulop/img_3967.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3967.webp",
         "alt": "Img 3967"
@@ -291801,113 +291826,7 @@
     "lodgingName": "Révfülöp, Balatontourist Camping Napfény, Halász u. 5, 8253 Hongrie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Kővágóörsi kőtenger",
-        "dist": 3745,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Szalay-kúria",
-        "dist": 6248,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Salföldi kőtenger",
-        "dist": 6772,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Hegyestű Geológiai Bemutatóhely",
-        "dist": 6841,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Sabar-hegyi templomrom",
-        "dist": 8931,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Szentbékkállai kőtenger",
-        "dist": 9526,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Szentimrepusztai kőtenger",
-        "dist": 9791,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gaál-kastély",
-        "dist": 10933,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Rózsakő",
-        "dist": 11638,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Rózsakő"
-      },
-      {
-        "title": "Pincekiállítás",
-        "dist": 1156,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kapoli múzeum",
-        "dist": 6399,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Helytörténeti Gyűjtemény",
-        "dist": 6588,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kovácsműhely",
-        "dist": 6764,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Jókai 7",
-        "dist": 8405,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pajtamúzeum",
-        "dist": 8802,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Székesfehérvár",
       "Gárdony",
