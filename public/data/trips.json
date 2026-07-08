@@ -257866,8 +257866,118 @@
     "lodgingName": "Bottkov dvor, Mária 355 94636, 946 36 Kravany nad Dunajom, Slovaquie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Erzsébet királyné emlékfája",
+        "dist": 3547,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jankovich-barlang",
+        "dist": 10041,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Jankovich-barlang"
+      },
+      {
+        "title": "Millenniumi Gyűjtemény és Tájékoztató Központ",
+        "dist": 8944,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Emlékmű a forradalom és szabadságharc emlékére",
+        "dist": 3188,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "1848–49-es forradalom és szabadságharc"
+      },
+      {
+        "title": "Tulassay Tér Emlékkő",
+        "dist": 3351,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "I. világháborús emlékmű (1914-1918)",
+        "dist": 3407,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "kopjafa",
+        "dist": 3544,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Millennium emlékmű",
+        "dist": 3582,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "II. világháború hősi halált halt katonái és polgári áldozatai",
+        "dist": 3598,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "1956",
+        "dist": 3986,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kálvin János",
+        "dist": 4962,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "1848-49-es emlékmű",
+        "dist": 4973,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Nedeczky Sándor-emlékmű",
+        "dist": 5142,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "1848-49-es szabadságharc lábatlani résztvevői",
+        "dist": 5262,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Millenniumi emlékmű",
+        "dist": 5769,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Komárno",
+      "Komárom",
+      "Šamorín"
+    ],
     "specialties": []
   },
   {
@@ -291891,8 +292001,8 @@
     "endCity": "Halogy",
     "distanceKm": 139.4,
     "elevationGain": 1195,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-08-revfulop-halogy/img_3973.webp",
+    "thumbnail": "/media/2026-07-08-revfulop-halogy/thumb_img_3973.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -298210,7 +298320,43 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-08-revfulop-halogy/img_3973.webp",
+        "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3973.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-08-revfulop-halogy/img_3973.webp",
+        "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3973.webp",
+        "alt": "Img 3973"
+      },
+      {
+        "src": "/media/2026-07-08-revfulop-halogy/img_3975.webp",
+        "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3975.webp",
+        "alt": "Img 3975"
+      },
+      {
+        "src": "/media/2026-07-08-revfulop-halogy/img_3977.webp",
+        "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3977.webp",
+        "alt": "Img 3977"
+      },
+      {
+        "src": "/media/2026-07-08-revfulop-halogy/img_3983.webp",
+        "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3983.webp",
+        "alt": "Img 3983"
+      },
+      {
+        "src": "/media/2026-07-08-revfulop-halogy/img_3985.webp",
+        "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3985.webp",
+        "alt": "Img 3985"
+      },
+      {
+        "src": "/media/2026-07-08-revfulop-halogy/img_3986.webp",
+        "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3986.webp",
+        "alt": "Img 3986"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -298490,11 +298636,117 @@
       ]
     ],
     "minAltitude": 107,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Halogy,+OASE+Halogy,+F%C5%91+u.+11%2F1,+9917+Hongrie/data=!4m2!3m1!1s0x476ed151efd4bbfb:0x6a19b2cb615a1e8d!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACDXggMqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=a5e45e0d-9371-46f4-ae92-6b74ecef070b&g_st=ac",
+    "lodgingName": "Halogy, OASE Halogy, Fő u. 11/1, 9917 Hongrie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Mária-kert",
+        "dist": 9796,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Őrségi várhalom",
+        "dist": 9958,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Harangláb",
+        "dist": 11363,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dr. Batthyány-Strattmann László Múzeum",
+        "dist": 4974,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Cipőtörténeti gyűjtemény",
+        "dist": 4986,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Határőrmúzeum",
+        "dist": 5943,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Falumúzeum",
+        "dist": 6069,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Völgyes Ferenc Helytörténeti Gyűjtemény",
+        "dist": 8889,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Nádasdi földvár",
+        "dist": 2111,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Táborhegy Emlékmű",
+        "dist": 3604,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "896 - 1996",
+        "dist": 4648,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Molnár Lajos",
+        "dist": 4660,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Nepomuki Szent János",
+        "dist": 4695,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Anya gyermekével",
+        "dist": 4695,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Szent István és Boldog Gizella",
+        "dist": 4712,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Keszthely",
       "Zalaszentgrót",
