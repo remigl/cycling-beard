@@ -6807,6 +6807,10 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Komárno",
+    "Komárom",
+    "Šamorín"
+  ],
   "specialties": []
 }
