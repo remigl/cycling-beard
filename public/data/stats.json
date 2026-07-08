@@ -1,13 +1,13 @@
 {
   "totalKm": 3001,
   "totalCountries": 6,
-  "totalDays": 42,
+  "totalDays": 43,
   "totalStages": 29,
   "totalElevation": 17022,
   "currentCountry": "Hongrie",
   "currentCountryCode": "HU",
   "currentLocation": "Révfülöp",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-07",
+  "lastUpdate": "2026-07-08",
   "latestStageSlug": "2026-07-07-gardony-revfulop"
 }
