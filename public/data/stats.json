@@ -1,13 +1,13 @@
 {
-  "totalKm": 3141,
+  "totalKm": 3224,
   "totalCountries": 6,
   "totalDays": 44,
-  "totalStages": 30,
-  "totalElevation": 18217,
-  "currentCountry": "Hongrie",
-  "currentCountryCode": "HU",
-  "currentLocation": "Halogy",
+  "totalStages": 31,
+  "totalElevation": 18572,
+  "currentCountry": "Autriche",
+  "currentCountryCode": "AT",
+  "currentLocation": "St. Margarethen an der Raab",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-09",
-  "latestStageSlug": "2026-07-08-revfulop-halogy"
+  "latestStageSlug": "2026-07-09-halogy-st-margarethen-an-der-raab"
 }
