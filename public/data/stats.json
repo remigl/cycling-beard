@@ -1,13 +1,13 @@
 {
   "totalKm": 3141,
   "totalCountries": 6,
-  "totalDays": 43,
+  "totalDays": 44,
   "totalStages": 30,
   "totalElevation": 18217,
   "currentCountry": "Hongrie",
   "currentCountryCode": "HU",
   "currentLocation": "Halogy",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-08",
+  "lastUpdate": "2026-07-09",
   "latestStageSlug": "2026-07-08-revfulop-halogy"
 }
