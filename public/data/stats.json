@@ -1,13 +1,13 @@
 {
   "totalKm": 3224,
   "totalCountries": 6,
-  "totalDays": 44,
+  "totalDays": 45,
   "totalStages": 31,
   "totalElevation": 18572,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
   "currentLocation": "St. Margarethen an der Raab",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-09",
+  "lastUpdate": "2026-07-10",
   "latestStageSlug": "2026-07-09-halogy-st-margarethen-an-der-raab"
 }
