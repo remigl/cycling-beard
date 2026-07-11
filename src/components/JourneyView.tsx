@@ -86,12 +86,22 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     return cityLabel(title);
   };
 
-  // Pays par défaut = pays de l'étape la plus récente (par date, peu importe l'ordre du tableau)
+  // Pays par défaut = PASSAGE de l'étape la plus récente (par date). On calcule
+  // ici la clé de passage directement (countryPassages n'est défini que plus bas).
   const lastCountry = (() => {
     const withCountry = trips.filter(tr => tr.country && tr.country !== "—");
     if (withCountry.length === 0) return "all";
     const latest = withCountry.reduce((a, b) => (a.date || "") >= (b.date || "") ? a : b);
-    return latest.country;
+    const chronological = [...trips].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+    let occ = 0, prevCountry: string | null = null;
+    for (const tr of chronological) {
+      const c = tr.country;
+      if (!c || c === "—") continue;
+      if (c !== prevCountry && c === latest.country) occ++;
+      prevCountry = c;
+      if (tr === latest) break;
+    }
+    return `${latest.country}__${occ}`;
   })();
   const [selectedCountry, setSelectedCountry] = useState<string>(lastCountry);
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
@@ -216,15 +226,49 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     };
   }, [anyOverlayOpen]);
 
-  const countries = ["all", ...Array.from(new Set(trips.map(t => t.country).filter(c => c && c !== "—")))];
+  // ── Passages pays : si un pays est quitté puis retraversé plus tard (ex.
+  // Autriche → Slovaquie → Autriche), on le distingue comme un 2e passage,
+  // pour respecter l'ordre chronologique réel du voyage plutôt que de tout
+  // regrouper sous un seul bouton "Autriche".
+  type CountryPassage = { key: string; country: string; occurrence: number; trips: TripSummary[] };
+  const countryPassages: CountryPassage[] = [];
+  {
+    // Sécurité : on trie par date pour que les "passages consécutifs" soient
+    // détectés dans l'ordre réel du voyage, même si trips.json n'est pas
+    // garanti trié.
+    const chronological = [...trips].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+    const countSoFar: Record<string, number> = {};
+    let current: CountryPassage | null = null;
+    for (const trip of chronological) {
+      const c = trip.country;
+      if (!c || c === "—") continue;
+      if (!current || current.country !== c) {
+        countSoFar[c] = (countSoFar[c] || 0) + 1;
+        current = { key: `${c}__${countSoFar[c]}`, country: c, occurrence: countSoFar[c], trips: [] };
+        countryPassages.push(current);
+      }
+      current.trips.push(trip);
+    }
+  }
+  // Est-ce qu'un pays a plusieurs passages distincts dans le voyage ?
+  const passageCountByCountry: Record<string, number> = {};
+  for (const p of countryPassages) passageCountByCountry[p.country] = (passageCountByCountry[p.country] || 0) + 1;
+
+  const countries = ["all", ...countryPassages.map(p => p.key)];
   const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
 
-  // Régions du pays sélectionné (sous-filtres)
-  const regions = selectedCountry === "all"
+  // Libellé d'un passage : "Autriche" normalement, "Autriche (2)" s'il y a un retour
+  const passageLabel = (key: string) => {
+    const p = countryPassages.find(x => x.key === key);
+    if (!p) return key;
+    return passageCountByCountry[p.country] > 1 ? `${countryLabel(p.country)} (${p.occurrence})` : countryLabel(p.country);
+  };
+
+  // Régions du passage sélectionné (sous-filtres)
+  const selectedPassage = countryPassages.find(p => p.key === selectedCountry);
+  const regions = selectedCountry === "all" || !selectedPassage
     ? []
-    : Array.from(new Set(
-        trips.filter(t => t.country === selectedCountry).map(t => t.region).filter(Boolean)
-      )) as string[];
+    : Array.from(new Set(selectedPassage.trips.map(t => t.region).filter(Boolean))) as string[];
 
   const toggleTag = (tag: string) => {
     setSelectedTags(prev => prev.includes(tag) ? prev.filter(x => x !== tag) : [...prev, tag]);
@@ -271,7 +315,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   };
 
   const filtered = trips
-    .filter(trip => selectedCountry === "all" || trip.country === selectedCountry)
+    .filter(trip => selectedCountry === "all" || (selectedPassage?.trips.includes(trip) ?? false))
     .filter(trip => selectedRegion === "all" || trip.region === selectedRegion)
     .filter(trip => selectedTags.length === 0 || selectedTags.every(tag => (trip.tags || []).includes(tag)))
     .filter(trip =>
@@ -412,21 +456,21 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                     : "bg-transparent border border-text-on/15 text-text-dim hover:border-brand-sand/60 hover:text-text-on"
                 }`}
               >
-                {c === "all" ? t("journey.all") : countryLabel(c)}
+                {c === "all" ? t("journey.all") : passageLabel(c)}
               </button>
             ))}
           </div>
 
           {/* Bouton unique "Spécialités" du pays sélectionné (par pays, pas par étape) */}
-          {selectedCountry !== "all" && (() => {
-            const countryTrip = trips.find(tr => tr.country === selectedCountry && tr.specialties && tr.specialties.length > 0);
+          {selectedCountry !== "all" && selectedPassage && (() => {
+            const countryTrip = trips.find(tr => tr.country === selectedPassage.country && tr.specialties && tr.specialties.length > 0);
             if (!countryTrip) return null;
             return (
               <button
                 onClick={() => setFoodTrip(countryTrip)}
                 className="mt-3 inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest px-4 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
               >
-                <UtensilsCrossed size={13} /> {t("journey.food_btn")} · {countryLabel(selectedCountry)}
+                <UtensilsCrossed size={13} /> {t("journey.food_btn")} · {countryLabel(selectedPassage.country)}
               </button>
             );
           })()}
@@ -436,7 +480,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
         {regions.length > 0 && (
           <div className="flex items-center gap-2 flex-wrap mb-5">
             <span className="font-mono text-[9px] text-text-dim uppercase tracking-wider mr-1">
-              {countryLabel(selectedCountry)} :
+              {passageLabel(selectedCountry)} :
             </span>
             <button
               onClick={() => { setSelectedRegion("all"); setRegionMap(null); }}
@@ -487,12 +531,12 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
 
         {/* Tiroir carte du PAYS : quand un pays précis est sélectionné et qu'aucune
             carte de région n'est ouverte → trace de toutes les étapes du pays. */}
-        {selectedCountry !== "all" && !regionMap && (
+        {selectedCountry !== "all" && selectedPassage && !regionMap && (
           <RegionMap
             key={`country-${selectedCountry}`}
             region={selectedCountry}
-            regionLabel={countryLabel(selectedCountry)}
-            country={selectedCountry}
+            regionLabel={passageLabel(selectedCountry)}
+            country={selectedPassage.country}
             trips={trips}
             lang={lang}
             onClose={() => setSelectedCountry("all")}
@@ -510,7 +554,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           <span className="font-display font-bold text-lg text-text-on">{filtered.length}</span>
           <span className="font-mono text-[10px] uppercase tracking-wider text-text-dim">
             {filtered.length > 1 ? t("journey.stages") : t("journey.stage")}
-            {selectedRegion !== "all" ? ` · ${regionLabel(selectedRegion)}` : selectedCountry !== "all" ? ` · ${countryLabel(selectedCountry)}` : ""}
+            {selectedRegion !== "all" ? ` · ${regionLabel(selectedRegion)}` : selectedCountry !== "all" ? ` · ${passageLabel(selectedCountry)}` : ""}
           </span>
         </div>
 
