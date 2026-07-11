@@ -1,13 +1,13 @@
 {
-  "totalKm": 3224,
+  "totalKm": 3276,
   "totalCountries": 6,
   "totalDays": 46,
-  "totalStages": 31,
-  "totalElevation": 18572,
+  "totalStages": 32,
+  "totalElevation": 19083,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
-  "currentLocation": "St. Margarethen an der Raab",
+  "currentLocation": "Pernegg an der Mur",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-11",
-  "latestStageSlug": "2026-07-09-halogy-st-margarethen-an-der-raab"
+  "latestStageSlug": "2026-07-11-graz-pernegg-an-der-mur"
 }
