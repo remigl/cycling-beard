@@ -536,7 +536,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
             key={`country-${selectedCountry}`}
             region={selectedCountry}
             regionLabel={passageLabel(selectedCountry)}
-            country={selectedPassage.country}
+            explicitTrips={selectedPassage.trips}
             trips={trips}
             lang={lang}
             onClose={() => setSelectedCountry("all")}
