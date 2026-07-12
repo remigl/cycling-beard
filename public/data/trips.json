@@ -315522,8 +315522,8 @@
     "endCity": "Pernegg an der Mur",
     "distanceKm": 52.2,
     "elevationGain": 511,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-11-graz-pernegg-an-der-mur/20260711_195644.webp",
+    "thumbnail": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_20260711_195644.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -321505,7 +321505,43 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-11-graz-pernegg-an-der-mur/20260711_195644.webp",
+        "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_20260711_195644.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-11-graz-pernegg-an-der-mur/20260711_195644.webp",
+        "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_20260711_195644.webp",
+        "alt": "195644"
+      },
+      {
+        "src": "/media/2026-07-11-graz-pernegg-an-der-mur/20260711_203807.webp",
+        "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_20260711_203807.webp",
+        "alt": "203807"
+      },
+      {
+        "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4021 (1).webp",
+        "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_img_4021 (1).webp",
+        "alt": "Img 4021 (1)"
+      },
+      {
+        "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4029.webp",
+        "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_img_4029.webp",
+        "alt": "Img 4029"
+      },
+      {
+        "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4031.webp",
+        "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_img_4031.webp",
+        "alt": "Img 4031"
+      },
+      {
+        "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4034.webp",
+        "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_img_4034.webp",
+        "alt": "Img 4034"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -321787,8 +321823,15 @@
     "minAltitude": 352,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {},
+    "thanks": "Simon",
+    "thanksTranslations": {
+      "en": "Simon",
+      "es": "Simon",
+      "it": "Simon",
+      "de": "Simon",
+      "nl": "Simon",
+      "fr": "Simon"
+    },
     "pois": [
       {
         "title": "Mariensäule",
