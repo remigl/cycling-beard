@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Camping+Putterersee,+Hohenberg+2a,+8943+Aigen+im+Ennstal,+Autriche/data=!4m2!3m1!1s0x477112b5abe0deb5:0x433b4356e24cd7bd!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=634e7a37-4c61-417b-a4bf-f71ca61e45e1&g_st=ac",
+  "lodgingName": "Camping Putterersee, Hohenberg 2a, 8943 Aigen im Ennstal, Autriche",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -9870,7 +9870,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Burgruine Wolkenstein",
+      "dist": 4092,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Burg Wolkenstein (Steiermark)"
+    },
+    {
+      "title": "Mühle",
+      "dist": 9480,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tauplitzer Wasserfall",
+      "dist": 9866,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Tauplitzer Wasserfall"
+    },
+    {
+      "title": "Mariensäule",
+      "dist": 2363,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Lichtkogel",
+      "dist": 2956,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "ehemaliges Zwangsarbeiterlager / Mauer",
+      "dist": 4345,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "ehemaliges Zwangsarbeiterlager",
+      "dist": 4742,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Blick auf Pürgg",
+      "dist": 5226,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jungfrausturz",
+      "dist": 5905,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aussichtswarte Oberkogler",
+      "dist": 6214,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Hermann von Wissmann",
+      "dist": 7208,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gedenkstätte Grubenunglück 1998",
+      "dist": 8637,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dachsteinblick",
+      "dist": 10544,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aussichtsplattform",
+      "dist": 11727,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aicherlstein",
+      "dist": 3940,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Leoben",
     "Kapfenberg",
