@@ -11,6 +11,9 @@ interface RegionMapProps {
   regionLabel?: string;
   country?: string;       // si fourni, on filtre par pays au lieu de région
   trips: TripSummary[];   // toutes les étapes (on filtre celles de la région/pays)
+  explicitTrips?: TripSummary[]; // si fourni, utilisé TEL QUEL (pas de refiltrage) —
+                                  // nécessaire pour un passage pays précis (ex. un
+                                  // retour dans un pays déjà traversé plus tôt).
   lang: string;
   onClose: () => void;
   t: (key: string) => string;
@@ -31,14 +34,17 @@ function loadLeaflet(): Promise<void> {
   });
 }
 
-export default function RegionMap({ region, regionLabel, country, trips, lang, onClose, t }: RegionMapProps) {
+export default function RegionMap({ region, regionLabel, country, trips, explicitTrips, lang, onClose, t }: RegionMapProps) {
   const mapRef = useRef<HTMLDivElement>(null);
   const mapInstance = useRef<any>(null);
 
-  // Étapes de cette région ayant un tracé
-  const regionTrips = country
-    ? trips.filter(tr => tr.country === country)
-    : trips.filter(tr => tr.region === region);
+  // Étapes à afficher : liste explicite (passage précis) si fournie, sinon
+  // filtrage classique par pays ou par région.
+  const regionTrips = explicitTrips
+    ? explicitTrips
+    : country
+      ? trips.filter(tr => tr.country === country)
+      : trips.filter(tr => tr.region === region);
 
   useEffect(() => {
     let cancelled = false;
@@ -98,7 +104,7 @@ export default function RegionMap({ region, regionLabel, country, trips, lang, o
       cancelled = true;
       if (mapInstance.current) { mapInstance.current.remove(); mapInstance.current = null; }
     };
-  }, [region, country]);
+  }, [region, country, explicitTrips]);
 
   return (
     <div className="mb-8 bg-[#1c1b1b] rounded-2xl border border-white/10 overflow-hidden animate-[slideDown_0.25s_ease-out]">
