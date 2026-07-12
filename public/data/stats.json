@@ -1,13 +1,13 @@
 {
   "totalKm": 3276,
   "totalCountries": 6,
-  "totalDays": 46,
+  "totalDays": 47,
   "totalStages": 32,
   "totalElevation": 19083,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
   "currentLocation": "Pernegg an der Mur",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-11",
+  "lastUpdate": "2026-07-12",
   "latestStageSlug": "2026-07-11-graz-pernegg-an-der-mur"
 }
