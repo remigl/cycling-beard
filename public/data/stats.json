@@ -1,13 +1,13 @@
 {
-  "totalKm": 3412,
+  "totalKm": 3500,
   "totalCountries": 6,
   "totalDays": 48,
-  "totalStages": 33,
-  "totalElevation": 20318,
+  "totalStages": 34,
+  "totalElevation": 21071,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
-  "currentLocation": "Aigen im Ennstal",
+  "currentLocation": "Flachau",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-13",
-  "latestStageSlug": "2026-07-12-pernegg-an-der-mur-aigen-im-ennstal"
+  "latestStageSlug": "2026-07-13-aigen-im-ennstal-flachau"
 }
