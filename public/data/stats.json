@@ -1,13 +1,13 @@
 {
   "totalKm": 3412,
   "totalCountries": 6,
-  "totalDays": 47,
+  "totalDays": 48,
   "totalStages": 33,
   "totalElevation": 20318,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
   "currentLocation": "Aigen im Ennstal",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-12",
+  "lastUpdate": "2026-07-13",
   "latestStageSlug": "2026-07-12-pernegg-an-der-mur-aigen-im-ennstal"
 }
