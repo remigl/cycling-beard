@@ -9199,7 +9199,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Hermann Maier Fanshop/Museum",
+      "dist": 355,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Schloß Lerchen",
+      "dist": 6961,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Schloss Lerchen"
+    },
+    {
+      "title": "Kapuzinerturm",
+      "dist": 7225,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Erze, Gold & Mineralien",
+      "dist": 10414,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Stefan Ernst",
+      "dist": 2995,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Saukarfunktel",
+      "dist": 5048,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kraftplatz Lisie S.",
+      "dist": 7194,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gamskogel",
+      "dist": 8667,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Neudegg Annas Heumad Platzl",
+      "dist": 10381,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Goliathschaukel",
+      "dist": 10577,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Wildpark Untertauern",
+      "dist": 9626,
+      "kind": "Parc à thème / zoo",
+      "rank": 7,
+      "wikiTitle": null
+    },
+    {
+      "title": "Lackenkogel",
+      "dist": 2854,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Grießenkareck",
+      "dist": 4209,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Brandkopf",
+      "dist": 5255,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Saukarkopf",
+      "dist": 5363,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Schladming",
     "Radstadt"
@@ -9231,6 +9337,11 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Christmas_carp"
     },
     {
+      "title": "ischler",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
+    },
+    {
       "title": "Eiernockerl",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
@@ -9239,11 +9350,6 @@
       "title": "maluns",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
-    },
-    {
-      "title": "ischler",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
       "title": "serviettenknödel",
