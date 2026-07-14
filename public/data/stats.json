@@ -1,13 +1,13 @@
 {
-  "totalKm": 3500,
+  "totalKm": 3604,
   "totalCountries": 6,
   "totalDays": 49,
-  "totalStages": 34,
-  "totalElevation": 21071,
+  "totalStages": 35,
+  "totalElevation": 22124,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
-  "currentLocation": "Flachau",
+  "currentLocation": "Obervellach",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-14",
-  "latestStageSlug": "2026-07-13-aigen-im-ennstal-flachau"
+  "latestStageSlug": "2026-07-14-flachau-obervellach"
 }
