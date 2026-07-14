@@ -332037,7 +332037,7 @@
     "elevationGain": 753,
     "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "shortDescription": "",
+    "shortDescription": "Jus de groseilles, jus de pommes et pommes de terre du jardin de Jeffrey",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 47.3425467,
@@ -340667,38 +340667,52 @@
       ]
     ],
     "tags": [],
-    "fullStory": [],
+    "fullStory": [
+      "Jus de groseilles, jus de pommes et pommes de terre du jardin de Jeffrey"
+    ],
     "photos": [],
     "translations": {
       "fr": {
-        "summary": "",
+        "summary": "Jus de groseilles, jus de pommes et pommes de terre du jardin de Jeffrey",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Jus de groseilles, jus de pommes et pommes de terre du jardin de Jeffrey"
+        ]
       },
       "en": {
-        "summary": "",
+        "summary": "Red currant juice, apple juice, and potatoes from Jeffrey's garden",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Red currant juice, apple juice, and potatoes from Jeffrey's garden"
+        ]
       },
       "es": {
-        "summary": "",
+        "summary": "Zumo de grosellas, zumo de manzana y patatas del huerto de Jeffrey",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Zumo de grosellas, zumo de manzana y patatas del huerto de Jeffrey"
+        ]
       },
       "it": {
-        "summary": "",
+        "summary": "Succo di ribes, succo di mela e patate dell'orto di Jeffrey",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Succo di ribes, succo di mela e patate dell'orto di Jeffrey"
+        ]
       },
       "de": {
-        "summary": "",
+        "summary": "Johannisbeersaft, Apfelsaft und Kartoffeln aus Jeffreys Garten",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Johannisbeersaft, Apfelsaft und Kartoffeln aus Jeffreys Garten"
+        ]
       },
       "nl": {
-        "summary": "",
+        "summary": "Aalbessensap, appelsap en aardappelen uit de tuin van Jeffrey",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Aalbessensap, appelsap en aardappelen uit de tuin van Jeffrey"
+        ]
       }
     },
     "elevProfile": [
@@ -341194,10 +341208,20 @@
     "minAltitude": 626,
     "lodgingUrl": "",
     "lodgingName": "",
-    "thanks": "",
-    "thanksTranslations": {},
+    "thanks": "Jeffrey",
+    "thanksTranslations": {
+      "en": "Jeffrey",
+      "es": "Jeffrey",
+      "it": "Jeffrey",
+      "de": "Jeffrey",
+      "nl": "Jeffrey",
+      "fr": "Jeffrey"
+    },
     "pois": [],
-    "majorCities": [],
+    "majorCities": [
+      "Schladming",
+      "Radstadt"
+    ],
     "specialties": [
       {
         "title": "escalope à la viennoise",

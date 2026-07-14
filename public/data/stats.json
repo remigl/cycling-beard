@@ -1,13 +1,13 @@
 {
   "totalKm": 3500,
   "totalCountries": 6,
-  "totalDays": 48,
+  "totalDays": 49,
   "totalStages": 34,
   "totalElevation": 21071,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
   "currentLocation": "Flachau",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-13",
+  "lastUpdate": "2026-07-14",
   "latestStageSlug": "2026-07-13-aigen-im-ennstal-flachau"
 }
