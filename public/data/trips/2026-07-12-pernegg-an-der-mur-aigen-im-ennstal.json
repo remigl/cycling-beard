@@ -12,7 +12,7 @@
   "distanceKm": 135.3,
   "elevationGain": 1235,
   "maxAltitude": 879,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,78 @@
   "lodgingName": "Camping Putterersee, Hohenberg 2a, 8943 Aigen im Ennstal, Autriche",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
+      "alt": "Img 4037"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4041.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4041.webp",
+      "alt": "Img 4041"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4048.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4048.webp",
+      "alt": "Img 4048"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4054.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4054.webp",
+      "alt": "Img 4054"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4060.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4060.webp",
+      "alt": "Img 4060"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4062.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4062.webp",
+      "alt": "Img 4062"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4088.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4088.webp",
+      "alt": "Img 4088"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4092.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4092.webp",
+      "alt": "Img 4092"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4095.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4095.webp",
+      "alt": "Img 4095"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4101.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4101.webp",
+      "alt": "Img 4101"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4105.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4105.webp",
+      "alt": "Img 4105"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4108.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4108.webp",
+      "alt": "Img 4108"
+    },
+    {
+      "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4114.webp",
+      "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4114.webp",
+      "alt": "Img 4114"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal_1.gpx",
   "mapLat": 47.5216914,

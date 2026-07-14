@@ -322007,8 +322007,8 @@
     "endCity": "Aigen im Ennstal",
     "distanceKm": 135.3,
     "elevationGain": 1235,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
+    "thumbnail": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -331332,7 +331332,78 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
+        "alt": "Img 4037"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4041.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4041.webp",
+        "alt": "Img 4041"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4048.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4048.webp",
+        "alt": "Img 4048"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4054.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4054.webp",
+        "alt": "Img 4054"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4060.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4060.webp",
+        "alt": "Img 4060"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4062.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4062.webp",
+        "alt": "Img 4062"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4088.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4088.webp",
+        "alt": "Img 4088"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4092.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4092.webp",
+        "alt": "Img 4092"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4095.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4095.webp",
+        "alt": "Img 4095"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4101.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4101.webp",
+        "alt": "Img 4101"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4105.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4105.webp",
+        "alt": "Img 4105"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4108.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4108.webp",
+        "alt": "Img 4108"
+      },
+      {
+        "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4114.webp",
+        "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4114.webp",
+        "alt": "Img 4114"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -332035,8 +332106,8 @@
     "endCity": "Flachau",
     "distanceKm": 88.2,
     "elevationGain": 753,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4115.webp",
+    "thumbnail": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4115.webp",
     "shortDescription": "Jus de groseilles, jus de pommes et pommes de terre du jardin de Jeffrey",
     "hasVideo": false,
     "hasGpx": true,
@@ -340670,7 +340741,38 @@
     "fullStory": [
       "Jus de groseilles, jus de pommes et pommes de terre du jardin de Jeffrey"
     ],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4115.webp",
+        "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4115.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4115.webp",
+        "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4115.webp",
+        "alt": "Img 4115"
+      },
+      {
+        "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4127.webp",
+        "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4127.webp",
+        "alt": "Img 4127"
+      },
+      {
+        "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4131.webp",
+        "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4131.webp",
+        "alt": "Img 4131"
+      },
+      {
+        "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4142.webp",
+        "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4142.webp",
+        "alt": "Img 4142"
+      },
+      {
+        "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4143.webp",
+        "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4143.webp",
+        "alt": "Img 4143"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "Jus de groseilles, jus de pommes et pommes de terre du jardin de Jeffrey",
@@ -341217,113 +341319,7 @@
       "nl": "Jeffrey",
       "fr": "Jeffrey"
     },
-    "pois": [
-      {
-        "title": "Hermann Maier Fanshop/Museum",
-        "dist": 355,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Schloß Lerchen",
-        "dist": 6961,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Schloss Lerchen"
-      },
-      {
-        "title": "Kapuzinerturm",
-        "dist": 7225,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Erze, Gold & Mineralien",
-        "dist": 10414,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Stefan Ernst",
-        "dist": 2995,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Saukarfunktel",
-        "dist": 5048,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kraftplatz Lisie S.",
-        "dist": 7194,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gamskogel",
-        "dist": 8667,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Neudegg Annas Heumad Platzl",
-        "dist": 10381,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Goliathschaukel",
-        "dist": 10577,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Wildpark Untertauern",
-        "dist": 9626,
-        "kind": "Parc à thème / zoo",
-        "rank": 7,
-        "wikiTitle": null
-      },
-      {
-        "title": "Lackenkogel",
-        "dist": 2854,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Grießenkareck",
-        "dist": 4209,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Brandkopf",
-        "dist": 5255,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Saukarkopf",
-        "dist": 5363,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Schladming",
       "Radstadt"
