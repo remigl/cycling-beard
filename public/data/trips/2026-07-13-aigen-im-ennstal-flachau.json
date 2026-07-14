@@ -9231,10 +9231,7 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [
-    "Schladming",
-    "Radstadt"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",

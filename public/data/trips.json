@@ -341320,10 +341320,7 @@
       "fr": "Jeffrey"
     },
     "pois": [],
-    "majorCities": [
-      "Schladming",
-      "Radstadt"
-    ],
+    "majorCities": [],
     "specialties": [
       {
         "title": "escalope à la viennoise",
@@ -341387,9 +341384,9 @@
     "endCity": "Obervellach",
     "distanceKm": 104.6,
     "elevationGain": 1053,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "shortDescription": "",
+    "coverImage": "/media/2026-07-14-flachau-obervellach/img_4147.webp",
+    "thumbnail": "/media/2026-07-14-flachau-obervellach/thumb_img_4147.webp",
+    "shortDescription": "Bad Gastein est un joli village. Ça descend fort après Mallnitz.",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 46.9336546,
@@ -351881,38 +351878,103 @@
       ]
     ],
     "tags": [],
-    "fullStory": [],
-    "photos": [],
+    "fullStory": [
+      "Bad Gastein est un joli village. Ça descend fort après Mallnitz."
+    ],
+    "photos": [
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4147.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4147.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4147.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4147.webp",
+        "alt": "Img 4147"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4148.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4148.webp",
+        "alt": "Img 4148"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4159.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4159.webp",
+        "alt": "Img 4159"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4169.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4169.webp",
+        "alt": "Img 4169"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4171.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4171.webp",
+        "alt": "Img 4171"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4173.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4173.webp",
+        "alt": "Img 4173"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4178.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4178.webp",
+        "alt": "Img 4178"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4181.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4181.webp",
+        "alt": "Img 4181"
+      },
+      {
+        "src": "/media/2026-07-14-flachau-obervellach/img_4183.webp",
+        "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4183.webp",
+        "alt": "Img 4183"
+      }
+    ],
     "translations": {
       "fr": {
-        "summary": "",
+        "summary": "Bad Gastein est un joli village. Ça descend fort après Mallnitz.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Bad Gastein est un joli village. Ça descend fort après Mallnitz."
+        ]
       },
       "en": {
-        "summary": "",
+        "summary": "Bad Gastein is a pretty village. The road drops steeply after Mallnitz.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Bad Gastein is a pretty village. The road drops steeply after Mallnitz."
+        ]
       },
       "es": {
-        "summary": "",
+        "summary": "Bad Gastein es un pueblo precioso. La carretera desciende con fuerza después de Mallnitz.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Bad Gastein es un pueblo precioso. Hay una fuerte pendiente después de Mallnitz."
+        ]
       },
       "it": {
-        "summary": "",
+        "summary": "Bad Gastein è un grazioso paesino. Dopo Mallnitz la strada scende ripidamente.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Bad Gastein è un grazioso paesino. Dopo Mallnitz la strada scende ripidamente."
+        ]
       },
       "de": {
-        "summary": "",
+        "summary": "Bad Gastein ist ein hübsches Dorf. Nach Mallnitz geht es steil bergab.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Bad Gastein ist ein hübsches Dorf. Nach Mallnitz geht es steil bergab."
+        ]
       },
       "nl": {
-        "summary": "",
+        "summary": "Bad Gastein is een mooi dorpje. Na Mallnitz gaat het steil naar beneden.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Bad Gastein is een mooi dorpje. Na Mallnitz gaat het steil naar beneden."
+        ]
       }
     },
     "elevProfile": [
@@ -352682,16 +352744,118 @@
       ]
     ],
     "minAltitude": 593,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Zechner,+Fischertratten+17,+9853+Gm%C3%BCnd+in+K%C3%A4rnten,+Autriche/data=!4m2!3m1!1s0x4770b8c395bcd78d:0x4f1c47fe14e0361!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=f12c093d-3e36-4b89-8b2b-dfadfb1542bd&g_st=ac",
+    "lodgingName": "Camping Zechner, Fischertratten 17, 9853 Gmünd in Kärnten, Autriche",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [
-      "Sankt Johann im Pongau",
-      "Bischofshofen",
-      "Bad Hofgastein"
+    "pois": [
+      {
+        "title": "Polinikfall",
+        "dist": 1462,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gussenbauer Denkmal",
+        "dist": 324,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mölltal Blick",
+        "dist": 1070,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Den Gefallenen der Weltkriege 1914-1918",
+        "dist": 6536,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kriegerdenkmal",
+        "dist": 6984,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Danielsberg",
+        "dist": 8212,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Filialkirche St. Georg am Danielsberg"
+      },
+      {
+        "title": "Alois Pucher",
+        "dist": 8702,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ebeneck",
+        "dist": 3243,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Unterer Sickerkopf",
+        "dist": 4374,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Böse Nase",
+        "dist": 4489,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Oberer Sickerkopf",
+        "dist": 4933,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gamskarspitz",
+        "dist": 5015,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Lawogge",
+        "dist": 5419,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zagutnigspitz",
+        "dist": 5516,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Groneck",
+        "dist": 5872,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
     ],
+    "majorCities": [],
     "specialties": [
       {
         "title": "escalope à la viennoise",
