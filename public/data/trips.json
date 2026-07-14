@@ -341320,7 +341320,10 @@
       "fr": "Jeffrey"
     },
     "pois": [],
-    "majorCities": [],
+    "majorCities": [
+      "Schladming",
+      "Radstadt"
+    ],
     "specialties": [
       {
         "title": "escalope à la viennoise",
@@ -351949,10 +351952,10 @@
         ]
       },
       "es": {
-        "summary": "Bad Gastein es un pueblo precioso. La carretera desciende con fuerza después de Mallnitz.",
+        "summary": "Bad Gastein es un pueblo precioso. Hay una fuerte pendiente después de Mallnitz.",
         "quote": null,
         "fullStory": [
-          "Bad Gastein es un pueblo precioso. Hay una fuerte pendiente después de Mallnitz."
+          "Bad Gastein es un pueblo precioso. La carretera desciende con fuerza después de Mallnitz."
         ]
       },
       "it": {
@@ -352855,7 +352858,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Sankt Johann im Pongau",
+      "Bischofshofen",
+      "Bad Hofgastein"
+    ],
     "specialties": [
       {
         "title": "escalope à la viennoise",
