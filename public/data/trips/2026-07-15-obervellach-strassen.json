@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Camping+Lienzer+Dolomiten,+Tassenbach+23,+9918+Strassen,+Autriche/data=!4m2!3m1!1s0x4779d64ae1f52297:0x4ec9b2c0a0476b9f!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqnwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzJCAkZS&skid=a0c00de6-10b1-44e3-bc4a-e5b1bd960ea5",
+  "lodgingName": "Camping Lienzer Dolomiten, Tassenbach 23, 9918 Strassen, Autriche",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -6724,113 +6724,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Römischer Meilenstein",
-      "dist": 3473,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Rudolf Stolz Museum",
-      "dist": 9868,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Punbrugge",
-      "dist": 2004,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Nepomukdenkmal",
-      "dist": 3454,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Sattel",
-      "dist": 4950,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Heini Klammer",
-      "dist": 5009,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Heimkehrerkreuz",
-      "dist": 5686,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kriegerfriedhof",
-      "dist": 6332,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Sentiero della Pace",
-      "dist": 8906,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Zirmrast",
-      "dist": 3332,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Schusteregg",
-      "dist": 3781,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Weißer Knoten",
-      "dist": 4242,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Steinrast",
-      "dist": 4319,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Scheibenegg",
-      "dist": 4367,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Zenzerspitz",
-      "dist": 4700,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Lienz",
     "Sillian",
