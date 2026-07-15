@@ -12,7 +12,7 @@
   "distanceKm": 112.8,
   "elevationGain": 1119,
   "maxAltitude": 1080,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-15-obervellach-strassen/img_4193.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,48 @@
   "lodgingName": "Camping Lienzer Dolomiten, Tassenbach 23, 9918 Strassen, Autriche",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4193.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4193.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4193.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4193.webp",
+      "alt": "Img 4193"
+    },
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4196.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4196.webp",
+      "alt": "Img 4196"
+    },
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4205.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4205.webp",
+      "alt": "Img 4205"
+    },
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4207.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4207.webp",
+      "alt": "Img 4207"
+    },
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4209.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4209.webp",
+      "alt": "Img 4209"
+    },
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4213.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4213.webp",
+      "alt": "Img 4213"
+    },
+    {
+      "src": "/media/2026-07-15-obervellach-strassen/img_4214.webp",
+      "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4214.webp",
+      "alt": "Img 4214"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-15-obervellach-strassen_1.gpx",
   "mapLat": 46.7455839,
@@ -6724,7 +6765,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Römischer Meilenstein",
+      "dist": 3473,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Rudolf Stolz Museum",
+      "dist": 9868,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Punbrugge",
+      "dist": 2004,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Nepomukdenkmal",
+      "dist": 3454,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sattel",
+      "dist": 4950,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Heini Klammer",
+      "dist": 5009,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Heimkehrerkreuz",
+      "dist": 5686,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kriegerfriedhof",
+      "dist": 6332,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sentiero della Pace",
+      "dist": 8906,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zirmrast",
+      "dist": 3332,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Schusteregg",
+      "dist": 3781,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Weißer Knoten",
+      "dist": 4242,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Steinrast",
+      "dist": 4319,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Scheibenegg",
+      "dist": 4367,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zenzerspitz",
+      "dist": 4700,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Lienz",
     "Sillian",
