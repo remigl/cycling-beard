@@ -1,13 +1,13 @@
 {
   "totalKm": 3604,
   "totalCountries": 6,
-  "totalDays": 49,
+  "totalDays": 50,
   "totalStages": 35,
   "totalElevation": 22124,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
   "currentLocation": "Obervellach",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-14",
+  "lastUpdate": "2026-07-15",
   "latestStageSlug": "2026-07-14-flachau-obervellach"
 }
