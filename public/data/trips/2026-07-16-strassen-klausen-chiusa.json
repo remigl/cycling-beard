@@ -12,7 +12,7 @@
   "distanceKm": 103.6,
   "elevationGain": 719,
   "maxAltitude": 1217,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -49,11 +49,42 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Ansitz+Gamp,+Griesbruck,+10,+39043+Chiusa+BZ,+Italie/data=!4m2!3m1!1s0x47780ebc0fcf5db1:0xff4305a36d0ceb77!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqnwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzJCAkZS&skid=4dd47283-1732-44d8-9827-8e02cb99458f&g_st=ac",
+  "lodgingName": "Ansitz Gamp, Griesbruck, 10, 39043 Chiusa BZ, Italie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
+      "alt": "Img 4221"
+    },
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4225.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4225.webp",
+      "alt": "Img 4225"
+    },
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4228.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4228.webp",
+      "alt": "Img 4228"
+    },
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4230.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4230.webp",
+      "alt": "Img 4230"
+    },
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4234.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4234.webp",
+      "alt": "Img 4234"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-16-strassen-klausen-chiusa_1.gpx",
   "mapLat": 46.6405003,
@@ -13409,14 +13440,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "Parmigiano Reggiano",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-    },
-    {
       "title": "macaroni",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+    },
+    {
+      "title": "Parmigiano Reggiano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
     },
     {
       "title": "pâtes à la carbonara",
@@ -13439,14 +13470,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "cannolo",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "cannolo",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
@@ -13469,16 +13500,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
-      "title": "Penne",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-    },
-    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
@@ -13489,9 +13510,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
     },
     {
-      "title": "sabayon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      "title": "Penne",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
     },
     {
       "title": "Chianti DOCG",
