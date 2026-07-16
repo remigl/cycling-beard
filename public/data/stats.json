@@ -1,13 +1,13 @@
 {
   "totalKm": 3717,
   "totalCountries": 6,
-  "totalDays": 50,
+  "totalDays": 51,
   "totalStages": 36,
   "totalElevation": 23243,
   "currentCountry": "Autriche",
   "currentCountryCode": "AT",
   "currentLocation": "Strassen",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-15",
+  "lastUpdate": "2026-07-16",
   "latestStageSlug": "2026-07-15-obervellach-strassen"
 }
