@@ -1,13 +1,13 @@
 {
-  "totalKm": 3717,
-  "totalCountries": 6,
+  "totalKm": 3821,
+  "totalCountries": 7,
   "totalDays": 51,
-  "totalStages": 36,
-  "totalElevation": 23243,
-  "currentCountry": "Autriche",
-  "currentCountryCode": "AT",
-  "currentLocation": "Strassen",
+  "totalStages": 37,
+  "totalElevation": 23962,
+  "currentCountry": "Italie",
+  "currentCountryCode": "IT",
+  "currentLocation": "Klausen - Chiusa",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-16",
-  "latestStageSlug": "2026-07-15-obervellach-strassen"
+  "latestStageSlug": "2026-07-16-strassen-klausen-chiusa"
 }
