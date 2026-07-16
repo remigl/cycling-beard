@@ -359957,7 +359957,7 @@
     "elevationGain": 719,
     "coverImage": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
     "thumbnail": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
-    "shortDescription": "",
+    "shortDescription": "Des centaines de vélo entre Silian et Brunico.",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 46.6405003,
@@ -372441,7 +372441,9 @@
       ]
     ],
     "tags": [],
-    "fullStory": [],
+    "fullStory": [
+      "Des centaines de vélo entre Silian et Brunico."
+    ],
     "photos": [
       {
         "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
@@ -372476,34 +372478,46 @@
     ],
     "translations": {
       "fr": {
-        "summary": "",
+        "summary": "Des centaines de vélo entre Silian et Brunico.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Des centaines de vélo entre Silian et Brunico."
+        ]
       },
       "en": {
-        "summary": "",
+        "summary": "Hundreds of bicycles between Silian and Brunico.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Hundreds of bicycles between Silian and Brunico."
+        ]
       },
       "es": {
-        "summary": "",
+        "summary": "Cientos de bicicletas entre Silian y Brunico.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Cientos de bicicletas entre Silian y Brunico."
+        ]
       },
       "it": {
-        "summary": "",
+        "summary": "Centinaia di biciclette tra Silian e Brunico.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Centinaia di biciclette tra Silian e Brunico."
+        ]
       },
       "de": {
-        "summary": "",
+        "summary": "Hunderte von Fahrrädern zwischen Silian und Brunico.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Hunderte von Fahrrädern zwischen Silian und Brunico."
+        ]
       },
       "nl": {
-        "summary": "",
+        "summary": "Honderden fietsers tussen Silian en Brunico.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Honderden fietsers tussen Silian en Brunico."
+        ]
       }
     },
     "elevProfile": [
@@ -373249,118 +373263,8 @@
     "lodgingName": "Ansitz Gamp, Griesbruck, 10, 39043 Chiusa BZ, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Ansitz Lusenegg",
-        "dist": 773,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Evangelstein",
-        "dist": 6129,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Flitzer Wasserfall - Cascata di Valluzza",
-        "dist": 6729,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Unterer Barbianer Wasserfall",
-        "dist": 6878,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Oberer Barbianer Wasserfall",
-        "dist": 6896,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Hexenstühle",
-        "dist": 8559,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Bergwerk Villanders - Miniera Villandro",
-        "dist": 2631,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Bergwerk Villanders"
-      },
-      {
-        "title": "Mineralien Museum - Museo Mineralogico",
-        "dist": 3938,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Tiermuseum",
-        "dist": 8196,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Diözesanmuseum - Museo Diocesano",
-        "dist": 10442,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museo diocesano (Bressanone)"
-      },
-      {
-        "title": "Pharmaziemuseum - Museo della Farmacia",
-        "dist": 10733,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museo della farmacia di Bressanone"
-      },
-      {
-        "title": "Acheoparc Villanders - Acheoparc Villandro",
-        "dist": 2550,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Archeoparc outside",
-        "dist": 2551,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Peter Mayr",
-        "dist": 8217,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Hexenbänke",
-        "dist": 9091,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      }
-    ],
-    "majorCities": [
-      "Brixen - Bressanone",
-      "Bruneck - Brunico",
-      "Klausen - Chiusa"
-    ],
+    "pois": [],
+    "majorCities": [],
     "specialties": [
       {
         "title": "spaghetti",
@@ -373408,14 +373312,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "tortellini",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
-      },
-      {
         "title": "cannolo",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
+      },
+      {
+        "title": "tortellini",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
         "title": "Pecorino",
@@ -373438,11 +373342,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-      },
-      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -373458,14 +373357,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      },
+      {
         "title": "pizza Margherita",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       },
       {
-        "title": "Chianti DOCG",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
       }
     ]
   }
