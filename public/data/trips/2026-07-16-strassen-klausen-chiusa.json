@@ -12,7 +12,7 @@
   "distanceKm": 103.6,
   "elevationGain": 719,
   "maxAltitude": 1217,
-  "coverImage": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
+  "coverImage": "/media/2026-07-16-strassen-klausen-chiusa/20260716_205711.webp",
   "heroVideo": null,
   "summary": "Des centaines de vélo entre Silian et Brunico.",
   "fullStory": [
@@ -69,9 +69,19 @@
   "thanksTranslations": {},
   "photos": [
     {
-      "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
-      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/20260716_205711.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_20260716_205711.webp",
       "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/20260716_205711.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_20260716_205711.webp",
+      "alt": "205711"
+    },
+    {
+      "src": "/media/2026-07-16-strassen-klausen-chiusa/20260716_212511.webp",
+      "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_20260716_212511.webp",
+      "alt": "212511"
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
@@ -13325,7 +13335,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Ansitz Lusenegg",
+      "dist": 773,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Evangelstein",
+      "dist": 6129,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Flitzer Wasserfall - Cascata di Valluzza",
+      "dist": 6729,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Unterer Barbianer Wasserfall",
+      "dist": 6878,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Oberer Barbianer Wasserfall",
+      "dist": 6896,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Hexenstühle",
+      "dist": 8559,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Bergwerk Villanders - Miniera Villandro",
+      "dist": 2631,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Bergwerk Villanders"
+    },
+    {
+      "title": "Mineralien Museum - Museo Mineralogico",
+      "dist": 3938,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tiermuseum",
+      "dist": 8196,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Diözesanmuseum - Museo Diocesano",
+      "dist": 10442,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museo diocesano (Bressanone)"
+    },
+    {
+      "title": "Pharmaziemuseum - Museo della Farmacia",
+      "dist": 10733,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museo della farmacia di Bressanone"
+    },
+    {
+      "title": "Acheoparc Villanders - Acheoparc Villandro",
+      "dist": 2550,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Archeoparc outside",
+      "dist": 2551,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Peter Mayr",
+      "dist": 8217,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Hexenbänke",
+      "dist": 9091,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Brixen - Bressanone",
     "Bruneck - Brunico",
@@ -13408,11 +13524,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -13426,6 +13537,11 @@
       "title": "Penne",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
       "title": "fusilli",
