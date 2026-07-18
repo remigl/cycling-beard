@@ -380318,8 +380318,8 @@
     "endCity": "Mori",
     "distanceKm": 77.8,
     "elevationGain": 374,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/20260718_120835.webp",
+    "thumbnail": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_20260718_120835.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -386693,7 +386693,58 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/20260718_120835.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_20260718_120835.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/20260718_120835.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_20260718_120835.webp",
+        "alt": "120835"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4255.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4255.webp",
+        "alt": "Img 4255"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4261.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4261.webp",
+        "alt": "Img 4261"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4265.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4265.webp",
+        "alt": "Img 4265"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4272.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4272.webp",
+        "alt": "Img 4272"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4274.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4274.webp",
+        "alt": "Img 4274"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4278.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4278.webp",
+        "alt": "Img 4278"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4279.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4279.webp",
+        "alt": "Img 4279"
+      },
+      {
+        "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4282.webp",
+        "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4282.webp",
+        "alt": "Img 4282"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -387084,7 +387135,11 @@
         "wikiTitle": "Campana dei Caduti"
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Trente",
+      "Rovereto",
+      "Mori"
+    ],
     "specialties": [
       {
         "title": "spaghetti",
@@ -387102,14 +387157,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -387167,6 +387222,11 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      },
+      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -387177,19 +387237,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+        "title": "sabayon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
       },
       {
         "title": "pizza Margherita",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-      },
-      {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
       }
     ]
   }
