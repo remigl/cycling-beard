@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Agricampeggio+L'albero+delle+mele,+Frazione+Loppio,+1,+38065+Loppio+TN,+Italie/data=!4m2!3m1!1s0x4782101ed08062a1:0x267963623d4ee92!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqnwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzJCAkZS&skid=c53098c1-63d0-4020-8e4f-aa9cb2230dc3&g_st=ac",
+  "lodgingName": "Agricampeggio L'albero delle mele, Frazione Loppio, 1, 38065 Loppio TN, Italie",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -6783,11 +6783,7 @@
       "wikiTitle": "Campana dei Caduti"
     }
   ],
-  "majorCities": [
-    "Trente",
-    "Rovereto",
-    "Mori"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6805,14 +6801,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6845,14 +6841,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-    },
-    {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -6865,9 +6861,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "osso buco",
@@ -6880,9 +6876,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
       "title": "pizza Margherita",
@@ -6890,9 +6886,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
     },
     {
-      "title": "fusilli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     }
   ]
 }
