@@ -1,13 +1,13 @@
 {
-  "totalKm": 3883,
+  "totalKm": 3961,
   "totalCountries": 7,
   "totalDays": 53,
-  "totalStages": 38,
-  "totalElevation": 24190,
+  "totalStages": 39,
+  "totalElevation": 24564,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
-  "currentLocation": "Kurtatsch an der Weinstraße - Cortaccia sulla Strada del Vino",
+  "currentLocation": "Mori",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-18",
-  "latestStageSlug": "2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino"
+  "latestStageSlug": "2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori"
 }
