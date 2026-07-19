@@ -1,13 +1,13 @@
 {
-  "totalKm": 3961,
+  "totalKm": 4007,
   "totalCountries": 7,
   "totalDays": 54,
-  "totalStages": 39,
-  "totalElevation": 24564,
+  "totalStages": 40,
+  "totalElevation": 24907,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
-  "currentLocation": "Mori",
+  "currentLocation": "Malcesine",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-19",
-  "latestStageSlug": "2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori"
+  "latestStageSlug": "2026-07-19-mori-malcesine"
 }
