@@ -12,7 +12,7 @@
   "distanceKm": 45.9,
   "elevationGain": 343,
   "maxAltitude": 283,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-19-mori-malcesine/img_4288.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -49,11 +49,57 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Campeggio+Panorama,+Via+Gardesana,+8,+37018+Malcesine+VR,+Italie/data=!4m2!3m1!1s0x47821e7b4bf736e1:0xcdc2b7a24aef21ff!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI4LjMYACCenQoqnwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzJCAkZS&skid=dd0a874c-c279-4246-8db6-f314596c428f&g_st=ac",
+  "lodgingName": "Campeggio Panorama, Via Gardesana, 8, 37018 Malcesine VR, Italie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4288.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4288.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4288.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4288.webp",
+      "alt": "Img 4288"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4292.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4292.webp",
+      "alt": "Img 4292"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4296.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4296.webp",
+      "alt": "Img 4296"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4297.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4297.webp",
+      "alt": "Img 4297"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4310.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4310.webp",
+      "alt": "Img 4310"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4314.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4314.webp",
+      "alt": "Img 4314"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4322.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4322.webp",
+      "alt": "Img 4322"
+    },
+    {
+      "src": "/media/2026-07-19-mori-malcesine/img_4331.webp",
+      "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4331.webp",
+      "alt": "Img 4331"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-19-mori-malcesine_1.gpx",
   "mapLat": 45.7313677,
@@ -6399,11 +6445,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Arco",
-    "Riva del Garda",
-    "Mori"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6486,6 +6528,11 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -6496,19 +6543,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
-      "title": "pizza Margherita",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-    },
-    {
       "title": "Chianti DOCG",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+    },
+    {
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     }
   ]
 }
