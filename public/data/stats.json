@@ -1,13 +1,13 @@
 {
   "totalKm": 4007,
   "totalCountries": 7,
-  "totalDays": 54,
+  "totalDays": 55,
   "totalStages": 40,
   "totalElevation": 24907,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
   "currentLocation": "Malcesine",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-19",
+  "lastUpdate": "2026-07-20",
   "latestStageSlug": "2026-07-19-mori-malcesine"
 }
