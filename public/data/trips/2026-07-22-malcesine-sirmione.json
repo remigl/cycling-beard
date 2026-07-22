@@ -12,7 +12,7 @@
   "distanceKm": 51.4,
   "elevationGain": 288,
   "maxAltitude": 118,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-22-malcesine-sirmione/img_4346.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,53 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4346.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4346.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4346.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4346.webp",
+      "alt": "Img 4346"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4349.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4349.webp",
+      "alt": "Img 4349"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4356.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4356.webp",
+      "alt": "Img 4356"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4358.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4358.webp",
+      "alt": "Img 4358"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4362.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4362.webp",
+      "alt": "Img 4362"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4370.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4370.webp",
+      "alt": "Img 4370"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img_4381.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4381.webp",
+      "alt": "Img 4381"
+    },
+    {
+      "src": "/media/2026-07-22-malcesine-sirmione/img-20260719-wa0003.webp",
+      "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img-20260719-wa0003.webp",
+      "alt": "Img 20260719 Wa0003"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-22-malcesine-sirmione_1.gpx",
   "mapLat": 45.4654282,
@@ -6400,11 +6446,114 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [
-    "Peschiera del Garda",
-    "Sirmione"
+  "pois": [
+    {
+      "title": "Parco Acquatico Waterland",
+      "dist": 2625,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Porta Verona",
+      "dist": 7559,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Museo Sisan",
+      "dist": 11907,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museo Sisàn"
+    },
+    {
+      "title": "Campana dei Caduti",
+      "dist": 3668,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Villa romana di Desenzano del Garda",
+      "dist": 5398,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Villa romana di Desenzano del Garda"
+    },
+    {
+      "title": "Ai Caduti sul Mare",
+      "dist": 7608,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monumento Ai Caduti",
+      "dist": 10247,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte degli Olivi",
+      "dist": 5943,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte dell'Ingrana",
+      "dist": 6283,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte Barbello",
+      "dist": 6285,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte Alto",
+      "dist": 6616,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte Lungo",
+      "dist": 6807,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte Sant'Antonio",
+      "dist": 6853,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte Corno",
+      "dist": 6974,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monte Venzaghetto",
+      "dist": 7162,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6462,14 +6611,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-    },
-    {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -6482,16 +6631,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -6500,6 +6639,16 @@
       "title": "Penne",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+    },
+    {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "Chianti DOCG",
