@@ -1,13 +1,13 @@
 {
   "totalKm": 4058,
   "totalCountries": 7,
-  "totalDays": 60,
+  "totalDays": 61,
   "totalStages": 41,
   "totalElevation": 25195,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
   "currentLocation": "Sirmione",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-25",
+  "lastUpdate": "2026-07-26",
   "latestStageSlug": "2026-07-22-malcesine-sirmione"
 }
