@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Area+sosta+da+Chiara,+Via+Ulisse+Barbieri,+14,+46100+Mantova+MN,+Italie/data=!4m2!3m1!1s0x4781d51d904e98b9:0x2624c74590c952e8!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODI2MzEwLDEwMDgyMjEyNSw5NDI4MDU3Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxODY1Myw5NDIyOTgzOSw5NDI3NTE2OCw5NDI3OTYxOSwxMDA4MTU2MzUsMTAwODIwMjMyQgJGUg%3D%3D&skid=0b7442a1-3d53-45bb-81b1-0b7179ea5a5d&g_st=ac",
+  "lodgingName": "Area sosta da Chiara, Via Ulisse Barbieri, 14, 46100 Mantova MN, Italie",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -6412,113 +6412,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "La Rustica",
-      "dist": 2348,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Galleria della Mostra",
-      "dist": 2372,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Domus Nova",
-      "dist": 2408,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Corridoio di S.Barbara",
-      "dist": 2431,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Palazzo del Massaro",
-      "dist": 2644,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Arco dell'Arengario",
-      "dist": 2651,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Casa del mercante Boniforte da Concorrezzo",
-      "dist": 2766,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Casa del Mercante",
-      "dist": 2767,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Casa del Mercante"
-    },
-    {
-      "title": "Casa Viani Tallarico",
-      "dist": 2806,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Forte di Pietole",
-      "dist": 2916,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Forte di Pietole"
-    },
-    {
-      "title": "Chiesa dei Santi Gervasio e Protasio",
-      "dist": 3281,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Parco del Mincio",
-      "dist": 10308,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "MASTeR",
-      "dist": 179,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Galleria Storica Vigili del Fuoco",
-      "dist": 2337,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo archeologico nazionale di Mantova",
-      "dist": 2500,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museo archeologico nazionale di Mantova"
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Mantoue",
     "Valeggio sul Mincio",
@@ -6571,14 +6465,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "tortellini",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
-    },
-    {
       "title": "Cannoli PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
+    },
+    {
+      "title": "tortellini",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
       "title": "sauce tomate",
@@ -6601,16 +6495,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -6619,6 +6503,16 @@
       "title": "Penne",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+    },
+    {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "sabayon",
