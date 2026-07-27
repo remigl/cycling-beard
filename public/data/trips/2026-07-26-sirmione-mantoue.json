@@ -6412,7 +6412,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "La Rustica",
+      "dist": 2348,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Galleria della Mostra",
+      "dist": 2372,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Domus Nova",
+      "dist": 2408,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Corridoio di S.Barbara",
+      "dist": 2431,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Palazzo del Massaro",
+      "dist": 2644,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Arco dell'Arengario",
+      "dist": 2651,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Casa del mercante Boniforte da Concorrezzo",
+      "dist": 2766,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Casa del Mercante",
+      "dist": 2767,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Casa del Mercante"
+    },
+    {
+      "title": "Casa Viani Tallarico",
+      "dist": 2806,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Forte di Pietole",
+      "dist": 2916,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Forte di Pietole"
+    },
+    {
+      "title": "Chiesa dei Santi Gervasio e Protasio",
+      "dist": 3281,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Parco del Mincio",
+      "dist": 10308,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "MASTeR",
+      "dist": 179,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Galleria Storica Vigili del Fuoco",
+      "dist": 2337,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Museo archeologico nazionale di Mantova",
+      "dist": 2500,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museo archeologico nazionale di Mantova"
+    }
+  ],
   "majorCities": [
     "Mantoue",
     "Valeggio sul Mincio",
@@ -6435,14 +6541,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "Parmigiano Reggiano",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-    },
-    {
       "title": "macaroni",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+    },
+    {
+      "title": "Parmigiano Reggiano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6450,14 +6556,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/P%C3%A2tes_%C3%A0_la_carbonara"
     },
     {
-      "title": "salade César",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caesar%20salad%20%282%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_C%C3%A9sar"
-    },
-    {
       "title": "raviole",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
+    },
+    {
+      "title": "salade César",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caesar%20salad%20%282%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_C%C3%A9sar"
     },
     {
       "title": "Merlot",
@@ -6495,6 +6601,11 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
@@ -6510,19 +6621,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "pizza Margherita",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
     },
     {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+      "title": "fusilli",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
     }
   ]
 }
