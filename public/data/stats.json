@@ -1,13 +1,13 @@
 {
-  "totalKm": 4058,
+  "totalKm": 4115,
   "totalCountries": 7,
   "totalDays": 62,
-  "totalStages": 41,
-  "totalElevation": 25195,
+  "totalStages": 42,
+  "totalElevation": 25361,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
-  "currentLocation": "Sirmione",
+  "currentLocation": "Mantoue",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-27",
-  "latestStageSlug": "2026-07-22-malcesine-sirmione"
+  "latestStageSlug": "2026-07-26-sirmione-mantoue"
 }
