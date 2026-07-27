@@ -1,13 +1,13 @@
 {
-  "totalKm": 4115,
+  "totalKm": 4210,
   "totalCountries": 7,
   "totalDays": 62,
-  "totalStages": 42,
-  "totalElevation": 25361,
+  "totalStages": 43,
+  "totalElevation": 25693,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
-  "currentLocation": "Mantoue",
+  "currentLocation": "Bondeno",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-27",
-  "latestStageSlug": "2026-07-26-sirmione-mantoue"
+  "latestStageSlug": "2026-07-27-mantoue-bondeno"
 }
