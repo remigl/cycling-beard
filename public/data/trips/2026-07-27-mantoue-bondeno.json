@@ -12,7 +12,7 @@
   "distanceKm": 95.4,
   "elevationGain": 332,
   "maxAltitude": 38,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-27-mantoue-bondeno/img_4411.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,53 @@
   "lodgingName": "Fireflies In The Fog Camping Village, Via Argine Po, 35/a, 44012 Stellata FE, Italie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4411.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4411.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4411.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4411.webp",
+      "alt": "Img 4411"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4414.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4414.webp",
+      "alt": "Img 4414"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4418.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4418.webp",
+      "alt": "Img 4418"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4426.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4426.webp",
+      "alt": "Img 4426"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4429.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4429.webp",
+      "alt": "Img 4429"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4430.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4430.webp",
+      "alt": "Img 4430"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img_4435.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4435.webp",
+      "alt": "Img 4435"
+    },
+    {
+      "src": "/media/2026-07-27-mantoue-bondeno/img-20260727-wa0002.webp",
+      "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img-20260727-wa0002.webp",
+      "alt": "Img 20260727 Wa0002"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-27-mantoue-bondeno_1.gpx",
   "mapLat": 44.9401682,
@@ -9969,9 +10015,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Mantoue"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -10049,14 +10093,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+    },
+    {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "osso buco",
