@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Fireflies+In+The+Fog+Camping+Village,+Via+Argine+Po,+35%2Fa,+44012+Stellata+FE,+Italie/data=!4m2!3m1!1s0x477fb2ac56889487:0x4f87fe76bf66a838!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODI2MzEwLDEwMDgyMjEyNSw5NDI4MDU3Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxODY1Myw5NDIyOTgzOSw5NDI3NTE2OCw5NDI3OTYxOSwxMDA4MTU2MzUsMTAwODIwMjMyQgJGUg%3D%3D&skid=5f577728-b65e-42db-804b-12f3d0236de2&g_st=ac",
+  "lodgingName": "Fireflies In The Fog Camping Village, Via Argine Po, 35/a, 44012 Stellata FE, Italie",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -9862,113 +9862,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Torre Pepoli",
-      "dist": 759,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Chiesa del Rosario (Oratorio di San Domenico)",
-      "dist": 833,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Casa Museo dell'Ariosto",
-      "dist": 920,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Rocca Possente di Stellata",
-      "dist": 1167,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Polesine in miniatura",
-      "dist": 4694,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Corte Benedettina di San Lorenzo",
-      "dist": 5158,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Castello di Sariano",
-      "dist": 7490,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Delizia Estense della Diamantina",
-      "dist": 9354,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo Archeologico \"Monsignor Guerrino Ferraresi\"",
-      "dist": 910,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo della seconda guerra mondiale del fiume Po",
-      "dist": 7109,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museo della seconda guerra mondiale del fiume Po"
-    },
-    {
-      "title": "Monumento ai Caduti delle guerre mondiali",
-      "dist": 1767,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "La Vela",
-      "dist": 4591,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ai Caduti di Porporana",
-      "dist": 4843,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Lapide ai Partigiani",
-      "dist": 5516,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Lapide ai Caduti di Ospitale",
-      "dist": 5519,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Mantoue"
   ],
@@ -9989,14 +9883,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "Parmigiano Reggiano",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-    },
-    {
       "title": "macaroni",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+    },
+    {
+      "title": "Parmigiano Reggiano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
     },
     {
       "title": "pâtes à la carbonara",
@@ -10004,14 +9898,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/P%C3%A2tes_%C3%A0_la_carbonara"
     },
     {
-      "title": "salade César",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caesar%20salad%20%282%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_C%C3%A9sar"
-    },
-    {
       "title": "raviole",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
+    },
+    {
+      "title": "salade César",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caesar%20salad%20%282%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_C%C3%A9sar"
     },
     {
       "title": "Merlot",
@@ -10019,24 +9913,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -10049,14 +9943,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+    },
+    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "Penne",
@@ -10064,19 +9958,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
-      "title": "pizza Margherita",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+    },
+    {
+      "title": "Chianti DOCG",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }
