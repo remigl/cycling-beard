@@ -1,13 +1,13 @@
 {
   "totalKm": 4210,
   "totalCountries": 7,
-  "totalDays": 62,
+  "totalDays": 63,
   "totalStages": 43,
   "totalElevation": 25693,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
   "currentLocation": "Bondeno",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-27",
+  "lastUpdate": "2026-07-28",
   "latestStageSlug": "2026-07-27-mantoue-bondeno"
 }
