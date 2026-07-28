@@ -417216,8 +417216,8 @@
     "endCity": "Chioggia",
     "distanceKm": 132.9,
     "elevationGain": 417,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-28-bondeno-chioggia/img_4436.webp",
+    "thumbnail": "/media/2026-07-28-bondeno-chioggia/thumb_img_4436.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -423599,7 +423599,43 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-28-bondeno-chioggia/img_4436.webp",
+        "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4436.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-28-bondeno-chioggia/img_4436.webp",
+        "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4436.webp",
+        "alt": "Img 4436"
+      },
+      {
+        "src": "/media/2026-07-28-bondeno-chioggia/img_4438.webp",
+        "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4438.webp",
+        "alt": "Img 4438"
+      },
+      {
+        "src": "/media/2026-07-28-bondeno-chioggia/img_4446.webp",
+        "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4446.webp",
+        "alt": "Img 4446"
+      },
+      {
+        "src": "/media/2026-07-28-bondeno-chioggia/img_4450.webp",
+        "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4450.webp",
+        "alt": "Img 4450"
+      },
+      {
+        "src": "/media/2026-07-28-bondeno-chioggia/img_4451.webp",
+        "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4451.webp",
+        "alt": "Img 4451"
+      },
+      {
+        "src": "/media/2026-07-28-bondeno-chioggia/img_4455.webp",
+        "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4455.webp",
+        "alt": "Img 4455"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -423879,11 +423915,117 @@
       ]
     ],
     "minAltitude": -5,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Village+Adriatico,+Lungomare+Adriatico,+82,+30015+Chioggia+VE,+Italie/data=!4m2!3m1!1s0x477e98fc43dcf17f:0xd01cd610e07ca71f!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODI2MzEwLDEwMDgyMjEyNSw5NDI4MDU3Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxODY1Myw5NDIyOTgzOSw5NDI3NTE2OCw5NDI3OTYxOSwxMDA4MTU2MzUsMTAwODIwMjM3QgJGUg%3D%3D&skid=450c055d-b704-4096-876d-a8e8dce18937",
+    "lodgingName": "Camping Village Adriatico, Lungomare Adriatico, 82, 30015 Chioggia VE, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Campanile di Sant'Andrea",
+        "dist": 2394,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Orologio della Torre di Sant'Andrea"
+      },
+      {
+        "title": "Diga Sottomarina",
+        "dist": 2878,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ottagono Ca' Roman",
+        "dist": 4458,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Ottagono Ca' Roman"
+      },
+      {
+        "title": "Torre Panoramica Foce dell'Adige",
+        "dist": 6174,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Forte Santo Stefano",
+        "dist": 11589,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo Civico della Laguna Sud",
+        "dist": 2030,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museo civico della Laguna Sud"
+      },
+      {
+        "title": "Museo del Calcio",
+        "dist": 2076,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo Diocesano",
+        "dist": 2221,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pinacoteca",
+        "dist": 2245,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo Torre dell'Orologio",
+        "dist": 2394,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo di zoologia marina \"Giuseppe Olivi\"",
+        "dist": 2414,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "AVIS",
+        "dist": 2108,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Carlo Goldoni",
+        "dist": 2183,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Padre Antonio Carisi",
+        "dist": 2223,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Antonio Rosmini",
+        "dist": 2249,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Ferrare",
       "Chioggia",
@@ -423906,14 +424048,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
         "title": "Parmigiano Reggiano",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
       },
       {
         "title": "pâtes à la carbonara",
@@ -423936,14 +424078,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "Cannoli PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-      },
-      {
         "title": "tortellini",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+      },
+      {
+        "title": "Cannoli PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
         "title": "Pecorino",
@@ -423986,14 +424128,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
+        "title": "sabayon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      },
+      {
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      },
+      {
         "title": "Chianti DOCG",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
-      },
-      {
-        "title": "pizza Margherita",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   }
