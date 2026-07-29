@@ -393806,7 +393806,7 @@
     "elevationGain": 288,
     "coverImage": "/media/2026-07-22-malcesine-sirmione/img_4346.webp",
     "thumbnail": "/media/2026-07-22-malcesine-sirmione/thumb_img_4346.webp",
-    "shortDescription": "",
+    "shortDescription": "Clara, what about meeting there.",
     "hasVideo": false,
     "hasGpx": true,
     "mapLat": 45.4654282,
@@ -399906,7 +399906,9 @@
       ]
     ],
     "tags": [],
-    "fullStory": [],
+    "fullStory": [
+      "Clara, what about meeting there."
+    ],
     "photos": [
       {
         "src": "/media/2026-07-22-malcesine-sirmione/img_4346.webp",
@@ -399956,34 +399958,46 @@
     ],
     "translations": {
       "fr": {
-        "summary": "",
+        "summary": "Clara, what about meeting there.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Clara, what about meeting there."
+        ]
       },
       "en": {
-        "summary": "",
+        "summary": "Clara, what about meeting there.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Clara, what about meeting there."
+        ]
       },
       "es": {
-        "summary": "",
+        "summary": "Clara, what about meeting there.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Clara, what about meeting there."
+        ]
       },
       "it": {
-        "summary": "",
+        "summary": "Clara, what about meeting there.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Clara, what about meeting there."
+        ]
       },
       "de": {
-        "summary": "",
+        "summary": "Clara, what about meeting there.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Clara, what about meeting there."
+        ]
       },
       "nl": {
-        "summary": "",
+        "summary": "Clara, what about meeting there.",
         "quote": null,
-        "fullStory": []
+        "fullStory": [
+          "Clara, what about meeting there."
+        ]
       }
     },
     "elevProfile": [
@@ -400361,14 +400375,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -400401,14 +400415,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-      },
-      {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -400421,11 +400435,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -400436,24 +400445,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      },
+      {
         "title": "tagliatelle",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
-        "title": "fusilli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
-      },
-      {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-      },
-      {
         "title": "pizza Margherita",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+      },
+      {
+        "title": "Chianti DOCG",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
       }
     ]
   },
