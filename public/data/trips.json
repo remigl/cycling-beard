@@ -424154,8 +424154,8 @@
     "endCity": "Caorle",
     "distanceKm": 87.2,
     "elevationGain": 229,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-29-chioggia-caorle/20260729_142728.webp",
+    "thumbnail": "/media/2026-07-29-chioggia-caorle/thumb_20260729_142728.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -433335,7 +433335,83 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/20260729_142728.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_20260729_142728.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/20260729_142728.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_20260729_142728.webp",
+        "alt": "142728"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4460.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4460.webp",
+        "alt": "Img 4460"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4463.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4463.webp",
+        "alt": "Img 4463"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4464.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4464.webp",
+        "alt": "Img 4464"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4466.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4466.webp",
+        "alt": "Img 4466"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4469.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4469.webp",
+        "alt": "Img 4469"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4473.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4473.webp",
+        "alt": "Img 4473"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4475.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4475.webp",
+        "alt": "Img 4475"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4478.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4478.webp",
+        "alt": "Img 4478"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4494.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4494.webp",
+        "alt": "Img 4494"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4495.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4495.webp",
+        "alt": "Img 4495"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4498.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4498.webp",
+        "alt": "Img 4498"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4502.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4502.webp",
+        "alt": "Img 4502"
+      },
+      {
+        "src": "/media/2026-07-29-chioggia-caorle/img_4503.webp",
+        "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4503.webp",
+        "alt": "Img 4503"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -433859,11 +433935,117 @@
       ]
     ],
     "minAltitude": 1,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Laguna+Village+Spa,+Viale+dei+Cacciatori,+28,+30021+Caorle+VE,+Italie/data=!4m2!3m1!1s0x477bf1ec7314c867:0xa81346cc39c59e0b!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqswEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODI2MzEwLDEwMDgyMjEyNSw5NDI4MDU3Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxODY1Myw5NDIyOTgzOSw5NDI3NTE2OCw5NDI3OTYxOSwxMDA4MTU2MzUsMTAwODIwMjM3LDEwMDgyMjQ5NEICRlI%3D&skid=03098226-b9b4-4ea0-8cf3-a4e58d943a3a&g_st=ac",
+    "lodgingName": "Camping Laguna Village Spa, Viale dei Cacciatori, 28, 30021 Caorle VE, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Monumento agli Artiglieri",
+        "dist": 2125,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ai caduti del mare",
+        "dist": 2136,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monumento ai caduti",
+        "dist": 2624,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mons. Don Fausto Moschetta",
+        "dist": 2956,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ai Lagunari",
+        "dist": 3125,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Erich Fuchs",
+        "dist": 3584,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Don Marco Bottosso",
+        "dist": 9233,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monumento Ai caduti di tutte le guerre e della lotta di liberazione",
+        "dist": 9347,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ai caduti di tutte le guerre",
+        "dist": 9471,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Serci Isiglo",
+        "dist": 9893,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Villa Romana Motteron dei Frati",
+        "dist": 10877,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monumento agli Artiglieri caduti e dispersi in guerra",
+        "dist": 11919,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monumento dei Martiri delle Foibe",
+        "dist": 11948,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monumento Al Donatore di Sangue",
+        "dist": 12004,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "The Mysteries of the sea",
+        "dist": 2594,
+        "kind": "Œuvre / art",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Chioggia",
       "Venise",
@@ -433901,14 +434083,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/P%C3%A2tes_%C3%A0_la_carbonara"
       },
       {
-        "title": "raviole",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
-      },
-      {
         "title": "salade César",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caesar%20salad%20%282%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Salade_C%C3%A9sar"
+      },
+      {
+        "title": "raviole",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
       },
       {
         "title": "Merlot",
@@ -433916,14 +434098,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "Cannoli PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-      },
-      {
         "title": "tortellini",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+      },
+      {
+        "title": "Cannoli PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
         "title": "Pecorino",
@@ -433946,6 +434128,11 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      },
+      {
         "title": "tagliatelle",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
@@ -433961,19 +434148,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "Chianti DOCG",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
-      },
-      {
         "title": "sabayon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   }
