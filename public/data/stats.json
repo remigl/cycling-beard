@@ -1,13 +1,13 @@
 {
   "totalKm": 4343,
   "totalCountries": 7,
-  "totalDays": 63,
+  "totalDays": 64,
   "totalStages": 44,
   "totalElevation": 26110,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
   "currentLocation": "Chioggia",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-28",
+  "lastUpdate": "2026-07-29",
   "latestStageSlug": "2026-07-28-bondeno-chioggia"
 }
