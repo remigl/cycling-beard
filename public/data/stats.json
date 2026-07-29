@@ -1,13 +1,13 @@
 {
-  "totalKm": 4343,
+  "totalKm": 4400,
   "totalCountries": 7,
   "totalDays": 64,
-  "totalStages": 44,
-  "totalElevation": 26110,
+  "totalStages": 45,
+  "totalElevation": 26261,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
-  "currentLocation": "Chioggia",
+  "currentLocation": "Caorle",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-29",
-  "latestStageSlug": "2026-07-28-bondeno-chioggia"
+  "latestStageSlug": "2026-07-29-cavallino-treporti-caorle"
 }
