@@ -400358,7 +400358,113 @@
       "Peschiera del Garda",
       "Sirmione"
     ],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "spaghetti",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pasta%20%2823727887804%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Spaghetti"
+      },
+      {
+        "title": "lasagnes",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Meaty%20Lasagna%208of8%20%288736299782%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lasagnes"
+      },
+      {
+        "title": "mozzarella",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mozzarella%20di%20bufala3.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "pâtes à la carbonara",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Espaguetis%20carbonara.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/P%C3%A2tes_%C3%A0_la_carbonara"
+      },
+      {
+        "title": "raviole",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
+      },
+      {
+        "title": "salade César",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caesar%20salad%20%282%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_C%C3%A9sar"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Cannoli PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
+      },
+      {
+        "title": "tortellini",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "salade caprese",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caprese-1.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_caprese"
+      },
+      {
+        "title": "Savoiarde PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Melindros.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
+      },
+      {
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      },
+      {
+        "title": "osso buco",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+      },
+      {
+        "title": "Penne",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+      },
+      {
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      },
+      {
+        "title": "Chianti DOCG",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+      },
+      {
+        "title": "sabayon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      }
+    ]
   },
   {
     "slug": "2026-07-26-sirmione-mantoue",
