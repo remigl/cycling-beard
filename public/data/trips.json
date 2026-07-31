@@ -443963,7 +443963,113 @@
     "lodgingName": "Campeggio Isola del Paradiso, Località Isola Volpera, 34073 Grado GO, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Foto Isola del Sole",
+        "dist": 5143,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo della pesca e civiltà contadina",
+        "dist": 4903,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Munaro",
+        "dist": 4993,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Lapidario del Duomo di Sant'Eufemia",
+        "dist": 4998,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Casa della musica",
+        "dist": 5094,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Il Levriero",
+        "dist": 5127,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pinacoteca Civica",
+        "dist": 5160,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo della papera",
+        "dist": 10105,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Io sono Friuli Venezia Giulia",
+        "dist": 667,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "In ricordo ai Caduti nella guerra 1914-1918",
+        "dist": 1608,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "A tutti i Caduti",
+        "dist": 3602,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Antonio Smareglia",
+        "dist": 4663,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monumento ai caduti del mare",
+        "dist": 4782,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "In questa casa nacque Biagio Marin",
+        "dist": 4948,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Croce Patriarchina",
+        "dist": 4982,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Cervignano del Friuli / Çarvignan",
       "Caorle"
@@ -444015,24 +444121,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "Cannoli PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-      },
-      {
         "title": "tortellini",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+        "title": "Cannoli PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
         "title": "Pecorino",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
       },
       {
         "title": "salade caprese",
@@ -444045,11 +444151,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "osso buco",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-      },
-      {
         "title": "Fettuccine",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -444060,19 +444161,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
+        "title": "osso buco",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+      },
+      {
         "title": "Penne",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "Chianti DOCG",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
-      },
-      {
         "title": "sabayon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   }
