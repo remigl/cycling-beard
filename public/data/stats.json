@@ -1,13 +1,13 @@
 {
-  "totalKm": 4536,
-  "totalCountries": 7,
+  "totalKm": 4632,
+  "totalCountries": 8,
   "totalDays": 66,
-  "totalStages": 46,
-  "totalElevation": 26692,
-  "currentCountry": "Italie",
-  "currentCountryCode": "IT",
-  "currentLocation": "Grado / Gravo - Grao",
+  "totalStages": 47,
+  "totalElevation": 27257,
+  "currentCountry": "Slovénie",
+  "currentCountryCode": "SI",
+  "currentLocation": "Portorož / Portorose",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-31",
-  "latestStageSlug": "2026-07-30-caorle-grado-gravo-grao"
+  "latestStageSlug": "2026-07-31-grado-gravo-grao-portoroz-portorose"
 }
