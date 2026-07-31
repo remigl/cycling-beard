@@ -444208,8 +444208,8 @@
     "endCity": "Portorož / Portorose",
     "distanceKm": 96.2,
     "elevationGain": 565,
-    "coverImage": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/20260731_174224.webp",
-    "thumbnail": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_20260731_174224.webp",
+    "coverImage": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4515.webp",
+    "thumbnail": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4515.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -455373,14 +455373,9 @@
     "fullStory": [],
     "photos": [
       {
-        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/20260731_174224.webp",
-        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_20260731_174224.webp",
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4515.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4515.webp",
         "alt": "Cover"
-      },
-      {
-        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/20260731_174224.webp",
-        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_20260731_174224.webp",
-        "alt": "174224"
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4515.webp",
@@ -456262,8 +456257,118 @@
     "lodgingName": "Kamp Lucija, Seča 204, 6320 Portorož, Slovénie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Druga Rasporska Vrata",
+        "dist": 3586,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Marčana vrata",
+        "dist": 3624,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Prva Rasporska vrata",
+        "dist": 3716,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mediadom Priran",
+        "dist": 3808,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Osrednja vrata",
+        "dist": 3901,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Poljiska vrata",
+        "dist": 3902,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dolfinova Vrata",
+        "dist": 3936,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Miljska vrata",
+        "dist": 4177,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stari Mlin",
+        "dist": 10375,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vina Prelac",
+        "dist": 11125,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muzej solinarstva / Museo dei Salinai",
+        "dist": 2947,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muzej podvodnih dejavnostih",
+        "dist": 3630,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "MAONA",
+        "dist": 3694,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pomorski muzej Piran - Palača Gabrielli",
+        "dist": 3777,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
+      },
+      {
+        "title": "Čarobni svet školjk Piran",
+        "dist": 3801,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Trieste",
+      "Monfalcone",
+      "Koper / Capodistria"
+    ],
     "specialties": []
   }
 ]
