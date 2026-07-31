@@ -1,13 +1,13 @@
 {
   "totalKm": 4430,
   "totalCountries": 7,
-  "totalDays": 65,
+  "totalDays": 66,
   "totalStages": 45,
   "totalElevation": 26339,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
   "currentLocation": "Caorle",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-07-30",
+  "lastUpdate": "2026-07-31",
   "latestStageSlug": "2026-07-29-chioggia-caorle"
 }
