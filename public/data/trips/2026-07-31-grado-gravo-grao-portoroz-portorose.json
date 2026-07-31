@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Kamp+Lucija,+Se%C4%8Da+204,+6320+Portoro%C5%BE,+Slov%C3%A9nie/data=!4m2!3m1!1s0x477b64dae565b9f1:0xcea49ead386ecdc3!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODIyMTI1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzcsMTAwODIyNDk0QgJGUg%3D%3D&skid=c7bd8bf1-1e4e-4ccb-9f36-56f49878450e&g_st=ac",
+  "lodgingName": "Kamp Lucija, Seča 204, 6320 Portorož, Slovénie",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -11980,7 +11980,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Druga Rasporska Vrata",
+      "dist": 3586,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Marčana vrata",
+      "dist": 3624,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Prva Rasporska vrata",
+      "dist": 3716,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mediadom Priran",
+      "dist": 3808,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Osrednja vrata",
+      "dist": 3901,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Poljiska vrata",
+      "dist": 3902,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dolfinova Vrata",
+      "dist": 3936,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Miljska vrata",
+      "dist": 4177,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Stari Mlin",
+      "dist": 10375,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vina Prelac",
+      "dist": 11125,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Muzej solinarstva / Museo dei Salinai",
+      "dist": 2947,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Muzej podvodnih dejavnostih",
+      "dist": 3630,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "MAONA",
+      "dist": 3694,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Pomorski muzej Piran - Palača Gabrielli",
+      "dist": 3777,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
+    },
+    {
+      "title": "Čarobni svet školjk Piran",
+      "dist": 3801,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Trieste",
     "Monfalcone",
