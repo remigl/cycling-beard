@@ -434178,8 +434178,8 @@
     "endCity": "Grado / Gravo - Grao",
     "distanceKm": 105.8,
     "elevationGain": 353,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
+    "thumbnail": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4513.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -443435,7 +443435,23 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
+        "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4513.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
+        "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4513.webp",
+        "alt": "Img 4513"
+      },
+      {
+        "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4514.webp",
+        "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4514.webp",
+        "alt": "Img 4514"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -444192,8 +444208,8 @@
     "endCity": "Portorož / Portorose",
     "distanceKm": 96.2,
     "elevationGain": 565,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/20260731_174224.webp",
+    "thumbnail": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_20260731_174224.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -455355,7 +455371,98 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/20260731_174224.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_20260731_174224.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/20260731_174224.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_20260731_174224.webp",
+        "alt": "174224"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4515.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4515.webp",
+        "alt": "Img 4515"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4521.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4521.webp",
+        "alt": "Img 4521"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4537.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4537.webp",
+        "alt": "Img 4537"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4544.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4544.webp",
+        "alt": "Img 4544"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4547.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4547.webp",
+        "alt": "Img 4547"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4550.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4550.webp",
+        "alt": "Img 4550"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4554.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4554.webp",
+        "alt": "Img 4554"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4556.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4556.webp",
+        "alt": "Img 4556"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4558.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4558.webp",
+        "alt": "Img 4558"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4563.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4563.webp",
+        "alt": "Img 4563"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4572.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4572.webp",
+        "alt": "Img 4572"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4574.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4574.webp",
+        "alt": "Img 4574"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4581.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4581.webp",
+        "alt": "Img 4581"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4583.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4583.webp",
+        "alt": "Img 4583"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4586.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4586.webp",
+        "alt": "Img 4586"
+      },
+      {
+        "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4587.webp",
+        "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4587.webp",
+        "alt": "Img 4587"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -456155,118 +456262,8 @@
     "lodgingName": "Kamp Lucija, Seča 204, 6320 Portorož, Slovénie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Druga Rasporska Vrata",
-        "dist": 3586,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Marčana vrata",
-        "dist": 3624,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Prva Rasporska vrata",
-        "dist": 3716,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mediadom Priran",
-        "dist": 3808,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Osrednja vrata",
-        "dist": 3901,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Poljiska vrata",
-        "dist": 3902,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Dolfinova Vrata",
-        "dist": 3936,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Miljska vrata",
-        "dist": 4177,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Stari Mlin",
-        "dist": 10375,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Vina Prelac",
-        "dist": 11125,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Muzej solinarstva / Museo dei Salinai",
-        "dist": 2947,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Muzej podvodnih dejavnostih",
-        "dist": 3630,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "MAONA",
-        "dist": 3694,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pomorski muzej Piran - Palača Gabrielli",
-        "dist": 3777,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
-      },
-      {
-        "title": "Čarobni svet školjk Piran",
-        "dist": 3801,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      }
-    ],
-    "majorCities": [
-      "Trieste",
-      "Monfalcone",
-      "Koper / Capodistria"
-    ],
+    "pois": [],
+    "majorCities": [],
     "specialties": []
   }
 ]

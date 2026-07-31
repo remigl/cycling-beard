@@ -12,7 +12,7 @@
   "distanceKm": 105.8,
   "elevationGain": 353,
   "maxAltitude": 17,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,23 @@
   "lodgingName": "Campeggio Isola del Paradiso, Località Isola Volpera, 34073 Grado GO, Italie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
+      "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4513.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
+      "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4513.webp",
+      "alt": "Img 4513"
+    },
+    {
+      "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4514.webp",
+      "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4514.webp",
+      "alt": "Img 4514"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-07-30-caorle-grado-gravo-grao_1.gpx",
   "mapLat": 45.7211755,
