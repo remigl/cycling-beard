@@ -1,13 +1,13 @@
 {
-  "totalKm": 4430,
+  "totalKm": 4536,
   "totalCountries": 7,
   "totalDays": 66,
-  "totalStages": 45,
-  "totalElevation": 26339,
+  "totalStages": 46,
+  "totalElevation": 26692,
   "currentCountry": "Italie",
   "currentCountryCode": "IT",
-  "currentLocation": "Caorle",
+  "currentLocation": "Grado / Gravo - Grao",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-07-31",
-  "latestStageSlug": "2026-07-29-chioggia-caorle"
+  "latestStageSlug": "2026-07-30-caorle-grado-gravo-grao"
 }
