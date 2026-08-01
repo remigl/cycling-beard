@@ -1,13 +1,13 @@
 {
-  "totalKm": 4632,
-  "totalCountries": 8,
+  "totalKm": 4755,
+  "totalCountries": 9,
   "totalDays": 67,
-  "totalStages": 47,
-  "totalElevation": 27257,
-  "currentCountry": "Slovénie",
-  "currentCountryCode": "SI",
-  "currentLocation": "Portorož / Portorose",
+  "totalStages": 48,
+  "totalElevation": 28559,
+  "currentCountry": "Croatie",
+  "currentCountryCode": "HR",
+  "currentLocation": "Grad Rovinj",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-08-01",
-  "latestStageSlug": "2026-07-31-grado-gravo-grao-portoroz-portorose"
+  "latestStageSlug": "2026-08-01-portoroz-portorose-grad-rovinj"
 }
