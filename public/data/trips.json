@@ -466087,11 +466087,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Rovinj",
-      "Poreč",
-      "Umag"
-    ],
+    "majorCities": [],
     "specialties": []
   },
   {
@@ -474996,7 +474992,9 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Pula"
+    ],
     "specialties": []
   }
 ]
