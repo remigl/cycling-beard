@@ -1,13 +1,13 @@
 {
   "totalKm": 4755,
   "totalCountries": 9,
-  "totalDays": 67,
+  "totalDays": 68,
   "totalStages": 48,
   "totalElevation": 28559,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
   "currentLocation": "Grad Rovinj",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-08-01",
+  "lastUpdate": "2026-08-02",
   "latestStageSlug": "2026-08-01-portoroz-portorose-grad-rovinj"
 }
