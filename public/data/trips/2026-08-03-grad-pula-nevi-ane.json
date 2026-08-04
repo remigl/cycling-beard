@@ -12,7 +12,7 @@
   "distanceKm": 36.2,
   "elevationGain": 235,
   "maxAltitude": 47,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-08-03-grad-pula-nevi-ane/20260803_103316.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,53 @@
   "lodgingName": "Camping Nevia",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/20260803_103316.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_20260803_103316.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/20260803_103316.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_20260803_103316.webp",
+      "alt": "103316"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/20260803_192542.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_20260803_192542.webp",
+      "alt": "192542"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4599.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4599.webp",
+      "alt": "Img 4599"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4605.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4605.webp",
+      "alt": "Img 4605"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4608.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4608.webp",
+      "alt": "Img 4608"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4610.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4610.webp",
+      "alt": "Img 4610"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4613.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4613.webp",
+      "alt": "Img 4613"
+    },
+    {
+      "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4615.webp",
+      "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4615.webp",
+      "alt": "Img 4615"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-08-03-grad-pula-nevi-ane_1.gpx",
   "mapLat": 43.984009,
@@ -8926,114 +8972,11 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Gradina Tinj",
-      "dist": 12000,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Zavičajni muzej",
-      "dist": 9834,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dr. Franjo Tuđman",
-      "dist": 7486,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Mikas Vjeko",
-      "dist": 7535,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ljubo Stipišić",
-      "dist": 7558,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Samostan Sv. Ivana Evanđelista",
-      "dist": 9838,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Franjo Tuđman",
-      "dist": 10352,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Jakovljev vrh",
-      "dist": 11915,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Veliki Bokolj",
-      "dist": 2393,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Semića vrh",
-      "dist": 2957,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Oštro",
-      "dist": 3232,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Radina pećina",
-      "dist": 4135,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Mali Bokolj",
-      "dist": 4170,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kobiljak",
-      "dist": 4248,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "M. Moravinjak",
-      "dist": 4611,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    }
+  "pois": [],
+  "majorCities": [
+    "Zadar",
+    "Pula"
   ],
-  "majorCities": [],
   "specialties": [
     {
       "title": "licitar",
