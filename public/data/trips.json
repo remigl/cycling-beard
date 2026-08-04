@@ -465980,7 +465980,113 @@
     "lodgingName": "Val Vidal Camping, vestar 5 A, 52210, Rovinj, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Kažun - stone house",
+        "dist": 7310,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kažuni - 3 dry stone houses",
+        "dist": 11399,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Aquarium Ruđer Bošković",
+        "dist": 5758,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sv. Damjana u Paludu",
+        "dist": 2965,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Secret Beach",
+        "dist": 9399,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Valalta Belvedere",
+        "dist": 10246,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Paradiž",
+        "dist": 409,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burla",
+        "dist": 780,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muja",
+        "dist": 1181,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monbrodo",
+        "dist": 1678,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monkodonja",
+        "dist": 2356,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Velika Valtida",
+        "dist": 2602,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gustinja",
+        "dist": 2724,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mala Valtida",
+        "dist": 3340,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Maluža",
+        "dist": 3438,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Rovinj",
       "Poreč",
@@ -483841,8 +483947,8 @@
       ]
     ],
     "minAltitude": -4,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Camping+Nevia/data=!4m2!3m1!1s0x4761e12d9f98cc1d:0x3db211b67046c704!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODIyMTI1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzcsMTAwODIyNDk0QgJGUg%3D%3D&skid=3f99917a-a40d-494d-a5ec-770892eb426f&g_st=ac",
+    "lodgingName": "Camping Nevia",
     "thanks": "",
     "thanksTranslations": {},
     "pois": [
@@ -483952,10 +484058,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Zadar",
-      "Pula"
-    ],
+    "majorCities": [],
     "specialties": [
       {
         "title": "licitar",

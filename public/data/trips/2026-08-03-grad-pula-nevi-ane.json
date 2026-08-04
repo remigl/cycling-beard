@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Camping+Nevia/data=!4m2!3m1!1s0x4761e12d9f98cc1d:0x3db211b67046c704!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODIyMTI1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzcsMTAwODIyNDk0QgJGUg%3D%3D&skid=3f99917a-a40d-494d-a5ec-770892eb426f&g_st=ac",
+  "lodgingName": "Camping Nevia",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -9033,10 +9033,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Zadar",
-    "Pula"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "licitar",
