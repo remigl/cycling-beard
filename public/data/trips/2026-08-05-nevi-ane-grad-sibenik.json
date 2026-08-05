@@ -49,8 +49,8 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/43.637719,15.959667/data=!4m2!3m1!1s0x133523a3effd7325:0x77a190fc8388c7e0!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODIyMTI1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzcsMTAwODIyNDk0QgJGUg%3D%3D&skid=721dc4cf-6135-48da-aa1a-cba50746cd61&g_st=ac",
+  "lodgingName": "43.637719,15.959667",
   "thanks": "",
   "thanksTranslations": {},
   "photos": [],
@@ -6799,41 +6799,6 @@
       "wikiTitle": "Greben (bungtod sa Krowatiya, Šibensko-Kninska Županija)"
     }
   ],
-  "majorCities": [
-    "Šibenik",
-    "Vodice",
-    "Biograd na Moru"
-  ],
-  "specialties": [
-    {
-      "title": "licitar",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-    },
-    {
-      "title": "Kulen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-    },
-    {
-      "title": "Zagorski štrukli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-    },
-    {
-      "title": "Soparnik",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-    },
-    {
-      "title": "Basa",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-    },
-    {
-      "title": "Lumblija",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-    }
-  ]
+  "majorCities": [],
+  "specialties": []
 }
