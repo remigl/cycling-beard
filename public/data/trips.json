@@ -456377,7 +456377,7 @@
     "title": "Portoroz Portorose → Grad Rovinj",
     "country": "Croatie",
     "region": null,
-    "startCity": "Portorož / Portorose",
+    "startCity": null,
     "endCity": "Grad Rovinj",
     "distanceKm": 123.1,
     "elevationGain": 1302,
