@@ -7,7 +7,7 @@
   "country": "Croatie",
   "countryCode": "HR",
   "region": null,
-  "startCity": null,
+  "startCity": "Portorož / Portorose",
   "endCity": "Grad Rovinj",
   "distanceKm": 123.1,
   "elevationGain": 1302,
@@ -9616,7 +9616,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Kažun - stone house",
+      "dist": 7310,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kažuni - 3 dry stone houses",
+      "dist": 11399,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aquarium Ruđer Bošković",
+      "dist": 5758,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sv. Damjana u Paludu",
+      "dist": 2965,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Secret Beach",
+      "dist": 9399,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Valalta Belvedere",
+      "dist": 10246,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Paradiž",
+      "dist": 409,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Burla",
+      "dist": 780,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Muja",
+      "dist": 1181,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monbrodo",
+      "dist": 1678,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monkodonja",
+      "dist": 2356,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Velika Valtida",
+      "dist": 2602,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gustinja",
+      "dist": 2724,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mala Valtida",
+      "dist": 3340,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Maluža",
+      "dist": 3438,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Rovinj",
     "Poreč",
