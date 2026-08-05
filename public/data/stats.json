@@ -1,13 +1,13 @@
 {
   "totalKm": 4827,
   "totalCountries": 9,
-  "totalDays": 70,
+  "totalDays": 71,
   "totalStages": 50,
   "totalElevation": 29118,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
   "currentLocation": "Neviđane",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-08-04",
+  "lastUpdate": "2026-08-05",
   "latestStageSlug": "2026-08-03-grad-pula-nevi-ane"
 }
