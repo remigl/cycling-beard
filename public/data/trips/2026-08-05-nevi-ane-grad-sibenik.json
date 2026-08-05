@@ -12,7 +12,7 @@
   "distanceKm": 88.8,
   "elevationGain": 723,
   "maxAltitude": 55,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4619.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,73 @@
   "lodgingName": "43.637719,15.959667",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4619.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4619.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4619.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4619.webp",
+      "alt": "Img 4619"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4625.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4625.webp",
+      "alt": "Img 4625"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4632.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4632.webp",
+      "alt": "Img 4632"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4634.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4634.webp",
+      "alt": "Img 4634"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4637.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4637.webp",
+      "alt": "Img 4637"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4642.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4642.webp",
+      "alt": "Img 4642"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4645.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4645.webp",
+      "alt": "Img 4645"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4648.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4648.webp",
+      "alt": "Img 4648"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4649.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4649.webp",
+      "alt": "Img 4649"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4652.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4652.webp",
+      "alt": "Img 4652"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4654.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4654.webp",
+      "alt": "Img 4654"
+    },
+    {
+      "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4659.webp",
+      "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4659.webp",
+      "alt": "Img 4659"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-08-05-nevi-ane-grad-sibenik_1.gpx",
   "mapLat": 43.6367961,
@@ -6799,6 +6865,10 @@
       "wikiTitle": "Greben (bungtod sa Krowatiya, Šibensko-Kninska Županija)"
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Šibenik",
+    "Vodice",
+    "Biograd na Moru"
+  ],
   "specialties": []
 }
