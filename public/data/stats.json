@@ -1,13 +1,13 @@
 {
   "totalKm": 4916,
   "totalCountries": 9,
-  "totalDays": 71,
+  "totalDays": 72,
   "totalStages": 51,
   "totalElevation": 29841,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
   "currentLocation": "Grad Šibenik",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-08-05",
+  "lastUpdate": "2026-08-06",
   "latestStageSlug": "2026-08-05-nevi-ane-grad-sibenik"
 }
