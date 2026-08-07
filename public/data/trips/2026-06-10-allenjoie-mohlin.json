@@ -15890,7 +15890,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Bâle",
+    "Mulhouse",
+    "Rheinfelden (Baden)"
+  ],
   "specialties": [
     {
       "title": "muesli",

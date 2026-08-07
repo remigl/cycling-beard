@@ -9483,7 +9483,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Ulm",
+    "Nouvelle-Ulm",
+    "Guntzbourg"
+  ],
   "specialties": [
     {
       "title": "hamburger",

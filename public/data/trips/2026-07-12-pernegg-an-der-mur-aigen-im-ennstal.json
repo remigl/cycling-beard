@@ -9941,8 +9941,118 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
+  "pois": [
+    {
+      "title": "Burgruine Wolkenstein",
+      "dist": 4092,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Burg Wolkenstein (Steiermark)"
+    },
+    {
+      "title": "Mühle",
+      "dist": 9480,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tauplitzer Wasserfall",
+      "dist": 9866,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Tauplitzer Wasserfall"
+    },
+    {
+      "title": "Mariensäule",
+      "dist": 2363,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Lichtkogel",
+      "dist": 2956,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "ehemaliges Zwangsarbeiterlager / Mauer",
+      "dist": 4345,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "ehemaliges Zwangsarbeiterlager",
+      "dist": 4742,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Blick auf Pürgg",
+      "dist": 5226,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jungfrausturz",
+      "dist": 5905,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aussichtswarte Oberkogler",
+      "dist": 6214,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Hermann von Wissmann",
+      "dist": 7208,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gedenkstätte Grubenunglück 1998",
+      "dist": 8637,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dachsteinblick",
+      "dist": 10544,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aussichtsplattform",
+      "dist": 11727,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aicherlstein",
+      "dist": 3940,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
+  "majorCities": [
+    "Leoben",
+    "Kapfenberg",
+    "Bruck an der Mur"
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -9975,14 +10085,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "Eiernockerl",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-    },
-    {
       "title": "maluns",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
     },
     {
       "title": "serviettenknödel",
