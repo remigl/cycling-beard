@@ -12,7 +12,7 @@
   "distanceKm": 76.9,
   "elevationGain": 898,
   "maxAltitude": 325,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4663.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -49,11 +49,72 @@
       "fullStory": []
     }
   },
-  "lodgingUrl": "",
-  "lodgingName": "",
+  "lodgingUrl": "https://www.google.com/maps/place/Boutique+Camping+Bunja,+Babin+Laz,+21400,+Supetar,+Croatie/data=!4m2!3m1!1s0x134a9d630e707e57:0x8b2682d091a22f4!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODIyMTI1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzcsMTAwODIyNDk0QgJGUg%3D%3D&skid=a4cdcd3c-d075-4626-8712-588bff51e576",
+  "lodgingName": "Boutique Camping Bunja, Babin Laz, 21400, Supetar, Croatie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4663.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4663.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4663.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4663.webp",
+      "alt": "Img 4663"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4664.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4664.webp",
+      "alt": "Img 4664"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4667.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4667.webp",
+      "alt": "Img 4667"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4671.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4671.webp",
+      "alt": "Img 4671"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4673.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4673.webp",
+      "alt": "Img 4673"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4675.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4675.webp",
+      "alt": "Img 4675"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4677.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4677.webp",
+      "alt": "Img 4677"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4684.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4684.webp",
+      "alt": "Img 4684"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4687.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4687.webp",
+      "alt": "Img 4687"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4713.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4713.webp",
+      "alt": "Img 4713"
+    },
+    {
+      "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4715.webp",
+      "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4715.webp",
+      "alt": "Img 4715"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-08-06-grad-sibenik-grad-supetar_1.gpx",
   "mapLat": 43.38156,
@@ -11260,38 +11321,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
-  "specialties": [
+  "pois": [
     {
-      "title": "licitar",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      "title": "Koloč",
+      "dist": 6528,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
     },
     {
-      "title": "Kulen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      "title": "Most Franje Josipa",
+      "dist": 7546,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
     },
     {
-      "title": "Zagorski štrukli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      "title": "Korita",
+      "dist": 10216,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
     },
     {
-      "title": "Soparnik",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      "title": "Istočna gradska vrata",
+      "dist": 11637,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
     },
     {
-      "title": "Basa",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      "title": "Gradski muzej Omiš",
+      "dist": 11627,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
     },
     {
-      "title": "Lumblija",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      "title": "Sveti Tudor",
+      "dist": 7212,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Crkva sv. Tudora kod Nerežišća"
+    },
+    {
+      "title": "Klif",
+      "dist": 9009,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Memorial park",
+      "dist": 10143,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Spomenik poginulima u Domovinskom ratu",
+      "dist": 11507,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mirabella fort",
+      "dist": 11689,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Osmatračnica",
+      "dist": 11820,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gnjilac",
+      "dist": 3716,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kopačina",
+      "dist": 3789,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jurjevo brdo",
+      "dist": 4501,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Velebit",
+      "dist": 4869,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
     }
-  ]
+  ],
+  "majorCities": [],
+  "specialties": []
 }

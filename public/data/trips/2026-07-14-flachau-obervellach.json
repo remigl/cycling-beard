@@ -11381,7 +11381,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Polinikfall",
+      "dist": 1462,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gussenbauer Denkmal",
+      "dist": 324,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mölltal Blick",
+      "dist": 1070,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Den Gefallenen der Weltkriege 1914-1918",
+      "dist": 6536,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kriegerdenkmal",
+      "dist": 6984,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Danielsberg",
+      "dist": 8212,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Filialkirche St. Georg am Danielsberg"
+    },
+    {
+      "title": "Alois Pucher",
+      "dist": 8702,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ebeneck",
+      "dist": 3243,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Unterer Sickerkopf",
+      "dist": 4374,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Böse Nase",
+      "dist": 4489,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Oberer Sickerkopf",
+      "dist": 4933,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Gamskarspitz",
+      "dist": 5015,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Lawogge",
+      "dist": 5419,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zagutnigspitz",
+      "dist": 5516,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Groneck",
+      "dist": 5872,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Sankt Johann im Pongau",
     "Bischofshofen",

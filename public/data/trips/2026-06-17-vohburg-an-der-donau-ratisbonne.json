@@ -6549,7 +6549,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Porta praetoria",
+      "dist": 485,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Porta praetoria (Regensburg)"
+    },
+    {
+      "title": "Historischer Hafenkran",
+      "dist": 1411,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "1. Cowboyclub Regensburg",
+      "dist": 2817,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Waldlabyrinth",
+      "dist": 5290,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Historischer Grenzstein",
+      "dist": 6364,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Möseleiche",
+      "dist": 7217,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "document Schnupftabakfabrik",
+      "dist": 89,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Reichstagsmuseum",
+      "dist": 231,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Besucherzentrum Welterbe",
+      "dist": 458,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Heimat und Bauernmuseum",
+      "dist": 7728,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Don Juan D'Austria",
+      "dist": 305,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Eustach-Graf-von-Schlitz-Goertz-Denkmal",
+      "dist": 351,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Römermauer (Castra Regina)",
+      "dist": 499,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kriegerdenkmal",
+      "dist": 661,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Österreicherdenkmal",
+      "dist": 1358,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Ratisbonne",
     "Kelheim",
@@ -6627,11 +6733,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Pfälzer Saumagen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
-    },
-    {
       "title": "Leberknödel",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
@@ -6640,6 +6741,11 @@
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Pfälzer Saumagen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
     }
   ]
 }

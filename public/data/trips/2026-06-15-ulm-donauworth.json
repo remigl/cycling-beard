@@ -9377,11 +9377,7 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [
-    "Ulm",
-    "Nouvelle-Ulm",
-    "Guntzbourg"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "hamburger",

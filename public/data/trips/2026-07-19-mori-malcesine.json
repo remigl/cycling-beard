@@ -6334,7 +6334,11 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [],
+  "majorCities": [
+    "Arco",
+    "Riva del Garda",
+    "Mori"
+  ],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6352,14 +6356,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "Parmigiano Reggiano",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-    },
-    {
       "title": "macaroni",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+    },
+    {
+      "title": "Parmigiano Reggiano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6392,14 +6396,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-    },
-    {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -6410,11 +6414,6 @@
       "title": "Savoiarde PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Melindros.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "tagliatelle",
@@ -6432,14 +6431,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

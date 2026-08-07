@@ -8973,7 +8973,10 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [],
+  "majorCities": [
+    "Zadar",
+    "Pula"
+  ],
   "specialties": [
     {
       "title": "licitar",

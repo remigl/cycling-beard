@@ -6569,117 +6569,58 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
+  "pois": [],
+  "majorCities": [],
+  "specialties": [
     {
-      "title": "Pestsäule Auerspergplatz",
-      "dist": 2544,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "escalope à la viennoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2022-12-29%20Wiener%20Schnitzel%20im%20Hotel%20Kaiserin%20Elisabeth.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Escalope_%C3%A0_la_viennoise"
     },
     {
-      "title": "Linzer Grottenbahn",
-      "dist": 2889,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Linzer Grottenbahn"
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
-      "title": "Teufelsbrunnen",
-      "dist": 10456,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "gaufrette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Neapolitaner%20Waffel.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Neapolitan_wafer"
     },
     {
-      "title": "Drei Bezirke Stein",
-      "dist": 11601,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
+      "title": "Apfelküchle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apfelkuechle-on-plate.png",
+      "wikipedia": "https://en.wikipedia.org/wiki/Apfelk%C3%BCchle"
     },
     {
-      "title": "Zahnheilkundemuseum",
-      "dist": 1669,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
+      "title": "Christmas carp",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A1noce%2C%20sma%C5%BEen%C3%BD%20kapr.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Christmas_carp"
     },
     {
-      "title": "Atelier Galerie Moran",
-      "dist": 2117,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
+      "title": "ischler",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "Ars Electronica Futurelab / Roof",
-      "dist": 1307,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
     },
     {
-      "title": "Donaublick",
-      "dist": 5353,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
+      "title": "maluns",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
     },
     {
-      "title": "Römerturm",
-      "dist": 5393,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
+      "title": "serviettenknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Serviettenkloss.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Serviettenkn%C3%B6del"
     },
     {
-      "title": "Kriegerdenkmal Leonding 1. Weltkrieg",
-      "dist": 5628,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Rosenfeldweg",
-      "dist": 8427,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Amonwarte",
-      "dist": 10691,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tisch der Austreibung",
-      "dist": 640,
-      "kind": "Œuvre / art",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Hommage à Anton Bruckner",
-      "dist": 706,
-      "kind": "Œuvre / art",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Die Schlange",
-      "dist": 784,
-      "kind": "Œuvre / art",
-      "rank": 6,
-      "wikiTitle": null
+      "title": "Waldviertler",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
     }
-  ],
-  "majorCities": [
-    "Linz",
-    "Passau",
-    "Leonding"
-  ],
-  "specialties": []
+  ]
 }

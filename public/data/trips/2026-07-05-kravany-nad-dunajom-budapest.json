@@ -11687,12 +11687,114 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [
-    "Dunakeszi",
-    "Vác",
-    "Esztergom"
+  "pois": [
+    {
+      "title": "Asian Culture Wall",
+      "dist": 5512,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Vajdahunyad",
+      "dist": 6079,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Vajdahunyad vára"
+    },
+    {
+      "title": "Pál-völgyi-barlang",
+      "dist": 6349,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Pál-völgyi-barlangrendszer"
+    },
+    {
+      "title": "Retro Bistro",
+      "dist": 8109,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Szimpla Kert",
+      "dist": 8228,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Szimpla romkocsma"
+    },
+    {
+      "title": "Máriaremetei Szentkút",
+      "dist": 10471,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kodály Zoltán Emlékmúzeum és Archívum",
+      "dist": 6728,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Kodály Zoltán Emlékmúzeum és Archívum"
+    },
+    {
+      "title": "Kresz Géza Mentőmúzeum",
+      "dist": 7066,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Liszt Ferenc Emlékmúzeum és Kutatóközpont",
+      "dist": 7088,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museo Franz Liszt"
+    },
+    {
+      "title": "Állatorvos-történeti Gyűjtemény",
+      "dist": 7439,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Bélyegmúzeum",
+      "dist": 7581,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Bélyegmúzeum"
+    },
+    {
+      "title": "OTP Bank Pénzügytörténeti Gyűjtemény",
+      "dist": 8024,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Földalatti Vasúti Múzeum",
+      "dist": 8268,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Földalatti Vasúti Múzeum"
+    },
+    {
+      "title": "Arany Sas Patikamúzeum",
+      "dist": 8465,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Arany Sas Patikamúzeum"
+    },
+    {
+      "title": "Sziklakórház Atombunker Múzeum",
+      "dist": 8531,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Sziklakórház Atombunker Múzeum"
+    }
   ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "frybread",

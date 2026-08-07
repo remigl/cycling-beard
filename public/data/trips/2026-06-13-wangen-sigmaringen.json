@@ -6655,7 +6655,11 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [],
+  "majorCities": [
+    "Tuttlingen",
+    "Radolfzell am Bodensee",
+    "Sigmaringen"
+  ],
   "specialties": [
     {
       "title": "hamburger",

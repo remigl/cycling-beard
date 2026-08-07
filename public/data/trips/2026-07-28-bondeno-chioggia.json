@@ -6720,114 +6720,12 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Campanile di Sant'Andrea",
-      "dist": 2394,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Orologio della Torre di Sant'Andrea"
-    },
-    {
-      "title": "Diga Sottomarina",
-      "dist": 2878,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ottagono Ca' Roman",
-      "dist": 4458,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Ottagono Ca' Roman"
-    },
-    {
-      "title": "Torre Panoramica Foce dell'Adige",
-      "dist": 6174,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Forte Santo Stefano",
-      "dist": 11589,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo Civico della Laguna Sud",
-      "dist": 2030,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museo civico della Laguna Sud"
-    },
-    {
-      "title": "Museo del Calcio",
-      "dist": 2076,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo Diocesano",
-      "dist": 2221,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pinacoteca",
-      "dist": 2245,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo Torre dell'Orologio",
-      "dist": 2394,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo di zoologia marina \"Giuseppe Olivi\"",
-      "dist": 2414,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "AVIS",
-      "dist": 2108,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Carlo Goldoni",
-      "dist": 2183,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Padre Antonio Carisi",
-      "dist": 2223,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Antonio Rosmini",
-      "dist": 2249,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    }
+  "pois": [],
+  "majorCities": [
+    "Ferrare",
+    "Chioggia",
+    "Adria"
   ],
-  "majorCities": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6845,14 +6743,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "Parmigiano Reggiano",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-    },
-    {
       "title": "macaroni",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+    },
+    {
+      "title": "Parmigiano Reggiano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6885,14 +6783,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-    },
-    {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -6903,11 +6801,6 @@
       "title": "Savoiarde PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Melindros.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "tagliatelle",
@@ -6925,14 +6818,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }
