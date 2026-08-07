@@ -6602,113 +6602,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Cascata - Wasserfall",
-      "dist": 7513,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kalkbrennofen - Calcara",
-      "dist": 9170,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Sega Veneziana",
-      "dist": 9810,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Naturparkhaus Trudner Horn - Centro visite Parco Naturale Monte Corno",
-      "dist": 9892,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Hochseilgarten Kaltern - Parco Avventura Caldaro",
-      "dist": 10342,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Zeitreise Mensch - Museo Uomo nel Tempo",
-      "dist": 1031,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Calcara",
-      "dist": 3873,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Schwarzer Kopf - Testa Nera",
-      "dist": 5328,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pulpito - Kanzel",
-      "dist": 5475,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "redwood",
-      "dist": 6003,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "holly",
-      "dist": 6523,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "linden",
-      "dist": 6578,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Roen",
-      "dist": 6643,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": "Roen"
-    },
-    {
-      "title": "Monumento ai caduti - Kriegerdenkmal",
-      "dist": 7306,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Aussichtspunkt Altenburg - Belvedere di Castelvecchio",
-      "dist": 8263,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [],
   "specialties": [
     {
@@ -6727,14 +6621,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6767,14 +6661,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "sauce tomate",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-    },
-    {
       "title": "Pecorino",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+    },
+    {
+      "title": "sauce tomate",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
     },
     {
       "title": "salade caprese",
@@ -6787,9 +6681,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "osso buco",
@@ -6802,19 +6696,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
-      "title": "pizza Margherita",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
     }
   ]
 }

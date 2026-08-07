@@ -9942,11 +9942,7 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [
-    "Leoben",
-    "Kapfenberg",
-    "Bruck an der Mur"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",

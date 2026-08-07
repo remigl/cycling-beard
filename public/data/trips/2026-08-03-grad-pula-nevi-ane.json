@@ -8973,10 +8973,7 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [
-    "Zadar",
-    "Pula"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "licitar",
@@ -8999,14 +8996,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
     },
     {
-      "title": "Basa",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-    },
-    {
       "title": "Lumblija",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+    },
+    {
+      "title": "Basa",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
     }
   ]
 }

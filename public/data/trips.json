@@ -21095,7 +21095,113 @@
       "nl": "Jeff et son chat Bada",
       "fr": "Jeff et son chat Bada"
     },
-    "pois": [],
+    "pois": [
+      {
+        "title": "Château de la Vrillière",
+        "dist": 3077,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Vrillière"
+      },
+      {
+        "title": "Croix des Renards",
+        "dist": 3570,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Berrière",
+        "dist": 5513,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Berrière"
+      },
+      {
+        "title": "Ruines",
+        "dist": 5804,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Manoir de la Dixmerie",
+        "dist": 5923,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Manoir de la Dixmerie"
+      },
+      {
+        "title": "Beau Soleil",
+        "dist": 5938,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Monderie",
+        "dist": 6256,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Folies Siffait",
+        "dist": 7291,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Folies Siffait"
+      },
+      {
+        "title": "Château du Chassay",
+        "dist": 8874,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Chassay"
+      },
+      {
+        "title": "Ruines de l'ancienne citadelle de Châteauceaux",
+        "dist": 9707,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Embarcadère de la Luce",
+        "dist": 9858,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Colinière",
+        "dist": 10080,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Four à pain",
+        "dist": 10767,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de La Poterie",
+        "dist": 10804,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de la Poterie"
+      },
+      {
+        "title": "La Guilletière",
+        "dist": 10926,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Nantes",
       "Saint-Nazaire",
@@ -21108,14 +21214,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -21148,14 +21254,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -21163,14 +21269,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+      },
+      {
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -71653,14 +71759,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -71693,14 +71799,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -71708,14 +71814,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+      },
+      {
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -91452,7 +91558,113 @@
     "lodgingName": "Camping des Halles - Onlycamp, All. Marcel Merle, 58300 Decize",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Échauguette",
+        "dist": 666,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Porte du Marquis d'Ancre",
+        "dist": 894,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château des comtes de Nevers",
+        "dist": 991,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Germancy",
+        "dist": 2168,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Rosières",
+        "dist": 3189,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Champrobert",
+        "dist": 5055,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Devay",
+        "dist": 5414,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Bateau",
+        "dist": 5879,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Saint-Loup",
+        "dist": 6509,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château",
+        "dist": 7939,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Vierge dans l'Arbre",
+        "dist": 8417,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Verneuil",
+        "dist": 8447,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Verneuil (Nièvre)"
+      },
+      {
+        "title": "Château de la Motte-Farchat",
+        "dist": 10497,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Toury",
+        "dist": 11043,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Goujon",
+        "dist": 11288,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Goujon"
+      }
+    ],
     "majorCities": [],
     "specialties": [
       {
@@ -91461,14 +91673,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -91501,14 +91713,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -91516,14 +91728,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+      },
+      {
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -101304,14 +101516,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -101344,14 +101556,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -101359,14 +101571,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "mille-feuille",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-      },
-      {
         "title": "Roux",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+      },
+      {
+        "title": "mille-feuille",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
       },
       {
         "title": "bœuf bourguignon",
@@ -132391,9 +132603,7 @@
     "thanks": "",
     "thanksTranslations": {},
     "pois": [],
-    "majorCities": [
-      "Besançon"
-    ],
+    "majorCities": [],
     "specialties": [
       {
         "title": "mayonnaise",
@@ -193851,7 +194061,113 @@
     "lodgingName": "Kanu-Club Zeltplatz, 86602, An der Westspange, 86609 Donauwörth, Allemagne",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Karstbrunnen Brünsee",
+        "dist": 7733,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Schloss Tapfheim",
+        "dist": 8289,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Schloss Tapfheim"
+      },
+      {
+        "title": "Besichtigungstraktor",
+        "dist": 8790,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burgruine Graisbach",
+        "dist": 9525,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Blumenuhr",
+        "dist": 10098,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burgstall Thurneck",
+        "dist": 11201,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Burg Thurneck"
+      },
+      {
+        "title": "Haus der Stadtgeschichte",
+        "dist": 403,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Haus der Stadtgeschichte (Donauwörth)"
+      },
+      {
+        "title": "Käthe-Kruse-Puppen-Museum",
+        "dist": 781,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Hinter Gittern",
+        "dist": 6126,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Heimatmuseum",
+        "dist": 10484,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gebrüder-Lachner-Museum",
+        "dist": 10598,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sebastian Franck",
+        "dist": 195,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gefallenendenkmal",
+        "dist": 466,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "ehem. Hotel Krebs",
+        "dist": 601,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ehemaliger Bahnhof Donauwörth/Progymnasium",
+        "dist": 621,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [],
     "specialties": [
       {
@@ -227130,7 +227446,11 @@
     "thanks": "",
     "thanksTranslations": {},
     "pois": [],
-    "majorCities": [],
+    "majorCities": [
+      "Linz",
+      "Passau",
+      "Leonding"
+    ],
     "specialties": [
       {
         "title": "escalope à la viennoise",
@@ -233796,114 +234116,12 @@
     "lodgingName": "Naturfreunde Pöchlarn, Schiffhausweg 4, 3380 Am Rechen, Autriche",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Rogelstein",
-        "dist": 7089,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ereignisdenkmal 100. Jahrestag der Völkerschlacht bei Leipzig",
-        "dist": 9289,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Wachaulabor",
-        "dist": 10531,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Museum für Rechtsgeschichte",
-        "dist": 11634,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Folterkammer",
-        "dist": 11713,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Nibelungendenkmal",
-        "dist": 1101,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kriegerdenkmal",
-        "dist": 1505,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Lourdesgrotte",
-        "dist": 3383,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Briafatonz",
-        "dist": 4610,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Hirschensprung",
-        "dist": 6299,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Naturfreundestein",
-        "dist": 6880,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Russenkreuz",
-        "dist": 8656,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": "Brand im Stift Melk 1805"
-      },
-      {
-        "title": "Friedenkreuz",
-        "dist": 9288,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Dachberg-Warte",
-        "dist": 9347,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": "Dachberg-Warte"
-      },
-      {
-        "title": "Familiensäule",
-        "dist": 10346,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      }
+    "pois": [],
+    "majorCities": [
+      "Linz",
+      "Enns",
+      "Ybbs an der Donau"
     ],
-    "majorCities": [],
     "specialties": [
       {
         "title": "escalope à la viennoise",
@@ -268612,7 +268830,11 @@
         "wikiTitle": "Sziklakórház Atombunker Múzeum"
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Dunakeszi",
+      "Vác",
+      "Esztergom"
+    ],
     "specialties": [
       {
         "title": "frybread",
@@ -320536,113 +320758,7 @@
       "nl": "Simon",
       "fr": "Simon"
     },
-    "pois": [
-      {
-        "title": "Mariensäule",
-        "dist": 7956,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Antauerhaus",
-        "dist": 7971,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Eiserner Brunnen",
-        "dist": 8061,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Flößmeisterhaus",
-        "dist": 8079,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Besucherraum E-Werk Murinsel",
-        "dist": 8884,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Römerbrücke",
-        "dist": 10628,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Römerbrücke (Oberdorf)"
-      },
-      {
-        "title": "Insektenhotel",
-        "dist": 11469,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Rennfeld",
-        "dist": 5090,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": "Rennfeld"
-      },
-      {
-        "title": "historischer Meilenstein",
-        "dist": 5648,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Karl Morre",
-        "dist": 7826,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ludwig Anzengruber",
-        "dist": 8128,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Den toten Kameraden 1914-1918",
-        "dist": 8162,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Schiller-Linde",
-        "dist": 8280,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Sudentendeutsche Landmannschaft",
-        "dist": 8282,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Urlmarterl",
-        "dist": 9083,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [],
     "specialties": [
       {
@@ -330632,11 +330748,7 @@
     "thanks": "",
     "thanksTranslations": {},
     "pois": [],
-    "majorCities": [
-      "Leoben",
-      "Kapfenberg",
-      "Bruck an der Mur"
-    ],
+    "majorCities": [],
     "specialties": [
       {
         "title": "escalope à la viennoise",
@@ -339913,113 +340025,7 @@
       "nl": "Jeffrey",
       "fr": "Jeffrey"
     },
-    "pois": [
-      {
-        "title": "Hermann Maier Fanshop/Museum",
-        "dist": 355,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Schloß Lerchen",
-        "dist": 6961,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Schloss Lerchen"
-      },
-      {
-        "title": "Kapuzinerturm",
-        "dist": 7225,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Erze, Gold & Mineralien",
-        "dist": 10414,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Stefan Ernst",
-        "dist": 2995,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Saukarfunktel",
-        "dist": 5048,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kraftplatz Lisie S.",
-        "dist": 7194,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gamskogel",
-        "dist": 8667,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Neudegg Annas Heumad Platzl",
-        "dist": 10381,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Goliathschaukel",
-        "dist": 10577,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Wildpark Untertauern",
-        "dist": 9626,
-        "kind": "Parc à thème / zoo",
-        "rank": 7,
-        "wikiTitle": null
-      },
-      {
-        "title": "Lackenkogel",
-        "dist": 2854,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Grießenkareck",
-        "dist": 4209,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Brandkopf",
-        "dist": 5255,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Saukarkopf",
-        "dist": 5363,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [],
     "specialties": [
       {
@@ -358478,7 +358484,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Lienz",
+      "Sillian",
+      "Greifenburg"
+    ],
     "specialties": [
       {
         "title": "escalope à la viennoise",
@@ -378675,113 +378685,7 @@
     "lodgingName": "Camping Obstgarten, Via Rio Largo, 9, 39040 Cortaccia sulla Strada del Vino BZ, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Cascata - Wasserfall",
-        "dist": 7513,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kalkbrennofen - Calcara",
-        "dist": 9170,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Sega Veneziana",
-        "dist": 9810,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Naturparkhaus Trudner Horn - Centro visite Parco Naturale Monte Corno",
-        "dist": 9892,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Hochseilgarten Kaltern - Parco Avventura Caldaro",
-        "dist": 10342,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Zeitreise Mensch - Museo Uomo nel Tempo",
-        "dist": 1031,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Calcara",
-        "dist": 3873,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Schwarzer Kopf - Testa Nera",
-        "dist": 5328,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pulpito - Kanzel",
-        "dist": 5475,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "redwood",
-        "dist": 6003,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "holly",
-        "dist": 6523,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "linden",
-        "dist": 6578,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Roen",
-        "dist": 6643,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": "Roen"
-      },
-      {
-        "title": "Monumento ai caduti - Kriegerdenkmal",
-        "dist": 7306,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Aussichtspunkt Altenburg - Belvedere di Castelvecchio",
-        "dist": 8263,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [],
     "specialties": [
       {
@@ -378800,14 +378704,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
         "title": "Parmigiano Reggiano",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
       },
       {
         "title": "pâtes à la carbonara",
@@ -378840,14 +378744,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-      },
-      {
         "title": "Pecorino",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
       },
       {
         "title": "salade caprese",
@@ -378860,9 +378764,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
         "title": "osso buco",
@@ -378875,19 +378779,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "pizza Margherita",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
         "title": "sabayon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -392180,14 +392084,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
         "title": "Parmigiano Reggiano",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
       },
       {
         "title": "pâtes à la carbonara",
@@ -392220,14 +392124,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-      },
-      {
         "title": "Pecorino",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
       },
       {
         "title": "salade caprese",
@@ -392240,9 +392144,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
         "title": "osso buco",
@@ -392255,19 +392159,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "pizza Margherita",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
         "title": "sabayon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -398725,7 +398629,10 @@
     "thanks": "",
     "thanksTranslations": {},
     "pois": [],
-    "majorCities": [],
+    "majorCities": [
+      "Peschiera del Garda",
+      "Sirmione"
+    ],
     "specialties": [
       {
         "title": "spaghetti",
@@ -398743,14 +398650,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
         "title": "Parmigiano Reggiano",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
       },
       {
         "title": "pâtes à la carbonara",
@@ -398783,14 +398690,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-      },
-      {
         "title": "Pecorino",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
       },
       {
         "title": "salade caprese",
@@ -398803,9 +398710,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
         "title": "osso buco",
@@ -398818,19 +398725,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "pizza Margherita",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
         "title": "sabayon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -422291,7 +422198,113 @@
     "lodgingName": "Camping Village Adriatico, Lungomare Adriatico, 82, 30015 Chioggia VE, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Campanile di Sant'Andrea",
+        "dist": 2394,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Orologio della Torre di Sant'Andrea"
+      },
+      {
+        "title": "Diga Sottomarina",
+        "dist": 2878,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ottagono Ca' Roman",
+        "dist": 4458,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Ottagono Ca' Roman"
+      },
+      {
+        "title": "Torre Panoramica Foce dell'Adige",
+        "dist": 6174,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Forte Santo Stefano",
+        "dist": 11589,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo Civico della Laguna Sud",
+        "dist": 2030,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museo civico della Laguna Sud"
+      },
+      {
+        "title": "Museo del Calcio",
+        "dist": 2076,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo Diocesano",
+        "dist": 2221,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pinacoteca",
+        "dist": 2245,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo Torre dell'Orologio",
+        "dist": 2394,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo di zoologia marina \"Giuseppe Olivi\"",
+        "dist": 2414,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "AVIS",
+        "dist": 2108,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Carlo Goldoni",
+        "dist": 2183,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Padre Antonio Carisi",
+        "dist": 2223,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Antonio Rosmini",
+        "dist": 2249,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Ferrare",
       "Chioggia",
@@ -422314,14 +422327,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
         "title": "Parmigiano Reggiano",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
       },
       {
         "title": "pâtes à la carbonara",
@@ -422354,14 +422367,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-      },
-      {
         "title": "Pecorino",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
       },
       {
         "title": "salade caprese",
@@ -422374,9 +422387,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
         "title": "osso buco",
@@ -422389,19 +422402,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "pizza Margherita",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
         "title": "sabayon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -432200,114 +432213,12 @@
     "lodgingName": "Camping Laguna Village Spa, Viale dei Cacciatori, 28, 30021 Caorle VE, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Monumento agli Artiglieri",
-        "dist": 2125,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ai caduti del mare",
-        "dist": 2136,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monumento ai caduti",
-        "dist": 2624,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mons. Don Fausto Moschetta",
-        "dist": 2956,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ai Lagunari",
-        "dist": 3125,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Erich Fuchs",
-        "dist": 3584,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Don Marco Bottosso",
-        "dist": 9233,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monumento Ai caduti di tutte le guerre e della lotta di liberazione",
-        "dist": 9347,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ai caduti di tutte le guerre",
-        "dist": 9471,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Serci Isiglo",
-        "dist": 9893,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Villa Romana Motteron dei Frati",
-        "dist": 10877,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monumento agli Artiglieri caduti e dispersi in guerra",
-        "dist": 11919,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monumento dei Martiri delle Foibe",
-        "dist": 11948,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monumento Al Donatore di Sangue",
-        "dist": 12004,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Brucomela",
-        "dist": 8751,
-        "kind": "Parc à thème / zoo",
-        "rank": 7,
-        "wikiTitle": null
-      }
+    "pois": [],
+    "majorCities": [
+      "Chioggia",
+      "Venise",
+      "Lido"
     ],
-    "majorCities": [],
     "specialties": [
       {
         "title": "spaghetti",
@@ -432365,14 +432276,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-      },
-      {
         "title": "Pecorino",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
       },
       {
         "title": "salade caprese",
@@ -432385,16 +432296,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "osso buco",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-      },
-      {
-        "title": "Penne",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-      },
-      {
         "title": "Fettuccine",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -432405,19 +432306,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+        "title": "osso buco",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
       },
       {
-        "title": "fusilli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+        "title": "Penne",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
         "title": "Chianti DOCG",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -464127,7 +464033,113 @@
     "lodgingName": "Val Vidal Camping, vestar 5 A, 52210, Rovinj, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Kažun - stone house",
+        "dist": 7310,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kažuni - 3 dry stone houses",
+        "dist": 11399,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Aquarium Ruđer Bošković",
+        "dist": 5758,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sv. Damjana u Paludu",
+        "dist": 2965,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Secret Beach",
+        "dist": 9399,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Valalta Belvedere",
+        "dist": 10246,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Paradiž",
+        "dist": 409,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burla",
+        "dist": 780,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muja",
+        "dist": 1181,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monbrodo",
+        "dist": 1678,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monkodonja",
+        "dist": 2356,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Velika Valtida",
+        "dist": 2602,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gustinja",
+        "dist": 2724,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mala Valtida",
+        "dist": 3340,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Maluža",
+        "dist": 3438,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Rovinj",
       "Poreč",
@@ -482039,10 +482051,7 @@
     "thanks": "",
     "thanksTranslations": {},
     "pois": [],
-    "majorCities": [
-      "Zadar",
-      "Pula"
-    ],
+    "majorCities": [],
     "specialties": [
       {
         "title": "licitar",
@@ -482065,14 +482074,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
       },
       {
-        "title": "Basa",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-      },
-      {
         "title": "Lumblija",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
       }
     ]
   },
@@ -488828,8 +488837,43 @@
     "thanks": "",
     "thanksTranslations": {},
     "pois": [],
-    "majorCities": [],
-    "specialties": []
+    "majorCities": [
+      "Šibenik",
+      "Vodice",
+      "Biograd na Moru"
+    ],
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      }
+    ]
   },
   {
     "slug": "2026-08-06-grad-sibenik-grad-supetar",
@@ -500252,7 +500296,42 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
-    "specialties": []
+    "majorCities": [
+      "Split",
+      "Kaštela",
+      "Solin"
+    ],
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      }
+    ]
   }
 ]

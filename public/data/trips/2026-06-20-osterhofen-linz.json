@@ -6570,7 +6570,11 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [],
+  "majorCities": [
+    "Linz",
+    "Passau",
+    "Leonding"
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",

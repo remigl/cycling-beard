@@ -6872,7 +6872,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Lienz",
+    "Sillian",
+    "Greifenburg"
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",
