@@ -10199,20 +10199,6 @@
       "wikiTitle": null
     },
     {
-      "title": "monument au mort",
-      "dist": 5913,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monument aux Morts",
-      "dist": 7106,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
       "title": "Jean Louis Barollet",
       "dist": 7314,
       "kind": "Monument / ruines",
@@ -10318,11 +10304,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "spätzle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
@@ -10338,14 +10319,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
     },
     {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-    },
-    {
       "title": "Pérignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/DomPerignonChampagne.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
+    },
+    {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Consommé",
@@ -10353,14 +10334,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
-      "title": "comté",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Comte%20AOP.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Comt%C3%A9_(fromage)"
     }
   ]
 }

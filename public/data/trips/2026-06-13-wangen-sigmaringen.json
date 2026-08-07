@@ -28,38 +28,38 @@
       ]
     },
     "en": {
-      "summary": "Dinner with Astrid and Oliver!",
+      "summary": "Repas avec Astrid et Oliver !",
       "quote": null,
       "fullStory": [
-        "Dinner with Astrid and Oliver!"
+        "Repas avec Astrid et Oliver !"
       ]
     },
     "es": {
-      "summary": "¡Cena con Astrid y Oliver!",
+      "summary": "Repas avec Astrid et Oliver !",
       "quote": null,
       "fullStory": [
-        "¡Cena con Astrid y Oliver!"
+        "Repas avec Astrid et Oliver !"
       ]
     },
     "it": {
-      "summary": "Cena con Astrid e Oliver!",
+      "summary": "Repas avec Astrid et Oliver !",
       "quote": null,
       "fullStory": [
-        "Cena con Astrid e Oliver!"
+        "Repas avec Astrid et Oliver !"
       ]
     },
     "de": {
-      "summary": "Essen mit Astrid und Oliver!",
+      "summary": "Repas avec Astrid et Oliver !",
       "quote": null,
       "fullStory": [
-        "Essen mit Astrid und Oliver!"
+        "Repas avec Astrid et Oliver !"
       ]
     },
     "nl": {
-      "summary": "Etentje met Astrid en Oliver!",
+      "summary": "Repas avec Astrid et Oliver !",
       "quote": null,
       "fullStory": [
-        "Etentje met Astrid en Oliver!"
+        "Repas avec Astrid et Oliver !"
       ]
     }
   },
@@ -6654,118 +6654,8 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Ruine Hertenstein",
-      "dist": 2954,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Burg Altgutenstein",
-      "dist": 7366,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Burg Altgutenstein"
-    },
-    {
-      "title": "Ruine Unterfalkenstein",
-      "dist": 9862,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Unterfalkenstein"
-    },
-    {
-      "title": "Abbundplatz",
-      "dist": 10227,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Alamannenplatz",
-      "dist": 10237,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Küfer",
-      "dist": 10332,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Schauenburg",
-      "dist": 10618,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Schauenburg (Stetten am kalten Markt)"
-    },
-    {
-      "title": "Schlösslefels",
-      "dist": 10636,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ruine Benzenberg",
-      "dist": 10874,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Lenzenburg",
-      "dist": 10971,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Heidenschloss",
-      "dist": 11933,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Neidinger Heidenschloss"
-    },
-    {
-      "title": "Fürstliches Museum",
-      "dist": 154,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Marstallmuseum",
-      "dist": 166,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Schloss Sigmaringen#Marstallmuseum"
-    },
-    {
-      "title": "Schwäbisches Bauernmuseum",
-      "dist": 3096,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Klostermuseum Inzigkofen",
-      "dist": 3117,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    }
-  ],
-  "majorCities": [
-    "Tuttlingen",
-    "Radolfzell am Bodensee",
-    "Sigmaringen"
-  ],
+  "pois": [],
+  "majorCities": [],
   "specialties": [
     {
       "title": "hamburger",
@@ -6843,14 +6733,14 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
+      "title": "Weisslacker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
       "title": "Pfälzer Saumagen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
-    },
-    {
-      "title": "Liebfraumilch",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Liebfraumilch%20Flasche%20von%20Weingut%20und%20Supermarktwein.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Liebfraumilch"
     }
   ]
 }

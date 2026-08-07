@@ -53,11 +53,11 @@
   "lodgingName": "",
   "thanks": "Anita et Martin",
   "thanksTranslations": {
-    "en": "Anita and Martin",
-    "es": "Anita y Martin",
-    "it": "Anita e Martin",
-    "de": "Anita und Martin",
-    "nl": "Anita en Martin",
+    "en": "Anita et Martin",
+    "es": "Anita et Martin",
+    "it": "Anita et Martin",
+    "de": "Anita et Martin",
+    "nl": "Anita et Martin",
     "fr": "Anita et Martin"
   },
   "photos": [
@@ -6858,14 +6858,14 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
+      "title": "Weisslacker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
       "title": "Pfälzer Saumagen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
-    },
-    {
-      "title": "Liebfraumilch",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Liebfraumilch%20Flasche%20von%20Weingut%20und%20Supermarktwein.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Liebfraumilch"
     }
   ]
 }

@@ -19044,118 +19044,8 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Château de Montsabert",
-      "dist": 5604,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Montsabert"
-    },
-    {
-      "title": "Château de Pimpéan",
-      "dist": 9485,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Château de Pimpéan"
-    },
-    {
-      "title": "Le Moulin de Gasté",
-      "dist": 9709,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Moulin-cavier de Gasté"
-    },
-    {
-      "title": "Manoir de la Cour Condé",
-      "dist": 10383,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Manoir de la Cour Condé"
-    },
-    {
-      "title": "Manoir de la Grand'Maison",
-      "dist": 11437,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Manoir de la Grand'Maison"
-    },
-    {
-      "title": "Manoir de Vau",
-      "dist": 11730,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Manoir de Vau"
-    },
-    {
-      "title": "Joseph Denais",
-      "dist": 6685,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Musée Joseph-Denais"
-    },
-    {
-      "title": "Menhir dit la Pierre Longue",
-      "dist": 2080,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Menhir de Saint-Gondon",
-      "dist": 2784,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Menhir de la Butte aux Houx",
-      "dist": 2798,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Menhir du Vallon du Bois de la Bodinière",
-      "dist": 2842,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Menhir du Bois de la Bodinière",
-      "dist": 2859,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tour de Galles",
-      "dist": 2945,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pierre de Nézan",
-      "dist": 3026,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dolmen de la Bajoulière",
-      "dist": 3346,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
-  "majorCities": [
-    "Trélazé",
-    "Les Ponts-de-Cé",
-    "Ancenis-Saint-Géréon"
-  ],
+  "pois": [],
+  "majorCities": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -19173,14 +19063,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
-      "title": "baguette",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
-    },
-    {
       "title": "crêpe",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+    },
+    {
+      "title": "baguette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
     },
     {
       "title": "roquefort",
@@ -19218,14 +19108,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+    },
+    {
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "salade niçoise",
@@ -19238,19 +19128,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
-      "title": "spätzle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
-    },
-    {
       "title": "Sauce veloutée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
-    },
-    {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Pérignon",
@@ -19258,19 +19138,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
+    },
+    {
       "title": "Consommé",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
     }
   ]
 }

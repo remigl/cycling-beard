@@ -6407,113 +6407,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Château de la Roche",
-      "dist": 11626,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de La Roche (Doubs)"
-    },
-    {
-      "title": "Belvédère de Chassignole",
-      "dist": 1252,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Saut de Gamache",
-      "dist": 1852,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Belvédère Grange Vuillotey",
-      "dist": 2976,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Rechandet",
-      "dist": 3867,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Jouffroy d'Abbans",
-      "dist": 4374,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Belvédère Croix de Châtard",
-      "dist": 4763,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Vallée du Cusancin",
-      "dist": 4968,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "La Vierge du Choléra",
-      "dist": 5190,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Fente de Babre",
-      "dist": 5823,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Lonot",
-      "dist": 6148,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Roche Blanche",
-      "dist": 8220,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Vue sur l'abbaye",
-      "dist": 9643,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monument aux morts",
-      "dist": 10835,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Grotte de Fourbanne",
-      "dist": 536,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Besançon"
   ],
@@ -6589,11 +6483,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "spätzle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
@@ -6609,14 +6498,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
     },
     {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-    },
-    {
       "title": "Pérignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/DomPerignonChampagne.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
+    },
+    {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Consommé",
@@ -6624,14 +6513,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
     }
   ]
 }

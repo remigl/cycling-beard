@@ -53,11 +53,11 @@
   "lodgingName": "",
   "thanks": "Anja et Sandro",
   "thanksTranslations": {
-    "en": "Anja and Sandro",
-    "es": "Anja y Sandro",
-    "it": "Anja e Sandro",
-    "de": "Anja und Sandro",
-    "nl": "Anja en Sandro",
+    "en": "Anja et Sandro",
+    "es": "Anja et Sandro",
+    "it": "Anja et Sandro",
+    "de": "Anja et Sandro",
+    "nl": "Anja et Sandro",
     "fr": "Anja et Sandro"
   },
   "photos": [
@@ -15849,7 +15849,7 @@
     },
     {
       "title": "Dinkelbergmuseum",
-      "dist": 6366,
+      "dist": 6365,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": null
@@ -15890,11 +15890,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Bâle",
-    "Mulhouse",
-    "Rheinfelden (Baden)"
-  ],
+  "majorCities": [],
   "specialties": [
     {
       "title": "muesli",

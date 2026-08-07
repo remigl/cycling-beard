@@ -1,13 +1,13 @@
 {
-  "totalKm": 4991,
+  "totalKm": 4993,
   "totalCountries": 9,
   "totalDays": 73,
   "totalStages": 52,
-  "totalElevation": 30736,
+  "totalElevation": 30739,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
-  "currentLocation": "Split",
+  "currentLocation": "Grad Supetar",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-08-07",
-  "latestStageSlug": "2026-08-06-grad-sibenik-split"
+  "latestStageSlug": "2026-08-06-grad-sibenik-grad-supetar"
 }

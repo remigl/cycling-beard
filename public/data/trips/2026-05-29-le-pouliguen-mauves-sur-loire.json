@@ -32,48 +32,48 @@
       ]
     },
     "en": {
-      "summary": "You should cross the Saint-Nazaire Bridge by bike just once in your life—any more than that is tempting fate.",
+      "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
       "quote": null,
       "fullStory": [
-        "You should cross the Saint-Nazaire Bridge by bike just once in your life—any more than that is tempting fate.",
-        "Spent the night at Jeff's place with his cat, Bada. Really nice—we had pizza and non-alcoholic pastis.",
-        "A wake-up call for the toughest."
+        "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
+        "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+        "Reveil des plus durs."
       ]
     },
     "es": {
-      "summary": "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
+      "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
       "quote": null,
       "fullStory": [
-        "El puente de Saint-Nazaire hay que cruzarlo en bicicleta al menos una vez en la vida; después, es jugársela.",
-        "Pasé la noche en casa de Jeff y su gato Bada. Fue muy agradable: una velada con pizza y pastis sin alcohol.",
-        "Un despertar de lo más duro."
+        "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
+        "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+        "Reveil des plus durs."
       ]
     },
     "it": {
-      "summary": "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare il destino.",
+      "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
       "quote": null,
       "fullStory": [
-        "Il ponte di Saint-Nazaire va attraversato in bicicletta almeno una volta nella vita; dopo, è come sfidare la sorte.",
-        "Notte a casa di Jeff e del suo gatto Bada. Sono stati davvero gentili, serata a base di pizza e pastis analcolico.",
-        "Un risveglio da veri duri."
+        "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
+        "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+        "Reveil des plus durs."
       ]
     },
     "de": {
-      "summary": "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
+      "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
       "quote": null,
       "fullStory": [
-        "Die Brücke von Saint-Nazaire sollte man nur einmal im Leben mit dem Fahrrad überqueren – danach spielt man mit dem Feuer.",
-        "Übernachtung bei Jeff und seiner Katze Bada. Super nett, ein Abend mit Pizza und alkoholfreiem Pastis.",
-        "Ein echt hartes Erwachen."
+        "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
+        "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+        "Reveil des plus durs."
       ]
     },
     "nl": {
-      "summary": "De brug van Saint-Nazaire moet je maar één keer in je leven op de fiets oversteken; daarna is het een gok.",
+      "summary": "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
       "quote": null,
       "fullStory": [
-        "De brug van Saint-Nazaire moet je maar één keer in je leven op de fiets oversteken; daarna is het een gok.",
-        "Overnachting bij Jeff en zijn kat Bada. Heel gezellig, een avondje pizza en alcoholvrije pastis.",
-        "Een ontwaken voor de allersterksten."
+        "Pont de Saint Nazaire a faire qu'une fois dans sa vie en vélo, après c'est tenter le diable.",
+        "Nuit chez Jeff et son chat Bada. Super sympa, soirée pizza et pastis sans alcool.",
+        "Reveil des plus durs."
       ]
     }
   },
@@ -81,11 +81,11 @@
   "lodgingName": "",
   "thanks": "Jeff et son chat Bada",
   "thanksTranslations": {
-    "en": "Jeff and his cat Bada",
-    "es": "Jeff y su gato Bada",
-    "it": "Jeff e il suo gatto Bada",
-    "de": "Jeff und seine Katze Bada",
-    "nl": "Jeff en zijn kat Bada",
+    "en": "Jeff et son chat Bada",
+    "es": "Jeff et son chat Bada",
+    "it": "Jeff et son chat Bada",
+    "de": "Jeff et son chat Bada",
+    "nl": "Jeff et son chat Bada",
     "fr": "Jeff et son chat Bada"
   },
   "photos": [
@@ -12250,113 +12250,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Château de la Vrillière",
-      "dist": 3077,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de la Vrillière"
-    },
-    {
-      "title": "Croix des Renards",
-      "dist": 3570,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "La Berrière",
-      "dist": 5513,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de la Berrière"
-    },
-    {
-      "title": "Ruines",
-      "dist": 5804,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Manoir de la Dixmerie",
-      "dist": 5923,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Manoir de la Dixmerie"
-    },
-    {
-      "title": "Beau Soleil",
-      "dist": 5938,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "La Monderie",
-      "dist": 6256,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Les Folies Siffait",
-      "dist": 7291,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Folies Siffait"
-    },
-    {
-      "title": "Château du Chassay",
-      "dist": 8874,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Chassay"
-    },
-    {
-      "title": "Ruines de l'ancienne citadelle de Châteauceaux",
-      "dist": 9707,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Embarcadère de la Luce",
-      "dist": 9858,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "La Colinière",
-      "dist": 10080,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Four à pain",
-      "dist": 10767,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de La Poterie",
-      "dist": 10804,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de la Poterie"
-    },
-    {
-      "title": "La Guilletière",
-      "dist": 10926,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Nantes",
     "Saint-Nazaire",
@@ -12369,24 +12263,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "gaufre",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-    },
-    {
       "title": "sauce béchamel",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "baguette",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
       "title": "crêpe",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+    },
+    {
+      "title": "baguette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
     },
     {
       "title": "roquefort",
@@ -12409,14 +12303,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Sauce hollandaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-    },
-    {
       "title": "Merlot",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
       "title": "bouillabaisse",
@@ -12424,24 +12318,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-    },
-    {
-      "title": "spätzle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "salade niçoise",
@@ -12449,19 +12333,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
     },
     {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
       "title": "Sauce veloutée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Making%20White%20sauce%205.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
-    },
-    {
-      "title": "Consommé",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-    },
-    {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Pérignon",
@@ -12469,14 +12348,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
+    },
+    {
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
-      "title": "crème anglaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Creme%20anglaise%20p1050168.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%A8me_anglaise"
     }
   ]
 }

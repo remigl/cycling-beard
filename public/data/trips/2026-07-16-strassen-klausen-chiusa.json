@@ -28,38 +28,38 @@
       ]
     },
     "en": {
-      "summary": "Hundreds of bicycles between Silian and Brunico.",
+      "summary": "Des centaines de vélo entre Silian et Brunico.",
       "quote": null,
       "fullStory": [
-        "Hundreds of bicycles between Silian and Brunico."
+        "Des centaines de vélo entre Silian et Brunico."
       ]
     },
     "es": {
-      "summary": "Cientos de bicicletas entre Silian y Brunico.",
+      "summary": "Des centaines de vélo entre Silian et Brunico.",
       "quote": null,
       "fullStory": [
-        "Cientos de bicicletas entre Silian y Brunico."
+        "Des centaines de vélo entre Silian et Brunico."
       ]
     },
     "it": {
-      "summary": "Centinaia di biciclette tra Silian e Brunico.",
+      "summary": "Des centaines de vélo entre Silian et Brunico.",
       "quote": null,
       "fullStory": [
-        "Centinaia di biciclette tra Silian e Brunico."
+        "Des centaines de vélo entre Silian et Brunico."
       ]
     },
     "de": {
-      "summary": "Hunderte von Fahrrädern zwischen Silian und Brunico.",
+      "summary": "Des centaines de vélo entre Silian et Brunico.",
       "quote": null,
       "fullStory": [
-        "Hunderte von Fahrrädern zwischen Silian und Brunico."
+        "Des centaines de vélo entre Silian et Brunico."
       ]
     },
     "nl": {
-      "summary": "Honderden fietsers tussen Silian en Brunico.",
+      "summary": "Des centaines de vélo entre Silian et Brunico.",
       "quote": null,
       "fullStory": [
-        "Honderden fietsers tussen Silian en Brunico."
+        "Des centaines de vélo entre Silian et Brunico."
       ]
     }
   },
@@ -13379,6 +13379,13 @@
       "wikiTitle": null
     },
     {
+      "title": "Dorfmuseum Gufidaun - Museo locale di Gudon",
+      "dist": 2460,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
       "title": "Bergwerk Villanders - Miniera Villandro",
       "dist": 2631,
       "kind": "Musée",
@@ -13433,13 +13440,6 @@
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null
-    },
-    {
-      "title": "Hexenbänke",
-      "dist": 9091,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
     }
   ],
   "majorCities": [
@@ -13464,14 +13464,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -13494,7 +13494,7 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "cannolo",
+      "title": "Cannoli PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
@@ -13504,14 +13504,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "sauce tomate",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-    },
-    {
       "title": "Pecorino",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+    },
+    {
+      "title": "sauce tomate",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
     },
     {
       "title": "salade caprese",
@@ -13519,14 +13519,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_caprese"
     },
     {
-      "title": "Boudoir",
+      "title": "Savoiarde PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Melindros.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "osso buco",
@@ -13539,19 +13534,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "fusilli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     },
     {
-      "title": "pizza Margherita",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+      "title": "Chianti DOCG",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

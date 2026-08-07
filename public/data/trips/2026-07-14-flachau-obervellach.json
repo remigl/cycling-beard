@@ -28,38 +28,38 @@
       ]
     },
     "en": {
-      "summary": "Bad Gastein is a pretty village. The road drops steeply after Mallnitz.",
+      "summary": "Bad Gastein est un joli village. Ça descend fort après Mallnitz.",
       "quote": null,
       "fullStory": [
-        "Bad Gastein is a pretty village. The road drops steeply after Mallnitz."
+        "Bad Gastein est un joli village. Ça descend fort après Mallnitz."
       ]
     },
     "es": {
-      "summary": "Bad Gastein es un pueblo precioso. Hay una fuerte pendiente después de Mallnitz.",
+      "summary": "Bad Gastein est un joli village. Ça descend fort après Mallnitz.",
       "quote": null,
       "fullStory": [
-        "Bad Gastein es un pueblo precioso. La carretera desciende con fuerza después de Mallnitz."
+        "Bad Gastein est un joli village. Ça descend fort après Mallnitz."
       ]
     },
     "it": {
-      "summary": "Bad Gastein è un grazioso paesino. Dopo Mallnitz la strada scende ripidamente.",
+      "summary": "Bad Gastein est un joli village. Ça descend fort après Mallnitz.",
       "quote": null,
       "fullStory": [
-        "Bad Gastein è un grazioso paesino. Dopo Mallnitz la strada scende ripidamente."
+        "Bad Gastein est un joli village. Ça descend fort après Mallnitz."
       ]
     },
     "de": {
-      "summary": "Bad Gastein ist ein hübsches Dorf. Nach Mallnitz geht es steil bergab.",
+      "summary": "Bad Gastein est un joli village. Ça descend fort après Mallnitz.",
       "quote": null,
       "fullStory": [
-        "Bad Gastein ist ein hübsches Dorf. Nach Mallnitz geht es steil bergab."
+        "Bad Gastein est un joli village. Ça descend fort après Mallnitz."
       ]
     },
     "nl": {
-      "summary": "Bad Gastein is een mooi dorpje. Na Mallnitz gaat het steil naar beneden.",
+      "summary": "Bad Gastein est un joli village. Ça descend fort après Mallnitz.",
       "quote": null,
       "fullStory": [
-        "Bad Gastein is een mooi dorpje. Na Mallnitz gaat het steil naar beneden."
+        "Bad Gastein est un joli village. Ça descend fort après Mallnitz."
       ]
     }
   },
@@ -11381,113 +11381,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Polinikfall",
-      "dist": 1462,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Gussenbauer Denkmal",
-      "dist": 324,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Mölltal Blick",
-      "dist": 1070,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Den Gefallenen der Weltkriege 1914-1918",
-      "dist": 6536,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kriegerdenkmal",
-      "dist": 6984,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Danielsberg",
-      "dist": 8212,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": "Filialkirche St. Georg am Danielsberg"
-    },
-    {
-      "title": "Alois Pucher",
-      "dist": 8702,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ebeneck",
-      "dist": 3243,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Unterer Sickerkopf",
-      "dist": 4374,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Böse Nase",
-      "dist": 4489,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Oberer Sickerkopf",
-      "dist": 4933,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Gamskarspitz",
-      "dist": 5015,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Lawogge",
-      "dist": 5419,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Zagutnigspitz",
-      "dist": 5516,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Groneck",
-      "dist": 5872,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Sankt Johann im Pongau",
     "Bischofshofen",

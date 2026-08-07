@@ -12113,113 +12113,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "La fontaine de Galilée",
-      "dist": 7475,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Fontaine de Galilée"
-    },
-    {
-      "title": "Pendule de Foucault",
-      "dist": 7695,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pont Sarrazin",
-      "dist": 8145,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Puits à Balancier",
-      "dist": 10450,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Le 19",
-      "dist": 7190,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Musée d'Art et d'Histoire",
-      "dist": 7401,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Musée de l'Artisanat et des Traditions Populaires",
-      "dist": 8048,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Musée Roger Comte",
-      "dist": 9033,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monument aux morts",
-      "dist": 1172,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Observatoire",
-      "dist": 1857,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Emplacement de la nécropole mérovingienne",
-      "dist": 3755,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monument aux Morts",
-      "dist": 4304,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Stèle pour la 2e Division d'Infanterie Marocaine",
-      "dist": 5122,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Point de vue",
-      "dist": 6167,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Stèle des Fusilés",
-      "dist": 6542,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Montbéliard",
     "Audincourt"
@@ -12296,11 +12190,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "spätzle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Sp%C3%A4tzle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sp%C3%A4tzle"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
@@ -12316,14 +12205,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_velout%C3%A9e"
     },
     {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-    },
-    {
       "title": "Pérignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/DomPerignonChampagne.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
+    },
+    {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Consommé",
@@ -12331,14 +12220,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
-      "title": "reblochon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Reblochon%2011.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Reblochon"
     }
   ]
 }
