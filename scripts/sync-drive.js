@@ -21,7 +21,7 @@ import fs from "fs";
 import path from "path";
 import { google } from "googleapis";
 import sharp from "sharp";
-import * as exifr from "exifr";
+import { parse as exifParse } from "exifr";
 import GpxParser from "gpxparser";
 
 // ─── Config ──────────────────────────────────────────────────────────────────
@@ -233,7 +233,14 @@ async function processImage(srcPath, destDir, baseName) {
 // Renvoie null si absente ou illisible (photo sans EXIF, capture d'écran, etc.)
 async function getPhotoTakenAt(srcPath, debugLabel = "") {
   try {
-    const tags = await exifr.parse(srcPath, { pick: ["DateTimeOriginal", "CreateDate", "GPSLatitude", "GPSLongitude"] });
+    // Filet de sécurité : selon l'environnement, exifr peut s'exporter en
+    // CommonJS ou ESM ; on résout la vraie fonction quelle que soit la forme.
+    const parseFn = (typeof exifParse === "function") ? exifParse : (exifParse && exifParse.default);
+    if (typeof parseFn !== "function") {
+      console.log(`    🔍 EXIF ${debugLabel} : module exifr non résolu (parseFn=${typeof parseFn})`);
+      return null;
+    }
+    const tags = await parseFn(srcPath, { pick: ["DateTimeOriginal", "CreateDate", "GPSLatitude", "GPSLongitude"] });
     if (!tags) {
       console.log(`    🔍 EXIF ${debugLabel} : aucune métadonnée lisible`);
       return null;
