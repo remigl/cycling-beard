@@ -21,6 +21,7 @@ import fs from "fs";
 import path from "path";
 import { google } from "googleapis";
 import sharp from "sharp";
+import * as exifr from "exifr";
 import GpxParser from "gpxparser";
 
 // ─── Config ──────────────────────────────────────────────────────────────────
@@ -226,6 +227,55 @@ async function processImage(srcPath, destDir, baseName) {
     webp: toPublicPath(webpPath),
     thumb: toPublicPath(thumbPath),
   };
+}
+
+// Heure de prise de vue d'une photo (EXIF DateTimeOriginal), en timestamp UTC.
+// Renvoie null si absente ou illisible (photo sans EXIF, capture d'écran, etc.)
+async function getPhotoTakenAt(srcPath) {
+  try {
+    const tags = await exifr.parse(srcPath, { pick: ["DateTimeOriginal", "CreateDate", "GPSLatitude", "GPSLongitude"] });
+    if (!tags) return null;
+    // Si la photo a déjà ses propres coordonnées GPS (rare sur un reflex sans
+    // module GPS comme l'EOS RP, mais on les respecte si présentes)
+    if (tags.GPSLatitude && tags.GPSLongitude) {
+      return { time: null, gpsLat: tags.GPSLatitude, gpsLng: tags.GPSLongitude };
+    }
+    const dt = tags.DateTimeOriginal || tags.CreateDate;
+    if (!dt) return null;
+    const t = new Date(dt).getTime();
+    return isNaN(t) ? null : { time: t, gpsLat: null, gpsLng: null };
+  } catch {
+    return null; // photo sans EXIF exploitable → pas grave, juste pas de position
+  }
+}
+
+// Retrouve la position d'une photo à partir de son heure de prise de vue, en
+// cherchant le point du tracé GPX le plus proche dans le temps. N'assigne une
+// position que si l'écart est raisonnable (< 20 min) : mieux vaut aucune
+// position qu'une position devinée trop loin dans le temps (fuseau horaire
+// mal réglé sur l'appareil photo, photo prise en pause hors tracé, etc.).
+const MAX_PHOTO_GPS_GAP_MS = 20 * 60 * 1000; // 20 minutes
+
+function matchPhotoToTrack(photoTimeMs, timedPoints, tzOffsetMs = 0) {
+  if (!timedPoints || timedPoints.length === 0) return null;
+  const adjusted = photoTimeMs - tzOffsetMs; // corrige l'écart fuseau appareil photo vs GPX (UTC)
+
+  // Recherche par dichotomie (timedPoints est trié par heure)
+  let lo = 0, hi = timedPoints.length - 1;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (timedPoints[mid].t < adjusted) lo = mid + 1; else hi = mid;
+  }
+  // Compare le point trouvé et son voisin pour prendre le plus proche
+  const candidates = [timedPoints[lo]];
+  if (lo > 0) candidates.push(timedPoints[lo - 1]);
+  let best = null, bestGap = Infinity;
+  for (const c of candidates) {
+    const gap = Math.abs(c.t - adjusted);
+    if (gap < bestGap) { bestGap = gap; best = c; }
+  }
+  if (!best || bestGap > MAX_PHOTO_GPS_GAP_MS) return null;
+  return { lat: best.lat, lng: best.lng };
 }
 
 // ─── Reverse Geocoding (Nominatim / OpenStreetMap, gratuit) ──────────────────
@@ -801,6 +851,16 @@ function parseOneGpx(gpxContent) {
     ]);
   }
 
+  // Points AVEC heure, pour retrouver où une photo a été prise (par sa date EXIF).
+  // On ne simplifie pas ceux-ci (on a besoin de la meilleure résolution temporelle).
+  const timedPoints = [];
+  for (const p of points) {
+    if (p.time) {
+      const t = new Date(p.time).getTime();
+      if (!isNaN(t)) timedPoints.push({ lat: p.lat, lng: p.lon, t });
+    }
+  }
+
   return {
     distanceKm,
     elevationGain: Math.round(elevationGain),
@@ -812,6 +872,7 @@ function parseOneGpx(gpxContent) {
     startLat: points[0]?.lat ?? null,
     startLng: points[0]?.lon ?? null,
     track: trackPoints,
+    timedPoints,
   };
 }
 
@@ -827,6 +888,7 @@ function mergeGpxFiles(gpxContents) {
   const segments = [];
   let fullProfile = [];
   let distOffset = 0;
+  const allTimedPoints = [];
 
   for (const content of gpxContents) {
     const r = parseOneGpx(content);
@@ -836,6 +898,7 @@ function mergeGpxFiles(gpxContents) {
     if (r.minAltitude < minAltitude) minAltitude = r.minAltitude;
     if (startLat === null) { startLat = r.startLat; startLng = r.startLng; }
     if (r.track && r.track.length > 1) segments.push(r.track);
+    if (r.timedPoints) allTimedPoints.push(...r.timedPoints);
     // Concatène les profils en décalant la distance
     if (r.elevProfile) {
       for (const [d, ele] of r.elevProfile) {
@@ -856,6 +919,9 @@ function mergeGpxFiles(gpxContents) {
     if (lastPt) { endLat = lastPt[0]; endLng = lastPt[1]; }
   }
 
+  // Trié par heure : indispensable pour une recherche efficace du point le plus proche
+  allTimedPoints.sort((a, b) => a.t - b.t);
+
   return {
     distanceKm: Math.round(totalDistance * 10) / 10,
     elevationGain: Math.round(totalElevation),
@@ -868,6 +934,7 @@ function mergeGpxFiles(gpxContents) {
     startLng,
     track: segments[0] || [],
     segments,
+    timedPoints: allTimedPoints,
   };
 }
 
@@ -1246,6 +1313,11 @@ async function syncFolder(drive, folder, cache, force) {
         .replace(/\b\w/g, c => c.toUpperCase()) // capitalise chaque mot
         .trim() || baseName;
 
+      // Heure de prise de vue (EXIF), utilisée après-coup pour retrouver la
+      // position sur le tracé GPX. Photo sans EXIF exploitable → simplement
+      // pas de géolocalisation, le reste continue normalement.
+      const shot = await getPhotoTakenAt(tmpPath);
+
       if (name.startsWith("cover")) {
         coverWebp = paths.webp;
         thumbWebp = paths.thumb;
@@ -1254,6 +1326,8 @@ async function syncFolder(drive, folder, cache, force) {
           src: paths.webp,
           thumb: paths.thumb,
           alt: photoTitle,
+          _shotTime: shot?.time ?? null,
+          _shotGps: (shot?.gpsLat != null) ? { lat: shot.gpsLat, lng: shot.gpsLng } : null,
         });
       }
     }
@@ -1276,6 +1350,30 @@ async function syncFolder(drive, folder, cache, force) {
       console.warn(`  ⚠️  ATTENTION : distance = 0 km pour ${slug}. GPX vide ou corrompu ?`);
     }
   }
+
+  // ── Localisation des photos ──
+  // Priorité 1 : coordonnées GPS déjà dans l'EXIF de la photo (rare sur l'EOS RP,
+  // qui n'a pas de GPS intégré, mais on les respecte si présentes).
+  // Priorité 2 : heure de prise de vue matchée au point du tracé GPX le plus
+  // proche dans le temps (±20 min max, sinon pas de position assignée).
+  // PHOTO_TZ_OFFSET_MIN : décalage en minutes entre l'heure de l'appareil photo
+  // et l'heure UTC du GPX, si jamais l'horloge du Canon n'est pas réglée sur
+  // UTC/GPS-time. Réglable via variable d'env si besoin (0 par défaut).
+  const tzOffsetMs = (parseInt(process.env.PHOTO_TZ_OFFSET_MIN || "0", 10) || 0) * 60000;
+  let geotagged = 0;
+  for (const p of photos) {
+    if (p._shotGps) {
+      p.lat = p._shotGps.lat;
+      p.lng = p._shotGps.lng;
+      geotagged++;
+    } else if (p._shotTime && gpxStats.timedPoints && gpxStats.timedPoints.length > 0) {
+      const pos = matchPhotoToTrack(p._shotTime, gpxStats.timedPoints, tzOffsetMs);
+      if (pos) { p.lat = pos.lat; p.lng = pos.lng; geotagged++; }
+    }
+    delete p._shotTime;
+    delete p._shotGps;
+  }
+  if (photos.length > 0) console.log(`  📌 ${geotagged}/${photos.length} photo(s) géolocalisée(s) via le tracé`);
 
   // Fallback cover
   if (!coverWebp && photos.length > 0) {
