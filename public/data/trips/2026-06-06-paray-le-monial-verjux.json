@@ -69,27 +69,37 @@
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
-      "alt": "Img 3404"
+      "alt": "Img 3404",
+      "lat": 46.553172,
+      "lng": 4.2182309
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3408.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3408.webp",
-      "alt": "Img 3408"
+      "alt": "Img 3408",
+      "lat": 46.6238078,
+      "lng": 4.3648767
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3411.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3411.webp",
-      "alt": "Img 3411"
+      "alt": "Img 3411",
+      "lat": 46.6348837,
+      "lng": 4.3698881
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3415.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3415.webp",
-      "alt": "Img 3415"
+      "alt": "Img 3415",
+      "lat": 46.642115,
+      "lng": 4.3715119
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3422.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3422.webp",
-      "alt": "Img 3422"
+      "alt": "Img 3422",
+      "lat": 46.642115,
+      "lng": 4.3715119
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img-20260606-wa0003.webp",
@@ -10232,6 +10242,7 @@
     "Montceau-les-Mines",
     "Paray-le-Monial"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -10239,14 +10250,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "gaufre",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-    },
-    {
       "title": "sauce béchamel",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+    },
+    {
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
       "title": "crêpe",
@@ -10304,14 +10315,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-    },
-    {
       "title": "bœuf bourguignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
     },
     {
       "title": "Sauce veloutée",

@@ -62,22 +62,30 @@
     {
       "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3841.webp",
       "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3841.webp",
-      "alt": "Img 3841"
+      "alt": "Img 3841",
+      "lat": 47.8280819,
+      "lng": 18.8555464
     },
     {
       "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3843.webp",
       "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3843.webp",
-      "alt": "Img 3843"
+      "alt": "Img 3843",
+      "lat": 47.8159267,
+      "lng": 18.8619331
     },
     {
       "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3852.webp",
       "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3852.webp",
-      "alt": "Img 3852"
+      "alt": "Img 3852",
+      "lat": 47.8158995,
+      "lng": 18.8618448
     },
     {
       "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3857.webp",
       "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3857.webp",
-      "alt": "Img 3857"
+      "alt": "Img 3857",
+      "lat": 47.7022752,
+      "lng": 19.1290283
     },
     {
       "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3875.webp",
@@ -11794,11 +11802,8 @@
       "wikiTitle": "Sziklakórház Atombunker Múzeum"
     }
   ],
-  "majorCities": [
-    "Dunakeszi",
-    "Vác",
-    "Esztergom"
-  ],
+  "majorCities": [],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "frybread",

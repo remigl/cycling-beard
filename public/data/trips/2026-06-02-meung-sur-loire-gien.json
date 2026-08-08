@@ -76,12 +76,16 @@
     {
       "src": "/media/2026-06-02-meung-sur-loire-gien/château de sully.webp",
       "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_château de sully.webp",
-      "alt": "ChâTeau De Sully"
+      "alt": "ChâTeau De Sully",
+      "lat": 47.667211,
+      "lng": 2.6548775
     },
     {
       "src": "/media/2026-06-02-meung-sur-loire-gien/coquelicots.webp",
       "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_coquelicots.webp",
-      "alt": "Coquelicots"
+      "alt": "Coquelicots",
+      "lat": 47.7510167,
+      "lng": 2.4710735
     }
   ],
   "videos": [],
@@ -9901,6 +9905,13 @@
       "wikiTitle": null
     },
     {
+      "title": "Pont-Canal de Briare",
+      "dist": 4881,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
       "title": "Le Petit Train de Briare",
       "dist": 4891,
       "kind": "Attraction",
@@ -9962,20 +9973,10 @@
       "kind": "Château / fort",
       "rank": 10,
       "wikiTitle": null
-    },
-    {
-      "title": "Château de La Bussière",
-      "dist": 11131,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Château de La Bussière (Loiret)"
     }
   ],
-  "majorCities": [
-    "Orléans",
-    "Olivet",
-    "Saint-Jean-de-Braye"
-  ],
+  "majorCities": [],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -10023,14 +10024,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -10078,14 +10079,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "Biancomangiare PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
     }
   ]
 }

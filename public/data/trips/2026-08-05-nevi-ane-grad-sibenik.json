@@ -62,37 +62,51 @@
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4619.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4619.webp",
-      "alt": "Img 4619"
+      "alt": "Img 4619",
+      "lat": 43.8335901,
+      "lng": 15.6416671
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4625.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4625.webp",
-      "alt": "Img 4625"
+      "alt": "Img 4625",
+      "lat": 43.8258351,
+      "lng": 15.6559297
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4632.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4632.webp",
-      "alt": "Img 4632"
+      "alt": "Img 4632",
+      "lat": 43.8253146,
+      "lng": 15.657804
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4634.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4634.webp",
-      "alt": "Img 4634"
+      "alt": "Img 4634",
+      "lat": 43.8250609,
+      "lng": 15.6584559
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4637.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4637.webp",
-      "alt": "Img 4637"
+      "alt": "Img 4637",
+      "lat": 43.8170476,
+      "lng": 15.6670284
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4642.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4642.webp",
-      "alt": "Img 4642"
+      "alt": "Img 4642",
+      "lat": 43.8168305,
+      "lng": 15.6847688
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4645.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4645.webp",
-      "alt": "Img 4645"
+      "alt": "Img 4645",
+      "lat": 43.7353035,
+      "lng": 15.8925576
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4648.webp",
@@ -102,12 +116,16 @@
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4649.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4649.webp",
-      "alt": "Img 4649"
+      "alt": "Img 4649",
+      "lat": 43.673679,
+      "lng": 15.9255215
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4652.webp",
       "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4652.webp",
-      "alt": "Img 4652"
+      "alt": "Img 4652",
+      "lat": 43.6736057,
+      "lng": 15.9259294
     },
     {
       "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4654.webp",
@@ -6870,36 +6888,6 @@
     "Vodice",
     "Biograd na Moru"
   ],
-  "specialties": [
-    {
-      "title": "licitar",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-    },
-    {
-      "title": "Kulen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-    },
-    {
-      "title": "Zagorski štrukli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-    },
-    {
-      "title": "Soparnik",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-    },
-    {
-      "title": "Basa",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-    },
-    {
-      "title": "Lumblija",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-    }
-  ]
+  "topRatedPlaces": [],
+  "specialties": []
 }

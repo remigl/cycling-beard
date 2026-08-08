@@ -62,22 +62,30 @@
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3973.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3973.webp",
-      "alt": "Img 3973"
+      "alt": "Img 3973",
+      "lat": 46.9032963,
+      "lng": 17.1078864
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3975.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3975.webp",
-      "alt": "Img 3975"
+      "alt": "Img 3975",
+      "lat": 46.9034318,
+      "lng": 17.1073884
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3977.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3977.webp",
-      "alt": "Img 3977"
+      "alt": "Img 3977",
+      "lat": 46.9034318,
+      "lng": 17.1073884
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3983.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3983.webp",
-      "alt": "Img 3983"
+      "alt": "Img 3983",
+      "lat": 46.9034318,
+      "lng": 17.1073884
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3985.webp",
@@ -87,7 +95,9 @@
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3986.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3986.webp",
-      "alt": "Img 3986"
+      "alt": "Img 3986",
+      "lat": 47.0284455,
+      "lng": 16.9237292
     }
   ],
   "videos": [],
@@ -6768,6 +6778,7 @@
     "Zalaszentgrót",
     "Hévíz"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "frybread",

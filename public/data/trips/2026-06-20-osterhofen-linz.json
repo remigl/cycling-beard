@@ -62,12 +62,16 @@
     {
       "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
       "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
-      "alt": "Img 3674"
+      "alt": "Img 3674",
+      "lat": 48.5174635,
+      "lng": 13.714622
     },
     {
       "src": "/media/2026-06-20-osterhofen-linz/img_3682.webp",
       "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3682.webp",
-      "alt": "Img 3682"
+      "alt": "Img 3682",
+      "lat": 48.4202295,
+      "lng": 13.9839635
     },
     {
       "src": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
@@ -6681,6 +6685,7 @@
     "Passau",
     "Leonding"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -6713,14 +6718,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "Eiernockerl",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-    },
-    {
       "title": "maluns",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
     },
     {
       "title": "serviettenknödel",

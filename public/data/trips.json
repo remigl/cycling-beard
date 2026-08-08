@@ -8747,14 +8747,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -8787,14 +8787,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -8812,14 +8812,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -20247,7 +20247,9 @@
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/arrêt a saint nazaire.webp",
         "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_arrêt a saint nazaire.webp",
-        "alt": "ArrêT A Saint Nazaire"
+        "alt": "ArrêT A Saint Nazaire",
+        "lat": 47.2744801,
+        "lng": -1.9815009
       },
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/bada est content.webp",
@@ -20262,32 +20264,44 @@
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/galette après quelques efforts.webp",
         "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_galette après quelques efforts.webp",
-        "alt": "Galette AprèS Quelques Efforts"
+        "alt": "Galette AprèS Quelques Efforts",
+        "lat": 47.2127356,
+        "lng": -1.5414492
       },
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la ferrari.webp",
         "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la ferrari.webp",
-        "alt": "La Ferrari"
+        "alt": "La Ferrari",
+        "lat": 47.2727496,
+        "lng": -2.2026104
       },
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la plage de la baule.webp",
         "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la plage de la baule.webp",
-        "alt": "La Plage De La Baule"
+        "alt": "La Plage De La Baule",
+        "lat": 47.296106,
+        "lng": -2.1777562
       },
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/le velo a la baule.webp",
         "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_le velo a la baule.webp",
-        "alt": "Le Velo A La Baule"
+        "alt": "Le Velo A La Baule",
+        "lat": 47.2972156,
+        "lng": -2.1782141
       },
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/petit café.webp",
         "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_petit café.webp",
-        "alt": "Petit Café"
+        "alt": "Petit Café",
+        "lat": 47.2744801,
+        "lng": -1.9815009
       },
       {
         "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/saint naze.webp",
         "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_saint naze.webp",
-        "alt": "Saint Naze"
+        "alt": "Saint Naze",
+        "lat": 47.2744801,
+        "lng": -1.9815009
       }
     ],
     "translations": {
@@ -21216,14 +21230,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -21256,14 +21270,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -21271,14 +21285,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
       },
       {
-        "title": "Roux",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-      },
-      {
         "title": "mille-feuille",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+      },
+      {
+        "title": "Roux",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
         "title": "bœuf bourguignon",
@@ -39053,27 +39067,37 @@
       {
         "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/la guinchette.webp",
         "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_la guinchette.webp",
-        "alt": "La Guinchette"
+        "alt": "La Guinchette",
+        "lat": 47.3641029,
+        "lng": -0.7254873
       },
       {
         "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/on va dire que c'est ok.webp",
         "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_on va dire que c'est ok.webp",
-        "alt": "On Va Dire Que C'Est Ok"
+        "alt": "On Va Dire Que C'Est Ok",
+        "lat": 47.379761,
+        "lng": -0.9629318
       },
       {
         "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/petit château sur le chemin.webp",
         "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_petit château sur le chemin.webp",
-        "alt": "Petit ChâTeau Sur Le Chemin"
+        "alt": "Petit ChâTeau Sur Le Chemin",
+        "lat": 47.4085133,
+        "lng": -0.6184896
       },
       {
         "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/pont d'ancenis.webp",
         "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_pont d'ancenis.webp",
-        "alt": "Pont D'Ancenis"
+        "alt": "Pont D'Ancenis",
+        "lat": 47.3798129,
+        "lng": -0.9631507
       },
       {
         "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
         "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_tartiflette a la guinchette.webp",
-        "alt": "Tartiflette A La Guinchette"
+        "alt": "Tartiflette A La Guinchette",
+        "lat": 47.364606,
+        "lng": -0.7225783
       }
     ],
     "translations": {
@@ -40466,11 +40490,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Trélazé",
-      "Les Ponts-de-Cé",
-      "Ancenis-Saint-Géréon"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -50033,27 +50053,37 @@
       {
         "src": "/media/2026-05-31-le-menitre-tours/château de saumur 2.webp",
         "thumb": "/media/2026-05-31-le-menitre-tours/thumb_château de saumur 2.webp",
-        "alt": "ChâTeau De Saumur 2"
+        "alt": "ChâTeau De Saumur 2",
+        "lat": 47.2321066,
+        "lng": 0.0056806
       },
       {
         "src": "/media/2026-05-31-le-menitre-tours/château de saumur.webp",
         "thumb": "/media/2026-05-31-le-menitre-tours/thumb_château de saumur.webp",
-        "alt": "ChâTeau De Saumur"
+        "alt": "ChâTeau De Saumur",
+        "lat": 47.3338403,
+        "lng": 0.4695044
       },
       {
         "src": "/media/2026-05-31-le-menitre-tours/église dans les hauteurs de saumur.webp",
         "thumb": "/media/2026-05-31-le-menitre-tours/thumb_église dans les hauteurs de saumur.webp",
-        "alt": "éGlise Dans Les Hauteurs De Saumur"
+        "alt": "éGlise Dans Les Hauteurs De Saumur",
+        "lat": 47.2970385,
+        "lng": 0.3595676
       },
       {
         "src": "/media/2026-05-31-le-menitre-tours/saint lambert des levées.webp",
         "thumb": "/media/2026-05-31-le-menitre-tours/thumb_saint lambert des levées.webp",
-        "alt": "Saint Lambert Des LevéEs"
+        "alt": "Saint Lambert Des LevéEs",
+        "lat": 47.2319625,
+        "lng": 0.0040767
       },
       {
         "src": "/media/2026-05-31-le-menitre-tours/vignes de saumur.webp",
         "thumb": "/media/2026-05-31-le-menitre-tours/thumb_vignes de saumur.webp",
-        "alt": "Vignes De Saumur"
+        "alt": "Vignes De Saumur",
+        "lat": 47.2975274,
+        "lng": 0.3614112
       }
     ],
     "translations": {
@@ -50710,14 +50740,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -50750,14 +50780,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -50775,14 +50805,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -60858,32 +60888,44 @@
       {
         "src": "/media/2026-06-01-tours-meung-sur-loire/amboise.webp",
         "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_amboise.webp",
-        "alt": "Amboise"
+        "alt": "Amboise",
+        "lat": 47.5114453,
+        "lng": 1.2817568
       },
       {
         "src": "/media/2026-06-01-tours-meung-sur-loire/cathédrale saint-gatien, tours.webp",
         "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_cathédrale saint-gatien, tours.webp",
-        "alt": "CathéDrale Saint Gatien, Tours"
+        "alt": "CathéDrale Saint Gatien, Tours",
+        "lat": 47.3876241,
+        "lng": 0.8802005
       },
       {
         "src": "/media/2026-06-01-tours-meung-sur-loire/château d'amboise.webp",
         "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_château d'amboise.webp",
-        "alt": "ChâTeau D'Amboise"
+        "alt": "ChâTeau D'Amboise",
+        "lat": 47.5227757,
+        "lng": 1.2924644
       },
       {
         "src": "/media/2026-06-01-tours-meung-sur-loire/gare de tours.webp",
         "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_gare de tours.webp",
-        "alt": "Gare De Tours"
+        "alt": "Gare De Tours",
+        "lat": 47.3876241,
+        "lng": 0.8802005
       },
       {
         "src": "/media/2026-06-01-tours-meung-sur-loire/pont d'amboise.webp",
         "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_pont d'amboise.webp",
-        "alt": "Pont D'Amboise"
+        "alt": "Pont D'Amboise",
+        "lat": 47.8001916,
+        "lng": 1.6696013
       },
       {
         "src": "/media/2026-06-01-tours-meung-sur-loire/velo en bambou, 4500e.webp",
         "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_velo en bambou, 4500e.webp",
-        "alt": "Velo En Bambou, 4500e"
+        "alt": "Velo En Bambou, 4500e",
+        "lat": 47.401514,
+        "lng": 0.9374464
       }
     ],
     "translations": {
@@ -61788,14 +61830,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "sauce béchamel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-      },
-      {
         "title": "gaufre",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+      },
+      {
+        "title": "sauce béchamel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
         "title": "crêpe",
@@ -61828,14 +61870,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -61853,14 +61895,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -71208,12 +71250,16 @@
       {
         "src": "/media/2026-06-02-meung-sur-loire-gien/château de sully.webp",
         "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_château de sully.webp",
-        "alt": "ChâTeau De Sully"
+        "alt": "ChâTeau De Sully",
+        "lat": 47.667211,
+        "lng": 2.6548775
       },
       {
         "src": "/media/2026-06-02-meung-sur-loire-gien/coquelicots.webp",
         "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_coquelicots.webp",
-        "alt": "Coquelicots"
+        "alt": "Coquelicots",
+        "lat": 47.7510167,
+        "lng": 2.4710735
       }
     ],
     "translations": {
@@ -71788,6 +71834,13 @@
         "wikiTitle": null
       },
       {
+        "title": "Pont-Canal de Briare",
+        "dist": 4881,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
         "title": "Le Petit Train de Briare",
         "dist": 4891,
         "kind": "Attraction",
@@ -71849,20 +71902,9 @@
         "kind": "Château / fort",
         "rank": 10,
         "wikiTitle": null
-      },
-      {
-        "title": "Château de La Bussière",
-        "dist": 11131,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Château de La Bussière (Loiret)"
       }
     ],
-    "majorCities": [
-      "Orléans",
-      "Olivet",
-      "Saint-Jean-de-Braye"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -71911,14 +71953,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -71966,14 +72008,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
-        "title": "Biancomangiare PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      },
+      {
+        "title": "Biancomangiare PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
       }
     ]
   },
@@ -81317,12 +81359,16 @@
       {
         "src": "/media/2026-06-03-gien-sauvigny-les-bois/café sancerre à sancerre.webp",
         "thumb": "/media/2026-06-03-gien-sauvigny-les-bois/thumb_café sancerre à sancerre.webp",
-        "alt": "Café Sancerre à Sancerre"
+        "alt": "Café Sancerre à Sancerre",
+        "lat": 47.0856415,
+        "lng": 3.022987
       },
       {
         "src": "/media/2026-06-03-gien-sauvigny-les-bois/le papa qui attend son fils avec son beau tshirt.webp",
         "thumb": "/media/2026-06-03-gien-sauvigny-les-bois/thumb_le papa qui attend son fils avec son beau tshirt.webp",
-        "alt": "Le Papa Qui Attend Son Fils Avec Son Beau Tshirt"
+        "alt": "Le Papa Qui Attend Son Fils Avec Son Beau Tshirt",
+        "lat": 46.954236,
+        "lng": 3.1432384
       },
       {
         "src": "/media/2026-06-03-gien-sauvigny-les-bois/verre de pouilly fumé chez danielle et pierre.webp",
@@ -81864,117 +81910,8 @@
       "nl": "Danielle et Pierre",
       "fr": "Danielle et Pierre"
     },
-    "pois": [
-      {
-        "title": "Château de Sermoise",
-        "dist": 1282,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Château de Sermoise"
-      },
-      {
-        "title": "chateau de Maucouvent",
-        "dist": 2757,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Cathédrale Saint-Cyr et Sainte-Julitte",
-        "dist": 3569,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Cathédrale Saint-Cyr-et-Sainte-Julitte de Nevers"
-      },
-      {
-        "title": "Palais ducal",
-        "dist": 3622,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Palais ducal de Nevers"
-      },
-      {
-        "title": "Avant-Porte du Croux",
-        "dist": 3674,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Avant-Porte du Croux"
-      },
-      {
-        "title": "Porte du Croux",
-        "dist": 3680,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Porte du Croux"
-      },
-      {
-        "title": "Porte de Paris",
-        "dist": 3965,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Porte de Paris (Nevers)"
-      },
-      {
-        "title": "La Châsse de Bernadette",
-        "dist": 4253,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château du Marais",
-        "dist": 5688,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Château du Marais (Nièvre)"
-      },
-      {
-        "title": "Château de Luanges",
-        "dist": 7236,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Fertot",
-        "dist": 7391,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kilomètre 0 - Loire à vélo",
-        "dist": 8015,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Le Bec d'Allier",
-        "dist": 8518,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pont Canal du Guétin",
-        "dist": 8542,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de la Rocherie",
-        "dist": 9276,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      }
-    ],
-    "majorCities": [
-      "Nevers",
-      "Cosne-Cours-sur-Loire"
-    ],
+    "pois": [],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -81993,14 +81930,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
-        "title": "baguette",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
-      },
-      {
         "title": "crêpe",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+      },
+      {
+        "title": "baguette",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
       },
       {
         "title": "roquefort",
@@ -82023,14 +81960,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -82068,14 +82005,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "tarte flambée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
+      },
+      {
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "munster",
@@ -91671,113 +91608,7 @@
     "lodgingName": "Camping des Halles - Onlycamp, All. Marcel Merle, 58300 Decize",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Échauguette",
-        "dist": 666,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Porte du Marquis d'Ancre",
-        "dist": 894,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château des comtes de Nevers",
-        "dist": 991,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Germancy",
-        "dist": 2168,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Rosières",
-        "dist": 3189,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Champrobert",
-        "dist": 5055,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Devay",
-        "dist": 5414,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Bateau",
-        "dist": 5879,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Saint-Loup",
-        "dist": 6509,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château",
-        "dist": 7939,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "La Vierge dans l'Arbre",
-        "dist": 8417,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Verneuil",
-        "dist": 8447,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Château de Verneuil (Nièvre)"
-      },
-      {
-        "title": "Château de la Motte-Farchat",
-        "dist": 10497,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Toury",
-        "dist": 11043,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Château de Goujon",
-        "dist": 11288,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Château de Goujon"
-      }
-    ],
+    "pois": [],
     "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
@@ -91827,14 +91658,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -91882,14 +91713,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
-        "title": "Biancomangiare PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      },
+      {
+        "title": "Biancomangiare PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
       }
     ]
   },
@@ -101077,7 +100908,9 @@
       {
         "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
         "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
-        "alt": "083906"
+        "alt": "083906",
+        "lat": 46.8397617,
+        "lng": 3.5019013
       },
       {
         "src": "/media/2026-06-05-decize-paray-le-monial/img_3403.webp",
@@ -101777,14 +101610,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
         "title": "Sauce hollandaise",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+      },
+      {
+        "title": "Merlot",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
         "title": "bouillabaisse",
@@ -101832,14 +101665,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
-        "title": "Biancomangiare PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      },
+      {
+        "title": "Biancomangiare PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
       }
     ]
   },
@@ -111411,27 +111244,37 @@
       {
         "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
         "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
-        "alt": "Img 3404"
+        "alt": "Img 3404",
+        "lat": 46.553172,
+        "lng": 4.2182309
       },
       {
         "src": "/media/2026-06-06-paray-le-monial-verjux/img_3408.webp",
         "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3408.webp",
-        "alt": "Img 3408"
+        "alt": "Img 3408",
+        "lat": 46.6238078,
+        "lng": 4.3648767
       },
       {
         "src": "/media/2026-06-06-paray-le-monial-verjux/img_3411.webp",
         "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3411.webp",
-        "alt": "Img 3411"
+        "alt": "Img 3411",
+        "lat": 46.6348837,
+        "lng": 4.3698881
       },
       {
         "src": "/media/2026-06-06-paray-le-monial-verjux/img_3415.webp",
         "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3415.webp",
-        "alt": "Img 3415"
+        "alt": "Img 3415",
+        "lat": 46.642115,
+        "lng": 4.3715119
       },
       {
         "src": "/media/2026-06-06-paray-le-monial-verjux/img_3422.webp",
         "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3422.webp",
-        "alt": "Img 3422"
+        "alt": "Img 3422",
+        "lat": 46.642115,
+        "lng": 4.3715119
       },
       {
         "src": "/media/2026-06-06-paray-le-monial-verjux/img-20260606-wa0003.webp",
@@ -112076,14 +111919,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -112141,14 +111984,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -125135,7 +124978,9 @@
       {
         "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
         "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
-        "alt": "Img 3426"
+        "alt": "Img 3426",
+        "lat": 47.0795633,
+        "lng": 5.4783543
       }
     ],
     "translations": {
@@ -126319,14 +126164,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -126384,14 +126229,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -132523,17 +132368,23 @@
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
         "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
-        "alt": "BesançOn"
+        "alt": "BesançOn",
+        "lat": 47.2893025,
+        "lng": 6.1979916
       },
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
         "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église saint pierre de besançon.webp",
-        "alt": "éGlise Saint Pierre De BesançOn"
+        "alt": "éGlise Saint Pierre De BesançOn",
+        "lat": 47.3011061,
+        "lng": 6.2353268
       },
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
         "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église sainte madeleine de besançon.webp",
-        "alt": "éGlise Sainte Madeleine De BesançOn"
+        "alt": "éGlise Sainte Madeleine De BesançOn",
+        "lat": 47.3208159,
+        "lng": 6.2695412
       },
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",
@@ -132543,7 +132394,9 @@
       {
         "src": "/media/2026-06-08-orchamps-fourbanne/juste avant besançon.webp",
         "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_juste avant besançon.webp",
-        "alt": "Juste Avant BesançOn"
+        "alt": "Juste Avant BesançOn",
+        "lat": 47.2439063,
+        "lng": 6.0678918
       }
     ],
     "translations": {
@@ -132943,14 +132796,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -133008,14 +132861,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -144367,7 +144220,9 @@
       {
         "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
         "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_camping.webp",
-        "alt": "Camping"
+        "alt": "Camping",
+        "lat": 47.4501485,
+        "lng": 6.5806982
       },
       {
         "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/img_3451.webp",
@@ -145213,6 +145068,13 @@
         "wikiTitle": null
       },
       {
+        "title": "Monument aux morts",
+        "dist": 1172,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
         "title": "Observatoire",
         "dist": 1857,
         "kind": "Point de vue",
@@ -145222,13 +145084,6 @@
       {
         "title": "Emplacement de la nécropole mérovingienne",
         "dist": 3755,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monument aux Morts",
-        "dist": 4304,
         "kind": "Monument / ruines",
         "rank": 8,
         "wikiTitle": null
@@ -145274,14 +145129,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
       },
       {
-        "title": "gaufre",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-      },
-      {
         "title": "sauce béchamel",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+      },
+      {
+        "title": "gaufre",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
       },
       {
         "title": "crêpe",
@@ -145339,14 +145194,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -160092,7 +159947,9 @@
       {
         "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
         "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_bâtiment a cote du temple de mulhouse.webp",
-        "alt": "BâTiment A Cote Du Temple De Mulhouse"
+        "alt": "BâTiment A Cote Du Temple De Mulhouse",
+        "lat": 47.678171,
+        "lng": 7.5055853
       },
       {
         "src": "/media/2026-06-10-allenjoie-mohlin/i felt threatened.webp",
@@ -160112,22 +159969,30 @@
       {
         "src": "/media/2026-06-10-allenjoie-mohlin/pont au centre historique de bale.webp",
         "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont au centre historique de bale.webp",
-        "alt": "Pont Au Centre Historique De Bale"
+        "alt": "Pont Au Centre Historique De Bale",
+        "lat": 47.5597566,
+        "lng": 7.8258483
       },
       {
         "src": "/media/2026-06-10-allenjoie-mohlin/pont de bale.webp",
         "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont de bale.webp",
-        "alt": "Pont De Bale"
+        "alt": "Pont De Bale",
+        "lat": 47.5550443,
+        "lng": 7.7608484
       },
       {
         "src": "/media/2026-06-10-allenjoie-mohlin/temple saint-étienne de mulhouse.webp",
         "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_temple saint-étienne de mulhouse.webp",
-        "alt": "Temple Saint éTienne De Mulhouse"
+        "alt": "Temple Saint éTienne De Mulhouse",
+        "lat": 47.6579509,
+        "lng": 7.5119686
       },
       {
         "src": "/media/2026-06-10-allenjoie-mohlin/vue du pont de bale.webp",
         "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_vue du pont de bale.webp",
-        "alt": "Vue Du Pont De Bale"
+        "alt": "Vue Du Pont De Bale",
+        "lat": 47.555081,
+        "lng": 7.7612771
       }
     ],
     "translations": {
@@ -170768,27 +170633,37 @@
       {
         "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
         "thumb": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
-        "alt": "ChûTes Du Rhin"
+        "alt": "ChûTes Du Rhin",
+        "lat": 47.6608,
+        "lng": 8.857836
       },
       {
         "src": "/media/2026-06-11-mohlin-wangen/img_3500.webp",
         "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3500.webp",
-        "alt": "Img 3500"
+        "alt": "Img 3500",
+        "lat": 47.6032602,
+        "lng": 8.273254
       },
       {
         "src": "/media/2026-06-11-mohlin-wangen/img_3514.webp",
         "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3514.webp",
-        "alt": "Img 3514"
+        "alt": "Img 3514",
+        "lat": 47.6596966,
+        "lng": 8.9367776
       },
       {
         "src": "/media/2026-06-11-mohlin-wangen/img_3517.webp",
         "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3517.webp",
-        "alt": "Img 3517"
+        "alt": "Img 3517",
+        "lat": 47.6596966,
+        "lng": 8.9367776
       },
       {
         "src": "/media/2026-06-11-mohlin-wangen/juste après avoir quitté sandro et anja.webp",
         "thumb": "/media/2026-06-11-mohlin-wangen/thumb_juste après avoir quitté sandro et anja.webp",
-        "alt": "Juste AprèS Avoir Quitté Sandro Et Anja"
+        "alt": "Juste AprèS Avoir Quitté Sandro Et Anja",
+        "lat": 47.6129439,
+        "lng": 8.2548134
       },
       {
         "src": "/media/2026-06-11-mohlin-wangen/stein am rhein.webp",
@@ -171503,14 +171378,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Fischbrötchen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-      },
-      {
         "title": "Mett",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+      },
+      {
+        "title": "Fischbrötchen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
       },
       {
         "title": "Pain de munition",
@@ -171518,14 +171393,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Weisslacker",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Pfälzer Saumagen",
@@ -177858,22 +177733,30 @@
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/die donauwelle.webp",
         "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_die donauwelle.webp",
-        "alt": "Die Donauwelle"
+        "alt": "Die Donauwelle",
+        "lat": 48.0818916,
+        "lng": 9.1287949
       },
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/img_3538.webp",
         "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3538.webp",
-        "alt": "Img 3538"
+        "alt": "Img 3538",
+        "lat": 47.8611805,
+        "lng": 8.883426
       },
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/img_3562.webp",
         "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3562.webp",
-        "alt": "Img 3562"
+        "alt": "Img 3562",
+        "lat": 48.0762442,
+        "lng": 9.1724546
       },
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/img_3570.webp",
         "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3570.webp",
-        "alt": "Img 3570"
+        "alt": "Img 3570",
+        "lat": 48.0759304,
+        "lng": 9.2011213
       },
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/img_3578.webp",
@@ -177883,7 +177766,9 @@
       {
         "src": "/media/2026-06-13-wangen-sigmaringen/le danube a tuttlingen.webp",
         "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_le danube a tuttlingen.webp",
-        "alt": "Le Danube A Tuttlingen"
+        "alt": "Le Danube A Tuttlingen",
+        "lat": 48.0301963,
+        "lng": 8.9638118
       }
     ],
     "translations": {
@@ -178366,14 +178251,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Weisslacker",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Pfälzer Saumagen",
@@ -184736,22 +184621,30 @@
       {
         "src": "/media/2026-06-14-sigmaringen-ulm/20260614_141553.webp",
         "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_20260614_141553.webp",
-        "alt": "141553"
+        "alt": "141553",
+        "lat": 48.2415614,
+        "lng": 9.6081799
       },
       {
         "src": "/media/2026-06-14-sigmaringen-ulm/20260614_172522.webp",
         "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_20260614_172522.webp",
-        "alt": "172522"
+        "alt": "172522",
+        "lat": 48.3889281,
+        "lng": 9.9854837
       },
       {
         "src": "/media/2026-06-14-sigmaringen-ulm/img_3589.webp",
         "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_img_3589.webp",
-        "alt": "Img 3589"
+        "alt": "Img 3589",
+        "lat": 48.0522858,
+        "lng": 9.3192709
       },
       {
         "src": "/media/2026-06-14-sigmaringen-ulm/img_3599.webp",
         "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_img_3599.webp",
-        "alt": "Img 3599"
+        "alt": "Img 3599",
+        "lat": 48.2416583,
+        "lng": 9.6081491
       }
     ],
     "translations": {
@@ -185214,14 +185107,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Fischbrötchen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-      },
-      {
         "title": "Mett",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+      },
+      {
+        "title": "Fischbrötchen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
       },
       {
         "title": "Pain de munition",
@@ -185229,14 +185122,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Weisslacker",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Pfälzer Saumagen",
@@ -194069,22 +193962,30 @@
       {
         "src": "/media/2026-06-15-ulm-donauworth/20260615_101246.webp",
         "thumb": "/media/2026-06-15-ulm-donauworth/thumb_20260615_101246.webp",
-        "alt": "101246"
+        "alt": "101246",
+        "lat": 48.5225402,
+        "lng": 10.3631048
       },
       {
         "src": "/media/2026-06-15-ulm-donauworth/20260615_110146.webp",
         "thumb": "/media/2026-06-15-ulm-donauworth/thumb_20260615_110146.webp",
-        "alt": "110146"
+        "alt": "110146",
+        "lat": 48.5692111,
+        "lng": 10.4290757
       },
       {
         "src": "/media/2026-06-15-ulm-donauworth/img_3601.webp",
         "thumb": "/media/2026-06-15-ulm-donauworth/thumb_img_3601.webp",
-        "alt": "Img 3601"
+        "alt": "Img 3601",
+        "lat": 48.4524793,
+        "lng": 10.2162726
       },
       {
         "src": "/media/2026-06-15-ulm-donauworth/img_3604.webp",
         "thumb": "/media/2026-06-15-ulm-donauworth/thumb_img_3604.webp",
-        "alt": "Img 3604"
+        "alt": "Img 3604",
+        "lat": 48.4934832,
+        "lng": 10.3564606
       }
     ],
     "translations": {
@@ -194784,14 +194685,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Fischbrötchen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-      },
-      {
         "title": "Mett",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+      },
+      {
+        "title": "Fischbrötchen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
       },
       {
         "title": "Pain de munition",
@@ -194799,14 +194700,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Weisslacker",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Pfälzer Saumagen",
@@ -200993,7 +200894,9 @@
       {
         "src": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3622.webp",
         "thumb": "/media/2026-06-16-donauworth-vohburg-an-der-donau/thumb_img_3622.webp",
-        "alt": "Img 3622"
+        "alt": "Img 3622",
+        "lat": 48.7640689,
+        "lng": 11.4234395
       },
       {
         "src": "/media/2026-06-16-donauworth-vohburg-an-der-donau/img_3631.webp",
@@ -201284,113 +201187,7 @@
     "lodgingName": "Rest Stop and Campsite For Canoers and Cyclists, 85088 Vohburg an der Donau, Allemagne",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Fort VI Prinz Karl",
-        "dist": 7208,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Katharinenberg (Großmehring)#Fort VI .E2.80.9EPrinz Karl.E2.80.9C"
-      },
-      {
-        "title": "Huey",
-        "dist": 9029,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Wandgemälde von der Grundschule Mailing",
-        "dist": 9707,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Starfighter",
-        "dist": 10762,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Phantom",
-        "dist": 10853,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Tornado",
-        "dist": 10854,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Jakobs-Rast",
-        "dist": 11007,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Wegweiser für Jakobspilger",
-        "dist": 11088,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mosaikboden von Santiago de Compostella",
-        "dist": 11215,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Partnerschaftsdenkmal",
-        "dist": 11244,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Denkmalbrett für Jakobspilger",
-        "dist": 11345,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gartenpavillon",
-        "dist": 11358,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Baumbilder",
-        "dist": 11586,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Geburtshaus Anna Schäffer",
-        "dist": 8836,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Museum Kösching",
-        "dist": 9841,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museum Kösching"
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Ingolstadt",
       "Neuburg an der Donau",
@@ -201454,14 +201251,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Fischbrötchen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-      },
-      {
         "title": "Mett",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+      },
+      {
+        "title": "Fischbrötchen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
       },
       {
         "title": "Pain de munition",
@@ -201469,14 +201266,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Weisslacker",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Pfälzer Saumagen",
@@ -207719,12 +207516,16 @@
       {
         "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3640.webp",
         "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3640.webp",
-        "alt": "Img 3640"
+        "alt": "Img 3640",
+        "lat": 48.9056798,
+        "lng": 11.960714
       },
       {
         "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3648.webp",
         "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3648.webp",
-        "alt": "Img 3648"
+        "alt": "Img 3648",
+        "lat": 48.9149553,
+        "lng": 11.9686224
       },
       {
         "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3663.webp",
@@ -208197,14 +207998,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Fischbrötchen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-      },
-      {
         "title": "Mett",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+      },
+      {
+        "title": "Fischbrötchen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
       },
       {
         "title": "Pain de munition",
@@ -208212,14 +208013,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
         "title": "Weisslacker",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
         "title": "Pfälzer Saumagen",
@@ -220148,12 +219949,16 @@
       {
         "src": "/media/2026-06-18-zeitlarn-osterhofen/bratwurstkipferl.webp",
         "thumb": "/media/2026-06-18-zeitlarn-osterhofen/thumb_bratwurstkipferl.webp",
-        "alt": "Bratwurstkipferl"
+        "alt": "Bratwurstkipferl",
+        "lat": 48.9790908,
+        "lng": 12.335623
       },
       {
         "src": "/media/2026-06-18-zeitlarn-osterhofen/straubing.webp",
         "thumb": "/media/2026-06-18-zeitlarn-osterhofen/thumb_straubing.webp",
-        "alt": "Straubing"
+        "alt": "Straubing",
+        "lat": 48.8539472,
+        "lng": 12.767186
       }
     ],
     "translations": {
@@ -221413,14 +221218,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Fischbrötchen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-      },
-      {
         "title": "Mett",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+      },
+      {
+        "title": "Fischbrötchen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
       },
       {
         "title": "Pain de munition",
@@ -221428,9 +221233,9 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
       },
       {
-        "title": "Pfälzer Saumagen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+        "title": "Weisslacker",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
       },
       {
         "title": "Leberknödel",
@@ -221438,9 +221243,9 @@
         "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
       },
       {
-        "title": "Weisslacker",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+        "title": "Pfälzer Saumagen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
       }
     ]
   },
@@ -227710,12 +227515,16 @@
       {
         "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
         "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
-        "alt": "Img 3674"
+        "alt": "Img 3674",
+        "lat": 48.5174635,
+        "lng": 13.714622
       },
       {
         "src": "/media/2026-06-20-osterhofen-linz/img_3682.webp",
         "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3682.webp",
-        "alt": "Img 3682"
+        "alt": "Img 3682",
+        "lat": 48.4202295,
+        "lng": 13.9839635
       },
       {
         "src": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
@@ -228151,14 +227960,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
       },
       {
-        "title": "Eiernockerl",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-      },
-      {
         "title": "maluns",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+      },
+      {
+        "title": "Eiernockerl",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
       },
       {
         "title": "serviettenknödel",
@@ -234478,12 +234287,16 @@
       {
         "src": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
         "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
-        "alt": "Img 3706"
+        "alt": "Img 3706",
+        "lat": 48.1880415,
+        "lng": 15.0672408
       },
       {
         "src": "/media/2026-06-21-linz-pochlarn/img_3712.webp",
         "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3712.webp",
-        "alt": "Img 3712"
+        "alt": "Img 3712",
+        "lat": 48.1786942,
+        "lng": 15.0850197
       },
       {
         "src": "/media/2026-06-21-linz-pochlarn/juste après le camping.webp",
@@ -234493,12 +234306,16 @@
       {
         "src": "/media/2026-06-21-linz-pochlarn/krems an der donau.webp",
         "thumb": "/media/2026-06-21-linz-pochlarn/thumb_krems an der donau.webp",
-        "alt": "Krems An Der Donau"
+        "alt": "Krems An Der Donau",
+        "lat": 48.1785947,
+        "lng": 15.085105
       },
       {
         "src": "/media/2026-06-21-linz-pochlarn/sur un pont avant tulln.webp",
         "thumb": "/media/2026-06-21-linz-pochlarn/thumb_sur un pont avant tulln.webp",
-        "alt": "Sur Un Pont Avant Tulln"
+        "alt": "Sur Un Pont Avant Tulln",
+        "lat": 48.2128799,
+        "lng": 15.1931904
       }
     ],
     "translations": {
@@ -243768,12 +243585,16 @@
       {
         "src": "/media/2026-06-22-pochlarn-vienne/abbaye de melk.webp",
         "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_abbaye de melk.webp",
-        "alt": "Abbaye De Melk"
+        "alt": "Abbaye De Melk",
+        "lat": 48.3401583,
+        "lng": 15.4040052
       },
       {
         "src": "/media/2026-06-22-pochlarn-vienne/going a little bit faster than this boat.webp",
         "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_going a little bit faster than this boat.webp",
-        "alt": "Going A Little Bit Faster Than This Boat"
+        "alt": "Going A Little Bit Faster Than This Boat",
+        "lat": 48.2002352,
+        "lng": 16.3658357
       },
       {
         "src": "/media/2026-06-22-pochlarn-vienne/pwc.webp",
@@ -243783,7 +243604,9 @@
       {
         "src": "/media/2026-06-22-pochlarn-vienne/vin pétillant.webp",
         "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_vin pétillant.webp",
-        "alt": "Vin PéTillant"
+        "alt": "Vin PéTillant",
+        "lat": 48.3931948,
+        "lng": 15.5583116
       }
     ],
     "translations": {
@@ -244374,7 +244197,7 @@
       },
       {
         "title": "Fiaker",
-        "dist": 2900,
+        "dist": 2906,
         "kind": "Attraction",
         "rank": 10,
         "wikiTitle": null
@@ -244481,14 +244304,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
       },
       {
-        "title": "Eiernockerl",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-      },
-      {
         "title": "maluns",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+      },
+      {
+        "title": "Eiernockerl",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
       },
       {
         "title": "serviettenknödel",
@@ -250650,7 +250473,9 @@
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3783.webp",
-        "alt": "Img 3783"
+        "alt": "Img 3783",
+        "lat": 48.1436457,
+        "lng": 17.1064697
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3791.webp",
@@ -250665,17 +250490,23 @@
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3805.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3805.webp",
-        "alt": "Img 3805"
+        "alt": "Img 3805",
+        "lat": 48.0270273,
+        "lng": 17.2061883
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3806.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3806.webp",
-        "alt": "Img 3806"
+        "alt": "Img 3806",
+        "lat": 48.030677,
+        "lng": 17.2327726
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3809.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3809.webp",
-        "alt": "Img 3809"
+        "alt": "Img 3809",
+        "lat": 48.030677,
+        "lng": 17.2327726
       }
     ],
     "translations": {
@@ -251086,38 +250917,7 @@
       "Hainburg an der Donau"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "bryndzové halušky",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
-      },
-      {
-        "title": "oublie",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
-      },
-      {
-        "title": "lokša",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
-      },
-      {
-        "title": "strapačky",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
-        "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
-      },
-      {
-        "title": "Oštiepok",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
-      },
-      {
-        "title": "balkánský sýr",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-07-04-bratislava-kravany-nad-dunajom",
@@ -257481,7 +257281,9 @@
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_171203.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_171203.webp",
-        "alt": "171203"
+        "alt": "171203",
+        "lat": 47.7412395,
+        "lng": 18.2656383
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
@@ -257491,42 +257293,58 @@
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3816.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3816.webp",
-        "alt": "Img 3816"
+        "alt": "Img 3816",
+        "lat": 47.7912751,
+        "lng": 17.6894741
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3819.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3819.webp",
-        "alt": "Img 3819"
+        "alt": "Img 3819",
+        "lat": 47.7421254,
+        "lng": 18.2626017
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3821.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3821.webp",
-        "alt": "Img 3821"
+        "alt": "Img 3821",
+        "lat": 47.7412395,
+        "lng": 18.2656383
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3827.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3827.webp",
-        "alt": "Img 3827"
+        "alt": "Img 3827",
+        "lat": 47.7412395,
+        "lng": 18.2656383
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3830.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3830.webp",
-        "alt": "Img 3830"
+        "alt": "Img 3830",
+        "lat": 47.7411827,
+        "lng": 18.2657981
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3834.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3834.webp",
-        "alt": "Img 3834"
+        "alt": "Img 3834",
+        "lat": 47.7479176,
+        "lng": 18.375732
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3835.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3835.webp",
-        "alt": "Img 3835"
+        "alt": "Img 3835",
+        "lat": 47.7638337,
+        "lng": 18.4148433
       },
       {
         "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3838.webp",
         "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3838.webp",
-        "alt": "Img 3838"
+        "alt": "Img 3838",
+        "lat": 47.776538,
+        "lng": 18.4664581
       }
     ],
     "translations": {
@@ -257925,38 +257743,7 @@
       "Šamorín"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "bryndzové halušky",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
-      },
-      {
-        "title": "oublie",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
-      },
-      {
-        "title": "lokša",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
-      },
-      {
-        "title": "strapačky",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
-        "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
-      },
-      {
-        "title": "Oštiepok",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
-      },
-      {
-        "title": "balkánský sýr",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-07-05-kravany-nad-dunajom-budapest",
@@ -268816,22 +268603,30 @@
       {
         "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3841.webp",
         "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3841.webp",
-        "alt": "Img 3841"
+        "alt": "Img 3841",
+        "lat": 47.8280819,
+        "lng": 18.8555464
       },
       {
         "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3843.webp",
         "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3843.webp",
-        "alt": "Img 3843"
+        "alt": "Img 3843",
+        "lat": 47.8159267,
+        "lng": 18.8619331
       },
       {
         "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3852.webp",
         "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3852.webp",
-        "alt": "Img 3852"
+        "alt": "Img 3852",
+        "lat": 47.8158995,
+        "lng": 18.8618448
       },
       {
         "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3857.webp",
         "thumb": "/media/2026-07-05-kravany-nad-dunajom-budapest/thumb_img_3857.webp",
-        "alt": "Img 3857"
+        "alt": "Img 3857",
+        "lat": 47.7022752,
+        "lng": 19.1290283
       },
       {
         "src": "/media/2026-07-05-kravany-nad-dunajom-budapest/img_3875.webp",
@@ -269745,11 +269540,7 @@
         "wikiTitle": "Sziklakórház Atombunker Múzeum"
       }
     ],
-    "majorCities": [
-      "Dunakeszi",
-      "Vác",
-      "Esztergom"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -283856,17 +283647,23 @@
       {
         "src": "/media/2026-07-06-budapest-gardony/20260706_130945.webp",
         "thumb": "/media/2026-07-06-budapest-gardony/thumb_20260706_130945.webp",
-        "alt": "130945"
+        "alt": "130945",
+        "lat": 47.4648129,
+        "lng": 19.0192493
       },
       {
         "src": "/media/2026-07-06-budapest-gardony/img_3908.webp",
         "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3908.webp",
-        "alt": "Img 3908"
+        "alt": "Img 3908",
+        "lat": 47.4471623,
+        "lng": 18.9858541
       },
       {
         "src": "/media/2026-07-06-budapest-gardony/img_3910.webp",
         "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3910.webp",
-        "alt": "Img 3910"
+        "alt": "Img 3910",
+        "lat": 47.4328144,
+        "lng": 18.7429327
       },
       {
         "src": "/media/2026-07-06-budapest-gardony/img_3918.webp",
@@ -291490,37 +291287,51 @@
       {
         "src": "/media/2026-07-07-gardony-revfulop/img_3936.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3936.webp",
-        "alt": "Img 3936"
+        "alt": "Img 3936",
+        "lat": 47.031752,
+        "lng": 18.1067548
       },
       {
         "src": "/media/2026-07-07-gardony-revfulop/img_3944.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3944.webp",
-        "alt": "Img 3944"
+        "alt": "Img 3944",
+        "lat": 46.9207919,
+        "lng": 17.8517831
       },
       {
         "src": "/media/2026-07-07-gardony-revfulop/img_3947.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3947.webp",
-        "alt": "Img 3947"
+        "alt": "Img 3947",
+        "lat": 46.9208966,
+        "lng": 17.8510985
       },
       {
         "src": "/media/2026-07-07-gardony-revfulop/img_3948.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3948.webp",
-        "alt": "Img 3948"
+        "alt": "Img 3948",
+        "lat": 46.871088,
+        "lng": 17.6860791
       },
       {
         "src": "/media/2026-07-07-gardony-revfulop/img_3950.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3950.webp",
-        "alt": "Img 3950"
+        "alt": "Img 3950",
+        "lat": 46.8625736,
+        "lng": 17.6754961
       },
       {
         "src": "/media/2026-07-07-gardony-revfulop/img_3964.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3964.webp",
-        "alt": "Img 3964"
+        "alt": "Img 3964",
+        "lat": 46.8293927,
+        "lng": 17.6400231
       },
       {
         "src": "/media/2026-07-07-gardony-revfulop/img_3967.webp",
         "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3967.webp",
-        "alt": "Img 3967"
+        "alt": "Img 3967",
+        "lat": 46.8280003,
+        "lng": 17.6417372
       }
     ],
     "translations": {
@@ -298310,22 +298121,30 @@
       {
         "src": "/media/2026-07-08-revfulop-halogy/img_3973.webp",
         "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3973.webp",
-        "alt": "Img 3973"
+        "alt": "Img 3973",
+        "lat": 46.9032963,
+        "lng": 17.1078864
       },
       {
         "src": "/media/2026-07-08-revfulop-halogy/img_3975.webp",
         "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3975.webp",
-        "alt": "Img 3975"
+        "alt": "Img 3975",
+        "lat": 46.9034318,
+        "lng": 17.1073884
       },
       {
         "src": "/media/2026-07-08-revfulop-halogy/img_3977.webp",
         "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3977.webp",
-        "alt": "Img 3977"
+        "alt": "Img 3977",
+        "lat": 46.9034318,
+        "lng": 17.1073884
       },
       {
         "src": "/media/2026-07-08-revfulop-halogy/img_3983.webp",
         "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3983.webp",
-        "alt": "Img 3983"
+        "alt": "Img 3983",
+        "lat": 46.9034318,
+        "lng": 17.1073884
       },
       {
         "src": "/media/2026-07-08-revfulop-halogy/img_3985.webp",
@@ -298335,7 +298154,9 @@
       {
         "src": "/media/2026-07-08-revfulop-halogy/img_3986.webp",
         "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3986.webp",
-        "alt": "Img 3986"
+        "alt": "Img 3986",
+        "lat": 47.0284455,
+        "lng": 16.9237292
       }
     ],
     "translations": {
@@ -315411,58 +315232,7 @@
       "Jennersdorf"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "escalope à la viennoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2022-12-29%20Wiener%20Schnitzel%20im%20Hotel%20Kaiserin%20Elisabeth.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Escalope_%C3%A0_la_viennoise"
-      },
-      {
-        "title": "Leberknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-      },
-      {
-        "title": "gaufrette",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Neapolitaner%20Waffel.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Neapolitan_wafer"
-      },
-      {
-        "title": "Apfelküchle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apfelkuechle-on-plate.png",
-        "wikipedia": "https://en.wikipedia.org/wiki/Apfelk%C3%BCchle"
-      },
-      {
-        "title": "Christmas carp",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A1noce%2C%20sma%C5%BEen%C3%BD%20kapr.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Christmas_carp"
-      },
-      {
-        "title": "ischler",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
-      },
-      {
-        "title": "maluns",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
-      },
-      {
-        "title": "Eiernockerl",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-      },
-      {
-        "title": "serviettenknödel",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Serviettenkloss.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Serviettenkn%C3%B6del"
-      },
-      {
-        "title": "Waldviertler",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-07-11-graz-pernegg-an-der-mur",
@@ -321476,7 +321246,9 @@
       {
         "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4021 (1).webp",
         "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_img_4021 (1).webp",
-        "alt": "Img 4021 (1)"
+        "alt": "Img 4021 (1)",
+        "lat": 47.2160257,
+        "lng": 15.3354754
       },
       {
         "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4029.webp",
@@ -331294,57 +331066,79 @@
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
-        "alt": "Img 4037"
+        "alt": "Img 4037",
+        "lat": 47.3799159,
+        "lng": 15.0948801
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4041.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4041.webp",
-        "alt": "Img 4041"
+        "alt": "Img 4041",
+        "lat": 47.3799159,
+        "lng": 15.0948801
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4048.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4048.webp",
-        "alt": "Img 4048"
+        "alt": "Img 4048",
+        "lat": 47.3363776,
+        "lng": 15.045132
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4054.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4054.webp",
-        "alt": "Img 4054"
+        "alt": "Img 4054",
+        "lat": 47.3319337,
+        "lng": 15.0271571
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4060.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4060.webp",
-        "alt": "Img 4060"
+        "alt": "Img 4060",
+        "lat": 47.3772195,
+        "lng": 14.9784571
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4062.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4062.webp",
-        "alt": "Img 4062"
+        "alt": "Img 4062",
+        "lat": 47.4168528,
+        "lng": 14.7661637
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4088.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4088.webp",
-        "alt": "Img 4088"
+        "alt": "Img 4088",
+        "lat": 47.4294414,
+        "lng": 14.7095157
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4092.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4092.webp",
-        "alt": "Img 4092"
+        "alt": "Img 4092",
+        "lat": 47.4352903,
+        "lng": 14.6948478
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4095.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4095.webp",
-        "alt": "Img 4095"
+        "alt": "Img 4095",
+        "lat": 47.508673,
+        "lng": 14.4572866
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4101.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4101.webp",
-        "alt": "Img 4101"
+        "alt": "Img 4101",
+        "lat": 47.5163666,
+        "lng": 14.4316656
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4105.webp",
         "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4105.webp",
-        "alt": "Img 4105"
+        "alt": "Img 4105",
+        "lat": 47.5270358,
+        "lng": 14.3705645
       },
       {
         "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4108.webp",
@@ -340704,17 +340498,23 @@
       {
         "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4115.webp",
         "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4115.webp",
-        "alt": "Img 4115"
+        "alt": "Img 4115",
+        "lat": 47.4205664,
+        "lng": 13.865202
       },
       {
         "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4127.webp",
         "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4127.webp",
-        "alt": "Img 4127"
+        "alt": "Img 4127",
+        "lat": 47.3883834,
+        "lng": 13.6061124
       },
       {
         "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4131.webp",
         "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4131.webp",
-        "alt": "Img 4131"
+        "alt": "Img 4131",
+        "lat": 47.3884219,
+        "lng": 13.6052146
       },
       {
         "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4142.webp",
@@ -341417,14 +341217,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
       },
       {
-        "title": "Eiernockerl",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-      },
-      {
         "title": "maluns",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+      },
+      {
+        "title": "Eiernockerl",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
       },
       {
         "title": "serviettenknödel",
@@ -351954,42 +351754,58 @@
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4147.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4147.webp",
-        "alt": "Img 4147"
+        "alt": "Img 4147",
+        "lat": 47.2897485,
+        "lng": 13.0601062
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4148.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4148.webp",
-        "alt": "Img 4148"
+        "alt": "Img 4148",
+        "lat": 47.2725651,
+        "lng": 13.0779632
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4159.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4159.webp",
-        "alt": "Img 4159"
+        "alt": "Img 4159",
+        "lat": 47.2158166,
+        "lng": 13.1100563
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4169.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4169.webp",
-        "alt": "Img 4169"
+        "alt": "Img 4169",
+        "lat": 46.9822378,
+        "lng": 13.1755508
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4171.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4171.webp",
-        "alt": "Img 4171"
+        "alt": "Img 4171",
+        "lat": 46.9741159,
+        "lng": 13.1766138
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4173.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4173.webp",
-        "alt": "Img 4173"
+        "alt": "Img 4173",
+        "lat": 46.9733125,
+        "lng": 13.1788764
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4178.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4178.webp",
-        "alt": "Img 4178"
+        "alt": "Img 4178",
+        "lat": 46.9347222,
+        "lng": 13.1983466
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4181.webp",
         "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4181.webp",
-        "alt": "Img 4181"
+        "alt": "Img 4181",
+        "lat": 46.9336546,
+        "lng": 13.1978496
       },
       {
         "src": "/media/2026-07-14-flachau-obervellach/img_4183.webp",
@@ -352957,14 +352773,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
       },
       {
-        "title": "Eiernockerl",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-      },
-      {
         "title": "maluns",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+      },
+      {
+        "title": "Eiernockerl",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
       },
       {
         "title": "serviettenknödel",
@@ -359420,22 +359236,30 @@
       {
         "src": "/media/2026-07-15-obervellach-strassen/img_4193.webp",
         "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4193.webp",
-        "alt": "Img 4193"
+        "alt": "Img 4193",
+        "lat": 46.7440098,
+        "lng": 12.9574295
       },
       {
         "src": "/media/2026-07-15-obervellach-strassen/img_4196.webp",
         "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4196.webp",
-        "alt": "Img 4196"
+        "alt": "Img 4196",
+        "lat": 46.8270982,
+        "lng": 12.7728713
       },
       {
         "src": "/media/2026-07-15-obervellach-strassen/img_4205.webp",
         "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4205.webp",
-        "alt": "Img 4205"
+        "alt": "Img 4205",
+        "lat": 46.7600126,
+        "lng": 12.5591372
       },
       {
         "src": "/media/2026-07-15-obervellach-strassen/img_4207.webp",
         "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4207.webp",
-        "alt": "Img 4207"
+        "alt": "Img 4207",
+        "lat": 46.7462363,
+        "lng": 12.4636128
       },
       {
         "src": "/media/2026-07-15-obervellach-strassen/img_4209.webp",
@@ -359881,14 +359705,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
       },
       {
-        "title": "Eiernockerl",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-      },
-      {
         "title": "maluns",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+      },
+      {
+        "title": "Eiernockerl",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
       },
       {
         "title": "serviettenknödel",
@@ -372420,22 +372244,30 @@
       {
         "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
         "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
-        "alt": "Img 4221"
+        "alt": "Img 4221",
+        "lat": 46.7382597,
+        "lng": 12.1333999
       },
       {
         "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4225.webp",
         "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4225.webp",
-        "alt": "Img 4225"
+        "alt": "Img 4225",
+        "lat": 46.7777125,
+        "lng": 11.8798425
       },
       {
         "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4228.webp",
         "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4228.webp",
-        "alt": "Img 4228"
+        "alt": "Img 4228",
+        "lat": 46.7191128,
+        "lng": 11.6560719
       },
       {
         "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4230.webp",
         "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4230.webp",
-        "alt": "Img 4230"
+        "alt": "Img 4230",
+        "lat": 46.6410825,
+        "lng": 11.573221
       },
       {
         "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4234.webp",
@@ -373337,11 +373169,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Brixen - Bressanone",
-      "Bruneck - Brunico",
-      "Klausen - Chiusa"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -373390,24 +373218,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "Cannoli PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-      },
-      {
         "title": "tortellini",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+        "title": "Cannoli PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -373420,16 +373248,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "osso buco",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-      },
-      {
-        "title": "Penne",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-      },
-      {
         "title": "Fettuccine",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -373440,14 +373258,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
+        "title": "osso buco",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+      },
+      {
+        "title": "Penne",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+      },
+      {
         "title": "sabayon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-      },
-      {
-        "title": "Chianti DOCG",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
       }
     ]
   },
@@ -380216,14 +380044,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-      },
-      {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -380236,16 +380064,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "osso buco",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-      },
-      {
-        "title": "Penne",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-      },
-      {
         "title": "Fettuccine",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -380254,6 +380072,16 @@
         "title": "tagliatelle",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      },
+      {
+        "title": "osso buco",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+      },
+      {
+        "title": "Penne",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
         "title": "pizza Margherita",
@@ -386666,7 +386494,9 @@
       {
         "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4255.webp",
         "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4255.webp",
-        "alt": "Img 4255"
+        "alt": "Img 4255",
+        "lat": 46.065922,
+        "lng": 11.1141307
       },
       {
         "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4261.webp",
@@ -386681,7 +386511,9 @@
       {
         "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4272.webp",
         "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4272.webp",
-        "alt": "Img 4272"
+        "alt": "Img 4272",
+        "lat": 46.0153402,
+        "lng": 11.1236201
       },
       {
         "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4274.webp",
@@ -387117,14 +386949,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
         "title": "Parmigiano Reggiano",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
       },
       {
         "title": "pâtes à la carbonara",
@@ -387147,14 +386979,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "Cannoli PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-      },
-      {
         "title": "tortellini",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+      },
+      {
+        "title": "Cannoli PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
         "title": "sauce tomate",
@@ -387177,6 +387009,11 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      },
+      {
         "title": "tagliatelle",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
@@ -387190,11 +387027,6 @@
         "title": "Penne",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-      },
-      {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
         "title": "pizza Margherita",
@@ -393223,17 +393055,23 @@
       {
         "src": "/media/2026-07-19-mori-malcesine/img_4292.webp",
         "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4292.webp",
-        "alt": "Img 4292"
+        "alt": "Img 4292",
+        "lat": 45.8675246,
+        "lng": 10.8770727
       },
       {
         "src": "/media/2026-07-19-mori-malcesine/img_4297.webp",
         "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4297.webp",
-        "alt": "Img 4297"
+        "alt": "Img 4297",
+        "lat": 45.8661055,
+        "lng": 10.8761472
       },
       {
         "src": "/media/2026-07-19-mori-malcesine/img_4310.webp",
         "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4310.webp",
-        "alt": "Img 4310"
+        "alt": "Img 4310",
+        "lat": 45.8046224,
+        "lng": 10.8434636
       },
       {
         "src": "/media/2026-07-19-mori-malcesine/img_4314.webp",
@@ -393704,14 +393542,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-      },
-      {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -393724,16 +393562,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "osso buco",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-      },
-      {
-        "title": "Penne",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-      },
-      {
         "title": "Fettuccine",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -393742,6 +393570,16 @@
         "title": "tagliatelle",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      },
+      {
+        "title": "osso buco",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+      },
+      {
+        "title": "Penne",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
         "title": "pizza Margherita",
@@ -399909,12 +399747,24 @@
       {
         "src": "/media/2026-07-22-malcesine-sirmione/img_4381.webp",
         "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img_4381.webp",
-        "alt": "Img 4381"
+        "alt": "Img 4381",
+        "lat": 45.5402787,
+        "lng": 10.7253925
       },
       {
         "src": "/media/2026-07-22-malcesine-sirmione/img-20260719-wa0003.webp",
         "thumb": "/media/2026-07-22-malcesine-sirmione/thumb_img-20260719-wa0003.webp",
-        "alt": "Img 20260719 Wa0003"
+        "alt": "Img 20260719 Wa0003",
+        "lat": [
+          null,
+          null,
+          null
+        ],
+        "lng": [
+          null,
+          null,
+          null
+        ]
       }
     ],
     "translations": {
@@ -400208,117 +400058,8 @@
     "lodgingName": "Il Rondò, Via Coorti Romane, 3, 25019 Sirmione BS, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Parco Acquatico Waterland",
-        "dist": 2625,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Porta Verona",
-        "dist": 7559,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Museo Sisan",
-        "dist": 11907,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Museo Sisàn"
-      },
-      {
-        "title": "Campana dei Caduti",
-        "dist": 3668,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Villa romana di Desenzano del Garda",
-        "dist": 5398,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": "Villa romana di Desenzano del Garda"
-      },
-      {
-        "title": "Ai Caduti sul Mare",
-        "dist": 7608,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monumento Ai Caduti",
-        "dist": 10247,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte degli Olivi",
-        "dist": 5943,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte dell'Ingrana",
-        "dist": 6283,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte Barbello",
-        "dist": 6285,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte Alto",
-        "dist": 6616,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte Lungo",
-        "dist": 6807,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte Sant'Antonio",
-        "dist": 6853,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte Corno",
-        "dist": 6974,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monte Venzaghetto",
-        "dist": 7162,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
-    ],
-    "majorCities": [
-      "Peschiera del Garda",
-      "Sirmione"
-    ],
+    "pois": [],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -400337,14 +400078,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -400367,24 +400108,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "tortellini",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
-      },
-      {
         "title": "Cannoli PAT",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+        "title": "tortellini",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -400417,14 +400158,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      },
+      {
         "title": "pizza Margherita",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-      },
-      {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
       }
     ]
   },
@@ -406963,14 +406704,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -407003,14 +406744,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-      },
-      {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -407023,16 +406764,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-      },
-      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -407043,14 +406774,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
-        "title": "Chianti DOCG",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      },
+      {
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -416390,42 +416131,66 @@
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img_4411.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4411.webp",
-        "alt": "Img 4411"
+        "alt": "Img 4411",
+        "lat": 45.1240989,
+        "lng": 10.8249778
       },
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img_4414.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4414.webp",
-        "alt": "Img 4414"
+        "alt": "Img 4414",
+        "lat": 45.1018204,
+        "lng": 10.8442793
       },
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img_4418.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4418.webp",
-        "alt": "Img 4418"
+        "alt": "Img 4418",
+        "lat": 45.0931526,
+        "lng": 10.8631197
       },
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img_4426.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4426.webp",
-        "alt": "Img 4426"
+        "alt": "Img 4426",
+        "lat": 45.0910777,
+        "lng": 10.8727874
       },
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img_4429.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4429.webp",
-        "alt": "Img 4429"
+        "alt": "Img 4429",
+        "lat": 45.0919989,
+        "lng": 10.8823711
       },
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img_4430.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4430.webp",
-        "alt": "Img 4430"
+        "alt": "Img 4430",
+        "lat": 45.049549,
+        "lng": 10.9206069
       },
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img_4435.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4435.webp",
-        "alt": "Img 4435"
+        "alt": "Img 4435",
+        "lat": 45.0590643,
+        "lng": 11.1251616
       },
       {
         "src": "/media/2026-07-27-mantoue-bondeno/img-20260727-wa0002.webp",
         "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img-20260727-wa0002.webp",
-        "alt": "Img 20260727 Wa0002"
+        "alt": "Img 20260727 Wa0002",
+        "lat": [
+          null,
+          null,
+          null
+        ],
+        "lng": [
+          null,
+          null,
+          null
+        ]
       }
     ],
     "translations": {
@@ -417083,14 +416848,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -417123,14 +416888,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-      },
-      {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -417143,16 +416908,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-      },
-      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -417163,14 +416918,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
-        "title": "Chianti DOCG",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+      },
+      {
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      },
+      {
+        "title": "pizza Margherita",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -423576,17 +423341,23 @@
       {
         "src": "/media/2026-07-28-bondeno-chioggia/img_4436.webp",
         "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4436.webp",
-        "alt": "Img 4436"
+        "alt": "Img 4436",
+        "lat": 44.9879692,
+        "lng": 12.0310884
       },
       {
         "src": "/media/2026-07-28-bondeno-chioggia/img_4438.webp",
         "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4438.webp",
-        "alt": "Img 4438"
+        "alt": "Img 4438",
+        "lat": 44.9880226,
+        "lng": 12.0312429
       },
       {
         "src": "/media/2026-07-28-bondeno-chioggia/img_4446.webp",
         "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4446.webp",
-        "alt": "Img 4446"
+        "alt": "Img 4446",
+        "lat": 44.9883423,
+        "lng": 12.0318945
       },
       {
         "src": "/media/2026-07-28-bondeno-chioggia/img_4450.webp",
@@ -424017,14 +423788,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -424057,14 +423828,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-      },
-      {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -424077,11 +423848,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -424092,14 +423858,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      },
+      {
         "title": "tagliatelle",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
       },
       {
         "title": "pizza Margherita",
@@ -433308,32 +433079,44 @@
       {
         "src": "/media/2026-07-29-chioggia-caorle/20260729_142728.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_20260729_142728.webp",
-        "alt": "142728"
+        "alt": "142728",
+        "lat": 45.47972,
+        "lng": 12.5283248
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4460.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4460.webp",
-        "alt": "Img 4460"
+        "alt": "Img 4460",
+        "lat": 45.3329171,
+        "lng": 12.3173828
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4463.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4463.webp",
-        "alt": "Img 4463"
+        "alt": "Img 4463",
+        "lat": 45.3329171,
+        "lng": 12.3173828
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4464.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4464.webp",
-        "alt": "Img 4464"
+        "alt": "Img 4464",
+        "lat": 45.3329171,
+        "lng": 12.3173828
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4466.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4466.webp",
-        "alt": "Img 4466"
+        "alt": "Img 4466",
+        "lat": 45.3459815,
+        "lng": 12.3120967
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4469.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4469.webp",
-        "alt": "Img 4469"
+        "alt": "Img 4469",
+        "lat": 45.3974635,
+        "lng": 12.3608634
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4473.webp",
@@ -433363,17 +433146,23 @@
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4498.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4498.webp",
-        "alt": "Img 4498"
+        "alt": "Img 4498",
+        "lat": 45.4832363,
+        "lng": 12.5401543
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4502.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4502.webp",
-        "alt": "Img 4502"
+        "alt": "Img 4502",
+        "lat": 45.4785586,
+        "lng": 12.5493589
       },
       {
         "src": "/media/2026-07-29-chioggia-caorle/img_4503.webp",
         "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4503.webp",
-        "alt": "Img 4503"
+        "alt": "Img 4503",
+        "lat": 45.4785586,
+        "lng": 12.5493589
       }
     ],
     "translations": {
@@ -433905,6 +433694,13 @@
     "thanksTranslations": {},
     "pois": [
       {
+        "title": "Ca' Corniani La Soglia Nord",
+        "dist": 7286,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
         "title": "Monumento agli Artiglieri",
         "dist": 2125,
         "kind": "Monument / ruines",
@@ -434001,19 +433797,12 @@
         "kind": "Monument / ruines",
         "rank": 8,
         "wikiTitle": null
-      },
-      {
-        "title": "Brucomela",
-        "dist": 8751,
-        "kind": "Parc à thème / zoo",
-        "rank": 7,
-        "wikiTitle": null
       }
     ],
     "majorCities": [
       "Chioggia",
       "Venise",
-      "Lido"
+      "Jesolo"
     ],
     "topRatedPlaces": [],
     "specialties": [
@@ -434033,14 +433822,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -434063,24 +433852,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "tortellini",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
-      },
-      {
         "title": "Cannoli PAT",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+        "title": "tortellini",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
         "title": "sauce tomate",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      },
+      {
+        "title": "Pecorino",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
       },
       {
         "title": "salade caprese",
@@ -434113,14 +433902,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      },
+      {
         "title": "pizza Margherita",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-      },
-      {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
       }
     ]
   },
@@ -443400,12 +443189,16 @@
       {
         "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
         "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4513.webp",
-        "alt": "Img 4513"
+        "alt": "Img 4513",
+        "lat": 45.8163673,
+        "lng": 13.2614827
       },
       {
         "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4514.webp",
         "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4514.webp",
-        "alt": "Img 4514"
+        "alt": "Img 4514",
+        "lat": 45.8167525,
+        "lng": 13.2613038
       }
     ],
     "translations": {
@@ -444064,14 +443857,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
         "title": "macaroni",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+      },
+      {
+        "title": "Parmigiano Reggiano",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
       },
       {
         "title": "pâtes à la carbonara",
@@ -444094,14 +443887,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "tortellini",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
-      },
-      {
         "title": "Cannoli PAT",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
+      },
+      {
+        "title": "tortellini",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
         "title": "sauce tomate",
@@ -444124,11 +443917,6 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -444139,19 +443927,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      },
+      {
         "title": "tagliatelle",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
+        "title": "fusilli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      },
+      {
         "title": "pizza Margherita",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-      },
-      {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
       }
     ]
   },
@@ -455337,57 +455130,79 @@
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4515.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4515.webp",
-        "alt": "Img 4515"
+        "alt": "Img 4515",
+        "lat": 45.7086744,
+        "lng": 13.4856188
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4521.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4521.webp",
-        "alt": "Img 4521"
+        "alt": "Img 4521",
+        "lat": 45.706543,
+        "lng": 13.4903854
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4537.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4537.webp",
-        "alt": "Img 4537"
+        "alt": "Img 4537",
+        "lat": 45.7119906,
+        "lng": 13.5048937
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4544.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4544.webp",
-        "alt": "Img 4544"
+        "alt": "Img 4544",
+        "lat": 45.8076165,
+        "lng": 13.5436358
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4547.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4547.webp",
-        "alt": "Img 4547"
+        "alt": "Img 4547",
+        "lat": 45.8077282,
+        "lng": 13.5429087
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4550.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4550.webp",
-        "alt": "Img 4550"
+        "alt": "Img 4550",
+        "lat": 45.6496963,
+        "lng": 13.7730827
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4554.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4554.webp",
-        "alt": "Img 4554"
+        "alt": "Img 4554",
+        "lat": 45.5779253,
+        "lng": 13.7941424
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4556.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4556.webp",
-        "alt": "Img 4556"
+        "alt": "Img 4556",
+        "lat": 45.573845,
+        "lng": 13.7930094
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4558.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4558.webp",
-        "alt": "Img 4558"
+        "alt": "Img 4558",
+        "lat": 45.5711673,
+        "lng": 13.7925789
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4563.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4563.webp",
-        "alt": "Img 4563"
+        "alt": "Img 4563",
+        "lat": 45.5711049,
+        "lng": 13.7934418
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4572.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4572.webp",
-        "alt": "Img 4572"
+        "alt": "Img 4572",
+        "lat": 45.5506552,
+        "lng": 13.7922914
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4574.webp",
@@ -456214,113 +456029,7 @@
     "lodgingName": "Kamp Lucija, Seča 204, 6320 Portorož, Slovénie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Druga Rasporska Vrata",
-        "dist": 3586,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Marčana vrata",
-        "dist": 3624,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Prva Rasporska vrata",
-        "dist": 3716,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mediadom Priran",
-        "dist": 3808,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Osrednja vrata",
-        "dist": 3901,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Poljiska vrata",
-        "dist": 3902,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Dolfinova Vrata",
-        "dist": 3936,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Miljska vrata",
-        "dist": 4177,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Stari Mlin",
-        "dist": 10375,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Vina Prelac",
-        "dist": 11125,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Muzej solinarstva / Museo dei Salinai",
-        "dist": 2947,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Muzej podvodnih dejavnostih",
-        "dist": 3630,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "MAONA",
-        "dist": 3694,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pomorski muzej Piran - Palača Gabrielli",
-        "dist": 3777,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
-      },
-      {
-        "title": "Čarobni svet školjk Piran",
-        "dist": 3801,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Trieste",
       "Monfalcone",
@@ -474852,149 +474561,12 @@
     "lodgingName": "Arena Stoja Campsite, Stoja 37, 52100, Pula, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Herkulova vrata",
-        "dist": 3035,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": "Herkulova vrata"
-      },
-      {
-        "title": "Parna lokomotiva JŽ 835-040",
-        "dist": 3632,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Stara maslina (ulika)",
-        "dist": 7469,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Rudist",
-        "dist": 8177,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Otisci Dinosaura",
-        "dist": 10046,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Zerostrasse",
-        "dist": 2766,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Povijesni i pomorski muzej Istre",
-        "dist": 2895,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Povijesni i pomorski muzej Istre"
-      },
-      {
-        "title": "MEMO Museum of good Memories",
-        "dist": 3177,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Arena Pula",
-        "dist": 3319,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Izložbe",
-        "dist": 7885,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ecomuseum - Istrian de Dignan",
-        "dist": 11903,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Muzej zbirka sakralne umjetnosti",
-        "dist": 11922,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Cliff Diving",
-        "dist": 2463,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Roman mosaic, around 3. century A.D",
-        "dist": 2685,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": "Malo rimsko kazalište u Puli"
-      },
-      {
-        "title": "James Joyce",
-        "dist": 2860,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Pula"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "licitar",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-      },
-      {
-        "title": "Kulen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-      },
-      {
-        "title": "Zagorski štrukli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-      },
-      {
-        "title": "Soparnik",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-      },
-      {
-        "title": "Basa",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-      },
-      {
-        "title": "Lumblija",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-08-03-grad-pula-nevi-ane",
@@ -483412,22 +482984,30 @@
       {
         "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4608.webp",
         "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4608.webp",
-        "alt": "Img 4608"
+        "alt": "Img 4608",
+        "lat": 44.0992106,
+        "lng": 15.2547131
       },
       {
         "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4610.webp",
         "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4610.webp",
-        "alt": "Img 4610"
+        "alt": "Img 4610",
+        "lat": 44.0931696,
+        "lng": 15.2586049
       },
       {
         "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4613.webp",
         "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4613.webp",
-        "alt": "Img 4613"
+        "alt": "Img 4613",
+        "lat": 43.984009,
+        "lng": 15.3353708
       },
       {
         "src": "/media/2026-08-03-grad-pula-nevi-ane/img_4615.webp",
         "thumb": "/media/2026-08-03-grad-pula-nevi-ane/thumb_img_4615.webp",
-        "alt": "Img 4615"
+        "alt": "Img 4615",
+        "lat": 43.984009,
+        "lng": 15.3353708
       }
     ],
     "translations": {
@@ -484073,38 +483653,7 @@
       "Pula"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "licitar",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-      },
-      {
-        "title": "Kulen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-      },
-      {
-        "title": "Zagorski štrukli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-      },
-      {
-        "title": "Soparnik",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-      },
-      {
-        "title": "Basa",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-      },
-      {
-        "title": "Lumblija",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-08-05-nevi-ane-grad-sibenik",
@@ -490516,37 +490065,51 @@
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4619.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4619.webp",
-        "alt": "Img 4619"
+        "alt": "Img 4619",
+        "lat": 43.8335901,
+        "lng": 15.6416671
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4625.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4625.webp",
-        "alt": "Img 4625"
+        "alt": "Img 4625",
+        "lat": 43.8258351,
+        "lng": 15.6559297
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4632.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4632.webp",
-        "alt": "Img 4632"
+        "alt": "Img 4632",
+        "lat": 43.8253146,
+        "lng": 15.657804
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4634.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4634.webp",
-        "alt": "Img 4634"
+        "alt": "Img 4634",
+        "lat": 43.8250609,
+        "lng": 15.6584559
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4637.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4637.webp",
-        "alt": "Img 4637"
+        "alt": "Img 4637",
+        "lat": 43.8170476,
+        "lng": 15.6670284
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4642.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4642.webp",
-        "alt": "Img 4642"
+        "alt": "Img 4642",
+        "lat": 43.8168305,
+        "lng": 15.6847688
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4645.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4645.webp",
-        "alt": "Img 4645"
+        "alt": "Img 4645",
+        "lat": 43.7353035,
+        "lng": 15.8925576
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4648.webp",
@@ -490556,12 +490119,16 @@
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4649.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4649.webp",
-        "alt": "Img 4649"
+        "alt": "Img 4649",
+        "lat": 43.673679,
+        "lng": 15.9255215
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4652.webp",
         "thumb": "/media/2026-08-05-nevi-ane-grad-sibenik/thumb_img_4652.webp",
-        "alt": "Img 4652"
+        "alt": "Img 4652",
+        "lat": 43.6736057,
+        "lng": 15.9259294
       },
       {
         "src": "/media/2026-08-05-nevi-ane-grad-sibenik/img_4654.webp",
@@ -490970,38 +490537,7 @@
       "Biograd na Moru"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "licitar",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-      },
-      {
-        "title": "Kulen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-      },
-      {
-        "title": "Zagorski štrukli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-      },
-      {
-        "title": "Soparnik",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-      },
-      {
-        "title": "Basa",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-      },
-      {
-        "title": "Lumblija",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-08-06-grad-sibenik-grad-supetar",
@@ -501465,17 +501001,23 @@
       {
         "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4663.webp",
         "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4663.webp",
-        "alt": "Img 4663"
+        "alt": "Img 4663",
+        "lat": 43.5391365,
+        "lng": 16.4741205
       },
       {
         "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4664.webp",
         "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4664.webp",
-        "alt": "Img 4664"
+        "alt": "Img 4664",
+        "lat": 43.5389839,
+        "lng": 16.4743132
       },
       {
         "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4667.webp",
         "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4667.webp",
-        "alt": "Img 4667"
+        "alt": "Img 4667",
+        "lat": 43.5028636,
+        "lng": 16.441985
       },
       {
         "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4671.webp",
@@ -501495,7 +501037,9 @@
       {
         "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4677.webp",
         "thumb": "/media/2026-08-06-grad-sibenik-grad-supetar/thumb_img_4677.webp",
-        "alt": "Img 4677"
+        "alt": "Img 4677",
+        "lat": 43.38156,
+        "lng": 16.57795
       },
       {
         "src": "/media/2026-08-06-grad-sibenik-grad-supetar/img_4684.webp",
@@ -502430,38 +501974,7 @@
       "Solin"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "licitar",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-      },
-      {
-        "title": "Kulen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-      },
-      {
-        "title": "Zagorski štrukli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-      },
-      {
-        "title": "Soparnik",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-      },
-      {
-        "title": "Lumblija",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-      },
-      {
-        "title": "Basa",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-08-07-grad-supetar-opcina-vela-luka",
@@ -511332,37 +510845,6 @@
       "Supetar"
     ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "licitar",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-      },
-      {
-        "title": "Kulen",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-      },
-      {
-        "title": "Zagorski štrukli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-      },
-      {
-        "title": "Soparnik",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-      },
-      {
-        "title": "Basa",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-      },
-      {
-        "title": "Lumblija",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-      }
-    ]
+    "specialties": []
   }
 ]

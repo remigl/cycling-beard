@@ -69,7 +69,9 @@
     {
       "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
       "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
-      "alt": "083906"
+      "alt": "083906",
+      "lat": 46.8397617,
+      "lng": 3.5019013
     },
     {
       "src": "/media/2026-06-05-decize-paray-le-monial/img_3403.webp",
@@ -9843,6 +9845,7 @@
   "majorCities": [
     "Paray-le-Monial"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -9890,14 +9893,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -9945,14 +9948,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "Biancomangiare PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
     }
   ]
 }

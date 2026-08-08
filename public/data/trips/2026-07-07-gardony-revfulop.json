@@ -62,37 +62,51 @@
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3936.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3936.webp",
-      "alt": "Img 3936"
+      "alt": "Img 3936",
+      "lat": 47.031752,
+      "lng": 18.1067548
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3944.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3944.webp",
-      "alt": "Img 3944"
+      "alt": "Img 3944",
+      "lat": 46.9207919,
+      "lng": 17.8517831
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3947.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3947.webp",
-      "alt": "Img 3947"
+      "alt": "Img 3947",
+      "lat": 46.9208966,
+      "lng": 17.8510985
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3948.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3948.webp",
-      "alt": "Img 3948"
+      "alt": "Img 3948",
+      "lat": 46.871088,
+      "lng": 17.6860791
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3950.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3950.webp",
-      "alt": "Img 3950"
+      "alt": "Img 3950",
+      "lat": 46.8625736,
+      "lng": 17.6754961
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3964.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3964.webp",
-      "alt": "Img 3964"
+      "alt": "Img 3964",
+      "lat": 46.8293927,
+      "lng": 17.6400231
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3967.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3967.webp",
-      "alt": "Img 3967"
+      "alt": "Img 3967",
+      "lat": 46.8280003,
+      "lng": 17.6417372
     }
   ],
   "videos": [],
@@ -6853,6 +6867,7 @@
     "Gárdony",
     "Balatonfüred"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "frybread",

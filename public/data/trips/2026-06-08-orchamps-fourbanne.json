@@ -62,17 +62,23 @@
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
-      "alt": "BesançOn"
+      "alt": "BesançOn",
+      "lat": 47.2893025,
+      "lng": 6.1979916
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église saint pierre de besançon.webp",
-      "alt": "éGlise Saint Pierre De BesançOn"
+      "alt": "éGlise Saint Pierre De BesançOn",
+      "lat": 47.3011061,
+      "lng": 6.2353268
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église sainte madeleine de besançon.webp",
-      "alt": "éGlise Sainte Madeleine De BesançOn"
+      "alt": "éGlise Sainte Madeleine De BesançOn",
+      "lat": 47.3208159,
+      "lng": 6.2695412
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",
@@ -82,7 +88,9 @@
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/juste avant besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_juste avant besançon.webp",
-      "alt": "Juste Avant BesançOn"
+      "alt": "Juste Avant BesançOn",
+      "lat": 47.2439063,
+      "lng": 6.0678918
     }
   ],
   "videos": [],
@@ -6517,6 +6525,7 @@
   "majorCities": [
     "Besançon"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -6524,14 +6533,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "gaufre",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-    },
-    {
       "title": "sauce béchamel",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+    },
+    {
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
       "title": "crêpe",
@@ -6589,14 +6598,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-    },
-    {
       "title": "bœuf bourguignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
     },
     {
       "title": "Sauce veloutée",

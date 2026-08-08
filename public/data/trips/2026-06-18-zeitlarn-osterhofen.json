@@ -62,12 +62,16 @@
     {
       "src": "/media/2026-06-18-zeitlarn-osterhofen/bratwurstkipferl.webp",
       "thumb": "/media/2026-06-18-zeitlarn-osterhofen/thumb_bratwurstkipferl.webp",
-      "alt": "Bratwurstkipferl"
+      "alt": "Bratwurstkipferl",
+      "lat": 48.9790908,
+      "lng": 12.335623
     },
     {
       "src": "/media/2026-06-18-zeitlarn-osterhofen/straubing.webp",
       "thumb": "/media/2026-06-18-zeitlarn-osterhofen/thumb_straubing.webp",
-      "alt": "Straubing"
+      "alt": "Straubing",
+      "lat": 48.8539472,
+      "lng": 12.767186
     }
   ],
   "videos": [],
@@ -13134,6 +13138,7 @@
     "Straubing",
     "Deggendorf"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "hamburger",
@@ -13191,14 +13196,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Fischbrötchen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-    },
-    {
       "title": "Mett",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+    },
+    {
+      "title": "Fischbrötchen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
     },
     {
       "title": "Pain de munition",
@@ -13206,9 +13211,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Pfälzer Saumagen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+      "title": "Weisslacker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
     },
     {
       "title": "Leberknödel",
@@ -13216,9 +13221,9 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
-      "title": "Weisslacker",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+      "title": "Pfälzer Saumagen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
     }
   ]
 }

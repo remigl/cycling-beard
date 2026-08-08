@@ -69,7 +69,9 @@
     {
       "src": "/media/2026-06-10-allenjoie-mohlin/bâtiment a cote du temple de mulhouse.webp",
       "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_bâtiment a cote du temple de mulhouse.webp",
-      "alt": "BâTiment A Cote Du Temple De Mulhouse"
+      "alt": "BâTiment A Cote Du Temple De Mulhouse",
+      "lat": 47.678171,
+      "lng": 7.5055853
     },
     {
       "src": "/media/2026-06-10-allenjoie-mohlin/i felt threatened.webp",
@@ -89,22 +91,30 @@
     {
       "src": "/media/2026-06-10-allenjoie-mohlin/pont au centre historique de bale.webp",
       "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont au centre historique de bale.webp",
-      "alt": "Pont Au Centre Historique De Bale"
+      "alt": "Pont Au Centre Historique De Bale",
+      "lat": 47.5597566,
+      "lng": 7.8258483
     },
     {
       "src": "/media/2026-06-10-allenjoie-mohlin/pont de bale.webp",
       "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_pont de bale.webp",
-      "alt": "Pont De Bale"
+      "alt": "Pont De Bale",
+      "lat": 47.5550443,
+      "lng": 7.7608484
     },
     {
       "src": "/media/2026-06-10-allenjoie-mohlin/temple saint-étienne de mulhouse.webp",
       "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_temple saint-étienne de mulhouse.webp",
-      "alt": "Temple Saint éTienne De Mulhouse"
+      "alt": "Temple Saint éTienne De Mulhouse",
+      "lat": 47.6579509,
+      "lng": 7.5119686
     },
     {
       "src": "/media/2026-06-10-allenjoie-mohlin/vue du pont de bale.webp",
       "thumb": "/media/2026-06-10-allenjoie-mohlin/thumb_vue du pont de bale.webp",
-      "alt": "Vue Du Pont De Bale"
+      "alt": "Vue Du Pont De Bale",
+      "lat": 47.555081,
+      "lng": 7.7612771
     }
   ],
   "videos": [],
@@ -15895,6 +15905,7 @@
     "Mulhouse",
     "Rheinfelden (Baden)"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "muesli",

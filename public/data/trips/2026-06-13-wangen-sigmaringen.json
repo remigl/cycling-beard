@@ -76,22 +76,30 @@
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/die donauwelle.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_die donauwelle.webp",
-      "alt": "Die Donauwelle"
+      "alt": "Die Donauwelle",
+      "lat": 48.0818916,
+      "lng": 9.1287949
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3538.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3538.webp",
-      "alt": "Img 3538"
+      "alt": "Img 3538",
+      "lat": 47.8611805,
+      "lng": 8.883426
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3562.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3562.webp",
-      "alt": "Img 3562"
+      "alt": "Img 3562",
+      "lat": 48.0762442,
+      "lng": 9.1724546
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3570.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3570.webp",
-      "alt": "Img 3570"
+      "alt": "Img 3570",
+      "lat": 48.0759304,
+      "lng": 9.2011213
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3578.webp",
@@ -101,7 +109,9 @@
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/le danube a tuttlingen.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_le danube a tuttlingen.webp",
-      "alt": "Le Danube A Tuttlingen"
+      "alt": "Le Danube A Tuttlingen",
+      "lat": 48.0301963,
+      "lng": 8.9638118
     }
   ],
   "videos": [],
@@ -6766,6 +6776,7 @@
     "Radolfzell am Bodensee",
     "Sigmaringen"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "hamburger",
@@ -6838,14 +6849,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Leberknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-    },
-    {
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
       "title": "Pfälzer Saumagen",

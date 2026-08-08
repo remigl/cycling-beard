@@ -67,7 +67,9 @@
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4255.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4255.webp",
-      "alt": "Img 4255"
+      "alt": "Img 4255",
+      "lat": 46.065922,
+      "lng": 11.1141307
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4261.webp",
@@ -82,7 +84,9 @@
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4272.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4272.webp",
-      "alt": "Img 4272"
+      "alt": "Img 4272",
+      "lat": 46.0153402,
+      "lng": 11.1236201
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4274.webp",
@@ -6839,6 +6843,7 @@
     "Rovereto",
     "Mori"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6856,14 +6861,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6886,14 +6891,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "sauce tomate",
@@ -6916,6 +6921,11 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
@@ -6929,11 +6939,6 @@
       "title": "Penne",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "pizza Margherita",

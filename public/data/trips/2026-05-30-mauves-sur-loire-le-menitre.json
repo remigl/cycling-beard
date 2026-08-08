@@ -67,27 +67,37 @@
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/la guinchette.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_la guinchette.webp",
-      "alt": "La Guinchette"
+      "alt": "La Guinchette",
+      "lat": 47.3641029,
+      "lng": -0.7254873
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/on va dire que c'est ok.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_on va dire que c'est ok.webp",
-      "alt": "On Va Dire Que C'Est Ok"
+      "alt": "On Va Dire Que C'Est Ok",
+      "lat": 47.379761,
+      "lng": -0.9629318
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/petit château sur le chemin.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_petit château sur le chemin.webp",
-      "alt": "Petit ChâTeau Sur Le Chemin"
+      "alt": "Petit ChâTeau Sur Le Chemin",
+      "lat": 47.4085133,
+      "lng": -0.6184896
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/pont d'ancenis.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_pont d'ancenis.webp",
-      "alt": "Pont D'Ancenis"
+      "alt": "Pont D'Ancenis",
+      "lat": 47.3798129,
+      "lng": -0.9631507
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_tartiflette a la guinchette.webp",
-      "alt": "Tartiflette A La Guinchette"
+      "alt": "Tartiflette A La Guinchette",
+      "lat": 47.364606,
+      "lng": -0.7225783
     }
   ],
   "videos": [],
@@ -19151,11 +19161,8 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Trélazé",
-    "Les Ponts-de-Cé",
-    "Ancenis-Saint-Géréon"
-  ],
+  "majorCities": [],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",

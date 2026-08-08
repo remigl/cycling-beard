@@ -16630,56 +16630,6 @@
     "Szentgotthárd",
     "Jennersdorf"
   ],
-  "specialties": [
-    {
-      "title": "escalope à la viennoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2022-12-29%20Wiener%20Schnitzel%20im%20Hotel%20Kaiserin%20Elisabeth.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Escalope_%C3%A0_la_viennoise"
-    },
-    {
-      "title": "Leberknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-    },
-    {
-      "title": "gaufrette",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Neapolitaner%20Waffel.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Neapolitan_wafer"
-    },
-    {
-      "title": "Apfelküchle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apfelkuechle-on-plate.png",
-      "wikipedia": "https://en.wikipedia.org/wiki/Apfelk%C3%BCchle"
-    },
-    {
-      "title": "Christmas carp",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A1noce%2C%20sma%C5%BEen%C3%BD%20kapr.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Christmas_carp"
-    },
-    {
-      "title": "ischler",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
-    },
-    {
-      "title": "maluns",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
-    },
-    {
-      "title": "Eiernockerl",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-    },
-    {
-      "title": "serviettenknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Serviettenkloss.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Serviettenkn%C3%B6del"
-    },
-    {
-      "title": "Waldviertler",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
-    }
-  ]
+  "topRatedPlaces": [],
+  "specialties": []
 }

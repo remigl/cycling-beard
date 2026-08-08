@@ -62,57 +62,79 @@
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4515.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4515.webp",
-      "alt": "Img 4515"
+      "alt": "Img 4515",
+      "lat": 45.7086744,
+      "lng": 13.4856188
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4521.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4521.webp",
-      "alt": "Img 4521"
+      "alt": "Img 4521",
+      "lat": 45.706543,
+      "lng": 13.4903854
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4537.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4537.webp",
-      "alt": "Img 4537"
+      "alt": "Img 4537",
+      "lat": 45.7119906,
+      "lng": 13.5048937
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4544.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4544.webp",
-      "alt": "Img 4544"
+      "alt": "Img 4544",
+      "lat": 45.8076165,
+      "lng": 13.5436358
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4547.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4547.webp",
-      "alt": "Img 4547"
+      "alt": "Img 4547",
+      "lat": 45.8077282,
+      "lng": 13.5429087
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4550.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4550.webp",
-      "alt": "Img 4550"
+      "alt": "Img 4550",
+      "lat": 45.6496963,
+      "lng": 13.7730827
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4554.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4554.webp",
-      "alt": "Img 4554"
+      "alt": "Img 4554",
+      "lat": 45.5779253,
+      "lng": 13.7941424
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4556.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4556.webp",
-      "alt": "Img 4556"
+      "alt": "Img 4556",
+      "lat": 45.573845,
+      "lng": 13.7930094
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4558.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4558.webp",
-      "alt": "Img 4558"
+      "alt": "Img 4558",
+      "lat": 45.5711673,
+      "lng": 13.7925789
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4563.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4563.webp",
-      "alt": "Img 4563"
+      "alt": "Img 4563",
+      "lat": 45.5711049,
+      "lng": 13.7934418
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4572.webp",
       "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4572.webp",
-      "alt": "Img 4572"
+      "alt": "Img 4572",
+      "lat": 45.5506552,
+      "lng": 13.7922914
     },
     {
       "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4574.webp",
@@ -12066,117 +12088,12 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Druga Rasporska Vrata",
-      "dist": 3586,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Marčana vrata",
-      "dist": 3624,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Prva Rasporska vrata",
-      "dist": 3716,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Mediadom Priran",
-      "dist": 3808,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Osrednja vrata",
-      "dist": 3901,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Poljiska vrata",
-      "dist": 3902,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dolfinova Vrata",
-      "dist": 3936,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Miljska vrata",
-      "dist": 4177,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Stari Mlin",
-      "dist": 10375,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Vina Prelac",
-      "dist": 11125,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Muzej solinarstva / Museo dei Salinai",
-      "dist": 2947,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Muzej podvodnih dejavnostih",
-      "dist": 3630,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "MAONA",
-      "dist": 3694,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pomorski muzej Piran - Palača Gabrielli",
-      "dist": 3777,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
-    },
-    {
-      "title": "Čarobni svet školjk Piran",
-      "dist": 3801,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Trieste",
     "Monfalcone",
     "Koper / Capodistria"
   ],
+  "topRatedPlaces": [],
   "specialties": []
 }

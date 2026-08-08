@@ -62,27 +62,37 @@
     {
       "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
-      "alt": "ChûTes Du Rhin"
+      "alt": "ChûTes Du Rhin",
+      "lat": 47.6608,
+      "lng": 8.857836
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/img_3500.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3500.webp",
-      "alt": "Img 3500"
+      "alt": "Img 3500",
+      "lat": 47.6032602,
+      "lng": 8.273254
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/img_3514.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3514.webp",
-      "alt": "Img 3514"
+      "alt": "Img 3514",
+      "lat": 47.6596966,
+      "lng": 8.9367776
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/img_3517.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3517.webp",
-      "alt": "Img 3517"
+      "alt": "Img 3517",
+      "lat": 47.6596966,
+      "lng": 8.9367776
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/juste après avoir quitté sandro et anja.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_juste après avoir quitté sandro et anja.webp",
-      "alt": "Juste AprèS Avoir Quitté Sandro Et Anja"
+      "alt": "Juste AprèS Avoir Quitté Sandro Et Anja",
+      "lat": 47.6129439,
+      "lng": 8.2548134
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/stein am rhein.webp",
@@ -10120,6 +10130,7 @@
     "Tiengen",
     "Bülach"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "hamburger",
@@ -10177,14 +10188,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Fischbrötchen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-    },
-    {
       "title": "Mett",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+    },
+    {
+      "title": "Fischbrötchen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
     },
     {
       "title": "Pain de munition",
@@ -10192,14 +10203,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Leberknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-    },
-    {
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
       "title": "Pfälzer Saumagen",

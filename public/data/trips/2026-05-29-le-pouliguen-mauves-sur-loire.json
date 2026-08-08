@@ -97,7 +97,9 @@
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/arrêt a saint nazaire.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_arrêt a saint nazaire.webp",
-      "alt": "ArrêT A Saint Nazaire"
+      "alt": "ArrêT A Saint Nazaire",
+      "lat": 47.2744801,
+      "lng": -1.9815009
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/bada est content.webp",
@@ -112,32 +114,44 @@
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/galette après quelques efforts.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_galette après quelques efforts.webp",
-      "alt": "Galette AprèS Quelques Efforts"
+      "alt": "Galette AprèS Quelques Efforts",
+      "lat": 47.2127356,
+      "lng": -1.5414492
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la ferrari.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la ferrari.webp",
-      "alt": "La Ferrari"
+      "alt": "La Ferrari",
+      "lat": 47.2727496,
+      "lng": -2.2026104
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la plage de la baule.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la plage de la baule.webp",
-      "alt": "La Plage De La Baule"
+      "alt": "La Plage De La Baule",
+      "lat": 47.296106,
+      "lng": -2.1777562
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/le velo a la baule.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_le velo a la baule.webp",
-      "alt": "Le Velo A La Baule"
+      "alt": "Le Velo A La Baule",
+      "lat": 47.2972156,
+      "lng": -2.1782141
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/petit café.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_petit café.webp",
-      "alt": "Petit Café"
+      "alt": "Petit Café",
+      "lat": 47.2744801,
+      "lng": -1.9815009
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/saint naze.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_saint naze.webp",
-      "alt": "Saint Naze"
+      "alt": "Saint Naze",
+      "lat": 47.2744801,
+      "lng": -1.9815009
     }
   ],
   "videos": [],
@@ -12362,6 +12376,7 @@
     "Saint-Nazaire",
     "Rezé"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -12369,14 +12384,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "sauce béchamel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-    },
-    {
       "title": "gaufre",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
       "title": "crêpe",
@@ -12409,14 +12424,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -12424,14 +12439,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
+    },
+    {
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "bœuf bourguignon",

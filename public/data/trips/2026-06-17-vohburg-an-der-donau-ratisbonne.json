@@ -69,12 +69,16 @@
     {
       "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3640.webp",
       "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3640.webp",
-      "alt": "Img 3640"
+      "alt": "Img 3640",
+      "lat": 48.9056798,
+      "lng": 11.960714
     },
     {
       "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3648.webp",
       "thumb": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/thumb_img_3648.webp",
-      "alt": "Img 3648"
+      "alt": "Img 3648",
+      "lat": 48.9149553,
+      "lng": 11.9686224
     },
     {
       "src": "/media/2026-06-17-vohburg-an-der-donau-ratisbonne/img_3663.webp",
@@ -6661,6 +6665,7 @@
     "Kelheim",
     "Neustadt an der Donau"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "hamburger",
@@ -6718,14 +6723,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Fischbrötchen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-    },
-    {
       "title": "Mett",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+    },
+    {
+      "title": "Fischbrötchen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
     },
     {
       "title": "Pain de munition",
@@ -6733,14 +6738,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Leberknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-    },
-    {
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
       "title": "Pfälzer Saumagen",

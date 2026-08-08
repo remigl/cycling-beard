@@ -69,12 +69,16 @@
     {
       "src": "/media/2026-06-03-gien-sauvigny-les-bois/café sancerre à sancerre.webp",
       "thumb": "/media/2026-06-03-gien-sauvigny-les-bois/thumb_café sancerre à sancerre.webp",
-      "alt": "Café Sancerre à Sancerre"
+      "alt": "Café Sancerre à Sancerre",
+      "lat": 47.0856415,
+      "lng": 3.022987
     },
     {
       "src": "/media/2026-06-03-gien-sauvigny-les-bois/le papa qui attend son fils avec son beau tshirt.webp",
       "thumb": "/media/2026-06-03-gien-sauvigny-les-bois/thumb_le papa qui attend son fils avec son beau tshirt.webp",
-      "alt": "Le Papa Qui Attend Son Fils Avec Son Beau Tshirt"
+      "alt": "Le Papa Qui Attend Son Fils Avec Son Beau Tshirt",
+      "lat": 46.954236,
+      "lng": 3.1432384
     },
     {
       "src": "/media/2026-06-03-gien-sauvigny-les-bois/verre de pouilly fumé chez danielle et pierre.webp",
@@ -9894,117 +9898,9 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Château de Sermoise",
-      "dist": 1282,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Sermoise"
-    },
-    {
-      "title": "chateau de Maucouvent",
-      "dist": 2757,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Cathédrale Saint-Cyr et Sainte-Julitte",
-      "dist": 3569,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Cathédrale Saint-Cyr-et-Sainte-Julitte de Nevers"
-    },
-    {
-      "title": "Palais ducal",
-      "dist": 3622,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Palais ducal de Nevers"
-    },
-    {
-      "title": "Avant-Porte du Croux",
-      "dist": 3674,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Avant-Porte du Croux"
-    },
-    {
-      "title": "Porte du Croux",
-      "dist": 3680,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Porte du Croux"
-    },
-    {
-      "title": "Porte de Paris",
-      "dist": 3965,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Porte de Paris (Nevers)"
-    },
-    {
-      "title": "La Châsse de Bernadette",
-      "dist": 4253,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château du Marais",
-      "dist": 5688,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château du Marais (Nièvre)"
-    },
-    {
-      "title": "Château de Luanges",
-      "dist": 7236,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de Fertot",
-      "dist": 7391,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kilomètre 0 - Loire à vélo",
-      "dist": 8015,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Le Bec d'Allier",
-      "dist": 8518,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pont Canal du Guétin",
-      "dist": 8542,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de la Rocherie",
-      "dist": 9276,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    }
-  ],
-  "majorCities": [
-    "Nevers",
-    "Cosne-Cours-sur-Loire"
-  ],
+  "pois": [],
+  "majorCities": [],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -10022,14 +9918,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "baguette",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
-    },
-    {
       "title": "crêpe",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+    },
+    {
+      "title": "baguette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
     },
     {
       "title": "roquefort",
@@ -10052,14 +9948,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -10097,14 +9993,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "Consommé",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-    },
-    {
       "title": "tarte flambée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
+    },
+    {
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
       "title": "munster",

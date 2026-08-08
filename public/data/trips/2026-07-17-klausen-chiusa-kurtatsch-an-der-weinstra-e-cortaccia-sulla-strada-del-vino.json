@@ -6714,6 +6714,7 @@
     "Laives - Leifers",
     "Klausen - Chiusa"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6771,14 +6772,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-    },
-    {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -6791,16 +6792,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "osso buco",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-    },
-    {
-      "title": "Penne",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -6809,6 +6800,16 @@
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+    },
+    {
+      "title": "osso buco",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+    },
+    {
+      "title": "Penne",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
       "title": "pizza Margherita",

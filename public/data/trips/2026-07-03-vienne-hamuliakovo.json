@@ -76,7 +76,9 @@
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3783.webp",
-      "alt": "Img 3783"
+      "alt": "Img 3783",
+      "lat": 48.1436457,
+      "lng": 17.1064697
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3791.webp",
@@ -91,17 +93,23 @@
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3805.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3805.webp",
-      "alt": "Img 3805"
+      "alt": "Img 3805",
+      "lat": 48.0270273,
+      "lng": 17.2061883
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3806.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3806.webp",
-      "alt": "Img 3806"
+      "alt": "Img 3806",
+      "lat": 48.030677,
+      "lng": 17.2327726
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3809.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3809.webp",
-      "alt": "Img 3809"
+      "alt": "Img 3809",
+      "lat": 48.030677,
+      "lng": 17.2327726
     }
   ],
   "videos": [],
@@ -6590,36 +6598,6 @@
     "Bratislava",
     "Hainburg an der Donau"
   ],
-  "specialties": [
-    {
-      "title": "bryndzové halušky",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
-    },
-    {
-      "title": "oublie",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
-    },
-    {
-      "title": "lokša",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
-    },
-    {
-      "title": "strapačky",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
-      "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
-    },
-    {
-      "title": "Oštiepok",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
-    },
-    {
-      "title": "balkánský sýr",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
-    }
-  ]
+  "topRatedPlaces": [],
+  "specialties": []
 }

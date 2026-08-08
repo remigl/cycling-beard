@@ -83,12 +83,16 @@
     {
       "src": "/media/2026-06-22-pochlarn-vienne/abbaye de melk.webp",
       "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_abbaye de melk.webp",
-      "alt": "Abbaye De Melk"
+      "alt": "Abbaye De Melk",
+      "lat": 48.3401583,
+      "lng": 15.4040052
     },
     {
       "src": "/media/2026-06-22-pochlarn-vienne/going a little bit faster than this boat.webp",
       "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_going a little bit faster than this boat.webp",
-      "alt": "Going A Little Bit Faster Than This Boat"
+      "alt": "Going A Little Bit Faster Than This Boat",
+      "lat": 48.2002352,
+      "lng": 16.3658357
     },
     {
       "src": "/media/2026-06-22-pochlarn-vienne/pwc.webp",
@@ -98,7 +102,9 @@
     {
       "src": "/media/2026-06-22-pochlarn-vienne/vin pétillant.webp",
       "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_vin pétillant.webp",
-      "alt": "Vin PéTillant"
+      "alt": "Vin PéTillant",
+      "lat": 48.3931948,
+      "lng": 15.5583116
     }
   ],
   "videos": [],
@@ -9431,7 +9437,7 @@
     },
     {
       "title": "Fiaker",
-      "dist": 2900,
+      "dist": 2906,
       "kind": "Attraction",
       "rank": 10,
       "wikiTitle": null
@@ -9505,6 +9511,7 @@
     "Klosterneuburg",
     "Krems an der Donau"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -9537,14 +9544,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "Eiernockerl",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-    },
-    {
       "title": "maluns",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
     },
     {
       "title": "serviettenknödel",

@@ -62,22 +62,30 @@
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4193.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4193.webp",
-      "alt": "Img 4193"
+      "alt": "Img 4193",
+      "lat": 46.7440098,
+      "lng": 12.9574295
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4196.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4196.webp",
-      "alt": "Img 4196"
+      "alt": "Img 4196",
+      "lat": 46.8270982,
+      "lng": 12.7728713
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4205.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4205.webp",
-      "alt": "Img 4205"
+      "alt": "Img 4205",
+      "lat": 46.7600126,
+      "lng": 12.5591372
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4207.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4207.webp",
-      "alt": "Img 4207"
+      "alt": "Img 4207",
+      "lat": 46.7462363,
+      "lng": 12.4636128
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4209.webp",
@@ -6877,6 +6885,7 @@
     "Sillian",
     "Greifenburg"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -6909,14 +6918,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "Eiernockerl",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-    },
-    {
       "title": "maluns",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
     },
     {
       "title": "serviettenknödel",

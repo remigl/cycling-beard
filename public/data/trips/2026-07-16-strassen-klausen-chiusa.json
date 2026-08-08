@@ -86,22 +86,30 @@
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
-      "alt": "Img 4221"
+      "alt": "Img 4221",
+      "lat": 46.7382597,
+      "lng": 12.1333999
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4225.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4225.webp",
-      "alt": "Img 4225"
+      "alt": "Img 4225",
+      "lat": 46.7777125,
+      "lng": 11.8798425
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4228.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4228.webp",
-      "alt": "Img 4228"
+      "alt": "Img 4228",
+      "lat": 46.7191128,
+      "lng": 11.6560719
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4230.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4230.webp",
-      "alt": "Img 4230"
+      "alt": "Img 4230",
+      "lat": 46.6410825,
+      "lng": 11.573221
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4234.webp",
@@ -13442,11 +13450,8 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Brixen - Bressanone",
-    "Bruneck - Brunico",
-    "Klausen - Chiusa"
-  ],
+  "majorCities": [],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -13494,24 +13499,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -13524,16 +13529,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "osso buco",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-    },
-    {
-      "title": "Penne",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -13544,14 +13539,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
+      "title": "osso buco",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+    },
+    {
+      "title": "Penne",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

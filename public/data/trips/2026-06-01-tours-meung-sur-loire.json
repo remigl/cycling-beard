@@ -69,32 +69,44 @@
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/amboise.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_amboise.webp",
-      "alt": "Amboise"
+      "alt": "Amboise",
+      "lat": 47.5114453,
+      "lng": 1.2817568
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/cathédrale saint-gatien, tours.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_cathédrale saint-gatien, tours.webp",
-      "alt": "CathéDrale Saint Gatien, Tours"
+      "alt": "CathéDrale Saint Gatien, Tours",
+      "lat": 47.3876241,
+      "lng": 0.8802005
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/château d'amboise.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_château d'amboise.webp",
-      "alt": "ChâTeau D'Amboise"
+      "alt": "ChâTeau D'Amboise",
+      "lat": 47.5227757,
+      "lng": 1.2924644
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/gare de tours.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_gare de tours.webp",
-      "alt": "Gare De Tours"
+      "alt": "Gare De Tours",
+      "lat": 47.3876241,
+      "lng": 0.8802005
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/pont d'amboise.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_pont d'amboise.webp",
-      "alt": "Pont D'Amboise"
+      "alt": "Pont D'Amboise",
+      "lat": 47.8001916,
+      "lng": 1.6696013
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/velo en bambou, 4500e.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_velo en bambou, 4500e.webp",
-      "alt": "Velo En Bambou, 4500e"
+      "alt": "Velo En Bambou, 4500e",
+      "lat": 47.401514,
+      "lng": 0.9374464
     }
   ],
   "videos": [],
@@ -10971,6 +10983,7 @@
     "Blois",
     "Joué-lès-Tours"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -10978,14 +10991,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "sauce béchamel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-    },
-    {
       "title": "gaufre",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
       "title": "crêpe",
@@ -11018,14 +11031,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -11043,14 +11056,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-    },
-    {
       "title": "bœuf bourguignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
     },
     {
       "title": "Sauce veloutée",

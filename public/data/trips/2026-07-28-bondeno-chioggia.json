@@ -62,17 +62,23 @@
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4436.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4436.webp",
-      "alt": "Img 4436"
+      "alt": "Img 4436",
+      "lat": 44.9879692,
+      "lng": 12.0310884
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4438.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4438.webp",
-      "alt": "Img 4438"
+      "alt": "Img 4438",
+      "lat": 44.9880226,
+      "lng": 12.0312429
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4446.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4446.webp",
-      "alt": "Img 4446"
+      "alt": "Img 4446",
+      "lat": 44.9883423,
+      "lng": 12.0318945
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4450.webp",
@@ -6832,6 +6838,7 @@
     "Chioggia",
     "Adria"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6849,14 +6856,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "Parmigiano Reggiano",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-    },
-    {
       "title": "macaroni",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+    },
+    {
+      "title": "Parmigiano Reggiano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6889,14 +6896,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-    },
-    {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -6909,11 +6916,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -6924,14 +6926,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "sabayon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      "title": "fusilli",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
     },
     {
       "title": "pizza Margherita",

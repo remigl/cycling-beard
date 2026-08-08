@@ -83,17 +83,23 @@
     {
       "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4115.webp",
       "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4115.webp",
-      "alt": "Img 4115"
+      "alt": "Img 4115",
+      "lat": 47.4205664,
+      "lng": 13.865202
     },
     {
       "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4127.webp",
       "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4127.webp",
-      "alt": "Img 4127"
+      "alt": "Img 4127",
+      "lat": 47.3883834,
+      "lng": 13.6061124
     },
     {
       "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4131.webp",
       "thumb": "/media/2026-07-13-aigen-im-ennstal-flachau/thumb_img_4131.webp",
-      "alt": "Img 4131"
+      "alt": "Img 4131",
+      "lat": 47.3884219,
+      "lng": 13.6052146
     },
     {
       "src": "/media/2026-07-13-aigen-im-ennstal-flachau/img_4142.webp",
@@ -9341,6 +9347,7 @@
     "Schladming",
     "Radstadt"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -9373,14 +9380,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "Eiernockerl",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-    },
-    {
       "title": "maluns",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
     },
     {
       "title": "serviettenknödel",

@@ -76,42 +76,58 @@
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4147.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4147.webp",
-      "alt": "Img 4147"
+      "alt": "Img 4147",
+      "lat": 47.2897485,
+      "lng": 13.0601062
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4148.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4148.webp",
-      "alt": "Img 4148"
+      "alt": "Img 4148",
+      "lat": 47.2725651,
+      "lng": 13.0779632
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4159.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4159.webp",
-      "alt": "Img 4159"
+      "alt": "Img 4159",
+      "lat": 47.2158166,
+      "lng": 13.1100563
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4169.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4169.webp",
-      "alt": "Img 4169"
+      "alt": "Img 4169",
+      "lat": 46.9822378,
+      "lng": 13.1755508
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4171.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4171.webp",
-      "alt": "Img 4171"
+      "alt": "Img 4171",
+      "lat": 46.9741159,
+      "lng": 13.1766138
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4173.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4173.webp",
-      "alt": "Img 4173"
+      "alt": "Img 4173",
+      "lat": 46.9733125,
+      "lng": 13.1788764
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4178.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4178.webp",
-      "alt": "Img 4178"
+      "alt": "Img 4178",
+      "lat": 46.9347222,
+      "lng": 13.1983466
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4181.webp",
       "thumb": "/media/2026-07-14-flachau-obervellach/thumb_img_4181.webp",
-      "alt": "Img 4181"
+      "alt": "Img 4181",
+      "lat": 46.9336546,
+      "lng": 13.1978496
     },
     {
       "src": "/media/2026-07-14-flachau-obervellach/img_4183.webp",
@@ -11493,6 +11509,7 @@
     "Bischofshofen",
     "Bad Hofgastein"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -11525,14 +11542,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "Eiernockerl",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
-    },
-    {
       "title": "maluns",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
     },
     {
       "title": "serviettenknödel",

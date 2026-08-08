@@ -67,7 +67,9 @@
     {
       "src": "/media/2026-06-07-verjux-orchamps/img_3426.webp",
       "thumb": "/media/2026-06-07-verjux-orchamps/thumb_img_3426.webp",
-      "alt": "Img 3426"
+      "alt": "Img 3426",
+      "lat": 47.0795633,
+      "lng": 5.4783543
     }
   ],
   "videos": [],
@@ -14136,6 +14138,7 @@
   "majorCities": [
     "Dole"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -14143,14 +14146,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "gaufre",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-    },
-    {
       "title": "sauce béchamel",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+    },
+    {
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
       "title": "crêpe",
@@ -14208,14 +14211,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-    },
-    {
       "title": "bœuf bourguignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
     },
     {
       "title": "Sauce veloutée",

@@ -62,42 +62,66 @@
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4411.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4411.webp",
-      "alt": "Img 4411"
+      "alt": "Img 4411",
+      "lat": 45.1240989,
+      "lng": 10.8249778
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4414.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4414.webp",
-      "alt": "Img 4414"
+      "alt": "Img 4414",
+      "lat": 45.1018204,
+      "lng": 10.8442793
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4418.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4418.webp",
-      "alt": "Img 4418"
+      "alt": "Img 4418",
+      "lat": 45.0931526,
+      "lng": 10.8631197
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4426.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4426.webp",
-      "alt": "Img 4426"
+      "alt": "Img 4426",
+      "lat": 45.0910777,
+      "lng": 10.8727874
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4429.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4429.webp",
-      "alt": "Img 4429"
+      "alt": "Img 4429",
+      "lat": 45.0919989,
+      "lng": 10.8823711
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4430.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4430.webp",
-      "alt": "Img 4430"
+      "alt": "Img 4430",
+      "lat": 45.049549,
+      "lng": 10.9206069
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4435.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4435.webp",
-      "alt": "Img 4435"
+      "alt": "Img 4435",
+      "lat": 45.0590643,
+      "lng": 11.1251616
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img-20260727-wa0002.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img-20260727-wa0002.webp",
-      "alt": "Img 20260727 Wa0002"
+      "alt": "Img 20260727 Wa0002",
+      "lat": [
+        null,
+        null,
+        null
+      ],
+      "lng": [
+        null,
+        null,
+        null
+      ]
     }
   ],
   "videos": [],
@@ -10018,6 +10042,7 @@
   "majorCities": [
     "Mantoue"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "spaghetti",
@@ -10035,14 +10060,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "Parmigiano Reggiano",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-    },
-    {
       "title": "macaroni",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
+    },
+    {
+      "title": "Parmigiano Reggiano",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
     },
     {
       "title": "pâtes à la carbonara",
@@ -10075,14 +10100,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "Pecorino",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-    },
-    {
       "title": "sauce tomate",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+    },
+    {
+      "title": "Pecorino",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
     },
     {
       "title": "salade caprese",
@@ -10095,16 +10120,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -10115,14 +10130,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "sabayon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+    },
+    {
+      "title": "fusilli",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
     }
   ]
 }

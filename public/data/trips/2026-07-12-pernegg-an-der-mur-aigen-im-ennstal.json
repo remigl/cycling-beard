@@ -62,57 +62,79 @@
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
-      "alt": "Img 4037"
+      "alt": "Img 4037",
+      "lat": 47.3799159,
+      "lng": 15.0948801
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4041.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4041.webp",
-      "alt": "Img 4041"
+      "alt": "Img 4041",
+      "lat": 47.3799159,
+      "lng": 15.0948801
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4048.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4048.webp",
-      "alt": "Img 4048"
+      "alt": "Img 4048",
+      "lat": 47.3363776,
+      "lng": 15.045132
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4054.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4054.webp",
-      "alt": "Img 4054"
+      "alt": "Img 4054",
+      "lat": 47.3319337,
+      "lng": 15.0271571
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4060.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4060.webp",
-      "alt": "Img 4060"
+      "alt": "Img 4060",
+      "lat": 47.3772195,
+      "lng": 14.9784571
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4062.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4062.webp",
-      "alt": "Img 4062"
+      "alt": "Img 4062",
+      "lat": 47.4168528,
+      "lng": 14.7661637
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4088.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4088.webp",
-      "alt": "Img 4088"
+      "alt": "Img 4088",
+      "lat": 47.4294414,
+      "lng": 14.7095157
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4092.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4092.webp",
-      "alt": "Img 4092"
+      "alt": "Img 4092",
+      "lat": 47.4352903,
+      "lng": 14.6948478
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4095.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4095.webp",
-      "alt": "Img 4095"
+      "alt": "Img 4095",
+      "lat": 47.508673,
+      "lng": 14.4572866
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4101.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4101.webp",
-      "alt": "Img 4101"
+      "alt": "Img 4101",
+      "lat": 47.5163666,
+      "lng": 14.4316656
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4105.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4105.webp",
-      "alt": "Img 4105"
+      "alt": "Img 4105",
+      "lat": 47.5270358,
+      "lng": 14.3705645
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4108.webp",
@@ -10053,6 +10075,7 @@
     "Kapfenberg",
     "Bruck an der Mur"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "escalope à la viennoise",

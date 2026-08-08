@@ -69,22 +69,30 @@
     {
       "src": "/media/2026-06-14-sigmaringen-ulm/20260614_141553.webp",
       "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_20260614_141553.webp",
-      "alt": "141553"
+      "alt": "141553",
+      "lat": 48.2415614,
+      "lng": 9.6081799
     },
     {
       "src": "/media/2026-06-14-sigmaringen-ulm/20260614_172522.webp",
       "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_20260614_172522.webp",
-      "alt": "172522"
+      "alt": "172522",
+      "lat": 48.3889281,
+      "lng": 9.9854837
     },
     {
       "src": "/media/2026-06-14-sigmaringen-ulm/img_3589.webp",
       "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_img_3589.webp",
-      "alt": "Img 3589"
+      "alt": "Img 3589",
+      "lat": 48.0522858,
+      "lng": 9.3192709
     },
     {
       "src": "/media/2026-06-14-sigmaringen-ulm/img_3599.webp",
       "thumb": "/media/2026-06-14-sigmaringen-ulm/thumb_img_3599.webp",
-      "alt": "Img 3599"
+      "alt": "Img 3599",
+      "lat": 48.2416583,
+      "lng": 9.6081491
     }
   ],
   "videos": [],
@@ -6781,6 +6789,7 @@
     "Nouvelle-Ulm",
     "Ehingen (Donau)"
   ],
+  "topRatedPlaces": [],
   "specialties": [
     {
       "title": "hamburger",
@@ -6838,14 +6847,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Fischbrötchen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-    },
-    {
       "title": "Mett",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+    },
+    {
+      "title": "Fischbrötchen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
     },
     {
       "title": "Pain de munition",
@@ -6853,14 +6862,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
     },
     {
-      "title": "Leberknödel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
-    },
-    {
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
       "title": "Pfälzer Saumagen",
