@@ -429,6 +429,64 @@ async function fetchMajorCities(trackPoints, wikiLang = "fr") {
   return top;
 }
 
+// ─── Lieux les mieux notés (Google Places, "Nearby Search (New)") ─────────────
+// Clé à créer sur console.cloud.google.com (API "Places API (New)" activée,
+// clé restreinte à cette API). Fournie via la variable d'env GOOGLE_PLACES_KEY
+// (secret GitHub Actions). Renvoie [] si non configurée, null si échec réseau.
+const GOOGLE_PLACES_KEY = process.env.GOOGLE_PLACES_KEY || "";
+
+async function fetchTopRatedPlaces(lat, lng, lang = "fr") {
+  if (!GOOGLE_PLACES_KEY || lat == null || lng == null) return [];
+
+  try {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 20000);
+    const res = await fetch("https://places.googleapis.com/v1/places:searchNearby", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Goog-Api-Key": GOOGLE_PLACES_KEY,
+        "X-Goog-FieldMask": "places.displayName,places.id,places.rating,places.userRatingCount,places.types,places.googleMapsUri",
+      },
+      body: JSON.stringify({
+        // Tous types de lieux (pas de filtre includedTypes)
+        maxResultCount: 20,
+        languageCode: lang,
+        locationRestriction: { circle: { center: { latitude: lat, longitude: lng }, radius: 8000 } },
+        rankPreference: "POPULARITY",
+      }),
+      signal: controller.signal,
+    });
+    clearTimeout(timer);
+    if (!res.ok) {
+      console.log(`    ⚠️  Google Places HTTP ${res.status} (lieux notés à réessayer)`);
+      return null;
+    }
+    const data = await res.json();
+    const places = data.places || [];
+
+    // Ne garde que les lieux bien notés avec un minimum d'avis (fiabilité de la note)
+    const filtered = places
+      .filter(p => p.rating && p.userRatingCount >= 15)
+      .sort((a, b) => (b.rating - a.rating) || (b.userRatingCount - a.userRatingCount))
+      .slice(0, 10)
+      .map(p => ({
+        title: p.displayName?.text || "",
+        rating: p.rating,
+        ratingCount: p.userRatingCount,
+        types: p.types || [],
+        mapsUrl: p.googleMapsUri || null,
+      }))
+      .filter(p => p.title);
+
+    console.log(`    ⭐ ${filtered.length} lieux bien notés (Google)`);
+    return filtered;
+  } catch (e) {
+    console.log(`    ⚠️  Google Places échoué (${e.message}) — à réessayer`);
+    return null;
+  }
+}
+
 // Spécialités culinaires d'un pays via Wikidata (SPARQL). Côté serveur → pas de
 // CORS. Renvoie une liste de plats {title, image, wikipedia} ou [] si échec.
 const COUNTRY_QID = {
@@ -1275,12 +1333,15 @@ async function syncFolder(drive, folder, cache, force) {
   // ── 3 plus grandes villes traversées par le tracé ──
   const allTrackPts = (gpxStats.segments || []).flat();
   const majorCitiesRaw = await fetchMajorCities(allTrackPts, "fr");
+  // ── Lieux les mieux notés (Google Places), section séparée ──
+  const topRatedRaw = await fetchTopRatedPlaces(gpxStats.endLat, gpxStats.endLng, "fr");
   // ── Spécialités culinaires du pays (Wikidata, côté serveur) ──
   const specialtiesRaw = await fetchSpecialties(geoCountryCode, "fr");
   // null = échec réseau (à réessayer au prochain sync) ; [] = vraiment rien.
-  const enrichmentFailed = (poisRaw === null) || (specialtiesRaw === null) || (majorCitiesRaw === null);
+  const enrichmentFailed = (poisRaw === null) || (specialtiesRaw === null) || (majorCitiesRaw === null) || (topRatedRaw === null);
   const pois = poisRaw || [];
   const majorCities = majorCitiesRaw || [];
+  const topRatedPlaces = topRatedRaw || [];
   const specialties = specialtiesRaw || [];
 
   // ── Build stage JSON ──
@@ -1327,6 +1388,7 @@ async function syncFolder(drive, folder, cache, force) {
     weather: notes.weather || null,
     pois,
     majorCities,
+    topRatedPlaces,
     specialties,
   };
 
@@ -1615,6 +1677,7 @@ async function main() {
     thanksTranslations: s.thanksTranslations || {},
     pois: s.pois || [],
     majorCities: s.majorCities || [],
+    topRatedPlaces: s.topRatedPlaces || [],
     specialties: s.specialties || [],
   }));
 
