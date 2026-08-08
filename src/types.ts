@@ -20,7 +20,7 @@ export interface TripSummary {
   segments?: [number, number][][];
   tags?: string[];
   fullStory?: string[];
-  photos?: { src: string; thumb: string; alt: string }[];
+  photos?: { src: string; thumb: string; alt: string; lat?: number; lng?: number }[];
   translations?: Record<string, { summary: string; quote: string | null; fullStory: string[] }>;
   elevProfile?: [number, number][];
   minAltitude?: number | null;
@@ -75,6 +75,8 @@ export interface StagePhoto {
   src: string;
   thumb: string;
   alt: string;
+  lat?: number;
+  lng?: number;
 }
 
 export interface StageVideo {
