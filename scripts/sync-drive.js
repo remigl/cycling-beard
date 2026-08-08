@@ -321,8 +321,11 @@ async function reverseGeocode(lat, lng) {
       const data = await res.json();
       const a = data.address || {};
       const result = {
-        city: a.city || a.town || a.village || a.municipality || a.hamlet || a.suburb || a.county || null,
-        region: a.state || a.region || a.province || a.state_district || null,
+        city: a.city || a.town || a.village || a.municipality || a.hamlet || a.suburb || null,
+        // "county" en dernier recours : la Croatie utilise admin_level=4 pour
+        // ses comtés (au lieu de 6 ailleurs), donc Nominatim y range parfois
+        // la région dans "county" plutôt que "state".
+        region: a.state || a.region || a.province || a.state_district || a.county || null,
         department: a.county || a.state_district || null,
         country: a.country || null,                                   // ex: France, Italie
         countryCode: a.country_code ? a.country_code.toUpperCase() : null,  // ex: FR, IT
