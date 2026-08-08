@@ -231,21 +231,34 @@ async function processImage(srcPath, destDir, baseName) {
 
 // Heure de prise de vue d'une photo (EXIF DateTimeOriginal), en timestamp UTC.
 // Renvoie null si absente ou illisible (photo sans EXIF, capture d'écran, etc.)
-async function getPhotoTakenAt(srcPath) {
+async function getPhotoTakenAt(srcPath, debugLabel = "") {
   try {
     const tags = await exifr.parse(srcPath, { pick: ["DateTimeOriginal", "CreateDate", "GPSLatitude", "GPSLongitude"] });
-    if (!tags) return null;
+    if (!tags) {
+      console.log(`    🔍 EXIF ${debugLabel} : aucune métadonnée lisible`);
+      return null;
+    }
     // Si la photo a déjà ses propres coordonnées GPS (rare sur un reflex sans
     // module GPS comme l'EOS RP, mais on les respecte si présentes)
     if (tags.GPSLatitude && tags.GPSLongitude) {
+      console.log(`    🔍 EXIF ${debugLabel} : GPS déjà présent (${tags.GPSLatitude}, ${tags.GPSLongitude})`);
       return { time: null, gpsLat: tags.GPSLatitude, gpsLng: tags.GPSLongitude };
     }
     const dt = tags.DateTimeOriginal || tags.CreateDate;
-    if (!dt) return null;
+    if (!dt) {
+      console.log(`    🔍 EXIF ${debugLabel} : pas de DateTimeOriginal/CreateDate (clés dispo: ${Object.keys(tags).join(",") || "aucune"})`);
+      return null;
+    }
     const t = new Date(dt).getTime();
-    return isNaN(t) ? null : { time: t, gpsLat: null, gpsLng: null };
-  } catch {
-    return null; // photo sans EXIF exploitable → pas grave, juste pas de position
+    if (isNaN(t)) {
+      console.log(`    🔍 EXIF ${debugLabel} : date illisible (${dt})`);
+      return null;
+    }
+    console.log(`    🔍 EXIF ${debugLabel} : ${new Date(t).toISOString()}`);
+    return { time: t, gpsLat: null, gpsLng: null };
+  } catch (e) {
+    console.log(`    🔍 EXIF ${debugLabel} : erreur lecture (${e.message})`);
+    return null;
   }
 }
 
@@ -1316,7 +1329,7 @@ async function syncFolder(drive, folder, cache, force) {
       // Heure de prise de vue (EXIF), utilisée après-coup pour retrouver la
       // position sur le tracé GPX. Photo sans EXIF exploitable → simplement
       // pas de géolocalisation, le reste continue normalement.
-      const shot = await getPhotoTakenAt(tmpPath);
+      const shot = await getPhotoTakenAt(tmpPath, name);
 
       if (name.startsWith("cover")) {
         coverWebp = paths.webp;
@@ -1360,15 +1373,27 @@ async function syncFolder(drive, folder, cache, force) {
   // et l'heure UTC du GPX, si jamais l'horloge du Canon n'est pas réglée sur
   // UTC/GPS-time. Réglable via variable d'env si besoin (0 par défaut).
   const tzOffsetMs = (parseInt(process.env.PHOTO_TZ_OFFSET_MIN || "0", 10) || 0) * 60000;
+  const tp = gpxStats.timedPoints || [];
+  console.log(`  🔍 timedPoints disponibles pour matching : ${tp.length}${tp.length > 0 ? ` (de ${new Date(tp[0].t).toISOString()} à ${new Date(tp[tp.length-1].t).toISOString()})` : ""}`);
   let geotagged = 0;
   for (const p of photos) {
     if (p._shotGps) {
       p.lat = p._shotGps.lat;
       p.lng = p._shotGps.lng;
       geotagged++;
-    } else if (p._shotTime && gpxStats.timedPoints && gpxStats.timedPoints.length > 0) {
-      const pos = matchPhotoToTrack(p._shotTime, gpxStats.timedPoints, tzOffsetMs);
-      if (pos) { p.lat = pos.lat; p.lng = pos.lng; geotagged++; }
+    } else if (p._shotTime && tp.length > 0) {
+      const pos = matchPhotoToTrack(p._shotTime, tp, tzOffsetMs);
+      if (pos) {
+        p.lat = pos.lat; p.lng = pos.lng; geotagged++;
+      } else {
+        // Diagnostic : pourquoi ça n'a pas matché (écart trop grand)
+        const adjusted = p._shotTime - tzOffsetMs;
+        const nearest = tp.reduce((best, c) => Math.abs(c.t - adjusted) < Math.abs(best.t - adjusted) ? c : best, tp[0]);
+        const gapMin = Math.round(Math.abs(nearest.t - adjusted) / 60000);
+        console.log(`    ⚠️  ${p.alt} : photo à ${new Date(p._shotTime).toISOString()}, point GPX le plus proche à ${gapMin} min d'écart → pas de match (seuil 20 min)`);
+      }
+    } else if (p._shotTime && tp.length === 0) {
+      console.log(`    ⚠️  ${p.alt} : heure EXIF trouvée mais aucun point GPX horodaté disponible`);
     }
     delete p._shotTime;
     delete p._shotGps;
