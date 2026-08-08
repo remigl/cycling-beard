@@ -502417,8 +502417,8 @@
     "endCity": "Općina Vela Luka",
     "distanceKm": 30.2,
     "elevationGain": 231,
-    "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
-    "thumbnail": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+    "coverImage": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4719.webp",
+    "thumbnail": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4719.webp",
     "shortDescription": "",
     "hasVideo": false,
     "hasGpx": true,
@@ -510292,7 +510292,43 @@
     ],
     "tags": [],
     "fullStory": [],
-    "photos": [],
+    "photos": [
+      {
+        "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4719.webp",
+        "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4719.webp",
+        "alt": "Cover"
+      },
+      {
+        "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4719.webp",
+        "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4719.webp",
+        "alt": "Img 4719"
+      },
+      {
+        "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4721.webp",
+        "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4721.webp",
+        "alt": "Img 4721"
+      },
+      {
+        "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4725.webp",
+        "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4725.webp",
+        "alt": "Img 4725"
+      },
+      {
+        "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4733.webp",
+        "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4733.webp",
+        "alt": "Img 4733"
+      },
+      {
+        "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4746.webp",
+        "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4746.webp",
+        "alt": "Img 4746"
+      },
+      {
+        "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4754.webp",
+        "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4754.webp",
+        "alt": "Img 4754"
+      }
+    ],
     "translations": {
       "fr": {
         "summary": "",
@@ -511124,8 +511160,8 @@
       ]
     ],
     "minAltitude": 4,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Mindel+Camp,+Stani+192,+20270,+Vela+Luka,+Croatie/data=!4m2!3m1!1s0x134a70fe875cf22b:0xf8530f57bbac846c!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODIyMTI1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzcsMTAwODIyNDk0QgJGUg%3D%3D&skid=c4e542d0-e6dd-4ee7-ae92-17bc4f008536&g_st=ac",
+    "lodgingName": "Mindel Camp, Stani 192, 20270, Vela Luka, Croatie",
     "thanks": "",
     "thanksTranslations": {},
     "pois": [
