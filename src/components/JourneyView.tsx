@@ -107,7 +107,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [selectedCountry, setSelectedCountry] = useState<string>(lastCountry);
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
-  const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string }[]; index: number } | null>(null);
+  const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string; lat?: number; lng?: number }[]; index: number } | null>(null);
 
   // ── Zoom photo (double-tap + pincement) ──────────────────────────────────
   const [zoom, setZoom] = useState(1);
@@ -401,6 +401,17 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
               </div>
               {lightbox.photos[lightbox.index]?.alt && (
                 <p className="font-mono text-xs text-brand-sand uppercase tracking-wider">{lightbox.photos[lightbox.index].alt}</p>
+              )}
+              {lightbox.photos[lightbox.index]?.lat != null && lightbox.photos[lightbox.index]?.lng != null && (
+                <a
+                  href={`https://www.google.com/maps?q=${lightbox.photos[lightbox.index].lat},${lightbox.photos[lightbox.index].lng}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  className="inline-flex items-center gap-1 font-mono text-[10px] text-white/60 hover:text-brand-sand transition-colors -mt-1"
+                >
+                  <MapPin size={11} /> {t("gallery.view_on_map")}
+                </a>
               )}
 
               {/* Bande de vignettes : aperçu des autres photos, clic pour y aller */}
