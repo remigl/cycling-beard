@@ -21,7 +21,8 @@ import fs from "fs";
 import path from "path";
 import { google } from "googleapis";
 import sharp from "sharp";
-import { parse as exifParse } from "exifr";
+import exifrPkg from "exifr";
+const exifParse = exifrPkg.parse;
 import GpxParser from "gpxparser";
 
 // ─── Config ──────────────────────────────────────────────────────────────────
