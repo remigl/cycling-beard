@@ -62,12 +62,16 @@
     {
       "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4591.webp",
       "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4591.webp",
-      "alt": "Img 4591"
+      "alt": "Img 4591",
+      "lat": 45.4326289,
+      "lng": 13.5219438
     },
     {
       "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4593.webp",
       "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4593.webp",
-      "alt": "Img 4593"
+      "alt": "Img 4593",
+      "lat": 45.4325765,
+      "lng": 13.5215961
     },
     {
       "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4595.webp",
