@@ -52,20 +52,35 @@ export default function Globe({ route, here }: GlobeProps) {
 
   useEffect(() => {
     const g = globeRef.current;
-    if (!g || !size.w) return;
+    if (!g || !size.w) { setDbg(d => d + ` | g=${!!g}`); return; }
+
+    // Diagnostic profond : le ref existe, mais est-ce que tout est vraiment prêt ?
+    try {
+      const canvas = wrapRef.current?.querySelector("canvas");
+      let rendererOk = false, webglOk = false;
+      try {
+        const renderer = g.renderer();
+        rendererOk = !!renderer;
+        const gl = renderer?.getContext ? renderer.getContext() : null;
+        webglOk = !!gl;
+      } catch {}
+      setDbg(`g=OK canvas=${!!canvas} renderer=${rendererOk} webgl=${webglOk}`);
+    } catch (e: any) {
+      setDbg(d => d + ` | diag-ERR:${e?.message}`);
+    }
 
     try {
       const controls = g.controls();
       controls.autoRotate = true;
       controls.autoRotateSpeed = 0.55;
       controls.enableZoom = false;
-    } catch {}
-    try { g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.1 }, 0); } catch {}
+    } catch (e: any) { setDbg(d => d + ` | controls-ERR:${e?.message}`); }
+    try { g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.1 }, 0); } catch (e: any) { setDbg(d => d + ` | pov-ERR:${e?.message}`); }
     try {
       const canvas = wrapRef.current?.querySelector("canvas");
       if (canvas) (canvas as HTMLElement).style.touchAction = "pan-y";
     } catch {}
-    try { g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch {}
+    try { g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch (e: any) { setDbg(d => d + ` | pixelratio-ERR:${e?.message}`); }
 
     // ── Nuages en temps réel (couverture nuageuse mondiale du moment) ──
     // Attachés à la Terre → ils tournent avec elle et restent à leur vraie
