@@ -30,6 +30,7 @@ export interface TripSummary {
   thanksTranslations?: Record<string, string>;
   pois?: Poi[];
   majorCities?: string[];
+  topRatedPlaces?: TopRatedPlace[];
   specialties?: Specialty[];
 }
 
@@ -45,6 +46,14 @@ export interface Poi {
   kind: string;
   rank: number;
   wikiTitle?: string | null;
+}
+
+export interface TopRatedPlace {
+  title: string;
+  rating: number;
+  ratingCount: number;
+  types: string[];
+  mapsUrl?: string | null;
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────
