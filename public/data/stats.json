@@ -1,13 +1,13 @@
 {
-  "totalKm": 4993,
+  "totalKm": 5023,
   "totalCountries": 9,
   "totalDays": 74,
-  "totalStages": 52,
-  "totalElevation": 30739,
+  "totalStages": 53,
+  "totalElevation": 30970,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
-  "currentLocation": "Grad Supetar",
+  "currentLocation": "Općina Vela Luka",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-08-08",
-  "latestStageSlug": "2026-08-06-grad-sibenik-grad-supetar"
+  "latestStageSlug": "2026-08-07-grad-supetar-opcina-vela-luka"
 }
