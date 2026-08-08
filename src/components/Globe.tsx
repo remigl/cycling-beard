@@ -11,13 +11,15 @@ export default function Globe({ route, here }: GlobeProps) {
   const globeRef = useRef<any>(null);
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const [size, setSize] = useState({ w: 0, h: 0 });
+  const [dbg, setDbg] = useState("init");
 
   useEffect(() => {
     let lastW = 0, lastH = 0;
     const measure = () => {
-      if (!wrapRef.current) return;
+      if (!wrapRef.current) { setDbg("pas de wrapRef"); return; }
       const w = wrapRef.current.clientWidth;
       const h = wrapRef.current.clientHeight;
+      setDbg(`mesuré w=${w} h=${h}`);
       if (w !== lastW || Math.abs(h - lastH) > 120) { lastW = w; lastH = h; setSize({ w, h }); }
     };
     measure();
@@ -109,6 +111,7 @@ export default function Globe({ route, here }: GlobeProps) {
 
   return (
     <div ref={wrapRef} className="absolute inset-0 bg-[#FAF9F6]">
+      <div className="absolute bottom-1 left-1 z-50 text-[8px] font-mono text-black/60 bg-white/70 px-1 rounded max-w-[92%] break-all">{dbg}</div>
       {size.w > 0 && (
         <GlobeGL
           ref={globeRef}
