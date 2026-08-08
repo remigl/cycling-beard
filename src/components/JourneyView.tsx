@@ -1,4 +1,4 @@
-import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X, Home, Heart } from "lucide-react";
+import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X, Home, Heart, Star } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
@@ -6,6 +6,7 @@ import { Lang } from "../i18n";
 import RideReplay from "./RideReplay";
 import PlaceInfo from "./PlaceInfo";
 import PoiInfo from "./PoiInfo";
+import TopRatedInfo from "./TopRatedInfo";
 import FoodInfo from "./FoodInfo";
 import RegionMap from "./RegionMap";
 
@@ -194,6 +195,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [elevOpen, setElevOpen] = useState<string | null>(null);
   const [birdsTrip, setBirdsTrip] = useState<TripSummary | null>(null);
   const [poiTrip, setPoiTrip] = useState<TripSummary | null>(null);
+  const [topRatedTrip, setTopRatedTrip] = useState<TripSummary | null>(null);
   const [foodTrip, setFoodTrip] = useState<TripSummary | null>(null);
   const [regionMap, setRegionMap] = useState<string | null>(null);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -206,7 +208,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   // Le dénivelé (elevOpen) est un tiroir inline → il ne doit PAS bloquer le scroll.
   const anyOverlayOpen =
     lightbox !== null || replayOpen !== null ||
-    birdsTrip !== null || poiTrip !== null || foodTrip !== null;
+    birdsTrip !== null || poiTrip !== null || foodTrip !== null || topRatedTrip !== null;
   useEffect(() => {
     if (!anyOverlayOpen) return;
     const scrollY = window.scrollY;
@@ -336,6 +338,9 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
         {/* Popup Points d'intérêt */}
         {poiTrip && (
           <PoiInfo trip={poiTrip} lang={lang} onClose={() => setPoiTrip(null)} t={t} />
+        )}
+        {topRatedTrip && (
+          <TopRatedInfo trip={topRatedTrip} onClose={() => setTopRatedTrip(null)} t={t} />
         )}
         {/* Popup Spécialités */}
         {foodTrip && (
@@ -678,14 +683,24 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                             <Bird size={12} /> {t("journey.birds_btn")}
                           </button>
                         </div>
-                        {/* Points d'intérêt (les spécialités sont par pays, en haut) */}
+                        {/* Points d'intérêt + Les mieux notés (les spécialités sont par pays, en haut) */}
                         {(trip.startCity || trip.endCity) && (
-                          <button
-                            onClick={() => setPoiTrip(trip)}
-                            className="w-full inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
-                          >
-                            <MapPin size={12} /> {t("journey.poi_btn")}
-                          </button>
+                          <div className={`grid gap-2 ${trip.topRatedPlaces && trip.topRatedPlaces.length > 0 ? "grid-cols-2" : "grid-cols-1"}`}>
+                            <button
+                              onClick={() => setPoiTrip(trip)}
+                              className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                            >
+                              <MapPin size={12} /> {t("journey.poi_btn")}
+                            </button>
+                            {trip.topRatedPlaces && trip.topRatedPlaces.length > 0 && (
+                              <button
+                                onClick={() => setTopRatedTrip(trip)}
+                                className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                              >
+                                <Star size={12} /> {t("journey.toprated_btn")}
+                              </button>
+                            )}
+                          </div>
                         )}
                       </div>
                     )}
