@@ -4,6 +4,7 @@ import { SiteStats, TripSummary } from "../types";
 import { Lang } from "../i18n";
 import RainRadar from "./RainRadar";
 import Globe from "./Globe";
+import GlobeErrorBoundary from "./GlobeErrorBoundary";
 
 // URL Buy Me a Coffee
 const BMC_URL = "https://buymeacoffee.com/cyclingBeard";
@@ -182,7 +183,9 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
         {/* Globe : remplit l'espace restant entre le titre et la flèche */}
         <div className="relative flex-1 w-full min-h-0 z-0 -mt-6">
-          <Globe route={globeRoute} here={globeHere} />
+          <GlobeErrorBoundary>
+            <Globe route={globeRoute} here={globeHere} />
+          </GlobeErrorBoundary>
         </div>
 
         {/* Indicateur de scroll */}
