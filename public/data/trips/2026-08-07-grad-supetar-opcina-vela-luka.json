@@ -8871,7 +8871,10 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Split",
+    "Supetar"
+  ],
   "topRatedPlaces": [],
   "specialties": []
 }
