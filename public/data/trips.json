@@ -40509,14 +40509,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
-        "title": "crêpe",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
-      },
-      {
         "title": "baguette",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+      },
+      {
+        "title": "crêpe",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
       },
       {
         "title": "roquefort",
@@ -40539,14 +40539,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -40584,24 +40584,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "tarte flambée",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-      },
-      {
         "title": "Consommé",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
-        "title": "Biancomangiare PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+        "title": "tarte flambée",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
       },
       {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      },
+      {
+        "title": "Biancomangiare PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
       }
     ]
   },
@@ -71834,13 +71834,6 @@
         "wikiTitle": null
       },
       {
-        "title": "Pont-Canal de Briare",
-        "dist": 4881,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
         "title": "Le Petit Train de Briare",
         "dist": 4891,
         "kind": "Attraction",
@@ -71902,9 +71895,20 @@
         "kind": "Château / fort",
         "rank": 10,
         "wikiTitle": null
+      },
+      {
+        "title": "Château de La Bussière",
+        "dist": 11131,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Château de La Bussière (Loiret)"
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Orléans",
+      "Olivet",
+      "Saint-Jean-de-Braye"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -71923,14 +71927,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
-        "title": "crêpe",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
-      },
-      {
         "title": "baguette",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+      },
+      {
+        "title": "crêpe",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
       },
       {
         "title": "roquefort",
@@ -71953,14 +71957,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -71978,14 +71982,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -71998,14 +72002,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "tarte flambée",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-      },
-      {
         "title": "Consommé",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+      },
+      {
+        "title": "tarte flambée",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
       },
       {
         "title": "munster",
@@ -81910,8 +81914,117 @@
       "nl": "Danielle et Pierre",
       "fr": "Danielle et Pierre"
     },
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Château de Sermoise",
+        "dist": 1282,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Sermoise"
+      },
+      {
+        "title": "chateau de Maucouvent",
+        "dist": 2757,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Cathédrale Saint-Cyr et Sainte-Julitte",
+        "dist": 3569,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Cathédrale Saint-Cyr-et-Sainte-Julitte de Nevers"
+      },
+      {
+        "title": "Palais ducal",
+        "dist": 3622,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Palais ducal de Nevers"
+      },
+      {
+        "title": "Avant-Porte du Croux",
+        "dist": 3674,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Avant-Porte du Croux"
+      },
+      {
+        "title": "Porte du Croux",
+        "dist": 3680,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Porte du Croux"
+      },
+      {
+        "title": "Porte de Paris",
+        "dist": 3965,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Porte de Paris (Nevers)"
+      },
+      {
+        "title": "La Châsse de Bernadette",
+        "dist": 4253,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château du Marais",
+        "dist": 5688,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château du Marais (Nièvre)"
+      },
+      {
+        "title": "Château de Luanges",
+        "dist": 7236,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Fertot",
+        "dist": 7391,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kilomètre 0 - Loire à vélo",
+        "dist": 8015,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Le Bec d'Allier",
+        "dist": 8518,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pont Canal du Guétin",
+        "dist": 8542,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de la Rocherie",
+        "dist": 9276,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Nevers",
+      "Cosne-Cours-sur-Loire"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -81930,14 +82043,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
-        "title": "crêpe",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
-      },
-      {
         "title": "baguette",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+      },
+      {
+        "title": "crêpe",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
       },
       {
         "title": "roquefort",
@@ -81960,14 +82073,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -81985,14 +82098,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -82005,14 +82118,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "tarte flambée",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-      },
-      {
         "title": "Consommé",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+      },
+      {
+        "title": "tarte flambée",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
       },
       {
         "title": "munster",
@@ -91608,7 +91721,113 @@
     "lodgingName": "Camping des Halles - Onlycamp, All. Marcel Merle, 58300 Decize",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Échauguette",
+        "dist": 666,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Porte du Marquis d'Ancre",
+        "dist": 894,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château des comtes de Nevers",
+        "dist": 991,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Germancy",
+        "dist": 2168,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Rosières",
+        "dist": 3189,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Champrobert",
+        "dist": 5055,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Devay",
+        "dist": 5414,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Bateau",
+        "dist": 5879,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Saint-Loup",
+        "dist": 6509,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château",
+        "dist": 7939,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "La Vierge dans l'Arbre",
+        "dist": 8417,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Verneuil",
+        "dist": 8447,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Verneuil (Nièvre)"
+      },
+      {
+        "title": "Château de la Motte-Farchat",
+        "dist": 10497,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Toury",
+        "dist": 11043,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Château de Goujon",
+        "dist": 11288,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Château de Goujon"
+      }
+    ],
     "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
@@ -91628,14 +91847,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
-        "title": "crêpe",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
-      },
-      {
         "title": "baguette",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+      },
+      {
+        "title": "crêpe",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
       },
       {
         "title": "roquefort",
@@ -91658,14 +91877,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -91683,14 +91902,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
       },
       {
-        "title": "salade niçoise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-      },
-      {
         "title": "bœuf bourguignon",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      },
+      {
+        "title": "salade niçoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
       },
       {
         "title": "Sauce veloutée",
@@ -91703,14 +91922,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "tarte flambée",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-      },
-      {
         "title": "Consommé",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+      },
+      {
+        "title": "tarte flambée",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
       },
       {
         "title": "munster",
@@ -201251,24 +201470,19 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
       },
       {
-        "title": "Mett",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-      },
-      {
         "title": "Fischbrötchen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
       },
       {
+        "title": "Mett",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+      },
+      {
         "title": "Pain de munition",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kommissbrot.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
-      },
-      {
-        "title": "Weisslacker",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
       },
       {
         "title": "Leberknödel",
@@ -201279,6 +201493,11 @@
         "title": "Pfälzer Saumagen",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+      },
+      {
+        "title": "Weisslacker",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
       }
     ]
   },
@@ -269540,7 +269759,11 @@
         "wikiTitle": "Sziklakórház Atombunker Múzeum"
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Dunakeszi",
+      "Vác",
+      "Esztergom"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -315119,120 +315342,65 @@
     "lodgingName": "PLAZA INN Graz City, Schönaugürtel 70, 8010 Graz, Autriche",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Bienengarten Edelsbach",
-        "dist": 7775,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gsellmanns Weltmaschine",
-        "dist": 5770,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Weltmaschine des Franz Gsellmann"
-      },
-      {
-        "title": "Museum im Rathaus",
-        "dist": 7445,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Österreichisches Brückenbaumuseum",
-        "dist": 8564,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Grabhügelgruppe im Blumental",
-        "dist": 1329,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gräberfeld, Grabhügel in den Feldwäldern",
-        "dist": 1568,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pfarrer Weingarten",
-        "dist": 4827,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kleebergwarte",
-        "dist": 4883,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Höhensiedlung am Fuchskogel",
-        "dist": 5008,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mariensäule",
-        "dist": 6076,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Den Helden der Heimat / 1939-1945",
-        "dist": 6305,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Europaberg",
-        "dist": 7497,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kriegerdenkmal",
-        "dist": 8338,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Hügelgräber Groß Hard, Hardwald",
-        "dist": 9395,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Linde am Hochegg",
-        "dist": 9626,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Feldbach",
       "Szentgotthárd",
       "Jennersdorf"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "escalope à la viennoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2022-12-29%20Wiener%20Schnitzel%20im%20Hotel%20Kaiserin%20Elisabeth.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Escalope_%C3%A0_la_viennoise"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
+      },
+      {
+        "title": "gaufrette",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Neapolitaner%20Waffel.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Neapolitan_wafer"
+      },
+      {
+        "title": "Apfelküchle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apfelkuechle-on-plate.png",
+        "wikipedia": "https://en.wikipedia.org/wiki/Apfelk%C3%BCchle"
+      },
+      {
+        "title": "Christmas carp",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A1noce%2C%20sma%C5%BEen%C3%BD%20kapr.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Christmas_carp"
+      },
+      {
+        "title": "ischler",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
+      },
+      {
+        "title": "maluns",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+      },
+      {
+        "title": "Eiernockerl",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
+      },
+      {
+        "title": "serviettenknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Serviettenkloss.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Serviettenkn%C3%B6del"
+      },
+      {
+        "title": "Waldviertler",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
+      }
+    ]
   },
   {
     "slug": "2026-07-11-graz-pernegg-an-der-mur",
@@ -373106,13 +373274,6 @@
         "wikiTitle": null
       },
       {
-        "title": "Dorfmuseum Gufidaun - Museo locale di Gudon",
-        "dist": 2460,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
         "title": "Bergwerk Villanders - Miniera Villandro",
         "dist": 2631,
         "kind": "Musée",
@@ -373167,117 +373328,22 @@
         "kind": "Monument / ruines",
         "rank": 8,
         "wikiTitle": null
+      },
+      {
+        "title": "Hexenbänke",
+        "dist": 9091,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Brixen - Bressanone",
+      "Bruneck - Brunico",
+      "Klausen - Chiusa"
+    ],
     "topRatedPlaces": [],
-    "specialties": [
-      {
-        "title": "spaghetti",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pasta%20%2823727887804%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Spaghetti"
-      },
-      {
-        "title": "lasagnes",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Meaty%20Lasagna%208of8%20%288736299782%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lasagnes"
-      },
-      {
-        "title": "mozzarella",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mozzarella%20di%20bufala3.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
-      },
-      {
-        "title": "Parmigiano Reggiano",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
-      },
-      {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
-        "title": "pâtes à la carbonara",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Espaguetis%20carbonara.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/P%C3%A2tes_%C3%A0_la_carbonara"
-      },
-      {
-        "title": "raviole",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ravioli%20di%20Faraona.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Ravioli"
-      },
-      {
-        "title": "salade César",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caesar%20salad%20%282%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_C%C3%A9sar"
-      },
-      {
-        "title": "Merlot",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-      },
-      {
-        "title": "tortellini",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
-      },
-      {
-        "title": "Cannoli PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-      },
-      {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-      },
-      {
-        "title": "Pecorino",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
-      },
-      {
-        "title": "salade caprese",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Caprese-1.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Salade_caprese"
-      },
-      {
-        "title": "Savoiarde PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Melindros.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
-      },
-      {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-      },
-      {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-      },
-      {
-        "title": "osso buco",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-      },
-      {
-        "title": "Penne",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-      },
-      {
-        "title": "pizza Margherita",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-      },
-      {
-        "title": "sabayon",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-      }
-    ]
+    "specialties": []
   },
   {
     "slug": "2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino",
@@ -400058,8 +400124,117 @@
     "lodgingName": "Il Rondò, Via Coorti Romane, 3, 25019 Sirmione BS, Italie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Parco Acquatico Waterland",
+        "dist": 2625,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Porta Verona",
+        "dist": 7559,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Museo Sisan",
+        "dist": 11907,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museo Sisàn"
+      },
+      {
+        "title": "Campana dei Caduti",
+        "dist": 3668,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Villa romana di Desenzano del Garda",
+        "dist": 5398,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Villa romana di Desenzano del Garda"
+      },
+      {
+        "title": "Ai Caduti sul Mare",
+        "dist": 7608,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monumento Ai Caduti",
+        "dist": 10247,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte degli Olivi",
+        "dist": 5943,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte dell'Ingrana",
+        "dist": 6283,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte Barbello",
+        "dist": 6285,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte Alto",
+        "dist": 6616,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte Lungo",
+        "dist": 6807,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte Sant'Antonio",
+        "dist": 6853,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte Corno",
+        "dist": 6974,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monte Venzaghetto",
+        "dist": 7162,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Peschiera del Garda",
+      "Sirmione"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -400078,14 +400253,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
       },
       {
-        "title": "macaroni",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-      },
-      {
         "title": "Parmigiano Reggiano",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+      },
+      {
+        "title": "macaroni",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
       },
       {
         "title": "pâtes à la carbonara",
@@ -400108,24 +400283,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
       },
       {
-        "title": "Cannoli PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-      },
-      {
         "title": "tortellini",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
       },
       {
-        "title": "sauce tomate",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+        "title": "Cannoli PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
       },
       {
         "title": "Pecorino",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+      },
+      {
+        "title": "sauce tomate",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
       },
       {
         "title": "salade caprese",
@@ -400136,6 +400311,11 @@
         "title": "Savoiarde PAT",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Melindros.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
+      },
+      {
+        "title": "tagliatelle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
         "title": "osso buco",
@@ -400153,19 +400333,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
       },
       {
-        "title": "tagliatelle",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+        "title": "Chianti DOCG",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
       },
       {
         "title": "fusilli",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
-      },
-      {
-        "title": "pizza Margherita",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
       }
     ]
   },
@@ -456029,7 +456204,113 @@
     "lodgingName": "Kamp Lucija, Seča 204, 6320 Portorož, Slovénie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Druga Rasporska Vrata",
+        "dist": 3586,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Marčana vrata",
+        "dist": 3624,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Prva Rasporska vrata",
+        "dist": 3716,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mediadom Priran",
+        "dist": 3808,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Osrednja vrata",
+        "dist": 3901,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Poljiska vrata",
+        "dist": 3902,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dolfinova Vrata",
+        "dist": 3936,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Miljska vrata",
+        "dist": 4177,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stari Mlin",
+        "dist": 10375,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vina Prelac",
+        "dist": 11125,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muzej solinarstva / Museo dei Salinai",
+        "dist": 2947,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muzej podvodnih dejavnostih",
+        "dist": 3630,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "MAONA",
+        "dist": 3694,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pomorski muzej Piran - Palača Gabrielli",
+        "dist": 3777,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
+      },
+      {
+        "title": "Čarobni svet školjk Piran",
+        "dist": 3801,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Trieste",
       "Monfalcone",
@@ -456043,7 +456324,7 @@
     "date": "2026-08-01",
     "title": "Portoroz Portorose → Grad Rovinj",
     "country": "Croatie",
-    "region": null,
+    "region": "Comitat d'Istrie",
     "startCity": "Portorož / Portorose",
     "endCity": "Grad Rovinj",
     "distanceKm": 123.1,
@@ -465758,11 +466039,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Rovinj",
-      "Poreč",
-      "Umag"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   },
@@ -465771,7 +466048,7 @@
     "date": "2026-08-02",
     "title": "Grad Rovinj → Grad Pula",
     "country": "Croatie",
-    "region": null,
+    "region": "Comitat d'Istrie",
     "startCity": "Grad Rovinj",
     "endCity": "Grad Pula",
     "distanceKm": 35.8,
@@ -474561,7 +474838,113 @@
     "lodgingName": "Arena Stoja Campsite, Stoja 37, 52100, Pula, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Herkulova vrata",
+        "dist": 3035,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Herkulova vrata"
+      },
+      {
+        "title": "Parna lokomotiva JŽ 835-040",
+        "dist": 3632,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stara maslina (ulika)",
+        "dist": 7469,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rudist",
+        "dist": 8177,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Otisci Dinosaura",
+        "dist": 10046,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zerostrasse",
+        "dist": 2766,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Povijesni i pomorski muzej Istre",
+        "dist": 2895,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Povijesni i pomorski muzej Istre"
+      },
+      {
+        "title": "MEMO Museum of good Memories",
+        "dist": 3177,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Arena Pula",
+        "dist": 3319,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Izložbe",
+        "dist": 7885,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ecomuseum - Istrian de Dignan",
+        "dist": 11903,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muzej zbirka sakralne umjetnosti",
+        "dist": 11922,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Cliff Diving",
+        "dist": 2463,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Roman mosaic, around 3. century A.D",
+        "dist": 2685,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Malo rimsko kazalište u Puli"
+      },
+      {
+        "title": "James Joyce",
+        "dist": 2860,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Pula"
     ],
@@ -474573,7 +474956,7 @@
     "date": "2026-08-03",
     "title": "Grad Pula → Nevi Ane",
     "country": "Croatie",
-    "region": null,
+    "region": "Comitat de Zadar",
     "startCity": "Grad Pula",
     "endCity": "Neviđane",
     "distanceKm": 36.2,
@@ -483660,7 +484043,7 @@
     "date": "2026-08-05",
     "title": "Nevi Ane → Grad Sibenik",
     "country": "Croatie",
-    "region": null,
+    "region": "Comitat de Šibenik-Knin",
     "startCity": "Neviđane",
     "endCity": "Grad Šibenik",
     "distanceKm": 88.8,
@@ -490424,113 +490807,7 @@
     "lodgingName": "43.637719,15.959667",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Baćulov dvor",
-        "dist": 3117,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Jurlinovi dvori",
-        "dist": 3212,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mlin",
-        "dist": 5137,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Spomenik težaku",
-        "dist": 9461,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Sokolarski centar",
-        "dist": 10046,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Spomen soba Dražen Petrović",
-        "dist": 11365,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Oaza Jelinjak",
-        "dist": 1453,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Don Ivo Šarić",
-        "dist": 6284,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gospa Od Loreta",
-        "dist": 7642,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": "Kip Gospe od Loreta u Primoštenu"
-      },
-      {
-        "title": "Obadva, obadva su pala",
-        "dist": 9359,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Koš Dražen Petrović",
-        "dist": 11357,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Dragon cave bar & aquarium",
-        "dist": 11644,
-        "kind": "Parc à thème / zoo",
-        "rank": 7,
-        "wikiTitle": null
-      },
-      {
-        "title": "Borije",
-        "dist": 881,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Debeli bok",
-        "dist": 1271,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Greben",
-        "dist": 2668,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": "Greben (bungtod sa Krowatiya, Šibensko-Kninska Županija)"
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Šibenik",
       "Vodice",
@@ -490544,7 +490821,7 @@
     "date": "2026-08-06",
     "title": "Grad Sibenik → Grad Supetar",
     "country": "Croatie",
-    "region": null,
+    "region": "Comitat de Split-Dalmatie",
     "startCity": "Grad Šibenik",
     "endCity": "Grad Supetar",
     "distanceKm": 76.9,
@@ -501981,7 +502258,7 @@
     "date": "2026-08-07",
     "title": "Grad Supetar → Opcina Vela Luka",
     "country": "Croatie",
-    "region": null,
+    "region": "Comitat de Dubrovnik-Neretva",
     "startCity": "Grad Supetar",
     "endCity": "Općina Vela Luka",
     "distanceKm": 30.2,
@@ -510840,10 +511117,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Split",
-      "Supetar"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   }

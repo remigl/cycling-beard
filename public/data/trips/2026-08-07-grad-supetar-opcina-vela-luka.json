@@ -6,7 +6,7 @@
   "location": "Grad Supetar → Opcina Vela Luka",
   "country": "Croatie",
   "countryCode": "HR",
-  "region": null,
+  "region": "Comitat de Dubrovnik-Neretva",
   "startCity": "Grad Supetar",
   "endCity": "Općina Vela Luka",
   "distanceKm": 30.2,
@@ -8871,10 +8871,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Split",
-    "Supetar"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": []
 }

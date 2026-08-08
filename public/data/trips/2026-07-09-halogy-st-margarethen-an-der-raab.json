@@ -16518,118 +16518,63 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Bienengarten Edelsbach",
-      "dist": 7775,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Gsellmanns Weltmaschine",
-      "dist": 5770,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Weltmaschine des Franz Gsellmann"
-    },
-    {
-      "title": "Museum im Rathaus",
-      "dist": 7445,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Österreichisches Brückenbaumuseum",
-      "dist": 8564,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Grabhügelgruppe im Blumental",
-      "dist": 1329,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Gräberfeld, Grabhügel in den Feldwäldern",
-      "dist": 1568,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pfarrer Weingarten",
-      "dist": 4827,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kleebergwarte",
-      "dist": 4883,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Höhensiedlung am Fuchskogel",
-      "dist": 5008,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Mariensäule",
-      "dist": 6076,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Den Helden der Heimat / 1939-1945",
-      "dist": 6305,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Europaberg",
-      "dist": 7497,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kriegerdenkmal",
-      "dist": 8338,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Hügelgräber Groß Hard, Hardwald",
-      "dist": 9395,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Linde am Hochegg",
-      "dist": 9626,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Feldbach",
     "Szentgotthárd",
     "Jennersdorf"
   ],
   "topRatedPlaces": [],
-  "specialties": []
+  "specialties": [
+    {
+      "title": "escalope à la viennoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2022-12-29%20Wiener%20Schnitzel%20im%20Hotel%20Kaiserin%20Elisabeth.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Escalope_%C3%A0_la_viennoise"
+    },
+    {
+      "title": "Leberknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
+    },
+    {
+      "title": "gaufrette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Neapolitaner%20Waffel.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Neapolitan_wafer"
+    },
+    {
+      "title": "Apfelküchle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apfelkuechle-on-plate.png",
+      "wikipedia": "https://en.wikipedia.org/wiki/Apfelk%C3%BCchle"
+    },
+    {
+      "title": "Christmas carp",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A1noce%2C%20sma%C5%BEen%C3%BD%20kapr.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Christmas_carp"
+    },
+    {
+      "title": "ischler",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
+    },
+    {
+      "title": "maluns",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+    },
+    {
+      "title": "Eiernockerl",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
+    },
+    {
+      "title": "serviettenknödel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Serviettenkloss.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Serviettenkn%C3%B6del"
+    },
+    {
+      "title": "Waldviertler",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
+    }
+  ]
 }
