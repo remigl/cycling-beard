@@ -9971,7 +9971,11 @@
       "wikiTitle": "Château de La Bussière (Loiret)"
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Orléans",
+    "Olivet",
+    "Saint-Jean-de-Braye"
+  ],
   "specialties": [
     {
       "title": "mayonnaise",

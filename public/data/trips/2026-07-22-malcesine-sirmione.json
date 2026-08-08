@@ -6567,7 +6567,10 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Peschiera del Garda",
+    "Sirmione"
+  ],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6615,24 +6618,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "sauce tomate",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+    },
+    {
+      "title": "sauce tomate",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
     },
     {
       "title": "salade caprese",
@@ -6665,9 +6668,9 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
     },
     {
       "title": "sabayon",
