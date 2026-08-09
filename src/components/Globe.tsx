@@ -56,15 +56,25 @@ export default function Globe({ route, here }: GlobeProps) {
 
     // Diagnostic profond : le ref existe, mais est-ce que tout est vraiment prêt ?
     try {
-      const canvas = wrapRef.current?.querySelector("canvas");
-      let rendererOk = false, webglOk = false;
+      const canvas = wrapRef.current?.querySelector("canvas") as HTMLCanvasElement | null;
+      let rendererOk = false, webglOk = false, drawBufW = 0, drawBufH = 0;
       try {
         const renderer = g.renderer();
         rendererOk = !!renderer;
         const gl = renderer?.getContext ? renderer.getContext() : null;
         webglOk = !!gl;
+        if (gl && gl.drawingBufferWidth) { drawBufW = gl.drawingBufferWidth; drawBufH = gl.drawingBufferHeight; }
       } catch {}
-      setDbg(`g=OK canvas=${!!canvas} renderer=${rendererOk} webgl=${webglOk}`);
+      const cssW = canvas?.clientWidth ?? -1, cssH = canvas?.clientHeight ?? -1;
+      const attrW = canvas?.width ?? -1, attrH = canvas?.height ?? -1;
+      setDbg(`css=${cssW}x${cssH} attr=${attrW}x${attrH} buf=${drawBufW}x${drawBufH} r=${rendererOk} gl=${webglOk}`);
+
+      // Test de chargement de la texture Terre, indépendamment de react-globe.gl
+      const testImg = new Image();
+      testImg.crossOrigin = "anonymous";
+      testImg.onload = () => setDbg(d => d + " | texture=OK");
+      testImg.onerror = () => setDbg(d => d + " | texture=ÉCHEC");
+      testImg.src = "https://cdn.jsdelivr.net/npm/three-globe/example/img/earth-blue-marble.jpg";
     } catch (e: any) {
       setDbg(d => d + ` | diag-ERR:${e?.message}`);
     }
