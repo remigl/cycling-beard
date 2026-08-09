@@ -11436,7 +11436,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Split",
+    "Kaštela",
+    "Solin"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
