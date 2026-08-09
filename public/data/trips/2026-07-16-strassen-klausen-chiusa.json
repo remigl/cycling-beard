@@ -13387,13 +13387,6 @@
       "wikiTitle": null
     },
     {
-      "title": "Dorfmuseum Gufidaun - Museo locale di Gudon",
-      "dist": 2460,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
       "title": "Bergwerk Villanders - Miniera Villandro",
       "dist": 2631,
       "kind": "Musée",
@@ -13448,9 +13441,20 @@
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null
+    },
+    {
+      "title": "Hexenbänke",
+      "dist": 9091,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Brixen - Bressanone",
+    "Bruneck - Brunico",
+    "Klausen - Chiusa"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -13469,14 +13473,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -13549,14 +13553,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+    },
+    {
       "title": "pizza Margherita",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-    },
-    {
-      "title": "fusilli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
     }
   ]
 }
