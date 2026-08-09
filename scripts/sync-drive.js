@@ -23,6 +23,7 @@ import { google } from "googleapis";
 import sharp from "sharp";
 import exifrPkg from "exifr";
 const exifParse = exifrPkg.parse;
+import tzLookup from "tz-lookup";
 import GpxParser from "gpxparser";
 
 // ─── Config ──────────────────────────────────────────────────────────────────
@@ -297,6 +298,27 @@ function matchPhotoToTrack(photoTimeMs, timedPoints, tzOffsetMs = 0) {
   }
   if (!best || bestGap > MAX_PHOTO_GPS_GAP_MS) return null;
   return { lat: best.lat, lng: best.lng };
+}
+
+// Calcule automatiquement le décalage (en ms) entre l'heure locale de
+// l'appareil photo et l'heure UTC du GPX, à partir du lieu ET de la date de
+// l'étape (gère automatiquement l'heure d'été/hiver, et s'adapte pays par
+// pays tout au long du voyage — pas de réglage manuel à refaire).
+function computePhotoTzOffsetMs(lat, lng, approxDate) {
+  if (lat == null || lng == null) return 0;
+  try {
+    const zone = tzLookup(lat, lng); // ex: "Europe/Vienna"
+    const date = approxDate ? new Date(approxDate) : new Date();
+    // Astuce standard : formatte la même date dans le fuseau local et en UTC,
+    // la différence entre les deux donne le décalage exact à CETTE date
+    // (donc correct été comme hiver).
+    const local = new Date(date.toLocaleString("en-US", { timeZone: zone }));
+    const utc = new Date(date.toLocaleString("en-US", { timeZone: "UTC" }));
+    return local.getTime() - utc.getTime();
+  } catch (e) {
+    console.log(`    ⚠️  Fuseau horaire non déterminé (${e.message}), décalage=0`);
+    return 0;
+  }
 }
 
 // ─── Reverse Geocoding (Nominatim / OpenStreetMap, gratuit) ──────────────────
@@ -1380,11 +1402,21 @@ async function syncFolder(drive, folder, cache, force) {
   // qui n'a pas de GPS intégré, mais on les respecte si présentes).
   // Priorité 2 : heure de prise de vue matchée au point du tracé GPX le plus
   // proche dans le temps (±20 min max, sinon pas de position assignée).
-  // PHOTO_TZ_OFFSET_MIN : décalage en minutes entre l'heure de l'appareil photo
-  // et l'heure UTC du GPX, si jamais l'horloge du Canon n'est pas réglée sur
-  // UTC/GPS-time. Réglable via variable d'env si besoin (0 par défaut).
-  const tzOffsetMs = (parseInt(process.env.PHOTO_TZ_OFFSET_MIN || "0", 10) || 0) * 60000;
+  //
+  // Décalage horaire appareil photo vs UTC du GPX :
+  // - Jusqu'au 7 août 2026 inclus : l'horloge du Canon n'était pas correctement
+  //   réglée. Calibré manuellement le 1er août 2026 (arbre de Grado : photo
+  //   EXIF 9h13, point GPX réel 9h04 UTC → l'appareil avançait de 9 min).
+  // - À partir du 8 août 2026 : l'appareil est à l'heure locale correcte, donc
+  //   on calcule automatiquement le décalage fuseau (lieu + date de l'étape),
+  //   qui s'adapte pays par pays pour le reste du voyage.
+  const CALIBRATION_CUTOFF = "2026-08-08";
+  const CALIBRATED_OFFSET_MS = 9 * 60000; // avance de 9 min de l'appareil, avant calibration
   const tp = gpxStats.timedPoints || [];
+  const tzOffsetMs = (date < CALIBRATION_CUTOFF)
+    ? CALIBRATED_OFFSET_MS
+    : computePhotoTzOffsetMs(gpxStats.endLat, gpxStats.endLng, tp.length > 0 ? tp[0].t : undefined);
+  console.log(`  🕐 décalage horaire appareil photo : ${Math.round(tzOffsetMs / 60000)} min (${date < CALIBRATION_CUTOFF ? "calibrage fixe pré-08/08" : "calcul auto par fuseau"})`);
   console.log(`  🔍 timedPoints disponibles pour matching : ${tp.length}${tp.length > 0 ? ` (de ${new Date(tp[0].t).toISOString()} à ${new Date(tp[tp.length-1].t).toISOString()})` : ""}`);
   let geotagged = 0;
   for (const p of photos) {
