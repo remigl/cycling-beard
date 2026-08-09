@@ -258072,7 +258072,38 @@
       "Šamorín"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "bryndzové halušky",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
+      },
+      {
+        "title": "oublie",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bad%20Ischler%20Oblaten.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
+      },
+      {
+        "title": "lokša",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
+      },
+      {
+        "title": "strapačky",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
+        "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
+      },
+      {
+        "title": "Oštiepok",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
+      },
+      {
+        "title": "balkánský sýr",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
+      }
+    ]
   },
   {
     "slug": "2026-07-05-kravany-nad-dunajom-budapest",
@@ -315565,7 +315596,58 @@
       "Jennersdorf"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "escalope à la viennoise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2022-12-29%20Wiener%20Schnitzel%20im%20Hotel%20Kaiserin%20Elisabeth.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Escalope_%C3%A0_la_viennoise"
+      },
+      {
+        "title": "Leberknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Leberknoedelsuppe.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
+      },
+      {
+        "title": "gaufrette",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Neapolitaner%20Waffel.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Neapolitan_wafer"
+      },
+      {
+        "title": "Apfelküchle",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Apfelkuechle-on-plate.png",
+        "wikipedia": "https://en.wikipedia.org/wiki/Apfelk%C3%BCchle"
+      },
+      {
+        "title": "Christmas carp",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A1noce%2C%20sma%C5%BEen%C3%BD%20kapr.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Christmas_carp"
+      },
+      {
+        "title": "ischler",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Nu%C3%9F-Ischlert%C3%B6tchen.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
+      },
+      {
+        "title": "Eiernockerl",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
+      },
+      {
+        "title": "maluns",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
+      },
+      {
+        "title": "serviettenknödel",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Serviettenkloss.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Serviettenkn%C3%B6del"
+      },
+      {
+        "title": "Waldviertler",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
+      }
+    ]
   },
   {
     "slug": "2026-07-11-graz-pernegg-an-der-mur",
@@ -475224,7 +475306,38 @@
       "Pula"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-03-grad-pula-nevi-ane",
@@ -484311,7 +484424,38 @@
       "Pula"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-05-nevi-ane-grad-sibenik",
@@ -491195,7 +491339,38 @@
       "Biograd na Moru"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-06-grad-sibenik-grad-supetar",
@@ -502626,13 +502801,40 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Split",
-      "Kaštela",
-      "Solin"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-07-grad-supetar-opcina-vela-luka",
@@ -511503,6 +511705,37 @@
       "Supetar"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   }
 ]
