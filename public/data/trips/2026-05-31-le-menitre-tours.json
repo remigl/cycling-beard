@@ -10022,12 +10022,114 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [
-    "Tours",
-    "Joué-lès-Tours",
-    "Saumur"
+  "pois": [
+    {
+      "title": "La ruche",
+      "dist": 711,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Bel-Air",
+      "dist": 4620,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Manoir des Hamardières",
+      "dist": 6087,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Manoir des Hamardières"
+    },
+    {
+      "title": "Le Gros Chêne",
+      "dist": 8206,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de l'Aubrière",
+      "dist": 8707,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Donjon de Montbazon",
+      "dist": 8832,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Donjon de Montbazon"
+    },
+    {
+      "title": "Château de la Dorée",
+      "dist": 10065,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Grottes pétrifiantes de Savonnières",
+      "dist": 10951,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Grottes Pétrifiantes de Savonnières"
+    },
+    {
+      "title": "Château de Vaugrignon",
+      "dist": 11372,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château d'Esvres",
+      "dist": 11775,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Classe musée René Granger",
+      "dist": 1293,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Nanza",
+      "dist": 3247,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Chapelle Saint-Anne",
+      "dist": 3544,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "La Laverie - lieu de cultures",
+      "dist": 3582,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Carré d'artistes",
+      "dist": 3770,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    }
   ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -10046,14 +10148,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "crêpe",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
-    },
-    {
       "title": "baguette",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+    },
+    {
+      "title": "crêpe",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
     },
     {
       "title": "roquefort",
@@ -10091,24 +10193,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",
@@ -10121,24 +10223,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-    },
-    {
       "title": "Consommé",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "munster",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Biancomangiare PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
+      "title": "munster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     }
   ]
 }

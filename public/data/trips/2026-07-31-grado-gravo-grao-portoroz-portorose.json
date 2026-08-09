@@ -7,7 +7,7 @@
   "country": "Slovénie",
   "countryCode": "SI",
   "region": "Frioul-Vénétie julienne",
-  "startCity": "Grado / Gravo - Grao",
+  "startCity": "Grado",
   "endCity": "Portorož / Portorose",
   "distanceKm": 96.2,
   "elevationGain": 565,
@@ -12089,7 +12089,11 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [],
+  "majorCities": [
+    "Trieste",
+    "Monfalcone",
+    "Koper / Capodistria"
+  ],
   "topRatedPlaces": [],
   "specialties": []
 }

@@ -9905,6 +9905,13 @@
       "wikiTitle": null
     },
     {
+      "title": "Pont-Canal de Briare",
+      "dist": 4881,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
       "title": "Le Petit Train de Briare",
       "dist": 4891,
       "kind": "Attraction",
@@ -9966,16 +9973,13 @@
       "kind": "Château / fort",
       "rank": 10,
       "wikiTitle": null
-    },
-    {
-      "title": "Château de La Bussière",
-      "dist": 11131,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Château de La Bussière (Loiret)"
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Orléans",
+    "Olivet",
+    "Saint-Jean-de-Braye"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -9994,14 +9998,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "crêpe",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
-    },
-    {
       "title": "baguette",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+    },
+    {
+      "title": "crêpe",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
     },
     {
       "title": "roquefort",
@@ -10024,14 +10028,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Sauce hollandaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-    },
-    {
       "title": "Merlot",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
       "title": "bouillabaisse",
@@ -10039,24 +10043,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",

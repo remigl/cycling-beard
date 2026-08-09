@@ -10871,7 +10871,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Espace naturel sensible des courtils des Mauves",
+      "dist": 142,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Les Jardins de Roquelin",
+      "dist": 2262,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "La promenade des Mauves et des moulins",
+      "dist": 2292,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Meung sur Loire",
+      "dist": 2325,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "De Cléry à la Butte des Elus",
+      "dist": 4813,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château du Bouchet",
+      "dist": 6356,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "La butte des Élus",
+      "dist": 7092,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Mézières-lez-Cléry et le chemin des Vallées",
+      "dist": 8181,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Montpipeau",
+      "dist": 8204,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Fontpertuis",
+      "dist": 8739,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour de César",
+      "dist": 9053,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour du Diable",
+      "dist": 9057,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour de l'Horloge",
+      "dist": 9077,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Luz",
+      "dist": 9134,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tour Saint-Firmin",
+      "dist": 9150,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Tour Saint-Firmin"
+    }
+  ],
   "majorCities": [
     "Tours",
     "Blois",
@@ -10895,14 +11001,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "crêpe",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
-    },
-    {
       "title": "baguette",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
+    },
+    {
+      "title": "crêpe",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
     },
     {
       "title": "roquefort",
@@ -10925,14 +11031,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Sauce hollandaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-    },
-    {
       "title": "Merlot",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
       "title": "bouillabaisse",
@@ -10940,24 +11046,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "Roux",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
-    },
-    {
       "title": "mille-feuille",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+      "title": "Roux",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",

@@ -6573,7 +6573,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Pestsäule Auerspergplatz",
+      "dist": 2544,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Linzer Grottenbahn",
+      "dist": 2889,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Linzer Grottenbahn"
+    },
+    {
+      "title": "Teufelsbrunnen",
+      "dist": 10456,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Drei Bezirke Stein",
+      "dist": 11601,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zahnheilkundemuseum",
+      "dist": 1669,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Atelier Galerie Moran",
+      "dist": 2117,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ars Electronica Futurelab / Roof",
+      "dist": 1307,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Donaublick",
+      "dist": 5353,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Römerturm",
+      "dist": 5393,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kriegerdenkmal Leonding 1. Weltkrieg",
+      "dist": 5628,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Rosenfeldweg",
+      "dist": 8427,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Amonwarte",
+      "dist": 10691,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Tisch der Austreibung",
+      "dist": 640,
+      "kind": "Œuvre / art",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Hommage à Anton Bruckner",
+      "dist": 706,
+      "kind": "Œuvre / art",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Die Schlange",
+      "dist": 784,
+      "kind": "Œuvre / art",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Linz",
     "Passau",

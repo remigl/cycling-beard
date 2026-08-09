@@ -8764,8 +8764,117 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
+  "pois": [
+    {
+      "title": "Stone mosaics",
+      "dist": 4583,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Arheološki muzej",
+      "dist": 4581,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Etno zbirka Barilo",
+      "dist": 10880,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kissing point",
+      "dist": 3531,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vela Spila",
+      "dist": 4172,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vrh od Orsana",
+      "dist": 303,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ošjak",
+      "dist": 2732,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Giča",
+      "dist": 3096,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vranac",
+      "dist": 3727,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Pupanj",
+      "dist": 3806,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Maslinov vrh",
+      "dist": 4078,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Spilski rat",
+      "dist": 4242,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Hum",
+      "dist": 4530,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": "Hum (Korčula)"
+    },
+    {
+      "title": "Brkat",
+      "dist": 4550,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Veli vrh",
+      "dist": 4794,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
+  "majorCities": [
+    "Split",
+    "Supetar"
+  ],
   "topRatedPlaces": [],
   "specialties": []
 }

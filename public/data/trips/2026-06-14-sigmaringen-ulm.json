@@ -6677,8 +6677,118 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
+  "pois": [
+    {
+      "title": "Bierwirtschaft Lochmühle",
+      "dist": 915,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Fischkasten Brunnen",
+      "dist": 1048,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Grabenhäuser",
+      "dist": 1691,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Stampfe",
+      "dist": 2649,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Burgstall",
+      "dist": 11619,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Donauschwäbisches Zentralmuseum",
+      "dist": 392,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Museum Ulm",
+      "dist": 1137,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museum Ulm"
+    },
+    {
+      "title": "Kunsthalle Weishaupt",
+      "dist": 1137,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Kunsthalle Weishaupt"
+    },
+    {
+      "title": "Museum Brot und Kunst",
+      "dist": 1380,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museum Brot und Kunst"
+    },
+    {
+      "title": "Naturmuseum Ulm",
+      "dist": 1433,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Galerie Sebastianskapelle",
+      "dist": 1640,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Museum im Konventbau",
+      "dist": 3079,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Kloster Wiblingen"
+    },
+    {
+      "title": "Heimatmuseum Pfuhl",
+      "dist": 4605,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Aussicht Galgenberg",
+      "dist": 676,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Bastion Lauseck / Wilhelmshöhe",
+      "dist": 697,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
+  "majorCities": [
+    "Ulm",
+    "Nouvelle-Ulm",
+    "Ehingen (Donau)"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -6737,19 +6847,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Fischbrötchen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
-    },
-    {
       "title": "Mett",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
     },
     {
+      "title": "Fischbrötchen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
+    },
+    {
       "title": "Pain de munition",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kommissbrot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
+    },
+    {
+      "title": "Weisslacker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
     },
     {
       "title": "Leberknödel",
@@ -6760,11 +6875,6 @@
       "title": "Pfälzer Saumagen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
-    },
-    {
-      "title": "Weisslacker",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
     }
   ]
 }

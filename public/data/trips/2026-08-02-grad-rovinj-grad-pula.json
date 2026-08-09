@@ -8802,8 +8802,116 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
+  "pois": [
+    {
+      "title": "Herkulova vrata",
+      "dist": 3035,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Herkulova vrata"
+    },
+    {
+      "title": "Parna lokomotiva JŽ 835-040",
+      "dist": 3632,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Stara maslina (ulika)",
+      "dist": 7469,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Rudist",
+      "dist": 8177,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Otisci Dinosaura",
+      "dist": 10046,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zerostrasse",
+      "dist": 2766,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Povijesni i pomorski muzej Istre",
+      "dist": 2895,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Povijesni i pomorski muzej Istre"
+    },
+    {
+      "title": "MEMO Museum of good Memories",
+      "dist": 3177,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Arena Pula",
+      "dist": 3319,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Izložbe",
+      "dist": 7885,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ecomuseum - Istrian de Dignan",
+      "dist": 11903,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Muzej zbirka sakralne umjetnosti",
+      "dist": 11922,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Cliff Diving",
+      "dist": 2463,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Roman mosaic, around 3. century A.D",
+      "dist": 2685,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Malo rimsko kazalište u Puli"
+    },
+    {
+      "title": "James Joyce",
+      "dist": 2860,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
+  "majorCities": [
+    "Pula"
+  ],
   "topRatedPlaces": [],
   "specialties": []
 }
