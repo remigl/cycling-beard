@@ -29,6 +29,7 @@
     "dotenv": "^17.2.3",
     "esbuild": "^0.25.0",
     "gpxparser": "^3.0.8",
+    "tz-lookup": "^6.1.25",
     "googleapis": "^144.0.0",
     "sharp": "^0.33.5",
     "tailwindcss": "^4.1.14",
