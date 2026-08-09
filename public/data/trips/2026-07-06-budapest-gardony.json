@@ -63,22 +63,22 @@
       "src": "/media/2026-07-06-budapest-gardony/20260706_130945.webp",
       "thumb": "/media/2026-07-06-budapest-gardony/thumb_20260706_130945.webp",
       "alt": "130945",
-      "lat": 47.4648129,
-      "lng": 19.0192493
+      "lat": 47.463725,
+      "lng": 19.0338498
     },
     {
       "src": "/media/2026-07-06-budapest-gardony/img_3908.webp",
       "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3908.webp",
       "alt": "Img 3908",
-      "lat": 47.4471623,
-      "lng": 18.9858541
+      "lat": 47.4471622,
+      "lng": 18.985742
     },
     {
       "src": "/media/2026-07-06-budapest-gardony/img_3910.webp",
       "thumb": "/media/2026-07-06-budapest-gardony/thumb_img_3910.webp",
       "alt": "Img 3910",
-      "lat": 47.4328144,
-      "lng": 18.7429327
+      "lat": 47.4468671,
+      "lng": 18.7543549
     },
     {
       "src": "/media/2026-07-06-budapest-gardony/img_3918.webp",
@@ -15222,11 +15222,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Budapest",
-    "Budaörs",
-    "Biatorbágy"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {

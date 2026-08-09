@@ -87,34 +87,36 @@
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
       "alt": "Img 4221",
-      "lat": 46.7382597,
-      "lng": 12.1333999
+      "lat": 46.7375908,
+      "lng": 12.168082
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4225.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4225.webp",
       "alt": "Img 4225",
-      "lat": 46.7777125,
-      "lng": 11.8798425
+      "lat": 46.7817857,
+      "lng": 11.900975
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4228.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4228.webp",
       "alt": "Img 4228",
-      "lat": 46.7191128,
-      "lng": 11.6560719
+      "lat": 46.7176831,
+      "lng": 11.6584639
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4230.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4230.webp",
       "alt": "Img 4230",
-      "lat": 46.6410825,
-      "lng": 11.573221
+      "lat": 46.6411591,
+      "lng": 11.5733085
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4234.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4234.webp",
-      "alt": "Img 4234"
+      "alt": "Img 4234",
+      "lat": 46.6405003,
+      "lng": 11.5717589
     }
   ],
   "videos": [],
@@ -13533,11 +13535,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -13553,14 +13550,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "sabayon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "pizza Margherita",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     }
   ]
 }

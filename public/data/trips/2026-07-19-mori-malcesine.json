@@ -68,32 +68,36 @@
       "src": "/media/2026-07-19-mori-malcesine/img_4292.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4292.webp",
       "alt": "Img 4292",
-      "lat": 45.8675246,
-      "lng": 10.8770727
+      "lat": 45.8725018,
+      "lng": 10.8682347
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4297.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4297.webp",
       "alt": "Img 4297",
-      "lat": 45.8661055,
-      "lng": 10.8761472
+      "lat": 45.8722431,
+      "lng": 10.8693811
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4310.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4310.webp",
       "alt": "Img 4310",
-      "lat": 45.8046224,
-      "lng": 10.8434636
+      "lat": 45.8074496,
+      "lng": 10.8476753
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4314.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4314.webp",
-      "alt": "Img 4314"
+      "alt": "Img 4314",
+      "lat": 45.7313677,
+      "lng": 10.7867261
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4322.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4322.webp",
-      "alt": "Img 4322"
+      "alt": "Img 4322",
+      "lat": 45.7313677,
+      "lng": 10.7867261
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4331.webp",
@@ -6339,113 +6343,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Terrazza del Brivido",
-      "dist": 4635,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Fontana Coperta",
-      "dist": 6656,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Casa natale Santo Daniele Comboni",
-      "dist": 8531,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Punta Veleno",
-      "dist": 4109,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monte Cas",
-      "dist": 4206,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Madonna Dell'Accoglienza",
-      "dist": 4274,
-      "kind": "Œuvre / art",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Cima Valdritta (Monte Baldo)",
-      "dist": 4471,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dosso della Forca",
-      "dist": 5060,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monte Nai",
-      "dist": 6385,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dosso Piemp",
-      "dist": 6434,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dosso Gümer",
-      "dist": 6440,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dosso dell'Asino",
-      "dist": 6729,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monte Rocchetta",
-      "dist": 7147,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Cima di Traval",
-      "dist": 7368,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monte Bestone",
-      "dist": 7570,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Arco",
     "Riva del Garda",
@@ -6509,14 +6407,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
-      "title": "sauce tomate",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-    },
-    {
       "title": "Pecorino",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+    },
+    {
+      "title": "sauce tomate",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
     },
     {
       "title": "salade caprese",
@@ -6529,16 +6427,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -6547,6 +6435,16 @@
       "title": "Penne",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
+    },
+    {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "pizza Margherita",

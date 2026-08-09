@@ -77,15 +77,15 @@
       "src": "/media/2026-06-02-meung-sur-loire-gien/château de sully.webp",
       "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_château de sully.webp",
       "alt": "ChâTeau De Sully",
-      "lat": 47.667211,
-      "lng": 2.6548775
+      "lat": 47.6694686,
+      "lng": 2.6512404
     },
     {
       "src": "/media/2026-06-02-meung-sur-loire-gien/coquelicots.webp",
       "thumb": "/media/2026-06-02-meung-sur-loire-gien/thumb_coquelicots.webp",
       "alt": "Coquelicots",
-      "lat": 47.7510167,
-      "lng": 2.4710735
+      "lat": 47.7657058,
+      "lng": 2.4291738
     }
   ],
   "videos": [],
@@ -9975,11 +9975,7 @@
       "wikiTitle": "Château de La Bussière (Loiret)"
     }
   ],
-  "majorCities": [
-    "Orléans",
-    "Olivet",
-    "Saint-Jean-de-Braye"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -9998,14 +9994,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "baguette",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
-    },
-    {
       "title": "crêpe",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+    },
+    {
+      "title": "baguette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
     },
     {
       "title": "roquefort",
@@ -10028,14 +10024,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -10043,14 +10039,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+    },
+    {
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
@@ -10083,14 +10079,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
-      "title": "munster",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
       "title": "Biancomangiare PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
+      "title": "munster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     }
   ]
 }

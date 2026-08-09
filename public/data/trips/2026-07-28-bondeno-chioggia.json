@@ -63,15 +63,15 @@
       "src": "/media/2026-07-28-bondeno-chioggia/img_4436.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4436.webp",
       "alt": "Img 4436",
-      "lat": 44.9879692,
-      "lng": 12.0310884
+      "lat": 44.9832964,
+      "lng": 12.0035139
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4438.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4438.webp",
       "alt": "Img 4438",
-      "lat": 44.9880226,
-      "lng": 12.0312429
+      "lat": 44.9832855,
+      "lng": 12.0038058
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4446.webp",
@@ -6856,14 +6856,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6896,14 +6896,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "sauce tomate",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-    },
-    {
       "title": "Pecorino",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+    },
+    {
+      "title": "sauce tomate",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
     },
     {
       "title": "salade caprese",
@@ -6936,14 +6936,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "fusilli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     },
     {
-      "title": "pizza Margherita",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+      "title": "Chianti DOCG",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

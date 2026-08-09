@@ -77,41 +77,43 @@
       "src": "/media/2026-06-13-wangen-sigmaringen/die donauwelle.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_die donauwelle.webp",
       "alt": "Die Donauwelle",
-      "lat": 48.0818916,
-      "lng": 9.1287949
+      "lat": 48.0791906,
+      "lng": 9.1304059
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3538.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3538.webp",
       "alt": "Img 3538",
-      "lat": 47.8611805,
-      "lng": 8.883426
+      "lat": 47.8476755,
+      "lng": 8.9000623
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3562.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3562.webp",
       "alt": "Img 3562",
-      "lat": 48.0762442,
-      "lng": 9.1724546
+      "lat": 48.0796885,
+      "lng": 9.153277
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3570.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3570.webp",
       "alt": "Img 3570",
-      "lat": 48.0759304,
-      "lng": 9.2011213
+      "lat": 48.0785568,
+      "lng": 9.1677732
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/img_3578.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_img_3578.webp",
-      "alt": "Img 3578"
+      "alt": "Img 3578",
+      "lat": 48.0883042,
+      "lng": 9.2136309
     },
     {
       "src": "/media/2026-06-13-wangen-sigmaringen/le danube a tuttlingen.webp",
       "thumb": "/media/2026-06-13-wangen-sigmaringen/thumb_le danube a tuttlingen.webp",
       "alt": "Le Danube A Tuttlingen",
-      "lat": 48.0301963,
-      "lng": 8.9638118
+      "lat": 48.0155171,
+      "lng": 8.9567965
     }
   ],
   "videos": [],
@@ -6834,24 +6836,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Mett",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-    },
-    {
       "title": "Fischbrötchen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
     },
     {
+      "title": "Mett",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+    },
+    {
       "title": "Pain de munition",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kommissbrot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
-    },
-    {
-      "title": "Weisslacker",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
     },
     {
       "title": "Leberknödel",
@@ -6862,6 +6859,11 @@
       "title": "Pfälzer Saumagen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+    },
+    {
+      "title": "Weisslacker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
     }
   ]
 }

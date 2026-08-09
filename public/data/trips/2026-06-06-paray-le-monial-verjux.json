@@ -70,36 +70,36 @@
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3404.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3404.webp",
       "alt": "Img 3404",
-      "lat": 46.553172,
-      "lng": 4.2182309
+      "lat": 46.531182,
+      "lng": 4.2128843
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3408.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3408.webp",
       "alt": "Img 3408",
-      "lat": 46.6238078,
-      "lng": 4.3648767
+      "lat": 46.6124565,
+      "lng": 4.3444755
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3411.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3411.webp",
       "alt": "Img 3411",
-      "lat": 46.6348837,
-      "lng": 4.3698881
+      "lat": 46.6100069,
+      "lng": 4.3545253
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3415.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3415.webp",
       "alt": "Img 3415",
-      "lat": 46.642115,
-      "lng": 4.3715119
+      "lat": 46.6421054,
+      "lng": 4.3714751
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img_3422.webp",
       "thumb": "/media/2026-06-06-paray-le-monial-verjux/thumb_img_3422.webp",
       "alt": "Img 3422",
-      "lat": 46.642115,
-      "lng": 4.3715119
+      "lat": 46.6421054,
+      "lng": 4.3714751
     },
     {
       "src": "/media/2026-06-06-paray-le-monial-verjux/img-20260606-wa0003.webp",
@@ -10151,97 +10151,8 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Château d'Allerey",
-      "dist": 3480,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château d'Allerey"
-    },
-    {
-      "title": "Château Bresse-Et Castille",
-      "dist": 5116,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Domaine du château",
-      "dist": 9480,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Domaine du château"
-    },
-    {
-      "title": "Château",
-      "dist": 10881,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Demigny"
-    },
-    {
-      "title": "Château de Laborde",
-      "dist": 10941,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Maison du Blé et du Pain",
-      "dist": 4856,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "La Maison du Pain",
-      "dist": 4935,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monument à Marguerite Boucicaut",
-      "dist": 619,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Jean Louis Barollet",
-      "dist": 7314,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monument commémoratif de la Libération",
-      "dist": 9362,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Église Saint-Pancrace",
-      "dist": 10115,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Stèle commémorative des fusillés juillet-août 1944",
-      "dist": 11184,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
-  "majorCities": [
-    "Chalon-sur-Saône",
-    "Montceau-les-Mines",
-    "Paray-le-Monial"
-  ],
+  "pois": [],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -10315,14 +10226,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "bœuf bourguignon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
-    },
-    {
       "title": "salade niçoise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+    },
+    {
+      "title": "bœuf bourguignon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
     },
     {
       "title": "Sauce veloutée",
@@ -10345,14 +10256,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "Biancomangiare PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
     }
   ]
 }

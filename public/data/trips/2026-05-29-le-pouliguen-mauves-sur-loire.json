@@ -98,8 +98,8 @@
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/arrêt a saint nazaire.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_arrêt a saint nazaire.webp",
       "alt": "ArrêT A Saint Nazaire",
-      "lat": 47.2744801,
-      "lng": -1.9815009
+      "lat": 47.2744529,
+      "lng": -1.9816579
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/bada est content.webp",
@@ -115,8 +115,8 @@
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/galette après quelques efforts.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_galette après quelques efforts.webp",
       "alt": "Galette AprèS Quelques Efforts",
-      "lat": 47.2127356,
-      "lng": -1.5414492
+      "lat": 47.2078275,
+      "lng": -1.5624164
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la ferrari.webp",
@@ -129,29 +129,29 @@
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/la plage de la baule.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_la plage de la baule.webp",
       "alt": "La Plage De La Baule",
-      "lat": 47.296106,
-      "lng": -2.1777562
+      "lat": 47.2974831,
+      "lng": -2.183834
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/le velo a la baule.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_le velo a la baule.webp",
       "alt": "Le Velo A La Baule",
-      "lat": 47.2972156,
-      "lng": -2.1782141
+      "lat": 47.2956632,
+      "lng": -2.1850058
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/petit café.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_petit café.webp",
       "alt": "Petit Café",
-      "lat": 47.2744801,
-      "lng": -1.9815009
+      "lat": 47.2744529,
+      "lng": -1.9816579
     },
     {
       "src": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/saint naze.webp",
       "thumb": "/media/2026-05-29-le-pouliguen-mauves-sur-loire/thumb_saint naze.webp",
       "alt": "Saint Naze",
-      "lat": 47.2744801,
-      "lng": -1.9815009
+      "lat": 47.2744529,
+      "lng": -1.9816579
     }
   ],
   "videos": [],
@@ -12424,14 +12424,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Sauce hollandaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-    },
-    {
       "title": "Merlot",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
       "title": "bouillabaisse",
@@ -12439,14 +12439,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+    },
+    {
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
@@ -12479,14 +12479,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "Biancomangiare PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
     }
   ]
 }

@@ -63,15 +63,15 @@
       "src": "/media/2026-07-08-revfulop-halogy/img_3973.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3973.webp",
       "alt": "Img 3973",
-      "lat": 46.9032963,
-      "lng": 17.1078864
+      "lat": 46.8824418,
+      "lng": 17.1096466
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3975.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3975.webp",
       "alt": "Img 3975",
-      "lat": 46.9034318,
-      "lng": 17.1073884
+      "lat": 46.8924765,
+      "lng": 17.1087969
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3977.webp",
@@ -90,14 +90,16 @@
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3985.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3985.webp",
-      "alt": "Img 3985"
+      "alt": "Img 3985",
+      "lat": 46.9034318,
+      "lng": 17.1073884
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3986.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3986.webp",
       "alt": "Img 3986",
-      "lat": 47.0284455,
-      "lng": 16.9237292
+      "lat": 47.027367,
+      "lng": 16.9467069
     }
   ],
   "videos": [],
@@ -6666,113 +6668,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Mária-kert",
-      "dist": 9796,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Őrségi várhalom",
-      "dist": 9958,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Harangláb",
-      "dist": 11363,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Dr. Batthyány-Strattmann László Múzeum",
-      "dist": 4974,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Cipőtörténeti gyűjtemény",
-      "dist": 4986,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Határőrmúzeum",
-      "dist": 5943,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Falumúzeum",
-      "dist": 6069,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Völgyes Ferenc Helytörténeti Gyűjtemény",
-      "dist": 8889,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Nádasdi földvár",
-      "dist": 2111,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Táborhegy Emlékmű",
-      "dist": 3604,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "896 - 1996",
-      "dist": 4648,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Molnár Lajos",
-      "dist": 4660,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Nepomuki Szent János",
-      "dist": 4695,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Anya gyermekével",
-      "dist": 4695,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Szent István és Boldog Gizella",
-      "dist": 4712,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Keszthely",
     "Zalaszentgrót",

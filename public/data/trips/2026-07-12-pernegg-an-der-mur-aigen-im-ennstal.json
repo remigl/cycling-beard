@@ -62,65 +62,61 @@
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4037.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4037.webp",
-      "alt": "Img 4037",
-      "lat": 47.3799159,
-      "lng": 15.0948801
+      "alt": "Img 4037"
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4041.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4041.webp",
-      "alt": "Img 4041",
-      "lat": 47.3799159,
-      "lng": 15.0948801
+      "alt": "Img 4041"
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4048.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4048.webp",
       "alt": "Img 4048",
-      "lat": 47.3363776,
-      "lng": 15.045132
+      "lat": 47.3502761,
+      "lng": 15.0600373
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4054.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4054.webp",
       "alt": "Img 4054",
-      "lat": 47.3319337,
-      "lng": 15.0271571
+      "lat": 47.3370034,
+      "lng": 15.0475836
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4060.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4060.webp",
       "alt": "Img 4060",
-      "lat": 47.3772195,
-      "lng": 14.9784571
+      "lat": 47.3650934,
+      "lng": 15.0044393
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4062.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4062.webp",
       "alt": "Img 4062",
-      "lat": 47.4168528,
-      "lng": 14.7661637
+      "lat": 47.405922,
+      "lng": 14.7862122
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4088.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4088.webp",
       "alt": "Img 4088",
-      "lat": 47.4294414,
-      "lng": 14.7095157
+      "lat": 47.4256917,
+      "lng": 14.7210207
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4092.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4092.webp",
       "alt": "Img 4092",
-      "lat": 47.4352903,
-      "lng": 14.6948478
+      "lat": 47.4279338,
+      "lng": 14.7148862
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4095.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4095.webp",
       "alt": "Img 4095",
-      "lat": 47.508673,
-      "lng": 14.4572866
+      "lat": 47.494248,
+      "lng": 14.4767208
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4101.webp",
@@ -133,8 +129,8 @@
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4105.webp",
       "thumb": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/thumb_img_4105.webp",
       "alt": "Img 4105",
-      "lat": 47.5270358,
-      "lng": 14.3705645
+      "lat": 47.5216044,
+      "lng": 14.4057027
     },
     {
       "src": "/media/2026-07-12-pernegg-an-der-mur-aigen-im-ennstal/img_4108.webp",
@@ -10108,14 +10104,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "maluns",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
-    },
-    {
       "title": "Eiernockerl",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
+    },
+    {
+      "title": "maluns",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
     },
     {
       "title": "serviettenknödel",

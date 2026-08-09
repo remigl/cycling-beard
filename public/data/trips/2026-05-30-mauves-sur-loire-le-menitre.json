@@ -68,22 +68,22 @@
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/la guinchette.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_la guinchette.webp",
       "alt": "La Guinchette",
-      "lat": 47.3641029,
-      "lng": -0.7254873
+      "lat": 47.3633483,
+      "lng": -0.7572664
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/on va dire que c'est ok.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_on va dire que c'est ok.webp",
       "alt": "On Va Dire Que C'Est Ok",
-      "lat": 47.379761,
-      "lng": -0.9629318
+      "lat": 47.379657,
+      "lng": -0.9636875
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/petit château sur le chemin.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_petit château sur le chemin.webp",
       "alt": "Petit ChâTeau Sur Le Chemin",
-      "lat": 47.4085133,
-      "lng": -0.6184896
+      "lat": 47.398165,
+      "lng": -0.6271952
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/pont d'ancenis.webp",
@@ -96,8 +96,8 @@
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_tartiflette a la guinchette.webp",
       "alt": "Tartiflette A La Guinchette",
-      "lat": 47.364606,
-      "lng": -0.7225783
+      "lat": 47.3627438,
+      "lng": -0.7576227
     }
   ],
   "videos": [],
@@ -19161,11 +19161,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Trélazé",
-    "Les Ponts-de-Cé",
-    "Ancenis-Saint-Géréon"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -19214,14 +19210,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Sauce hollandaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-    },
-    {
       "title": "Merlot",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
       "title": "bouillabaisse",
@@ -19229,14 +19225,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+    },
+    {
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
@@ -19259,24 +19255,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "Consommé",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-    },
-    {
       "title": "tarte flambée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
-      "title": "Biancomangiare PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
     }
   ]
 }

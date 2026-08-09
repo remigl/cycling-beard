@@ -63,15 +63,15 @@
       "src": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
       "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
       "alt": "Img 3706",
-      "lat": 48.1880415,
-      "lng": 15.0672408
+      "lat": 48.1911847,
+      "lng": 15.0744089
     },
     {
       "src": "/media/2026-06-21-linz-pochlarn/img_3712.webp",
       "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3712.webp",
       "alt": "Img 3712",
-      "lat": 48.1786942,
-      "lng": 15.0850197
+      "lat": 48.1895726,
+      "lng": 15.0690154
     },
     {
       "src": "/media/2026-06-21-linz-pochlarn/juste après le camping.webp",
@@ -6772,14 +6772,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "maluns",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
-    },
-    {
       "title": "Eiernockerl",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
+    },
+    {
+      "title": "maluns",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
     },
     {
       "title": "serviettenknödel",

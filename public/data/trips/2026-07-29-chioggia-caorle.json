@@ -63,48 +63,50 @@
       "src": "/media/2026-07-29-chioggia-caorle/20260729_142728.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_20260729_142728.webp",
       "alt": "142728",
-      "lat": 45.47972,
-      "lng": 12.5283248
+      "lat": 45.4684136,
+      "lng": 12.4906993
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4460.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4460.webp",
       "alt": "Img 4460",
-      "lat": 45.3329171,
-      "lng": 12.3173828
+      "lat": 45.3325848,
+      "lng": 12.3182371
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4463.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4463.webp",
       "alt": "Img 4463",
-      "lat": 45.3329171,
-      "lng": 12.3173828
+      "lat": 45.3326833,
+      "lng": 12.3178889
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4464.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4464.webp",
       "alt": "Img 4464",
-      "lat": 45.3329171,
-      "lng": 12.3173828
+      "lat": 45.3329231,
+      "lng": 12.3172486
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4466.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4466.webp",
       "alt": "Img 4466",
-      "lat": 45.3459815,
-      "lng": 12.3120967
+      "lat": 45.3414812,
+      "lng": 12.3091646
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4469.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4469.webp",
       "alt": "Img 4469",
-      "lat": 45.3974635,
-      "lng": 12.3608634
+      "lat": 45.3749763,
+      "lng": 12.3393687
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4473.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4473.webp",
-      "alt": "Img 4473"
+      "alt": "Img 4473",
+      "lat": 45.4177492,
+      "lng": 12.3694098
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4475.webp",
@@ -130,22 +132,22 @@
       "src": "/media/2026-07-29-chioggia-caorle/img_4498.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4498.webp",
       "alt": "Img 4498",
-      "lat": 45.4832363,
-      "lng": 12.5401543
+      "lat": 45.4723469,
+      "lng": 12.5033408
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4502.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4502.webp",
       "alt": "Img 4502",
-      "lat": 45.4785586,
-      "lng": 12.5493589
+      "lat": 45.4827075,
+      "lng": 12.537381
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4503.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4503.webp",
       "alt": "Img 4503",
-      "lat": 45.4785586,
-      "lng": 12.5493589
+      "lat": 45.4829064,
+      "lng": 12.5385401
     }
   ],
   "videos": [],
@@ -9822,13 +9824,6 @@
   "weather": null,
   "pois": [
     {
-      "title": "Ca' Corniani La Soglia Nord",
-      "dist": 7286,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
       "title": "Monumento agli Artiglieri",
       "dist": 2125,
       "kind": "Monument / ruines",
@@ -9925,6 +9920,13 @@
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null
+    },
+    {
+      "title": "Brucomela",
+      "dist": 8751,
+      "kind": "Parc à thème / zoo",
+      "rank": 7,
+      "wikiTitle": null
     }
   ],
   "majorCities": [
@@ -9950,14 +9952,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -9990,14 +9992,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
     },
     {
-      "title": "sauce tomate",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
-    },
-    {
       "title": "Pecorino",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pecorino%20au%20poivre.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pecorino_(fromage)"
+    },
+    {
+      "title": "sauce tomate",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fresh%20Tomato%20Sauce%20%28Unsplash%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_tomate"
     },
     {
       "title": "salade caprese",
@@ -10030,14 +10032,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "fusilli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     },
     {
-      "title": "pizza Margherita",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+      "title": "Chianti DOCG",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

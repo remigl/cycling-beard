@@ -80,8 +80,8 @@
       "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4021 (1).webp",
       "thumb": "/media/2026-07-11-graz-pernegg-an-der-mur/thumb_img_4021 (1).webp",
       "alt": "Img 4021 (1)",
-      "lat": 47.2160257,
-      "lng": 15.3354754
+      "lat": 47.1996788,
+      "lng": 15.3436562
     },
     {
       "src": "/media/2026-07-11-graz-pernegg-an-der-mur/img_4029.webp",
@@ -6474,14 +6474,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Ischler"
     },
     {
-      "title": "maluns",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
-    },
-    {
       "title": "Eiernockerl",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/20180222%20CafeFalk%20003%20%2839646637215%29.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Eiernockerl"
+    },
+    {
+      "title": "maluns",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Maluns.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Maluns"
     },
     {
       "title": "serviettenknödel",

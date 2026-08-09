@@ -77,22 +77,22 @@
       "src": "/media/2026-06-11-mohlin-wangen/img_3514.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3514.webp",
       "alt": "Img 3514",
-      "lat": 47.6596966,
-      "lng": 8.9367776
+      "lat": 47.6596413,
+      "lng": 8.9340544
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/img_3517.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3517.webp",
       "alt": "Img 3517",
-      "lat": 47.6596966,
-      "lng": 8.9367776
+      "lat": 47.6596413,
+      "lng": 8.9340544
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/juste après avoir quitté sandro et anja.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_juste après avoir quitté sandro et anja.webp",
       "alt": "Juste AprèS Avoir Quitté Sandro Et Anja",
-      "lat": 47.6129439,
-      "lng": 8.2548134
+      "lat": 47.6033026,
+      "lng": 8.2285694
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/stein am rhein.webp",
@@ -10188,24 +10188,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Persipan"
     },
     {
-      "title": "Mett",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
-    },
-    {
       "title": "Fischbrötchen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fischbroetchen%2001%20%28fcm%29.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fischbr%C3%B6tchen"
     },
     {
+      "title": "Mett",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mettbroetchen.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mett"
+    },
+    {
       "title": "Pain de munition",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kommissbrot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pain_de_munition"
-    },
-    {
-      "title": "Weisslacker",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
     },
     {
       "title": "Leberknödel",
@@ -10216,6 +10211,11 @@
       "title": "Pfälzer Saumagen",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
+    },
+    {
+      "title": "Weisslacker",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
     }
   ]
 }

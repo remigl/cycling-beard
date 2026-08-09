@@ -70,8 +70,8 @@
       "src": "/media/2026-06-01-tours-meung-sur-loire/amboise.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_amboise.webp",
       "alt": "Amboise",
-      "lat": 47.5114453,
-      "lng": 1.2817568
+      "lat": 47.4954284,
+      "lng": 1.2593308
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/cathédrale saint-gatien, tours.webp",
@@ -84,29 +84,29 @@
       "src": "/media/2026-06-01-tours-meung-sur-loire/château d'amboise.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_château d'amboise.webp",
       "alt": "ChâTeau D'Amboise",
-      "lat": 47.5227757,
-      "lng": 1.2924644
+      "lat": 47.5056489,
+      "lng": 1.2739163
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/gare de tours.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_gare de tours.webp",
       "alt": "Gare De Tours",
-      "lat": 47.3876241,
-      "lng": 0.8802005
+      "lat": 47.3844641,
+      "lng": 0.858504
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/pont d'amboise.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_pont d'amboise.webp",
       "alt": "Pont D'Amboise",
-      "lat": 47.8001916,
-      "lng": 1.6696013
+      "lat": 47.7818515,
+      "lng": 1.6431809
     },
     {
       "src": "/media/2026-06-01-tours-meung-sur-loire/velo en bambou, 4500e.webp",
       "thumb": "/media/2026-06-01-tours-meung-sur-loire/thumb_velo en bambou, 4500e.webp",
       "alt": "Velo En Bambou, 4500e",
-      "lat": 47.401514,
-      "lng": 0.9374464
+      "lat": 47.3897402,
+      "lng": 0.9183744
     }
   ],
   "videos": [],
@@ -10871,113 +10871,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Espace naturel sensible des courtils des Mauves",
-      "dist": 142,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Les Jardins de Roquelin",
-      "dist": 2262,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "La promenade des Mauves et des moulins",
-      "dist": 2292,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de Meung sur Loire",
-      "dist": 2325,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "De Cléry à la Butte des Elus",
-      "dist": 4813,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château du Bouchet",
-      "dist": 6356,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "La butte des Élus",
-      "dist": 7092,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de Mézières-lez-Cléry et le chemin des Vallées",
-      "dist": 8181,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Montpipeau",
-      "dist": 8204,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de Fontpertuis",
-      "dist": 8739,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tour de César",
-      "dist": 9053,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tour du Diable",
-      "dist": 9057,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tour de l'Horloge",
-      "dist": 9077,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de Luz",
-      "dist": 9134,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tour Saint-Firmin",
-      "dist": 9150,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Tour Saint-Firmin"
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Tours",
     "Blois",
@@ -11046,14 +10940,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
+    },
+    {
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
@@ -11076,14 +10970,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-    },
-    {
       "title": "Consommé",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+    },
+    {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Biancomangiare PAT",
