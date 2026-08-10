@@ -456686,11 +456686,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Trieste",
-      "Monfalcone",
-      "Koper / Capodistria"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   },
@@ -466416,7 +466412,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Rovinj",
+      "Poreč",
+      "Umag"
+    ],
     "topRatedPlaces": [],
     "specialties": []
   },
@@ -518237,8 +518237,116 @@
     "lodgingName": "Kamp vrbovica, Ul. Vrbovica, 20275, Žrnovo, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Pomorski muzej Orebić",
+        "dist": 6426,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vidikovac",
+        "dist": 6085,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Spomenik palim borcima",
+        "dist": 6343,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Potkočina glava",
+        "dist": 336,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Strmeni vrh",
+        "dist": 1521,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jedro",
+        "dist": 2608,
+        "kind": "Œuvre / art",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Veliki vrh",
+        "dist": 3757,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Goč",
+        "dist": 4278,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vrh M. Kontija",
+        "dist": 4286,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Poljski vrh",
+        "dist": 4355,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kopinje",
+        "dist": 4794,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vrh Roguje",
+        "dist": 4877,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zmijino brdo",
+        "dist": 4955,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Debeja",
+        "dist": 5262,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Karkadur",
+        "dist": 5337,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Korčula"
+    ],
     "topRatedPlaces": [],
     "specialties": []
   }
