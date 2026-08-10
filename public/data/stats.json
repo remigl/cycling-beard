@@ -1,13 +1,13 @@
 {
-  "totalKm": 5023,
+  "totalKm": 5076,
   "totalCountries": 9,
   "totalDays": 76,
-  "totalStages": 53,
-  "totalElevation": 30970,
+  "totalStages": 54,
+  "totalElevation": 31749,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
-  "currentLocation": "Općina Vela Luka",
+  "currentLocation": "Grad Korčula",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-08-10",
-  "latestStageSlug": "2026-08-07-grad-supetar-opcina-vela-luka"
+  "latestStageSlug": "2026-08-10-opcina-vela-luka-grad-korcula"
 }
