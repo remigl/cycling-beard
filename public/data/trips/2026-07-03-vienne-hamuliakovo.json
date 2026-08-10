@@ -77,39 +77,39 @@
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3783.webp",
       "alt": "Img 3783",
-      "lat": 48.1436457,
-      "lng": 17.1064697
+      "lat": 48.1040239,
+      "lng": 16.8545168
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3791.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3791.webp",
-      "alt": "Img 3791"
+      "alt": "Img 3791",
+      "lat": 48.1202959,
+      "lng": 16.8884493
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3795.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3795.webp",
-      "alt": "Img 3795"
+      "alt": "Img 3795",
+      "lat": 48.1203531,
+      "lng": 16.8885971
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3805.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3805.webp",
       "alt": "Img 3805",
-      "lat": 48.0483892,
-      "lng": 17.1820015
+      "lat": 48.1436457,
+      "lng": 17.1064697
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3806.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3806.webp",
-      "alt": "Img 3806",
-      "lat": 48.030677,
-      "lng": 17.2327726
+      "alt": "Img 3806"
     },
     {
       "src": "/media/2026-07-03-vienne-hamuliakovo/img_3809.webp",
       "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3809.webp",
-      "alt": "Img 3809",
-      "lat": 48.030677,
-      "lng": 17.2327726
+      "alt": "Img 3809"
     }
   ],
   "videos": [],
@@ -6486,7 +6486,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Zichy-kastély",
+      "dist": 4369,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dropy",
+      "dist": 5927,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Trojmedzie Rakúsko",
+      "dist": 5984,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Batthyány-kastély",
+      "dist": 8151,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Santuaire de Notre Dame",
+      "dist": 10720,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Antická Gerulata Rusovce",
+      "dist": 6796,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Podunajský remeselný dvor",
+      "dist": 8709,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dorfmuseum: Gerätehaus",
+      "dist": 9854,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Múzeum obchodu Bratislava",
+      "dist": 11133,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Wellington MF 458 a 40. letka RAF",
+      "dist": 300,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Pamätník padlým v I. a II. svetovej vojne",
+      "dist": 1635,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sv. Ján Nepomucký",
+      "dist": 2208,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Pozorovateľňa vtáctva DUNA",
+      "dist": 2865,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kalinkovská rozhľadňa",
+      "dist": 3206,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Békefi Ernő Emléktábla",
+      "dist": 4322,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Vienne",
     "Bratislava",

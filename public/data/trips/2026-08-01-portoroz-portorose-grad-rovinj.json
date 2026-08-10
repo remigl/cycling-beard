@@ -63,20 +63,22 @@
       "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4591.webp",
       "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4591.webp",
       "alt": "Img 4591",
-      "lat": 45.4334092,
-      "lng": 13.5227328
+      "lat": 45.4689871,
+      "lng": 13.5941264
     },
     {
       "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4593.webp",
       "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4593.webp",
       "alt": "Img 4593",
-      "lat": 45.4334092,
-      "lng": 13.5227328
+      "lat": 45.4689871,
+      "lng": 13.5941264
     },
     {
       "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4595.webp",
       "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4595.webp",
-      "alt": "Img 4595"
+      "alt": "Img 4595",
+      "lat": 45.0967914,
+      "lng": 13.6409739
     },
     {
       "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4598.webp",
@@ -9727,11 +9729,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Rovinj",
-    "Poreč",
-    "Umag"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": []
 }

@@ -250809,39 +250809,39 @@
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3783.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3783.webp",
         "alt": "Img 3783",
-        "lat": 48.1436457,
-        "lng": 17.1064697
+        "lat": 48.1040239,
+        "lng": 16.8545168
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3791.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3791.webp",
-        "alt": "Img 3791"
+        "alt": "Img 3791",
+        "lat": 48.1202959,
+        "lng": 16.8884493
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3795.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3795.webp",
-        "alt": "Img 3795"
+        "alt": "Img 3795",
+        "lat": 48.1203531,
+        "lng": 16.8885971
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3805.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3805.webp",
         "alt": "Img 3805",
-        "lat": 48.0483892,
-        "lng": 17.1820015
+        "lat": 48.1436457,
+        "lng": 17.1064697
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3806.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3806.webp",
-        "alt": "Img 3806",
-        "lat": 48.030677,
-        "lng": 17.2327726
+        "alt": "Img 3806"
       },
       {
         "src": "/media/2026-07-03-vienne-hamuliakovo/img_3809.webp",
         "thumb": "/media/2026-07-03-vienne-hamuliakovo/thumb_img_3809.webp",
-        "alt": "Img 3809",
-        "lat": 48.030677,
-        "lng": 17.2327726
+        "alt": "Img 3809"
       }
     ],
     "translations": {
@@ -251139,7 +251139,113 @@
     "lodgingName": "Camping Divoká Voda, Bratislava-Čunovo 1113, 851 10, Čunovo, Slovaquie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Zichy-kastély",
+        "dist": 4369,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dropy",
+        "dist": 5927,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Trojmedzie Rakúsko",
+        "dist": 5984,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Batthyány-kastély",
+        "dist": 8151,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Santuaire de Notre Dame",
+        "dist": 10720,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Antická Gerulata Rusovce",
+        "dist": 6796,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Podunajský remeselný dvor",
+        "dist": 8709,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dorfmuseum: Gerätehaus",
+        "dist": 9854,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Múzeum obchodu Bratislava",
+        "dist": 11133,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Wellington MF 458 a 40. letka RAF",
+        "dist": 300,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pamätník padlým v I. a II. svetovej vojne",
+        "dist": 1635,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sv. Ján Nepomucký",
+        "dist": 2208,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pozorovateľňa vtáctva DUNA",
+        "dist": 2865,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kalinkovská rozhľadňa",
+        "dist": 3206,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Békefi Ernő Emléktábla",
+        "dist": 4322,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Vienne",
       "Bratislava",
@@ -455567,103 +455673,111 @@
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4515.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4515.webp",
         "alt": "Img 4515",
-        "lat": 45.714355,
-        "lng": 13.4599605
+        "lat": 45.7237232,
+        "lng": 13.3804497
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4521.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4521.webp",
         "alt": "Img 4521",
-        "lat": 45.7174023,
-        "lng": 13.4794488
+        "lat": 45.7235543,
+        "lng": 13.3861204
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4537.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4537.webp",
         "alt": "Img 4537",
-        "lat": 45.7063674,
-        "lng": 13.4897901
+        "lat": 45.7152259,
+        "lng": 13.3846366
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4544.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4544.webp",
         "alt": "Img 4544",
-        "lat": 45.8075494,
-        "lng": 13.543507
+        "lat": 45.7090415,
+        "lng": 13.4970644
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4547.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4547.webp",
         "alt": "Img 4547",
-        "lat": 45.8075812,
-        "lng": 13.5437052
+        "lat": 45.7140884,
+        "lng": 13.5087333
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4550.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4550.webp",
-        "alt": "Img 4550",
-        "lat": 45.6504743,
-        "lng": 13.7687041
+        "alt": "Img 4550"
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4554.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4554.webp",
         "alt": "Img 4554",
-        "lat": 45.5909313,
-        "lng": 13.7953526
+        "lat": 45.6497167,
+        "lng": 13.7679087
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4556.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4556.webp",
         "alt": "Img 4556",
-        "lat": 45.5868853,
-        "lng": 13.7965203
+        "lat": 45.6497167,
+        "lng": 13.7679087
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4558.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4558.webp",
         "alt": "Img 4558",
-        "lat": 45.5754801,
-        "lng": 13.7940011
+        "lat": 45.6497167,
+        "lng": 13.7679087
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4563.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4563.webp",
         "alt": "Img 4563",
-        "lat": 45.5710029,
-        "lng": 13.7937025
+        "lat": 45.6497167,
+        "lng": 13.7679087
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4572.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4572.webp",
         "alt": "Img 4572",
-        "lat": 45.5653584,
-        "lng": 13.7869968
+        "lat": 45.6502265,
+        "lng": 13.7682293
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4574.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4574.webp",
-        "alt": "Img 4574"
+        "alt": "Img 4574",
+        "lat": 45.5474752,
+        "lng": 13.6885192
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4581.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4581.webp",
-        "alt": "Img 4581"
+        "alt": "Img 4581",
+        "lat": 45.5472656,
+        "lng": 13.6879374
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4583.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4583.webp",
-        "alt": "Img 4583"
+        "alt": "Img 4583",
+        "lat": 45.5471878,
+        "lng": 13.6876598
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4586.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4586.webp",
-        "alt": "Img 4586"
+        "alt": "Img 4586",
+        "lat": 45.5251057,
+        "lng": 13.6414661
       },
       {
         "src": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/img_4587.webp",
         "thumb": "/media/2026-07-31-grado-gravo-grao-portoroz-portorose/thumb_img_4587.webp",
-        "alt": "Img 4587"
+        "alt": "Img 4587",
+        "lat": 45.5265787,
+        "lng": 13.6345081
       }
     ],
     "translations": {
@@ -465637,20 +465751,22 @@
         "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4591.webp",
         "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4591.webp",
         "alt": "Img 4591",
-        "lat": 45.4334092,
-        "lng": 13.5227328
+        "lat": 45.4689871,
+        "lng": 13.5941264
       },
       {
         "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4593.webp",
         "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4593.webp",
         "alt": "Img 4593",
-        "lat": 45.4334092,
-        "lng": 13.5227328
+        "lat": 45.4689871,
+        "lng": 13.5941264
       },
       {
         "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4595.webp",
         "thumb": "/media/2026-08-01-portoroz-portorose-grad-rovinj/thumb_img_4595.webp",
-        "alt": "Img 4595"
+        "alt": "Img 4595",
+        "lat": 45.0967914,
+        "lng": 13.6409739
       },
       {
         "src": "/media/2026-08-01-portoroz-portorose-grad-rovinj/img_4598.webp",
@@ -466300,11 +466416,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Rovinj",
-      "Poreč",
-      "Umag"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   },
@@ -518125,116 +518237,8 @@
     "lodgingName": "Kamp vrbovica, Ul. Vrbovica, 20275, Žrnovo, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Pomorski muzej Orebić",
-        "dist": 6426,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Vidikovac",
-        "dist": 6085,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Spomenik palim borcima",
-        "dist": 6343,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Potkočina glava",
-        "dist": 336,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Strmeni vrh",
-        "dist": 1521,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Jedro",
-        "dist": 2608,
-        "kind": "Œuvre / art",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Veliki vrh",
-        "dist": 3757,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Goč",
-        "dist": 4278,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Vrh M. Kontija",
-        "dist": 4286,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Poljski vrh",
-        "dist": 4355,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kopinje",
-        "dist": 4794,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Vrh Roguje",
-        "dist": 4877,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Zmijino brdo",
-        "dist": 4955,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Debeja",
-        "dist": 5262,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Karkadur",
-        "dist": 5337,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
-    ],
-    "majorCities": [
-      "Korčula"
-    ],
+    "pois": [],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   }
