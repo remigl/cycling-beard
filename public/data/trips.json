@@ -518037,11 +518037,117 @@
       ]
     ],
     "minAltitude": -5,
-    "lodgingUrl": "",
-    "lodgingName": "",
+    "lodgingUrl": "https://www.google.com/maps/place/Kamp+vrbovica,+Ul.+Vrbovica,+20275,+%C5%BDrnovo,+Croatie/data=!4m2!3m1!1s0x134a50076d8a05e9:0xac899c9879b85a29!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODIyMTI1LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNSwxMDA4MjAyMzcsMTAwODIyNDk0QgJGUg%3D%3D&skid=dee552dd-e610-4762-a340-39f6c10921dd&g_st=ac",
+    "lodgingName": "Kamp vrbovica, Ul. Vrbovica, 20275, Žrnovo, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Pomorski muzej Orebić",
+        "dist": 6426,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vidikovac",
+        "dist": 6085,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Spomenik palim borcima",
+        "dist": 6343,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Potkočina glava",
+        "dist": 336,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Strmeni vrh",
+        "dist": 1521,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jedro",
+        "dist": 2608,
+        "kind": "Œuvre / art",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Veliki vrh",
+        "dist": 3757,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Goč",
+        "dist": 4278,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vrh M. Kontija",
+        "dist": 4286,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Poljski vrh",
+        "dist": 4355,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kopinje",
+        "dist": 4794,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vrh Roguje",
+        "dist": 4877,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zmijino brdo",
+        "dist": 4955,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Debeja",
+        "dist": 5262,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Karkadur",
+        "dist": 5337,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Korčula"
     ],
