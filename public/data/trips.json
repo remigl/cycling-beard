@@ -251139,45 +251139,116 @@
     "lodgingName": "Camping Divoká Voda, Bratislava-Čunovo 1113, 851 10, Čunovo, Slovaquie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [
-      "Vienne",
-      "Bratislava",
-      "Hainburg an der Donau"
-    ],
-    "topRatedPlaces": [],
-    "specialties": [
+    "pois": [
       {
-        "title": "bryndzové halušky",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
+        "title": "Zichy-kastély",
+        "dist": 4369,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
       },
       {
-        "title": "oublie",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
+        "title": "Dropy",
+        "dist": 5927,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
       },
       {
-        "title": "lokša",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
+        "title": "Trojmedzie Rakúsko",
+        "dist": 5984,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
       },
       {
-        "title": "strapačky",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
-        "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
+        "title": "Batthyány-kastély",
+        "dist": 8151,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
       },
       {
-        "title": "Oštiepok",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
+        "title": "Santuaire de Notre Dame",
+        "dist": 10720,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
       },
       {
-        "title": "balkánský sýr",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
-        "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
+        "title": "Antická Gerulata Rusovce",
+        "dist": 6796,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Podunajský remeselný dvor",
+        "dist": 8709,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dorfmuseum: Gerätehaus",
+        "dist": 9854,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Múzeum obchodu Bratislava",
+        "dist": 11133,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Wellington MF 458 a 40. letka RAF",
+        "dist": 300,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pamätník padlým v I. a II. svetovej vojne",
+        "dist": 1635,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sv. Ján Nepomucký",
+        "dist": 2208,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pozorovateľňa vtáctva DUNA",
+        "dist": 2865,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kalinkovská rozhľadňa",
+        "dist": 3206,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Békefi Ernő Emléktábla",
+        "dist": 4322,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
       }
-    ]
+    ],
+    "majorCities": [],
+    "topRatedPlaces": [],
+    "specialties": []
   },
   {
     "slug": "2026-07-04-bratislava-kravany-nad-dunajom",
@@ -466331,11 +466402,7 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [
-      "Rovinj",
-      "Poreč",
-      "Umag"
-    ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   },
