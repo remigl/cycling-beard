@@ -10129,7 +10129,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Tours",
+    "Joué-lès-Tours",
+    "Saumur"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -10148,14 +10152,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
-      "title": "baguette",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
-    },
-    {
       "title": "crêpe",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+    },
+    {
+      "title": "baguette",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
     },
     {
       "title": "roquefort",
@@ -10223,24 +10227,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "Consommé",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-    },
-    {
       "title": "tarte flambée",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
-      "title": "Biancomangiare PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+      "title": "Consommé",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
     }
   ]
 }

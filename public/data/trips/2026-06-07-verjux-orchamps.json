@@ -14028,8 +14028,116 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
+  "pois": [
+    {
+      "title": "Château de Bellevue",
+      "dist": 8781,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Les Baraques du 14",
+      "dist": 10214,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Baraques du 14 de la forêt de Chaux"
+    },
+    {
+      "title": "Motte féodale",
+      "dist": 3004,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Four à pain",
+      "dist": 3193,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vue sur fougere",
+      "dist": 3718,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Baraque du 3",
+      "dist": 7251,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ermitage Saint-Bonnot",
+      "dist": 7584,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jardin du souvenir",
+      "dist": 8135,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Stèle groupe Panthère",
+      "dist": 8150,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Maquis de Saligney",
+      "dist": 8247,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument aux Morts de Taxenne",
+      "dist": 9065,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Point de Vue du Bermont",
+      "dist": 9068,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument aux mort (seconde guerre mondiale)",
+      "dist": 9781,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument commémoratif du Bermont",
+      "dist": 9867,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument aux morts",
+      "dist": 10245,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
+  "majorCities": [
+    "Dole"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -14078,14 +14186,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Sauce hollandaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-    },
-    {
       "title": "Merlot",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
       "title": "bouillabaisse",
@@ -14133,14 +14241,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "Biancomangiare PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-    },
-    {
       "title": "munster",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+    },
+    {
+      "title": "Biancomangiare PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
     }
   ]
 }

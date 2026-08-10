@@ -40490,7 +40490,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Trélazé",
+      "Les Ponts-de-Cé",
+      "Ancenis-Saint-Géréon"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -40509,14 +40513,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
-        "title": "baguette",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
-      },
-      {
         "title": "crêpe",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+      },
+      {
+        "title": "baguette",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
       },
       {
         "title": "roquefort",
@@ -40584,24 +40588,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "tarte flambée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
       },
       {
-        "title": "Biancomangiare PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      },
+      {
+        "title": "Biancomangiare PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
       }
     ]
   },
@@ -50727,7 +50731,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Tours",
+      "Joué-lès-Tours",
+      "Saumur"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -50746,14 +50754,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
       },
       {
-        "title": "baguette",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
-      },
-      {
         "title": "crêpe",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Crepes%20dsc07085.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Cr%C3%AApe"
+      },
+      {
+        "title": "baguette",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Baguettes%20-%20stonesoup.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Baguette_(pain)"
       },
       {
         "title": "roquefort",
@@ -50821,24 +50829,24 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
       },
       {
-        "title": "Consommé",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
-      },
-      {
         "title": "tarte flambée",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
       },
       {
-        "title": "Biancomangiare PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+        "title": "Consommé",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      },
+      {
+        "title": "Biancomangiare PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
       }
     ]
   },
@@ -126261,8 +126269,116 @@
     "lodgingName": "Camping Municipal Orchamps, 22 À la Fenotte, 39700 Orchamps",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Château de Bellevue",
+        "dist": 8781,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Les Baraques du 14",
+        "dist": 10214,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Baraques du 14 de la forêt de Chaux"
+      },
+      {
+        "title": "Motte féodale",
+        "dist": 3004,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Four à pain",
+        "dist": 3193,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vue sur fougere",
+        "dist": 3718,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Baraque du 3",
+        "dist": 7251,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ermitage Saint-Bonnot",
+        "dist": 7584,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jardin du souvenir",
+        "dist": 8135,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stèle groupe Panthère",
+        "dist": 8150,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Maquis de Saligney",
+        "dist": 8247,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux Morts de Taxenne",
+        "dist": 9065,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Point de Vue du Bermont",
+        "dist": 9068,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux mort (seconde guerre mondiale)",
+        "dist": 9781,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument commémoratif du Bermont",
+        "dist": 9867,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monument aux morts",
+        "dist": 10245,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Dole"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -126311,14 +126427,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
       },
       {
-        "title": "Sauce hollandaise",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-      },
-      {
         "title": "Merlot",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+      },
+      {
+        "title": "Sauce hollandaise",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
       },
       {
         "title": "bouillabaisse",
@@ -126366,14 +126482,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
       },
       {
-        "title": "Biancomangiare PAT",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
-      },
-      {
         "title": "munster",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
+      },
+      {
+        "title": "Biancomangiare PAT",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
       }
     ]
   },
@@ -257849,14 +257965,151 @@
     "lodgingName": "Bottkov dvor, Mária 355 94636, 946 36 Kravany nad Dunajom, Slovaquie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Erzsébet királyné emlékfája",
+        "dist": 3547,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jankovich-barlang",
+        "dist": 10041,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Jankovich-barlang"
+      },
+      {
+        "title": "Millenniumi Gyűjtemény és Tájékoztató Központ",
+        "dist": 8944,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Emlékmű a forradalom és szabadságharc emlékére",
+        "dist": 3188,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "1848–49-es forradalom és szabadságharc"
+      },
+      {
+        "title": "Tulassay Tér Emlékkő",
+        "dist": 3351,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "I. világháborús emlékmű (1914-1918)",
+        "dist": 3407,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "kopjafa",
+        "dist": 3544,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Millennium emlékmű",
+        "dist": 3582,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "II. világháború hősi halált halt katonái és polgári áldozatai",
+        "dist": 3598,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "1956",
+        "dist": 3986,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kálvin János",
+        "dist": 4962,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "1848-49-es emlékmű",
+        "dist": 4973,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Nedeczky Sándor-emlékmű",
+        "dist": 5142,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "1848-49-es szabadságharc lábatlani résztvevői",
+        "dist": 5262,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Millenniumi emlékmű",
+        "dist": 5769,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Komárno",
       "Komárom",
       "Šamorín"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "bryndzové halušky",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
+      },
+      {
+        "title": "oublie",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
+      },
+      {
+        "title": "lokša",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
+      },
+      {
+        "title": "strapačky",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
+        "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
+      },
+      {
+        "title": "Oštiepok",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
+      },
+      {
+        "title": "balkánský sýr",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
+      }
+    ]
   },
   {
     "slug": "2026-07-05-kravany-nad-dunajom-budapest",
@@ -284820,12 +285073,114 @@
     "lodgingName": "Gárdony, SURFCAMPING, Harcsa u. 2, 2483 Hongrie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [
-      "Budapest",
-      "Budaörs",
-      "Biatorbágy"
+    "pois": [
+      {
+        "title": "Gárdonyi rönkvár",
+        "dist": 2599,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Beck-kastély (üdülő)",
+        "dist": 2952,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "1848-as obeliszk",
+        "dist": 3615,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kis-Cipó",
+        "dist": 6443,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gomba-kő",
+        "dist": 6475,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Magos-kő",
+        "dist": 6842,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pandúr-kő",
+        "dist": 7178,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Izabella-kő",
+        "dist": 7206,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pogány-kő",
+        "dist": 7224,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Oroszlán-szikla",
+        "dist": 7247,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kocka",
+        "dist": 7259,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "pince rom",
+        "dist": 10520,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zichy-Hadik-kastély",
+        "dist": 10714,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Aranybulla emlékmű (1222)",
+        "dist": 10802,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kovács kiállítás - Helytörténeti kiállítás",
+        "dist": 4481,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
     ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -298562,7 +298917,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Keszthely",
+      "Zalaszentgrót",
+      "Hévíz"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -465830,114 +466189,12 @@
     "lodgingName": "Val Vidal Camping, vestar 5 A, 52210, Rovinj, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Kažun - stone house",
-        "dist": 7310,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kažuni - 3 dry stone houses",
-        "dist": 11399,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Aquarium Ruđer Bošković",
-        "dist": 5758,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Sv. Damjana u Paludu",
-        "dist": 2965,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Secret Beach",
-        "dist": 9399,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Valalta Belvedere",
-        "dist": 10246,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Paradiž",
-        "dist": 409,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Burla",
-        "dist": 780,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Muja",
-        "dist": 1181,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monbrodo",
-        "dist": 1678,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Monkodonja",
-        "dist": 2356,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Velika Valtida",
-        "dist": 2602,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gustinja",
-        "dist": 2724,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mala Valtida",
-        "dist": 3340,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Maluža",
-        "dist": 3438,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
+    "pois": [],
+    "majorCities": [
+      "Rovinj",
+      "Poreč",
+      "Umag"
     ],
-    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   },
@@ -474847,7 +475104,38 @@
       "Pula"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-03-grad-pula-nevi-ane",
@@ -483822,119 +484110,41 @@
     "lodgingName": "Camping Nevia",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Gradina Tinj",
-        "dist": 12000,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Zavičajni muzej",
-        "dist": 9834,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Dr. Franjo Tuđman",
-        "dist": 7486,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mikas Vjeko",
-        "dist": 7535,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Ljubo Stipišić",
-        "dist": 7558,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Samostan Sv. Ivana Evanđelista",
-        "dist": 9838,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Franjo Tuđman",
-        "dist": 10352,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Jakovljev vrh",
-        "dist": 11915,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Veliki Bokolj",
-        "dist": 2393,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Semića vrh",
-        "dist": 2957,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Oštro",
-        "dist": 3232,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Radina pećina",
-        "dist": 4135,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mali Bokolj",
-        "dist": 4170,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kobiljak",
-        "dist": 4248,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "M. Moravinjak",
-        "dist": 4611,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
-    ],
-    "majorCities": [
-      "Zadar",
-      "Pula"
-    ],
+    "pois": [],
+    "majorCities": [],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-05-nevi-ane-grad-sibenik",
@@ -490820,7 +491030,38 @@
       "Biograd na Moru"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-06-grad-sibenik-grad-supetar",
@@ -502144,114 +502385,12 @@
     "lodgingName": "Boutique Camping Bunja, Babin Laz, 21400, Supetar, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Koloč",
-        "dist": 6528,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Most Franje Josipa",
-        "dist": 7546,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Korita",
-        "dist": 10216,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Istočna gradska vrata",
-        "dist": 11637,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gradski muzej Omiš",
-        "dist": 11627,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Sveti Tudor",
-        "dist": 7212,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": "Crkva sv. Tudora kod Nerežišća"
-      },
-      {
-        "title": "Klif",
-        "dist": 9009,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Memorial park",
-        "dist": 10143,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Spomenik poginulima u Domovinskom ratu",
-        "dist": 11507,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Mirabella fort",
-        "dist": 11689,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Osmatračnica",
-        "dist": 11820,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Gnjilac",
-        "dist": 3716,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kopačina",
-        "dist": 3789,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Jurjevo brdo",
-        "dist": 4501,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      },
-      {
-        "title": "Velebit",
-        "dist": 4869,
-        "kind": "Site naturel",
-        "rank": 6,
-        "wikiTitle": null
-      }
+    "pois": [],
+    "majorCities": [
+      "Split",
+      "Kaštela",
+      "Solin"
     ],
-    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   },
@@ -511124,6 +511263,37 @@
       "Supetar"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   }
 ]

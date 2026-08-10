@@ -11329,114 +11329,12 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Koloč",
-      "dist": 6528,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Most Franje Josipa",
-      "dist": 7546,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Korita",
-      "dist": 10216,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Istočna gradska vrata",
-      "dist": 11637,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Gradski muzej Omiš",
-      "dist": 11627,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Sveti Tudor",
-      "dist": 7212,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": "Crkva sv. Tudora kod Nerežišća"
-    },
-    {
-      "title": "Klif",
-      "dist": 9009,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Memorial park",
-      "dist": 10143,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Spomenik poginulima u Domovinskom ratu",
-      "dist": 11507,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Mirabella fort",
-      "dist": 11689,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Osmatračnica",
-      "dist": 11820,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Gnjilac",
-      "dist": 3716,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kopačina",
-      "dist": 3789,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Jurjevo brdo",
-      "dist": 4501,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Velebit",
-      "dist": 4869,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    }
+  "pois": [],
+  "majorCities": [
+    "Split",
+    "Kaštela",
+    "Solin"
   ],
-  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": []
 }
