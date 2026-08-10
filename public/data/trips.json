@@ -285180,7 +285180,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Budapest",
+      "Budaörs",
+      "Biatorbágy"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -466402,7 +466406,11 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Rovinj",
+      "Poreč",
+      "Umag"
+    ],
     "topRatedPlaces": [],
     "specialties": []
   },
