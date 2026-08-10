@@ -12088,7 +12088,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Druga Rasporska Vrata",
+      "dist": 3586,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Marčana vrata",
+      "dist": 3624,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Prva Rasporska vrata",
+      "dist": 3716,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mediadom Priran",
+      "dist": 3808,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Osrednja vrata",
+      "dist": 3901,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Poljiska vrata",
+      "dist": 3902,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dolfinova Vrata",
+      "dist": 3936,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Miljska vrata",
+      "dist": 4177,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Stari Mlin",
+      "dist": 10375,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Vina Prelac",
+      "dist": 11125,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Muzej solinarstva / Museo dei Salinai",
+      "dist": 2947,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Muzej podvodnih dejavnostih",
+      "dist": 3630,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "MAONA",
+      "dist": 3694,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Pomorski muzej Piran - Palača Gabrielli",
+      "dist": 3777,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
+    },
+    {
+      "title": "Čarobni svet školjk Piran",
+      "dist": 3801,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [
     "Trieste",
     "Monfalcone",

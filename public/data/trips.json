@@ -456567,7 +456567,113 @@
     "lodgingName": "Kamp Lucija, Seča 204, 6320 Portorož, Slovénie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Druga Rasporska Vrata",
+        "dist": 3586,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Marčana vrata",
+        "dist": 3624,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Prva Rasporska vrata",
+        "dist": 3716,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mediadom Priran",
+        "dist": 3808,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Osrednja vrata",
+        "dist": 3901,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Poljiska vrata",
+        "dist": 3902,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dolfinova Vrata",
+        "dist": 3936,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Miljska vrata",
+        "dist": 4177,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Stari Mlin",
+        "dist": 10375,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vina Prelac",
+        "dist": 11125,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muzej solinarstva / Museo dei Salinai",
+        "dist": 2947,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muzej podvodnih dejavnostih",
+        "dist": 3630,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "MAONA",
+        "dist": 3694,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pomorski muzej Piran - Palača Gabrielli",
+        "dist": 3777,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Pomorski muzej »Sergej Mašera« Piran"
+      },
+      {
+        "title": "Čarobni svet školjk Piran",
+        "dist": 3801,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Trieste",
       "Monfalcone",
@@ -466189,12 +466295,114 @@
     "lodgingName": "Val Vidal Camping, vestar 5 A, 52210, Rovinj, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [
-      "Rovinj",
-      "Poreč",
-      "Umag"
+    "pois": [
+      {
+        "title": "Kažun - stone house",
+        "dist": 7310,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kažuni - 3 dry stone houses",
+        "dist": 11399,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Aquarium Ruđer Bošković",
+        "dist": 5758,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sv. Damjana u Paludu",
+        "dist": 2965,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Secret Beach",
+        "dist": 9399,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Valalta Belvedere",
+        "dist": 10246,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Paradiž",
+        "dist": 409,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Burla",
+        "dist": 780,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Muja",
+        "dist": 1181,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monbrodo",
+        "dist": 1678,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Monkodonja",
+        "dist": 2356,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Velika Valtida",
+        "dist": 2602,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gustinja",
+        "dist": 2724,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mala Valtida",
+        "dist": 3340,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Maluža",
+        "dist": 3438,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
     ],
+    "majorCities": [],
     "topRatedPlaces": [],
     "specialties": []
   },
@@ -484110,8 +484318,117 @@
     "lodgingName": "Camping Nevia",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Gradina Tinj",
+        "dist": 12000,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zavičajni muzej",
+        "dist": 9834,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Dr. Franjo Tuđman",
+        "dist": 7486,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mikas Vjeko",
+        "dist": 7535,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ljubo Stipišić",
+        "dist": 7558,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Samostan Sv. Ivana Evanđelista",
+        "dist": 9838,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Franjo Tuđman",
+        "dist": 10352,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jakovljev vrh",
+        "dist": 11915,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Veliki Bokolj",
+        "dist": 2393,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Semića vrh",
+        "dist": 2957,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Oštro",
+        "dist": 3232,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Radina pećina",
+        "dist": 4135,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mali Bokolj",
+        "dist": 4170,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kobiljak",
+        "dist": 4248,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "M. Moravinjak",
+        "dist": 4611,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Zadar",
+      "Pula"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -502385,14 +502702,151 @@
     "lodgingName": "Boutique Camping Bunja, Babin Laz, 21400, Supetar, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Koloč",
+        "dist": 6528,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Most Franje Josipa",
+        "dist": 7546,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Korita",
+        "dist": 10216,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Istočna gradska vrata",
+        "dist": 11637,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gradski muzej Omiš",
+        "dist": 11627,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Sveti Tudor",
+        "dist": 7212,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Crkva sv. Tudora kod Nerežišća"
+      },
+      {
+        "title": "Klif",
+        "dist": 9009,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Memorial park",
+        "dist": 10143,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Spomenik poginulima u Domovinskom ratu",
+        "dist": 11507,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mirabella fort",
+        "dist": 11689,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Osmatračnica",
+        "dist": 11820,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Gnjilac",
+        "dist": 3716,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kopačina",
+        "dist": 3789,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jurjevo brdo",
+        "dist": 4501,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Velebit",
+        "dist": 4869,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Split",
       "Kaštela",
       "Solin"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-07-grad-supetar-opcina-vela-luka",

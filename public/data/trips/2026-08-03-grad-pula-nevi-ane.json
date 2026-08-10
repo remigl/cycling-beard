@@ -8980,8 +8980,117 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
-  "majorCities": [],
+  "pois": [
+    {
+      "title": "Gradina Tinj",
+      "dist": 12000,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zavičajni muzej",
+      "dist": 9834,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dr. Franjo Tuđman",
+      "dist": 7486,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mikas Vjeko",
+      "dist": 7535,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ljubo Stipišić",
+      "dist": 7558,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Samostan Sv. Ivana Evanđelista",
+      "dist": 9838,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Franjo Tuđman",
+      "dist": 10352,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Jakovljev vrh",
+      "dist": 11915,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Veliki Bokolj",
+      "dist": 2393,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Semića vrh",
+      "dist": 2957,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Oštro",
+      "dist": 3232,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Radina pećina",
+      "dist": 4135,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mali Bokolj",
+      "dist": 4170,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kobiljak",
+      "dist": 4248,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    },
+    {
+      "title": "M. Moravinjak",
+      "dist": 4611,
+      "kind": "Site naturel",
+      "rank": 6,
+      "wikiTitle": null
+    }
+  ],
+  "majorCities": [
+    "Zadar",
+    "Pula"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
