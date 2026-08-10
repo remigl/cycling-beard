@@ -1411,7 +1411,7 @@ async function syncFolder(drive, folder, cache, force) {
   //   on calcule automatiquement le décalage fuseau (lieu + date de l'étape),
   //   qui s'adapte pays par pays pour le reste du voyage.
   const CALIBRATION_CUTOFF = "2026-08-08";
-  const CALIBRATED_OFFSET_MS = 9 * 60000; // avance de 9 min de l'appareil, avant calibration
+  const CALIBRATED_OFFSET_MS = 129 * 60000; // 2h09 : 9 min mesurées + 2h de fuseau non pris en compte
   const tp = gpxStats.timedPoints || [];
   const tzOffsetMs = (date < CALIBRATION_CUTOFF)
     ? CALIBRATED_OFFSET_MS
@@ -1781,6 +1781,15 @@ async function main() {
   // (utile pour un "vider le cache" manuel depuis GitHub Actions).
   const force = process.env.FORCE_RESYNC === "1";
   if (force) console.log("⚙️  FORCE_RESYNC=1 → resync complet force");
+  // RESYNC_ONLY : force le resync d'une SEULE étape (par un bout de son nom de
+  // dossier, ex. "grado"), sans toucher au cache des autres — pratique pour
+  // tester un ajustement (comme le calibrage horaire des photos) sans relancer
+  // tout le sync.
+  // Test de calibrage horaire des photos : resync forcé UNIQUEMENT pour
+  // l'étape de Grado, pour vérifier le décalage 2h09 sans toucher au reste.
+  // À retirer (remettre "") une fois le calibrage validé sur toutes les dates.
+  const resyncOnly = "2026-07-31-grado-gravo-grao_portoroz-portorose".toLowerCase();
+  if (resyncOnly) console.log(`⚙️  RESYNC_ONLY="${resyncOnly}" → resync forcé uniquement pour ce dossier`);
   const newCache = { version: SYNC_CACHE_VERSION, stages: {} };
 
   const stages = [];
@@ -1795,7 +1804,8 @@ async function main() {
       console.log(`⚠️  Dossier ignoré (format inattendu): ${folder.name}`);
       continue;
     }
-    const result = await syncFolder(drive, folder, cache, force);
+    const folderForce = force || (resyncOnly && folder.name.toLowerCase().includes(resyncOnly));
+    const result = await syncFolder(drive, folder, cache, folderForce);
     if (result && result.stage) {
       stages.push(result.stage);
       // Alimente le nouveau cache (empreinte + étape complète réutilisable)
