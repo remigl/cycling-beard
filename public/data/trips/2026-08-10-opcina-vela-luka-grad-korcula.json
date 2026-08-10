@@ -12,7 +12,7 @@
   "distanceKm": 52.6,
   "elevationGain": 779,
   "maxAltitude": 100,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-08-10-opcina-vela-luka-grad-korcula/20260808_100136.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -53,7 +53,91 @@
   "lodgingName": "Kamp vrbovica, Ul. Vrbovica, 20275, Žrnovo, Croatie",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/20260808_100136.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_20260808_100136.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/20260808_100136.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_20260808_100136.webp",
+      "alt": "100136"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/20260810_115002.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_20260810_115002.webp",
+      "alt": "115002"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/20260810_115014.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_20260810_115014.webp",
+      "alt": "115014"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4757.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4757.webp",
+      "alt": "Img 4757"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4759.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4759.webp",
+      "alt": "Img 4759"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4764.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4764.webp",
+      "alt": "Img 4764"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4765.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4765.webp",
+      "alt": "Img 4765"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4766.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4766.webp",
+      "alt": "Img 4766"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4768.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4768.webp",
+      "alt": "Img 4768"
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4772.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4772.webp",
+      "alt": "Img 4772",
+      "lat": 42.9667614,
+      "lng": 16.9107261
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4774.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4774.webp",
+      "alt": "Img 4774",
+      "lat": 42.9732559,
+      "lng": 16.9602118
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4777.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4777.webp",
+      "alt": "Img 4777",
+      "lat": 42.9732559,
+      "lng": 16.9602118
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4778.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4778.webp",
+      "alt": "Img 4778",
+      "lat": 42.9716946,
+      "lng": 17.0194867
+    },
+    {
+      "src": "/media/2026-08-10-opcina-vela-luka-grad-korcula/img_4780.webp",
+      "thumb": "/media/2026-08-10-opcina-vela-luka-grad-korcula/thumb_img_4780.webp",
+      "alt": "Img 4780"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-08-10-opcina-vela-luka-grad-korcula_1.gpx",
   "mapLat": 42.9615383,
@@ -6507,36 +6591,5 @@
     "Korčula"
   ],
   "topRatedPlaces": [],
-  "specialties": [
-    {
-      "title": "licitar",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
-    },
-    {
-      "title": "Kulen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
-    },
-    {
-      "title": "Zagorski štrukli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
-    },
-    {
-      "title": "Soparnik",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
-    },
-    {
-      "title": "Basa",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
-      "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
-    },
-    {
-      "title": "Lumblija",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
-    }
-  ]
+  "specialties": []
 }
