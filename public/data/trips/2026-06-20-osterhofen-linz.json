@@ -63,20 +63,22 @@
       "src": "/media/2026-06-20-osterhofen-linz/img_3674.webp",
       "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3674.webp",
       "alt": "Img 3674",
-      "lat": 48.5174635,
-      "lng": 13.714622
+      "lat": 48.5757534,
+      "lng": 13.4558217
     },
     {
       "src": "/media/2026-06-20-osterhofen-linz/img_3682.webp",
       "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3682.webp",
       "alt": "Img 3682",
-      "lat": 48.4159935,
-      "lng": 13.9605941
+      "lat": 48.4250753,
+      "lng": 13.8721706
     },
     {
       "src": "/media/2026-06-20-osterhofen-linz/img_3700.webp",
       "thumb": "/media/2026-06-20-osterhofen-linz/thumb_img_3700.webp",
-      "alt": "Img 3700"
+      "alt": "Img 3700",
+      "lat": 48.3420355,
+      "lng": 14.0366953
     }
   ],
   "videos": [],
@@ -6680,11 +6682,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Linz",
-    "Passau",
-    "Leonding"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {

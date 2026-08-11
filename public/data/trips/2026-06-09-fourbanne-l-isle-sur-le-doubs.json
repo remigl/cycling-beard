@@ -63,18 +63,22 @@
       "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/camping.webp",
       "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_camping.webp",
       "alt": "Camping",
-      "lat": 47.4499849,
-      "lng": 6.577721
+      "lat": 47.3303968,
+      "lng": 6.3051807
     },
     {
       "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/img_3451.webp",
       "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_img_3451.webp",
-      "alt": "Img 3451"
+      "alt": "Img 3451",
+      "lat": 47.348273,
+      "lng": 6.3742108
     },
     {
       "src": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/temple de montbeliard.webp",
       "thumb": "/media/2026-06-09-fourbanne-l-isle-sur-le-doubs/thumb_temple de montbeliard.webp",
-      "alt": "Temple De Montbeliard"
+      "alt": "Temple De Montbeliard",
+      "lat": 47.5110205,
+      "lng": 6.7989366
     }
   ],
   "videos": [],
@@ -12173,13 +12177,6 @@
       "wikiTitle": null
     },
     {
-      "title": "Monument aux morts",
-      "dist": 1172,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
       "title": "Observatoire",
       "dist": 1857,
       "kind": "Point de vue",
@@ -12189,6 +12186,13 @@
     {
       "title": "Emplacement de la nécropole mérovingienne",
       "dist": 3755,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Monument aux Morts",
+      "dist": 4304,
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null

@@ -63,36 +63,36 @@
       "src": "/media/2026-06-11-mohlin-wangen/chûtes du rhin.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_chûtes du rhin.webp",
       "alt": "ChûTes Du Rhin",
-      "lat": 47.6608,
-      "lng": 8.857836
+      "lat": 47.6748078,
+      "lng": 8.6143722
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/img_3500.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3500.webp",
       "alt": "Img 3500",
-      "lat": 47.6032602,
-      "lng": 8.273254
+      "lat": 47.5675719,
+      "lng": 7.8814277
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/img_3514.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3514.webp",
       "alt": "Img 3514",
-      "lat": 47.6596413,
-      "lng": 8.9340544
+      "lat": 47.6915038,
+      "lng": 8.7470943
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/img_3517.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_img_3517.webp",
       "alt": "Img 3517",
-      "lat": 47.6596413,
-      "lng": 8.9340544
+      "lat": 47.6914893,
+      "lng": 8.7472148
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/juste après avoir quitté sandro et anja.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_juste après avoir quitté sandro et anja.webp",
       "alt": "Juste AprèS Avoir Quitté Sandro Et Anja",
-      "lat": 47.6033026,
-      "lng": 8.2285694
+      "lat": 47.5661162,
+      "lng": 7.8647313
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/stein am rhein.webp",
@@ -102,12 +102,16 @@
     {
       "src": "/media/2026-06-11-mohlin-wangen/stein am rhein2.webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_stein am rhein2.webp",
-      "alt": "Stein Am Rhein2"
+      "alt": "Stein Am Rhein2",
+      "lat": 47.6608,
+      "lng": 8.857836
     },
     {
       "src": "/media/2026-06-11-mohlin-wangen/vue de la tente (untersee).webp",
       "thumb": "/media/2026-06-11-mohlin-wangen/thumb_vue de la tente (untersee).webp",
-      "alt": "Vue De La Tente (Untersee)"
+      "alt": "Vue De La Tente (Untersee)",
+      "lat": 47.6600172,
+      "lng": 8.9289708
     }
   ],
   "videos": [],
@@ -10018,113 +10022,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Restaurant Burg Hohenklingen",
-      "dist": 5944,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ruine Wolkenstein",
-      "dist": 7733,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Ruine Wolkenstein (Hemishofen)"
-    },
-    {
-      "title": "Urkundenhäuschen",
-      "dist": 8722,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Obertor",
-      "dist": 8964,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Schloss Wellenberg",
-      "dist": 10402,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Schloss Wellenberg (Frauenfeld)"
-    },
-    {
-      "title": "Museum Fischerhaus",
-      "dist": 600,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museum Haus Dix",
-      "dist": 2350,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museum Haus Dix"
-    },
-    {
-      "title": "Mia-und-Hermann-Hesse-Haus",
-      "dist": 3809,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Klostermuseum St. Georgen",
-      "dist": 5734,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Stadtmuseum Radolfzell in der alten Stadtapotheke",
-      "dist": 8903,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Kunstmuseum Thurgau",
-      "dist": 9960,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ittinger Museum",
-      "dist": 9976,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museum St. Georg",
-      "dist": 11226,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Naturmuseum des Kantons Thurgau",
-      "dist": 11816,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Naturmuseum Thurgau"
-    },
-    {
-      "title": "Museum für Archäologie des Kantons Thurgau",
-      "dist": 11833,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museum für Archäologie Thurgau"
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Schaffhouse",
     "Tiengen",

@@ -70,15 +70,15 @@
       "src": "/media/2026-06-03-gien-sauvigny-les-bois/café sancerre à sancerre.webp",
       "thumb": "/media/2026-06-03-gien-sauvigny-les-bois/thumb_café sancerre à sancerre.webp",
       "alt": "Café Sancerre à Sancerre",
-      "lat": 47.1162756,
-      "lng": 3.0246285
+      "lat": 47.3316036,
+      "lng": 2.8394668
     },
     {
       "src": "/media/2026-06-03-gien-sauvigny-les-bois/le papa qui attend son fils avec son beau tshirt.webp",
       "thumb": "/media/2026-06-03-gien-sauvigny-les-bois/thumb_le papa qui attend son fils avec son beau tshirt.webp",
       "alt": "Le Papa Qui Attend Son Fils Avec Son Beau Tshirt",
-      "lat": 46.9465224,
-      "lng": 3.1016863
+      "lat": 47.1962096,
+      "lng": 2.9945677
     },
     {
       "src": "/media/2026-06-03-gien-sauvigny-les-bois/verre de pouilly fumé chez danielle et pierre.webp",
@@ -10057,14 +10057,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Sauce hollandaise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
-    },
-    {
       "title": "Merlot",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
+    },
+    {
+      "title": "Sauce hollandaise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
     },
     {
       "title": "bouillabaisse",
@@ -10082,14 +10082,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
-    },
-    {
       "title": "bœuf bourguignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
     },
     {
       "title": "Sauce veloutée",
@@ -10102,14 +10102,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Dom_P%C3%A9rignon_(cuv%C3%A9e)"
     },
     {
-      "title": "tarte flambée",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
-    },
-    {
       "title": "Consommé",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bruehe-2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
+    },
+    {
+      "title": "tarte flambée",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Franchettis%20Gasthaus%20%2B%20Kitchen%20-%202021-02-05%20-%20Sarah%20Stierch%2006.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tarte_flamb%C3%A9e"
     },
     {
       "title": "Biancomangiare PAT",

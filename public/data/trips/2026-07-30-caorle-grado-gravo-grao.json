@@ -8,7 +8,7 @@
   "countryCode": "IT",
   "region": "Frioul-Vénétie julienne",
   "startCity": "Caorle",
-  "endCity": "Grado / Gravo - Grao",
+  "endCity": "Grado",
   "distanceKm": 105.8,
   "elevationGain": 353,
   "maxAltitude": 17,
@@ -63,15 +63,15 @@
       "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4513.webp",
       "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4513.webp",
       "alt": "Img 4513",
-      "lat": 45.8082921,
-      "lng": 13.2302875
+      "lat": 45.6975659,
+      "lng": 13.1436508
     },
     {
       "src": "/media/2026-07-30-caorle-grado-gravo-grao/img_4514.webp",
       "thumb": "/media/2026-07-30-caorle-grado-gravo-grao/thumb_img_4514.webp",
       "alt": "Img 4514",
-      "lat": 45.8085084,
-      "lng": 13.2306066
+      "lat": 45.6975659,
+      "lng": 13.1436508
     }
   ],
   "videos": [],
@@ -9929,10 +9929,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Cervignano del Friuli / Çarvignan",
-    "Caorle"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -9981,14 +9978,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
@@ -10011,6 +10008,11 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -10021,24 +10023,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

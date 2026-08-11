@@ -69,14 +69,14 @@
     {
       "src": "/media/2026-06-05-decize-paray-le-monial/20260605_083906.webp",
       "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_20260605_083906.webp",
-      "alt": "083906",
-      "lat": 46.8316502,
-      "lng": 3.4656952
+      "alt": "083906"
     },
     {
       "src": "/media/2026-06-05-decize-paray-le-monial/img_3403.webp",
       "thumb": "/media/2026-06-05-decize-paray-le-monial/thumb_img_3403.webp",
-      "alt": "Img 3403"
+      "alt": "Img 3403",
+      "lat": 46.4507528,
+      "lng": 4.1194999
     }
   ],
   "videos": [],
@@ -9735,116 +9735,8 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Maison Jaillet",
-      "dist": 177,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Maison Jaillet"
-    },
-    {
-      "title": "Basilique du Sacré-Cœur",
-      "dist": 200,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Basilique de Paray-le-Monial"
-    },
-    {
-      "title": "Jardin du cloître",
-      "dist": 208,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Pierre Goursat",
-      "dist": 1060,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de Saint-Léger",
-      "dist": 4543,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ancienne tuilerie four séchoir",
-      "dist": 5050,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ancienne maison séchoir de pêche",
-      "dist": 5345,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Architecture interressante",
-      "dist": 5389,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de la Chassagne",
-      "dist": 7286,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de la Chassagne"
-    },
-    {
-      "title": "Château de Lugny",
-      "dist": 8285,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Lugny (Lugny-lès-Charolles)"
-    },
-    {
-      "title": "Château de Martigny",
-      "dist": 8495,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Allee de vieux sequoias",
-      "dist": 8527,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Château de Chevenizet",
-      "dist": 8530,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Chevenizet"
-    },
-    {
-      "title": "Château de Sélore",
-      "dist": 9150,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": "Château de Selore"
-    },
-    {
-      "title": "Château de Moulin l'Arconce",
-      "dist": 10643,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    }
-  ],
-  "majorCities": [
-    "Paray-le-Monial"
-  ],
+  "pois": [],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -9853,14 +9745,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "sauce béchamel",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
-    },
-    {
       "title": "gaufre",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
+    },
+    {
+      "title": "sauce béchamel",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
     },
     {
       "title": "crêpe",
@@ -9893,14 +9785,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Steak_tartare"
     },
     {
-      "title": "Merlot",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
-    },
-    {
       "title": "Sauce hollandaise",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/21%2005%2001%20Daniela%20Kloth%20Spargel%20MG%200720.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_hollandaise"
+    },
+    {
+      "title": "Merlot",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Merlot%20Grape.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
       "title": "bouillabaisse",
@@ -9948,14 +9840,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "munster",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
       "title": "Biancomangiare PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
+      "title": "munster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     }
   ]
 }

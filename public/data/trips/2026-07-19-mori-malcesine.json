@@ -62,47 +62,51 @@
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4288.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4288.webp",
-      "alt": "Img 4288"
+      "alt": "Img 4288",
+      "lat": 45.8801921,
+      "lng": 10.8847547
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4292.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4292.webp",
       "alt": "Img 4292",
-      "lat": 45.8725018,
-      "lng": 10.8682347
+      "lat": 45.8768149,
+      "lng": 10.8628971
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4297.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4297.webp",
       "alt": "Img 4297",
-      "lat": 45.8722431,
-      "lng": 10.8693811
+      "lat": 45.8767983,
+      "lng": 10.8627755
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4310.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4310.webp",
       "alt": "Img 4310",
-      "lat": 45.8074496,
-      "lng": 10.8476753
+      "lat": 45.885859,
+      "lng": 10.8438916
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4314.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4314.webp",
       "alt": "Img 4314",
-      "lat": 45.7313677,
-      "lng": 10.7867261
+      "lat": 45.8011841,
+      "lng": 10.8384601
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4322.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4322.webp",
       "alt": "Img 4322",
-      "lat": 45.7313677,
-      "lng": 10.7867261
+      "lat": 45.8011841,
+      "lng": 10.8384601
     },
     {
       "src": "/media/2026-07-19-mori-malcesine/img_4331.webp",
       "thumb": "/media/2026-07-19-mori-malcesine/thumb_img_4331.webp",
-      "alt": "Img 4331"
+      "alt": "Img 4331",
+      "lat": 45.7348046,
+      "lng": 10.7897738
     }
   ],
   "videos": [],
@@ -6473,14 +6477,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mozzarella"
     },
     {
-      "title": "macaroni",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
-    },
-    {
       "title": "Parmigiano Reggiano",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Parmigiano%20reggiano%20piece.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Parmigiano_Reggiano"
+    },
+    {
+      "title": "macaroni",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Macaroni2.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Macaroni"
     },
     {
       "title": "pâtes à la carbonara",
@@ -6503,14 +6507,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
@@ -6533,11 +6537,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -6548,14 +6547,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
     },
     {
       "title": "sabayon",

@@ -6,7 +6,7 @@
   "location": "Gardony → Revfulop",
   "country": "Hongrie",
   "countryCode": "HU",
-  "region": "Transdanubie centrale",
+  "region": "Transdanubie",
   "startCity": "Gárdony",
   "endCity": "Révfülöp",
   "distanceKm": 128.6,
@@ -63,50 +63,50 @@
       "src": "/media/2026-07-07-gardony-revfulop/img_3936.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3936.webp",
       "alt": "Img 3936",
-      "lat": 47.0323077,
-      "lng": 18.1155147
+      "lat": 47.0325579,
+      "lng": 18.2246724
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3944.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3944.webp",
       "alt": "Img 3944",
-      "lat": 46.9396714,
-      "lng": 17.864745
+      "lat": 47.031465,
+      "lng": 18.1155866
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3947.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3947.webp",
       "alt": "Img 3947",
-      "lat": 46.9393699,
-      "lng": 17.8643443
+      "lat": 47.031465,
+      "lng": 18.1155866
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3948.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3948.webp",
       "alt": "Img 3948",
-      "lat": 46.8803603,
-      "lng": 17.708145
+      "lat": 46.9567546,
+      "lng": 17.9104747
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3950.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3950.webp",
       "alt": "Img 3950",
-      "lat": 46.8805084,
-      "lng": 17.6953286
+      "lat": 46.9562587,
+      "lng": 17.9011059
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3964.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3964.webp",
       "alt": "Img 3964",
-      "lat": 46.8357394,
-      "lng": 17.6460333
+      "lat": 46.923053,
+      "lng": 17.8439402
     },
     {
       "src": "/media/2026-07-07-gardony-revfulop/img_3967.webp",
       "thumb": "/media/2026-07-07-gardony-revfulop/thumb_img_3967.webp",
       "alt": "Img 3967",
-      "lat": 46.8293927,
-      "lng": 17.6400231
+      "lat": 46.9245986,
+      "lng": 17.8281436
     }
   ],
   "videos": [],

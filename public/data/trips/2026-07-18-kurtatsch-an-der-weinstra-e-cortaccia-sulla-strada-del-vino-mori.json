@@ -62,53 +62,63 @@
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/20260718_120835.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_20260718_120835.webp",
-      "alt": "120835"
+      "alt": "120835",
+      "lat": 46.0650843,
+      "lng": 11.1230856
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4255.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4255.webp",
       "alt": "Img 4255",
-      "lat": 46.0766025,
-      "lng": 11.1164447
+      "lat": 46.2520729,
+      "lng": 11.2171022
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4261.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4261.webp",
-      "alt": "Img 4261"
+      "alt": "Img 4261",
+      "lat": 46.0750636,
+      "lng": 11.1168598
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4265.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4265.webp",
-      "alt": "Img 4265"
+      "alt": "Img 4265",
+      "lat": 46.0676626,
+      "lng": 11.1215554
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4272.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4272.webp",
-      "alt": "Img 4272",
-      "lat": 46.0182572,
-      "lng": 11.123699
+      "alt": "Img 4272"
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4274.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4274.webp",
       "alt": "Img 4274",
-      "lat": 45.8532484,
-      "lng": 10.9382974
+      "lat": 45.9499294,
+      "lng": 11.1036917
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4278.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4278.webp",
-      "alt": "Img 4278"
+      "alt": "Img 4278",
+      "lat": 45.8525457,
+      "lng": 10.9554993
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4279.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4279.webp",
-      "alt": "Img 4279"
+      "alt": "Img 4279",
+      "lat": 45.8525457,
+      "lng": 10.9554993
     },
     {
       "src": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/img_4282.webp",
       "thumb": "/media/2026-07-18-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino-mori/thumb_img_4282.webp",
-      "alt": "Img 4282"
+      "alt": "Img 4282",
+      "lat": 45.8532484,
+      "lng": 10.9382974
     }
   ],
   "videos": [],
@@ -6933,14 +6943,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
       "title": "pizza Margherita",

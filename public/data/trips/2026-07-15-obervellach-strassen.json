@@ -63,44 +63,50 @@
       "src": "/media/2026-07-15-obervellach-strassen/img_4193.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4193.webp",
       "alt": "Img 4193",
-      "lat": 46.7440098,
-      "lng": 12.9574295
+      "lat": 46.7503542,
+      "lng": 13.2846667
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4196.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4196.webp",
       "alt": "Img 4196",
-      "lat": 46.8271068,
-      "lng": 12.772885
+      "lat": 46.7364464,
+      "lng": 13.0258682
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4205.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4205.webp",
       "alt": "Img 4205",
-      "lat": 46.7685437,
-      "lng": 12.5836076
+      "lat": 46.8302706,
+      "lng": 12.7814995
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4207.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4207.webp",
       "alt": "Img 4207",
-      "lat": 46.7457944,
-      "lng": 12.4846519
+      "lat": 46.7993951,
+      "lng": 12.744135
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4209.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4209.webp",
-      "alt": "Img 4209"
+      "alt": "Img 4209",
+      "lat": 46.7459875,
+      "lng": 12.4967692
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4213.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4213.webp",
-      "alt": "Img 4213"
+      "alt": "Img 4213",
+      "lat": 46.7458078,
+      "lng": 12.4848625
     },
     {
       "src": "/media/2026-07-15-obervellach-strassen/img_4214.webp",
       "thumb": "/media/2026-07-15-obervellach-strassen/thumb_img_4214.webp",
-      "alt": "Img 4214"
+      "alt": "Img 4214",
+      "lat": 46.7458078,
+      "lng": 12.4848625
     }
   ],
   "videos": [],
@@ -6803,6 +6809,13 @@
       "wikiTitle": null
     },
     {
+      "title": "Soldatenfriedhof",
+      "dist": 3777,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
       "title": "Sattel",
       "dist": 4950,
       "kind": "Point de vue",
@@ -6868,13 +6881,6 @@
     {
       "title": "Scheibenegg",
       "dist": 4367,
-      "kind": "Site naturel",
-      "rank": 6,
-      "wikiTitle": null
-    },
-    {
-      "title": "Zenzerspitz",
-      "dist": 4700,
       "kind": "Site naturel",
       "rank": 6,
       "wikiTitle": null

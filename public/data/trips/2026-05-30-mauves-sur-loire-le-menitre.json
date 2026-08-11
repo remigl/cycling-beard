@@ -68,36 +68,36 @@
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/la guinchette.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_la guinchette.webp",
       "alt": "La Guinchette",
-      "lat": 47.3633483,
-      "lng": -0.7572664
+      "lat": 47.379761,
+      "lng": -0.9629318
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/on va dire que c'est ok.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_on va dire que c'est ok.webp",
       "alt": "On Va Dire Que C'Est Ok",
-      "lat": 47.379657,
-      "lng": -0.9636875
+      "lat": 47.3485743,
+      "lng": -1.2673927
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/petit château sur le chemin.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_petit château sur le chemin.webp",
       "alt": "Petit ChâTeau Sur Le Chemin",
-      "lat": 47.398165,
-      "lng": -0.6271952
+      "lat": 47.3984326,
+      "lng": -0.9349545
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/pont d'ancenis.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_pont d'ancenis.webp",
       "alt": "Pont D'Ancenis",
-      "lat": 47.3798129,
-      "lng": -0.9631507
+      "lat": 47.3597239,
+      "lng": -1.1752426
     },
     {
       "src": "/media/2026-05-30-mauves-sur-loire-le-menitre/tartiflette a la guinchette.webp",
       "thumb": "/media/2026-05-30-mauves-sur-loire-le-menitre/thumb_tartiflette a la guinchette.webp",
       "alt": "Tartiflette A La Guinchette",
-      "lat": 47.3627438,
-      "lng": -0.7576227
+      "lat": 47.379761,
+      "lng": -0.9629318
     }
   ],
   "videos": [],
@@ -19174,14 +19174,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Mayonnaise"
     },
     {
-      "title": "gaufre",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
-    },
-    {
       "title": "sauce béchamel",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/2021%20Sos%20beszamelowy.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sauce_b%C3%A9chamel"
+    },
+    {
+      "title": "gaufre",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Gaufre%20molle.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Gaufre_(cuisine)"
     },
     {
       "title": "crêpe",
@@ -19229,24 +19229,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Bouillabaisse"
     },
     {
-      "title": "mille-feuille",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
-    },
-    {
       "title": "Roux",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Roux%20bianco.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Roux_(cuisine)"
     },
     {
-      "title": "salade niçoise",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
+      "title": "mille-feuille",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Mille-feuille%2020100916.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Mille-feuille"
     },
     {
       "title": "bœuf bourguignon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/B%C5%93uf%20bourguignon%2006.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/B%C5%93uf_bourguignon"
+    },
+    {
+      "title": "salade niçoise",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Salade%20ni%C3%A7oise%20%287545098258%29.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Salade_ni%C3%A7oise"
     },
     {
       "title": "Sauce veloutée",
@@ -19269,14 +19269,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "munster",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
       "title": "Biancomangiare PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
+      "title": "munster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     }
   ]
 }

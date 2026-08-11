@@ -82,12 +82,16 @@
     {
       "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4746.webp",
       "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4746.webp",
-      "alt": "Img 4746"
+      "alt": "Img 4746",
+      "lat": 42.9580584,
+      "lng": 16.7082505
     },
     {
       "src": "/media/2026-08-07-grad-supetar-opcina-vela-luka/img_4754.webp",
       "thumb": "/media/2026-08-07-grad-supetar-opcina-vela-luka/thumb_img_4754.webp",
-      "alt": "Img 4754"
+      "alt": "Img 4754",
+      "lat": 42.9580584,
+      "lng": 16.7082505
     }
   ],
   "videos": [],
@@ -8871,10 +8875,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Split",
-    "Supetar"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {

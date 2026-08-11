@@ -63,22 +63,22 @@
       "src": "/media/2026-07-28-bondeno-chioggia/img_4436.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4436.webp",
       "alt": "Img 4436",
-      "lat": 44.9832964,
-      "lng": 12.0035139
+      "lat": 44.9126564,
+      "lng": 11.6809273
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4438.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4438.webp",
       "alt": "Img 4438",
-      "lat": 44.9832855,
-      "lng": 12.0038058
+      "lat": 44.9126564,
+      "lng": 11.6809273
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4446.webp",
       "thumb": "/media/2026-07-28-bondeno-chioggia/thumb_img_4446.webp",
       "alt": "Img 4446",
-      "lat": 44.9883423,
-      "lng": 12.0318945
+      "lat": 44.9232274,
+      "lng": 11.7124939
     },
     {
       "src": "/media/2026-07-28-bondeno-chioggia/img_4450.webp",
@@ -6886,14 +6886,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
@@ -6916,16 +6916,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "osso buco",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-    },
-    {
-      "title": "Penne",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -6936,14 +6926,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
+      "title": "osso buco",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+    },
+    {
+      "title": "Penne",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

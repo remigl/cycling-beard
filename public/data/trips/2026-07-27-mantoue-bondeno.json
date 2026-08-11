@@ -63,50 +63,50 @@
       "src": "/media/2026-07-27-mantoue-bondeno/img_4411.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4411.webp",
       "alt": "Img 4411",
-      "lat": 45.133239,
-      "lng": 10.8090125
+      "lat": 45.1624499,
+      "lng": 10.8083371
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4414.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4414.webp",
       "alt": "Img 4414",
-      "lat": 45.1252224,
-      "lng": 10.8241092
+      "lat": 45.1587334,
+      "lng": 10.7949307
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4418.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4418.webp",
       "alt": "Img 4418",
-      "lat": 45.1121335,
-      "lng": 10.8281696
+      "lat": 45.1586071,
+      "lng": 10.7939529
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4426.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4426.webp",
       "alt": "Img 4426",
-      "lat": 45.1067806,
-      "lng": 10.8323382
+      "lat": 45.1582645,
+      "lng": 10.7937023
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4429.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4429.webp",
       "alt": "Img 4429",
-      "lat": 45.1035879,
-      "lng": 10.8414503
+      "lat": 45.1582645,
+      "lng": 10.7937023
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4430.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4430.webp",
       "alt": "Img 4430",
-      "lat": 45.0710547,
-      "lng": 10.924584
+      "lat": 45.1598871,
+      "lng": 10.7967684
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img_4435.webp",
       "thumb": "/media/2026-07-27-mantoue-bondeno/thumb_img_4435.webp",
       "alt": "Img 4435",
-      "lat": 45.0422424,
-      "lng": 11.105494
+      "lat": 45.0425556,
+      "lng": 10.927708
     },
     {
       "src": "/media/2026-07-27-mantoue-bondeno/img-20260727-wa0002.webp",
@@ -9932,113 +9932,7 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Torre Pepoli",
-      "dist": 759,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Chiesa del Rosario (Oratorio di San Domenico)",
-      "dist": 833,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Casa Museo dell'Ariosto",
-      "dist": 920,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Rocca Possente di Stellata",
-      "dist": 1167,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Polesine in miniatura",
-      "dist": 4694,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Corte Benedettina di San Lorenzo",
-      "dist": 5158,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Castello di Sariano",
-      "dist": 7490,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Delizia Estense della Diamantina",
-      "dist": 9354,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo Archeologico \"Monsignor Guerrino Ferraresi\"",
-      "dist": 910,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Museo della seconda guerra mondiale del fiume Po",
-      "dist": 7109,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museo della seconda guerra mondiale del fiume Po"
-    },
-    {
-      "title": "Monumento ai Caduti delle guerre mondiali",
-      "dist": 1767,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "La Vela",
-      "dist": 4591,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ai Caduti di Porporana",
-      "dist": 4843,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Lapide ai Partigiani",
-      "dist": 5516,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Lapide ai Caduti di Ospitale",
-      "dist": 5519,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
+  "pois": [],
   "majorCities": [
     "Mantoue"
   ],
@@ -10090,14 +9984,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
@@ -10120,16 +10014,6 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
-      "title": "osso buco",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
-    },
-    {
-      "title": "Penne",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
@@ -10140,14 +10024,24 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
+      "title": "osso buco",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
+    },
+    {
+      "title": "Penne",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
+    },
+    {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

@@ -6,7 +6,7 @@
   "location": "Revfulop → Halogy",
   "country": "Hongrie",
   "countryCode": "HU",
-  "region": "Transdanubie occidentale",
+  "region": "Transdanubie",
   "startCity": "Révfülöp",
   "endCity": "Halogy",
   "distanceKm": 139.4,
@@ -63,43 +63,43 @@
       "src": "/media/2026-07-08-revfulop-halogy/img_3973.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3973.webp",
       "alt": "Img 3973",
-      "lat": 46.8824418,
-      "lng": 17.1096466
+      "lat": 46.7646718,
+      "lng": 17.2428566
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3975.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3975.webp",
       "alt": "Img 3975",
-      "lat": 46.8924765,
-      "lng": 17.1087969
+      "lat": 46.7656463,
+      "lng": 17.2428892
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3977.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3977.webp",
       "alt": "Img 3977",
-      "lat": 46.9034318,
-      "lng": 17.1073884
+      "lat": 46.7706051,
+      "lng": 17.2427488
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3983.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3983.webp",
       "alt": "Img 3983",
-      "lat": 46.9034318,
-      "lng": 17.1073884
+      "lat": 46.7706369,
+      "lng": 17.2423106
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3985.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3985.webp",
       "alt": "Img 3985",
-      "lat": 46.9034318,
-      "lng": 17.1073884
+      "lat": 46.7707472,
+      "lng": 17.241154
     },
     {
       "src": "/media/2026-07-08-revfulop-halogy/img_3986.webp",
       "thumb": "/media/2026-07-08-revfulop-halogy/thumb_img_3986.webp",
       "alt": "Img 3986",
-      "lat": 47.027367,
-      "lng": 16.9467069
+      "lat": 46.9244493,
+      "lng": 17.0974928
     }
   ],
   "videos": [],
@@ -6775,11 +6775,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Keszthely",
-    "Zalaszentgrót",
-    "Hévíz"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {

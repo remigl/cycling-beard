@@ -62,70 +62,58 @@
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_171203.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_171203.webp",
-      "alt": "171203",
-      "lat": 47.7464006,
-      "lng": 18.2217294
+      "alt": "171203"
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/20260704_192705.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_20260704_192705.webp",
-      "alt": "192705"
+      "alt": "192705",
+      "lat": 47.7411827,
+      "lng": 18.2657981
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3816.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3816.webp",
       "alt": "Img 3816",
-      "lat": 47.7958556,
-      "lng": 17.6792842
+      "lat": 47.9802435,
+      "lng": 17.3819294
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3819.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3819.webp",
-      "alt": "Img 3819",
-      "lat": 47.7471936,
-      "lng": 18.213951
+      "alt": "Img 3819"
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3821.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3821.webp",
-      "alt": "Img 3821",
-      "lat": 47.7443328,
-      "lng": 18.2413131
+      "alt": "Img 3821"
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3827.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3827.webp",
-      "alt": "Img 3827",
-      "lat": 47.7440167,
-      "lng": 18.2480136
+      "alt": "Img 3827"
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3830.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3830.webp",
-      "alt": "Img 3830",
-      "lat": 47.7435231,
-      "lng": 18.2542989
+      "alt": "Img 3830"
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3834.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3834.webp",
-      "alt": "Img 3834",
-      "lat": 47.741537,
-      "lng": 18.3299374
+      "alt": "Img 3834"
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3835.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3835.webp",
-      "alt": "Img 3835",
-      "lat": 47.7547067,
-      "lng": 18.3923064
+      "alt": "Img 3835"
     },
     {
       "src": "/media/2026-07-04-bratislava-kravany-nad-dunajom/img_3838.webp",
       "thumb": "/media/2026-07-04-bratislava-kravany-nad-dunajom/thumb_img_3838.webp",
       "alt": "Img 3838",
-      "lat": 47.778313,
-      "lng": 18.467848
+      "lat": 47.7597768,
+      "lng": 18.1420935
     }
   ],
   "videos": [],

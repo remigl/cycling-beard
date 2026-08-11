@@ -63,34 +63,36 @@
       "src": "/media/2026-06-08-orchamps-fourbanne/besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_besançon.webp",
       "alt": "BesançOn",
-      "lat": 47.2871352,
-      "lng": 6.152233
+      "lat": 47.2295643,
+      "lng": 6.0303882
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/église saint pierre de besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église saint pierre de besançon.webp",
       "alt": "éGlise Saint Pierre De BesançOn",
-      "lat": 47.3014615,
-      "lng": 6.2063268
+      "lat": 47.2379022,
+      "lng": 6.0242322
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/église sainte madeleine de besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_église sainte madeleine de besançon.webp",
       "alt": "éGlise Sainte Madeleine De BesançOn",
-      "lat": 47.301337,
-      "lng": 6.2353976
+      "lat": 47.2397726,
+      "lng": 6.0205784
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/img_3446.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_img_3446.webp",
-      "alt": "Img 3446"
+      "alt": "Img 3446",
+      "lat": 47.2925981,
+      "lng": 6.2028983
     },
     {
       "src": "/media/2026-06-08-orchamps-fourbanne/juste avant besançon.webp",
       "thumb": "/media/2026-06-08-orchamps-fourbanne/thumb_juste avant besançon.webp",
       "alt": "Juste Avant BesançOn",
-      "lat": 47.2290598,
-      "lng": 6.0420322
+      "lat": 47.1711242,
+      "lng": 5.927547
     }
   ],
   "videos": [],
@@ -6628,14 +6630,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Consomm%C3%A9"
     },
     {
-      "title": "munster",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
-    },
-    {
       "title": "Biancomangiare PAT",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Blanc-manger%20on%20glass%20platter.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Blanc-manger"
+    },
+    {
+      "title": "munster",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     }
   ]
 }

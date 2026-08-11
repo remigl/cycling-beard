@@ -62,61 +62,63 @@
     {
       "src": "/media/2026-07-29-chioggia-caorle/20260729_142728.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_20260729_142728.webp",
-      "alt": "142728",
-      "lat": 45.4684136,
-      "lng": 12.4906993
+      "alt": "142728"
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4460.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4460.webp",
       "alt": "Img 4460",
-      "lat": 45.3325848,
-      "lng": 12.3182371
+      "lat": 45.2210867,
+      "lng": 12.2794203
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4463.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4463.webp",
       "alt": "Img 4463",
-      "lat": 45.3326833,
-      "lng": 12.3178889
+      "lat": 45.2212253,
+      "lng": 12.2795195
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4464.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4464.webp",
       "alt": "Img 4464",
-      "lat": 45.3329231,
-      "lng": 12.3172486
+      "lat": 45.2234787,
+      "lng": 12.2807292
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4466.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4466.webp",
       "alt": "Img 4466",
-      "lat": 45.3414812,
-      "lng": 12.3091646
+      "lat": 45.2625667,
+      "lng": 12.300172
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4469.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4469.webp",
       "alt": "Img 4469",
-      "lat": 45.3749763,
-      "lng": 12.3393687
+      "lat": 45.267162,
+      "lng": 12.2998215
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4473.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4473.webp",
       "alt": "Img 4473",
-      "lat": 45.4177492,
-      "lng": 12.3694098
+      "lat": 45.2943129,
+      "lng": 12.3065727
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4475.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4475.webp",
-      "alt": "Img 4475"
+      "alt": "Img 4475",
+      "lat": 45.3327621,
+      "lng": 12.3167683
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4478.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4478.webp",
-      "alt": "Img 4478"
+      "alt": "Img 4478",
+      "lat": 45.3414812,
+      "lng": 12.3091646
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4494.webp",
@@ -131,23 +133,17 @@
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4498.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4498.webp",
-      "alt": "Img 4498",
-      "lat": 45.4723469,
-      "lng": 12.5033408
+      "alt": "Img 4498"
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4502.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4502.webp",
-      "alt": "Img 4502",
-      "lat": 45.4827075,
-      "lng": 12.537381
+      "alt": "Img 4502"
     },
     {
       "src": "/media/2026-07-29-chioggia-caorle/img_4503.webp",
       "thumb": "/media/2026-07-29-chioggia-caorle/thumb_img_4503.webp",
-      "alt": "Img 4503",
-      "lat": 45.4829064,
-      "lng": 12.5385401
+      "alt": "Img 4503"
     }
   ],
   "videos": [],
@@ -9822,118 +9818,8 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Monumento agli Artiglieri",
-      "dist": 2125,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ai caduti del mare",
-      "dist": 2136,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monumento ai caduti",
-      "dist": 2624,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Mons. Don Fausto Moschetta",
-      "dist": 2956,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ai Lagunari",
-      "dist": 3125,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Erich Fuchs",
-      "dist": 3584,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Don Marco Bottosso",
-      "dist": 9233,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monumento Ai caduti di tutte le guerre e della lotta di liberazione",
-      "dist": 9347,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Ai caduti di tutte le guerre",
-      "dist": 9471,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Serci Isiglo",
-      "dist": 9893,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Villa Romana Motteron dei Frati",
-      "dist": 10877,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monumento agli Artiglieri caduti e dispersi in guerra",
-      "dist": 11919,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monumento dei Martiri delle Foibe",
-      "dist": 11948,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Monumento Al Donatore di Sangue",
-      "dist": 12004,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Brucomela",
-      "dist": 8751,
-      "kind": "Parc à thème / zoo",
-      "rank": 7,
-      "wikiTitle": null
-    }
-  ],
-  "majorCities": [
-    "Chioggia",
-    "Venise",
-    "Jesolo"
-  ],
+  "pois": [],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -9982,14 +9868,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
@@ -10012,6 +9898,11 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -10022,24 +9913,19 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
+      "title": "pizza Margherita",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
       "title": "sabayon",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "Chianti DOCG",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Italian%20DOCG%20Chianti%20label.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Chianti_(DOP)"
     }
   ]
 }

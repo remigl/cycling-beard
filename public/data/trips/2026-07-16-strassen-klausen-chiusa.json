@@ -87,36 +87,36 @@
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4221.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4221.webp",
       "alt": "Img 4221",
-      "lat": 46.7375908,
-      "lng": 12.168082
+      "lat": 46.7399587,
+      "lng": 12.3660235
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4225.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4225.webp",
       "alt": "Img 4225",
-      "lat": 46.7817857,
-      "lng": 11.900975
+      "lat": 46.7518421,
+      "lng": 12.1077676
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4228.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4228.webp",
       "alt": "Img 4228",
-      "lat": 46.7176831,
-      "lng": 11.6584639
+      "lat": 46.7788711,
+      "lng": 11.8796824
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4230.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4230.webp",
       "alt": "Img 4230",
-      "lat": 46.6411591,
-      "lng": 11.5733085
+      "lat": 46.7445555,
+      "lng": 11.6495231
     },
     {
       "src": "/media/2026-07-16-strassen-klausen-chiusa/img_4234.webp",
       "thumb": "/media/2026-07-16-strassen-klausen-chiusa/thumb_img_4234.webp",
       "alt": "Img 4234",
-      "lat": 46.6405003,
-      "lng": 11.5717589
+      "lat": 46.7153998,
+      "lng": 11.6567658
     }
   ],
   "videos": [],
@@ -13345,118 +13345,8 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Ansitz Lusenegg",
-      "dist": 773,
-      "kind": "Château / fort",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Evangelstein",
-      "dist": 6129,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Flitzer Wasserfall - Cascata di Valluzza",
-      "dist": 6729,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Unterer Barbianer Wasserfall",
-      "dist": 6878,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Oberer Barbianer Wasserfall",
-      "dist": 6896,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Hexenstühle",
-      "dist": 8559,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Bergwerk Villanders - Miniera Villandro",
-      "dist": 2631,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Bergwerk Villanders"
-    },
-    {
-      "title": "Mineralien Museum - Museo Mineralogico",
-      "dist": 3938,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Tiermuseum",
-      "dist": 8196,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Diözesanmuseum - Museo Diocesano",
-      "dist": 10442,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museo diocesano (Bressanone)"
-    },
-    {
-      "title": "Pharmaziemuseum - Museo della Farmacia",
-      "dist": 10733,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Museo della farmacia di Bressanone"
-    },
-    {
-      "title": "Acheoparc Villanders - Acheoparc Villandro",
-      "dist": 2550,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Archeoparc outside",
-      "dist": 2551,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Peter Mayr",
-      "dist": 8217,
-      "kind": "Monument / ruines",
-      "rank": 8,
-      "wikiTitle": null
-    },
-    {
-      "title": "Hexenbänke",
-      "dist": 9091,
-      "kind": "Point de vue",
-      "rank": 8,
-      "wikiTitle": null
-    }
-  ],
-  "majorCities": [
-    "Brixen - Bressanone",
-    "Bruneck - Brunico",
-    "Klausen - Chiusa"
-  ],
+  "pois": [],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -13545,14 +13435,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
       "title": "pizza Margherita",

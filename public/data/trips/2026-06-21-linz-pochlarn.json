@@ -63,34 +63,36 @@
       "src": "/media/2026-06-21-linz-pochlarn/img_3706.webp",
       "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3706.webp",
       "alt": "Img 3706",
-      "lat": 48.1911847,
-      "lng": 15.0744089
+      "lat": 48.1850608,
+      "lng": 14.7912232
     },
     {
       "src": "/media/2026-06-21-linz-pochlarn/img_3712.webp",
       "thumb": "/media/2026-06-21-linz-pochlarn/thumb_img_3712.webp",
       "alt": "Img 3712",
-      "lat": 48.1895726,
-      "lng": 15.0690154
+      "lat": 48.1866545,
+      "lng": 14.7967127
     },
     {
       "src": "/media/2026-06-21-linz-pochlarn/juste après le camping.webp",
       "thumb": "/media/2026-06-21-linz-pochlarn/thumb_juste après le camping.webp",
-      "alt": "Juste AprèS Le Camping"
+      "alt": "Juste AprèS Le Camping",
+      "lat": 48.2111993,
+      "lng": 15.1535627
     },
     {
       "src": "/media/2026-06-21-linz-pochlarn/krems an der donau.webp",
       "thumb": "/media/2026-06-21-linz-pochlarn/thumb_krems an der donau.webp",
       "alt": "Krems An Der Donau",
-      "lat": 48.1785947,
-      "lng": 15.085105
+      "lat": 48.2179992,
+      "lng": 14.8553516
     },
     {
       "src": "/media/2026-06-21-linz-pochlarn/sur un pont avant tulln.webp",
       "thumb": "/media/2026-06-21-linz-pochlarn/thumb_sur un pont avant tulln.webp",
       "alt": "Sur Un Pont Avant Tulln",
-      "lat": 48.2128799,
-      "lng": 15.1931904
+      "lat": 48.1894745,
+      "lng": 15.0688728
     }
   ],
   "videos": [],

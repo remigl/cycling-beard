@@ -62,17 +62,23 @@
     {
       "src": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/img_4236.webp",
       "thumb": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/thumb_img_4236.webp",
-      "alt": "Img 4236"
+      "alt": "Img 4236",
+      "lat": 46.5864978,
+      "lng": 11.5245433
     },
     {
       "src": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/img_4238.webp",
       "thumb": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/thumb_img_4238.webp",
-      "alt": "Img 4238"
+      "alt": "Img 4238",
+      "lat": 46.4982193,
+      "lng": 11.3548359
     },
     {
       "src": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/img_4240.webp",
       "thumb": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/thumb_img_4240.webp",
-      "alt": "Img 4240"
+      "alt": "Img 4240",
+      "lat": 46.4982193,
+      "lng": 11.3548359
     },
     {
       "src": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/img_4241.webp",
@@ -87,17 +93,23 @@
     {
       "src": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/img_4247.webp",
       "thumb": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/thumb_img_4247.webp",
-      "alt": "Img 4247"
+      "alt": "Img 4247",
+      "lat": 46.4222723,
+      "lng": 11.3117508
     },
     {
       "src": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/img_4252.webp",
       "thumb": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/thumb_img_4252.webp",
-      "alt": "Img 4252"
+      "alt": "Img 4252",
+      "lat": 46.3690345,
+      "lng": 11.2921355
     },
     {
       "src": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/img_4253.webp",
       "thumb": "/media/2026-07-17-klausen-chiusa-kurtatsch-an-der-weinstra-e-cortaccia-sulla-strada-del-vino/thumb_img_4253.webp",
-      "alt": "Img 4253"
+      "alt": "Img 4253",
+      "lat": 46.315793,
+      "lng": 11.2631829
     }
   ],
   "videos": [],
@@ -6709,11 +6721,7 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [
-    "Bolzano",
-    "Laives - Leifers",
-    "Klausen - Chiusa"
-  ],
+  "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [
     {
@@ -6802,14 +6810,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "tagliatelle",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
-    },
-    {
       "title": "Fettuccine",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
+      "title": "tagliatelle",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
       "title": "pizza Margherita",

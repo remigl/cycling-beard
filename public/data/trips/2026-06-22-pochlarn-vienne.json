@@ -84,27 +84,29 @@
       "src": "/media/2026-06-22-pochlarn-vienne/abbaye de melk.webp",
       "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_abbaye de melk.webp",
       "alt": "Abbaye De Melk",
-      "lat": 48.3372882,
-      "lng": 15.4033314
+      "lat": 48.2280681,
+      "lng": 15.3276273
     },
     {
       "src": "/media/2026-06-22-pochlarn-vienne/going a little bit faster than this boat.webp",
       "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_going a little bit faster than this boat.webp",
       "alt": "Going A Little Bit Faster Than This Boat",
-      "lat": 48.2087,
-      "lng": 16.3818362
+      "lat": 48.3340806,
+      "lng": 16.1220617
     },
     {
       "src": "/media/2026-06-22-pochlarn-vienne/pwc.webp",
       "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_pwc.webp",
-      "alt": "Pwc"
+      "alt": "Pwc",
+      "lat": 48.2300716,
+      "lng": 16.4085806
     },
     {
       "src": "/media/2026-06-22-pochlarn-vienne/vin pétillant.webp",
       "thumb": "/media/2026-06-22-pochlarn-vienne/thumb_vin pétillant.webp",
       "alt": "Vin PéTillant",
-      "lat": 48.3892241,
-      "lng": 15.5461563
+      "lat": 48.3372882,
+      "lng": 15.4033314
     }
   ],
   "videos": [],
@@ -9437,7 +9439,7 @@
     },
     {
       "title": "Fiaker",
-      "dist": 2906,
+      "dist": 2900,
       "kind": "Attraction",
       "rank": 10,
       "wikiTitle": null
