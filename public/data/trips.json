@@ -221399,8 +221399,118 @@
     "lodgingName": "Camping Meier, Roßfelden 1A, 94486 Osterhofen, Allemagne",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
-    "majorCities": [],
+    "pois": [
+      {
+        "title": "Infohaus Isarmündung",
+        "dist": 9575,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tipi",
+        "dist": 9587,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ausstellung \"Kraft im Fluss\"",
+        "dist": 9635,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Erlebnisstation Deich",
+        "dist": 9710,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Schloß Isarau",
+        "dist": 10832,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Schloss Aholming"
+      },
+      {
+        "title": "Museum Quintana",
+        "dist": 5447,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Museum Quintana"
+      },
+      {
+        "title": "Jahrhundertflut 2013",
+        "dist": 1519,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Freilicht-Theater",
+        "dist": 9538,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Heiliger Gunther",
+        "dist": 10584,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kriegerdenkmal",
+        "dist": 11251,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Isarmündung",
+        "dist": 11254,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Pledlberg",
+        "dist": 2417,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Metzgerhügel",
+        "dist": 2603,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kreuzhügel",
+        "dist": 3451,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Rechenberg",
+        "dist": 3711,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
+    "majorCities": [
+      "Ratisbonne",
+      "Straubing",
+      "Deggendorf"
+    ],
     "topRatedPlaces": [],
     "specialties": [
       {
@@ -251058,7 +251168,38 @@
       "Hainburg an der Donau"
     ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "bryndzové halušky",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
+      },
+      {
+        "title": "oublie",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
+      },
+      {
+        "title": "lokša",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
+      },
+      {
+        "title": "strapačky",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
+        "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
+      },
+      {
+        "title": "Oštiepok",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
+      },
+      {
+        "title": "balkánský sýr",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
+      }
+    ]
   },
   {
     "slug": "2026-07-04-bratislava-kravany-nad-dunajom",
@@ -444313,6 +444454,11 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
       },
       {
+        "title": "Fettuccine",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+      },
+      {
         "title": "osso buco",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
         "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -444323,19 +444469,14 @@
         "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
       },
       {
-        "title": "Fettuccine",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+        "title": "sabayon",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
       },
       {
         "title": "pizza Margherita",
         "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
         "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
-      },
-      {
-        "title": "fusilli",
-        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-        "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
       }
     ]
   },
