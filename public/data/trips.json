@@ -251139,113 +251139,7 @@
     "lodgingName": "Camping Divoká Voda, Bratislava-Čunovo 1113, 851 10, Čunovo, Slovaquie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Zichy-kastély",
-        "dist": 4369,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Dropy",
-        "dist": 5927,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Trojmedzie Rakúsko",
-        "dist": 5984,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Batthyány-kastély",
-        "dist": 8151,
-        "kind": "Château / fort",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Santuaire de Notre Dame",
-        "dist": 10720,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Antická Gerulata Rusovce",
-        "dist": 6796,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Podunajský remeselný dvor",
-        "dist": 8709,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Dorfmuseum: Gerätehaus",
-        "dist": 9854,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Múzeum obchodu Bratislava",
-        "dist": 11133,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Wellington MF 458 a 40. letka RAF",
-        "dist": 300,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pamätník padlým v I. a II. svetovej vojne",
-        "dist": 1635,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Sv. Ján Nepomucký",
-        "dist": 2208,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Pozorovateľňa vtáctva DUNA",
-        "dist": 2865,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Kalinkovská rozhľadňa",
-        "dist": 3206,
-        "kind": "Point de vue",
-        "rank": 8,
-        "wikiTitle": null
-      },
-      {
-        "title": "Békefi Ernő Emléktábla",
-        "dist": 4322,
-        "kind": "Monument / ruines",
-        "rank": 8,
-        "wikiTitle": null
-      }
-    ],
+    "pois": [],
     "majorCities": [
       "Vienne",
       "Bratislava",
@@ -518241,7 +518135,113 @@
     "lodgingName": "Kamp vrbovica, Ul. Vrbovica, 20275, Žrnovo, Croatie",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Pomorski muzej Orebić",
+        "dist": 6426,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vidikovac",
+        "dist": 6085,
+        "kind": "Point de vue",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Spomenik palim borcima",
+        "dist": 6343,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Potkočina glava",
+        "dist": 336,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Strmeni vrh",
+        "dist": 1521,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Jedro",
+        "dist": 2608,
+        "kind": "Œuvre / art",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Veliki vrh",
+        "dist": 3757,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Goč",
+        "dist": 4278,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vrh M. Kontija",
+        "dist": 4286,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Poljski vrh",
+        "dist": 4355,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Kopinje",
+        "dist": 4794,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Vrh Roguje",
+        "dist": 4877,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Zmijino brdo",
+        "dist": 4955,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Debeja",
+        "dist": 5262,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      },
+      {
+        "title": "Karkadur",
+        "dist": 5337,
+        "kind": "Site naturel",
+        "rank": 6,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [
       "Korčula"
     ],
