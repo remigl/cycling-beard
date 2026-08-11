@@ -162,7 +162,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
     : [];
 
   return (
-    <div className="w-full bg-bg-dark">
+    <div className="w-full">
 
       {/* ── HERO : titre + globe rapprochés ── */}
       <div
