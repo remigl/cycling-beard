@@ -12203,7 +12203,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Trieste",
+    "Monfalcone",
+    "Koper / Capodistria"
+  ],
   "topRatedPlaces": [],
   "specialties": []
 }

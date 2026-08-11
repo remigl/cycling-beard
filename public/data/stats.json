@@ -1,13 +1,13 @@
 {
   "totalKm": 5076,
   "totalCountries": 9,
-  "totalDays": 76,
+  "totalDays": 77,
   "totalStages": 54,
   "totalElevation": 31749,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
   "currentLocation": "Grad Korčula",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-08-10",
+  "lastUpdate": "2026-08-11",
   "latestStageSlug": "2026-08-10-opcina-vela-luka-grad-korcula"
 }
