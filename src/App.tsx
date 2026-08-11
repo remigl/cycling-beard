@@ -86,16 +86,15 @@ export default function App() {
   );
 
   return (
-    <div
-      className="min-h-screen bg-bg-dark text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark"
-      style={{
-        backgroundImage: "url(/images/background.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundAttachment: "fixed",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <div className="min-h-screen bg-bg-dark text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark">
+      {/* Image de fond vraiment fixe : indépendante du scroll, ne bouge jamais
+          même avec l'effet de rebond des navigateurs mobiles. */}
+      <img
+        src="/images/background.png"
+        alt=""
+        aria-hidden="true"
+        className="fixed inset-0 w-full h-full object-cover pointer-events-none select-none z-0"
+      />
       {/* Voile sombre semi-transparent : garde le texte lisible quelle que soit l'image */}
       <div className="fixed inset-0 bg-bg-dark/75 pointer-events-none z-0" />
 
