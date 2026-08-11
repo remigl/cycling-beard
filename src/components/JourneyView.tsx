@@ -469,7 +469,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                 className={`px-4 py-2 rounded-full font-mono text-[10px] uppercase tracking-wider transition-all duration-200 cursor-pointer ${
                   selectedCountry === c
                     ? "bg-brand-sand text-surface-card font-bold shadow-md scale-105"
-                    : "bg-transparent border border-text-on/15 text-text-dim hover:border-brand-sand/60 hover:text-text-on"
+                    : "bg-[#1c1b1b] border border-text-on/15 text-text-dim hover:border-brand-sand/60 hover:text-text-on"
                 }`}
               >
                 {c === "all" ? t("journey.all") : passageLabel(c)}
@@ -484,7 +484,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
             return (
               <button
                 onClick={() => setFoodTrip(countryTrip)}
-                className="mt-3 inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest px-4 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                className="mt-3 inline-flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest px-4 py-2 rounded-full bg-[#1c1b1b] border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
               >
                 <UtensilsCrossed size={13} /> {t("journey.food_btn")} · {countryLabel(selectedPassage.country)}
               </button>
@@ -501,7 +501,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
             <button
               onClick={() => { setSelectedRegion("all"); setRegionMap(null); }}
               className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border ${
-                selectedRegion === "all" ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
+                selectedRegion === "all" ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-[#1c1b1b] border-text-on/15 text-text-dim hover:border-brand-sand"
               }`}
             >
               {t("journey.all")}
@@ -511,7 +511,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                 <button
                   onClick={() => { setSelectedRegion(r); setRegionMap(regionMap === r ? null : r); }}
                   className={`px-2.5 py-1 rounded-full font-mono text-[9px] tracking-wide transition-all cursor-pointer border inline-flex items-center gap-1.5 ${
-                    selectedRegion === r ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-text-on/15 text-text-dim hover:border-brand-sand"
+                    selectedRegion === r ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-[#1c1b1b] border-text-on/15 text-text-dim hover:border-brand-sand"
                   }`}
                 >
                   {regionLabel(r)}
@@ -533,7 +533,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                 key={tag}
                 onClick={() => toggleTag(tag)}
                 className={`px-2.5 py-1 rounded-full font-mono text-[9px] lowercase tracking-wide transition-all cursor-pointer border ${
-                  selectedTags.includes(tag) ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-transparent border-brand-sand/30 text-brand-sand hover:bg-brand-sand/10"
+                  selectedTags.includes(tag) ? "bg-brand-sand text-surface-card border-brand-sand font-bold" : "bg-[#1c1b1b] border-brand-sand/30 text-brand-sand hover:bg-brand-sand/10"
                 }`}
               >
                 #{tag}
@@ -676,20 +676,20 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                           <button
                             onClick={() => setElevOpen(elevOpen === trip.slug ? null : trip.slug)}
                             disabled={!(trip.elevProfile && trip.elevProfile.length > 1)}
-                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer disabled:opacity-30 disabled:cursor-default"
+                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full bg-[#1c1b1b] border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer disabled:opacity-30 disabled:cursor-default"
                           >
                             <Mountain size={12} /> {t("journey.elevation_btn")}
                           </button>
                           <button
                             onClick={() => setReplayOpen(replayOpen === trip.slug ? null : trip.slug)}
                             disabled={!(trip.track && trip.track.length > 1)}
-                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer disabled:opacity-30 disabled:cursor-default"
+                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full bg-[#1c1b1b] border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer disabled:opacity-30 disabled:cursor-default"
                           >
                             <Box size={12} /> {replayOpen === trip.slug ? t("replay.close") : t("stage.replay")}
                           </button>
                           <button
                             onClick={() => setBirdsTrip(trip)}
-                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                            className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full bg-[#1c1b1b] border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
                           >
                             <Bird size={12} /> {t("journey.birds_btn")}
                           </button>
@@ -699,14 +699,14 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                           <div className={`grid gap-2 ${trip.topRatedPlaces && trip.topRatedPlaces.length > 0 ? "grid-cols-2" : "grid-cols-1"}`}>
                             <button
                               onClick={() => setPoiTrip(trip)}
-                              className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                              className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full bg-[#1c1b1b] border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
                             >
                               <MapPin size={12} /> {t("journey.poi_btn")}
                             </button>
                             {trip.topRatedPlaces && trip.topRatedPlaces.length > 0 && (
                               <button
                                 onClick={() => setTopRatedTrip(trip)}
-                                className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
+                                className="inline-flex items-center justify-center gap-1.5 font-mono text-[9px] uppercase tracking-widest px-2 py-2 rounded-full bg-[#1c1b1b] border border-brand-sand/40 text-brand-sand hover:bg-brand-sand hover:text-surface-card transition-all cursor-pointer"
                               >
                                 <Star size={12} /> {t("journey.toprated_btn")}
                               </button>
