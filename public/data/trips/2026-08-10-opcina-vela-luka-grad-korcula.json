@@ -6481,7 +6481,9 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [],
+  "majorCities": [
+    "Korčula"
+  ],
   "topRatedPlaces": [],
   "specialties": []
 }

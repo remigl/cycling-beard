@@ -13027,7 +13027,11 @@
   "tags": [],
   "weather": null,
   "pois": [],
-  "majorCities": [],
+  "majorCities": [
+    "Ratisbonne",
+    "Straubing",
+    "Deggendorf"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {

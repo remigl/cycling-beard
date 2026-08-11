@@ -6442,7 +6442,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Graz",
+    "Gratwein-Straßengel",
+    "Frohnleiten"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
