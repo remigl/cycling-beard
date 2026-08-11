@@ -6782,7 +6782,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Ulm",
+    "Nouvelle-Ulm",
+    "Ehingen (Donau)"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {

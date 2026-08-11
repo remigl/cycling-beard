@@ -15226,7 +15226,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Budapest",
+    "Budaörs",
+    "Biatorbágy"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
