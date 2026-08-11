@@ -158,6 +158,28 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
       });
     });
 
+    // Petites marques 📷 partout où une photo a été géolocalisée sur le tracé
+    // (via l'heure EXIF matchée au GPX). Clic → vignette + lien vers l'étape.
+    tripsWithTrack.forEach(trip => {
+      for (const photo of (trip.photos || [])) {
+        if (photo.lat == null || photo.lng == null) continue;
+        const photoIcon = L.divIcon({
+          html: `<div style="width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid #2A6B73;box-shadow:0 1px 3px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-size:8px;">📷</div>`,
+          className: "",
+          iconSize: [14, 14],
+          iconAnchor: [7, 7],
+        });
+        const pm = L.marker([photo.lat, photo.lng], { icon: photoIcon, zIndexOffset: 300 }).addTo(map);
+        pm.bindPopup(`
+          <div style="width:150px;text-align:center;">
+            <img src="${photo.thumb}" alt="${photo.alt || ""}" referrerpolicy="no-referrer"
+              style="width:100%;height:90px;object-fit:cover;border-radius:6px;margin-bottom:6px;display:block;" />
+            ${photo.alt ? `<div style="font-size:11px;color:#333;">${photo.alt}</div>` : ""}
+            <div style="font-size:10px;color:#888;margin-top:2px;">${trip.title}</div>
+          </div>`);
+      }
+    });
+
     // Marqueurs aux étapes — différencier départ / actuel / intermédiaire
     // trips est en ordre chronologique : [0] = départ, dernier = position actuelle
     const lastIdx = tripsWithCoords.length - 1;
@@ -239,7 +261,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
 
   return (
     <div
-      className="w-full overflow-hidden pt-20 pb-3 px-4 md:px-14 flex flex-col items-center bg-bg-dark text-text-on"
+      className="w-full overflow-hidden pt-20 pb-3 px-4 md:px-14 flex flex-col items-center text-text-on"
       style={{ height: vh ? `${vh}px` : "100vh" }}
     >
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
