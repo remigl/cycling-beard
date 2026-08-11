@@ -86,7 +86,18 @@ export default function App() {
   );
 
   return (
-    <div className="min-h-screen bg-bg-dark text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark">
+    <div
+      className="min-h-screen bg-bg-dark text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark"
+      style={{
+        backgroundImage: "url(/images/background.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      {/* Voile sombre semi-transparent : garde le texte lisible quelle que soit l'image */}
+      <div className="fixed inset-0 bg-bg-dark/75 pointer-events-none z-0" />
 
       {/* Toast */}
       <AnimatePresence>
@@ -111,7 +122,7 @@ export default function App() {
         t={t}
       />
 
-      <main className="flex-grow">
+      <main className="flex-grow relative z-10">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeTab}
