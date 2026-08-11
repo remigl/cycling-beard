@@ -10106,14 +10106,14 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
-      "title": "Pfälzer Saumagen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
-    },
-    {
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Pfälzer Saumagen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
     }
   ]
 }

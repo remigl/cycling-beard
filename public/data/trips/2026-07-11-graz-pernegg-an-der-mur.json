@@ -6335,7 +6335,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Mariensäule",
+      "dist": 7956,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Antauerhaus",
+      "dist": 7971,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Eiserner Brunnen",
+      "dist": 8061,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Flößmeisterhaus",
+      "dist": 8079,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Besucherraum E-Werk Murinsel",
+      "dist": 8884,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Römerbrücke",
+      "dist": 10628,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Römerbrücke (Oberdorf)"
+    },
+    {
+      "title": "Insektenhotel",
+      "dist": 11469,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Rennfeld",
+      "dist": 5090,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": "Rennfeld"
+    },
+    {
+      "title": "historischer Meilenstein",
+      "dist": 5648,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Karl Morre",
+      "dist": 7826,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ludwig Anzengruber",
+      "dist": 8128,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Den toten Kameraden 1914-1918",
+      "dist": 8162,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Schiller-Linde",
+      "dist": 8280,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sudentendeutsche Landmannschaft",
+      "dist": 8282,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Urlmarterl",
+      "dist": 9083,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [],
   "specialties": [

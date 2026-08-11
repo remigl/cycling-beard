@@ -6682,7 +6682,11 @@
       "wikiTitle": null
     }
   ],
-  "majorCities": [],
+  "majorCities": [
+    "Linz",
+    "Passau",
+    "Leonding"
+  ],
   "topRatedPlaces": [],
   "specialties": [
     {
