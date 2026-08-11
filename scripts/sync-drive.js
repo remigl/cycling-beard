@@ -1785,10 +1785,10 @@ async function main() {
   // dossier, ex. "grado"), sans toucher au cache des autres — pratique pour
   // tester un ajustement (comme le calibrage horaire des photos) sans relancer
   // tout le sync.
-  // Test de calibrage horaire des photos : resync forcé UNIQUEMENT pour
-  // l'étape de Grado, pour vérifier le décalage 2h09 sans toucher au reste.
-  // À retirer (remettre "") une fois le calibrage validé sur toutes les dates.
-  const resyncOnly = "2026-07-31-grado-gravo-grao_portoroz-portorose".toLowerCase();
+  // Calibrage horaire des photos validé (2h09) sur l'étape de Grado le
+  // 2026-07-31 : le décalage s'applique désormais normalement à toutes les
+  // étapes antérieures au 8 août 2026 (voir CALIBRATED_OFFSET_MS plus haut).
+  const resyncOnly = (process.env.RESYNC_ONLY || "").trim().toLowerCase();
   if (resyncOnly) console.log(`⚙️  RESYNC_ONLY="${resyncOnly}" → resync forcé uniquement pour ce dossier`);
   const newCache = { version: SYNC_CACHE_VERSION, stages: {} };
 
