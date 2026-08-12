@@ -36,6 +36,27 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Arrière-plan statique, appliqué directement sur body (pas via un composant
+   React) : c'est la technique la plus fiable sur mobile, elle échappe à tout
+   contexte de positionnement/transform créé par les composants de la page,
+   qui casse souvent position:fixed appliqué à un enfant. */
+body {
+  background-image: url(/images/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+/* Voile sombre pour garder le texte lisible par-dessus l'image */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 19, 22, 0.75);
+  pointer-events: none;
+  z-index: 0;
+}
+
 /* Ensure all sharp components keep the Editorial structural integrity */
 * {
   border-radius: 0px !important;
