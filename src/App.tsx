@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X, Share2, Search, ArrowRight } from "lucide-react";
 import Navbar from "./components/Navbar";
+import ViewErrorBoundary from "./components/ViewErrorBoundary";
 import HomeView from "./components/HomeView";
 import JourneyView from "./components/JourneyView";
 import MapView from "./components/MapView";
@@ -86,18 +87,7 @@ export default function App() {
   );
 
   return (
-    <div className="min-h-screen bg-bg-dark text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark">
-      {/* Image de fond vraiment fixe : indépendante du scroll, ne bouge jamais
-          même avec l'effet de rebond des navigateurs mobiles. */}
-      <img
-        src="/images/background.png"
-        alt=""
-        aria-hidden="true"
-        className="fixed inset-0 w-full h-full object-cover pointer-events-none select-none z-0"
-      />
-      {/* Voile sombre semi-transparent : garde le texte lisible quelle que soit l'image */}
-      <div className="fixed inset-0 bg-bg-dark/75 pointer-events-none z-0" />
-
+    <div className="min-h-screen text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark">
       {/* Toast */}
       <AnimatePresence>
         {toastMessage && (
@@ -132,13 +122,19 @@ export default function App() {
             className="w-full"
           >
             {activeTab === "home" && (
-              <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} t={t} about={about} lang={lang} />
+              <ViewErrorBoundary label="Accueil">
+                <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} t={t} about={about} lang={lang} />
+              </ViewErrorBoundary>
             )}
             {activeTab === "journey" && (
-              <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} lang={lang} />
+              <ViewErrorBoundary label="Itinéraire">
+                <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} lang={lang} />
+              </ViewErrorBoundary>
             )}
             {activeTab === "map" && (
-              <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} lang={lang} />
+              <ViewErrorBoundary label="Carte">
+                <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} lang={lang} />
+              </ViewErrorBoundary>
             )}
           </motion.div>
         </AnimatePresence>
