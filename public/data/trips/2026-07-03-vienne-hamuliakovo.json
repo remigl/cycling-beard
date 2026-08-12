@@ -6599,5 +6599,36 @@
     "Hainburg an der Donau"
   ],
   "topRatedPlaces": [],
-  "specialties": []
+  "specialties": [
+    {
+      "title": "bryndzové halušky",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Bryndzov%C3%A9%20halu%C5%A1ky.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Bryndzov%C3%A9_halu%C5%A1ky"
+    },
+    {
+      "title": "oublie",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Oblea%20de%20Cip%C3%A9rez.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Oublie"
+    },
+    {
+      "title": "lokša",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lokse.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Lok%C5%A1a"
+    },
+    {
+      "title": "strapačky",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Strapa%C4%8Dky.JPG",
+      "wikipedia": "https://en.wikipedia.org/wiki/Strapa%C4%8Dky"
+    },
+    {
+      "title": "Oštiepok",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ostiepok%20cheese.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/O%C5%A1tiepok"
+    },
+    {
+      "title": "balkánský sýr",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
+      "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
+    }
+  ]
 }
