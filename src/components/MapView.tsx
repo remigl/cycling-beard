@@ -50,7 +50,9 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
   const tripsWithTrack = trips.filter(t =>
     (t.track && t.track.length > 0) || (t.segments && t.segments.length > 0)
   );
-  const tripsWithCoords = trips.filter(t => t.mapLat != null && t.mapLng != null);
+  const tripsWithCoords = trips.filter(t =>
+    t.mapLat != null && t.mapLng != null && !isNaN(t.mapLat) && !isNaN(t.mapLng)
+  );
 
   useEffect(() => {
     if (!leafletLoaded || !mapContainerRef.current) return;
@@ -162,7 +164,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
     // (via l'heure EXIF matchée au GPX). Clic → vignette + lien vers l'étape.
     tripsWithTrack.forEach(trip => {
       for (const photo of (trip.photos || [])) {
-        if (photo.lat == null || photo.lng == null) continue;
+        if (photo.lat == null || photo.lng == null || isNaN(photo.lat) || isNaN(photo.lng)) continue;
         const photoIcon = L.divIcon({
           html: `<div style="width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid #2A6B73;box-shadow:0 1px 3px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-size:8px;">📷</div>`,
           className: "",
@@ -243,10 +245,17 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
     // puis on réajuste la vue pour que le tracé remplisse l'espace.
     // Cadre le tracé UNE SEULE FOIS à l'arrivée. Ensuite, on laisse l'utilisateur
     // explorer librement : un déplacement/zoom ne recentre plus la carte.
+    // Filtre toute coordonnée invalide (null, NaN, mal formée) : un seul point
+    // invalide dans allBounds fait planter fitBounds() de Leaflet.
+    const validBounds = allBounds.filter(pt =>
+      Array.isArray(pt) && pt.length === 2 &&
+      typeof pt[0] === "number" && typeof pt[1] === "number" &&
+      !isNaN(pt[0]) && !isNaN(pt[1])
+    );
     const fitOnce = () => {
       map.invalidateSize();
-      if (!hasFittedRef.current && allBounds.length > 0) {
-        map.fitBounds(allBounds, { padding: [40, 40], maxZoom: 12 });
+      if (!hasFittedRef.current && validBounds.length > 0) {
+        map.fitBounds(validBounds, { padding: [40, 40], maxZoom: 12 });
         hasFittedRef.current = true;
       }
     };
