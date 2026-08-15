@@ -466515,9 +466515,44 @@
         "wikiTitle": null
       }
     ],
-    "majorCities": [],
+    "majorCities": [
+      "Rovinj",
+      "Poreč",
+      "Umag"
+    ],
     "topRatedPlaces": [],
-    "specialties": []
+    "specialties": [
+      {
+        "title": "licitar",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Licitars2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Licitar"
+      },
+      {
+        "title": "Kulen",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kulin%20%28serviran%29.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Kulen"
+      },
+      {
+        "title": "Zagorski štrukli",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Kuhane%20strukle%200210%201.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zagorski_%C5%A1trukli"
+      },
+      {
+        "title": "Soparnik",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Soparnik.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Soparnik"
+      },
+      {
+        "title": "Basa",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Basa1.jpg",
+        "wikipedia": "https://en.wikipedia.org/wiki/Basa_(cheese)"
+      },
+      {
+        "title": "Lumblija",
+        "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
+        "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
+      }
+    ]
   },
   {
     "slug": "2026-08-02-grad-rovinj-grad-pula",
