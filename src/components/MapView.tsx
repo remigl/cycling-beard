@@ -70,6 +70,13 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         maxZoom: 19,
       }).addTo(mapRef.current);
 
+      // Pane dédié pour les marques photo, sous les panes par défaut de Leaflet
+      // (markerPane=600, overlayPane=400 pour les circleMarker) : garantit que
+      // les marqueurs d'étape restent TOUJOURS au-dessus des marques photo,
+      // même en cas de chevauchement exact.
+      const photoPane = mapRef.current.createPane("photoMarkers");
+      photoPane.style.zIndex = "350";
+
       // Délégation : clic sur le bouton "Voir l'étape" dans une bulle Leaflet
       mapRef.current.getContainer().addEventListener("click", (e: any) => {
         const btn = e.target.closest("[data-stage-slug]");
@@ -160,18 +167,20 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
       });
     });
 
-    // Petites marques 📷 partout où une photo a été géolocalisée sur le tracé
-    // (via l'heure EXIF matchée au GPX). Clic → vignette + lien vers l'étape.
+    // Petites marques discrètes partout où une photo a été géolocalisée sur le
+    // tracé (via l'heure EXIF matchée au GPX). Clic → vignette + lien vers
+    // l'étape. Volontairement discrètes et dans un pane sous les marqueurs
+    // d'étape, pour ne jamais passer devant eux en cas de chevauchement.
     tripsWithTrack.forEach(trip => {
       for (const photo of (trip.photos || [])) {
         if (photo.lat == null || photo.lng == null || isNaN(photo.lat) || isNaN(photo.lng)) continue;
         const photoIcon = L.divIcon({
-          html: `<div style="width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid #2A6B73;box-shadow:0 1px 3px rgba(0,0,0,.4);display:flex;align-items:center;justify-content:center;font-size:8px;">📷</div>`,
+          html: `<div style="width:5px;height:5px;border-radius:50%;background:#2A6B73;opacity:0.45;box-shadow:0 0 1px rgba(0,0,0,.3);"></div>`,
           className: "",
-          iconSize: [14, 14],
-          iconAnchor: [7, 7],
+          iconSize: [5, 5],
+          iconAnchor: [2.5, 2.5],
         });
-        const pm = L.marker([photo.lat, photo.lng], { icon: photoIcon, zIndexOffset: 300 }).addTo(map);
+        const pm = L.marker([photo.lat, photo.lng], { icon: photoIcon, zIndexOffset: 0, pane: "photoMarkers" }).addTo(map);
         pm.bindPopup(`
           <div style="width:150px;text-align:center;">
             <img src="${photo.thumb}" alt="${photo.alt || ""}" referrerpolicy="no-referrer"
