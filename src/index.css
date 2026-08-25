@@ -34,6 +34,9 @@ html, body {
   font-family: var(--font-sans);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  /* Empêche le rebond élastique du scroll mobile, qui fait "glisser" les
+     fonds en position:fixed quand on relâche le doigt en bout de page. */
+  overscroll-behavior: none;
 }
 
 /* Arrière-plan statique, appliqué directement sur body (pas via un composant
@@ -52,7 +55,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(18, 19, 22, 0.5);
+  background: rgba(250, 249, 246, 0.85);
   pointer-events: none;
   z-index: 0;
 }
