@@ -217,7 +217,17 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     body.style.top = `-${scrollY}px`;
     body.style.width = "100%";
     body.style.overflow = "hidden";
+    // Filet de sécurité : si un bug empêche la fermeture normale d'un panneau,
+    // on ne laisse JAMAIS le scroll bloqué plus de 2 minutes.
+    const safetyTimer = setTimeout(() => {
+      body.style.position = "";
+      body.style.top = "";
+      body.style.width = "";
+      body.style.overflow = "";
+      console.warn("Verrou de scroll débloqué automatiquement (sécurité)");
+    }, 120000);
     return () => {
+      clearTimeout(safetyTimer);
       // Toujours TOUT remettre à zéro (jamais restaurer une valeur "fixed"
       // potentiellement polluée par un autre verrou).
       body.style.position = "";
@@ -378,7 +388,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
         {lightbox && (
           <div
             className="fixed inset-0 z-[9999] bg-black/95 flex items-center justify-center p-4"
-            onClick={() => { if (zoom <= 1) setLightbox(null); }}
+            onClick={() => { resetZoom(); setLightbox(null); }}
             onTouchStart={onLightboxTouchStart}
             onTouchMove={onLightboxTouchMove}
             onTouchEnd={onLightboxTouchEnd}
