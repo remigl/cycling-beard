@@ -1,13 +1,13 @@
 {
   "totalKm": 5168,
   "totalCountries": 9,
-  "totalDays": 109,
+  "totalDays": 110,
   "totalStages": 55,
   "totalElevation": 31845,
   "currentCountry": "Croatie",
   "currentCountryCode": "HR",
   "currentLocation": "Grad Dubrovnik",
   "startDate": "2026-05-27",
-  "lastUpdate": "2026-09-12",
+  "lastUpdate": "2026-09-13",
   "latestStageSlug": "2026-08-11-grad-korcula-grad-dubrovnik"
 }
