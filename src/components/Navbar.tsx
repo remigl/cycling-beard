@@ -35,7 +35,7 @@ export default function Navbar({ activeTab, setActiveTab, lang, changeLang, t }:
             R
           </div>
           <span className="font-display text-sm font-semibold italic text-text-on tracking-tight">
-            rémi<span className="text-brand-sand font-sans font-light text-[11px] not-italic ml-1.5 uppercase tracking-[0.2em] hidden sm:inline">THE CYCLING BEARD</span>
+            rémi gladieu<span className="text-brand-sand font-sans font-light text-[11px] not-italic ml-1.5 uppercase tracking-[0.2em] hidden sm:inline">THE CYCLING BEARD</span>
           </span>
         </div>
 

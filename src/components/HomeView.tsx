@@ -179,9 +179,6 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
           <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight">
             THE CYCLING BEARD
           </h1>
-          <p className="mt-1 font-mono text-[10px] md:text-xs uppercase tracking-[0.3em] text-[#2A6B73]/80">
-            par Rémi Gladieu
-          </p>
         </motion.div>
 
         {/* Globe : remplit l'espace restant entre le titre et la flèche */}
