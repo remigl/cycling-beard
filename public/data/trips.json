@@ -16,6 +16,9 @@
     "hasGpx": true,
     "mapLat": 47.2708497,
     "mapLng": -2.4305221,
+    "startLat": 47.2753139,
+    "startLng": -2.2058949,
+    "transport": false,
     "track": [
       [
         47.27531,
@@ -8870,6 +8873,9 @@
     "hasGpx": true,
     "mapLat": 47.2935937,
     "mapLng": -1.3872958,
+    "startLat": 47.2712988,
+    "startLng": -2.4307338,
+    "transport": false,
     "track": [
       [
         47.2713,
@@ -21351,6 +21357,9 @@
     "hasGpx": true,
     "mapLat": 47.3935205,
     "mapLng": -0.2738946,
+    "startLat": 47.3042337,
+    "startLng": -1.3750745,
+    "transport": false,
     "track": [
       [
         47.30423,
@@ -40624,6 +40633,9 @@
     "hasGpx": true,
     "mapLat": 47.3601072,
     "mapLng": 0.6750623,
+    "startLat": 47.3933733,
+    "startLng": -0.274037,
+    "transport": false,
     "track": [
       [
         47.39337,
@@ -50865,6 +50877,9 @@
     "hasGpx": true,
     "mapLat": 47.8444835,
     "mapLng": 1.7017088,
+    "startLat": 47.3601147,
+    "startLng": 0.675105,
+    "transport": false,
     "track": [
       [
         47.36011,
@@ -61955,6 +61970,9 @@
     "hasGpx": true,
     "mapLat": 47.656709,
     "mapLng": 2.6838957,
+    "startLat": 47.8441585,
+    "startLng": 1.7021892,
+    "transport": false,
     "track": [
       [
         47.84416,
@@ -72042,6 +72060,9 @@
     "hasGpx": true,
     "mapLat": 46.9596452,
     "mapLng": 3.1815089,
+    "startLat": 47.6567333,
+    "startLng": 2.6839695,
+    "transport": false,
     "track": [
       [
         47.65673,
@@ -82158,6 +82179,9 @@
     "hasGpx": true,
     "mapLat": 46.8350676,
     "mapLng": 3.4556455,
+    "startLat": 46.9689004,
+    "startLng": 3.2709918,
+    "transport": false,
     "track": [
       [
         46.9689,
@@ -91962,6 +91986,9 @@
     "hasGpx": true,
     "mapLat": 46.4507528,
     "mapLng": 4.1194999,
+    "startLat": 46.8346243,
+    "startLng": 3.4556127,
+    "transport": false,
     "track": [
       [
         46.83462,
@@ -101914,6 +101941,9 @@
     "hasGpx": true,
     "mapLat": 46.8774247,
     "mapLng": 4.9668891,
+    "startLat": 46.4510272,
+    "startLng": 4.1422875,
+    "transport": false,
     "track": [
       [
         46.45103,
@@ -112263,6 +112293,9 @@
     "hasGpx": true,
     "mapLat": 47.1466387,
     "mapLng": 5.646694,
+    "startLat": 46.8773573,
+    "startLng": 4.9670187,
+    "transport": false,
     "track": [
       [
         46.87736,
@@ -126510,6 +126543,9 @@
     "hasGpx": true,
     "mapLat": 47.3302444,
     "mapLng": 6.3053405,
+    "startLat": 47.1467275,
+    "startLng": 5.6469777,
+    "transport": false,
     "track": [
       [
         47.14673,
@@ -133144,6 +133180,9 @@
     "hasGpx": true,
     "mapLat": 47.5281416,
     "mapLng": 6.8924574,
+    "startLat": 47.3303968,
+    "startLng": 6.3051807,
+    "transport": false,
     "track": [
       [
         47.3304,
@@ -145481,6 +145520,9 @@
     "hasGpx": true,
     "mapLat": 47.5601215,
     "mapLng": 7.8487219,
+    "startLat": 47.5279898,
+    "startLng": 6.8933593,
+    "transport": false,
     "track": [
       [
         47.52799,
@@ -161449,6 +161491,9 @@
     "hasGpx": true,
     "mapLat": 47.6596966,
     "mapLng": 8.9367776,
+    "startLat": 47.5632225,
+    "startLng": 7.8585722,
+    "transport": false,
     "track": [
       [
         47.56322,
@@ -171665,6 +171710,9 @@
     "hasGpx": true,
     "mapLat": 48.0883042,
     "mapLng": 9.2136309,
+    "startLat": 47.6597752,
+    "startLng": 8.9358767,
+    "transport": false,
     "track": [
       [
         47.65978,
@@ -178525,6 +178573,9 @@
     "hasGpx": true,
     "mapLat": 48.3889281,
     "mapLng": 9.9854837,
+    "startLat": 48.0867556,
+    "startLng": 9.2175279,
+    "transport": false,
     "track": [
       [
         48.08676,
@@ -185394,6 +185445,9 @@
     "hasGpx": true,
     "mapLat": 48.7144362,
     "mapLng": 10.7766448,
+    "startLat": 48.4428677,
+    "startLng": 9.9844582,
+    "transport": false,
     "track": [
       [
         48.44287,
@@ -194972,6 +195026,9 @@
     "hasGpx": true,
     "mapLat": 48.7727215,
     "mapLng": 11.6216612,
+    "startLat": 48.715859,
+    "startLng": 10.7740612,
+    "transport": false,
     "track": [
       [
         48.71586,
@@ -201646,6 +201703,9 @@
     "hasGpx": true,
     "mapLat": 49.0186037,
     "mapLng": 12.0923525,
+    "startLat": 48.7726725,
+    "startLng": 11.6214953,
+    "transport": false,
     "track": [
       [
         48.77267,
@@ -208397,6 +208457,9 @@
     "hasGpx": true,
     "mapLat": 48.7141417,
     "mapLng": 13.0499861,
+    "startLat": 49.081828,
+    "startLng": 12.1203249,
+    "transport": false,
     "track": [
       [
         49.08183,
@@ -221617,6 +221680,9 @@
     "hasGpx": true,
     "mapLat": 48.3201159,
     "mapLng": 14.2950284,
+    "startLat": 48.7141142,
+    "startLng": 13.04992,
+    "transport": false,
     "track": [
       [
         48.71411,
@@ -228351,6 +228417,9 @@
     "hasGpx": true,
     "mapLat": 48.2128799,
     "mapLng": 15.1931904,
+    "startLat": 48.3052418,
+    "startLng": 14.2889913,
+    "transport": false,
     "track": [
       [
         48.30524,
@@ -235139,6 +235208,9 @@
     "hasGpx": true,
     "mapLat": 48.1885897,
     "mapLng": 16.3483574,
+    "startLat": 48.212892,
+    "startLng": 15.193348,
+    "transport": false,
     "track": [
       [
         48.21289,
@@ -244699,6 +244771,9 @@
     "hasGpx": true,
     "mapLat": 48.030677,
     "mapLng": 17.2327726,
+    "startLat": 48.2200022,
+    "startLng": 16.3859317,
+    "transport": false,
     "track": [
       [
         48.22,
@@ -251324,6 +251399,9 @@
     "hasGpx": true,
     "mapLat": 47.776538,
     "mapLng": 18.4664581,
+    "startLat": 48.0314133,
+    "startLng": 17.2298565,
+    "transport": false,
     "track": [
       [
         48.03141,
@@ -258169,6 +258247,9 @@
     "hasGpx": true,
     "mapLat": 47.5700165,
     "mapLng": 19.0804034,
+    "startLat": 47.7768132,
+    "startLng": 18.466085,
+    "transport": false,
     "track": [
       [
         47.77681,
@@ -270023,6 +270104,9 @@
     "hasGpx": true,
     "mapLat": 47.208786,
     "mapLng": 18.6252787,
+    "startLat": 47.5190826,
+    "startLng": 19.04563,
+    "transport": false,
     "track": [
       [
         47.51908,
@@ -285301,6 +285385,9 @@
     "hasGpx": true,
     "mapLat": 46.8280003,
     "mapLng": 17.6417372,
+    "startLat": 47.2086686,
+    "startLng": 18.6251783,
+    "transport": false,
     "track": [
       [
         47.20867,
@@ -292215,6 +292302,9 @@
     "hasGpx": true,
     "mapLat": 46.9717218,
     "mapLng": 16.5712746,
+    "startLat": 46.829015,
+    "startLng": 17.6400002,
+    "transport": false,
     "track": [
       [
         46.82902,
@@ -299042,6 +299132,9 @@
     "hasGpx": true,
     "mapLat": 47.0455284,
     "mapLng": 15.7578612,
+    "startLat": 46.9726685,
+    "startLng": 16.5673102,
+    "transport": false,
     "track": [
       [
         46.97267,
@@ -315719,6 +315812,9 @@
     "hasGpx": true,
     "mapLat": 47.3595007,
     "mapLng": 15.3455251,
+    "startLat": 47.0722287,
+    "startLng": 15.4169589,
+    "transport": false,
     "track": [
       [
         47.07223,
@@ -322213,6 +322309,9 @@
     "hasGpx": true,
     "mapLat": 47.5216914,
     "mapLng": 14.1326736,
+    "startLat": 47.3595208,
+    "startLng": 15.345558,
+    "transport": false,
     "track": [
       [
         47.35952,
@@ -332339,6 +332438,9 @@
     "hasGpx": true,
     "mapLat": 47.3425467,
     "mapLng": 13.3939066,
+    "startLat": 47.5216338,
+    "startLng": 14.1327052,
+    "transport": false,
     "track": [
       [
         47.52163,
@@ -341733,6 +341835,9 @@
     "hasGpx": true,
     "mapLat": 46.9336546,
     "mapLng": 13.1978496,
+    "startLat": 47.3448943,
+    "startLng": 13.3935447,
+    "transport": false,
     "track": [
       [
         47.34489,
@@ -353291,6 +353396,9 @@
     "hasGpx": true,
     "mapLat": 46.7455839,
     "mapLng": 12.4627726,
+    "startLat": 46.9328977,
+    "startLng": 13.2019749,
+    "transport": false,
     "track": [
       [
         46.9329,
@@ -360229,6 +360337,9 @@
     "hasGpx": true,
     "mapLat": 46.6405003,
     "mapLng": 11.5717589,
+    "startLat": 46.7454856,
+    "startLng": 12.4628952,
+    "transport": false,
     "track": [
       [
         46.74549,
@@ -373788,6 +373899,9 @@
     "hasGpx": true,
     "mapLat": 46.3045249,
     "mapLng": 11.2227939,
+    "startLat": 46.641444,
+    "startLng": 11.5705727,
+    "transport": false,
     "track": [
       [
         46.64144,
@@ -380621,6 +380735,9 @@
     "hasGpx": true,
     "mapLat": 45.8532484,
     "mapLng": 10.9382974,
+    "startLat": 46.2984666,
+    "startLng": 11.2254551,
+    "transport": false,
     "track": [
       [
         46.29847,
@@ -387578,6 +387695,9 @@
     "hasGpx": true,
     "mapLat": 45.7313677,
     "mapLng": 10.7867261,
+    "startLat": 45.8531347,
+    "startLng": 10.9382522,
+    "transport": false,
     "track": [
       [
         45.85313,
@@ -394139,6 +394259,9 @@
     "hasGpx": true,
     "mapLat": 45.4654282,
     "mapLng": 10.6066339,
+    "startLat": 45.7311405,
+    "startLng": 10.7866155,
+    "transport": false,
     "track": [
       [
         45.73114,
@@ -400824,6 +400947,9 @@
     "hasGpx": true,
     "mapLat": 45.1543158,
     "mapLng": 10.8289606,
+    "startLat": 45.4669095,
+    "startLng": 10.6073844,
+    "transport": false,
     "track": [
       [
         45.46691,
@@ -407450,6 +407576,9 @@
     "hasGpx": true,
     "mapLat": 44.9401682,
     "mapLng": 11.4197897,
+    "startLat": 45.1545311,
+    "startLng": 10.8293692,
+    "transport": false,
     "track": [
       [
         45.15453,
@@ -417599,6 +417728,9 @@
     "hasGpx": true,
     "mapLat": 45.2047207,
     "mapLng": 12.2988101,
+    "startLat": 44.9399753,
+    "startLng": 11.419316,
+    "transport": false,
     "track": [
       [
         44.93998,
@@ -424539,6 +424671,9 @@
     "hasGpx": true,
     "mapLat": 45.6164481,
     "mapLng": 12.90645,
+    "startLat": 45.2040991,
+    "startLng": 12.2988746,
+    "transport": false,
     "track": [
       [
         45.2041,
@@ -434571,6 +434706,9 @@
     "hasGpx": true,
     "mapLat": 45.7211755,
     "mapLng": 13.379601,
+    "startLat": 45.6153502,
+    "startLng": 12.9047125,
+    "transport": false,
     "track": [
       [
         45.61535,
@@ -444606,6 +444744,9 @@
     "hasGpx": true,
     "mapLat": 45.5023231,
     "mapLng": 13.600386,
+    "startLat": 45.7237232,
+    "startLng": 13.3804497,
+    "transport": false,
     "track": [
       [
         45.72372,
@@ -456810,6 +456951,9 @@
     "hasGpx": true,
     "mapLat": 45.0497809,
     "mapLng": 13.6925326,
+    "startLat": 45.5021708,
+    "startLng": 13.6007014,
+    "transport": false,
     "track": [
       [
         45.50217,
@@ -466571,6 +466715,9 @@
     "hasGpx": true,
     "mapLat": 44.8562513,
     "mapLng": 13.8147837,
+    "startLat": 45.0502523,
+    "startLng": 13.6917358,
+    "transport": false,
     "track": [
       [
         45.05025,
@@ -475510,6 +475657,9 @@
     "hasGpx": true,
     "mapLat": 43.984009,
     "mapLng": 15.3353708,
+    "startLat": 44.8560698,
+    "startLng": 13.8137587,
+    "transport": false,
     "track": [
       [
         44.85607,
@@ -484626,6 +484776,9 @@
     "hasGpx": true,
     "mapLat": 43.6367961,
     "mapLng": 15.9591022,
+    "startLat": 43.9841449,
+    "startLng": 15.3349915,
+    "transport": false,
     "track": [
       [
         43.98414,
@@ -491543,6 +491696,9 @@
     "hasGpx": true,
     "mapLat": 43.38156,
     "mapLng": 16.57795,
+    "startLat": 43.6368578,
+    "startLng": 15.9592603,
+    "transport": false,
     "track": [
       [
         43.63686,
@@ -503017,6 +503173,9 @@
     "hasGpx": true,
     "mapLat": 42.983937,
     "mapLng": 16.6708882,
+    "startLat": 43.3809552,
+    "startLng": 16.5782458,
+    "transport": false,
     "track": [
       [
         43.38096,
@@ -511923,6 +512082,9 @@
     "hasGpx": true,
     "mapLat": 42.9615383,
     "mapLng": 17.1023566,
+    "startLat": 42.9842963,
+    "startLng": 16.671019,
+    "transport": false,
     "track": [
       [
         42.9843,
@@ -518540,6 +518702,9 @@
     "hasGpx": true,
     "mapLat": 42.6616647,
     "mapLng": 18.0689599,
+    "startLat": 42.9615545,
+    "startLng": 17.1024393,
+    "transport": false,
     "track": [
       [
         42.96155,
