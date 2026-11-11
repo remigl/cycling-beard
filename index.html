@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ── SEO de base ── -->
-    <title>The Cycling Beard — Saint-Nazaire → Constanța à vélo (EuroVelo 6)</title>
-    <meta name="description" content="Suivez Rémi sur l'EuroVelo 6 : 4 000 km à vélo de Saint-Nazaire (France) à Constanța (Roumanie). Carte en direct, étapes, photos, dénivelés et récits de voyage." />
+    <title>Rémi Gladieu — The Cycling Beard, carnet de voyage</title>
+    <meta name="description" content="Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis toujours plus à l'Est en train, bus et avion. Carte, étapes et photos." />
+    <meta name="author" content="Rémi Gladieu" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://cycling-beard.vercel.app/" />
     <meta name="theme-color" content="#E8620A" />
@@ -14,8 +15,8 @@
     <!-- ── Open Graph (partage Facebook, WhatsApp, LinkedIn… et utilisé par Google) ── -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="The Cycling Beard" />
-    <meta property="og:title" content="The Cycling Beard — Saint-Nazaire → Constanța à vélo" />
-    <meta property="og:description" content="Expédition à vélo sur l'EuroVelo 6. Carte de suivi en direct, étapes jour par jour, photos et récits." />
+    <meta property="og:title" content="Rémi Gladieu — The Cycling Beard, carnet de voyage" />
+    <meta property="og:description" content="Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis toujours plus à l'Est en train, bus et avion. Carte, étapes et photos." />
     <meta property="og:url" content="https://cycling-beard.vercel.app/" />
     <meta property="og:image" content="https://cycling-beard.vercel.app/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -24,25 +25,36 @@
 
     <!-- ── Twitter / X ── -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="The Cycling Beard — Saint-Nazaire → Constanța à vélo" />
-    <meta name="twitter:description" content="Expédition EuroVelo 6 en direct : carte, étapes, photos, récits." />
+    <meta name="twitter:title" content="Rémi Gladieu — The Cycling Beard, carnet de voyage" />
+    <meta name="twitter:description" content="Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis toujours plus à l'Est en train, bus et avion. Carte, étapes et photos." />
     <meta name="twitter:image" content="https://cycling-beard.vercel.app/og-image.jpg" />
 
     <!-- ── Données structurées (résultats enrichis Google) ── -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "The Cycling Beard",
-      "alternateName": "Cycling Beard",
-      "url": "https://cycling-beard.vercel.app/",
-      "description": "Blog de voyage à vélo : Saint-Nazaire → Constanța par l'EuroVelo 6. Carte de suivi en direct, étapes, photos et récits.",
-      "inLanguage": ["fr", "en", "es", "it", "de", "nl"],
-      "author": {
-        "@type": "Person",
-        "name": "Rémi",
-        "url": "https://cycling-beard.vercel.app/"
-      }
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://cycling-beard.vercel.app/#site",
+          "name": "The Cycling Beard",
+          "alternateName": ["Cycling Beard", "Rémi Gladieu"],
+          "url": "https://cycling-beard.vercel.app/",
+          "description": "Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis vers l'Est en train, bus et avion.",
+          "inLanguage": ["fr", "en", "es", "it", "de", "nl"],
+          "publisher": { "@id": "https://cycling-beard.vercel.app/#remi" },
+          "author": { "@id": "https://cycling-beard.vercel.app/#remi" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://cycling-beard.vercel.app/#remi",
+          "name": "Rémi Gladieu",
+          "givenName": "Rémi",
+          "familyName": "Gladieu",
+          "url": "https://cycling-beard.vercel.app/",
+          "description": "Voyageur à vélo, auteur du blog The Cycling Beard."
+        }
+      ]
     }
     </script>
 
