@@ -323,6 +323,29 @@ function computePhotoTzOffsetMs(lat, lng, approxDate) {
 
 // ─── Reverse Geocoding (Nominatim / OpenStreetMap, gratuit) ──────────────────
 
+// ─── Fin du voyage à vélo ────────────────────────────────────────────────────
+// Après cette date (incluse = dernier jour de vélo), les dossiers sont des
+// étapes "transport" (train/bus/avion) : tracé vert en pointillé, et exclues
+// des compteurs (km, dénivelé, jours, pays).
+const BIKE_END_DATE = "2026-08-11";
+const isTransportDate = (d) => !!d && d > BIKE_END_DATE;
+
+// Géocodage direct (texte -> coordonnées), utilisé quand un dossier n'a ni GPX
+// ni photo géolocalisée : on cherche le lieu indiqué dans les notes / le titre.
+async function forwardGeocode(query) {
+  if (!query) return null;
+  try {
+    const res = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=jsonv2&limit=1`, {
+      headers: { "User-Agent": "TheCyclingBeard/1.0 (cycling blog sync; contact@cyclingbeard.fr)" },
+    });
+    if (!res.ok) return null;
+    const j = await res.json();
+    if (!Array.isArray(j) || !j[0]) return null;
+    const lat = parseFloat(j[0].lat), lng = parseFloat(j[0].lon);
+    return (isNaN(lat) || isNaN(lng)) ? null : { lat, lng };
+  } catch { return null; }
+}
+
 async function reverseGeocode(lat, lng) {
   const empty = { city: null, region: null, department: null, country: null, countryCode: null };
   if (lat == null || lng == null) return empty;
@@ -1449,6 +1472,29 @@ async function syncFolder(drive, folder, cache, force) {
     thumbWebp = photos[0].thumb;
   }
 
+  // ── Étape sans GPX (ex. train/bus/avion) : on déduit le lieu ──
+  // 1) coordonnées GPS des photos (1re = départ, dernière = arrivée),
+  // 2) sinon géocodage du lieu indiqué dans les notes (location:) ou du titre.
+  if (gpxStats.endLat == null) {
+    const geo = photos.filter(p => p.lat != null && p.lng != null);
+    if (geo.length > 0) {
+      gpxStats.startLat = geo[0].lat; gpxStats.startLng = geo[0].lng;
+      gpxStats.endLat = geo[geo.length - 1].lat; gpxStats.endLng = geo[geo.length - 1].lng;
+      console.log(`  📍 Pas de GPX : position déduite des photos géolocalisées`);
+    } else {
+      const q = notes.location || notes.title || titleRaw;
+      const g = await forwardGeocode(q);
+      await new Promise(r => setTimeout(r, 1100));
+      if (g) {
+        gpxStats.startLat = g.lat; gpxStats.startLng = g.lng;
+        gpxStats.endLat = g.lat; gpxStats.endLng = g.lng;
+        console.log(`  📍 Pas de GPX : position trouvée par géocodage de "${q}"`);
+      } else {
+        console.warn(`  ⚠️  Pas de GPX, pas de photo GPS, et "${q}" introuvable : étape sans position sur la carte`);
+      }
+    }
+  }
+
   // ── Reverse geocoding : noms de villes + région + pays ──
   let startCity = null, endCity = null, region = null, geoCountry = null, geoCountryCode = null;
   if (gpxStats.startLat != null) {
@@ -1498,7 +1544,7 @@ async function syncFolder(drive, folder, cache, force) {
   const poisRaw = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
   // ── 3 plus grandes villes traversées par le tracé ──
   const allTrackPts = (gpxStats.segments || []).flat();
-  const majorCitiesRaw = await fetchMajorCities(allTrackPts, "fr");
+  const majorCitiesRaw = isTransportDate(date) ? [] : await fetchMajorCities(allTrackPts, "fr");
   // ── Lieux les mieux notés (Google Places), section séparée ──
   const topRatedRaw = await fetchTopRatedPlaces(gpxStats.endLat, gpxStats.endLng, "fr");
   // ── Spécialités culinaires du pays (Wikidata, côté serveur) ──
@@ -1525,6 +1571,7 @@ async function syncFolder(drive, folder, cache, force) {
     distanceKm: gpxStats.distanceKm,
     elevationGain: gpxStats.elevationGain,
     maxAltitude: gpxStats.maxAltitude || undefined,
+    transport: isTransportDate(date),
     coverImage: coverWebp || "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     heroVideo: null,
     // Contenu par défaut = français (rétrocompat)
@@ -1839,6 +1886,9 @@ async function main() {
     hasGpx: !!s.gpxFile,
     mapLat: s.mapLat ?? null,
     mapLng: s.mapLng ?? null,
+    startLat: s.startLat ?? null,
+    startLng: s.startLng ?? null,
+    transport: isTransportDate(s.date),
     track: s.track || [],
     segments: s.segments || [],
     tags: s.tags || [],
@@ -1861,20 +1911,24 @@ async function main() {
   console.log(`\n✅ trips.json mis à jour (${trips.length} étape(s))`);
 
   // ── Generate stats.json ──
-  const totalKm = stages.reduce((acc, s) => acc + s.distanceKm, 0);
-  const totalElevation = stages.reduce((acc, s) => acc + s.elevationGain, 0);
-  const countries = [...new Set(stages.map(s => s.country).filter(c => c !== "—"))];
+  // Les compteurs ne portent que sur la partie À VÉLO (jusqu'à BIKE_END_DATE) :
+  // les étapes transport (train/bus/avion) n'y comptent pas.
+  const bikeStages = stages.filter(s => !isTransportDate(s.date));
+  const totalKm = bikeStages.reduce((acc, s) => acc + s.distanceKm, 0);
+  const totalElevation = bikeStages.reduce((acc, s) => acc + s.elevationGain, 0);
+  const countries = [...new Set(bikeStages.map(s => s.country).filter(c => c !== "—"))];
   const lastStage = stages[stages.length - 1];
 
-  // Nombre de jours d'aventure = du premier GPX (1ère étape par date) jusqu'à aujourd'hui
-  const dates = stages.map(s => s.date).filter(Boolean).sort();
+  // Jours d'aventure = du premier jour de vélo jusqu'à aujourd'hui, PLAFONNÉ au
+  // dernier jour de vélo : le compteur s'arrête à la fin du voyage à vélo.
+  const dates = bikeStages.map(s => s.date).filter(Boolean).sort();
   const firstDate = dates[0] || null;
-  let totalDays = stages.length;  // repli si aucune date
+  let totalDays = bikeStages.length;  // repli si aucune date
   if (firstDate) {
     const start = new Date(firstDate);
-    const now = new Date();
+    const end = new Date(Math.min(Date.now(), new Date(BIKE_END_DATE).getTime()));
     // +1 pour inclure le jour de départ (jour 1 = premier jour de vélo)
-    totalDays = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1;
+    totalDays = Math.floor((end - start) / (1000 * 60 * 60 * 24)) + 1;
     if (totalDays < 1) totalDays = 1;
   }
 
@@ -1882,7 +1936,7 @@ async function main() {
     totalKm: Math.round(totalKm),
     totalCountries: countries.length || 1,
     totalDays,
-    totalStages: stages.length,
+    totalStages: bikeStages.length,
     totalElevation: Math.round(totalElevation),
     currentCountry: lastStage?.country || "France",
     currentCountryCode: lastStage?.countryCode || "",

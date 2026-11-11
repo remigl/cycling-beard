@@ -9,6 +9,10 @@ on:
         description: "Resync complet (ignore le cache)"
         type: boolean
         default: false
+      resync_only:
+        description: "Resync d'une seule étape (bout du nom du dossier, ex. grado). Laisser vide sinon."
+        type: string
+        default: ""
 
 # Empeche deux runs de ce workflow de tourner en meme temps (evite les courses au push)
 concurrency:
@@ -37,6 +41,8 @@ jobs:
           GOOGLE_OAUTH_REFRESH_TOKEN: ${{ secrets.GOOGLE_OAUTH_REFRESH_TOKEN }}
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
           FORCE_RESYNC: ${{ inputs.force_resync && '1' || '0' }}
+          RESYNC_ONLY: ${{ inputs.resync_only }}
+          GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
         run: node scripts/sync-drive.js
 
       - name: Commit updated data
@@ -44,9 +50,8 @@ jobs:
           git config user.name "sync-bot"
           git config user.email "bot@cycling-beard.com"
 
-          # Ajoute TOUT ce que le sync a produit/modifie (evite les "unstaged changes"
-          # qui bloquent le rebase). Inclut sync-cache.json, data, media, gpx, etc.
-          git add -A
+          # Uniquement les fichiers produits par le sync (jamais node_modules, etc.)
+          git add -A public/
 
           # Rien a commit ? on s'arrete proprement.
           if git diff --staged --quiet; then
@@ -54,10 +59,23 @@ jobs:
             exit 0
           fi
 
-          git commit -m "sync: $(date +%Y-%m-%d %H:%M)"
+          # IMPORTANT : le format de date doit etre entre guillemets, sinon
+          # "date" recoit deux arguments ("extra operand") et le message est faux.
+          git commit -m "sync: $(date '+%Y-%m-%d %H:%M')"
 
-          # Recupere les changements distants AVANT de pousser. Comme tout est
-          # commit (working tree propre), le rebase ne sera plus bloque.
-          git pull --rebase origin main
-
-          git push
+          # Pousse avec jusqu'a 5 tentatives. En cas de conflit pendant le rebase
+          # (typiquement public/data/sync-cache.json modifie des deux cotes), on
+          # donne la priorite aux donnees fraichement generees par ce sync
+          # ("-X theirs" = notre commit pendant un rebase) : le sync reflete
+          # toujours l'etat reel de Drive, donc il doit gagner sur ces fichiers.
+          for i in 1 2 3 4 5; do
+            if git pull --rebase -X theirs origin main && git push; then
+              echo "Push OK (tentative $i)"
+              exit 0
+            fi
+            echo "Echec tentative $i, on nettoie et on reessaie..."
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          echo "Impossible de pousser apres 5 tentatives"
+          exit 1

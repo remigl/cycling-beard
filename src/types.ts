@@ -16,6 +16,9 @@ export interface TripSummary {
   hasGpx: boolean;
   mapLat?: number;
   mapLng?: number;
+  startLat?: number | null;
+  startLng?: number | null;
+  transport?: boolean;
   track?: [number, number][];
   segments?: [number, number][][];
   tags?: string[];

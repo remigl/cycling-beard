@@ -607,8 +607,9 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                     <h3 className="font-display font-bold text-xl text-text-on leading-tight">{titleLabel(trip.title)}</h3>
                     <div className="flex gap-3 font-mono text-[9px] text-text-dim">
                       <span className="flex items-center gap-1"><Calendar size={10} /> {trip.date}</span>
-                      {trip.distanceKm > 0 && <span className="flex items-center gap-1"><TrendingUp size={10} /> {trip.distanceKm} km</span>}
-                      {trip.elevationGain > 0 && <span className="flex items-center gap-1"><Mountain size={10} /> {trip.elevationGain} m</span>}
+                      {trip.transport && <span className="flex items-center gap-1 text-[#2E9E5B] font-bold">🚆 Transport</span>}
+                      {!trip.transport && trip.distanceKm > 0 && <span className="flex items-center gap-1"><TrendingUp size={10} /> {trip.distanceKm} km</span>}
+                      {!trip.transport && trip.elevationGain > 0 && <span className="flex items-center gap-1"><Mountain size={10} /> {trip.elevationGain} m</span>}
                     </div>
                     {elevOpen === trip.slug && trip.elevProfile && trip.elevProfile.length > 1 && (
                       <ElevationChart profile={trip.elevProfile} />

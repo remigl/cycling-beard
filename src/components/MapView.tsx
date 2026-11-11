@@ -150,12 +150,11 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         : (trip.track ? [trip.track] : []);
       segments.forEach(seg => {
         if (seg.length < 2) return;
-        // Ligne visible (orange)
-        L.polyline(seg, {
-          color: "#E8620A",
-          weight: 5,
-          opacity: 0.85,
-        }).addTo(map);
+        // Ligne visible : orange pour le vélo, vert pointillé pour le transport
+        L.polyline(seg, trip.transport
+          ? { color: "#2E9E5B", weight: 4, opacity: 0.9, dashArray: "4 10", lineCap: "round" }
+          : { color: "#E8620A", weight: 5, opacity: 0.85 }
+        ).addTo(map);
         // Ligne invisible épaisse PAR-DESSUS : agrandit la zone cliquable
         const hit = L.polyline(seg, {
           color: "#000",
@@ -171,7 +170,37 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
     // tracé (via l'heure EXIF matchée au GPX). Clic → vignette + lien vers
     // l'étape. Volontairement discrètes et dans un pane sous les marqueurs
     // d'étape, pour ne jamais passer devant eux en cas de chevauchement.
-    tripsWithTrack.forEach(trip => {
+    // Liaisons vertes en pointillé : d'une étape à la suivante (dernier point
+    // de la précédente → premier point de la nouvelle) pour les étapes
+    // "transport", et entre les GPX successifs d'une même étape transport.
+    {
+      const isPt = (p: any) => Array.isArray(p) && typeof p[0] === "number" && typeof p[1] === "number" && !isNaN(p[0]) && !isNaN(p[1]);
+      const dashed = (a: any, b: any) => {
+        if (!isPt(a) || !isPt(b)) return;
+        if (Math.abs(a[0] - b[0]) < 0.002 && Math.abs(a[1] - b[1]) < 0.002) return;
+        L.polyline([a, b], { color: "#2E9E5B", weight: 3, opacity: 0.8, dashArray: "4 10", lineCap: "round" }).addTo(map);
+        allBounds.push(a, b);
+      };
+      let prevEnd: any = null;
+      trips.forEach(trip => {
+        const segs = (trip.segments && trip.segments.length > 0)
+          ? trip.segments : (trip.track && trip.track.length > 0 ? [trip.track] : []);
+        const hasSegs = segs.length > 0 && segs[0].length > 0;
+        const first: any = hasSegs ? segs[0][0]
+          : (trip.startLat != null && trip.startLng != null ? [trip.startLat, trip.startLng] : [trip.mapLat, trip.mapLng]);
+        const lastSeg = hasSegs ? segs[segs.length - 1] : null;
+        const last: any = lastSeg && lastSeg.length > 0 ? lastSeg[lastSeg.length - 1] : [trip.mapLat, trip.mapLng];
+        if (trip.transport) {
+          if (prevEnd) dashed(prevEnd, first);
+          for (let i = 0; i + 1 < segs.length; i++) {
+            if (segs[i].length > 0 && segs[i + 1].length > 0) dashed(segs[i][segs[i].length - 1], segs[i + 1][0]);
+          }
+        }
+        if (isPt(last)) prevEnd = last;
+      });
+    }
+
+    trips.forEach(trip => {
       for (const photo of (trip.photos || [])) {
         if (photo.lat == null || photo.lng == null || isNaN(photo.lat) || isNaN(photo.lng)) continue;
         const photoIcon = L.divIcon({
@@ -240,7 +269,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         // Étapes intermédiaires (le départ idx 0 a déjà son drapeau)
         const marker = L.circleMarker([trip.mapLat, trip.mapLng], {
           radius: 7,
-          fillColor: "#2A6B73",
+          fillColor: trip.transport ? "#2E9E5B" : "#2A6B73",
           color: "#fff",
           weight: 2,
           fillOpacity: 1,
