@@ -9,6 +9,7 @@ import PoiInfo from "./PoiInfo";
 import TopRatedInfo from "./TopRatedInfo";
 import FoodInfo from "./FoodInfo";
 import RegionMap from "./RegionMap";
+import { STAGE_TYPE_META, STAGE_TYPE_ORDER, StageType, tripType } from "../stageTypes";
 
 interface JourneyViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -199,6 +200,8 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const [foodTrip, setFoodTrip] = useState<TripSummary | null>(null);
   const [regionMap, setRegionMap] = useState<string | null>(null);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  // Filtre par mode de déplacement (vélo, train, bus, bateau, avion)
+  const [selectedVehicle, setSelectedVehicle] = useState<"all" | StageType>("all");
 
   // Verrou de défilement robuste mobile : tant qu'une fenêtre est ouverte
   // (photo, survol 3D, dénivelé, oiseaux, POI, spécialités), la page de fond
@@ -315,8 +318,8 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     return (
       <div className="mt-2">
         <svg viewBox={`0 0 ${w} ${h}`} className="w-full h-auto" preserveAspectRatio="none">
-          <path d={area} fill="#E8620A" opacity="0.12" />
-          <path d={line} fill="none" stroke="#E8620A" strokeWidth="1.5" />
+          <path d={area} fill="var(--color-brand-orange)" opacity="0.15" />
+          <path d={line} fill="none" stroke="var(--color-brand-orange)" strokeWidth="1.5" />
         </svg>
         <div className="flex justify-between font-mono text-[8px] text-text-dim uppercase tracking-wider">
           <span>{minE} m</span>
@@ -329,6 +332,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const filtered = trips
     .filter(trip => selectedCountry === "all" || (selectedPassage?.trips.includes(trip) ?? false))
     .filter(trip => selectedRegion === "all" || trip.region === selectedRegion)
+    .filter(trip => selectedVehicle === "all" || tripType(trip) === selectedVehicle)
     .filter(trip => selectedTags.length === 0 || selectedTags.every(tag => (trip.tags || []).includes(tag)))
     .filter(trip =>
       trip.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -458,6 +462,34 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
             {t("journey.title")}
           </h1>
         </div>
+
+        {/* Filtre par véhicule (affiché seulement s'il y a plusieurs modes) */}
+        {(() => {
+          const present = STAGE_TYPE_ORDER.filter(ty => trips.some(tr => tripType(tr) === ty));
+          if (present.length < 2) return null;
+          return (
+            <div className="-mx-1 mb-4 overflow-x-auto">
+              <div className="w-max flex items-center gap-1.5 px-1">
+                {(["all", ...present] as ("all" | StageType)[]).map(v => {
+                  const active = selectedVehicle === v;
+                  const color = v === "all" ? undefined : STAGE_TYPE_META[v].color;
+                  return (
+                    <button
+                      key={v}
+                      onClick={() => setSelectedVehicle(v)}
+                      className={`px-3.5 py-1.5 rounded-full font-display text-[11px] font-bold tracking-wide whitespace-nowrap transition-all cursor-pointer inline-flex items-center gap-1.5 border ${
+                        active ? "bg-text-on text-bg-dark border-text-on" : "bg-surface-card border-text-on/15 text-text-dim hover:text-text-on"
+                      }`}
+                    >
+                      {v !== "all" && <span className="w-2 h-2 rounded-full" style={{ background: color }} />}
+                      {v === "all" ? t("journey.all") : `${STAGE_TYPE_META[v].emoji} ${t(`type.${v}`)}`}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })()}
 
         {/* Filters */}
         <div className="flex flex-col sm:flex-row gap-3 mb-5">
@@ -607,9 +639,12 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                     <h3 className="font-display font-bold text-xl text-text-on leading-tight">{titleLabel(trip.title)}</h3>
                     <div className="flex gap-3 font-mono text-[9px] text-text-dim">
                       <span className="flex items-center gap-1"><Calendar size={10} /> {trip.date}</span>
-                      {trip.transport && <span className="flex items-center gap-1 text-[#2E9E5B] font-bold">🚆 Transport</span>}
-                      {!trip.transport && trip.distanceKm > 0 && <span className="flex items-center gap-1"><TrendingUp size={10} /> {trip.distanceKm} km</span>}
-                      {!trip.transport && trip.elevationGain > 0 && <span className="flex items-center gap-1"><Mountain size={10} /> {trip.elevationGain} m</span>}
+                      <span className="flex items-center gap-1 font-bold" style={{ color: STAGE_TYPE_META[tripType(trip)].color }}>
+                        {STAGE_TYPE_META[tripType(trip)].emoji} {t(`type.${tripType(trip)}`)}
+                      </span>
+                      {trip.distanceKm > 0 && <span className="flex items-center gap-1"><TrendingUp size={10} /> {trip.distanceKm} km</span>}
+                      {/* Dénivelé : uniquement à vélo */}
+                      {STAGE_TYPE_META[tripType(trip)].hasElevation && trip.elevationGain > 0 && <span className="flex items-center gap-1"><Mountain size={10} /> {trip.elevationGain} m</span>}
                     </div>
                     {elevOpen === trip.slug && trip.elevProfile && trip.elevProfile.length > 1 && (
                       <ElevationChart profile={trip.elevProfile} />
@@ -763,10 +798,10 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                       className="relative md:grid md:grid-cols-2 md:gap-12 items-center"
                     >
                       {/* Point sur la ligne (desktop) */}
-                      <div className="hidden md:block absolute left-1/2 top-1/2 w-4 h-4 rounded-full bg-brand-sand border-4 border-bg-dark -translate-x-1/2 -translate-y-1/2 z-10" />
+                      <div className="hidden md:block absolute left-1/2 top-1/2 w-4 h-4 rounded-full border-4 border-bg-dark -translate-x-1/2 -translate-y-1/2 z-10" style={{ background: STAGE_TYPE_META[tripType(trip)].color }} />
 
                       {/* Mobile : tout empilé dans une carte */}
-                      <div className="md:hidden bg-surface-card border border-text-on/10 rounded-2xl p-5 flex flex-col gap-4">
+                      <div className="md:hidden bg-surface-card border border-text-on/10 border-l-4 rounded-2xl p-5 flex flex-col gap-4 shadow-lg" style={{ borderLeftColor: STAGE_TYPE_META[tripType(trip)].color }}>
                         {textBlock}
                         {photoBlock}
                       </div>
@@ -774,13 +809,13 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                       {/* Desktop : alternance gauche/droite */}
                       {isLeft ? (
                         <>
-                          <div className="hidden md:block md:pr-10 md:text-right">{textBlock}</div>
+                          <div className="hidden md:block md:mr-10 rounded-2xl bg-surface-card border border-text-on/10 p-6 shadow-lg">{textBlock}</div>
                           <div className="hidden md:block md:pl-10">{photoBlock}</div>
                         </>
                       ) : (
                         <>
                           <div className="hidden md:block md:pr-10 md:order-1">{photoBlock}</div>
-                          <div className="hidden md:block md:pl-10 md:order-2">{textBlock}</div>
+                          <div className="hidden md:block md:ml-10 md:order-2 rounded-2xl bg-surface-card border border-text-on/10 p-6 shadow-lg">{textBlock}</div>
                         </>
                       )}
                     </motion.div>

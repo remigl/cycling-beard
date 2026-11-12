@@ -1,6 +1,8 @@
 {
-  "name": "Bikepacking Journals",
-  "description": "The Cycling Beard - Carnet de voyage d'aventure à vélo de Rémi, synchronisé en temps réel avec Google Drive, retraçant les tracés GPS, statistiques de progression et récits de l'Europe au Pamir.",
+  "name": "The Moving Beard",
+  "description": "The Moving Beard - Carnet de voyage de Rémi Gladieu : à vélo jusqu'en Croatie, puis en train, bus, bateau et avion jusqu'au Japon. Synchronisé avec Google Drive.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { SiteStats, TripSummary } from "../types";
 import { Lang } from "../i18n";
+import { STAGE_TYPE_META, STAGE_TYPE_ORDER, StageType } from "../stageTypes";
 import RainRadar from "./RainRadar";
 import Globe from "./Globe";
 import GlobeErrorBoundary from "./GlobeErrorBoundary";
@@ -142,19 +143,34 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       .catch(() => setWeather([]));
   }, [latest?.mapLat, latest?.mapLng, lang]);
 
-  const metrics = stats
+  // ── Statistiques : global ou par véhicule (vélo, train, bus, bateau, avion) ──
+  const [vehicle, setVehicle] = useState<"all" | StageType>("all");
+  const availableTypes = STAGE_TYPE_ORDER.filter(ty => !!stats?.byType?.[ty]);
+  const bt = vehicle !== "all" ? stats?.byType?.[vehicle] : undefined;
+  const nf = (n: number) => n.toLocaleString("fr-FR");
+  const metrics = !stats
     ? [
-        { value: stats.totalKm.toLocaleString("fr-FR"), label: t("home.km") },
-        { value: String(stats.totalCountries), label: t("home.countries") },
-        { value: String(stats.totalDays), label: t("home.days") },
-        { value: stats.totalElevation.toLocaleString("fr-FR"), label: t("home.elevation") },
-      ]
-    : [
         { value: "—", label: t("home.km") },
         { value: "—", label: t("home.countries") },
         { value: "—", label: t("home.days") },
         { value: "—", label: t("home.elevation") },
-      ];
+      ]
+    : bt
+      ? [
+          { value: nf(bt.km), label: t("home.km") },
+          { value: String(bt.countries), label: t("home.countries") },
+          { value: String(bt.days), label: t("home.days") },
+          // Dénivelé seulement à vélo ; sinon le nombre d'étapes
+          vehicle === "bike"
+            ? { value: nf(bt.elevation), label: t("home.elevation") }
+            : { value: String(bt.stages), label: t("home.stages") },
+        ]
+      : [
+          { value: nf(stats.totalKm), label: t("home.km") },
+          { value: String(stats.totalCountries), label: t("home.countries") },
+          { value: String(stats.totalDays), label: t("home.days") },
+          { value: nf(stats.totalElevation), label: t("home.elevation") },
+        ];
 
   // Paragraphes de présentation dans la bonne langue
   const presParagraphs = about
@@ -167,17 +183,17 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       {/* ── HERO : titre + globe rapprochés ── */}
       <div
         className="relative w-full overflow-hidden flex flex-col items-center font-sans"
-        style={{ height: heroH ? `${heroH}px` : "100vh" }}
+        style={{ height: heroH ? `${heroH + 61}px` : "100vh" }}
       >
         {/* Titre */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0 }}
-          className="relative z-20 pt-10 px-4 text-center pointer-events-none shrink-0"
+          className="relative z-20 pt-[101px] px-4 text-center pointer-events-none shrink-0"
         >
-          <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-[#E8620A] uppercase tracking-[0.03em] leading-tight">
-            THE CYCLING BEARD
+          <h1 className="font-display font-bold text-3xl md:text-5xl lg:text-6xl text-brand-orange uppercase tracking-[0.03em] leading-tight">
+            THE MOVING BEARD
           </h1>
         </motion.div>
 
@@ -193,13 +209,13 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
           initial={{ opacity: 0 }}
           animate={{ opacity: [0, 1, 1], y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
-          className="relative z-20 mb-6 flex flex-col items-center gap-2 text-[#2A6B73]/70 pointer-events-none shrink-0"
+          className="relative z-20 mb-6 flex flex-col items-center gap-2 text-brand-teal/70 pointer-events-none shrink-0"
         >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </motion.div>
 
         {/* Léger dégradé bas pour fondre vers la section stats */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-[#FAF9F6] pointer-events-none z-[5]" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-bg-dark pointer-events-none z-[5]" />
       </div>
 
       {/* ── STATS + MÉTÉO (révélées au scroll, juste sous le globe) ── */}
@@ -209,23 +225,48 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="w-full max-w-4xl bg-white/70 backdrop-blur-sm rounded-3xl border border-[#2A6B73]/15 p-6 md:p-8 flex flex-col gap-6 shadow-[0_4px_30px_rgba(42,107,115,0.08)]"
+            className="w-full max-w-4xl bg-surface-card/80 backdrop-blur-md rounded-3xl border border-text-on/10 p-5 md:p-8 flex flex-col gap-6 shadow-lg"
           >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-[#2A6B73]/10 md:divide-y-0 md:divide-x md:divide-[#2A6B73]/10">
+            {/* Sélecteur de véhicule */}
+            {availableTypes.length > 0 && (
+              <div className="-mx-1 overflow-x-auto">
+                <div role="tablist" aria-label={t("home.by_vehicle")} className="mx-auto w-max max-w-none flex items-center gap-1 rounded-full border border-text-on/10 bg-bg-dark/60 p-1">
+                  {(["all", ...availableTypes] as ("all" | StageType)[]).map(v => {
+                    const active = vehicle === v;
+                    return (
+                      <button
+                        key={v}
+                        role="tab"
+                        aria-selected={active}
+                        onClick={() => setVehicle(v)}
+                        className={`px-3.5 py-1.5 rounded-full font-display text-[11px] font-bold tracking-wide whitespace-nowrap transition-all cursor-pointer inline-flex items-center gap-1.5 ${
+                          active ? "bg-brand-sand text-surface-card shadow-sm" : "text-text-dim hover:text-text-on"
+                        }`}
+                      >
+                        {v !== "all" && <span className="text-sm leading-none">{STAGE_TYPE_META[v].emoji}</span>}
+                        {v === "all" ? t("home.all") : t(`type.${v}`)}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-2 divide-y divide-brand-teal/10 md:divide-y-0 md:divide-x md:divide-brand-teal/10">
               {metrics.map((m, i) => (
                 <div key={i} className="flex flex-col items-center justify-center pt-3 md:pt-0 pb-3 md:pb-0 px-2 first:pt-0 last:pb-0">
-                  <div className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-[#2A6B73] tracking-tight">
+                  <div className="font-display text-3xl md:text-4xl lg:text-5xl font-black text-brand-teal tracking-tight">
                     {m.value}
                   </div>
-                  <div className="font-display font-extrabold text-[10px] text-[#121212]/50 uppercase tracking-[0.15em] mt-2">
+                  <div className="font-display font-extrabold text-[10px] text-text-on/50 uppercase tracking-[0.15em] mt-2">
                     {m.label}
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="border-t border-[#2A6B73]/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
-              <span className="text-[#121212]/80 flex items-center gap-1.5">
+            <div className="border-t border-brand-teal/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
+              <span className="text-text-on/80 flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
                 {stats
                   ? `${t("home.current")} : ${stats.currentLocation}${countryFlag(stats.currentCountryCode) ? "," : ""}`
@@ -237,26 +278,26 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
               {/* Météo 2 jours : aujourd'hui | demain */}
               {weather.length >= 2 && (
-                <div className="mt-3 w-full border-t border-[#2A6B73]/10 pt-5">
-                  <div className="grid grid-cols-2 divide-x divide-[#2A6B73]/10">
+                <div className="mt-3 w-full border-t border-brand-teal/10 pt-5">
+                  <div className="grid grid-cols-2 divide-x divide-brand-teal/10">
                     {weather.slice(0, 2).map((day, i) => (
                       <div key={i} className={`flex flex-col items-center text-center gap-2.5 ${i === 0 ? "pr-5" : "pl-5"}`}>
-                        <span className="text-[10px] uppercase tracking-widest text-[#2A6B73] font-bold">{day.label}</span>
+                        <span className="text-[10px] uppercase tracking-widest text-brand-teal font-bold">{day.label}</span>
                         <span className="text-4xl leading-none">{day.icon}</span>
                         <div className="text-base font-semibold">
                           <span className="text-red-500">{day.tempMax}°</span>
-                          <span className="text-[#121212]/30 mx-1.5">/</span>
+                          <span className="text-text-on/30 mx-1.5">/</span>
                           <span className="text-sky-600">{day.tempMin}°</span>
                         </div>
-                        <div className="flex items-center gap-4 font-mono text-[11px] text-[#121212]/60 mt-1">
+                        <div className="flex items-center gap-4 font-mono text-[11px] text-text-on/60 mt-1">
                           <span className="flex items-center gap-1.5">
-                            <span className="text-[#121212]/40">{t("weather.uv")}</span>
+                            <span className="text-text-on/40">{t("weather.uv")}</span>
                             <span className={`font-bold ${uvColor(day.uvMax)}`}>{day.uvMax}</span>
                           </span>
                           <span className="flex items-center gap-1.5">
                             <span className="text-sm leading-none">💨</span>
-                            <span className="text-[#2A6B73] font-bold">{windCardinal(day.windDir, lang)}</span>
-                            <span>{day.windMax}<span className="text-[8px] text-[#121212]/40 ml-0.5">km/h</span></span>
+                            <span className="text-brand-teal font-bold">{windCardinal(day.windDir, lang)}</span>
+                            <span>{day.windMax}<span className="text-[8px] text-text-on/40 ml-0.5">km/h</span></span>
                           </span>
                         </div>
                       </div>
@@ -267,7 +308,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                   {latest?.mapLat && latest?.mapLng && (
                     <button
                       onClick={() => setRadarOpen(true)}
-                      className="mt-5 w-full inline-flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-widest py-3 rounded-full border border-[#2A6B73]/40 text-[#2A6B73] hover:bg-[#2A6B73] hover:text-white transition-all cursor-pointer"
+                      className="mt-5 w-full inline-flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-widest py-3 rounded-full border border-brand-teal/40 text-brand-teal hover:bg-brand-teal hover:text-white transition-all cursor-pointer"
                     >
                       🌧️ {t("radar.button")}
                     </button>

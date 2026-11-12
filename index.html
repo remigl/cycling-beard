@@ -5,18 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ── SEO de base ── -->
-    <title>Rémi Gladieu — The Cycling Beard, carnet de voyage</title>
-    <meta name="description" content="Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis toujours plus à l'Est en train, bus et avion. Carte, étapes et photos." />
+    <title>The Moving Beard - Rémi Gladieu</title>
+    <meta name="description" content="Blog racontant ma pause. Cela correspond à mon voyage à vélo jusqu'en Croatie et à mon déplacement jusqu'au Japon." />
     <meta name="author" content="Rémi Gladieu" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://cycling-beard.vercel.app/" />
-    <meta name="theme-color" content="#E8620A" />
+    <meta name="theme-color" content="#F7F5F0" />
+    <meta name="color-scheme" content="light dark" />
+    <!-- Applique le thème (clair/sombre) AVANT l'affichage : pas de flash au chargement -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("tmb_theme");
+          if (t !== "light" && t !== "dark") t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+          document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
+      })();
+    </script>
 
     <!-- ── Open Graph (partage Facebook, WhatsApp, LinkedIn… et utilisé par Google) ── -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="The Cycling Beard" />
-    <meta property="og:title" content="Rémi Gladieu — The Cycling Beard, carnet de voyage" />
-    <meta property="og:description" content="Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis toujours plus à l'Est en train, bus et avion. Carte, étapes et photos." />
+    <meta property="og:site_name" content="The Moving Beard" />
+    <meta property="og:title" content="The Moving Beard - Rémi Gladieu" />
+    <meta property="og:description" content="Blog racontant ma pause. Cela correspond à mon voyage à vélo jusqu'en Croatie et à mon déplacement jusqu'au Japon." />
     <meta property="og:url" content="https://cycling-beard.vercel.app/" />
     <meta property="og:image" content="https://cycling-beard.vercel.app/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
@@ -25,8 +36,8 @@
 
     <!-- ── Twitter / X ── -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Rémi Gladieu — The Cycling Beard, carnet de voyage" />
-    <meta name="twitter:description" content="Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis toujours plus à l'Est en train, bus et avion. Carte, étapes et photos." />
+    <meta name="twitter:title" content="The Moving Beard - Rémi Gladieu" />
+    <meta name="twitter:description" content="Blog racontant ma pause. Cela correspond à mon voyage à vélo jusqu'en Croatie et à mon déplacement jusqu'au Japon." />
     <meta name="twitter:image" content="https://cycling-beard.vercel.app/og-image.jpg" />
 
     <!-- ── Données structurées (résultats enrichis Google) ── -->
@@ -37,10 +48,10 @@
         {
           "@type": "WebSite",
           "@id": "https://cycling-beard.vercel.app/#site",
-          "name": "The Cycling Beard",
-          "alternateName": ["Cycling Beard", "Rémi Gladieu"],
+          "name": "The Moving Beard",
+          "alternateName": ["Rémi Gladieu", "The Cycling Beard"],
           "url": "https://cycling-beard.vercel.app/",
-          "description": "Le carnet de voyage de Rémi Gladieu : de Saint-Nazaire à Dubrovnik à vélo, puis vers l'Est en train, bus et avion.",
+          "description": "Blog racontant ma pause. Cela correspond à mon voyage à vélo jusqu'en Croatie et à mon déplacement jusqu'au Japon.",
           "inLanguage": ["fr", "en", "es", "it", "de", "nl"],
           "publisher": { "@id": "https://cycling-beard.vercel.app/#remi" },
           "author": { "@id": "https://cycling-beard.vercel.app/#remi" }
@@ -52,7 +63,7 @@
           "givenName": "Rémi",
           "familyName": "Gladieu",
           "url": "https://cycling-beard.vercel.app/",
-          "description": "Voyageur à vélo, auteur du blog The Cycling Beard."
+          "description": "Auteur du blog The Moving Beard : voyage à vélo jusqu'en Croatie, puis déplacement jusqu'au Japon."
         }
       ]
     }
@@ -69,7 +80,7 @@
       data-color="#E8620A"
       data-position="Right"
       data-x_margin="18"
-      data-y_margin="18"
+      data-y_margin="74"
     ></script>
   </head>
   <body>

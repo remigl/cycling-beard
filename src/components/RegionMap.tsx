@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { X, ChevronDown } from "lucide-react";
 import { TripSummary } from "../types";
+import { STAGE_TYPE_META, tripType } from "../stageTypes";
 
 declare global {
   interface Window { L: any; }
@@ -82,7 +83,8 @@ export default function RegionMap({ region, regionLabel, country, trips, explici
             allLatLngs.push(ll);
             return ll;
           });
-          L.polyline(latlngs, { color: "#E8620A", weight: 4, opacity: 0.9 }).addTo(map);
+          const meta = STAGE_TYPE_META[tripType(tr)];
+          L.polyline(latlngs, { color: meta.color, weight: 4, opacity: 0.9, ...(meta.dashArray ? { dashArray: meta.dashArray, lineCap: "round" } : {}) }).addTo(map);
         }
         // Marqueur d'arrivée
         if (tr.mapLat != null && tr.mapLng != null) {

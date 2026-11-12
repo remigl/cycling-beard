@@ -135,7 +135,7 @@ export default function Globe({ route, here }: GlobeProps) {
   }, [size.w, size.h, hp[0], hp[1]]);
 
   return (
-    <div ref={wrapRef} className="absolute inset-0 bg-[#FAF9F6]">
+    <div ref={wrapRef} className="absolute inset-0 bg-bg-dark">
       <div className="absolute bottom-1 left-1 z-50 text-[8px] font-mono text-black/60 bg-white/70 px-1 rounded max-w-[92%] break-all">{dbg}</div>
       {size.w > 0 && (
         <GlobeGL

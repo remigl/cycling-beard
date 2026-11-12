@@ -19,6 +19,8 @@ export interface TripSummary {
   startLat?: number | null;
   startLng?: number | null;
   transport?: boolean;
+  type?: string;
+  countryCode?: string | null;
   track?: [number, number][];
   segments?: [number, number][][];
   tags?: string[];
@@ -65,6 +67,9 @@ export interface SiteStats {
   totalCountries: number;
   totalDays: number;
   totalElevation: number;
+  totalStages?: number;
+  byType?: Record<string, { km: number; elevation: number; stages: number; days: number; countries: number }>;
+  currentType?: string;
   currentCountry: string;
   currentCountryCode?: string;
   currentLocation: string;

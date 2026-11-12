@@ -25,7 +25,7 @@ export default class GlobeErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.error) {
       return (
-        <div className="absolute inset-0 bg-[#FAF9F6] flex items-center justify-center p-4">
+        <div className="absolute inset-0 bg-bg-dark flex items-center justify-center p-4">
           <p className="font-mono text-[10px] text-red-500 text-center break-all max-w-full">
             Globe : {this.state.error}
           </p>

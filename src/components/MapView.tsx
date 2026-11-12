@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { TripSummary } from "../types";
 import { Lang } from "../i18n";
 import StageDetailView from "./StageDetailView";
+import { STAGE_TYPE_META, STAGE_TYPE_ORDER, tripType } from "../stageTypes";
 
 interface MapViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -138,7 +139,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
       <div style="width:210px;text-align:center;">
         ${gallery}
         <strong style="font-size:13px;">${trip.title}</strong><br>
-        <span style="font-size:11px;color:#666;">${trip.date}${trip.distanceKm > 0 ? ` · ${trip.distanceKm} km` : ""}</span>
+        <span style="font-size:11px;color:#666;">${STAGE_TYPE_META[tripType(trip)].emoji} ${t("type." + tripType(trip))} · ${trip.date}${trip.distanceKm > 0 ? ` · ${trip.distanceKm} km` : ""}</span>
         ${descShort ? `<p style="font-size:11px;color:#444;line-height:1.35;margin:6px 0 0;text-align:left;">${descShort}</p>` : ""}
       </div>`;
     };
@@ -150,11 +151,14 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         : (trip.track ? [trip.track] : []);
       segments.forEach(seg => {
         if (seg.length < 2) return;
-        // Ligne visible : orange pour le vélo, vert pointillé pour le transport
-        L.polyline(seg, trip.transport
-          ? { color: "#2E9E5B", weight: 4, opacity: 0.9, dashArray: "4 10", lineCap: "round" }
-          : { color: "#E8620A", weight: 5, opacity: 0.85 }
-        ).addTo(map);
+        // Ligne visible : couleur et style selon le mode de déplacement
+        const meta = STAGE_TYPE_META[tripType(trip)];
+        L.polyline(seg, {
+          color: meta.color,
+          weight: meta.weight,
+          opacity: 0.9,
+          ...(meta.dashArray ? { dashArray: meta.dashArray, lineCap: "round" } : {}),
+        }).addTo(map);
         // Ligne invisible épaisse PAR-DESSUS : agrandit la zone cliquable
         const hit = L.polyline(seg, {
           color: "#000",
@@ -175,10 +179,10 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
     // "transport", et entre les GPX successifs d'une même étape transport.
     {
       const isPt = (p: any) => Array.isArray(p) && typeof p[0] === "number" && typeof p[1] === "number" && !isNaN(p[0]) && !isNaN(p[1]);
-      const dashed = (a: any, b: any) => {
+      const dashed = (a: any, b: any, color: string, dash: string) => {
         if (!isPt(a) || !isPt(b)) return;
         if (Math.abs(a[0] - b[0]) < 0.002 && Math.abs(a[1] - b[1]) < 0.002) return;
-        L.polyline([a, b], { color: "#2E9E5B", weight: 3, opacity: 0.8, dashArray: "4 10", lineCap: "round" }).addTo(map);
+        L.polyline([a, b], { color, weight: 3, opacity: 0.8, dashArray: dash, lineCap: "round" }).addTo(map);
         allBounds.push(a, b);
       };
       let prevEnd: any = null;
@@ -190,10 +194,12 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
           : (trip.startLat != null && trip.startLng != null ? [trip.startLat, trip.startLng] : [trip.mapLat, trip.mapLng]);
         const lastSeg = hasSegs ? segs[segs.length - 1] : null;
         const last: any = lastSeg && lastSeg.length > 0 ? lastSeg[lastSeg.length - 1] : [trip.mapLat, trip.mapLng];
-        if (trip.transport) {
-          if (prevEnd) dashed(prevEnd, first);
+        const tm = STAGE_TYPE_META[tripType(trip)];
+        if (tripType(trip) !== "bike") {
+          const dash = tm.dashArray || "4 10";
+          if (prevEnd) dashed(prevEnd, first, tm.color, dash);
           for (let i = 0; i + 1 < segs.length; i++) {
-            if (segs[i].length > 0 && segs[i + 1].length > 0) dashed(segs[i][segs[i].length - 1], segs[i + 1][0]);
+            if (segs[i].length > 0 && segs[i + 1].length > 0) dashed(segs[i][segs[i].length - 1], segs[i + 1][0], tm.color, dash);
           }
         }
         if (isPt(last)) prevEnd = last;
@@ -269,7 +275,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
         // Étapes intermédiaires (le départ idx 0 a déjà son drapeau)
         const marker = L.circleMarker([trip.mapLat, trip.mapLng], {
           radius: 7,
-          fillColor: trip.transport ? "#2E9E5B" : "#2A6B73",
+          fillColor: tripType(trip) === "bike" ? "#2A6B73" : STAGE_TYPE_META[tripType(trip)].color,
           color: "#fff",
           weight: 2,
           fillOpacity: 1,
@@ -308,7 +314,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
 
   return (
     <div
-      className="w-full overflow-hidden pt-20 pb-3 px-4 md:px-14 flex flex-col items-center text-text-on"
+      className="w-full overflow-hidden pt-20 pb-[72px] md:pb-3 px-4 md:px-14 flex flex-col items-center text-text-on"
       style={{ height: vh ? `${vh}px` : "100vh" }}
     >
       <style>{`@keyframes bmcpulse{0%{transform:scale(.6);opacity:.8}70%{transform:scale(1.4);opacity:0}100%{opacity:0}}`}</style>
@@ -335,6 +341,20 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
               <span className="w-3 h-3 rounded-full" style={{ background: "#E8620A", border: "2px solid #fff" }} /> {t("map.current")}
             </span>
           </div>
+          {/* Types de déplacement présents : couleur + style du tracé */}
+          <div className="flex items-center gap-x-4 gap-y-1.5 mt-2.5 flex-wrap font-mono text-[10px] text-text-dim">
+            {STAGE_TYPE_ORDER.filter(ty => trips.some(tr => tripType(tr) === ty)).map(ty => {
+              const m = STAGE_TYPE_META[ty];
+              return (
+                <span key={ty} className="flex items-center gap-1.5">
+                  <svg width="26" height="8" aria-hidden="true">
+                    <line x1="2" y1="4" x2="24" y2="4" stroke={m.color} strokeWidth="3.5" strokeLinecap="round" strokeDasharray={m.dashArray || undefined} />
+                  </svg>
+                  {m.emoji} {t(`type.${ty}`)}
+                </span>
+              );
+            })}
+          </div>
         </div>
 
         {/* Carte Leaflet : hauteur = écran moins l'espace pris par le header/footer */}
@@ -349,7 +369,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
           <div
             ref={mapContainerRef}
             className="w-full h-full"
-            style={{ background: "#1c1b1b" }}
+            style={{ background: "var(--map-bg)" }}
           />
           {tripsWithTrack.length === 0 && tripsWithCoords.length === 0 && leafletLoaded && (
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">

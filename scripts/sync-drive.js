@@ -1,5 +1,5 @@
 /**
- * sync-drive.js — The Cycling Beard
+ * sync-drive.js — The Moving Beard
  *
  * Ce script tourne en dehors du site (Node.js, sur votre machine ou en CI).
  * Il lit les dossiers Google Drive, génère les JSON, convertit les images en WebP,
@@ -329,6 +329,8 @@ function computePhotoTzOffsetMs(lat, lng, approxDate) {
 // des compteurs (km, dénivelé, jours, pays).
 const BIKE_END_DATE = "2026-08-11";
 const isTransportDate = (d) => !!d && d > BIKE_END_DATE;
+// Type d'une étape déjà synchronisée (les anciennes étapes n'ont pas le champ `type`).
+const stageTypeOf = (s) => s.type || (isTransportDate(s.date) ? "transport" : "bike");
 
 // Géocodage direct (texte -> coordonnées), utilisé quand un dossier n'a ni GPX
 // ni photo géolocalisée : on cherche le lieu indiqué dans les notes / le titre.
@@ -686,7 +688,13 @@ function countryFromCode(code) {
     BG: "Bulgarie", SI: "Slovénie", CZ: "Tchéquie", PL: "Pologne",
     GE: "Géorgie", TR: "Turquie", KG: "Kirghizistan", KZ: "Kazakhstan",
   };
-  return map[code] || null;
+  if (map[code]) return map[code];
+  // Tout autre pays : nom français via Intl (ICU complet dans Node >= 13)
+  try {
+    const up = String(code || "").toUpperCase();
+    const n = new Intl.DisplayNames(["fr"], { type: "region" }).of(up);
+    return n && n !== up ? n : null;
+  } catch { return null; }
 }
 
 // ─── Traitement de l'inbox (GPX bruts → dossiers d'étape) ────────────────────
@@ -755,25 +763,31 @@ async function moveAndRename(drive, fileId, newParentId, oldParentId, newName) {
   });
 }
 
-// Traite le dossier "_inbox" : chaque GPX brut → dossier d'étape nommé + notes.md
-async function processInbox(drive, rootId) {
-  // Cherche le sous-dossier _inbox
-  const q = `'${rootId}' in parents and name='_inbox' and mimeType='application/vnd.google-apps.folder' and trashed=false`;
-  const inboxList = await drive.files.list({ q, fields: "files(id,name)" });
-  if (inboxList.data.files.length === 0) {
-    console.log("📥 Pas de dossier _inbox, rien à traiter.");
-    return;
-  }
-  const inboxId = inboxList.data.files[0].id;
+// ─── Types d'étape (mode de déplacement) ─────────────────────────────────────
+// Le dossier de dépôt dans _inbox décide du type : _bike, _boat, _bus, _plane, _train.
+// Le type est ensuite écrit dans le NOM du dossier d'étape (jeton après la date),
+// ex. "2026-08-12-bus-turquie". Sans jeton → vélo (étapes historiques).
+const STAGE_TYPES = ["bike", "boat", "bus", "plane", "train"];
+const INBOX_TYPE_FOLDERS = { _bike: "bike", _boat: "boat", _bus: "bus", _plane: "plane", _train: "train" };
+const stageFolderName = (date, type, rest) =>
+  type === "bike" ? `${date}-${rest}` : `${date}-${type}-${rest}`;
 
-  // Liste les GPX de l'inbox
-  const files = await listFilesInFolder(drive, inboxId);
-  const gpxFiles = files.filter(f => f.name.toLowerCase().endsWith(".gpx"));
-  if (gpxFiles.length === 0) {
-    console.log("📥 _inbox vide (aucun GPX).");
-    return;
+// Déplace un GPX/dossier vers un nom libre à la racine (anti-collision de dossier)
+async function uniqueRootFolderName(drive, rootId, name) {
+  let candidate = name, n = 2;
+  while (true) {
+    const q = `'${rootId}' in parents and name='${candidate.replace(/'/g, "\\'")}' and mimeType='application/vnd.google-apps.folder' and trashed=false`;
+    const list = await drive.files.list({ q, fields: "files(id)" });
+    if (list.data.files.length === 0) return candidate;
+    candidate = `${name}-${n++}`;
   }
-  console.log(`📥 ${gpxFiles.length} GPX à traiter dans _inbox`);
+}
+
+// GPX posés directement dans un dossier de type : regroupés par JOUR,
+// un dossier d'étape par jour (comportement historique).
+async function processLooseGpx(drive, rootId, parentId, gpxFiles, type) {
+  if (gpxFiles.length === 0) return;
+  console.log(`📥 [${type}] ${gpxFiles.length} GPX isolé(s) à traiter`);
 
   // ── Étape 1 : lire chaque GPX (date, coords départ/arrivée, heure de départ) ──
   const items = [];
@@ -800,12 +814,10 @@ async function processInbox(drive, rootId) {
       continue;
     }
     const date = meta.date || new Date().toISOString().slice(0, 10);
-    // Heure de départ précise (pour ordonner les GPX d'un même jour)
     const tm = content.match(/<time>([^<]+)<\/time>/);
     const startTime = tm ? new Date(tm[1]).getTime() : Number.MAX_SAFE_INTEGER;
     items.push({ file, date, startTime, meta });
   }
-
   if (items.length === 0) {
     console.log("\n📥 Aucun GPX exploitable.");
     return;
@@ -813,34 +825,27 @@ async function processInbox(drive, rootId) {
 
   // ── Étape 2 : regrouper les GPX par JOUR ──
   const byDay = {};
-  for (const it of items) {
-    (byDay[it.date] = byDay[it.date] || []).push(it);
-  }
+  for (const it of items) (byDay[it.date] = byDay[it.date] || []).push(it);
 
   // ── Étape 3 : un dossier par jour ──
-  let geocodes = 0;
   for (const date of Object.keys(byDay).sort()) {
     const dayItems = byDay[date].sort((a, b) => a.startTime - b.startTime);
-    const first = dayItems[0];                       // GPX le plus tôt → départ
-    const last = dayItems[dayItems.length - 1];      // GPX le plus tard → arrivée
-
+    const first = dayItems[0];
+    const last = dayItems[dayItems.length - 1];
     console.log(`\n  📅 ${date} — ${dayItems.length} GPX`);
 
-    // Géocode le VRAI départ (début du 1er GPX) et la VRAIE arrivée (fin du dernier)
     const startGeo = await reverseGeocode(first.meta.startLat, first.meta.startLng);
     await new Promise(r => setTimeout(r, 1100));
     const endGeo = await reverseGeocode(last.meta.endLat, last.meta.endLng);
     await new Promise(r => setTimeout(r, 1100));
-    geocodes += 2;
 
     const startCity = startGeo.city || "depart";
     const endCity = endGeo.city || "arrivee";
-    const folderName = `${date}-${slugifyCity(startCity)}_${slugifyCity(endCity)}`;
+    const folderName = stageFolderName(date, type, `${slugifyCity(startCity)}_${slugifyCity(endCity)}`);
     console.log(`    📂 ${folderName}  (${startCity} → ${endCity})`);
 
     const folderId = await findOrCreateFolder(drive, rootId, folderName);
 
-    // Déplace TOUS les GPX du jour dans ce dossier, sans renommer (anti-écrasement)
     for (const it of dayItems) {
       let targetName = it.file.name;
       if (await fileExistsInFolder(drive, folderId, targetName)) {
@@ -851,11 +856,89 @@ async function processInbox(drive, rootId) {
         while (await fileExistsInFolder(drive, folderId, `${base}-${n}${ext}`)) n++;
         targetName = `${base}-${n}${ext}`;
       }
-      await moveAndRename(drive, it.file.id, folderId, inboxId, targetName);
+      await moveAndRename(drive, it.file.id, folderId, parentId, targetName);
       console.log(`    ✅ déplacé → ${targetName}`);
     }
   }
-  console.log(`\n📥 Inbox traitée (${geocodes} géocodages).`);
+}
+
+// SOUS-DOSSIER d'un dossier de type = UNE SEULE étape (tous ses GPX fusionnés,
+// photos et notes comprises). Le dossier est déplacé tel quel à la racine et
+// renommé "<date>-<type>-<nom>".
+async function processGroupFolder(drive, rootId, typeFolderId, group, type) {
+  const children = await listFilesInFolder(drive, group.id);
+  const gpxFiles = children.filter(f => f.name.toLowerCase().endsWith(".gpx"));
+  const hasPhotos = children.some(f => /\.(jpg|jpeg|png|webp)$/i.test(f.name));
+  if (gpxFiles.length === 0 && !hasPhotos) {
+    console.log(`  ⏭  [${type}] "${group.name}" est vide, ignoré pour l'instant.`);
+    return;
+  }
+
+  // Date : préfixe AAAA-MM-JJ du nom du dossier si présent, sinon GPX le plus ancien.
+  let date = (group.name.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || null;
+  if (!date) {
+    for (const f of gpxFiles) {
+      try {
+        const tmpDir = path.join("/tmp", "_inbox");
+        fs.mkdirSync(tmpDir, { recursive: true });
+        const tmpPath = path.join(tmpDir, `${f.id}.gpx`);
+        await downloadFile(drive, f.id, tmpPath);
+        const meta = extractGpxMeta(fs.readFileSync(tmpPath, "utf-8"));
+        if (meta?.date && (!date || meta.date < date)) date = meta.date;
+      } catch { /* GPX illisible : on essaie les autres */ }
+    }
+  }
+  if (!date) {
+    console.log(`  ⚠️  [${type}] "${group.name}" : aucune date trouvable (ajoute AAAA-MM-JJ au début du nom). Ignoré.`);
+    return;
+  }
+
+  const rest = slugifyCity(group.name.replace(/^\d{4}-\d{2}-\d{2}-?/, "")) || "etape";
+  const newName = await uniqueRootFolderName(drive, rootId, stageFolderName(date, type, rest));
+  await drive.files.update({
+    fileId: group.id,
+    addParents: rootId,
+    removeParents: typeFolderId,
+    requestBody: { name: newName },
+    fields: "id, parents",
+  });
+  console.log(`  ✅ [${type}] groupe "${group.name}" (${gpxFiles.length} GPX) → étape unique ${newName}`);
+}
+
+// Traite "_inbox" :
+//   _inbox/_bike|_boat|_bus|_plane|_train/*.gpx       → un dossier d'étape par jour
+//   _inbox/_bus/<sous-dossier>/*.gpx (+ photos)       → UNE étape pour tout le sous-dossier
+//   _inbox/*.gpx (à la racine, ancien usage)          → traité comme du vélo
+async function processInbox(drive, rootId) {
+  const q = `'${rootId}' in parents and name='_inbox' and mimeType='application/vnd.google-apps.folder' and trashed=false`;
+  const inboxList = await drive.files.list({ q, fields: "files(id,name)" });
+  if (inboxList.data.files.length === 0) {
+    console.log("📥 Pas de dossier _inbox, rien à traiter.");
+    return;
+  }
+  const inboxId = inboxList.data.files[0].id;
+  const entries = await listFilesInFolder(drive, inboxId);
+  const isFolder = f => f.mimeType === "application/vnd.google-apps.folder";
+  const isGpx = f => f.name.toLowerCase().endsWith(".gpx");
+
+  // Ancien usage : GPX à la racine de _inbox = vélo
+  await processLooseGpx(drive, rootId, inboxId, entries.filter(isGpx), "bike");
+
+  let any = entries.some(isGpx);
+  for (const typeFolder of entries.filter(isFolder)) {
+    const type = INBOX_TYPE_FOLDERS[typeFolder.name.trim().toLowerCase()];
+    if (!type) {
+      console.log(`📥 Dossier ignoré dans _inbox : "${typeFolder.name}" (attendu : ${Object.keys(INBOX_TYPE_FOLDERS).join(", ")})`);
+      continue;
+    }
+    const inner = await listFilesInFolder(drive, typeFolder.id);
+    const loose = inner.filter(isGpx);
+    const groups = inner.filter(isFolder);
+    if (loose.length || groups.length) any = true;
+    await processLooseGpx(drive, rootId, typeFolder.id, loose, type);
+    for (const g of groups) await processGroupFolder(drive, rootId, typeFolder.id, g, type);
+  }
+  console.log(any ? "\n📥 Inbox traitée." : "📥 _inbox vide (aucun GPX).");
 }
 
 // ─── GPX parsing ─────────────────────────────────────────────────────────────
@@ -1326,7 +1409,15 @@ async function syncFolder(drive, folder, cache, force) {
   // Format: YYYY-MM-DD-depart_arrivee  (underscore = flèche entre villes)
   const parts = rawSlug.split("-");
   const date = parts.slice(0, 3).join("-");
-  const slugRest = parts.slice(3).join("-");
+  let slugRest = parts.slice(3).join("-");
+  // Jeton de type après la date : "2026-08-12-bus-turquie" → type "bus", reste "turquie".
+  // Sans jeton : vélo (étapes historiques) ; après la fin du vélo → "transport" générique.
+  let stageType = isTransportDate(date) ? "transport" : "bike";
+  {
+    const tm = slugRest.match(new RegExp(`^(${STAGE_TYPES.join("|")})(?:-(.*))?$`));
+    if (tm) { stageType = tm[1]; slugRest = tm[2] || ""; }
+  }
+  const isBike = stageType === "bike";
   // Capitalise et transforme _ en flèche →
   const capitalize = (txt) => txt
     .split("-")
@@ -1544,7 +1635,7 @@ async function syncFolder(drive, folder, cache, force) {
   const poisRaw = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
   // ── 3 plus grandes villes traversées par le tracé ──
   const allTrackPts = (gpxStats.segments || []).flat();
-  const majorCitiesRaw = isTransportDate(date) ? [] : await fetchMajorCities(allTrackPts, "fr");
+  const majorCitiesRaw = !isBike ? [] : await fetchMajorCities(allTrackPts, "fr");
   // ── Lieux les mieux notés (Google Places), section séparée ──
   const topRatedRaw = await fetchTopRatedPlaces(gpxStats.endLat, gpxStats.endLng, "fr");
   // ── Spécialités culinaires du pays (Wikidata, côté serveur) ──
@@ -1569,9 +1660,11 @@ async function syncFolder(drive, folder, cache, force) {
     startCity: startCity || null,
     endCity: endCity || null,
     distanceKm: gpxStats.distanceKm,
-    elevationGain: gpxStats.elevationGain,
-    maxAltitude: gpxStats.maxAltitude || undefined,
-    transport: isTransportDate(date),
+    // Le dénivelé n'a de sens qu'à vélo (en bus/avion/bateau c'est du bruit GPS)
+    elevationGain: isBike ? gpxStats.elevationGain : 0,
+    maxAltitude: isBike ? (gpxStats.maxAltitude || undefined) : undefined,
+    type: stageType,
+    transport: !isBike,
     coverImage: coverWebp || "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     heroVideo: null,
     // Contenu par défaut = français (rétrocompat)
@@ -1594,8 +1687,8 @@ async function syncFolder(drive, folder, cache, force) {
     startLng: gpxStats.startLng ?? null,
     track: gpxStats.track || [],
     segments: gpxStats.segments || [],
-    elevProfile: gpxStats.elevProfile || [],
-    minAltitude: gpxStats.minAltitude ?? null,
+    elevProfile: isBike ? (gpxStats.elevProfile || []) : [],
+    minAltitude: isBike ? (gpxStats.minAltitude ?? null) : null,
     highlights: notes.highlights || [],
     tags: notes.tags || [],
     weather: notes.weather || null,
@@ -1789,7 +1882,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log("🚴 The Cycling Beard — sync-drive.js");
+  console.log("🧭 The Moving Beard — sync-drive.js");
   console.log("=====================================");
 
   // Setup dirs
@@ -1878,7 +1971,7 @@ async function main() {
     startCity: s.startCity || null,
     endCity: s.endCity || null,
     distanceKm: s.distanceKm,
-    elevationGain: s.elevationGain,
+    elevationGain: stageTypeOf(s) === "bike" ? s.elevationGain : 0,
     coverImage: s.coverImage,
     thumbnail: s.photos[0]?.thumb || s.coverImage,
     shortDescription: s.summary || "",
@@ -1888,14 +1981,16 @@ async function main() {
     mapLng: s.mapLng ?? null,
     startLat: s.startLat ?? null,
     startLng: s.startLng ?? null,
-    transport: isTransportDate(s.date),
+    type: stageTypeOf(s),
+    transport: stageTypeOf(s) !== "bike",
+    countryCode: s.countryCode || null,
     track: s.track || [],
     segments: s.segments || [],
     tags: s.tags || [],
     fullStory: s.fullStory || [],
     photos: s.photos || [],
     translations: s.translations || null,
-    elevProfile: s.elevProfile || [],
+    elevProfile: stageTypeOf(s) === "bike" ? (s.elevProfile || []) : [],
     minAltitude: s.minAltitude ?? null,
     lodgingUrl: s.lodgingUrl || "",
     lodgingName: s.lodgingName || "",
@@ -1911,37 +2006,47 @@ async function main() {
   console.log(`\n✅ trips.json mis à jour (${trips.length} étape(s))`);
 
   // ── Generate stats.json ──
-  // Les compteurs ne portent que sur la partie À VÉLO (jusqu'à BIKE_END_DATE) :
-  // les étapes transport (train/bus/avion) n'y comptent pas.
-  const bikeStages = stages.filter(s => !isTransportDate(s.date));
-  const totalKm = bikeStages.reduce((acc, s) => acc + s.distanceKm, 0);
-  const totalElevation = bikeStages.reduce((acc, s) => acc + s.elevationGain, 0);
-  const countries = [...new Set(bikeStages.map(s => s.country).filter(c => c !== "—"))];
-  const lastStage = stages[stages.length - 1];
-
-  // Jours d'aventure = du premier jour de vélo jusqu'à aujourd'hui, PLAFONNÉ au
-  // dernier jour de vélo : le compteur s'arrête à la fin du voyage à vélo.
-  const dates = bikeStages.map(s => s.date).filter(Boolean).sort();
-  const firstDate = dates[0] || null;
-  let totalDays = bikeStages.length;  // repli si aucune date
-  if (firstDate) {
-    const start = new Date(firstDate);
-    const end = new Date(Math.min(Date.now(), new Date(BIKE_END_DATE).getTime()));
-    // +1 pour inclure le jour de départ (jour 1 = premier jour de vélo)
-    totalDays = Math.floor((end - start) / (1000 * 60 * 60 * 24)) + 1;
-    if (totalDays < 1) totalDays = 1;
+  // Statistiques globales + PAR TYPE de déplacement (vélo, bateau, bus, avion, train),
+  // pour le sélecteur de l'accueil. Le dénivelé ne compte qu'à vélo.
+  const DAY_MS = 1000 * 60 * 60 * 24;
+  const countriesOf = (list) => [...new Set(list.map(s => s.country).filter(c => c && c !== "—"))];
+  const summarize = (list) => ({
+    km: Math.round(list.reduce((acc, s) => acc + (s.distanceKm || 0), 0)),
+    elevation: Math.round(list.filter(s => stageTypeOf(s) === "bike").reduce((acc, s) => acc + (s.elevationGain || 0), 0)),
+    stages: list.length,
+    // Jours = jours distincts où ce mode de déplacement a été utilisé
+    days: new Set(list.map(s => s.date).filter(Boolean)).size,
+    countries: countriesOf(list).length,
+  });
+  const byType = {};
+  for (const ty of [...STAGE_TYPES, "transport"]) {
+    const list = stages.filter(s => stageTypeOf(s) === ty);
+    if (list.length > 0) byType[ty] = summarize(list);
   }
+  const lastStage = stages[stages.length - 1];
+  const dates = stages.map(s => s.date).filter(Boolean).sort();
+  const firstDate = dates[0] || null;
+  const lastDate = dates[dates.length - 1] || null;
+  // Total : durée du voyage = du 1er au dernier jour documenté (le compteur s'arrête
+  // de lui-même quand il n'y a plus de nouvelle étape : plus de décompte jusqu'à aujourd'hui).
+  let totalDays = stages.length;
+  if (firstDate && lastDate) {
+    totalDays = Math.max(1, Math.floor((new Date(lastDate) - new Date(firstDate)) / DAY_MS) + 1);
+  }
+  const all = summarize(stages);
 
   const stats = {
-    totalKm: Math.round(totalKm),
-    totalCountries: countries.length || 1,
+    totalKm: all.km,
+    totalCountries: all.countries || 1,
     totalDays,
-    totalStages: bikeStages.length,
-    totalElevation: Math.round(totalElevation),
+    totalStages: all.stages,
+    totalElevation: all.elevation,
+    byType,
     currentCountry: lastStage?.country || "France",
     currentCountryCode: lastStage?.countryCode || "",
     currentLocation: lastStage?.endCity || lastStage?.location || "Saint-Nazaire",
-    startDate: firstDate || "2026-05-26",
+    currentType: lastStage ? stageTypeOf(lastStage) : "bike",
+    startDate: firstDate || "2026-05-27",
     lastUpdate: new Date().toISOString().split("T")[0],
     latestStageSlug: lastStage?.slug || "",
   };
@@ -1949,7 +2054,7 @@ async function main() {
   fs.writeFileSync(path.join(DATA_DIR, "stats.json"), JSON.stringify(stats, null, 2));
   console.log(`✅ stats.json mis à jour`);
   console.log(`\n📊 Résumé :`);
-  console.log(`   ${stats.totalKm} km · ${stats.totalElevation} m D+ · ${stats.totalCountries} pays · ${stats.totalDays} étapes`);
+  console.log(`   ${stats.totalKm} km · ${stats.totalElevation} m D+ · ${stats.totalCountries} pays · ${stats.totalDays} jours · par type : ${Object.entries(byType).map(([k, v]) => `${k} ${v.km} km/${v.stages} étapes`).join(", ")}`);
   console.log("\n🎉 Synchronisation terminée !");
 }
 

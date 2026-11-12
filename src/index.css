@@ -1,45 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────────────────────
+   THÈME : clair (par défaut) + sombre.
+   Toutes les couleurs passent par ces variables : le sombre ne fait que
+   redéfinir leurs valeurs sous  html[data-theme="dark"].
+   ───────────────────────────────────────────────────────────── */
 @theme {
   --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-display: "Space Grotesk", "Plus Jakarta Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 
-  /* Editorial Aesthetic Color Palette */
-  --color-bg-dark: #FAF9F6; /* Alabaster Cream */
-  --color-surface-card: #FFFFFF; /* Pure White Sheets */
-  --color-surface-container: #E5E5E1; /* Soft Gray Accent Cement */
-  --color-surface-high: #D1D1CB; /* Warm Concrete */
-  --color-surface-highest: #B6B6AF; /* Shadow Stone */
-  --color-text-on: #121212; /* Deep Charcoal/Midnight Solid */
-  --color-text-dim: #4E4E4C; /* Soft Readability Gray */
-  --color-brand-green: #121212; /* Bold Editorial Coal */
-  --color-brand-green-hover: #292928; /* Slightly lighter Coal code */
-  --color-brand-sand: #8D7A68; /* Noble Rich Sand */
-  
-  --border-radius-xs: 0px;
-  --border-radius-sm: 0px;
-  --border-radius-md: 0px;
-  --border-radius-lg: 0px;
-  --border-radius-xl: 0px;
-  --border-radius-2xl: 0px;
+  /* Surfaces */
+  --color-bg-dark: #F7F5F0;            /* fond de page (papier chaud) */
+  --color-surface-card: #FFFFFF;       /* cartes */
+  --color-surface-container: #ECE9E2;
+  --color-surface-high: #D9D5CB;
+  --color-surface-highest: #BEB9AD;
+  /* Texte */
+  --color-text-on: #16181A;
+  --color-text-dim: #55585C;
+  /* Accents */
+  --color-brand-sand: #B24D08;         /* accent principal (orange brûlé) */
+  --color-brand-orange: #E8620A;
+  --color-brand-teal: #1F6F7A;
+  --color-brand-green: #16181A;
+  --color-brand-green-hover: #2B2E31;
 }
 
-/* Immersive Light Editorial Mode base overrides */
+:root {
+  --line: rgba(22, 24, 26, 0.09);
+  --nav-bg: rgba(247, 245, 240, 0.82);
+  --veil: rgba(247, 245, 240, 0.90);
+  --shadow-soft: 0 10px 30px -14px rgba(22, 24, 26, 0.18);
+  --map-bg: #E7E3DA;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --color-bg-dark: #0E1114;
+  --color-surface-card: #171B1F;
+  --color-surface-container: #1F252A;
+  --color-surface-high: #2B3238;
+  --color-surface-highest: #3D464E;
+  --color-text-on: #ECEAE5;
+  --color-text-dim: #A3A7AB;
+  --color-brand-sand: #FF9A55;
+  --color-brand-orange: #FF7A2B;
+  --color-brand-teal: #5CC0CC;
+  --color-brand-green: #ECEAE5;
+  --color-brand-green-hover: #FFFFFF;
+
+  --line: rgba(236, 234, 229, 0.10);
+  --nav-bg: rgba(14, 17, 20, 0.80);
+  --veil: rgba(14, 17, 20, 0.90);
+  --shadow-soft: 0 12px 34px -14px rgba(0, 0, 0, 0.7);
+  --map-bg: #22272B;
+  color-scheme: dark;
+}
+
 html, body {
-  background-color: #FAF9F6;
-  color: #121212;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-on);
   scroll-behavior: smooth;
   font-family: var(--font-sans);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  transition: background-color .25s ease, color .25s ease;
 }
 
 /* Arrière-plan statique, appliqué directement sur body (pas via un composant
-   React) : c'est la technique la plus fiable sur mobile, elle échappe à tout
-   contexte de positionnement/transform créé par les composants de la page,
-   qui casse souvent position:fixed appliqué à un enfant. */
+   React) : c'est la technique la plus fiable sur mobile. */
 body {
   background-image: url(/images/background.png);
   background-size: cover;
@@ -47,83 +78,65 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-/* Voile sombre pour garder le texte lisible par-dessus l'image */
+/* Voile par-dessus l'image pour garder le texte lisible (clair ou sombre) */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(250, 249, 246, 0.85);
+  background: var(--veil);
   pointer-events: none;
   z-index: 0;
+  transition: background-color .25s ease;
 }
 
-/* Ensure all sharp components keep the Editorial structural integrity */
-* {
-  border-radius: 0px !important;
-}
-
-/* Editorial Glassmorphism styled lighter for Editorial paper texture */
+/* Verre dépoli moderne */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.95) !important;
-  backdrop-filter: blur(24px) !important;
-  -webkit-backdrop-filter: blur(24px) !important;
-  border: 1px solid rgba(18, 18, 18, 0.08) !important;
+  background: color-mix(in srgb, var(--color-surface-card) 92%, transparent) !important;
+  backdrop-filter: blur(20px) saturate(1.2) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
+  border: 1px solid var(--line) !important;
 }
 
 .glass-nav {
-  background: rgba(250, 249, 246, 0.9) !important;
-  backdrop-filter: blur(24px) !important;
-  -webkit-backdrop-filter: blur(24px) !important;
-  border-bottom: 1px solid rgba(18, 18, 18, 0.08) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02) !important;
+  background: var(--nav-bg) !important;
+  backdrop-filter: blur(20px) saturate(1.3) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.3) !important;
+  border-bottom: 1px solid var(--line) !important;
 }
 
-/* Classic fine-line borders */
+/* Barre d'onglets du bas (mobile) */
+.tabbar {
+  background: var(--nav-bg);
+  backdrop-filter: blur(22px) saturate(1.3);
+  -webkit-backdrop-filter: blur(22px) saturate(1.3);
+  border-top: 1px solid var(--line);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 .divider {
   height: 1px;
-  background-color: rgba(18, 18, 18, 0.08) !important;
+  background-color: var(--line) !important;
 }
 
-/* Elegant sleek scrollbar */
-::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
-}
-::-webkit-scrollbar-track {
-  background: #FAF9F6;
-}
-::-webkit-scrollbar-thumb {
-  background: #D1D1CB;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #121212;
-}
+/* Scrollbar discrète */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--color-surface-high); border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text-dim); }
 
-/* Editorial vignette overlay for image framing */
 .hero-vignette {
-  background: linear-gradient(to top, rgba(250, 249, 246, 0.98) 0%, rgba(250, 249, 246, 0.25) 50%, rgba(18, 18, 18, 0.35) 100%) !important;
+  background: linear-gradient(to top, color-mix(in srgb, var(--color-bg-dark) 98%, transparent) 0%, color-mix(in srgb, var(--color-bg-dark) 25%, transparent) 50%, rgba(0, 0, 0, 0.35) 100%) !important;
 }
 
-/* Pulse animation for active location markers with sand aesthetic */
 @keyframes pulse-ring {
-  0% {
-    box-shadow: 0 0 0 0 rgba(141, 122, 104, 0.45);
-  }
-  70% {
-    box-shadow: 0 0 0 10px rgba(141, 122, 104, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(141, 122, 104, 0);
-  }
+  0%   { box-shadow: 0 0 0 0 rgba(232, 98, 10, 0.45); }
+  70%  { box-shadow: 0 0 0 10px rgba(232, 98, 10, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(232, 98, 10, 0); }
 }
+.marker-pulse { animation: pulse-ring 2.5s infinite; }
 
-.marker-pulse {
-  animation: pulse-ring 2.5s infinite;
-}
-
-/* Map route drawing transition effect */
 .route-line {
-  stroke: #121212;
+  stroke: var(--color-text-on);
   stroke-width: 1.5;
   fill: none;
   stroke-linecap: round;
@@ -131,136 +144,95 @@ body::before {
   stroke-dasharray: 4 2;
 }
 
-/* Custom fade utility */
-.fade-in {
-  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
+.fade-in { animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-/* Mapping old dark mode colors dynamically to Editorial light theme elements */
+/* ── Anciennes couleurs codées en dur → variables du thème ── */
 .bg-\[\#1c1b1b\] {
   background-color: var(--color-surface-card) !important;
-  border-color: rgba(18, 18, 18, 0.08) !important;
+  border-color: var(--line) !important;
 }
-
-.bg-\[\#141313\] {
-  background-color: var(--color-bg-dark) !important;
-}
+.bg-\[\#141313\] { background-color: var(--color-bg-dark) !important; }
 
 .border-white\/5,
-.border-white\/10 {
-  border-color: rgba(18, 18, 18, 0.08) !important;
-}
+.border-white\/10 { border-color: var(--line) !important; }
 
-/* Adjust text readability in cards */
 .bg-\[\#1c1b1b\] .text-white,
 .bg-\[\#1c1b1b\] h3,
 .bg-\[\#1c1b1b\] h4,
-.text-text-on {
-  color: var(--color-text-on) !important;
-}
+.text-text-on { color: var(--color-text-on) !important; }
 
 .bg-\[\#1c1b1b\] .text-text-dim,
-.text-text-dim {
-  color: var(--color-text-dim) !important;
-  opacity: 0.9 !important;
-}
+.text-text-dim { color: var(--color-text-dim) !important; opacity: 0.95 !important; }
 
-/* Map gradient shading for card titles */
 .from-\[\#141313\] {
-  --tw-gradient-from: rgba(250, 249, 246, 0.95) !important;
-  --tw-gradient-to: rgba(250, 249, 246, 0) !important;
+  --tw-gradient-from: color-mix(in srgb, var(--color-bg-dark) 95%, transparent) !important;
+  --tw-gradient-to: transparent !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
-
 .from-\[\#1c1b1b\] {
-  --tw-gradient-from: rgba(255, 255, 255, 0.98) !important;
-  --tw-gradient-to: rgba(255, 255, 255, 0) !important;
+  --tw-gradient-from: color-mix(in srgb, var(--color-surface-card) 98%, transparent) !important;
+  --tw-gradient-to: transparent !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
 
-/* Input styles for consistent look */
+/* Champs de saisie */
 input, select, textarea {
-  background-color: #FFFFFF !important;
-  color: #121212 !important;
-  border: 1px solid rgba(18, 18, 18, 0.15) !important;
+  background-color: var(--color-surface-card) !important;
+  color: var(--color-text-on) !important;
+  border: 1px solid var(--line) !important;
 }
-
 input:focus, select:focus, textarea:focus {
   border-color: var(--color-brand-sand) !important;
   outline: none !important;
 }
+input::placeholder, textarea::placeholder { color: var(--color-text-dim); opacity: .7; }
 
-/* Override default card shadows to match refined gallery styling */
-.shadow-lg, .shadow-xl, .shadow-2xl {
-  box-shadow: 0 10px 30px -15px rgba(18, 18, 18, 0.07) !important;
-}
+/* Ombres douces (cartes) */
+.shadow-lg, .shadow-xl, .shadow-2xl { box-shadow: var(--shadow-soft) !important; }
 
-/* Custom style for primary editorial buttons */
 .btn-primary {
-  background-color: #121212 !important;
-  color: #FAF9F6 !important;
+  background-color: var(--color-text-on) !important;
+  color: var(--color-bg-dark) !important;
   transition: all 0.2s ease-in-out;
 }
-.btn-primary:hover {
-  background-color: #292928 !important;
-  opacity: 0.95;
+.btn-primary:hover { opacity: 0.9; }
+
+/* ── Cartes : mode sombre ── */
+/* Tuiles claires OpenStreetMap assombries (les tracés/marqueurs ne sont pas touchés) */
+html[data-theme="dark"] .leaflet-tile-pane {
+  filter: invert(1) hue-rotate(180deg) brightness(0.88) contrast(0.92) saturate(0.7);
 }
+.leaflet-container { background: var(--map-bg) !important; }
 
 /* ─────────────────────────────────────────────────────────────
    CORRECTIF Z-INDEX — Garder les menus AU-DESSUS des cartes
-   Les cartes Leaflet/MapLibre posaient des z-index internes élevés
-   qui passaient devant le header et le menu de langue.
    ───────────────────────────────────────────────────────────── */
-
-/* 1) Plafonne les couches internes de Leaflet (panes + contrôles) */
 .leaflet-pane,
 .leaflet-top,
-.leaflet-bottom {
-  z-index: 1 !important;
-}
-.leaflet-control {
-  z-index: 2 !important;
-}
+.leaflet-bottom { z-index: 1 !important; }
+.leaflet-control { z-index: 2 !important; }
 
-/* 2) Plafonne MapLibre (survol 3D) */
 .maplibregl-map,
 .maplibregl-canvas-container,
-.maplibregl-control-container {
-  z-index: 1 !important;
-}
+.maplibregl-control-container { z-index: 1 !important; }
 
-/* 3) La barre de navigation TOUJOURS au-dessus des cartes */
-.glass-nav,
+/* Barre du haut et d'onglets : toujours au-dessus des cartes */
+.glass-nav { z-index: 1000 !important; }
+.tabbar { z-index: 1000 !important; }
 header,
 [data-nav],
-.navbar {
-  position: relative;
-  z-index: 1000 !important;
-}
+.navbar { position: relative; z-index: 1000 !important; }
 
-/* 4) Le menu déroulant de langue au-dessus de tout (cartes incluses) */
 .language-menu,
-[data-language-menu] {
-  z-index: 2000 !important;
-}
+[data-language-menu] { z-index: 2000 !important; }
 
-/* 5) Attribution MapLibre visible mais non cliquable (évite de quitter
-      la page par erreur en changeant la vitesse du survol) */
-.maplibregl-ctrl-attrib a {
-  pointer-events: none !important;
-  cursor: default !important;
-}
-.maplibregl-ctrl-attrib-button {
-  pointer-events: auto !important;
+.maplibregl-ctrl-attrib a { pointer-events: none !important; cursor: default !important; }
+.maplibregl-ctrl-attrib-button { pointer-events: auto !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }

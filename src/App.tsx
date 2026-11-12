@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { X, Share2, Search, ArrowRight } from "lucide-react";
+import { X, Share2, Compass } from "lucide-react";
 import Navbar from "./components/Navbar";
 import ViewErrorBoundary from "./components/ViewErrorBoundary";
 import HomeView from "./components/HomeView";
@@ -16,6 +16,26 @@ export default function App() {
     return (saved as Lang) || "fr";
   });
   const t = makeT(lang);
+
+  // Thème clair/sombre : choix mémorisé, sinon réglage du système.
+  // (index.html applique déjà data-theme avant l'affichage pour éviter le flash.)
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    try {
+      const saved = localStorage.getItem("tmb_theme");
+      if (saved === "light" || saved === "dark") return saved;
+    } catch { /* stockage indisponible */ }
+    return typeof window !== "undefined" && window.matchMedia?.("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  });
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) meta.setAttribute("content", theme === "dark" ? "#0E1114" : "#F7F5F0");
+  }, [theme]);
+  const toggleTheme = () => {
+    const next = theme === "dark" ? "light" : "dark";
+    setTheme(next);
+    try { localStorage.setItem("tmb_theme", next); } catch { /* ignoré */ }
+  };
 
   const changeLang = (l: Lang) => {
     setLang(l);
@@ -69,8 +89,8 @@ export default function App() {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: "The Cycling Beard — Rémi",
-        text: "Suivez mon expédition à vélo de Saint-Nazaire plein Est !",
+        title: "The Moving Beard — Rémi Gladieu",
+        text: "Suivez mon voyage de Saint-Nazaire jusqu'au Japon : à vélo, en train, en bus, en bateau et en avion.",
         url: window.location.href,
       }).catch(() => {});
     } else {
@@ -108,6 +128,8 @@ export default function App() {
         setActiveTab={setActiveTab}
         lang={lang}
         changeLang={changeLang}
+        theme={theme}
+        toggleTheme={toggleTheme}
         t={t}
       />
 
@@ -141,11 +163,11 @@ export default function App() {
       </main>
 
       {activeTab !== "map" && (
-      <footer className="bg-bg-dark border-t border-white/5 py-12 px-6 md:px-14 items-center">
+      <footer className="bg-bg-dark border-t border-white/5 pt-12 pb-28 md:pb-12 px-6 md:px-14 items-center">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left text-xs text-text-dim text-opacity-50 font-mono">
           <div className="flex flex-col gap-1.5 md:items-start">
             <span className="font-display font-black tracking-widest text-[10px] uppercase text-text-on">
-              The Cycling Beard // Rémi
+              The Moving Beard // Rémi Gladieu
             </span>
             <span>© 2026. Voyage en cours · Hébergé sur Vercel.</span>
           </div>
