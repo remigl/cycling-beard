@@ -18,7 +18,9 @@
     "mapLng": -2.4305221,
     "startLat": 47.2753139,
     "startLng": -2.2058949,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.27531,
@@ -8875,7 +8877,9 @@
     "mapLng": -1.3872958,
     "startLat": 47.2712988,
     "startLng": -2.4307338,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.2713,
@@ -21359,7 +21363,9 @@
     "mapLng": -0.2738946,
     "startLat": 47.3042337,
     "startLng": -1.3750745,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.30423,
@@ -40635,7 +40641,9 @@
     "mapLng": 0.6750623,
     "startLat": 47.3933733,
     "startLng": -0.274037,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.39337,
@@ -50879,7 +50887,9 @@
     "mapLng": 1.7017088,
     "startLat": 47.3601147,
     "startLng": 0.675105,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.36011,
@@ -61972,7 +61982,9 @@
     "mapLng": 2.6838957,
     "startLat": 47.8441585,
     "startLng": 1.7021892,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.84416,
@@ -72062,7 +72074,9 @@
     "mapLng": 3.1815089,
     "startLat": 47.6567333,
     "startLng": 2.6839695,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.65673,
@@ -82181,7 +82195,9 @@
     "mapLng": 3.4556455,
     "startLat": 46.9689004,
     "startLng": 3.2709918,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         46.9689,
@@ -91988,7 +92004,9 @@
     "mapLng": 4.1194999,
     "startLat": 46.8346243,
     "startLng": 3.4556127,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         46.83462,
@@ -101943,7 +101961,9 @@
     "mapLng": 4.9668891,
     "startLat": 46.4510272,
     "startLng": 4.1422875,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         46.45103,
@@ -112295,7 +112315,9 @@
     "mapLng": 5.646694,
     "startLat": 46.8773573,
     "startLng": 4.9670187,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         46.87736,
@@ -126545,7 +126567,9 @@
     "mapLng": 6.3053405,
     "startLat": 47.1467275,
     "startLng": 5.6469777,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.14673,
@@ -133182,7 +133206,9 @@
     "mapLng": 6.8924574,
     "startLat": 47.3303968,
     "startLng": 6.3051807,
+    "type": "bike",
     "transport": false,
+    "countryCode": "FR",
     "track": [
       [
         47.3304,
@@ -145522,7 +145548,9 @@
     "mapLng": 7.8487219,
     "startLat": 47.5279898,
     "startLng": 6.8933593,
+    "type": "bike",
     "transport": false,
+    "countryCode": "CH",
     "track": [
       [
         47.52799,
@@ -161493,7 +161521,9 @@
     "mapLng": 8.9367776,
     "startLat": 47.5632225,
     "startLng": 7.8585722,
+    "type": "bike",
     "transport": false,
+    "countryCode": "DE",
     "track": [
       [
         47.56322,
@@ -171712,7 +171742,9 @@
     "mapLng": 9.2136309,
     "startLat": 47.6597752,
     "startLng": 8.9358767,
+    "type": "bike",
     "transport": false,
+    "countryCode": "DE",
     "track": [
       [
         47.65978,
@@ -178575,7 +178607,9 @@
     "mapLng": 9.9854837,
     "startLat": 48.0867556,
     "startLng": 9.2175279,
+    "type": "bike",
     "transport": false,
+    "countryCode": "DE",
     "track": [
       [
         48.08676,
@@ -185447,7 +185481,9 @@
     "mapLng": 10.7766448,
     "startLat": 48.4428677,
     "startLng": 9.9844582,
+    "type": "bike",
     "transport": false,
+    "countryCode": "DE",
     "track": [
       [
         48.44287,
@@ -195028,7 +195064,9 @@
     "mapLng": 11.6216612,
     "startLat": 48.715859,
     "startLng": 10.7740612,
+    "type": "bike",
     "transport": false,
+    "countryCode": "DE",
     "track": [
       [
         48.71586,
@@ -201705,7 +201743,9 @@
     "mapLng": 12.0923525,
     "startLat": 48.7726725,
     "startLng": 11.6214953,
+    "type": "bike",
     "transport": false,
+    "countryCode": "DE",
     "track": [
       [
         48.77267,
@@ -208459,7 +208499,9 @@
     "mapLng": 13.0499861,
     "startLat": 49.081828,
     "startLng": 12.1203249,
+    "type": "bike",
     "transport": false,
+    "countryCode": "DE",
     "track": [
       [
         49.08183,
@@ -221682,7 +221724,9 @@
     "mapLng": 14.2950284,
     "startLat": 48.7141142,
     "startLng": 13.04992,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         48.71411,
@@ -228419,7 +228463,9 @@
     "mapLng": 15.1931904,
     "startLat": 48.3052418,
     "startLng": 14.2889913,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         48.30524,
@@ -235210,7 +235256,9 @@
     "mapLng": 16.3483574,
     "startLat": 48.212892,
     "startLng": 15.193348,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         48.21289,
@@ -244773,7 +244821,9 @@
     "mapLng": 17.2327726,
     "startLat": 48.2200022,
     "startLng": 16.3859317,
+    "type": "bike",
     "transport": false,
+    "countryCode": "SK",
     "track": [
       [
         48.22,
@@ -251401,7 +251451,9 @@
     "mapLng": 18.4664581,
     "startLat": 48.0314133,
     "startLng": 17.2298565,
+    "type": "bike",
     "transport": false,
+    "countryCode": "SK",
     "track": [
       [
         48.03141,
@@ -258249,7 +258301,9 @@
     "mapLng": 19.0804034,
     "startLat": 47.7768132,
     "startLng": 18.466085,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HU",
     "track": [
       [
         47.77681,
@@ -270106,7 +270160,9 @@
     "mapLng": 18.6252787,
     "startLat": 47.5190826,
     "startLng": 19.04563,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HU",
     "track": [
       [
         47.51908,
@@ -285387,7 +285443,9 @@
     "mapLng": 17.6417372,
     "startLat": 47.2086686,
     "startLng": 18.6251783,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HU",
     "track": [
       [
         47.20867,
@@ -292304,7 +292362,9 @@
     "mapLng": 16.5712746,
     "startLat": 46.829015,
     "startLng": 17.6400002,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HU",
     "track": [
       [
         46.82902,
@@ -299134,7 +299194,9 @@
     "mapLng": 15.7578612,
     "startLat": 46.9726685,
     "startLng": 16.5673102,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         46.97267,
@@ -315814,7 +315876,9 @@
     "mapLng": 15.3455251,
     "startLat": 47.0722287,
     "startLng": 15.4169589,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         47.07223,
@@ -322311,7 +322375,9 @@
     "mapLng": 14.1326736,
     "startLat": 47.3595208,
     "startLng": 15.345558,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         47.35952,
@@ -332440,7 +332506,9 @@
     "mapLng": 13.3939066,
     "startLat": 47.5216338,
     "startLng": 14.1327052,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         47.52163,
@@ -341837,7 +341905,9 @@
     "mapLng": 13.1978496,
     "startLat": 47.3448943,
     "startLng": 13.3935447,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         47.34489,
@@ -353398,7 +353468,9 @@
     "mapLng": 12.4627726,
     "startLat": 46.9328977,
     "startLng": 13.2019749,
+    "type": "bike",
     "transport": false,
+    "countryCode": "AT",
     "track": [
       [
         46.9329,
@@ -360339,7 +360411,9 @@
     "mapLng": 11.5717589,
     "startLat": 46.7454856,
     "startLng": 12.4628952,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         46.74549,
@@ -373901,7 +373975,9 @@
     "mapLng": 11.2227939,
     "startLat": 46.641444,
     "startLng": 11.5705727,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         46.64144,
@@ -380737,7 +380813,9 @@
     "mapLng": 10.9382974,
     "startLat": 46.2984666,
     "startLng": 11.2254551,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         46.29847,
@@ -387697,7 +387775,9 @@
     "mapLng": 10.7867261,
     "startLat": 45.8531347,
     "startLng": 10.9382522,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         45.85313,
@@ -394261,7 +394341,9 @@
     "mapLng": 10.6066339,
     "startLat": 45.7311405,
     "startLng": 10.7866155,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         45.73114,
@@ -400949,7 +401031,9 @@
     "mapLng": 10.8289606,
     "startLat": 45.4669095,
     "startLng": 10.6073844,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         45.46691,
@@ -407578,7 +407662,9 @@
     "mapLng": 11.4197897,
     "startLat": 45.1545311,
     "startLng": 10.8293692,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         45.15453,
@@ -417730,7 +417816,9 @@
     "mapLng": 12.2988101,
     "startLat": 44.9399753,
     "startLng": 11.419316,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         44.93998,
@@ -424673,7 +424761,9 @@
     "mapLng": 12.90645,
     "startLat": 45.2040991,
     "startLng": 12.2988746,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         45.2041,
@@ -434708,7 +434798,9 @@
     "mapLng": 13.379601,
     "startLat": 45.6153502,
     "startLng": 12.9047125,
+    "type": "bike",
     "transport": false,
+    "countryCode": "IT",
     "track": [
       [
         45.61535,
@@ -444746,7 +444838,9 @@
     "mapLng": 13.600386,
     "startLat": 45.7237232,
     "startLng": 13.3804497,
+    "type": "bike",
     "transport": false,
+    "countryCode": "SI",
     "track": [
       [
         45.72372,
@@ -456953,7 +457047,9 @@
     "mapLng": 13.6925326,
     "startLat": 45.5021708,
     "startLng": 13.6007014,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         45.50217,
@@ -466717,7 +466813,9 @@
     "mapLng": 13.8147837,
     "startLat": 45.0502523,
     "startLng": 13.6917358,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         45.05025,
@@ -475659,7 +475757,9 @@
     "mapLng": 15.3353708,
     "startLat": 44.8560698,
     "startLng": 13.8137587,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         44.85607,
@@ -484778,7 +484878,9 @@
     "mapLng": 15.9591022,
     "startLat": 43.9841449,
     "startLng": 15.3349915,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         43.98414,
@@ -491698,7 +491800,9 @@
     "mapLng": 16.57795,
     "startLat": 43.6368578,
     "startLng": 15.9592603,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         43.63686,
@@ -503175,7 +503279,9 @@
     "mapLng": 16.6708882,
     "startLat": 43.3809552,
     "startLng": 16.5782458,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         43.38096,
@@ -512084,7 +512190,9 @@
     "mapLng": 17.1023566,
     "startLat": 42.9842963,
     "startLng": 16.671019,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         42.9843,
@@ -518704,7 +518812,9 @@
     "mapLng": 18.0689599,
     "startLat": 42.9615545,
     "startLng": 17.1024393,
+    "type": "bike",
     "transport": false,
+    "countryCode": "HR",
     "track": [
       [
         42.96155,
