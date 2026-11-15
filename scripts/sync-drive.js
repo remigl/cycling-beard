@@ -764,11 +764,13 @@ async function moveAndRename(drive, fileId, newParentId, oldParentId, newName) {
 }
 
 // ─── Types d'étape (mode de déplacement) ─────────────────────────────────────
-// Le dossier de dépôt dans _inbox décide du type : _bike, _boat, _bus, _plane, _train.
+// Le dossier de dépôt dans _inbox décide du type : _bike (vélo) ou _others (tout le reste :
+// train, bus, bateau, avion… regroupés sous "transport").
 // Le type est ensuite écrit dans le NOM du dossier d'étape (jeton après la date),
 // ex. "2026-08-12-bus-turquie". Sans jeton → vélo (étapes historiques).
-const STAGE_TYPES = ["bike", "boat", "bus", "plane", "train"];
-const INBOX_TYPE_FOLDERS = { _bike: "bike", _boat: "boat", _bus: "bus", _plane: "plane", _train: "train" };
+// (boat/bus/plane/train restent reconnus dans les noms de dossiers, mais l'inbox n'utilise que bike/transport)
+const STAGE_TYPES = ["bike", "transport", "boat", "bus", "plane", "train"];
+const INBOX_TYPE_FOLDERS = { _bike: "bike", _others: "transport" };
 const stageFolderName = (date, type, rest) =>
   type === "bike" ? `${date}-${rest}` : `${date}-${type}-${rest}`;
 
@@ -906,8 +908,8 @@ async function processGroupFolder(drive, rootId, typeFolderId, group, type) {
 }
 
 // Traite "_inbox" :
-//   _inbox/_bike|_boat|_bus|_plane|_train/*.gpx       → un dossier d'étape par jour
-//   _inbox/_bus/<sous-dossier>/*.gpx (+ photos)       → UNE étape pour tout le sous-dossier
+//   _inbox/_bike|_others/*.gpx                        → un dossier d'étape par jour
+//   _inbox/_others/<sous-dossier>/*.gpx (+ photos)       → UNE étape pour tout le sous-dossier
 //   _inbox/*.gpx (à la racine, ancien usage)          → traité comme du vélo
 async function processInbox(drive, rootId) {
   const q = `'${rootId}' in parents and name='_inbox' and mimeType='application/vnd.google-apps.folder' and trashed=false`;
@@ -2019,7 +2021,7 @@ async function main() {
     countries: countriesOf(list).length,
   });
   const byType = {};
-  for (const ty of [...STAGE_TYPES, "transport"]) {
+  for (const ty of STAGE_TYPES) {
     const list = stages.filter(s => stageTypeOf(s) === ty);
     if (list.length > 0) byType[ty] = summarize(list);
   }

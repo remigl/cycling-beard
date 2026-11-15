@@ -2,7 +2,7 @@
 // Source unique utilisée par la carte, l'itinéraire et les stats.
 export type StageType = "bike" | "boat" | "bus" | "plane" | "train" | "transport";
 
-export const STAGE_TYPE_ORDER: StageType[] = ["bike", "train", "bus", "boat", "plane", "transport"];
+export const STAGE_TYPE_ORDER: StageType[] = ["bike", "transport", "train", "bus", "boat", "plane"];
 
 export interface StageTypeMeta {
   emoji: string;
@@ -18,7 +18,7 @@ export const STAGE_TYPE_META: Record<StageType, StageTypeMeta> = {
   bus:       { emoji: "🚌", color: "#2E9E5B", dashArray: "9 8", weight: 4, hasElevation: false },
   boat:      { emoji: "⛴️", color: "#1E88C9", dashArray: "2 9", weight: 4, hasElevation: false },
   plane:     { emoji: "✈️", color: "#7C5CD6", dashArray: "1 12", weight: 4, hasElevation: false },
-  transport: { emoji: "🧭", color: "#5B7C8A", dashArray: "6 9", weight: 4, hasElevation: false },
+  transport: { emoji: "🧭", color: "#2E9E5B", dashArray: "8 9", weight: 4, hasElevation: false },
 };
 
 // Les anciennes étapes n'ont pas de champ `type` : vélo par défaut,
