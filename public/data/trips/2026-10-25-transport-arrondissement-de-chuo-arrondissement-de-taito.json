@@ -1,0 +1,1014 @@
+{
+  "slug": "2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito",
+  "date": "2026-10-25",
+  "title": "Arrondissement De Chuo → Arrondissement De Taito",
+  "day": "Jour 152",
+  "location": "Arrondissement De Chuo → Arrondissement De Taito",
+  "country": "Japon",
+  "countryCode": "JP",
+  "region": "Préfecture de Hiroshima",
+  "startCity": "Hiroshima",
+  "endCity": "Arrondissement de Taitō",
+  "distanceKm": 788.3,
+  "elevationGain": 0,
+  "type": "transport",
+  "endDate": "2026-10-26",
+  "transport": true,
+  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "heroVideo": null,
+  "summary": "",
+  "fullStory": [],
+  "quote": null,
+  "translations": {
+    "fr": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "en": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "es": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "it": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "de": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    }
+  },
+  "lodgingUrl": "",
+  "lodgingName": "",
+  "thanks": "",
+  "thanksTranslations": {},
+  "photos": [],
+  "videos": [],
+  "gpxFile": "/gpx/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito_1.gpx",
+  "mapLat": 35.7028435,
+  "mapLng": 139.7906112,
+  "startLat": 34.3995578,
+  "startLng": 132.4738387,
+  "track": [
+    [
+      34.39956,
+      132.47384
+    ],
+    [
+      34.3723,
+      132.7363
+    ],
+    [
+      34.48882,
+      133.3597
+    ],
+    [
+      34.65277,
+      133.82775
+    ],
+    [
+      34.66514,
+      133.91849
+    ],
+    [
+      34.67723,
+      133.9241
+    ],
+    [
+      34.82919,
+      134.57735
+    ],
+    [
+      34.81406,
+      134.7397
+    ],
+    [
+      34.66588,
+      134.97535
+    ],
+    [
+      34.70668,
+      135.19611
+    ],
+    [
+      34.76213,
+      135.43072
+    ],
+    [
+      34.72545,
+      135.47473
+    ],
+    [
+      34.73265,
+      135.4897
+    ],
+    [
+      34.73217,
+      135.49529
+    ],
+    [
+      34.73329,
+      135.49848
+    ],
+    [
+      34.74668,
+      135.53209
+    ],
+    [
+      34.89591,
+      135.68651
+    ],
+    [
+      34.97667,
+      135.72388
+    ],
+    [
+      34.9852,
+      135.74656
+    ],
+    [
+      34.98434,
+      135.75787
+    ],
+    [
+      34.99699,
+      135.95967
+    ],
+    [
+      35.12933,
+      136.15538
+    ],
+    [
+      35.36588,
+      136.52748
+    ],
+    [
+      35.34129,
+      136.6484
+    ],
+    [
+      35.18212,
+      136.87395
+    ],
+    [
+      35.18122,
+      136.87587
+    ],
+    [
+      35.17129,
+      136.88086
+    ],
+    [
+      34.8411,
+      137.20982
+    ],
+    [
+      34.70066,
+      137.54483
+    ],
+    [
+      34.6875,
+      137.64374
+    ],
+    [
+      34.74799,
+      137.9463
+    ],
+    [
+      34.78887,
+      138.15535
+    ],
+    [
+      34.97358,
+      138.39416
+    ],
+    [
+      35.15679,
+      139.10842
+    ],
+    [
+      35.26882,
+      139.16726
+    ],
+    [
+      35.46815,
+      139.54796
+    ],
+    [
+      35.49788,
+      139.6068
+    ],
+    [
+      35.50646,
+      139.6164
+    ],
+    [
+      35.62863,
+      139.74003
+    ],
+    [
+      35.6458,
+      139.74886
+    ],
+    [
+      35.65211,
+      139.75674
+    ],
+    [
+      35.67013,
+      139.75876
+    ],
+    [
+      35.6796,
+      139.76762
+    ],
+    [
+      35.68124,
+      139.76909
+    ],
+    [
+      35.67955,
+      139.77165
+    ],
+    [
+      35.68141,
+      139.77283
+    ],
+    [
+      35.68427,
+      139.77442
+    ],
+    [
+      35.68496,
+      139.77657
+    ],
+    [
+      35.68517,
+      139.77928
+    ],
+    [
+      35.68643,
+      139.78083
+    ],
+    [
+      35.68668,
+      139.78123
+    ],
+    [
+      35.68913,
+      139.77991
+    ],
+    [
+      35.68893,
+      139.77971
+    ],
+    [
+      35.68699,
+      139.78011
+    ],
+    [
+      35.68618,
+      139.78062
+    ],
+    [
+      35.68658,
+      139.78057
+    ],
+    [
+      35.68663,
+      139.78118
+    ],
+    [
+      35.68662,
+      139.78121
+    ],
+    [
+      35.68687,
+      139.7812
+    ],
+    [
+      35.68687,
+      139.78121
+    ],
+    [
+      35.68689,
+      139.7812
+    ],
+    [
+      35.68688,
+      139.7812
+    ],
+    [
+      35.6868,
+      139.78124
+    ],
+    [
+      35.6868,
+      139.78124
+    ],
+    [
+      35.68681,
+      139.78122
+    ],
+    [
+      35.68681,
+      139.78125
+    ],
+    [
+      35.68686,
+      139.78125
+    ],
+    [
+      35.68682,
+      139.78118
+    ],
+    [
+      35.68684,
+      139.78125
+    ],
+    [
+      35.68682,
+      139.78122
+    ],
+    [
+      35.68675,
+      139.78124
+    ],
+    [
+      35.68681,
+      139.78124
+    ],
+    [
+      35.68682,
+      139.78126
+    ],
+    [
+      35.68683,
+      139.78127
+    ],
+    [
+      35.68685,
+      139.78127
+    ],
+    [
+      35.68684,
+      139.78122
+    ],
+    [
+      35.68684,
+      139.78122
+    ],
+    [
+      35.68682,
+      139.78118
+    ],
+    [
+      35.68683,
+      139.78125
+    ],
+    [
+      35.68687,
+      139.78128
+    ],
+    [
+      35.68662,
+      139.78113
+    ],
+    [
+      35.68483,
+      139.78175
+    ],
+    [
+      35.68485,
+      139.78167
+    ],
+    [
+      35.6849,
+      139.77854
+    ],
+    [
+      35.68216,
+      139.77602
+    ],
+    [
+      35.68258,
+      139.77378
+    ],
+    [
+      35.68284,
+      139.77086
+    ],
+    [
+      35.68154,
+      139.76907
+    ],
+    [
+      35.68077,
+      139.76842
+    ],
+    [
+      35.68262,
+      139.76887
+    ],
+    [
+      35.68468,
+      139.76891
+    ],
+    [
+      35.68302,
+      139.77197
+    ],
+    [
+      35.68251,
+      139.77411
+    ],
+    [
+      35.68458,
+      139.77493
+    ],
+    [
+      35.68503,
+      139.77771
+    ],
+    [
+      35.68522,
+      139.78009
+    ],
+    [
+      35.68529,
+      139.78239
+    ],
+    [
+      35.68624,
+      139.78195
+    ],
+    [
+      35.70284,
+      139.79061
+    ]
+  ],
+  "segments": [
+    [
+      [
+        34.39956,
+        132.47384
+      ],
+      [
+        34.3723,
+        132.7363
+      ],
+      [
+        34.48882,
+        133.3597
+      ],
+      [
+        34.65277,
+        133.82775
+      ],
+      [
+        34.66514,
+        133.91849
+      ],
+      [
+        34.67723,
+        133.9241
+      ],
+      [
+        34.82919,
+        134.57735
+      ],
+      [
+        34.81406,
+        134.7397
+      ],
+      [
+        34.66588,
+        134.97535
+      ],
+      [
+        34.70668,
+        135.19611
+      ],
+      [
+        34.76213,
+        135.43072
+      ],
+      [
+        34.72545,
+        135.47473
+      ],
+      [
+        34.73265,
+        135.4897
+      ],
+      [
+        34.73217,
+        135.49529
+      ],
+      [
+        34.73329,
+        135.49848
+      ],
+      [
+        34.74668,
+        135.53209
+      ],
+      [
+        34.89591,
+        135.68651
+      ],
+      [
+        34.97667,
+        135.72388
+      ],
+      [
+        34.9852,
+        135.74656
+      ],
+      [
+        34.98434,
+        135.75787
+      ],
+      [
+        34.99699,
+        135.95967
+      ],
+      [
+        35.12933,
+        136.15538
+      ],
+      [
+        35.36588,
+        136.52748
+      ],
+      [
+        35.34129,
+        136.6484
+      ],
+      [
+        35.18212,
+        136.87395
+      ],
+      [
+        35.18122,
+        136.87587
+      ],
+      [
+        35.17129,
+        136.88086
+      ],
+      [
+        34.8411,
+        137.20982
+      ],
+      [
+        34.70066,
+        137.54483
+      ],
+      [
+        34.6875,
+        137.64374
+      ],
+      [
+        34.74799,
+        137.9463
+      ],
+      [
+        34.78887,
+        138.15535
+      ],
+      [
+        34.97358,
+        138.39416
+      ],
+      [
+        35.15679,
+        139.10842
+      ],
+      [
+        35.26882,
+        139.16726
+      ],
+      [
+        35.46815,
+        139.54796
+      ],
+      [
+        35.49788,
+        139.6068
+      ],
+      [
+        35.50646,
+        139.6164
+      ],
+      [
+        35.62863,
+        139.74003
+      ],
+      [
+        35.6458,
+        139.74886
+      ],
+      [
+        35.65211,
+        139.75674
+      ],
+      [
+        35.67013,
+        139.75876
+      ],
+      [
+        35.6796,
+        139.76762
+      ],
+      [
+        35.68124,
+        139.76909
+      ],
+      [
+        35.67955,
+        139.77165
+      ],
+      [
+        35.68141,
+        139.77283
+      ],
+      [
+        35.68427,
+        139.77442
+      ],
+      [
+        35.68496,
+        139.77657
+      ],
+      [
+        35.68517,
+        139.77928
+      ],
+      [
+        35.68643,
+        139.78083
+      ],
+      [
+        35.68668,
+        139.78123
+      ],
+      [
+        35.68913,
+        139.77991
+      ],
+      [
+        35.68893,
+        139.77971
+      ],
+      [
+        35.68699,
+        139.78011
+      ],
+      [
+        35.68618,
+        139.78062
+      ],
+      [
+        35.68658,
+        139.78057
+      ],
+      [
+        35.68663,
+        139.78118
+      ],
+      [
+        35.68662,
+        139.78121
+      ],
+      [
+        35.68687,
+        139.7812
+      ],
+      [
+        35.68687,
+        139.78121
+      ],
+      [
+        35.68689,
+        139.7812
+      ],
+      [
+        35.68688,
+        139.7812
+      ],
+      [
+        35.6868,
+        139.78124
+      ],
+      [
+        35.6868,
+        139.78124
+      ],
+      [
+        35.68681,
+        139.78122
+      ],
+      [
+        35.68681,
+        139.78125
+      ],
+      [
+        35.68686,
+        139.78125
+      ],
+      [
+        35.68682,
+        139.78118
+      ],
+      [
+        35.68684,
+        139.78125
+      ],
+      [
+        35.68682,
+        139.78122
+      ],
+      [
+        35.68675,
+        139.78124
+      ],
+      [
+        35.68681,
+        139.78124
+      ],
+      [
+        35.68682,
+        139.78126
+      ],
+      [
+        35.68683,
+        139.78127
+      ],
+      [
+        35.68685,
+        139.78127
+      ],
+      [
+        35.68684,
+        139.78122
+      ],
+      [
+        35.68684,
+        139.78122
+      ],
+      [
+        35.68682,
+        139.78118
+      ],
+      [
+        35.68683,
+        139.78125
+      ],
+      [
+        35.68687,
+        139.78128
+      ],
+      [
+        35.68662,
+        139.78113
+      ],
+      [
+        35.68483,
+        139.78175
+      ],
+      [
+        35.68485,
+        139.78167
+      ],
+      [
+        35.6849,
+        139.77854
+      ],
+      [
+        35.68216,
+        139.77602
+      ],
+      [
+        35.68258,
+        139.77378
+      ],
+      [
+        35.68284,
+        139.77086
+      ],
+      [
+        35.68154,
+        139.76907
+      ],
+      [
+        35.68077,
+        139.76842
+      ],
+      [
+        35.68262,
+        139.76887
+      ],
+      [
+        35.68468,
+        139.76891
+      ],
+      [
+        35.68302,
+        139.77197
+      ],
+      [
+        35.68251,
+        139.77411
+      ],
+      [
+        35.68458,
+        139.77493
+      ],
+      [
+        35.68503,
+        139.77771
+      ],
+      [
+        35.68522,
+        139.78009
+      ],
+      [
+        35.68529,
+        139.78239
+      ],
+      [
+        35.68624,
+        139.78195
+      ],
+      [
+        35.70284,
+        139.79061
+      ]
+    ]
+  ],
+  "elevProfile": [],
+  "minAltitude": null,
+  "highlights": [],
+  "tags": [],
+  "weather": null,
+  "pois": [],
+  "majorCities": [],
+  "topRatedPlaces": [
+    {
+      "title": "The Gate Hotel Ryogoku by HULIC",
+      "rating": 4.6,
+      "ratingCount": 674,
+      "types": [
+        "hotel",
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8754763629832269849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Nui. Hostel & Bar Lounge",
+      "rating": 4.5,
+      "ratingCount": 1443,
+      "types": [
+        "hostel",
+        "guest_house",
+        "cafe",
+        "inn",
+        "lodging",
+        "bar",
+        "meal_takeaway",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3290244247900002305&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "kakimori",
+      "rating": 4.5,
+      "ratingCount": 1221,
+      "types": [
+        "gift_shop",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "MyCUBE by MYSTAYS Asakusa Kuramae",
+      "rating": 4.5,
+      "ratingCount": 1104,
+      "types": [
+        "hotel",
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9998122391479285247&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Henn na Hotel Tokyo Asakusa Tawaramachi Premier",
+      "rating": 4.4,
+      "ratingCount": 1315,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10538945063344366281&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Kuramae Shrine",
+      "rating": 4.3,
+      "ratingCount": 1245,
+      "types": [
+        "shinto_shrine",
+        "tourist_attraction",
+        "place_of_worship",
+        "point_of_interest",
+        "association_or_organization",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14040132074380146120&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Toyoko Inn Asakusa Kuramae No.2",
+      "rating": 4.3,
+      "ratingCount": 912,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13290912773414126785&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "APA Hotel Asakusa Kuramae Kita",
+      "rating": 4.3,
+      "ratingCount": 653,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6701426467175926585&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
+      "rating": 4.2,
+      "ratingCount": 2753,
+      "types": [
+        "cafe",
+        "chocolate_shop",
+        "candy_store",
+        "dessert_shop",
+        "confectionery",
+        "chocolate_factory",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hotel Route-inn Grand Tokyo-Asakusabashi",
+      "rating": 4.2,
+      "ratingCount": 1103,
+      "types": [
+        "hotel",
+        "extended_stay_hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17578208240484866647&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
+  "specialties": []
+}

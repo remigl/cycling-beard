@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx xmlns:gpxtpx1="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:osmand="https://osmand.net/docs/technical/osmand-file-formats/osmand-gpx" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:ns7="http://trekbuddy.net/2009/01/gpx/nmea" version="1.1" creator="RouteConverter 3.8">
+    <metadata>
+        <name>Serbie – Sofia</name>
+        <time>2026-08-19T17:54:00.000Z</time>
+    </metadata>
+    <wpt lat="43.9528998" lon="21.3665924">
+        <time>2026-08-19T18:44:05.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.3252655" lon="21.8910545">
+        <time>2026-08-19T20:05:55.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.3123242" lon="21.8980536">
+        <time>2026-08-19T22:14:36.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.3230705" lon="21.8931503">
+        <time>2026-08-20T13:05:27.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.3229398" lon="21.8928237">
+        <time>2026-08-20T13:44:43.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.3252655" lon="21.8910545">
+        <time>2026-08-20T15:22:22.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.7101173" lon="23.3232613">
+        <time>2026-08-20T19:31:49.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.7049167" lon="23.3238878">
+        <time>2026-08-20T19:43:17.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.7003884" lon="23.3222775">
+        <time>2026-08-20T19:57:45.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.6947258" lon="23.3146523">
+        <time>2026-08-20T21:24:10.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.6947258" lon="23.3146523">
+        <time>2026-08-21T09:45:30.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.6955718" lon="23.323931">
+        <time>2026-08-21T10:04:22.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.696022" lon="23.3325315">
+        <time>2026-08-21T10:51:56.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.6999877" lon="23.3218238">
+        <time>2026-08-21T11:21:48.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.7121314" lon="23.3211214">
+        <time>2026-08-21T11:52:52.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.7046297" lon="23.3232583">
+        <time>2026-08-21T13:41:35.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.7002152" lon="23.3263532">
+        <time>2026-08-21T14:05:15.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.6932722" lon="23.3204633">
+        <time>2026-08-21T16:07:17.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.6977959" lon="23.3213577">
+        <time>2026-08-21T16:42:34.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="42.7121314" lon="23.3211214">
+        <time>2026-08-21T17:28:34.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <trk>
+        <name>Serbie – Sofia</name>
+        <trkseg>
+            <trkpt lat="44.5406717" lon="20.9927176">
+                <time>2026-08-19T17:54:00.000Z</time>
+                <name>Position 1</name>
+            </trkpt>
+            <trkpt lat="44.3902067" lon="21.064252">
+                <time>2026-08-19T18:05:00.000Z</time>
+                <name>Position 2</name>
+            </trkpt>
+            <trkpt lat="44.3810034" lon="21.0700065">
+                <time>2026-08-19T18:06:00.000Z</time>
+                <name>Position 3</name>
+            </trkpt>
+            <trkpt lat="44.3710587" lon="21.0691862">
+                <time>2026-08-19T18:07:00.000Z</time>
+                <name>Position 4</name>
+            </trkpt>
+            <trkpt lat="44.2836199" lon="21.1049944">
+                <time>2026-08-19T18:13:00.000Z</time>
+                <name>Position 5</name>
+            </trkpt>
+            <trkpt lat="44.1100056" lon="21.1631667">
+                <time>2026-08-19T18:26:00.000Z</time>
+                <name>Position 6</name>
+            </trkpt>
+            <trkpt lat="44.0933547" lon="21.1682452">
+                <time>2026-08-19T18:27:00.000Z</time>
+                <name>Position 7</name>
+            </trkpt>
+            <trkpt lat="43.9527026" lon="21.3665354">
+                <time>2026-08-19T18:44:00.000Z</time>
+                <name>Position 8</name>
+            </trkpt>
+            <trkpt lat="43.9527266" lon="21.3666289">
+                <time>2026-08-19T18:56:00.000Z</time>
+                <name>Position 9</name>
+            </trkpt>
+            <trkpt lat="43.8385043" lon="21.4273663">
+                <time>2026-08-19T19:06:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.749858" lon="21.453143">
+                <time>2026-08-19T19:13:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.6828687" lon="21.5452079">
+                <time>2026-08-19T19:20:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.6696478" lon="21.5467056">
+                <time>2026-08-19T19:21:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.6456818" lon="21.554965">
+                <time>2026-08-19T19:23:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.5334464" lon="21.7107473">
+                <time>2026-08-19T19:37:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.5142274" lon="21.7435912">
+                <time>2026-08-19T19:45:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3775856" lon="21.8121591">
+                <time>2026-08-19T19:55:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3568686" lon="21.8255917">
+                <time>2026-08-19T19:56:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3493957" lon="21.8506045">
+                <time>2026-08-19T19:58:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3494978" lon="21.8586911">
+                <time>2026-08-19T19:58:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3443073" lon="21.8680327">
+                <time>2026-08-19T20:00:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3286276" lon="21.8877288">
+                <time>2026-08-19T20:04:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3245369" lon="21.8905483">
+                <time>2026-08-19T20:06:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3236049" lon="21.8901838">
+                <time>2026-08-19T20:11:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3201902" lon="21.8910065">
+                <time>2026-08-19T20:16:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.318421" lon="21.8934433">
+                <time>2026-08-19T20:20:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3152852" lon="21.894818">
+                <time>2026-08-19T20:30:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3130477" lon="21.8981419">
+                <time>2026-08-19T20:36:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="43.3203867" lon="21.9002112">
+                <time>2026-08-19T21:10:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3180167" lon="21.8970891">
+                <time>2026-08-19T21:16:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3184102" lon="21.8935971">
+                <time>2026-08-19T21:19:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3189028" lon="21.8949306">
+                <time>2026-08-19T21:50:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3187574" lon="21.8948967">
+                <time>2026-08-19T21:51:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3171959" lon="21.8967416">
+                <time>2026-08-19T21:59:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3129959" lon="21.8982835">
+                <time>2026-08-19T22:03:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3156305" lon="21.8980758">
+                <time>2026-08-19T22:05:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3146964" lon="21.8977676">
+                <time>2026-08-19T22:06:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.312247" lon="21.8982076">
+                <time>2026-08-19T22:15:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3122361" lon="21.8981974">
+                <time>2026-08-19T22:38:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3122417" lon="21.8982071">
+                <time>2026-08-19T22:57:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3122417" lon="21.8982071">
+                <time>2026-08-19T23:08:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3122226" lon="21.8981913">
+                <time>2026-08-19T23:10:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3122439" lon="21.8982094">
+                <time>2026-08-19T23:22:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3121992" lon="21.8981579">
+                <time>2026-08-19T23:26:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3121997" lon="21.8981582">
+                <time>2026-08-20T09:44:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3133545" lon="21.8979844">
+                <time>2026-08-20T11:47:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3179729" lon="21.8946319">
+                <time>2026-08-20T12:00:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3232243" lon="21.8938146">
+                <time>2026-08-20T12:18:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3258186" lon="21.8965201">
+                <time>2026-08-20T12:22:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3236808" lon="21.895934">
+                <time>2026-08-20T13:05:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3223139" lon="21.8939575">
+                <time>2026-08-20T13:45:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3225664" lon="21.8933536">
+                <time>2026-08-20T15:00:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3244101" lon="21.8907607">
+                <time>2026-08-20T15:22:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3225486" lon="21.8902936">
+                <time>2026-08-20T15:24:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3252977" lon="21.8909652">
+                <time>2026-08-20T15:36:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3254171" lon="21.8900639">
+                <time>2026-08-20T16:05:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3274042" lon="21.8885862">
+                <time>2026-08-20T16:05:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.1617284" lon="22.5902438">
+                <time>2026-08-20T17:11:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.1616674" lon="22.5902485">
+                <time>2026-08-20T17:21:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.0104166" lon="22.7614654">
+                <time>2026-08-20T17:52:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.0140111" lon="22.7726484">
+                <time>2026-08-20T17:54:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="42.9981669" lon="22.8308025">
+                <time>2026-08-20T18:03:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="42.9799955" lon="22.8496807">
+                <time>2026-08-20T18:39:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="42.9637295" lon="22.8815169">
+                <time>2026-08-20T18:41:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="42.9655672" lon="22.8740939">
+                <time>2026-08-20T18:41:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="42.9222808" lon="22.9373376">
+                <time>2026-08-20T18:48:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="42.8565525" lon="23.0367308">
+                <time>2026-08-20T18:54:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="42.7815569" lon="23.1738366">
+                <time>2026-08-20T19:02:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7958812" lon="23.1449757">
+                <time>2026-08-20T19:04:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7820675" lon="23.2438009">
+                <time>2026-08-20T19:10:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7512252" lon="23.3195745">
+                <time>2026-08-20T19:14:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7576072" lon="23.3211027">
+                <time>2026-08-20T19:16:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7514712" lon="23.3197872">
+                <time>2026-08-20T19:18:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7318896" lon="23.3132032">
+                <time>2026-08-20T19:22:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7157603" lon="23.3106869">
+                <time>2026-08-20T19:26:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7107998" lon="23.3219664">
+                <time>2026-08-20T19:32:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7105972" lon="23.3220689">
+                <time>2026-08-20T19:36:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7085601" lon="23.3225189">
+                <time>2026-08-20T19:37:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7068499" lon="23.3234579">
+                <time>2026-08-20T19:39:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.704585" lon="23.3239286">
+                <time>2026-08-20T19:43:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7035826" lon="23.3235677">
+                <time>2026-08-20T19:53:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7011664" lon="23.3226656">
+                <time>2026-08-20T19:58:00.000Z</time>
+                <name>IN_BUS</name>
+            </trkpt>
+            <trkpt lat="42.7002075" lon="23.3222864">
+                <time>2026-08-20T21:00:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6983163" lon="23.3217809">
+                <time>2026-08-20T21:03:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.696583" lon="23.3207535">
+                <time>2026-08-20T21:08:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6938925" lon="23.32183">
+                <time>2026-08-20T21:15:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950902" lon="23.3183503">
+                <time>2026-08-20T21:19:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6947165" lon="23.314897">
+                <time>2026-08-20T21:24:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6949861" lon="23.314596">
+                <time>2026-08-20T21:31:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6949934" lon="23.3145936">
+                <time>2026-08-20T21:36:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950069" lon="23.3146859">
+                <time>2026-08-20T21:39:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950151" lon="23.3145627">
+                <time>2026-08-20T21:40:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950195" lon="23.3146145">
+                <time>2026-08-20T21:48:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950244" lon="23.3145934">
+                <time>2026-08-20T21:50:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950215" lon="23.3145653">
+                <time>2026-08-20T21:54:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950481" lon="23.3145597">
+                <time>2026-08-20T22:01:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950501" lon="23.3144894">
+                <time>2026-08-20T22:04:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950028" lon="23.3146583">
+                <time>2026-08-20T22:15:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950048" lon="23.314632">
+                <time>2026-08-20T22:25:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6944133" lon="23.3147077">
+                <time>2026-08-21T09:19:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950609" lon="23.3201014">
+                <time>2026-08-21T09:26:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6912426" lon="23.3198127">
+                <time>2026-08-21T09:32:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6930252" lon="23.3202659">
+                <time>2026-08-21T09:36:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.695036" lon="23.3194738">
+                <time>2026-08-21T09:42:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6949169" lon="23.3157785">
+                <time>2026-08-21T09:46:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6947295" lon="23.3157181">
+                <time>2026-08-21T09:52:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6950897" lon="23.3206008">
+                <time>2026-08-21T09:58:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6955498" lon="23.3238523">
+                <time>2026-08-21T10:04:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.69466" lon="23.3234668">
+                <time>2026-08-21T10:40:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6951157" lon="23.3264137">
+                <time>2026-08-21T10:46:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6961329" lon="23.3317398">
+                <time>2026-08-21T10:52:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6955371" lon="23.3318358">
+                <time>2026-08-21T11:07:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6967519" lon="23.3282709">
+                <time>2026-08-21T11:12:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6963021" lon="23.3256831">
+                <time>2026-08-21T11:14:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6995225" lon="23.3219244">
+                <time>2026-08-21T11:22:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7002801" lon="23.3223325">
+                <time>2026-08-21T11:32:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7046314" lon="23.3235234">
+                <time>2026-08-21T11:38:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.708824" lon="23.3228371">
+                <time>2026-08-21T11:45:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7122898" lon="23.3208587">
+                <time>2026-08-21T11:53:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7115352" lon="23.3208648">
+                <time>2026-08-21T13:27:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.70694" lon="23.3236047">
+                <time>2026-08-21T13:35:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7045198" lon="23.3247205">
+                <time>2026-08-21T13:40:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7046629" lon="23.3232417">
+                <time>2026-08-21T13:42:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7040574" lon="23.3236749">
+                <time>2026-08-21T13:57:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7010476" lon="23.3237">
+                <time>2026-08-21T14:04:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7010712" lon="23.3248879">
+                <time>2026-08-21T14:05:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7002802" lon="23.3260059">
+                <time>2026-08-21T15:08:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7005913" lon="23.3231964">
+                <time>2026-08-21T15:12:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6986327" lon="23.3219384">
+                <time>2026-08-21T15:16:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6958582" lon="23.3206005">
+                <time>2026-08-21T15:22:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6939721" lon="23.320474">
+                <time>2026-08-21T15:27:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6915531" lon="23.3199055">
+                <time>2026-08-21T15:37:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6921125" lon="23.3199837">
+                <time>2026-08-21T16:07:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6932191" lon="23.3202692">
+                <time>2026-08-21T16:32:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6959352" lon="23.3206141">
+                <time>2026-08-21T16:38:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.6981235" lon="23.3218678">
+                <time>2026-08-21T16:43:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.698078" lon="23.3214064">
+                <time>2026-08-21T17:08:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7034804" lon="23.3233459">
+                <time>2026-08-21T17:18:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7069068" lon="23.3231012">
+                <time>2026-08-21T17:24:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7105214" lon="23.3221625">
+                <time>2026-08-21T17:29:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7123465" lon="23.3206098">
+                <time>2026-08-21T17:38:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="42.7111612" lon="23.3222571">
+                <time>2026-08-21T18:00:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

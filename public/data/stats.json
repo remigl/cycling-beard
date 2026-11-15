@@ -1,8 +1,10 @@
 {
-  "totalKm": 5168,
-  "totalCountries": 9,
-  "totalDays": 77,
-  "totalStages": 55,
+  "totalKm": 31295,
+  "totalCountries": 17,
+  "totalDays": 156,
+  "bikeDays": 55,
+  "otherDays": 101,
+  "totalStages": 77,
   "totalElevation": 31845,
   "byType": {
     "bike": {
@@ -11,13 +13,20 @@
       "stages": 55,
       "days": 55,
       "countries": 9
+    },
+    "transport": {
+      "km": 26127,
+      "elevation": 0,
+      "stages": 22,
+      "days": 101,
+      "countries": 8
     }
   },
-  "currentCountry": "Croatie",
-  "currentCountryCode": "HR",
-  "currentLocation": "Grad Dubrovnik",
-  "currentType": "bike",
+  "currentCountry": "Singapour",
+  "currentCountryCode": "SG",
+  "currentLocation": "Singapour",
+  "currentType": "transport",
   "startDate": "2026-05-27",
   "lastUpdate": "2026-11-15",
-  "latestStageSlug": "2026-08-11-grad-korcula-grad-dubrovnik"
+  "latestStageSlug": "2026-10-26-transport-narita-singapour"
 }

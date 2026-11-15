@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx xmlns:gpxtpx1="http://www.garmin.com/xmlschemas/TrackPointExtension/v1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:trp="http://www.garmin.com/xmlschemas/TripExtensions/v1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xmlns:osmand="https://osmand.net/docs/technical/osmand-file-formats/osmand-gpx" xmlns:gpxtpx="http://www.garmin.com/xmlschemas/TrackPointExtension/v2" xmlns:ns7="http://trekbuddy.net/2009/01/gpx/nmea" version="1.1" creator="RouteConverter 3.8">
+    <metadata>
+        <name>Aktaou – Turkestan</name>
+        <time>2026-09-25T04:57:00.000Z</time>
+    </metadata>
+    <wpt lat="43.6969161" lon="51.3087374">
+        <time>2026-09-25T05:18:41.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="44.140951" lon="52.1711755">
+        <time>2026-09-25T06:54:26.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="45.4910909" lon="64.0866704">
+        <time>2026-09-26T08:34:50.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="44.8544615" lon="65.4951738">
+        <time>2026-09-26T10:51:36.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="44.1720856" lon="66.7351869">
+        <time>2026-09-26T13:47:19.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.2896778" lon="68.2168838">
+        <time>2026-09-26T17:47:25.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.2963914" lon="68.2839241">
+        <time>2026-09-26T18:14:07.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <wpt lat="43.2859065" lon="68.2131808">
+        <time>2026-09-27T11:51:47.000Z</time>
+        <name>UNKNOWN</name>
+    </wpt>
+    <trk>
+        <name>Aktaou – Turkestan</name>
+        <trkseg>
+            <trkpt lat="43.6299273" lon="51.1892969">
+                <time>2026-09-25T04:57:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.6174712" lon="51.220677">
+                <time>2026-09-25T05:00:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6175079" lon="51.2268312">
+                <time>2026-09-25T05:01:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.618528" lon="51.2299232">
+                <time>2026-09-25T05:01:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.624102" lon="51.2359842">
+                <time>2026-09-25T05:02:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6255929" lon="51.2301757">
+                <time>2026-09-25T05:02:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.623471" lon="51.2396311">
+                <time>2026-09-25T05:03:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6777028" lon="51.2396983">
+                <time>2026-09-25T05:08:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6827024" lon="51.2397877">
+                <time>2026-09-25T05:09:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6840015" lon="51.2586708">
+                <time>2026-09-25T05:10:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6856189" lon="51.263112">
+                <time>2026-09-25T05:11:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6821953" lon="51.3009427">
+                <time>2026-09-25T05:14:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6981473" lon="51.2975333">
+                <time>2026-09-25T05:17:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6985296" lon="51.3052867">
+                <time>2026-09-25T05:18:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6978824" lon="51.3068587">
+                <time>2026-09-25T05:19:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.6985224" lon="51.307599">
+                <time>2026-09-25T05:32:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.7092944" lon="51.3135606">
+                <time>2026-09-25T05:38:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.7607759" lon="51.3047711">
+                <time>2026-09-25T05:43:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.7663606" lon="51.3228769">
+                <time>2026-09-25T05:49:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.8458236" lon="51.4959954">
+                <time>2026-09-25T05:59:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.8904349" lon="51.5241374">
+                <time>2026-09-25T06:03:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.9786262" lon="51.7524009">
+                <time>2026-09-25T06:18:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.0152788" lon="51.8726366">
+                <time>2026-09-25T06:27:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.0391629" lon="51.9133388">
+                <time>2026-09-25T06:33:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.0732682" lon="52.0194746">
+                <time>2026-09-25T06:40:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.0780696" lon="52.0283323">
+                <time>2026-09-25T06:41:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1558401" lon="52.0597635">
+                <time>2026-09-25T06:47:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1392599" lon="52.1606343">
+                <time>2026-09-25T06:52:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1371036" lon="52.1585009">
+                <time>2026-09-25T06:53:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1406419" lon="52.1718929">
+                <time>2026-09-25T06:54:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1406419" lon="52.1718929">
+                <time>2026-09-25T07:09:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1339074" lon="52.1665152">
+                <time>2026-09-25T07:10:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1479888" lon="52.2165229">
+                <time>2026-09-25T07:13:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1431986" lon="52.2178649">
+                <time>2026-09-25T07:14:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.1339074" lon="52.1665152">
+                <time>2026-09-25T07:16:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="44.3298971" lon="53.529359">
+                <time>2026-09-25T09:53:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.3170334" lon="53.5650219">
+                <time>2026-09-25T09:58:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.3586503" lon="53.5848891">
+                <time>2026-09-25T10:02:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.3965854" lon="53.6556463">
+                <time>2026-09-25T10:07:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8382646" lon="54.5541425">
+                <time>2026-09-25T11:32:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8374668" lon="54.5546885">
+                <time>2026-09-25T11:38:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="45.2834" lon="55.1957038">
+                <time>2026-09-25T12:58:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="45.3073301" lon="55.2071726">
+                <time>2026-09-25T13:03:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.2967256" lon="55.2024863">
+                <time>2026-09-25T13:04:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.3198012" lon="55.1980817">
+                <time>2026-09-25T13:07:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.3237172" lon="55.1949932">
+                <time>2026-09-25T13:09:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.3230271" lon="55.1930075">
+                <time>2026-09-25T13:51:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.3073817" lon="55.2082783">
+                <time>2026-09-25T13:59:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.2817277" lon="55.1880244">
+                <time>2026-09-25T14:04:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.2650982" lon="55.1870257">
+                <time>2026-09-25T14:07:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="45.232069" lon="55.8597677">
+                <time>2026-09-25T15:05:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.232069" lon="55.8597677">
+                <time>2026-09-25T15:11:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="46.5074081" lon="57.9647103">
+                <time>2026-09-25T20:27:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.6530248" lon="63.3152776">
+                <time>2026-09-26T07:25:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.4890229" lon="64.0858198">
+                <time>2026-09-26T08:33:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.4908455" lon="64.0855444">
+                <time>2026-09-26T08:34:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.4909238" lon="64.08846">
+                <time>2026-09-26T08:35:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.4904143" lon="64.0889552">
+                <time>2026-09-26T08:43:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.4810669" lon="64.0945478">
+                <time>2026-09-26T08:48:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.3845905" lon="64.2554487">
+                <time>2026-09-26T09:00:00.000Z</time>
+                <name>IN_FERRY</name>
+            </trkpt>
+            <trkpt lat="45.1935665" lon="64.5127355">
+                <time>2026-09-26T09:23:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="45.1904825" lon="64.5142028">
+                <time>2026-09-26T09:24:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="45.076298" lon="64.6579615">
+                <time>2026-09-26T09:40:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="45.0747778" lon="64.6896629">
+                <time>2026-09-26T09:48:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="45.0576723" lon="64.9912953">
+                <time>2026-09-26T10:06:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="45.0531539" lon="64.9998746">
+                <time>2026-09-26T10:11:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.9972359" lon="65.2749835">
+                <time>2026-09-26T10:28:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.9943884" lon="65.301061">
+                <time>2026-09-26T10:30:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.9167208" lon="65.3832904">
+                <time>2026-09-26T10:38:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8543287" lon="65.4980549">
+                <time>2026-09-26T10:52:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8533231" lon="65.5004055">
+                <time>2026-09-26T11:00:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8528395" lon="65.501994">
+                <time>2026-09-26T11:12:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8538204" lon="65.5147678">
+                <time>2026-09-26T11:14:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8503213" lon="65.525121">
+                <time>2026-09-26T11:15:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8368673" lon="65.5364112">
+                <time>2026-09-26T11:18:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8211399" lon="65.5688459">
+                <time>2026-09-26T11:23:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8129804" lon="65.5857935">
+                <time>2026-09-26T11:25:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8072893" lon="65.5919129">
+                <time>2026-09-26T11:30:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.804875" lon="65.5907679">
+                <time>2026-09-26T11:35:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.8081072" lon="65.6145203">
+                <time>2026-09-26T11:46:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.7808905" lon="65.5772827">
+                <time>2026-09-26T11:52:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.7640532" lon="65.7802955">
+                <time>2026-09-26T12:05:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.6317777" lon="66.0525641">
+                <time>2026-09-26T12:31:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.3209544" lon="66.4697637">
+                <time>2026-09-26T13:17:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.3090602" lon="66.4875289">
+                <time>2026-09-26T13:22:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.2908586" lon="66.533421">
+                <time>2026-09-26T13:27:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1801934" lon="66.7194312">
+                <time>2026-09-26T13:41:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1723353" lon="66.740429">
+                <time>2026-09-26T13:46:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1725997" lon="66.7374469">
+                <time>2026-09-26T13:47:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1707663" lon="66.7379016">
+                <time>2026-09-26T13:59:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1714214" lon="66.7381573">
+                <time>2026-09-26T14:05:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1606799" lon="66.7577921">
+                <time>2026-09-26T14:11:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1307665" lon="66.8137174">
+                <time>2026-09-26T14:16:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.0836986" lon="66.9302992">
+                <time>2026-09-26T14:33:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.0753861" lon="66.9267611">
+                <time>2026-09-26T14:50:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.1329387" lon="66.9495459">
+                <time>2026-09-26T14:57:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="44.0232708" lon="67.0236093">
+                <time>2026-09-26T15:09:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.9933666" lon="67.0901963">
+                <time>2026-09-26T15:16:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.9923668" lon="67.0953922">
+                <time>2026-09-26T15:17:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.955869" lon="67.1694425">
+                <time>2026-09-26T15:24:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.9265014" lon="67.2286712">
+                <time>2026-09-26T15:33:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.9283001" lon="67.2343937">
+                <time>2026-09-26T15:33:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.9086914" lon="67.2436287">
+                <time>2026-09-26T15:37:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.9030531" lon="67.2438448">
+                <time>2026-09-26T15:38:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.8962757" lon="67.2400498">
+                <time>2026-09-26T15:44:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.8958219" lon="67.2435923">
+                <time>2026-09-26T15:49:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.9008185" lon="67.2488823">
+                <time>2026-09-26T15:55:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.8961181" lon="67.2478599">
+                <time>2026-09-26T16:00:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.8833634" lon="67.2626253">
+                <time>2026-09-26T16:01:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.8192078" lon="67.2901871">
+                <time>2026-09-26T16:09:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.8014834" lon="67.2982863">
+                <time>2026-09-26T16:11:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.7525748" lon="67.364413">
+                <time>2026-09-26T16:17:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.7141513" lon="67.4144167">
+                <time>2026-09-26T16:23:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.5742728" lon="67.6762649">
+                <time>2026-09-26T16:48:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.4516438" lon="67.906019">
+                <time>2026-09-26T17:05:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.4353282" lon="67.9356251">
+                <time>2026-09-26T17:12:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.4004915" lon="68.0148787">
+                <time>2026-09-26T17:19:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.3851953" lon="68.0281237">
+                <time>2026-09-26T17:24:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2972971" lon="68.1865162">
+                <time>2026-09-26T17:34:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2962433" lon="68.1974111">
+                <time>2026-09-26T17:35:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2888988" lon="68.207372">
+                <time>2026-09-26T17:38:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2881291" lon="68.212648">
+                <time>2026-09-26T17:39:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2854481" lon="68.2139217">
+                <time>2026-09-26T17:41:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2877747" lon="68.2150482">
+                <time>2026-09-26T17:45:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2894835" lon="68.2167917">
+                <time>2026-09-26T17:47:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2894435" lon="68.217054">
+                <time>2026-09-26T18:00:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.3024957" lon="68.2478826">
+                <time>2026-09-26T18:05:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.3035887" lon="68.2506509">
+                <time>2026-09-26T18:06:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.3013128" lon="68.2561517">
+                <time>2026-09-26T18:07:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.3011176" lon="68.261123">
+                <time>2026-09-26T18:08:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.302701" lon="68.2669996">
+                <time>2026-09-26T18:09:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.302738" lon="68.271248">
+                <time>2026-09-26T18:10:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2996167" lon="68.2765737">
+                <time>2026-09-26T18:11:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2980953" lon="68.2812596">
+                <time>2026-09-26T18:13:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2967401" lon="68.2837986">
+                <time>2026-09-26T18:14:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968185" lon="68.2843837">
+                <time>2026-09-26T18:15:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968308" lon="68.2843735">
+                <time>2026-09-26T18:16:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968521" lon="68.2843138">
+                <time>2026-09-26T18:17:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968605" lon="68.2842968">
+                <time>2026-09-26T18:19:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968425" lon="68.2843373">
+                <time>2026-09-26T18:20:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968177" lon="68.2842646">
+                <time>2026-09-26T18:21:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968454" lon="68.2843402">
+                <time>2026-09-26T18:22:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968261" lon="68.2845119">
+                <time>2026-09-26T18:23:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969599" lon="68.2844589">
+                <time>2026-09-26T18:24:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969363" lon="68.284415">
+                <time>2026-09-26T18:26:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2966778" lon="68.2842078">
+                <time>2026-09-26T18:27:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968864" lon="68.2843927">
+                <time>2026-09-26T18:28:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969723" lon="68.2844848">
+                <time>2026-09-26T18:29:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968799" lon="68.2844112">
+                <time>2026-09-26T18:30:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2966683" lon="68.2840897">
+                <time>2026-09-26T18:31:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2966868" lon="68.2840877">
+                <time>2026-09-26T18:32:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2966868" lon="68.2840877">
+                <time>2026-09-26T18:33:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969465" lon="68.2844544">
+                <time>2026-09-26T18:34:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2966715" lon="68.2841756">
+                <time>2026-09-26T18:35:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.296709" lon="68.284029">
+                <time>2026-09-26T18:36:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969354" lon="68.2844884">
+                <time>2026-09-26T18:41:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968812" lon="68.2843684">
+                <time>2026-09-26T18:51:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969278" lon="68.2845011">
+                <time>2026-09-26T18:52:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969136" lon="68.2842544">
+                <time>2026-09-26T18:53:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969189" lon="68.284341">
+                <time>2026-09-26T18:55:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968463" lon="68.2843329">
+                <time>2026-09-26T18:56:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968463" lon="68.2843329">
+                <time>2026-09-26T18:57:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2969043" lon="68.2844454">
+                <time>2026-09-26T18:58:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2968751" lon="68.2844508">
+                <time>2026-09-26T18:59:00.000Z</time>
+                <name>IN_TRAIN</name>
+            </trkpt>
+            <trkpt lat="43.2967972" lon="68.2844492">
+                <time>2026-09-26T19:00:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968149" lon="68.2844518">
+                <time>2026-09-26T19:02:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969434" lon="68.284456">
+                <time>2026-09-26T19:05:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2970031" lon="68.2843623">
+                <time>2026-09-26T19:06:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2971493" lon="68.2843582">
+                <time>2026-09-26T19:07:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2971493" lon="68.2843582">
+                <time>2026-09-26T19:08:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2967345" lon="68.2844325">
+                <time>2026-09-26T19:10:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2967081" lon="68.2843779">
+                <time>2026-09-26T19:12:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2967963" lon="68.2844108">
+                <time>2026-09-26T19:13:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2967963" lon="68.2844108">
+                <time>2026-09-26T19:14:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2964619" lon="68.2838878">
+                <time>2026-09-26T19:15:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2965129" lon="68.283783">
+                <time>2026-09-26T19:17:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2965254" lon="68.2837763">
+                <time>2026-09-26T19:18:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2964503" lon="68.2837309">
+                <time>2026-09-26T19:19:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2963067" lon="68.2840108">
+                <time>2026-09-26T19:20:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2962537" lon="68.2841827">
+                <time>2026-09-26T19:21:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.3007448" lon="68.2789945">
+                <time>2026-09-26T19:24:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2956384" lon="68.2848448">
+                <time>2026-09-26T19:26:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945571" lon="68.2867178">
+                <time>2026-09-26T19:28:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945525" lon="68.286722">
+                <time>2026-09-26T19:29:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945523" lon="68.2867233">
+                <time>2026-09-26T19:30:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.294552" lon="68.2867221">
+                <time>2026-09-26T19:31:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945499" lon="68.2867245">
+                <time>2026-09-26T19:32:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945233" lon="68.2868553">
+                <time>2026-09-26T19:49:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2944946" lon="68.2866933">
+                <time>2026-09-26T19:58:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945836" lon="68.2866472">
+                <time>2026-09-26T19:59:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2944645" lon="68.286702">
+                <time>2026-09-26T20:00:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945675" lon="68.286753">
+                <time>2026-09-26T20:02:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2946851" lon="68.2869711">
+                <time>2026-09-26T20:03:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.294533" lon="68.2867876">
+                <time>2026-09-26T20:04:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945441" lon="68.2867258">
+                <time>2026-09-26T20:05:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2946351" lon="68.286804">
+                <time>2026-09-26T20:06:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945584" lon="68.286664">
+                <time>2026-09-26T20:07:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2945692" lon="68.2867845">
+                <time>2026-09-26T20:10:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2948033" lon="68.2863654">
+                <time>2026-09-26T20:20:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.297212" lon="68.2846328">
+                <time>2026-09-26T20:21:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2948958" lon="68.2864182">
+                <time>2026-09-26T20:25:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968791" lon="68.2844602">
+                <time>2026-09-26T20:31:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968906" lon="68.2844961">
+                <time>2026-09-26T20:38:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969301" lon="68.2844287">
+                <time>2026-09-26T20:39:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969632" lon="68.2845063">
+                <time>2026-09-26T20:41:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.296846" lon="68.2844714">
+                <time>2026-09-26T20:42:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2970092" lon="68.2844037">
+                <time>2026-09-26T20:43:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.296981" lon="68.2844418">
+                <time>2026-09-26T20:44:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.296991" lon="68.284515">
+                <time>2026-09-26T20:45:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969226" lon="68.2844273">
+                <time>2026-09-26T20:47:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969239" lon="68.2844285">
+                <time>2026-09-26T20:49:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969214" lon="68.2844317">
+                <time>2026-09-26T20:51:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969258" lon="68.2845155">
+                <time>2026-09-26T21:04:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968511" lon="68.2844378">
+                <time>2026-09-26T21:05:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968875" lon="68.2844275">
+                <time>2026-09-26T21:06:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969916" lon="68.2844072">
+                <time>2026-09-26T21:07:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968684" lon="68.284496">
+                <time>2026-09-26T21:08:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.29691" lon="68.2844511">
+                <time>2026-09-26T21:09:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2970083" lon="68.2844509">
+                <time>2026-09-26T21:11:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969348" lon="68.2844172">
+                <time>2026-09-26T21:12:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968601" lon="68.2843579">
+                <time>2026-09-26T21:13:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968694" lon="68.2844717">
+                <time>2026-09-26T21:14:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969404" lon="68.284375">
+                <time>2026-09-26T21:15:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969499" lon="68.2845222">
+                <time>2026-09-26T21:16:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968949" lon="68.2844157">
+                <time>2026-09-26T21:17:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969393" lon="68.2844207">
+                <time>2026-09-26T21:19:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969272" lon="68.2844585">
+                <time>2026-09-26T21:21:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969332" lon="68.2844195">
+                <time>2026-09-26T21:22:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969332" lon="68.2844195">
+                <time>2026-09-26T21:24:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969332" lon="68.2844195">
+                <time>2026-09-26T21:25:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969345" lon="68.2844222">
+                <time>2026-09-26T21:26:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969316" lon="68.284422">
+                <time>2026-09-26T21:27:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969364" lon="68.2844195">
+                <time>2026-09-26T21:28:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969338" lon="68.2844186">
+                <time>2026-09-26T21:29:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969364" lon="68.2844195">
+                <time>2026-09-26T21:30:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969338" lon="68.2844186">
+                <time>2026-09-26T21:33:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969321" lon="68.2844213">
+                <time>2026-09-26T21:35:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2970578" lon="68.2843834">
+                <time>2026-09-26T21:36:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968799" lon="68.2843799">
+                <time>2026-09-26T21:37:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2971621" lon="68.2843634">
+                <time>2026-09-26T21:38:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969338" lon="68.2844186">
+                <time>2026-09-26T21:39:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969762" lon="68.2844462">
+                <time>2026-09-26T21:40:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969338" lon="68.2844186">
+                <time>2026-09-26T21:41:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969077" lon="68.2844585">
+                <time>2026-09-26T21:42:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2969365" lon="68.2844491">
+                <time>2026-09-26T21:49:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2972874" lon="68.2844549">
+                <time>2026-09-26T21:50:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2972874" lon="68.2844549">
+                <time>2026-09-26T21:51:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2968144" lon="68.284396">
+                <time>2026-09-26T21:52:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2970361" lon="68.2844233">
+                <time>2026-09-26T21:55:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.297226" lon="68.2844601">
+                <time>2026-09-26T21:56:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2970825" lon="68.2844331">
+                <time>2026-09-26T21:58:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2970638" lon="68.2843334">
+                <time>2026-09-26T21:59:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2950499" lon="68.2852841">
+                <time>2026-09-27T07:09:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2951831" lon="68.2837415">
+                <time>2026-09-27T07:12:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2932759" lon="68.284125">
+                <time>2026-09-27T07:14:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2929105" lon="68.2847625">
+                <time>2026-09-27T07:16:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2927365" lon="68.2845159">
+                <time>2026-09-27T07:20:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2941537" lon="68.2845811">
+                <time>2026-09-27T07:21:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2937062" lon="68.2837085">
+                <time>2026-09-27T07:22:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2941719" lon="68.2828201">
+                <time>2026-09-27T07:23:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2938806" lon="68.2821305">
+                <time>2026-09-27T07:24:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.293533" lon="68.281767">
+                <time>2026-09-27T07:25:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2935161" lon="68.2809783">
+                <time>2026-09-27T07:26:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2935404" lon="68.2803034">
+                <time>2026-09-27T07:27:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2939841" lon="68.2795245">
+                <time>2026-09-27T07:28:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2942199" lon="68.2788615">
+                <time>2026-09-27T07:29:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2940366" lon="68.2777727">
+                <time>2026-09-27T07:30:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2936254" lon="68.2781185">
+                <time>2026-09-27T07:31:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2944609" lon="68.2767949">
+                <time>2026-09-27T07:32:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2946353" lon="68.2765999">
+                <time>2026-09-27T07:33:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2952632" lon="68.2755718">
+                <time>2026-09-27T07:34:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2965195" lon="68.2737273">
+                <time>2026-09-27T07:37:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2957217" lon="68.2741172">
+                <time>2026-09-27T07:39:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.29578" lon="68.2743102">
+                <time>2026-09-27T07:41:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2958498" lon="68.2743524">
+                <time>2026-09-27T07:42:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2956139" lon="68.2739392">
+                <time>2026-09-27T07:44:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2959075" lon="68.2742361">
+                <time>2026-09-27T07:46:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2956441" lon="68.2743095">
+                <time>2026-09-27T07:47:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2947714" lon="68.2758346">
+                <time>2026-09-27T07:52:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2947721" lon="68.2758531">
+                <time>2026-09-27T07:53:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2947712" lon="68.2758521">
+                <time>2026-09-27T07:54:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2947895" lon="68.2760691">
+                <time>2026-09-27T07:55:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2955337" lon="68.274738">
+                <time>2026-09-27T07:56:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.29541" lon="68.2746234">
+                <time>2026-09-27T07:57:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2960008" lon="68.2744102">
+                <time>2026-09-27T07:58:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2959849" lon="68.2744357">
+                <time>2026-09-27T07:59:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.296411" lon="68.2749258">
+                <time>2026-09-27T08:00:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2963223" lon="68.2748987">
+                <time>2026-09-27T08:01:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2954585" lon="68.2746523">
+                <time>2026-09-27T08:03:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2964141" lon="68.2750577">
+                <time>2026-09-27T08:04:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2958074" lon="68.2752255">
+                <time>2026-09-27T08:06:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.295819" lon="68.2750794">
+                <time>2026-09-27T08:07:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2958469" lon="68.2751582">
+                <time>2026-09-27T08:08:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2957836" lon="68.275281">
+                <time>2026-09-27T08:09:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2940282" lon="68.2779104">
+                <time>2026-09-27T08:11:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2942167" lon="68.278883">
+                <time>2026-09-27T08:12:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2932851" lon="68.2809325">
+                <time>2026-09-27T08:17:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2932819" lon="68.2810316">
+                <time>2026-09-27T08:18:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2932821" lon="68.2809911">
+                <time>2026-09-27T08:19:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2932704" lon="68.2809514">
+                <time>2026-09-27T08:20:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2932719" lon="68.2810401">
+                <time>2026-09-27T08:22:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2932493" lon="68.2782979">
+                <time>2026-09-27T08:33:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2933444" lon="68.2821148">
+                <time>2026-09-27T08:43:00.000Z</time>
+                <name>IN_PASSENGER_VEHICLE</name>
+            </trkpt>
+            <trkpt lat="43.2933146" lon="68.2786119">
+                <time>2026-09-27T09:05:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2957891" lon="68.2761005">
+                <time>2026-09-27T09:20:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2967161" lon="68.273438">
+                <time>2026-09-27T09:29:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3014538" lon="68.2692189">
+                <time>2026-09-27T09:33:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2987142" lon="68.2704763">
+                <time>2026-09-27T09:34:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2965042" lon="68.2745441">
+                <time>2026-09-27T09:36:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2979168" lon="68.2708382">
+                <time>2026-09-27T09:39:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.3019604" lon="68.2688143">
+                <time>2026-09-27T09:40:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2967161" lon="68.273438">
+                <time>2026-09-27T09:42:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2969705" lon="68.2708593">
+                <time>2026-09-27T09:46:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2965417" lon="68.2747335">
+                <time>2026-09-27T10:11:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2948843" lon="68.2764102">
+                <time>2026-09-27T10:19:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2941053" lon="68.2771482">
+                <time>2026-09-27T11:41:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2896294" lon="68.2757004">
+                <time>2026-09-27T11:42:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2806697" lon="68.2517894">
+                <time>2026-09-27T11:46:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2814433" lon="68.2239594">
+                <time>2026-09-27T11:50:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2862098" lon="68.2161008">
+                <time>2026-09-27T11:51:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2862504" lon="68.2130157">
+                <time>2026-09-27T11:52:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+            <trkpt lat="43.2764708" lon="68.2307116">
+                <time>2026-09-27T12:09:00.000Z</time>
+                <name>WALKING</name>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>

@@ -1,0 +1,836 @@
+{
+  "slug": "2026-09-27-transport-arys-chimkent",
+  "date": "2026-09-27",
+  "title": "Arys → Chimkent",
+  "day": "Jour 124",
+  "location": "Arys → Chimkent",
+  "country": "Kazakhstan",
+  "countryCode": "KZ",
+  "region": "Oblys du Turkestan",
+  "startCity": "Turkestan",
+  "endCity": "Chimkent",
+  "distanceKm": 206.8,
+  "elevationGain": 0,
+  "type": "transport",
+  "endDate": "2026-09-29",
+  "transport": true,
+  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "heroVideo": null,
+  "summary": "",
+  "fullStory": [],
+  "quote": null,
+  "translations": {
+    "fr": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "en": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "es": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "it": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "de": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    },
+    "nl": {
+      "summary": "",
+      "quote": null,
+      "fullStory": []
+    }
+  },
+  "lodgingUrl": "",
+  "lodgingName": "",
+  "thanks": "",
+  "thanksTranslations": {},
+  "photos": [],
+  "videos": [],
+  "gpxFile": "/gpx/2026-09-27-transport-arys-chimkent_1.gpx",
+  "mapLat": 42.2990127,
+  "mapLng": 69.6104711,
+  "startLat": 43.2764708,
+  "startLng": 68.2307116,
+  "track": [
+    [
+      43.27647,
+      68.23071
+    ],
+    [
+      43.28301,
+      68.30487
+    ],
+    [
+      42.8282,
+      68.44404
+    ],
+    [
+      42.77536,
+      68.37995
+    ],
+    [
+      42.50725,
+      68.7274
+    ],
+    [
+      42.43642,
+      68.79461
+    ],
+    [
+      42.4382,
+      68.79972
+    ],
+    [
+      42.43502,
+      68.79468
+    ],
+    [
+      42.43785,
+      68.79999
+    ],
+    [
+      42.43802,
+      68.79987
+    ],
+    [
+      42.43472,
+      68.79617
+    ],
+    [
+      42.43805,
+      68.80018
+    ],
+    [
+      42.43835,
+      68.81118
+    ],
+    [
+      42.42938,
+      68.82635
+    ],
+    [
+      42.43347,
+      68.82978
+    ],
+    [
+      42.42988,
+      68.96048
+    ],
+    [
+      42.32721,
+      69.51402
+    ],
+    [
+      42.30264,
+      69.571
+    ],
+    [
+      42.30196,
+      69.58329
+    ],
+    [
+      42.28502,
+      69.59558
+    ],
+    [
+      42.29678,
+      69.60637
+    ],
+    [
+      42.29901,
+      69.61047
+    ],
+    [
+      42.29944,
+      69.60924
+    ],
+    [
+      42.31333,
+      69.5952
+    ],
+    [
+      42.31575,
+      69.59523
+    ],
+    [
+      42.31654,
+      69.59129
+    ],
+    [
+      42.3192,
+      69.58836
+    ],
+    [
+      42.31935,
+      69.5861
+    ],
+    [
+      42.3206,
+      69.58714
+    ],
+    [
+      42.32011,
+      69.58766
+    ],
+    [
+      42.31785,
+      69.58904
+    ],
+    [
+      42.31902,
+      69.58851
+    ],
+    [
+      42.32051,
+      69.58712
+    ],
+    [
+      42.32034,
+      69.58639
+    ],
+    [
+      42.31956,
+      69.58385
+    ],
+    [
+      42.31788,
+      69.58166
+    ],
+    [
+      42.32037,
+      69.58739
+    ],
+    [
+      42.31953,
+      69.59138
+    ],
+    [
+      42.31747,
+      69.60087
+    ],
+    [
+      42.31383,
+      69.60222
+    ],
+    [
+      42.31142,
+      69.60122
+    ],
+    [
+      42.30963,
+      69.60285
+    ],
+    [
+      42.31274,
+      69.60176
+    ],
+    [
+      42.31445,
+      69.60103
+    ],
+    [
+      42.3169,
+      69.60318
+    ],
+    [
+      42.31708,
+      69.60242
+    ],
+    [
+      42.31829,
+      69.5991
+    ],
+    [
+      42.3202,
+      69.59802
+    ],
+    [
+      42.3196,
+      69.59834
+    ],
+    [
+      42.32183,
+      69.59791
+    ],
+    [
+      42.32429,
+      69.59792
+    ],
+    [
+      42.32438,
+      69.5953
+    ],
+    [
+      42.32512,
+      69.59253
+    ],
+    [
+      42.32641,
+      69.59075
+    ],
+    [
+      42.32539,
+      69.58929
+    ],
+    [
+      42.32465,
+      69.58606
+    ],
+    [
+      42.32239,
+      69.5868
+    ],
+    [
+      42.32158,
+      69.58728
+    ],
+    [
+      42.3207,
+      69.58512
+    ],
+    [
+      42.31873,
+      69.58661
+    ],
+    [
+      42.32116,
+      69.58485
+    ],
+    [
+      42.32012,
+      69.58643
+    ],
+    [
+      42.31926,
+      69.58816
+    ],
+    [
+      42.31795,
+      69.58882
+    ],
+    [
+      42.31753,
+      69.5894
+    ],
+    [
+      42.31585,
+      69.5876
+    ],
+    [
+      42.31506,
+      69.58729
+    ],
+    [
+      42.31634,
+      69.59357
+    ],
+    [
+      42.31475,
+      69.59956
+    ],
+    [
+      42.30572,
+      69.60042
+    ],
+    [
+      42.30929,
+      69.59893
+    ],
+    [
+      42.30328,
+      69.60388
+    ],
+    [
+      42.29949,
+      69.60995
+    ],
+    [
+      42.2988,
+      69.61002
+    ],
+    [
+      42.29904,
+      69.61051
+    ],
+    [
+      42.29901,
+      69.61047
+    ],
+    [
+      42.29884,
+      69.61038
+    ],
+    [
+      42.29901,
+      69.61047
+    ],
+    [
+      42.29901,
+      69.61047
+    ],
+    [
+      42.29901,
+      69.61047
+    ]
+  ],
+  "segments": [
+    [
+      [
+        43.27647,
+        68.23071
+      ],
+      [
+        43.28301,
+        68.30487
+      ],
+      [
+        42.8282,
+        68.44404
+      ],
+      [
+        42.77536,
+        68.37995
+      ],
+      [
+        42.50725,
+        68.7274
+      ],
+      [
+        42.43642,
+        68.79461
+      ],
+      [
+        42.4382,
+        68.79972
+      ],
+      [
+        42.43502,
+        68.79468
+      ],
+      [
+        42.43785,
+        68.79999
+      ],
+      [
+        42.43802,
+        68.79987
+      ],
+      [
+        42.43472,
+        68.79617
+      ],
+      [
+        42.43805,
+        68.80018
+      ],
+      [
+        42.43835,
+        68.81118
+      ],
+      [
+        42.42938,
+        68.82635
+      ],
+      [
+        42.43347,
+        68.82978
+      ],
+      [
+        42.42988,
+        68.96048
+      ],
+      [
+        42.32721,
+        69.51402
+      ],
+      [
+        42.30264,
+        69.571
+      ],
+      [
+        42.30196,
+        69.58329
+      ],
+      [
+        42.28502,
+        69.59558
+      ],
+      [
+        42.29678,
+        69.60637
+      ],
+      [
+        42.29901,
+        69.61047
+      ],
+      [
+        42.29944,
+        69.60924
+      ],
+      [
+        42.31333,
+        69.5952
+      ],
+      [
+        42.31575,
+        69.59523
+      ],
+      [
+        42.31654,
+        69.59129
+      ],
+      [
+        42.3192,
+        69.58836
+      ],
+      [
+        42.31935,
+        69.5861
+      ],
+      [
+        42.3206,
+        69.58714
+      ],
+      [
+        42.32011,
+        69.58766
+      ],
+      [
+        42.31785,
+        69.58904
+      ],
+      [
+        42.31902,
+        69.58851
+      ],
+      [
+        42.32051,
+        69.58712
+      ],
+      [
+        42.32034,
+        69.58639
+      ],
+      [
+        42.31956,
+        69.58385
+      ],
+      [
+        42.31788,
+        69.58166
+      ],
+      [
+        42.32037,
+        69.58739
+      ],
+      [
+        42.31953,
+        69.59138
+      ],
+      [
+        42.31747,
+        69.60087
+      ],
+      [
+        42.31383,
+        69.60222
+      ],
+      [
+        42.31142,
+        69.60122
+      ],
+      [
+        42.30963,
+        69.60285
+      ],
+      [
+        42.31274,
+        69.60176
+      ],
+      [
+        42.31445,
+        69.60103
+      ],
+      [
+        42.3169,
+        69.60318
+      ],
+      [
+        42.31708,
+        69.60242
+      ],
+      [
+        42.31829,
+        69.5991
+      ],
+      [
+        42.3202,
+        69.59802
+      ],
+      [
+        42.3196,
+        69.59834
+      ],
+      [
+        42.32183,
+        69.59791
+      ],
+      [
+        42.32429,
+        69.59792
+      ],
+      [
+        42.32438,
+        69.5953
+      ],
+      [
+        42.32512,
+        69.59253
+      ],
+      [
+        42.32641,
+        69.59075
+      ],
+      [
+        42.32539,
+        69.58929
+      ],
+      [
+        42.32465,
+        69.58606
+      ],
+      [
+        42.32239,
+        69.5868
+      ],
+      [
+        42.32158,
+        69.58728
+      ],
+      [
+        42.3207,
+        69.58512
+      ],
+      [
+        42.31873,
+        69.58661
+      ],
+      [
+        42.32116,
+        69.58485
+      ],
+      [
+        42.32012,
+        69.58643
+      ],
+      [
+        42.31926,
+        69.58816
+      ],
+      [
+        42.31795,
+        69.58882
+      ],
+      [
+        42.31753,
+        69.5894
+      ],
+      [
+        42.31585,
+        69.5876
+      ],
+      [
+        42.31506,
+        69.58729
+      ],
+      [
+        42.31634,
+        69.59357
+      ],
+      [
+        42.31475,
+        69.59956
+      ],
+      [
+        42.30572,
+        69.60042
+      ],
+      [
+        42.30929,
+        69.59893
+      ],
+      [
+        42.30328,
+        69.60388
+      ],
+      [
+        42.29949,
+        69.60995
+      ],
+      [
+        42.2988,
+        69.61002
+      ],
+      [
+        42.29904,
+        69.61051
+      ],
+      [
+        42.29901,
+        69.61047
+      ],
+      [
+        42.29884,
+        69.61038
+      ],
+      [
+        42.29901,
+        69.61047
+      ],
+      [
+        42.29901,
+        69.61047
+      ],
+      [
+        42.29901,
+        69.61047
+      ]
+    ]
+  ],
+  "elevProfile": [],
+  "minAltitude": null,
+  "highlights": [],
+  "tags": [],
+  "weather": null,
+  "pois": [],
+  "majorCities": [],
+  "topRatedPlaces": [
+    {
+      "title": "RoNat.kz",
+      "rating": 4.7,
+      "ratingCount": 55,
+      "types": [
+        "car_rental",
+        "service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8200052287596096307&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Shymkent Plaza",
+      "rating": 4.6,
+      "ratingCount": 13936,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17140335429646639020&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Mega Planet",
+      "rating": 4.5,
+      "ratingCount": 9723,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5397437020267548726&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Қатын-Көпір авто",
+      "rating": 4.5,
+      "ratingCount": 1218,
+      "types": [
+        "car_repair",
+        "service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1658984501827870004&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "HYPER HOUSE",
+      "rating": 4.5,
+      "ratingCount": 1008,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2113239882853613407&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Verkhniy Rynok \"Kazyna\"",
+      "rating": 4.3,
+      "ratingCount": 3764,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14785954916714864891&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Rahima Plaza",
+      "rating": 4.3,
+      "ratingCount": 3201,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6192337117574249905&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Aina Bazaar",
+      "rating": 4.2,
+      "ratingCount": 7126,
+      "types": [
+        "market",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17379258325376700166&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Bazar Akbar",
+      "rating": 4.2,
+      "ratingCount": 6458,
+      "types": [
+        "market",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12654740488511193328&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Avtovokzal Samal",
+      "rating": 4.2,
+      "ratingCount": 5476,
+      "types": [
+        "shipping_service",
+        "moving_company",
+        "service",
+        "point_of_interest",
+        "transportation_service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15452161949000095385&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
+  "specialties": []
+}
