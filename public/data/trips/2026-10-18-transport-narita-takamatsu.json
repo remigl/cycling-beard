@@ -1058,8 +1058,8 @@
       "ratingCount": 16562,
       "types": [
         "park",
-        "tourist_attraction",
         "garden",
+        "tourist_attraction",
         "point_of_interest",
         "establishment"
       ],
@@ -1096,8 +1096,8 @@
       "types": [
         "sauna",
         "spa",
-        "public_bath",
         "health",
+        "public_bath",
         "point_of_interest",
         "establishment"
       ],
@@ -1123,8 +1123,8 @@
         "hotel",
         "coworking_space",
         "lodging",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=12779366808462679656&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1132,7 +1132,7 @@
     {
       "title": "Udon Baka Ichidai",
       "rating": 4.1,
-      "ratingCount": 9421,
+      "ratingCount": 9422,
       "types": [
         "japanese_restaurant",
         "restaurant",
@@ -1163,8 +1163,8 @@
       "ratingCount": 2387,
       "types": [
         "ferry_service",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=7624962309433303979&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1175,8 +1175,8 @@
       "ratingCount": 2024,
       "types": [
         "chicken_restaurant",
-        "yakitori_restaurant",
         "japanese_izakaya_restaurant",
+        "yakitori_restaurant",
         "japanese_restaurant",
         "restaurant",
         "food",

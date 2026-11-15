@@ -2828,8 +2828,8 @@
         "cafe",
         "toy_store",
         "food",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17206393884080941756&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2837,7 +2837,7 @@
     {
       "title": "Artizon Museum",
       "rating": 4.5,
-      "ratingCount": 3390,
+      "ratingCount": 3391,
       "types": [
         "art_museum",
         "museum",
@@ -2900,7 +2900,7 @@
     {
       "title": "Creative Museum Tokyo",
       "rating": 4.2,
-      "ratingCount": 925,
+      "ratingCount": 926,
       "types": [
         "art_museum",
         "art_gallery",
@@ -2928,19 +2928,19 @@
       "ratingCount": 12817,
       "types": [
         "department_store",
-        "womens_clothing_store",
         "cosmetics_store",
         "shopping_mall",
+        "womens_clothing_store",
         "cafe",
         "tailor",
         "clothing_store",
         "grocery_store",
         "food_store",
+        "service",
         "restaurant",
         "food",
-        "store",
         "point_of_interest",
-        "service",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6814899307248303714&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

@@ -5883,8 +5883,8 @@
       "types": [
         "mosque",
         "place_of_worship",
-        "association_or_organization",
         "point_of_interest",
+        "association_or_organization",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17687221403170073570&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -5953,15 +5953,15 @@
       "ratingCount": 764,
       "types": [
         "hotel",
+        "business_center",
         "fitness_center",
         "gym",
-        "business_center",
         "inn",
         "swimming_pool",
+        "lodging",
         "sports_activity_location",
         "health",
         "service",
-        "lodging",
         "point_of_interest",
         "establishment"
       ],

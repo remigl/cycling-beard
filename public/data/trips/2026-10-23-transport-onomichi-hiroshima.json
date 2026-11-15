@@ -1447,13 +1447,13 @@
     {
       "title": "Jardin Shukkei-en",
       "rating": 4.5,
-      "ratingCount": 9185,
+      "ratingCount": 9186,
       "types": [
         "garden",
         "historical_landmark",
         "tourist_attraction",
-        "historical_place",
         "park",
+        "historical_place",
         "point_of_interest",
         "establishment"
       ],
@@ -1480,8 +1480,8 @@
         "wedding_venue",
         "lodging",
         "event_venue",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

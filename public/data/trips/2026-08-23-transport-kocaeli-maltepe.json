@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-09-10",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-08-23-transport-kocaeli-maltepe/img_5003.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -55,7 +55,34 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-08-23-transport-kocaeli-maltepe/img_5003.webp",
+      "thumb": "/media/2026-08-23-transport-kocaeli-maltepe/thumb_img_5003.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-08-23-transport-kocaeli-maltepe/img_5003.webp",
+      "thumb": "/media/2026-08-23-transport-kocaeli-maltepe/thumb_img_5003.webp",
+      "alt": "Img 5003",
+      "lat": 40.8783525,
+      "lng": 29.7742702
+    },
+    {
+      "src": "/media/2026-08-23-transport-kocaeli-maltepe/img_5004.webp",
+      "thumb": "/media/2026-08-23-transport-kocaeli-maltepe/thumb_img_5004.webp",
+      "alt": "Img 5004",
+      "lat": 40.8783525,
+      "lng": 29.7742702
+    },
+    {
+      "src": "/media/2026-08-23-transport-kocaeli-maltepe/img_5012.webp",
+      "thumb": "/media/2026-08-23-transport-kocaeli-maltepe/thumb_img_5012.webp",
+      "alt": "Img 5012",
+      "lat": 40.7765499,
+      "lng": 29.9738727
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-08-23-transport-kocaeli-maltepe_1.gpx",
   "mapLat": 40.9490802,
@@ -5551,7 +5578,7 @@
     {
       "title": "Hilltown",
       "rating": 4.5,
-      "ratingCount": 16978,
+      "ratingCount": 16981,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -5562,7 +5589,7 @@
     {
       "title": "Elite World Grand İstanbul Küçükyalı",
       "rating": 4.5,
-      "ratingCount": 7310,
+      "ratingCount": 7311,
       "types": [
         "hotel",
         "lodging",
@@ -5585,7 +5612,7 @@
     {
       "title": "Bostancı Marmaray",
       "rating": 4.5,
-      "ratingCount": 3070,
+      "ratingCount": 3073,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -5634,8 +5661,8 @@
         "bus_stop",
         "transit_stop",
         "transit_station",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=5046485941418050266&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -5643,12 +5670,12 @@
     {
       "title": "Küçükyalı",
       "rating": 4.4,
-      "ratingCount": 266,
+      "ratingCount": 267,
       "types": [
         "subway_station",
         "transit_station",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=1118980874570922273&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -5660,8 +5687,8 @@
       "types": [
         "subway_station",
         "transit_station",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9940723681722171254&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

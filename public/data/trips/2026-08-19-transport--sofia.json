@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-08-21",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-08-19-transport--sofia/img_4873.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -55,7 +55,65 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4873.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4873.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4873.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4873.webp",
+      "alt": "Img 4873"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4878.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4878.webp",
+      "alt": "Img 4878"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4885.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4885.webp",
+      "alt": "Img 4885"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4897.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4897.webp",
+      "alt": "Img 4897"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4901.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4901.webp",
+      "alt": "Img 4901"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4904.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4904.webp",
+      "alt": "Img 4904"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4906.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4906.webp",
+      "alt": "Img 4906"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4912.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4912.webp",
+      "alt": "Img 4912"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4918.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4918.webp",
+      "alt": "Img 4918"
+    },
+    {
+      "src": "/media/2026-08-19-transport--sofia/img_4922.webp",
+      "thumb": "/media/2026-08-19-transport--sofia/thumb_img_4922.webp",
+      "alt": "Img 4922",
+      "lat": 42.7122898,
+      "lng": 23.3208587
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-08-19-transport--sofia_1.gpx",
   "mapLat": 42.7111612,
@@ -1215,13 +1273,13 @@
     {
       "title": "Cathédrale Saint-Alexandre-Nevski",
       "rating": 4.8,
-      "ratingCount": 27598,
+      "ratingCount": 27602,
       "types": [
         "church",
         "tourist_attraction",
         "place_of_worship",
-        "association_or_organization",
         "point_of_interest",
+        "association_or_organization",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=185616201431929680&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1247,8 +1305,8 @@
         "tourist_attraction",
         "church",
         "place_of_worship",
-        "association_or_organization",
         "point_of_interest",
+        "association_or_organization",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14300161323953423416&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1268,7 +1326,7 @@
     {
       "title": "Happy Bar & Grill Sveta Nedelya",
       "rating": 4.5,
-      "ratingCount": 20720,
+      "ratingCount": 20726,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
@@ -1295,7 +1353,7 @@
     {
       "title": "Happy Bar & Grill Rakovski",
       "rating": 4.5,
-      "ratingCount": 12911,
+      "ratingCount": 12913,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
@@ -1315,8 +1373,8 @@
         "mosque",
         "tourist_attraction",
         "place_of_worship",
-        "association_or_organization",
         "point_of_interest",
+        "association_or_organization",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10178196981627827791&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1336,16 +1394,16 @@
     {
       "title": "BAUHAUS Bulgaria",
       "rating": 4.4,
-      "ratingCount": 9018,
+      "ratingCount": 9019,
       "types": [
         "building_materials_store",
         "garden_center",
         "hardware_store",
         "home_improvement_store",
         "home_goods_store",
-        "store",
         "service",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

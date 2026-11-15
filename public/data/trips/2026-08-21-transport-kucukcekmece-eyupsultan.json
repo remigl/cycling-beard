@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-08-23",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4927.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -55,7 +55,73 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4927.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4927.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4927.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4927.webp",
+      "alt": "Img 4927"
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4929.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4929.webp",
+      "alt": "Img 4929"
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4935.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4935.webp",
+      "alt": "Img 4935",
+      "lat": 42.5562491,
+      "lng": 23.7078673
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4936.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4936.webp",
+      "alt": "Img 4936",
+      "lat": 42.5562491,
+      "lng": 23.7078673
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4941.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4941.webp",
+      "alt": "Img 4941",
+      "lat": 41.0150121,
+      "lng": 28.9735425
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4949.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4949.webp",
+      "alt": "Img 4949",
+      "lat": 40.9888412,
+      "lng": 29.0267458
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4986.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4986.webp",
+      "alt": "Img 4986",
+      "lat": 40.9893633,
+      "lng": 29.0260624
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4995.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4995.webp",
+      "alt": "Img 4995"
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_4998.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_4998.webp",
+      "alt": "Img 4998"
+    },
+    {
+      "src": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/img_5001.webp",
+      "thumb": "/media/2026-08-21-transport-kucukcekmece-eyupsultan/thumb_img_5001.webp",
+      "alt": "Img 5001"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-08-21-transport-kucukcekmece-eyupsultan_1.gpx",
   "mapLat": 41.08958,
@@ -1038,7 +1104,7 @@
     {
       "title": "Kağıthane",
       "rating": 4.3,
-      "ratingCount": 365,
+      "ratingCount": 366,
       "types": [
         "subway_station",
         "transit_station",
@@ -1111,7 +1177,7 @@
     {
       "title": "Alibeyköy Bus Station",
       "rating": 4.1,
-      "ratingCount": 8077,
+      "ratingCount": 8081,
       "types": [
         "transit_depot",
         "point_of_interest",

@@ -1375,7 +1375,7 @@
     {
       "title": "Senkō-ji",
       "rating": 4.4,
-      "ratingCount": 3339,
+      "ratingCount": 3340,
       "types": [
         "buddhist_temple",
         "tourist_attraction",
@@ -1440,19 +1440,19 @@
       "ratingCount": 708,
       "types": [
         "rest_stop",
-        "bicycle_store",
-        "bakery",
-        "hotel",
-        "lodging",
-        "clothing_store",
         "cafe",
+        "hotel",
+        "bicycle_store",
+        "lodging",
         "bar",
-        "sporting_goods_store",
+        "bakery",
+        "clothing_store",
         "food_store",
-        "store",
         "restaurant",
         "food",
+        "sporting_goods_store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11542562443715878821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1464,10 +1464,10 @@
       "types": [
         "city_hall",
         "observation_deck",
-        "local_government_office",
-        "government_office",
         "service",
         "point_of_interest",
+        "local_government_office",
+        "government_office",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10228521009265532944&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
