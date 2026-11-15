@@ -168,7 +168,14 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       : [
           { value: nf(stats.totalKm), label: t("home.km") },
           { value: String(stats.totalCountries), label: t("home.countries") },
-          { value: String(stats.totalDays), label: t("home.days") },
+          {
+            value: String(stats.totalDays),
+            label: t("home.days"),
+            // Répartition : jours à vélo / autres jours
+            sub: stats.bikeDays != null && (stats.otherDays ?? 0) > 0
+              ? `🚴 ${stats.bikeDays} · 🧭 ${stats.otherDays}`
+              : undefined,
+          },
           { value: nf(stats.totalElevation), label: t("home.elevation") },
         ];
 
@@ -261,6 +268,11 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                   <div className="font-display font-extrabold text-[10px] text-text-on/50 uppercase tracking-[0.15em] mt-2">
                     {m.label}
                   </div>
+                  {(m as { sub?: string }).sub && (
+                    <div className="font-mono text-[10px] text-text-dim mt-1 whitespace-nowrap">
+                      {(m as { sub?: string }).sub}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

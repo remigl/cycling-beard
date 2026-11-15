@@ -1529,6 +1529,20 @@ async function syncFolder(drive, folder, cache, force) {
   const CALIBRATION_CUTOFF = "2026-08-08";
   const CALIBRATED_OFFSET_MS = 129 * 60000; // 2h09 : 9 min mesurées + 2h de fuseau non pris en compte
   const tp = gpxStats.timedPoints || [];
+  // Date de FIN de l'étape (un GPX peut s'étaler sur plusieurs jours) :
+  // jour local du dernier point horodaté.
+  let endDate = date;
+  if (tp.length > 0) {
+    const last = tp[tp.length - 1];
+    try {
+      const zone = tzLookup(last.lat, last.lng);
+      endDate = new Intl.DateTimeFormat("en-CA", { timeZone: zone, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date(last.t));
+    } catch {
+      endDate = new Date(last.t).toISOString().slice(0, 10);
+    }
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(endDate) || endDate < date) endDate = date;
+    if (endDate !== date) console.log(`  📆 étape sur plusieurs jours : ${date} → ${endDate}`);
+  }
   const tzOffsetMs = (date < CALIBRATION_CUTOFF)
     ? CALIBRATED_OFFSET_MS
     : computePhotoTzOffsetMs(gpxStats.endLat, gpxStats.endLng, tp.length > 0 ? tp[0].t : undefined);
@@ -1666,6 +1680,7 @@ async function syncFolder(drive, folder, cache, force) {
     elevationGain: isBike ? gpxStats.elevationGain : 0,
     maxAltitude: isBike ? (gpxStats.maxAltitude || undefined) : undefined,
     type: stageType,
+    endDate,
     transport: !isBike,
     coverImage: coverWebp || "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
     heroVideo: null,
@@ -1984,6 +1999,7 @@ async function main() {
     startLat: s.startLat ?? null,
     startLng: s.startLng ?? null,
     type: stageTypeOf(s),
+    endDate: s.endDate || s.date,
     transport: stageTypeOf(s) !== "bike",
     countryCode: s.countryCode || null,
     track: s.track || [],
@@ -2012,12 +2028,24 @@ async function main() {
   // pour le sélecteur de l'accueil. Le dénivelé ne compte qu'à vélo.
   const DAY_MS = 1000 * 60 * 60 * 24;
   const countriesOf = (list) => [...new Set(list.map(s => s.country).filter(c => c && c !== "—"))];
+  // Ensemble des jours (AAAA-MM-JJ) couverts par une liste d'étapes, de date à endDate
+  const daysCovered = (list) => {
+    const set = new Set();
+    for (const s of list) {
+      if (!s.date) continue;
+      const end = (s.endDate && s.endDate >= s.date) ? s.endDate : s.date;
+      for (let d = new Date(s.date + "T00:00:00Z"); d.toISOString().slice(0, 10) <= end; d = new Date(d.getTime() + DAY_MS)) {
+        set.add(d.toISOString().slice(0, 10));
+      }
+    }
+    return set;
+  };
   const summarize = (list) => ({
     km: Math.round(list.reduce((acc, s) => acc + (s.distanceKm || 0), 0)),
     elevation: Math.round(list.filter(s => stageTypeOf(s) === "bike").reduce((acc, s) => acc + (s.elevationGain || 0), 0)),
     stages: list.length,
-    // Jours = jours distincts où ce mode de déplacement a été utilisé
-    days: new Set(list.map(s => s.date).filter(Boolean)).size,
+    // Jours = jours distincts couverts (une étape peut durer plusieurs jours)
+    days: daysCovered(list).size,
     countries: countriesOf(list).length,
   });
   const byType = {};
@@ -2026,7 +2054,7 @@ async function main() {
     if (list.length > 0) byType[ty] = summarize(list);
   }
   const lastStage = stages[stages.length - 1];
-  const dates = stages.map(s => s.date).filter(Boolean).sort();
+  const dates = stages.flatMap(s => [s.date, s.endDate]).filter(Boolean).sort();
   const firstDate = dates[0] || null;
   const lastDate = dates[dates.length - 1] || null;
   // Total : durée du voyage = du 1er au dernier jour documenté (le compteur s'arrête
@@ -2037,10 +2065,20 @@ async function main() {
   }
   const all = summarize(stages);
 
+  // Jours répartis : vélo = jours avec au moins une étape à vélo ;
+  // "autres" = tout le reste du voyage (transport, pauses, woofing…),
+  // de sorte que vélo + autres = total.
+  const bikeDays = daysCovered(stages.filter(s => stageTypeOf(s) === "bike")).size;
+  const otherDays = Math.max(0, totalDays - bikeDays);
+  if (byType.bike) byType.bike.days = bikeDays;
+  if (byType.transport) byType.transport.days = otherDays;
+
   const stats = {
     totalKm: all.km,
     totalCountries: all.countries || 1,
     totalDays,
+    bikeDays,
+    otherDays,
     totalStages: all.stages,
     totalElevation: all.elevation,
     byType,

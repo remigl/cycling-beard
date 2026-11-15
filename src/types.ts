@@ -20,6 +20,7 @@ export interface TripSummary {
   startLng?: number | null;
   transport?: boolean;
   type?: string;
+  endDate?: string;
   countryCode?: string | null;
   track?: [number, number][];
   segments?: [number, number][][];
@@ -68,6 +69,8 @@ export interface SiteStats {
   totalDays: number;
   totalElevation: number;
   totalStages?: number;
+  bikeDays?: number;
+  otherDays?: number;
   byType?: Record<string, { km: number; elevation: number; stages: number; days: number; countries: number }>;
   currentType?: string;
   currentCountry: string;
