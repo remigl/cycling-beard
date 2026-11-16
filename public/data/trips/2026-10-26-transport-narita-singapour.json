@@ -2247,7 +2247,7 @@
     {
       "title": "Jewel Changi Airport",
       "rating": 4.8,
-      "ratingCount": 99635,
+      "ratingCount": 99640,
       "types": [
         "shopping_mall",
         "tourist_attraction",
@@ -2259,7 +2259,7 @@
     {
       "title": "Aéroport Changi de Singapour",
       "rating": 4.7,
-      "ratingCount": 77589,
+      "ratingCount": 77613,
       "types": [
         "international_airport",
         "shopping_mall",
@@ -2270,19 +2270,6 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15480804166024971523&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Loyang Tua Pek Kong",
-      "rating": 4.7,
-      "ratingCount": 2723,
-      "types": [
-        "tourist_attraction",
-        "place_of_worship",
-        "point_of_interest",
-        "association_or_organization",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=6348485859712215614&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Changi Airport",
@@ -2368,6 +2355,19 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=1428588025122902018&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Changi Village Hawker Centre",
+      "rating": 4.3,
+      "ratingCount": 14057,
+      "types": [
+        "food_court",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3141391163124868476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

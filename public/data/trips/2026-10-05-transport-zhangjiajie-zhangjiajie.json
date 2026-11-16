@@ -1491,7 +1491,7 @@
     {
       "title": "Tianmenshan Cableway",
       "rating": 4.7,
-      "ratingCount": 1817,
+      "ratingCount": 1818,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1562,8 +1562,8 @@
         "parking_lot",
         "parking",
         "transportation_service",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

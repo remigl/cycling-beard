@@ -876,8 +876,8 @@
         "hotel",
         "lodging",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=8754763629832269849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -888,15 +888,15 @@
       "ratingCount": 1443,
       "types": [
         "hostel",
-        "guest_house",
-        "cafe",
         "inn",
-        "lodging",
+        "guest_house",
         "bar",
         "meal_takeaway",
+        "lodging",
+        "cafe",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3290244247900002305&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -907,8 +907,8 @@
       "ratingCount": 1221,
       "types": [
         "gift_shop",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -921,8 +921,8 @@
         "hotel",
         "lodging",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9998122391479285247&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -930,7 +930,7 @@
     {
       "title": "Henn na Hotel Tokyo Asakusa Tawaramachi Premier",
       "rating": 4.4,
-      "ratingCount": 1315,
+      "ratingCount": 1317,
       "types": [
         "hotel",
         "lodging",
@@ -947,8 +947,8 @@
         "shinto_shrine",
         "tourist_attraction",
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14040132074380146120&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -956,7 +956,7 @@
     {
       "title": "Toyoko Inn Asakusa Kuramae No.2",
       "rating": 4.3,
-      "ratingCount": 912,
+      "ratingCount": 913,
       "types": [
         "hotel",
         "lodging",
@@ -980,18 +980,18 @@
     {
       "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
       "rating": 4.2,
-      "ratingCount": 2753,
+      "ratingCount": 2754,
       "types": [
         "cafe",
+        "chocolate_factory",
         "chocolate_shop",
         "candy_store",
         "dessert_shop",
         "confectionery",
-        "chocolate_factory",
         "food_store",
-        "food",
-        "point_of_interest",
         "store",
+        "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

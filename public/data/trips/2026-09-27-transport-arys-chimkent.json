@@ -822,11 +822,11 @@
       "rating": 4.2,
       "ratingCount": 5477,
       "types": [
-        "shipping_service",
         "moving_company",
+        "shipping_service",
+        "transportation_service",
         "service",
         "point_of_interest",
-        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15452161949000095385&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
