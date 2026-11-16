@@ -1479,7 +1479,7 @@
     {
       "title": "National Forest Pk of Tianmen Mountain",
       "rating": 4.8,
-      "ratingCount": 518,
+      "ratingCount": 519,
       "types": [
         "scenic_spot",
         "park",
@@ -1491,7 +1491,7 @@
     {
       "title": "Tianmenshan Cableway",
       "rating": 4.7,
-      "ratingCount": 1818,
+      "ratingCount": 1820,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1561,9 +1561,9 @@
       "types": [
         "parking_lot",
         "parking",
-        "transportation_service",
         "service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1571,7 +1571,7 @@
     {
       "title": "Tujia Folk Customs Park",
       "rating": 4.3,
-      "ratingCount": 438,
+      "ratingCount": 439,
       "types": [
         "national_park",
         "tourist_attraction",
@@ -1588,8 +1588,8 @@
       "types": [
         "train_station",
         "transit_station",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2335981638404137541&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

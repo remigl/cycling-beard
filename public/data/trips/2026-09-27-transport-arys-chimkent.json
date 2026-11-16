@@ -798,7 +798,7 @@
     {
       "title": "Aina Bazaar",
       "rating": 4.2,
-      "ratingCount": 7126,
+      "ratingCount": 7125,
       "types": [
         "market",
         "point_of_interest",
@@ -822,11 +822,11 @@
       "rating": 4.2,
       "ratingCount": 5477,
       "types": [
-        "moving_company",
         "shipping_service",
-        "transportation_service",
+        "moving_company",
         "service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15452161949000095385&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

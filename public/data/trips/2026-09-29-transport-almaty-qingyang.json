@@ -2202,8 +2202,8 @@
       "ratingCount": 48,
       "types": [
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17679692369752032426&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2227,8 +2227,8 @@
       "types": [
         "chinese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14207721148624174731&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2236,7 +2236,7 @@
     {
       "title": "People's Park",
       "rating": 4.5,
-      "ratingCount": 1189,
+      "ratingCount": 1191,
       "types": [
         "park",
         "tourist_attraction",
@@ -2272,7 +2272,7 @@
     {
       "title": "Kuan Alley and Zhai Alley",
       "rating": 4.4,
-      "ratingCount": 2147,
+      "ratingCount": 2146,
       "types": [
         "tourist_attraction",
         "point_of_interest",

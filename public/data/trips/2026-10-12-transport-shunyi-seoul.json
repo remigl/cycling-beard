@@ -6103,20 +6103,20 @@
     {
       "title": "MIMILINE",
       "rating": 4.8,
-      "ratingCount": 524,
+      "ratingCount": 526,
       "types": [
         "shopping_mall",
-        "coffee_shop",
         "cosmetics_store",
         "womens_clothing_store",
+        "coffee_shop",
         "cafe",
-        "wholesaler",
-        "clothing_store",
         "food_store",
-        "service",
-        "food",
-        "point_of_interest",
+        "clothing_store",
+        "wholesaler",
         "store",
+        "service",
+        "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6136,7 +6136,7 @@
     {
       "title": "DOOTA Mall",
       "rating": 4.5,
-      "ratingCount": 2533,
+      "ratingCount": 2537,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -6147,7 +6147,7 @@
     {
       "title": "Dongdaemun Design Plaza (DDP)",
       "rating": 4.4,
-      "ratingCount": 32328,
+      "ratingCount": 32331,
       "types": [
         "cultural_center",
         "point_of_interest",
@@ -6210,8 +6210,8 @@
       "types": [
         "subway_station",
         "transit_station",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=5040435384949148281&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

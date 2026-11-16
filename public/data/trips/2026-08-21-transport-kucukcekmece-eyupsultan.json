@@ -1108,8 +1108,8 @@
       "types": [
         "subway_station",
         "transit_station",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3494326699727152698&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1164,12 +1164,12 @@
     {
       "title": "Kağıthane",
       "rating": 4.2,
-      "ratingCount": 251,
+      "ratingCount": 252,
       "types": [
         "subway_station",
         "transit_station",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4158655498198188929&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1177,11 +1177,11 @@
     {
       "title": "Alibeyköy Bus Station",
       "rating": 4.1,
-      "ratingCount": 8081,
+      "ratingCount": 8083,
       "types": [
         "transit_depot",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17598678127873463050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

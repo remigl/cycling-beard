@@ -975,7 +975,7 @@
     {
       "title": "Château de Matsuyama",
       "rating": 4.5,
-      "ratingCount": 17534,
+      "ratingCount": 17542,
       "types": [
         "castle",
         "tourist_attraction",
@@ -1000,14 +1000,14 @@
     {
       "title": "Dormy Inn Matsuyama",
       "rating": 4.4,
-      "ratingCount": 1831,
+      "ratingCount": 1832,
       "types": [
         "hotel",
         "sauna",
-        "public_bath",
         "lodging",
         "spa",
         "health",
+        "public_bath",
         "point_of_interest",
         "establishment"
       ],
@@ -1016,7 +1016,7 @@
     {
       "title": "Daiwa Roynet Hotel Matsuyama",
       "rating": 4.3,
-      "ratingCount": 1957,
+      "ratingCount": 1958,
       "types": [
         "hotel",
         "lodging",
@@ -1042,20 +1042,20 @@
       "rating": 4.2,
       "ratingCount": 2271,
       "types": [
-        "massage_spa",
-        "tourist_attraction",
-        "massage",
         "sauna",
-        "public_bath",
+        "tourist_attraction",
+        "cafe",
         "hotel",
         "lodging",
-        "cafe",
+        "massage_spa",
         "spa",
+        "massage",
         "health",
+        "public_bath",
         "service",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=1627885297304274361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1063,7 +1063,7 @@
     {
       "title": "CANDEO HOTELS Matsuyama Okaido",
       "rating": 4.2,
-      "ratingCount": 1758,
+      "ratingCount": 1759,
       "types": [
         "hotel",
         "lodging",
@@ -1078,19 +1078,19 @@
       "ratingCount": 2607,
       "types": [
         "hotel",
-        "fitness_center",
         "business_center",
+        "fitness_center",
         "gym",
-        "bar",
-        "lodging",
         "swimming_pool",
-        "sports_activity_location",
+        "lodging",
         "event_venue",
+        "bar",
+        "sports_activity_location",
         "health",
         "service",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6641554347393664152&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1105,8 +1105,8 @@
         "lodging",
         "event_venue",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6461537703102875181&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1114,12 +1114,12 @@
     {
       "title": "Matsuyama City Station",
       "rating": 4,
-      "ratingCount": 279,
+      "ratingCount": 280,
       "types": [
         "train_station",
         "transit_station",
-        "transportation_service",
         "point_of_interest",
+        "transportation_service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=8728935889860366819&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

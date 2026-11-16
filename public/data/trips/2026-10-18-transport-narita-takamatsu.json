@@ -1055,7 +1055,7 @@
     {
       "title": "Ritsurin-kōen",
       "rating": 4.5,
-      "ratingCount": 16564,
+      "ratingCount": 16568,
       "types": [
         "park",
         "garden",
@@ -1080,7 +1080,7 @@
     {
       "title": "Comfort Hotel Takamatsu",
       "rating": 4.4,
-      "ratingCount": 736,
+      "ratingCount": 737,
       "types": [
         "hotel",
         "lodging",
@@ -1088,20 +1088,6 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=18299516049908609763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Takamatsu Pokapoka Onsen",
-      "rating": 4.3,
-      "ratingCount": 1415,
-      "types": [
-        "sauna",
-        "spa",
-        "health",
-        "public_bath",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=6194437465011440992&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "JR Hotel Clement Takamatsu",
@@ -1118,7 +1104,7 @@
     {
       "title": "WeBase Takamatsu",
       "rating": 4.2,
-      "ratingCount": 1060,
+      "ratingCount": 1061,
       "types": [
         "hotel",
         "coworking_space",
@@ -1170,20 +1156,30 @@
       "mapsUrl": "https://maps.google.com/?cid=7624962309433303979&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Ikkaku Ota",
+      "title": "Hotel Kawaroku Her-Stage Takamatsu",
       "rating": 4.1,
-      "ratingCount": 2024,
+      "ratingCount": 1826,
       "types": [
-        "chicken_restaurant",
-        "japanese_izakaya_restaurant",
-        "yakitori_restaurant",
-        "japanese_restaurant",
-        "restaurant",
-        "food",
+        "hotel",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=1762818014542831509&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=15156015861687426408&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Parc Tamamo des ruines du château de Takamatsu",
+      "rating": 4,
+      "ratingCount": 4192,
+      "types": [
+        "historical_landmark",
+        "tourist_attraction",
+        "park",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2177612574103133750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

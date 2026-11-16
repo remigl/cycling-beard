@@ -876,8 +876,8 @@
         "hotel",
         "lodging",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=8754763629832269849&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -888,15 +888,15 @@
       "ratingCount": 1443,
       "types": [
         "hostel",
-        "inn",
         "guest_house",
+        "cafe",
+        "inn",
+        "lodging",
         "bar",
         "meal_takeaway",
-        "lodging",
-        "cafe",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3290244247900002305&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -907,8 +907,8 @@
       "ratingCount": 1221,
       "types": [
         "gift_shop",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -921,8 +921,8 @@
         "hotel",
         "lodging",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9998122391479285247&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -947,8 +947,8 @@
         "shinto_shrine",
         "tourist_attraction",
         "place_of_worship",
-        "association_or_organization",
         "point_of_interest",
+        "association_or_organization",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14040132074380146120&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -983,15 +983,15 @@
       "ratingCount": 2754,
       "types": [
         "cafe",
-        "chocolate_factory",
         "chocolate_shop",
         "candy_store",
         "dessert_shop",
         "confectionery",
+        "chocolate_factory",
         "food_store",
-        "store",
-        "point_of_interest",
         "food",
+        "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

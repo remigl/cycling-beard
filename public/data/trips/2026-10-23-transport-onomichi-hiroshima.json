@@ -1447,7 +1447,7 @@
     {
       "title": "Jardin Shukkei-en",
       "rating": 4.5,
-      "ratingCount": 9189,
+      "ratingCount": 9192,
       "types": [
         "garden",
         "tourist_attraction",
@@ -1462,7 +1462,7 @@
     {
       "title": "HOTEL INTERGATE Hiroshima",
       "rating": 4.4,
-      "ratingCount": 1800,
+      "ratingCount": 1801,
       "types": [
         "hotel",
         "lodging",
@@ -1513,7 +1513,7 @@
     {
       "title": "Sotetsu Fresa Inn Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1066,
+      "ratingCount": 1068,
       "types": [
         "hotel",
         "lodging",
@@ -1525,7 +1525,7 @@
     {
       "title": "Hiroshima Station",
       "rating": 4.3,
-      "ratingCount": 337,
+      "ratingCount": 338,
       "types": [
         "tram_stop",
         "transit_stop",
@@ -1539,7 +1539,7 @@
     {
       "title": "Hotel Granvia Hiroshima",
       "rating": 4.2,
-      "ratingCount": 6626,
+      "ratingCount": 6627,
       "types": [
         "hotel",
         "lodging",
@@ -1551,7 +1551,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4609,
+      "ratingCount": 4618,
       "types": [
         "train_station",
         "transit_station",
