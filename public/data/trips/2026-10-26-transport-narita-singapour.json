@@ -2247,7 +2247,7 @@
     {
       "title": "Jewel Changi Airport",
       "rating": 4.8,
-      "ratingCount": 99649,
+      "ratingCount": 99659,
       "types": [
         "shopping_mall",
         "tourist_attraction",
@@ -2259,11 +2259,11 @@
     {
       "title": "Aéroport Changi de Singapour",
       "rating": 4.7,
-      "ratingCount": 77677,
+      "ratingCount": 77723,
       "types": [
         "international_airport",
-        "tourist_attraction",
         "shopping_mall",
+        "tourist_attraction",
         "airport",
         "transportation_service",
         "point_of_interest",
@@ -2274,7 +2274,7 @@
     {
       "title": "Changi Airport",
       "rating": 4.7,
-      "ratingCount": 1730,
+      "ratingCount": 1732,
       "types": [
         "subway_station",
         "transit_station",
@@ -2287,10 +2287,10 @@
     {
       "title": "SIA Training Centre",
       "rating": 4.6,
-      "ratingCount": 153,
+      "ratingCount": 154,
       "types": [
-        "transportation_service",
         "educational_institution",
+        "transportation_service",
         "point_of_interest",
         "establishment"
       ],
@@ -2299,11 +2299,11 @@
     {
       "title": "Changi Airport Terminal 2 Kopitiam",
       "rating": 4.5,
-      "ratingCount": 11238,
+      "ratingCount": 11240,
       "types": [
         "food_court",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11209850883266645349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2311,14 +2311,14 @@
     {
       "title": "Singapore Expo Hall 6",
       "rating": 4.5,
-      "ratingCount": 507,
+      "ratingCount": 509,
       "types": [
         "convention_center",
         "athletic_field",
         "event_venue",
-        "service",
         "sports_activity_location",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=1735453182545619759&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2326,7 +2326,7 @@
     {
       "title": "Downtown East",
       "rating": 4.4,
-      "ratingCount": 10623,
+      "ratingCount": 10624,
       "types": [
         "sports_activity_location",
         "point_of_interest",
@@ -2363,8 +2363,8 @@
       "types": [
         "food_court",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3141391163124868476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

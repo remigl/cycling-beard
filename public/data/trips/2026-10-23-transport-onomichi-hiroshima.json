@@ -1447,11 +1447,11 @@
     {
       "title": "Jardin Shukkei-en",
       "rating": 4.5,
-      "ratingCount": 9194,
+      "ratingCount": 9196,
       "types": [
         "garden",
-        "historical_landmark",
         "tourist_attraction",
+        "historical_landmark",
         "park",
         "historical_place",
         "point_of_interest",
@@ -1462,7 +1462,7 @@
     {
       "title": "HOTEL INTERGATE Hiroshima",
       "rating": 4.4,
-      "ratingCount": 1802,
+      "ratingCount": 1803,
       "types": [
         "hotel",
         "lodging",
@@ -1474,14 +1474,14 @@
     {
       "title": "Sheraton Grand Hiroshima Hotel",
       "rating": 4.3,
-      "ratingCount": 2797,
+      "ratingCount": 2798,
       "types": [
         "hotel",
         "wedding_venue",
-        "lodging",
         "event_venue",
-        "point_of_interest",
+        "lodging",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1489,11 +1489,11 @@
     {
       "title": "Pokémon Center Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1573,
+      "ratingCount": 1572,
       "types": [
         "toy_store",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1501,7 +1501,7 @@
     {
       "title": "Hotel Vista Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1325,
+      "ratingCount": 1326,
       "types": [
         "hotel",
         "lodging",
@@ -1513,7 +1513,7 @@
     {
       "title": "Sotetsu Fresa Inn Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1069,
+      "ratingCount": 1070,
       "types": [
         "hotel",
         "lodging",
@@ -1539,7 +1539,7 @@
     {
       "title": "Hotel Granvia Hiroshima",
       "rating": 4.2,
-      "ratingCount": 6628,
+      "ratingCount": 6631,
       "types": [
         "hotel",
         "lodging",
@@ -1551,7 +1551,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4620,
+      "ratingCount": 4626,
       "types": [
         "train_station",
         "transit_station",

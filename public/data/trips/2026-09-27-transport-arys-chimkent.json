@@ -822,9 +822,9 @@
       "rating": 4.2,
       "ratingCount": 5477,
       "types": [
+        "shipping_service",
         "moving_company",
         "transportation_service",
-        "shipping_service",
         "point_of_interest",
         "service",
         "establishment"

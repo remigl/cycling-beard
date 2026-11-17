@@ -1479,7 +1479,7 @@
     {
       "title": "National Forest Pk of Tianmen Mountain",
       "rating": 4.8,
-      "ratingCount": 520,
+      "ratingCount": 521,
       "types": [
         "scenic_spot",
         "park",
@@ -1555,20 +1555,6 @@
       "mapsUrl": "https://maps.google.com/?cid=17413876653293211658&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Zhangjiajie West Station-Parking Lot",
-      "rating": 4.4,
-      "ratingCount": 41,
-      "types": [
-        "parking_lot",
-        "parking",
-        "transportation_service",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
       "title": "Tujia Folk Customs Park",
       "rating": 4.3,
       "ratingCount": 439,
@@ -1580,6 +1566,20 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15002102103391430898&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Zhangjiajie West Station-Parking Lot",
+      "rating": 4.3,
+      "ratingCount": 42,
+      "types": [
+        "parking_lot",
+        "parking",
+        "transportation_service",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Zhangjiajie Railway Station",

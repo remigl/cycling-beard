@@ -1081,7 +1081,7 @@
     {
       "title": "Université Bilgi d'Istanbul",
       "rating": 4.4,
-      "ratingCount": 1215,
+      "ratingCount": 1216,
       "types": [
         "university",
         "educational_institution",
@@ -1093,7 +1093,7 @@
     {
       "title": "Alibeykoy Metro istasyon",
       "rating": 4.4,
-      "ratingCount": 822,
+      "ratingCount": 824,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -1104,7 +1104,7 @@
     {
       "title": "Kağıthane",
       "rating": 4.3,
-      "ratingCount": 367,
+      "ratingCount": 368,
       "types": [
         "subway_station",
         "transit_station",
@@ -1164,7 +1164,7 @@
     {
       "title": "Kağıthane",
       "rating": 4.2,
-      "ratingCount": 252,
+      "ratingCount": 253,
       "types": [
         "subway_station",
         "transit_station",

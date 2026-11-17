@@ -1375,7 +1375,7 @@
     {
       "title": "Senkō-ji",
       "rating": 4.4,
-      "ratingCount": 3341,
+      "ratingCount": 3344,
       "types": [
         "buddhist_temple",
         "tourist_attraction",
@@ -1404,7 +1404,7 @@
     {
       "title": "Senkoji Park",
       "rating": 4.2,
-      "ratingCount": 5132,
+      "ratingCount": 5133,
       "types": [
         "park",
         "tourist_attraction",
@@ -1416,7 +1416,7 @@
     {
       "title": "Senkoji Temple Mountain Ropeway",
       "rating": 4.2,
-      "ratingCount": 1718,
+      "ratingCount": 1722,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1427,7 +1427,7 @@
     {
       "title": "Gare téléphérique Sanroku",
       "rating": 4.2,
-      "ratingCount": 1009,
+      "ratingCount": 1011,
       "types": [
         "point_of_interest",
         "establishment"
@@ -1451,8 +1451,8 @@
         "bar",
         "restaurant",
         "food",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11542562443715878821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1475,7 +1475,7 @@
     {
       "title": "Maruboshi",
       "rating": 4.1,
-      "ratingCount": 2497,
+      "ratingCount": 2498,
       "types": [
         "ramen_restaurant",
         "japanese_restaurant",

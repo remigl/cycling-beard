@@ -5578,7 +5578,7 @@
     {
       "title": "Hilltown",
       "rating": 4.5,
-      "ratingCount": 16989,
+      "ratingCount": 16991,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -5589,7 +5589,7 @@
     {
       "title": "Elite World Grand İstanbul Küçükyalı",
       "rating": 4.5,
-      "ratingCount": 7316,
+      "ratingCount": 7318,
       "types": [
         "hotel",
         "lodging",
@@ -5623,7 +5623,7 @@
     {
       "title": "Küçükyalı Marmaray",
       "rating": 4.5,
-      "ratingCount": 1335,
+      "ratingCount": 1336,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -5683,7 +5683,7 @@
     {
       "title": "Bostancı",
       "rating": 4.3,
-      "ratingCount": 304,
+      "ratingCount": 306,
       "types": [
         "subway_station",
         "transit_station",

@@ -959,12 +959,12 @@
     {
       "title": "Eastern Gate Indian restaurant",
       "rating": 4.8,
-      "ratingCount": 1889,
+      "ratingCount": 1891,
       "types": [
         "indian_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3140440843158280554&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -987,10 +987,10 @@
       "types": [
         "hotel",
         "wedding_venue",
-        "lodging",
         "event_venue",
-        "point_of_interest",
+        "lodging",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1001,18 +1001,18 @@
       "ratingCount": 2932,
       "types": [
         "hotel",
-        "convention_center",
         "resort_hotel",
-        "wedding_venue",
-        "lodging",
+        "convention_center",
         "massage_spa",
-        "massage",
+        "wedding_venue",
         "spa",
         "event_venue",
+        "massage",
+        "lodging",
         "restaurant",
-        "food",
-        "point_of_interest",
         "service",
+        "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

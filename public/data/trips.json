@@ -526081,7 +526081,7 @@
       {
         "title": "Cathédrale Saint-Alexandre-Nevski",
         "rating": 4.8,
-        "ratingCount": 27608,
+        "ratingCount": 27611,
         "types": [
           "church",
           "tourist_attraction",
@@ -526108,7 +526108,7 @@
       {
         "title": "Cathédrale Sainte-Nédélia de Sofia",
         "rating": 4.8,
-        "ratingCount": 7571,
+        "ratingCount": 7575,
         "types": [
           "tourist_attraction",
           "church",
@@ -526134,7 +526134,7 @@
       {
         "title": "Happy Bar & Grill Sveta Nedelya",
         "rating": 4.5,
-        "ratingCount": 20738,
+        "ratingCount": 20740,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
@@ -526161,7 +526161,7 @@
       {
         "title": "Happy Bar & Grill Rakovski",
         "rating": 4.5,
-        "ratingCount": 12915,
+        "ratingCount": 12917,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
@@ -526176,7 +526176,7 @@
       {
         "title": "Grande Mosquée de Sofia",
         "rating": 4.5,
-        "ratingCount": 3985,
+        "ratingCount": 3987,
         "types": [
           "mosque",
           "tourist_attraction",
@@ -526190,7 +526190,7 @@
       {
         "title": "Université Saint-Clément d'Ohrid de Sofia",
         "rating": 4.5,
-        "ratingCount": 1825,
+        "ratingCount": 1826,
         "types": [
           "university",
           "educational_institution",
@@ -526209,9 +526209,9 @@
           "hardware_store",
           "home_improvement_store",
           "home_goods_store",
-          "store",
           "point_of_interest",
           "service",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -527297,7 +527297,7 @@
       {
         "title": "Université Bilgi d'Istanbul",
         "rating": 4.4,
-        "ratingCount": 1215,
+        "ratingCount": 1216,
         "types": [
           "university",
           "educational_institution",
@@ -527309,7 +527309,7 @@
       {
         "title": "Alibeykoy Metro istasyon",
         "rating": 4.4,
-        "ratingCount": 822,
+        "ratingCount": 824,
         "types": [
           "transportation_service",
           "point_of_interest",
@@ -527320,7 +527320,7 @@
       {
         "title": "Kağıthane",
         "rating": 4.3,
-        "ratingCount": 367,
+        "ratingCount": 368,
         "types": [
           "subway_station",
           "transit_station",
@@ -527380,7 +527380,7 @@
       {
         "title": "Kağıthane",
         "rating": 4.2,
-        "ratingCount": 252,
+        "ratingCount": 253,
         "types": [
           "subway_station",
           "transit_station",
@@ -532991,7 +532991,7 @@
       {
         "title": "Hilltown",
         "rating": 4.5,
-        "ratingCount": 16989,
+        "ratingCount": 16991,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -533002,7 +533002,7 @@
       {
         "title": "Elite World Grand İstanbul Küçükyalı",
         "rating": 4.5,
-        "ratingCount": 7316,
+        "ratingCount": 7318,
         "types": [
           "hotel",
           "lodging",
@@ -533036,7 +533036,7 @@
       {
         "title": "Küçükyalı Marmaray",
         "rating": 4.5,
-        "ratingCount": 1335,
+        "ratingCount": 1336,
         "types": [
           "transportation_service",
           "point_of_interest",
@@ -533096,7 +533096,7 @@
       {
         "title": "Bostancı",
         "rating": 4.3,
-        "ratingCount": 304,
+        "ratingCount": 306,
         "types": [
           "subway_station",
           "transit_station",
@@ -537669,7 +537669,7 @@
       {
         "title": "Museum of the War of Independence",
         "rating": 4.9,
-        "ratingCount": 6111,
+        "ratingCount": 6112,
         "types": [
           "history_museum",
           "tourist_attraction",
@@ -537682,7 +537682,7 @@
       {
         "title": "CSO Ada Ankara",
         "rating": 4.6,
-        "ratingCount": 3610,
+        "ratingCount": 3613,
         "types": [
           "concert_hall",
           "live_music_venue",
@@ -537697,7 +537697,7 @@
       {
         "title": "Ankara Tren Garı",
         "rating": 4.6,
-        "ratingCount": 1309,
+        "ratingCount": 1310,
         "types": [
           "transportation_service",
           "point_of_interest",
@@ -537708,7 +537708,7 @@
       {
         "title": "Ataturk Statue",
         "rating": 4.5,
-        "ratingCount": 28695,
+        "ratingCount": 28697,
         "types": [
           "monument",
           "tourist_attraction",
@@ -537721,7 +537721,7 @@
       {
         "title": "Ankara",
         "rating": 4.5,
-        "ratingCount": 5329,
+        "ratingCount": 5331,
         "types": [
           "train_station",
           "transit_station",
@@ -537734,7 +537734,7 @@
       {
         "title": "Ankara Arena",
         "rating": 4.5,
-        "ratingCount": 3905,
+        "ratingCount": 3906,
         "types": [
           "sports_complex",
           "sports_activity_location",
@@ -537771,7 +537771,7 @@
       {
         "title": "YHT GAR",
         "rating": 4.4,
-        "ratingCount": 6787,
+        "ratingCount": 6794,
         "types": [
           "transportation_service",
           "point_of_interest",
@@ -542596,7 +542596,7 @@
       {
         "title": "Cathédrale de la Trinité de Tbilissi",
         "rating": 4.8,
-        "ratingCount": 17198,
+        "ratingCount": 17202,
         "types": [
           "tourist_attraction",
           "church",
@@ -542610,7 +542610,7 @@
       {
         "title": "Pont de la Paix",
         "rating": 4.7,
-        "ratingCount": 18964,
+        "ratingCount": 18966,
         "types": [
           "bridge",
           "tourist_attraction",
@@ -542623,7 +542623,7 @@
       {
         "title": "Place de la Liberté",
         "rating": 4.7,
-        "ratingCount": 17848,
+        "ratingCount": 17853,
         "types": [
           "tourist_attraction",
           "point_of_interest",
@@ -542634,7 +542634,7 @@
       {
         "title": "Rike Park",
         "rating": 4.7,
-        "ratingCount": 15958,
+        "ratingCount": 15959,
         "types": [
           "city_park",
           "tourist_attraction",
@@ -542658,7 +542658,7 @@
       {
         "title": "Tour de l’horloge du Théâtre Gabriadze",
         "rating": 4.7,
-        "ratingCount": 6902,
+        "ratingCount": 6904,
         "types": [
           "tourist_attraction",
           "point_of_interest",
@@ -542683,7 +542683,7 @@
       {
         "title": "Kartlis Deda",
         "rating": 4.6,
-        "ratingCount": 6553,
+        "ratingCount": 6554,
         "types": [
           "monument",
           "tourist_attraction",
@@ -542695,7 +542695,7 @@
       {
         "title": "Palais de Justice de Tbilissi",
         "rating": 4.6,
-        "ratingCount": 4157,
+        "ratingCount": 4159,
         "types": [
           "local_government_office",
           "government_office",
@@ -551465,7 +551465,7 @@
       {
         "title": "Mausolée de Khoja Ahmed Yasavi",
         "rating": 4.8,
-        "ratingCount": 11713,
+        "ratingCount": 11714,
         "types": [
           "historical_landmark",
           "tourist_attraction",
@@ -551491,7 +551491,7 @@
       {
         "title": "Karavan Saray Hotel Turkistan",
         "rating": 4.7,
-        "ratingCount": 2011,
+        "ratingCount": 2012,
         "types": [
           "hotel",
           "department_store",
@@ -552413,9 +552413,9 @@
         "rating": 4.2,
         "ratingCount": 5477,
         "types": [
+          "shipping_service",
           "moving_company",
           "transportation_service",
-          "shipping_service",
           "point_of_interest",
           "service",
           "establishment"
@@ -553381,12 +553381,12 @@
       {
         "title": "Eastern Gate Indian restaurant",
         "rating": 4.8,
-        "ratingCount": 1889,
+        "ratingCount": 1891,
         "types": [
           "indian_restaurant",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=3140440843158280554&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -553409,10 +553409,10 @@
         "types": [
           "hotel",
           "wedding_venue",
-          "lodging",
           "event_venue",
-          "point_of_interest",
+          "lodging",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -553423,18 +553423,18 @@
         "ratingCount": 2932,
         "types": [
           "hotel",
-          "convention_center",
           "resort_hotel",
-          "wedding_venue",
-          "lodging",
+          "convention_center",
           "massage_spa",
-          "massage",
+          "wedding_venue",
           "spa",
           "event_venue",
+          "massage",
+          "lodging",
           "restaurant",
-          "food",
-          "point_of_interest",
           "service",
+          "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -555705,8 +555705,8 @@
       },
       {
         "title": "Grand Parcvue Hotel Residence Chengdu",
-        "rating": 4.7,
-        "ratingCount": 126,
+        "rating": 4.8,
+        "ratingCount": 125,
         "types": [
           "hotel",
           "lodging",
@@ -555722,8 +555722,8 @@
         "types": [
           "chinese_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=14207721148624174731&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -555758,8 +555758,8 @@
         "ratingCount": 61,
         "types": [
           "lodging",
-          "service",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15798742090729523652&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -555767,7 +555767,7 @@
       {
         "title": "Kuan Alley and Zhai Alley",
         "rating": 4.4,
-        "ratingCount": 2148,
+        "ratingCount": 2149,
         "types": [
           "tourist_attraction",
           "point_of_interest",
@@ -559467,7 +559467,7 @@
       {
         "title": "National Forest Pk of Tianmen Mountain",
         "rating": 4.8,
-        "ratingCount": 520,
+        "ratingCount": 521,
         "types": [
           "scenic_spot",
           "park",
@@ -559543,20 +559543,6 @@
         "mapsUrl": "https://maps.google.com/?cid=17413876653293211658&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
       },
       {
-        "title": "Zhangjiajie West Station-Parking Lot",
-        "rating": 4.4,
-        "ratingCount": 41,
-        "types": [
-          "parking_lot",
-          "parking",
-          "transportation_service",
-          "point_of_interest",
-          "service",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
         "title": "Tujia Folk Customs Park",
         "rating": 4.3,
         "ratingCount": 439,
@@ -559568,6 +559554,20 @@
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15002102103391430898&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Zhangjiajie West Station-Parking Lot",
+        "rating": 4.3,
+        "ratingCount": 42,
+        "types": [
+          "parking_lot",
+          "parking",
+          "transportation_service",
+          "point_of_interest",
+          "service",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
       },
       {
         "title": "Zhangjiajie Railway Station",
@@ -565327,7 +565327,7 @@
       {
         "title": "Shichahai Sandalwood Boutique Hotel",
         "rating": 4.2,
-        "ratingCount": 97,
+        "ratingCount": 98,
         "types": [
           "hotel",
           "lodging",
@@ -571488,20 +571488,20 @@
       {
         "title": "MIMILINE",
         "rating": 4.8,
-        "ratingCount": 526,
+        "ratingCount": 527,
         "types": [
           "shopping_mall",
-          "womens_clothing_store",
-          "cosmetics_store",
           "coffee_shop",
-          "cafe",
+          "cosmetics_store",
+          "womens_clothing_store",
           "clothing_store",
-          "food_store",
+          "cafe",
           "wholesaler",
-          "food",
-          "store",
-          "point_of_interest",
           "service",
+          "point_of_interest",
+          "food_store",
+          "store",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -571521,7 +571521,7 @@
       {
         "title": "DOOTA Mall",
         "rating": 4.5,
-        "ratingCount": 2536,
+        "ratingCount": 2543,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -571532,7 +571532,7 @@
       {
         "title": "Dongdaemun Design Plaza (DDP)",
         "rating": 4.4,
-        "ratingCount": 32335,
+        "ratingCount": 32338,
         "types": [
           "cultural_center",
           "point_of_interest",
@@ -571543,7 +571543,7 @@
       {
         "title": "Heunginjimun",
         "rating": 4.4,
-        "ratingCount": 7974,
+        "ratingCount": 7976,
         "types": [
           "historical_landmark",
           "tourist_attraction",
@@ -571591,7 +571591,7 @@
       {
         "title": "Dongdaemun History & Culture Park",
         "rating": 4.4,
-        "ratingCount": 440,
+        "ratingCount": 441,
         "types": [
           "subway_station",
           "transit_station",
@@ -574436,7 +574436,7 @@
       {
         "title": "Pokémon Center DX",
         "rating": 4.5,
-        "ratingCount": 4324,
+        "ratingCount": 4326,
         "types": [
           "cafe",
           "toy_store",
@@ -574464,7 +574464,7 @@
       {
         "title": "Nihonbashi Kaisen Don Tsujihan - Nihonbashi Branch",
         "rating": 4.4,
-        "ratingCount": 5490,
+        "ratingCount": 5495,
         "types": [
           "japanese_restaurant",
           "restaurant",
@@ -574477,7 +574477,7 @@
       {
         "title": "Mitsui Garden Hotel Kyobashi",
         "rating": 4.3,
-        "ratingCount": 1947,
+        "ratingCount": 1949,
         "types": [
           "hotel",
           "lodging",
@@ -574513,7 +574513,7 @@
       {
         "title": "Creative Museum Tokyo",
         "rating": 4.2,
-        "ratingCount": 930,
+        "ratingCount": 932,
         "types": [
           "art_museum",
           "art_gallery",
@@ -574526,7 +574526,7 @@
       {
         "title": "Hotel Yaenomidori Tokyo",
         "rating": 4.2,
-        "ratingCount": 856,
+        "ratingCount": 857,
         "types": [
           "hotel",
           "lodging",
@@ -574561,7 +574561,7 @@
       {
         "title": "Pokémon Cafe TOKYO",
         "rating": 4.1,
-        "ratingCount": 3146,
+        "ratingCount": 3147,
         "types": [
           "cafe",
           "food",
@@ -575625,7 +575625,7 @@
       {
         "title": "Ritsurin-kōen",
         "rating": 4.5,
-        "ratingCount": 16568,
+        "ratingCount": 16570,
         "types": [
           "park",
           "tourist_attraction",
@@ -575662,7 +575662,7 @@
       {
         "title": "JR Hotel Clement Takamatsu",
         "rating": 4.2,
-        "ratingCount": 4221,
+        "ratingCount": 4223,
         "types": [
           "hotel",
           "lodging",
@@ -575688,7 +575688,7 @@
       {
         "title": "Udon Baka Ichidai",
         "rating": 4.1,
-        "ratingCount": 9423,
+        "ratingCount": 9424,
         "types": [
           "japanese_restaurant",
           "restaurant",
@@ -575701,7 +575701,7 @@
       {
         "title": "Honetsukidori Ikkaku Takamatsu",
         "rating": 4.1,
-        "ratingCount": 4100,
+        "ratingCount": 4102,
         "types": [
           "chicken_restaurant",
           "japanese_izakaya_restaurant",
@@ -575728,7 +575728,7 @@
       {
         "title": "Hotel Kawaroku Her-Stage Takamatsu",
         "rating": 4.1,
-        "ratingCount": 1827,
+        "ratingCount": 1829,
         "types": [
           "hotel",
           "lodging",
@@ -576726,7 +576726,7 @@
       {
         "title": "Château de Matsuyama",
         "rating": 4.5,
-        "ratingCount": 17542,
+        "ratingCount": 17545,
         "types": [
           "castle",
           "tourist_attraction",
@@ -576739,7 +576739,7 @@
       {
         "title": "REF Matsuyama City Station by Vessel Hotels",
         "rating": 4.5,
-        "ratingCount": 999,
+        "ratingCount": 1000,
         "types": [
           "hotel",
           "lodging",
@@ -576754,10 +576754,10 @@
         "ratingCount": 1832,
         "types": [
           "hotel",
-          "lodging",
           "sauna",
-          "spa",
           "public_bath",
+          "spa",
+          "lodging",
           "health",
           "point_of_interest",
           "establishment"
@@ -576779,7 +576779,7 @@
       {
         "title": "Comfort Hotel Matsuyama",
         "rating": 4.3,
-        "ratingCount": 764,
+        "ratingCount": 765,
         "types": [
           "hotel",
           "lodging",
@@ -576791,22 +576791,22 @@
       {
         "title": "Iyonotojiba Kisukenoyu",
         "rating": 4.2,
-        "ratingCount": 2271,
+        "ratingCount": 2272,
         "types": [
-          "cafe",
           "tourist_attraction",
-          "hotel",
-          "lodging",
           "massage_spa",
-          "massage",
           "sauna",
-          "spa",
           "public_bath",
-          "health",
+          "hotel",
+          "cafe",
+          "spa",
+          "massage",
+          "lodging",
           "restaurant",
-          "food",
-          "point_of_interest",
+          "health",
           "service",
+          "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=1627885297304274361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -576814,7 +576814,7 @@
       {
         "title": "CANDEO HOTELS Matsuyama Okaido",
         "rating": 4.2,
-        "ratingCount": 1759,
+        "ratingCount": 1761,
         "types": [
           "hotel",
           "lodging",
@@ -576826,22 +576826,22 @@
       {
         "title": "ANA Crowne Plaza Matsuyama",
         "rating": 4,
-        "ratingCount": 2607,
+        "ratingCount": 2608,
         "types": [
           "hotel",
           "fitness_center",
-          "gym",
           "business_center",
-          "lodging",
-          "event_venue",
+          "gym",
           "swimming_pool",
+          "event_venue",
+          "lodging",
           "bar",
-          "sports_activity_location",
-          "health",
           "restaurant",
-          "food",
-          "point_of_interest",
+          "health",
           "service",
+          "sports_activity_location",
+          "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=6641554347393664152&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -576853,11 +576853,11 @@
         "types": [
           "hotel",
           "banquet_hall",
-          "lodging",
           "event_venue",
+          "lodging",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=6461537703102875181&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -578250,7 +578250,7 @@
       {
         "title": "Senkō-ji",
         "rating": 4.4,
-        "ratingCount": 3341,
+        "ratingCount": 3344,
         "types": [
           "buddhist_temple",
           "tourist_attraction",
@@ -578279,7 +578279,7 @@
       {
         "title": "Senkoji Park",
         "rating": 4.2,
-        "ratingCount": 5132,
+        "ratingCount": 5133,
         "types": [
           "park",
           "tourist_attraction",
@@ -578291,7 +578291,7 @@
       {
         "title": "Senkoji Temple Mountain Ropeway",
         "rating": 4.2,
-        "ratingCount": 1718,
+        "ratingCount": 1722,
         "types": [
           "tourist_attraction",
           "point_of_interest",
@@ -578302,7 +578302,7 @@
       {
         "title": "Gare téléphérique Sanroku",
         "rating": 4.2,
-        "ratingCount": 1009,
+        "ratingCount": 1011,
         "types": [
           "point_of_interest",
           "establishment"
@@ -578326,8 +578326,8 @@
           "bar",
           "restaurant",
           "food",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11542562443715878821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -578350,7 +578350,7 @@
       {
         "title": "Maruboshi",
         "rating": 4.1,
-        "ratingCount": 2497,
+        "ratingCount": 2498,
         "types": [
           "ramen_restaurant",
           "japanese_restaurant",
@@ -579834,11 +579834,11 @@
       {
         "title": "Jardin Shukkei-en",
         "rating": 4.5,
-        "ratingCount": 9194,
+        "ratingCount": 9196,
         "types": [
           "garden",
-          "historical_landmark",
           "tourist_attraction",
+          "historical_landmark",
           "park",
           "historical_place",
           "point_of_interest",
@@ -579849,7 +579849,7 @@
       {
         "title": "HOTEL INTERGATE Hiroshima",
         "rating": 4.4,
-        "ratingCount": 1802,
+        "ratingCount": 1803,
         "types": [
           "hotel",
           "lodging",
@@ -579861,14 +579861,14 @@
       {
         "title": "Sheraton Grand Hiroshima Hotel",
         "rating": 4.3,
-        "ratingCount": 2797,
+        "ratingCount": 2798,
         "types": [
           "hotel",
           "wedding_venue",
-          "lodging",
           "event_venue",
-          "point_of_interest",
+          "lodging",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -579876,11 +579876,11 @@
       {
         "title": "Pokémon Center Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1573,
+        "ratingCount": 1572,
         "types": [
           "toy_store",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -579888,7 +579888,7 @@
       {
         "title": "Hotel Vista Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1325,
+        "ratingCount": 1326,
         "types": [
           "hotel",
           "lodging",
@@ -579900,7 +579900,7 @@
       {
         "title": "Sotetsu Fresa Inn Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1069,
+        "ratingCount": 1070,
         "types": [
           "hotel",
           "lodging",
@@ -579926,7 +579926,7 @@
       {
         "title": "Hotel Granvia Hiroshima",
         "rating": 4.2,
-        "ratingCount": 6628,
+        "ratingCount": 6631,
         "types": [
           "hotel",
           "lodging",
@@ -579938,7 +579938,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4620,
+        "ratingCount": 4626,
         "types": [
           "train_station",
           "transit_station",
@@ -580876,7 +580876,7 @@
       {
         "title": "MyCUBE by MYSTAYS Asakusa Kuramae",
         "rating": 4.5,
-        "ratingCount": 1104,
+        "ratingCount": 1105,
         "types": [
           "hotel",
           "lodging",
@@ -580890,7 +580890,7 @@
       {
         "title": "Henn na Hotel Tokyo Asakusa Tawaramachi Premier",
         "rating": 4.4,
-        "ratingCount": 1317,
+        "ratingCount": 1319,
         "types": [
           "hotel",
           "lodging",
@@ -580940,7 +580940,7 @@
       {
         "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
         "rating": 4.2,
-        "ratingCount": 2753,
+        "ratingCount": 2754,
         "types": [
           "cafe",
           "chocolate_factory",
@@ -583216,7 +583216,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99649,
+        "ratingCount": 99659,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -583228,11 +583228,11 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 77677,
+        "ratingCount": 77723,
         "types": [
           "international_airport",
-          "tourist_attraction",
           "shopping_mall",
+          "tourist_attraction",
           "airport",
           "transportation_service",
           "point_of_interest",
@@ -583243,7 +583243,7 @@
       {
         "title": "Changi Airport",
         "rating": 4.7,
-        "ratingCount": 1730,
+        "ratingCount": 1732,
         "types": [
           "subway_station",
           "transit_station",
@@ -583256,10 +583256,10 @@
       {
         "title": "SIA Training Centre",
         "rating": 4.6,
-        "ratingCount": 153,
+        "ratingCount": 154,
         "types": [
-          "transportation_service",
           "educational_institution",
+          "transportation_service",
           "point_of_interest",
           "establishment"
         ],
@@ -583268,11 +583268,11 @@
       {
         "title": "Changi Airport Terminal 2 Kopitiam",
         "rating": 4.5,
-        "ratingCount": 11238,
+        "ratingCount": 11240,
         "types": [
           "food_court",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11209850883266645349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -583280,14 +583280,14 @@
       {
         "title": "Singapore Expo Hall 6",
         "rating": 4.5,
-        "ratingCount": 507,
+        "ratingCount": 509,
         "types": [
           "convention_center",
           "athletic_field",
           "event_venue",
-          "service",
           "sports_activity_location",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=1735453182545619759&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -583295,7 +583295,7 @@
       {
         "title": "Downtown East",
         "rating": 4.4,
-        "ratingCount": 10623,
+        "ratingCount": 10624,
         "types": [
           "sports_activity_location",
           "point_of_interest",
@@ -583332,8 +583332,8 @@
         "types": [
           "food_court",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=3141391163124868476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

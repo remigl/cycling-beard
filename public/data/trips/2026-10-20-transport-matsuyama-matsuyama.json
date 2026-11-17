@@ -975,7 +975,7 @@
     {
       "title": "Château de Matsuyama",
       "rating": 4.5,
-      "ratingCount": 17542,
+      "ratingCount": 17545,
       "types": [
         "castle",
         "tourist_attraction",
@@ -988,7 +988,7 @@
     {
       "title": "REF Matsuyama City Station by Vessel Hotels",
       "rating": 4.5,
-      "ratingCount": 999,
+      "ratingCount": 1000,
       "types": [
         "hotel",
         "lodging",
@@ -1003,10 +1003,10 @@
       "ratingCount": 1832,
       "types": [
         "hotel",
-        "lodging",
         "sauna",
-        "spa",
         "public_bath",
+        "spa",
+        "lodging",
         "health",
         "point_of_interest",
         "establishment"
@@ -1028,7 +1028,7 @@
     {
       "title": "Comfort Hotel Matsuyama",
       "rating": 4.3,
-      "ratingCount": 764,
+      "ratingCount": 765,
       "types": [
         "hotel",
         "lodging",
@@ -1040,22 +1040,22 @@
     {
       "title": "Iyonotojiba Kisukenoyu",
       "rating": 4.2,
-      "ratingCount": 2271,
+      "ratingCount": 2272,
       "types": [
-        "cafe",
         "tourist_attraction",
-        "hotel",
-        "lodging",
         "massage_spa",
-        "massage",
         "sauna",
-        "spa",
         "public_bath",
-        "health",
+        "hotel",
+        "cafe",
+        "spa",
+        "massage",
+        "lodging",
         "restaurant",
-        "food",
-        "point_of_interest",
+        "health",
         "service",
+        "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=1627885297304274361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1063,7 +1063,7 @@
     {
       "title": "CANDEO HOTELS Matsuyama Okaido",
       "rating": 4.2,
-      "ratingCount": 1759,
+      "ratingCount": 1761,
       "types": [
         "hotel",
         "lodging",
@@ -1075,22 +1075,22 @@
     {
       "title": "ANA Crowne Plaza Matsuyama",
       "rating": 4,
-      "ratingCount": 2607,
+      "ratingCount": 2608,
       "types": [
         "hotel",
         "fitness_center",
-        "gym",
         "business_center",
-        "lodging",
-        "event_venue",
+        "gym",
         "swimming_pool",
+        "event_venue",
+        "lodging",
         "bar",
-        "sports_activity_location",
-        "health",
         "restaurant",
-        "food",
-        "point_of_interest",
+        "health",
         "service",
+        "sports_activity_location",
+        "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6641554347393664152&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1102,11 +1102,11 @@
       "types": [
         "hotel",
         "banquet_hall",
-        "lodging",
         "event_venue",
+        "lodging",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6461537703102875181&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
