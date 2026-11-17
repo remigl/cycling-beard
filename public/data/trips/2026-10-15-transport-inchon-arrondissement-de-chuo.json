@@ -2828,8 +2828,8 @@
         "cafe",
         "toy_store",
         "food",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17206393884080941756&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2851,7 +2851,7 @@
     {
       "title": "Nihonbashi Kaisen Don Tsujihan - Nihonbashi Branch",
       "rating": 4.4,
-      "ratingCount": 5488,
+      "ratingCount": 5490,
       "types": [
         "japanese_restaurant",
         "restaurant",
@@ -2888,7 +2888,7 @@
     {
       "title": "Super Hotel Premier Tokyo-eki Yaesu Chuo-guchi",
       "rating": 4.2,
-      "ratingCount": 2532,
+      "ratingCount": 2533,
       "types": [
         "hotel",
         "lodging",
@@ -2925,22 +2925,22 @@
     {
       "title": "Nihombashi Takashimaya Shopping Center",
       "rating": 4.1,
-      "ratingCount": 12819,
+      "ratingCount": 12822,
       "types": [
         "department_store",
+        "womens_clothing_store",
         "cosmetics_store",
         "shopping_mall",
-        "womens_clothing_store",
         "cafe",
         "tailor",
         "clothing_store",
         "grocery_store",
         "food_store",
-        "service",
         "restaurant",
         "food",
-        "point_of_interest",
         "store",
+        "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6814899307248303714&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

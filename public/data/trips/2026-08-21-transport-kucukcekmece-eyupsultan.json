@@ -1104,12 +1104,12 @@
     {
       "title": "Kağıthane",
       "rating": 4.3,
-      "ratingCount": 366,
+      "ratingCount": 367,
       "types": [
         "subway_station",
         "transit_station",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3494326699727152698&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1141,8 +1141,8 @@
       "ratingCount": 752,
       "types": [
         "apartment_complex",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2519167689530425232&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1155,8 +1155,8 @@
         "corporate_office",
         "coworking_space",
         "real_estate_agency",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=8148212724935390663&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1168,8 +1168,8 @@
       "types": [
         "subway_station",
         "transit_station",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4158655498198188929&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1177,11 +1177,11 @@
     {
       "title": "Alibeyköy Bus Station",
       "rating": 4.1,
-      "ratingCount": 8083,
+      "ratingCount": 8086,
       "types": [
         "transit_depot",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17598678127873463050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1191,8 +1191,8 @@
       "rating": 4.1,
       "ratingCount": 735,
       "types": [
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10616152500497936338&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

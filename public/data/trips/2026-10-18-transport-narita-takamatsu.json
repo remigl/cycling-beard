@@ -1058,8 +1058,8 @@
       "ratingCount": 16568,
       "types": [
         "park",
-        "garden",
         "tourist_attraction",
+        "garden",
         "point_of_interest",
         "establishment"
       ],
@@ -1080,7 +1080,7 @@
     {
       "title": "Comfort Hotel Takamatsu",
       "rating": 4.4,
-      "ratingCount": 737,
+      "ratingCount": 738,
       "types": [
         "hotel",
         "lodging",
@@ -1109,8 +1109,8 @@
         "hotel",
         "coworking_space",
         "lodging",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=12779366808462679656&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1118,7 +1118,7 @@
     {
       "title": "Udon Baka Ichidai",
       "rating": 4.1,
-      "ratingCount": 9424,
+      "ratingCount": 9423,
       "types": [
         "japanese_restaurant",
         "restaurant",
@@ -1149,8 +1149,8 @@
       "ratingCount": 2388,
       "types": [
         "ferry_service",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=7624962309433303979&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1158,7 +1158,7 @@
     {
       "title": "Hotel Kawaroku Her-Stage Takamatsu",
       "rating": 4.1,
-      "ratingCount": 1826,
+      "ratingCount": 1827,
       "types": [
         "hotel",
         "lodging",
@@ -1170,7 +1170,7 @@
     {
       "title": "Parc Tamamo des ruines du château de Takamatsu",
       "rating": 4,
-      "ratingCount": 4192,
+      "ratingCount": 4193,
       "types": [
         "historical_landmark",
         "tourist_attraction",

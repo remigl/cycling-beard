@@ -2247,7 +2247,7 @@
     {
       "title": "Jewel Changi Airport",
       "rating": 4.8,
-      "ratingCount": 99643,
+      "ratingCount": 99649,
       "types": [
         "shopping_mall",
         "tourist_attraction",
@@ -2259,7 +2259,7 @@
     {
       "title": "Aéroport Changi de Singapour",
       "rating": 4.7,
-      "ratingCount": 77658,
+      "ratingCount": 77677,
       "types": [
         "international_airport",
         "tourist_attraction",
@@ -2299,7 +2299,7 @@
     {
       "title": "Changi Airport Terminal 2 Kopitiam",
       "rating": 4.5,
-      "ratingCount": 11239,
+      "ratingCount": 11238,
       "types": [
         "food_court",
         "point_of_interest",
@@ -2315,9 +2315,9 @@
       "types": [
         "convention_center",
         "athletic_field",
-        "sports_activity_location",
         "event_venue",
         "service",
+        "sports_activity_location",
         "point_of_interest",
         "establishment"
       ],
@@ -2326,7 +2326,7 @@
     {
       "title": "Downtown East",
       "rating": 4.4,
-      "ratingCount": 10622,
+      "ratingCount": 10623,
       "types": [
         "sports_activity_location",
         "point_of_interest",

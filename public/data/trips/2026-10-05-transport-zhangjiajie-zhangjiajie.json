@@ -1479,7 +1479,7 @@
     {
       "title": "National Forest Pk of Tianmen Mountain",
       "rating": 4.8,
-      "ratingCount": 519,
+      "ratingCount": 520,
       "types": [
         "scenic_spot",
         "park",
@@ -1561,9 +1561,9 @@
       "types": [
         "parking_lot",
         "parking",
-        "service",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1588,8 +1588,8 @@
       "types": [
         "train_station",
         "transit_station",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2335981638404137541&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

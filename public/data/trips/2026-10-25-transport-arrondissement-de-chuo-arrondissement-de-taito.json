@@ -888,12 +888,12 @@
       "ratingCount": 1443,
       "types": [
         "hostel",
-        "guest_house",
-        "cafe",
         "inn",
+        "cafe",
+        "guest_house",
         "lodging",
-        "bar",
         "meal_takeaway",
+        "bar",
         "restaurant",
         "food",
         "point_of_interest",
@@ -947,8 +947,8 @@
         "shinto_shrine",
         "tourist_attraction",
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14040132074380146120&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -968,7 +968,7 @@
     {
       "title": "APA Hotel Asakusa Kuramae Kita",
       "rating": 4.3,
-      "ratingCount": 653,
+      "ratingCount": 654,
       "types": [
         "hotel",
         "lodging",
@@ -980,14 +980,14 @@
     {
       "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
       "rating": 4.2,
-      "ratingCount": 2754,
+      "ratingCount": 2753,
       "types": [
         "cafe",
+        "chocolate_factory",
         "chocolate_shop",
         "candy_store",
         "dessert_shop",
         "confectionery",
-        "chocolate_factory",
         "food_store",
         "food",
         "point_of_interest",

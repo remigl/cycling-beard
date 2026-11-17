@@ -4807,13 +4807,13 @@
     {
       "title": "Cathédrale de la Trinité de Tbilissi",
       "rating": 4.8,
-      "ratingCount": 17195,
+      "ratingCount": 17198,
       "types": [
         "tourist_attraction",
         "church",
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11115875802407382066&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -4821,12 +4821,12 @@
     {
       "title": "Pont de la Paix",
       "rating": 4.7,
-      "ratingCount": 18963,
+      "ratingCount": 18964,
       "types": [
         "bridge",
         "tourist_attraction",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15222257875093232121&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -4834,7 +4834,7 @@
     {
       "title": "Place de la Liberté",
       "rating": 4.7,
-      "ratingCount": 17841,
+      "ratingCount": 17848,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -4845,7 +4845,7 @@
     {
       "title": "Rike Park",
       "rating": 4.7,
-      "ratingCount": 15957,
+      "ratingCount": 15958,
       "types": [
         "city_park",
         "tourist_attraction",
@@ -4869,7 +4869,7 @@
     {
       "title": "Tour de l’horloge du Théâtre Gabriadze",
       "rating": 4.7,
-      "ratingCount": 6900,
+      "ratingCount": 6902,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -4880,7 +4880,7 @@
     {
       "title": "Parc Mtatsminda",
       "rating": 4.6,
-      "ratingCount": 26854,
+      "ratingCount": 26855,
       "types": [
         "amusement_park",
         "tourist_attraction",
@@ -4894,7 +4894,7 @@
     {
       "title": "Kartlis Deda",
       "rating": 4.6,
-      "ratingCount": 6551,
+      "ratingCount": 6553,
       "types": [
         "monument",
         "tourist_attraction",
@@ -4906,11 +4906,11 @@
     {
       "title": "Palais de Justice de Tbilissi",
       "rating": 4.6,
-      "ratingCount": 4156,
+      "ratingCount": 4157,
       "types": [
-        "point_of_interest",
         "local_government_office",
         "government_office",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3558399100024698876&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -4918,11 +4918,11 @@
     {
       "title": "\"Rustaveli\"",
       "rating": 4.6,
-      "ratingCount": 3429,
+      "ratingCount": 3430,
       "types": [
         "tourist_attraction",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3536306607077708543&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

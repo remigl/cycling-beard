@@ -1380,8 +1380,8 @@
         "buddhist_temple",
         "tourist_attraction",
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=12822827166751449678&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1392,8 +1392,8 @@
       "ratingCount": 1550,
       "types": [
         "ramen_restaurant",
-        "chinese_noodle_restaurant",
         "japanese_restaurant",
+        "chinese_noodle_restaurant",
         "restaurant",
         "food",
         "point_of_interest",
@@ -1416,7 +1416,7 @@
     {
       "title": "Senkoji Temple Mountain Ropeway",
       "rating": 4.2,
-      "ratingCount": 1717,
+      "ratingCount": 1718,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1440,19 +1440,19 @@
       "ratingCount": 708,
       "types": [
         "rest_stop",
+        "bicycle_store",
         "cafe",
         "hotel",
-        "bicycle_store",
-        "lodging",
-        "bar",
         "bakery",
+        "lodging",
         "clothing_store",
+        "sporting_goods_store",
         "food_store",
+        "bar",
         "restaurant",
         "food",
-        "sporting_goods_store",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11542562443715878821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1464,10 +1464,10 @@
       "types": [
         "city_hall",
         "observation_deck",
-        "service",
-        "point_of_interest",
         "local_government_office",
         "government_office",
+        "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10228521009265532944&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1475,7 +1475,7 @@
     {
       "title": "Maruboshi",
       "rating": 4.1,
-      "ratingCount": 2496,
+      "ratingCount": 2497,
       "types": [
         "ramen_restaurant",
         "japanese_restaurant",

@@ -4563,7 +4563,7 @@
     {
       "title": "Museum of the War of Independence",
       "rating": 4.9,
-      "ratingCount": 6109,
+      "ratingCount": 6111,
       "types": [
         "history_museum",
         "tourist_attraction",
@@ -4576,11 +4576,11 @@
     {
       "title": "CSO Ada Ankara",
       "rating": 4.6,
-      "ratingCount": 3606,
+      "ratingCount": 3610,
       "types": [
         "concert_hall",
-        "auditorium",
         "live_music_venue",
+        "auditorium",
         "museum",
         "event_venue",
         "point_of_interest",
@@ -4591,7 +4591,7 @@
     {
       "title": "Ankara Tren Garı",
       "rating": 4.6,
-      "ratingCount": 1307,
+      "ratingCount": 1309,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -4602,7 +4602,7 @@
     {
       "title": "Ataturk Statue",
       "rating": 4.5,
-      "ratingCount": 28692,
+      "ratingCount": 28695,
       "types": [
         "monument",
         "tourist_attraction",
@@ -4615,12 +4615,12 @@
     {
       "title": "Ankara",
       "rating": 4.5,
-      "ratingCount": 5328,
+      "ratingCount": 5329,
       "types": [
         "train_station",
         "transit_station",
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6226564235665780100&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -4628,7 +4628,7 @@
     {
       "title": "Ankara Arena",
       "rating": 4.5,
-      "ratingCount": 3904,
+      "ratingCount": 3905,
       "types": [
         "sports_complex",
         "sports_activity_location",
@@ -4665,10 +4665,10 @@
     {
       "title": "YHT GAR",
       "rating": 4.4,
-      "ratingCount": 6784,
+      "ratingCount": 6787,
       "types": [
-        "point_of_interest",
         "transportation_service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11391074688624116208&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -4676,7 +4676,7 @@
     {
       "title": "Etiler Orduevi",
       "rating": 4.4,
-      "ratingCount": 940,
+      "ratingCount": 942,
       "types": [
         "point_of_interest",
         "establishment"

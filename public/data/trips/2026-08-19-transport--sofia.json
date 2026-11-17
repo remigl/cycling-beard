@@ -1273,13 +1273,13 @@
     {
       "title": "Cathédrale Saint-Alexandre-Nevski",
       "rating": 4.8,
-      "ratingCount": 27607,
+      "ratingCount": 27608,
       "types": [
         "church",
         "tourist_attraction",
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=185616201431929680&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1287,7 +1287,7 @@
     {
       "title": "Théâtre national Ivan-Vazov",
       "rating": 4.8,
-      "ratingCount": 11752,
+      "ratingCount": 11753,
       "types": [
         "performing_arts_theater",
         "tourist_attraction",
@@ -1305,8 +1305,8 @@
         "tourist_attraction",
         "church",
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14300161323953423416&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1326,7 +1326,7 @@
     {
       "title": "Happy Bar & Grill Sveta Nedelya",
       "rating": 4.5,
-      "ratingCount": 20735,
+      "ratingCount": 20738,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
@@ -1341,7 +1341,7 @@
     {
       "title": "Shtastlivetsa Restaurant - Vitoshka",
       "rating": 4.5,
-      "ratingCount": 13229,
+      "ratingCount": 13230,
       "types": [
         "restaurant",
         "food",
@@ -1353,7 +1353,7 @@
     {
       "title": "Happy Bar & Grill Rakovski",
       "rating": 4.5,
-      "ratingCount": 12913,
+      "ratingCount": 12915,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
@@ -1368,13 +1368,13 @@
     {
       "title": "Grande Mosquée de Sofia",
       "rating": 4.5,
-      "ratingCount": 3984,
+      "ratingCount": 3985,
       "types": [
         "mosque",
         "tourist_attraction",
         "place_of_worship",
-        "point_of_interest",
         "association_or_organization",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10178196981627827791&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1382,7 +1382,7 @@
     {
       "title": "Université Saint-Clément d'Ohrid de Sofia",
       "rating": 4.5,
-      "ratingCount": 1823,
+      "ratingCount": 1825,
       "types": [
         "university",
         "educational_institution",
@@ -1401,9 +1401,9 @@
         "hardware_store",
         "home_improvement_store",
         "home_goods_store",
-        "service",
-        "point_of_interest",
         "store",
+        "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

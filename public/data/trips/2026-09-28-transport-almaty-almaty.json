@@ -947,8 +947,8 @@
       "types": [
         "opera_house",
         "concert_hall",
-        "auditorium",
         "live_music_venue",
+        "auditorium",
         "performing_arts_theater",
         "event_venue",
         "point_of_interest",
@@ -959,7 +959,7 @@
     {
       "title": "Eastern Gate Indian restaurant",
       "rating": 4.8,
-      "ratingCount": 1887,
+      "ratingCount": 1889,
       "types": [
         "indian_restaurant",
         "restaurant",
@@ -972,7 +972,7 @@
     {
       "title": "Dostyk Plaza",
       "rating": 4.7,
-      "ratingCount": 17939,
+      "ratingCount": 17941,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -989,8 +989,8 @@
         "wedding_venue",
         "lodging",
         "event_venue",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1005,14 +1005,14 @@
         "resort_hotel",
         "wedding_venue",
         "lodging",
-        "event_venue",
         "massage_spa",
-        "spa",
         "massage",
-        "service",
+        "spa",
+        "event_venue",
         "restaurant",
         "food",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1032,7 +1032,7 @@
     {
       "title": "Kok-Tobe Hill",
       "rating": 4.6,
-      "ratingCount": 18273,
+      "ratingCount": 18274,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1066,7 +1066,7 @@
     {
       "title": "Kok Tobe Hill Gondola Cableway",
       "rating": 4.6,
-      "ratingCount": 1861,
+      "ratingCount": 1863,
       "types": [
         "point_of_interest",
         "establishment"
