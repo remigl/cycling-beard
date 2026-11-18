@@ -1375,7 +1375,7 @@
     {
       "title": "Senkō-ji",
       "rating": 4.4,
-      "ratingCount": 3344,
+      "ratingCount": 3345,
       "types": [
         "buddhist_temple",
         "tourist_attraction",
@@ -1389,7 +1389,7 @@
     {
       "title": "Shoya",
       "rating": 4.4,
-      "ratingCount": 1550,
+      "ratingCount": 1551,
       "types": [
         "ramen_restaurant",
         "japanese_restaurant",
@@ -1416,7 +1416,7 @@
     {
       "title": "Senkoji Temple Mountain Ropeway",
       "rating": 4.2,
-      "ratingCount": 1722,
+      "ratingCount": 1723,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1427,24 +1427,12 @@
     {
       "title": "Gare téléphérique Sanroku",
       "rating": 4.2,
-      "ratingCount": 1011,
+      "ratingCount": 1013,
       "types": [
         "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14081088447951924909&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Onomichi Hondori Shopping Arcade",
-      "rating": 4.2,
-      "ratingCount": 946,
-      "types": [
-        "tourist_attraction",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=11281665634676200142&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "ONOMICHI U2 / HOTEL CYCLE",
@@ -1487,7 +1475,7 @@
     {
       "title": "Maruboshi",
       "rating": 4.1,
-      "ratingCount": 2498,
+      "ratingCount": 2499,
       "types": [
         "ramen_restaurant",
         "japanese_restaurant",
@@ -1499,16 +1487,30 @@
       "mapsUrl": "https://maps.google.com/?cid=6892398988895765996&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Green Hill Hotel Onomichi",
+      "title": "Fukuyama University",
       "rating": 4.1,
-      "ratingCount": 1076,
+      "ratingCount": 92,
       "types": [
-        "hotel",
-        "lodging",
+        "university",
+        "educational_institution",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=3592554340907214910&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=14657920614158709371&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tonchinkan",
+      "rating": 4,
+      "ratingCount": 2138,
+      "types": [
+        "ramen_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=365953885848663383&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

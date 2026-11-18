@@ -1797,6 +1797,16 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
+      "title": "江汉路步行街",
+      "rating": 4.7,
+      "ratingCount": 28,
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11571539725095010859&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
       "title": "Jianghan Road Pedestrian Street",
       "rating": 4.6,
       "ratingCount": 91,
@@ -1806,6 +1816,55 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=5156916937926725055&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Wuhan Art Museum",
+      "rating": 4.2,
+      "ratingCount": 38,
+      "types": [
+        "art_museum",
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7695732629203688615&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Wuhan Meilian Holiday Hotel",
+      "rating": 4.2,
+      "ratingCount": 21,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=18293080256847508409&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Dorsett Wuhan",
+      "rating": 4,
+      "ratingCount": 56,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8071210733248486843&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Xunlimen Hotel",
+      "rating": 3.3,
+      "ratingCount": 15,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8389032368958425900&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

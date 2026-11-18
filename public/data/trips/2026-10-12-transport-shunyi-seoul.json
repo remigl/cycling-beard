@@ -6101,104 +6101,95 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "하남돼지집 동대문점",
-      "rating": 4.9,
-      "ratingCount": 2957,
-      "types": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=13744204726752748435&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "woojeongsogalbi",
+      "title": "MIMILINE",
       "rating": 4.8,
-      "ratingCount": 3309,
-      "types": [
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=1002221220958744395&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "대통령삼겹살",
-      "rating": 4.8,
-      "ratingCount": 1568,
-      "types": [
-        "korean_barbecue_restaurant",
-        "korean_restaurant",
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=8889465196506315150&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "BHC Chicken Dongdaemun",
-      "rating": 4.7,
-      "ratingCount": 2222,
-      "types": [
-        "meal_takeaway",
-        "restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=12355248593844556258&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Seouljip",
-      "rating": 4.7,
-      "ratingCount": 533,
-      "types": [
-        "restaurant",
-        "korean_barbecue_restaurant",
-        "barbecue_area",
-        "korean_restaurant",
-        "point_of_interest",
-        "food",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=6006818338089996273&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "DUNDUN Dongdaemun",
-      "rating": 4.6,
-      "ratingCount": 321,
+      "ratingCount": 529,
       "types": [
         "shopping_mall",
+        "cosmetics_store",
+        "womens_clothing_store",
+        "clothing_store",
+        "coffee_shop",
+        "cafe",
+        "food_store",
+        "wholesaler",
+        "store",
+        "food",
+        "service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=12003681191034478137&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Dongdaemun History & Culture Park Station Exit 10",
+      "title": "Nine Tree by Parnas Seoul Dongdaemun",
       "rating": 4.6,
-      "ratingCount": 27,
+      "ratingCount": 653,
       "types": [
         "hotel",
         "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=12335711208934824461&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=5608396141544876337&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "DOOTA Mall",
+      "rating": 4.5,
+      "ratingCount": 2545,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1834824361273245074&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Dongdaemun Design Plaza (DDP)",
       "rating": 4.4,
-      "ratingCount": 32339,
+      "ratingCount": 32347,
       "types": [
         "cultural_center",
         "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6639054745590107100&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Heunginjimun",
+      "rating": 4.4,
+      "ratingCount": 7976,
+      "types": [
+        "historical_landmark",
+        "tourist_attraction",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6928767962222624621&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Novotel Ambassador Seoul Dongdaemun Hotels & Residences",
+      "rating": 4.4,
+      "ratingCount": 2910,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15332506514163897392&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Dongdaemun History & Culture Park",
+      "rating": 4.4,
+      "ratingCount": 876,
+      "types": [
+        "park",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6997266870566107750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "SOTETSU HOTELS THE SPLAISIR SEOUL DONGDAEMUN",
@@ -6215,7 +6206,7 @@
     {
       "title": "Dongdaemun History & Culture Park",
       "rating": 4.4,
-      "ratingCount": 441,
+      "ratingCount": 442,
       "types": [
         "subway_station",
         "transit_station",
@@ -6224,6 +6215,18 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=5040435384949148281&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hotel Skypark Kingstown Dongdaemun",
+      "rating": 4.3,
+      "ratingCount": 1795,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10633328211910130553&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

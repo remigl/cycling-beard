@@ -1473,19 +1473,126 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "张家界土司城",
+      "dist": 3137,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "醉云亭",
+      "dist": 5972,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "翼装飞行跳台",
+      "dist": 5975,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "珙桐园",
+      "dist": 6020,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "灵泉",
+      "dist": 6139,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "天门山索桥",
+      "dist": 6924,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "捭阖",
+      "dist": 7108,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "樱桃湾",
+      "dist": 7180,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "求儿洞",
+      "dist": 7211,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "张家界市博物馆",
+      "dist": 4381,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "回龙观",
+      "dist": 2194,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "通天大道",
+      "dist": 5520,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "玉壶峰",
+      "dist": 5939,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "扣云关",
+      "dist": 6013,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "天门翻水",
+      "dist": 6058,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "Zhangjiajie Center",
-      "rating": 5,
-      "ratingCount": 15,
+      "title": "National Forest Pk of Tianmen Mountain",
+      "rating": 4.8,
+      "ratingCount": 523,
       "types": [
-        "government_office",
+        "scenic_spot",
+        "park",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=13961825577434394792&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=14287050014209067318&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Tianmenshan Cableway",
@@ -1497,6 +1604,27 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=1605326168650648125&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tianmen Fairy Mountain （North Gate）",
+      "rating": 4.7,
+      "ratingCount": 715,
+      "types": [
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=313277820931665850&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tianmen Mountain National Park",
+      "rating": 4.7,
+      "ratingCount": 240,
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6611551166739130260&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Hampton by Hilton Zhangjiajie Tianmen Mountain",
@@ -1511,18 +1639,6 @@
       "mapsUrl": "https://maps.google.com/?cid=4732677654853209187&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Zhangjiajie National Park Nvue Resorts",
-      "rating": 4.7,
-      "ratingCount": 31,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=10574009220139532904&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
       "title": "Wyndham Garden Zhangjiajie Tianmen Mountain",
       "rating": 4.6,
       "ratingCount": 38,
@@ -1535,50 +1651,14 @@
       "mapsUrl": "https://maps.google.com/?cid=6968999083645257207&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Hotel California",
-      "rating": 4.6,
-      "ratingCount": 19,
-      "types": [
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=7437934129391504899&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Hilton Garden Inn Zhangjiajie Tianmen Mountain",
+      "title": "Xiangyin Tianmen Yihao",
       "rating": 4.5,
-      "ratingCount": 43,
+      "ratingCount": 162,
       "types": [
-        "hotel",
-        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=9416969347148655436&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Country Garden Phoenix Hotel",
-      "rating": 4.5,
-      "ratingCount": 31,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=5017348363418032747&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Zhangjiajie Tianmenshan Mountain ATOUR HOTEL",
-      "rating": 4.5,
-      "ratingCount": 22,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=15410633257289567329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=17413876653293211658&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Tujia Folk Customs Park",
@@ -1592,6 +1672,33 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15002102103391430898&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Zhangjiajie West Station-Parking Lot",
+      "rating": 4.3,
+      "ratingCount": 42,
+      "types": [
+        "parking_lot",
+        "parking",
+        "transportation_service",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11337008158196476626&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Zhangjiajie Railway Station",
+      "rating": 4.3,
+      "ratingCount": 26,
+      "types": [
+        "train_station",
+        "transit_station",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2335981638404137541&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

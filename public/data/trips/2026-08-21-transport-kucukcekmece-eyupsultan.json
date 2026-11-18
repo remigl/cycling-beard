@@ -1079,63 +1079,51 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "Akom",
-      "rating": 4.8,
-      "ratingCount": 75,
+      "title": "Université Bilgi d'Istanbul",
+      "rating": 4.4,
+      "ratingCount": 1217,
       "types": [
-        "corporate_office",
+        "university",
+        "educational_institution",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=14060121858699904880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=11485973184112313892&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Alibeyköy Cep Otogarı",
-      "rating": 4.6,
-      "ratingCount": 25,
+      "title": "Alibeykoy Metro istasyon",
+      "rating": 4.4,
+      "ratingCount": 824,
       "types": [
-        "tram_stop",
-        "transit_stop",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15427595420495785290&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Kağıthane",
+      "rating": 4.3,
+      "ratingCount": 368,
+      "types": [
+        "subway_station",
         "transit_station",
         "transportation_service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=12343774760257037991&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=3494326699727152698&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Gasilhane of Alibeyköy",
-      "rating": 4.4,
-      "ratingCount": 36,
-      "types": [
-        "local_government_office",
-        "government_office",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=3693571807558796890&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "5. Levent Kiptaş Konutları",
+      "title": "Nurtepe Metro Durağı",
       "rating": 4.3,
-      "ratingCount": 126,
+      "ratingCount": 354,
       "types": [
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=7422910709928184141&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "AFAD Istanbul",
-      "rating": 4.3,
-      "ratingCount": 68,
-      "types": [
-        "government_office",
+        "transportation_service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=13056304338597419303&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=17615562168494127530&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Turkuvaz Media Co.",
@@ -1160,33 +1148,36 @@
       "mapsUrl": "https://maps.google.com/?cid=2519167689530425232&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Yeniköy Konakları",
+      "title": "Premier Kampüs Kağıthane",
       "rating": 4.2,
-      "ratingCount": 287,
+      "ratingCount": 575,
       "types": [
-        "apartment_complex",
+        "corporate_office",
+        "coworking_space",
+        "real_estate_agency",
         "point_of_interest",
         "service",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=7372950998955310905&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=8148212724935390663&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Torunlar 5. Levent Sitesi B Girişi",
+      "title": "Kağıthane",
       "rating": 4.2,
-      "ratingCount": 38,
+      "ratingCount": 253,
       "types": [
-        "housing_complex",
+        "subway_station",
+        "transit_station",
+        "transportation_service",
         "point_of_interest",
-        "service",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=17220744831344491451&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=4158655498198188929&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Alibeyköy Bus Station",
       "rating": 4.1,
-      "ratingCount": 8087,
+      "ratingCount": 8091,
       "types": [
         "transit_depot",
         "transportation_service",
@@ -1194,6 +1185,17 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17598678127873463050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Finanskent Residence",
+      "rating": 4.1,
+      "ratingCount": 735,
+      "types": [
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10616152500497936338&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

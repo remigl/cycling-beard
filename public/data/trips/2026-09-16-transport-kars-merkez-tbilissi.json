@@ -4805,47 +4805,23 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "Silver 39 Corner Hotel",
-      "rating": 4.9,
-      "ratingCount": 716,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=15012894000802901153&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Orbeliani Square",
+      "title": "Cathédrale de la Trinité de Tbilissi",
       "rating": 4.8,
-      "ratingCount": 3842,
+      "ratingCount": 17212,
       "types": [
-        "park",
         "tourist_attraction",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=4597908463324745098&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Tbilisi Juma Mosque *",
-      "rating": 4.8,
-      "ratingCount": 2332,
-      "types": [
-        "mosque",
-        "tourist_attraction",
+        "church",
         "place_of_worship",
         "association_or_organization",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=14970923607155325433&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=11115875802407382066&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Pont de la Paix",
       "rating": 4.7,
-      "ratingCount": 18970,
+      "ratingCount": 18975,
       "types": [
         "bridge",
         "tourist_attraction",
@@ -4858,7 +4834,7 @@
     {
       "title": "Place de la Liberté",
       "rating": 4.7,
-      "ratingCount": 17855,
+      "ratingCount": 17859,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -4869,7 +4845,7 @@
     {
       "title": "Rike Park",
       "rating": 4.7,
-      "ratingCount": 15961,
+      "ratingCount": 15962,
       "types": [
         "city_park",
         "tourist_attraction",
@@ -4882,7 +4858,7 @@
     {
       "title": "Narikala",
       "rating": 4.7,
-      "ratingCount": 9352,
+      "ratingCount": 9354,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -4893,7 +4869,7 @@
     {
       "title": "Tour de l’horloge du Théâtre Gabriadze",
       "rating": 4.7,
-      "ratingCount": 6906,
+      "ratingCount": 6908,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -4902,28 +4878,54 @@
       "mapsUrl": "https://maps.google.com/?cid=4183334123567771131&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Gabriadze Theater",
-      "rating": 4.7,
-      "ratingCount": 4172,
+      "title": "Parc Mtatsminda",
+      "rating": 4.6,
+      "ratingCount": 26855,
       "types": [
-        "performing_arts_theater",
-        "event_venue",
+        "amusement_park",
+        "tourist_attraction",
+        "amusement_center",
+        "park",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=3438377700756436120&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=10001556674972813395&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Paragraph Freedom Square, a Luxury Collection Hotel",
-      "rating": 4.7,
-      "ratingCount": 592,
+      "title": "Kartlis Deda",
+      "rating": 4.6,
+      "ratingCount": 6557,
       "types": [
-        "hotel",
-        "lodging",
+        "monument",
+        "tourist_attraction",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=4707100817879180673&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=7213004104761471778&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Palais de Justice de Tbilissi",
+      "rating": 4.6,
+      "ratingCount": 4159,
+      "types": [
+        "local_government_office",
+        "government_office",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3558399100024698876&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "\"Rustaveli\"",
+      "rating": 4.6,
+      "ratingCount": 3430,
+      "types": [
+        "tourist_attraction",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3536306607077708543&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

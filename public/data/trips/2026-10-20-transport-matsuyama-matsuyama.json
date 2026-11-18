@@ -973,6 +973,71 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
+      "title": "Château de Matsuyama",
+      "rating": 4.5,
+      "ratingCount": 17559,
+      "types": [
+        "castle",
+        "tourist_attraction",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5339058785482931074&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "REF Matsuyama City Station by Vessel Hotels",
+      "rating": 4.5,
+      "ratingCount": 1001,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=966517494659512874&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Dormy Inn Matsuyama",
+      "rating": 4.4,
+      "ratingCount": 1833,
+      "types": [
+        "hotel",
+        "lodging",
+        "sauna",
+        "spa",
+        "public_bath",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13660645603697650924&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Daiwa Roynet Hotel Matsuyama",
+      "rating": 4.3,
+      "ratingCount": 1958,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6731733860769142801&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Comfort Hotel Matsuyama",
+      "rating": 4.3,
+      "ratingCount": 765,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16190131466875512414&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
       "title": "Iyonotojiba Kisukenoyu",
       "rating": 4.2,
       "ratingCount": 2273,
@@ -996,36 +1061,44 @@
       "mapsUrl": "https://maps.google.com/?cid=1627885297304274361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "EDION Matsuyama Store",
+      "title": "CANDEO HOTELS Matsuyama Okaido",
       "rating": 4.2,
-      "ratingCount": 1647,
+      "ratingCount": 1763,
       "types": [
-        "toy_store",
-        "home_goods_store",
-        "cell_phone_store",
+        "hotel",
+        "lodging",
         "point_of_interest",
-        "service",
-        "store",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=10484243962111156111&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=4843860114528147839&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "JA Ohisamaichi",
+      "title": "ANA Crowne Plaza Matsuyama",
       "rating": 4,
-      "ratingCount": 1857,
+      "ratingCount": 2608,
       "types": [
-        "farmers_market",
-        "market",
+        "hotel",
+        "fitness_center",
+        "gym",
+        "business_center",
+        "lodging",
+        "event_venue",
+        "swimming_pool",
+        "bar",
+        "sports_activity_location",
+        "health",
+        "restaurant",
+        "food",
         "point_of_interest",
+        "service",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=445854650329799117&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=6641554347393664152&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "HOTEL MYSTAYS Matsuyama",
       "rating": 4,
-      "ratingCount": 1463,
+      "ratingCount": 1464,
       "types": [
         "hotel",
         "banquet_hall",
@@ -1039,65 +1112,9 @@
       "mapsUrl": "https://maps.google.com/?cid=6461537703102875181&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Kisuke BOX-KIT",
+      "title": "Matsuyama City Station",
       "rating": 4,
-      "ratingCount": 169,
-      "types": [
-        "adventure_sports_center",
-        "sports_complex",
-        "sports_activity_location",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=14745365778276062497&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Komachi Station",
-      "rating": 4,
-      "ratingCount": 93,
-      "types": [
-        "transit_station",
-        "train_station",
-        "tram_stop",
-        "transit_stop",
-        "transportation_service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=9350151276980446157&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "FUJI GRAND Matsuyama",
-      "rating": 3.9,
-      "ratingCount": 3246,
-      "types": [
-        "shopping_mall",
-        "supermarket",
-        "grocery_store",
-        "food_store",
-        "food",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=5397401341470151601&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Terminal Hotel Matsuyama",
-      "rating": 3.9,
-      "ratingCount": 625,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=12835417596077153724&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Gare de Matsuyama",
-      "rating": 3.8,
-      "ratingCount": 921,
+      "ratingCount": 280,
       "types": [
         "train_station",
         "transit_station",
@@ -1105,20 +1122,7 @@
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=1485859852340179662&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Matsuyama City Community Center",
-      "rating": 3.8,
-      "ratingCount": 908,
-      "types": [
-        "community_center",
-        "event_venue",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=13140879140003947370&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=8728935889860366819&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []
