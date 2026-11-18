@@ -1445,31 +1445,16 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "Jardin Shukkei-en",
-      "rating": 4.5,
-      "ratingCount": 9196,
-      "types": [
-        "garden",
-        "tourist_attraction",
-        "historical_landmark",
-        "park",
-        "historical_place",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=15529573244945129955&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "HOTEL INTERGATE Hiroshima",
+      "title": "Daiwa Roynet Hotel Hiroshima-ekimae",
       "rating": 4.4,
-      "ratingCount": 1803,
+      "ratingCount": 1041,
       "types": [
         "hotel",
         "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=10032108468975298456&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=14061457430550349440&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Sheraton Grand Hiroshima Hotel",
@@ -1478,10 +1463,10 @@
       "types": [
         "hotel",
         "wedding_venue",
-        "event_venue",
         "lodging",
-        "service",
+        "event_venue",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1499,28 +1484,30 @@
       "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Hotel Vista Hiroshima",
+      "title": "Hiroshima Toshogu Shrine",
       "rating": 4.3,
-      "ratingCount": 1326,
+      "ratingCount": 1529,
       "types": [
-        "hotel",
-        "lodging",
+        "shinto_shrine",
+        "tourist_attraction",
+        "place_of_worship",
+        "association_or_organization",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=16934243330737314260&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=3234836693108419549&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Sotetsu Fresa Inn Hiroshima",
+      "title": "Via Inn Hiroshima Shinkansenguchi",
       "rating": 4.3,
-      "ratingCount": 1070,
+      "ratingCount": 1161,
       "types": [
         "hotel",
         "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=9598145011695842804&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=15124145118521555332&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Hiroshima Station",
@@ -1539,7 +1526,7 @@
     {
       "title": "Hotel Granvia Hiroshima",
       "rating": 4.2,
-      "ratingCount": 6631,
+      "ratingCount": 6632,
       "types": [
         "hotel",
         "lodging",
@@ -1551,7 +1538,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4626,
+      "ratingCount": 4632,
       "types": [
         "train_station",
         "transit_station",
@@ -1562,16 +1549,32 @@
       "mapsUrl": "https://maps.google.com/?cid=2900669120142632939&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Koko Hotel Hiroshima Station",
+      "title": "Rei-chan Hiroshima",
       "rating": 4.2,
-      "ratingCount": 782,
+      "ratingCount": 2435,
       "types": [
-        "hotel",
-        "lodging",
+        "japanese_restaurant",
+        "restaurant",
         "point_of_interest",
+        "food",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=12971200217189007863&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=5910420038710070746&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Edion Tsutaya Kaden",
+      "rating": 4.2,
+      "ratingCount": 2112,
+      "types": [
+        "cell_phone_store",
+        "toy_store",
+        "home_goods_store",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14914992577819817739&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

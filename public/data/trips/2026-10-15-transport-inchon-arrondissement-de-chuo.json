@@ -2821,94 +2821,56 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
+      "title": "Shima",
+      "rating": 4.6,
+      "ratingCount": 577,
+      "types": [
+        "steak_house",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1074450947513224546&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
       "title": "Pokémon Center DX",
       "rating": 4.5,
-      "ratingCount": 4326,
+      "ratingCount": 4327,
       "types": [
-        "cafe",
         "toy_store",
-        "food",
-        "store",
+        "cafe",
         "point_of_interest",
+        "store",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17206393884080941756&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Artizon Museum",
+      "title": "karaksa hotel colors Tokyo Yaesu",
       "rating": 4.5,
-      "ratingCount": 3391,
+      "ratingCount": 434,
       "types": [
-        "art_museum",
-        "museum",
-        "restaurant",
-        "food",
+        "hotel",
+        "extended_stay_hotel",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=18105762246803394651&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=4011957947109836630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Nihonbashi Kaisen Don Tsujihan - Nihonbashi Branch",
+      "title": "Taiyo Life Nihonbashi Building",
       "rating": 4.4,
-      "ratingCount": 5495,
+      "ratingCount": 289,
       "types": [
-        "japanese_restaurant",
-        "restaurant",
-        "food",
+        "business_center",
         "point_of_interest",
+        "service",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=2386807723085252126&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Mitsui Garden Hotel Kyobashi",
-      "rating": 4.3,
-      "ratingCount": 1949,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=11189517027243253602&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "remm Tokyo Kyobashi",
-      "rating": 4.3,
-      "ratingCount": 1371,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=9049603114031248844&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Super Hotel Premier Tokyo-eki Yaesu Chuo-guchi",
-      "rating": 4.2,
-      "ratingCount": 2533,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=2844254006260763863&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Creative Museum Tokyo",
-      "rating": 4.2,
-      "ratingCount": 932,
-      "types": [
-        "art_museum",
-        "art_gallery",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=13677663743563356313&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=13262388736584745470&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Hotel Yaenomidori Tokyo",
@@ -2923,39 +2885,73 @@
       "mapsUrl": "https://maps.google.com/?cid=15945359261433757087&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Nihombashi Takashimaya Shopping Center",
-      "rating": 4.1,
-      "ratingCount": 12822,
+      "title": "Marugo Tokyo",
+      "rating": 4.2,
+      "ratingCount": 163,
       "types": [
-        "department_store",
-        "womens_clothing_store",
-        "cosmetics_store",
-        "shopping_mall",
-        "cafe",
-        "tailor",
-        "clothing_store",
-        "grocery_store",
-        "food_store",
-        "restaurant",
-        "food",
+        "shoe_store",
+        "point_of_interest",
         "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16516298529943157177&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "BONGEN COFFEE Tokyo Nihonbashi",
+      "rating": 4.1,
+      "ratingCount": 309,
+      "types": [
+        "coffee_shop",
+        "coffee_roastery",
+        "coffee_stand",
+        "cafe",
+        "point_of_interest",
+        "food_store",
+        "store",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12865098981788872677&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tokyo Public Takara-cho Parking",
+      "rating": 4.1,
+      "ratingCount": 111,
+      "types": [
+        "parking_lot",
+        "parking",
+        "transportation_service",
         "point_of_interest",
         "service",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=6814899307248303714&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=17413465994424018994&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Pokémon Cafe TOKYO",
-      "rating": 4.1,
-      "ratingCount": 3147,
+      "title": "Menya Shichisai",
+      "rating": 4,
+      "ratingCount": 3017,
       "types": [
-        "cafe",
+        "ramen_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "point_of_interest",
         "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16915393510812892205&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "NEST HOTEL TOKYO YAESU",
+      "rating": 4,
+      "ratingCount": 833,
+      "types": [
+        "hotel",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=4725603843889793061&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=18317918624164944266&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

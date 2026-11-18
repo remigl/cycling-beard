@@ -1053,22 +1053,9 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "Ritsurin-kōen",
-      "rating": 4.5,
-      "ratingCount": 16570,
-      "types": [
-        "park",
-        "tourist_attraction",
-        "garden",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=13312497043416826132&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
       "title": "Anabuki Arena",
       "rating": 4.5,
-      "ratingCount": 583,
+      "ratingCount": 584,
       "types": [
         "arena",
         "event_venue",
@@ -1078,16 +1065,20 @@
       "mapsUrl": "https://maps.google.com/?cid=15663791299420855302&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Comfort Hotel Takamatsu",
-      "rating": 4.4,
-      "ratingCount": 738,
+      "title": "Dormy Inn Takamatsu Chuokoen-mae",
+      "rating": 4.3,
+      "ratingCount": 1178,
       "types": [
         "hotel",
         "lodging",
+        "sauna",
+        "spa",
+        "public_bath",
+        "health",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=18299516049908609763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=12228090606906692810&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "JR Hotel Clement Takamatsu",
@@ -1102,23 +1093,9 @@
       "mapsUrl": "https://maps.google.com/?cid=12320537024948393343&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "WeBase Takamatsu",
+      "title": "Udon Sakaeda",
       "rating": 4.2,
-      "ratingCount": 1061,
-      "types": [
-        "hotel",
-        "coworking_space",
-        "lodging",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=12779366808462679656&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Udon Baka Ichidai",
-      "rating": 4.1,
-      "ratingCount": 9424,
+      "ratingCount": 2722,
       "types": [
         "japanese_restaurant",
         "restaurant",
@@ -1126,7 +1103,30 @@
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=16758362857265554340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=10977916613292633256&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "JR Clement Inn Takamatsu",
+      "rating": 4.2,
+      "ratingCount": 810,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15893028565368909872&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Kagawa Prefectural Office",
+      "rating": 4.2,
+      "ratingCount": 145,
+      "types": [
+        "government_office",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5832096743584722710&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Honetsukidori Ikkaku Takamatsu",
@@ -1158,7 +1158,7 @@
     {
       "title": "Hotel Kawaroku Her-Stage Takamatsu",
       "rating": 4.1,
-      "ratingCount": 1829,
+      "ratingCount": 1831,
       "types": [
         "hotel",
         "lodging",
@@ -1168,18 +1168,16 @@
       "mapsUrl": "https://maps.google.com/?cid=15156015861687426408&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Parc Tamamo des ruines du château de Takamatsu",
-      "rating": 4,
-      "ratingCount": 4193,
+      "title": "Takamatsu Station",
+      "rating": 4.1,
+      "ratingCount": 81,
       "types": [
-        "historical_landmark",
-        "tourist_attraction",
-        "park",
-        "historical_place",
+        "transit_station",
+        "transportation_service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=2177612574103133750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=17900641263001961062&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

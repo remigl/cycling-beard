@@ -2247,7 +2247,7 @@
     {
       "title": "Jewel Changi Airport",
       "rating": 4.8,
-      "ratingCount": 99659,
+      "ratingCount": 99664,
       "types": [
         "shopping_mall",
         "tourist_attraction",
@@ -2257,9 +2257,49 @@
       "mapsUrl": "https://maps.google.com/?cid=13261360313192835779&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
+      "title": "Poulet Bijou - Jewel Changi Airport",
+      "rating": 4.8,
+      "ratingCount": 13449,
+      "types": [
+        "french_restaurant",
+        "european_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16750663374816951952&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Cosford Container Park",
+      "rating": 4.8,
+      "ratingCount": 6048,
+      "types": [
+        "event_venue",
+        "european_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17269998581689655194&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Jewel Rain Vortex",
+      "rating": 4.8,
+      "ratingCount": 2171,
+      "types": [
+        "scenic_spot",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17049913300396863432&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
       "title": "Aéroport Changi de Singapour",
       "rating": 4.7,
-      "ratingCount": 77723,
+      "ratingCount": 77736,
       "types": [
         "international_airport",
         "shopping_mall",
@@ -2274,7 +2314,7 @@
     {
       "title": "Changi Airport",
       "rating": 4.7,
-      "ratingCount": 1732,
+      "ratingCount": 1733,
       "types": [
         "subway_station",
         "transit_station",
@@ -2285,16 +2325,41 @@
       "mapsUrl": "https://maps.google.com/?cid=8858005260268598838&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "SIA Training Centre",
-      "rating": 4.6,
-      "ratingCount": 154,
+      "title": "The Wonderfall at Level 2",
+      "rating": 4.7,
+      "ratingCount": 690,
       "types": [
-        "educational_institution",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14719785615994791488&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Changi Airport Ter 2",
+      "rating": 4.7,
+      "ratingCount": 99,
+      "types": [
+        "bus_stop",
+        "transit_stop",
+        "transit_station",
         "transportation_service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=7556686284639185463&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=6412300057172555743&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Butterfly Garden",
+      "rating": 4.6,
+      "ratingCount": 13959,
+      "types": [
+        "garden",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6876945906309384042&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Changi Airport Terminal 2 Kopitiam",
@@ -2307,67 +2372,6 @@
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11209850883266645349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Singapore Expo Hall 6",
-      "rating": 4.5,
-      "ratingCount": 509,
-      "types": [
-        "convention_center",
-        "athletic_field",
-        "event_venue",
-        "sports_activity_location",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=1735453182545619759&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Downtown East",
-      "rating": 4.4,
-      "ratingCount": 10624,
-      "types": [
-        "sports_activity_location",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=18242162267305214701&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "DBS Asia Hub",
-      "rating": 4.4,
-      "ratingCount": 235,
-      "types": [
-        "corporate_office",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=16534462420328751344&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Airline House",
-      "rating": 4.4,
-      "ratingCount": 130,
-      "types": [
-        "corporate_office",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=1428588025122902018&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Changi Village Hawker Centre",
-      "rating": 4.3,
-      "ratingCount": 14056,
-      "types": [
-        "food_court",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=3141391163124868476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

@@ -4561,37 +4561,9 @@
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "Museum of the War of Independence",
-      "rating": 4.9,
-      "ratingCount": 6112,
-      "types": [
-        "history_museum",
-        "tourist_attraction",
-        "museum",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=476198435609432915&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "CSO Ada Ankara",
-      "rating": 4.6,
-      "ratingCount": 3613,
-      "types": [
-        "concert_hall",
-        "live_music_venue",
-        "auditorium",
-        "museum",
-        "event_venue",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=3922894720497317779&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
       "title": "Ankara Tren Garı",
       "rating": 4.6,
-      "ratingCount": 1310,
+      "ratingCount": 1311,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -4600,22 +4572,22 @@
       "mapsUrl": "https://maps.google.com/?cid=730316006014862449&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Ataturk Statue",
-      "rating": 4.5,
-      "ratingCount": 28697,
+      "title": "Gar",
+      "rating": 4.6,
+      "ratingCount": 52,
       "types": [
-        "monument",
-        "tourist_attraction",
-        "sculpture",
+        "subway_station",
+        "transit_station",
+        "transportation_service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=11755546491107091496&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=9305232978915267082&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "Ankara",
       "rating": 4.5,
-      "ratingCount": 5331,
+      "ratingCount": 5333,
       "types": [
         "train_station",
         "transit_station",
@@ -4628,7 +4600,7 @@
     {
       "title": "Ankara Arena",
       "rating": 4.5,
-      "ratingCount": 3906,
+      "ratingCount": 3911,
       "types": [
         "sports_complex",
         "sports_activity_location",
@@ -4649,23 +4621,44 @@
       "mapsUrl": "https://maps.google.com/?cid=2983371506995338286&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Cermodern",
-      "rating": 4.4,
-      "ratingCount": 7623,
+      "title": "Ankara Gar",
+      "rating": 4.5,
+      "ratingCount": 241,
       "types": [
-        "art_gallery",
-        "art_museum",
-        "tourist_attraction",
-        "museum",
+        "train_station",
+        "transit_station",
+        "transportation_service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=9191021513746938284&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=16235366177074706634&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ankara Tren Garı - Metro İstasyonu",
+      "rating": 4.5,
+      "ratingCount": 126,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7554859847969593685&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Gar Metro",
+      "rating": 4.5,
+      "ratingCount": 84,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8400327771034150068&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "YHT GAR",
       "rating": 4.4,
-      "ratingCount": 6794,
+      "ratingCount": 6796,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -4674,14 +4667,16 @@
       "mapsUrl": "https://maps.google.com/?cid=11391074688624116208&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Etiler Orduevi",
-      "rating": 4.4,
-      "ratingCount": 942,
+      "title": "The Ankara Hotel",
+      "rating": 4.3,
+      "ratingCount": 2206,
       "types": [
+        "hotel",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=11972586954540601678&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=7502994492627258634&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []
