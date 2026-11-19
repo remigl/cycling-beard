@@ -1447,7 +1447,7 @@
     {
       "title": "Jardin Shukkei-en",
       "rating": 4.5,
-      "ratingCount": 9203,
+      "ratingCount": 9204,
       "types": [
         "garden",
         "historical_landmark",
@@ -1462,7 +1462,7 @@
     {
       "title": "HOTEL INTERGATE Hiroshima",
       "rating": 4.4,
-      "ratingCount": 1807,
+      "ratingCount": 1808,
       "types": [
         "hotel",
         "lodging",
@@ -1489,11 +1489,11 @@
     {
       "title": "Pokémon Center Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1572,
+      "ratingCount": 1574,
       "types": [
         "toy_store",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1551,7 +1551,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4637,
+      "ratingCount": 4638,
       "types": [
         "train_station",
         "transit_station",

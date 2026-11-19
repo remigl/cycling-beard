@@ -947,9 +947,9 @@
       "types": [
         "opera_house",
         "concert_hall",
+        "live_music_venue",
         "auditorium",
         "performing_arts_theater",
-        "live_music_venue",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -987,8 +987,8 @@
       "types": [
         "hotel",
         "wedding_venue",
-        "event_venue",
         "lodging",
+        "event_venue",
         "point_of_interest",
         "service",
         "establishment"
@@ -1003,14 +1003,14 @@
         "hotel",
         "convention_center",
         "resort_hotel",
-        "massage_spa",
         "wedding_venue",
-        "event_venue",
         "lodging",
+        "massage_spa",
         "massage",
+        "spa",
+        "event_venue",
         "restaurant",
         "food",
-        "spa",
         "point_of_interest",
         "service",
         "establishment"
@@ -1032,7 +1032,7 @@
     {
       "title": "Kok-Tobe Hill",
       "rating": 4.6,
-      "ratingCount": 18276,
+      "ratingCount": 18278,
       "types": [
         "tourist_attraction",
         "point_of_interest",

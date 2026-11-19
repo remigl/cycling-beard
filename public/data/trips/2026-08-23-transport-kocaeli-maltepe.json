@@ -5599,6 +5599,75 @@
       "mapsUrl": "https://maps.google.com/?cid=5873537002298439559&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
+      "title": "Maltepe Coast",
+      "rating": 4.5,
+      "ratingCount": 3313,
+      "types": [
+        "park",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13524542124024939995&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Bostancı Marmaray",
+      "rating": 4.5,
+      "ratingCount": 3078,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10467059728051003518&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Küçükyalı Marmaray",
+      "rating": 4.5,
+      "ratingCount": 1336,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10190012174064499859&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "İdealtepe Marmaray",
+      "rating": 4.5,
+      "ratingCount": 831,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6476534676710035972&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Süreyya Plajı Marmaray İstanbul",
+      "rating": 4.5,
+      "ratingCount": 343,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13877616980803142012&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Bostancı İskele",
+      "rating": 4.5,
+      "ratingCount": 196,
+      "types": [
+        "bus_stop",
+        "transit_stop",
+        "transit_station",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5046485941418050266&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
       "title": "Küçükyalı",
       "rating": 4.4,
       "ratingCount": 268,
@@ -5612,87 +5681,17 @@
       "mapsUrl": "https://maps.google.com/?cid=1118980874570922273&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Turkcell Küçükyalı Plaza C Blok",
-      "rating": 4.4,
-      "ratingCount": 94,
-      "types": [
-        "corporate_office",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=14463845576994540492&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Meda Aydınpark Evleri",
-      "rating": 4.4,
-      "ratingCount": 87,
-      "types": [
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=11588408853266902196&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "İntiba Döner",
+      "title": "Bostancı",
       "rating": 4.3,
-      "ratingCount": 6213,
+      "ratingCount": 307,
       "types": [
-        "turkish_restaurant",
-        "restaurant",
-        "food",
+        "subway_station",
+        "transit_station",
+        "transportation_service",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=8789953108993482295&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Paribu Cineverse Hilltown",
-      "rating": 4.2,
-      "ratingCount": 4980,
-      "types": [
-        "movie_theater",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=17926333226013212059&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Nidapark Küçükyalı Kınalı",
-      "rating": 4.2,
-      "ratingCount": 159,
-      "types": [
-        "apartment_complex",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=10020064028440450873&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Nidapark Küçükyalı Burgaz Etabı",
-      "rating": 4.2,
-      "ratingCount": 61,
-      "types": [
-        "housing_complex",
-        "apartment_complex",
-        "point_of_interest",
-        "service",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=11348697292562314201&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "MAD Parfüm İstanbul Hilltown Avm",
-      "rating": 4.2,
-      "ratingCount": 53,
-      "types": [
-        "clothing_store",
-        "point_of_interest",
-        "store",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=15041087786794533339&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=9940723681722171254&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

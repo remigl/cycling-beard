@@ -1392,8 +1392,8 @@
       "ratingCount": 1551,
       "types": [
         "ramen_restaurant",
-        "japanese_restaurant",
         "chinese_noodle_restaurant",
+        "japanese_restaurant",
         "restaurant",
         "food",
         "point_of_interest",
@@ -1427,7 +1427,7 @@
     {
       "title": "Gare téléphérique Sanroku",
       "rating": 4.2,
-      "ratingCount": 1013,
+      "ratingCount": 1014,
       "types": [
         "point_of_interest",
         "establishment"
@@ -1440,18 +1440,18 @@
       "ratingCount": 710,
       "types": [
         "rest_stop",
-        "bicycle_store",
-        "cafe",
         "hotel",
         "bakery",
-        "lodging",
+        "bicycle_store",
+        "cafe",
         "clothing_store",
+        "lodging",
+        "bar",
         "sporting_goods_store",
         "food_store",
-        "bar",
+        "store",
         "restaurant",
         "food",
-        "store",
         "point_of_interest",
         "establishment"
       ],
@@ -1460,14 +1460,14 @@
     {
       "title": "Onomichi City Hall",
       "rating": 4.2,
-      "ratingCount": 411,
+      "ratingCount": 410,
       "types": [
         "city_hall",
         "observation_deck",
         "local_government_office",
         "government_office",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10228521009265532944&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

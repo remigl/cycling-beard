@@ -4615,7 +4615,7 @@
     {
       "title": "Ankara",
       "rating": 4.5,
-      "ratingCount": 5337,
+      "ratingCount": 5336,
       "types": [
         "train_station",
         "transit_station",
@@ -4628,7 +4628,7 @@
     {
       "title": "Ankara Arena",
       "rating": 4.5,
-      "ratingCount": 3915,
+      "ratingCount": 3916,
       "types": [
         "sports_complex",
         "sports_activity_location",
@@ -4665,7 +4665,7 @@
     {
       "title": "YHT GAR",
       "rating": 4.4,
-      "ratingCount": 6801,
+      "ratingCount": 6802,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -4676,7 +4676,7 @@
     {
       "title": "Etiler Orduevi",
       "rating": 4.4,
-      "ratingCount": 947,
+      "ratingCount": 946,
       "types": [
         "point_of_interest",
         "establishment"

@@ -975,7 +975,7 @@
     {
       "title": "Château de Matsuyama",
       "rating": 4.5,
-      "ratingCount": 17563,
+      "ratingCount": 17566,
       "types": [
         "castle",
         "tourist_attraction",
@@ -1000,7 +1000,7 @@
     {
       "title": "Dormy Inn Matsuyama",
       "rating": 4.4,
-      "ratingCount": 1833,
+      "ratingCount": 1834,
       "types": [
         "hotel",
         "lodging",
@@ -1075,7 +1075,7 @@
     {
       "title": "ANA Crowne Plaza Matsuyama",
       "rating": 4,
-      "ratingCount": 2608,
+      "ratingCount": 2609,
       "types": [
         "hotel",
         "fitness_center",
@@ -1114,7 +1114,7 @@
     {
       "title": "Matsuyama City Station",
       "rating": 4,
-      "ratingCount": 280,
+      "ratingCount": 281,
       "types": [
         "train_station",
         "transit_station",
