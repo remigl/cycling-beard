@@ -1416,7 +1416,7 @@
     {
       "title": "Senkoji Temple Mountain Ropeway",
       "rating": 4.2,
-      "ratingCount": 1723,
+      "ratingCount": 1725,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1437,7 +1437,7 @@
     {
       "title": "ONOMICHI U2 / HOTEL CYCLE",
       "rating": 4.2,
-      "ratingCount": 708,
+      "ratingCount": 710,
       "types": [
         "rest_stop",
         "bicycle_store",
@@ -1451,8 +1451,8 @@
         "bar",
         "restaurant",
         "food",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11542562443715878821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

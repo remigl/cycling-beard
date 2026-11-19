@@ -1055,7 +1055,7 @@
     {
       "title": "Ritsurin-kōen",
       "rating": 4.5,
-      "ratingCount": 16581,
+      "ratingCount": 16582,
       "types": [
         "park",
         "tourist_attraction",
@@ -1108,9 +1108,9 @@
       "types": [
         "hotel",
         "coworking_space",
-        "service",
         "lodging",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=12779366808462679656&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1158,7 +1158,7 @@
     {
       "title": "Hotel Kawaroku Her-Stage Takamatsu",
       "rating": 4.1,
-      "ratingCount": 1831,
+      "ratingCount": 1832,
       "types": [
         "hotel",
         "lodging",
@@ -1174,8 +1174,8 @@
       "types": [
         "historical_landmark",
         "tourist_attraction",
-        "historical_place",
         "park",
+        "historical_place",
         "point_of_interest",
         "establishment"
       ],

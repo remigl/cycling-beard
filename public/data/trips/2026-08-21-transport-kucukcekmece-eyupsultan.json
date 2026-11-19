@@ -1150,7 +1150,7 @@
     {
       "title": "Premier Kampüs Kağıthane",
       "rating": 4.2,
-      "ratingCount": 575,
+      "ratingCount": 576,
       "types": [
         "corporate_office",
         "coworking_space",
@@ -1164,7 +1164,7 @@
     {
       "title": "Kağıthane",
       "rating": 4.2,
-      "ratingCount": 253,
+      "ratingCount": 255,
       "types": [
         "subway_station",
         "transit_station",
@@ -1177,7 +1177,7 @@
     {
       "title": "Alibeyköy Bus Station",
       "rating": 4.1,
-      "ratingCount": 8091,
+      "ratingCount": 8094,
       "types": [
         "transit_depot",
         "transportation_service",

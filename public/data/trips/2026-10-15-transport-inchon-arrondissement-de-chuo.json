@@ -2828,8 +2828,8 @@
         "cafe",
         "toy_store",
         "food",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17206393884080941756&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2900,7 +2900,7 @@
     {
       "title": "Creative Museum Tokyo",
       "rating": 4.2,
-      "ratingCount": 934,
+      "ratingCount": 935,
       "types": [
         "art_museum",
         "art_gallery",
@@ -2925,7 +2925,7 @@
     {
       "title": "Nihombashi Takashimaya Shopping Center",
       "rating": 4.1,
-      "ratingCount": 12821,
+      "ratingCount": 12822,
       "types": [
         "department_store",
         "womens_clothing_store",
@@ -2938,9 +2938,9 @@
         "food_store",
         "restaurant",
         "food",
+        "store",
         "point_of_interest",
         "service",
-        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6814899307248303714&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

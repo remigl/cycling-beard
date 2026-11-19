@@ -5578,7 +5578,7 @@
     {
       "title": "Hilltown",
       "rating": 4.5,
-      "ratingCount": 16997,
+      "ratingCount": 16999,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -5589,7 +5589,7 @@
     {
       "title": "Elite World Grand İstanbul Küçükyalı",
       "rating": 4.5,
-      "ratingCount": 7320,
+      "ratingCount": 7322,
       "types": [
         "hotel",
         "lodging",
@@ -5627,8 +5627,8 @@
       "rating": 4.4,
       "ratingCount": 87,
       "types": [
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11588408853266902196&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -5649,7 +5649,7 @@
     {
       "title": "Paribu Cineverse Hilltown",
       "rating": 4.2,
-      "ratingCount": 4979,
+      "ratingCount": 4980,
       "types": [
         "movie_theater",
         "point_of_interest",
@@ -5663,8 +5663,8 @@
       "ratingCount": 159,
       "types": [
         "apartment_complex",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10020064028440450873&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -5676,8 +5676,8 @@
       "types": [
         "housing_complex",
         "apartment_complex",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11348697292562314201&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -5688,8 +5688,8 @@
       "ratingCount": 53,
       "types": [
         "clothing_store",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15041087786794533339&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
