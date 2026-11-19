@@ -1375,7 +1375,7 @@
     {
       "title": "Senkō-ji",
       "rating": 4.4,
-      "ratingCount": 3345,
+      "ratingCount": 3347,
       "types": [
         "buddhist_temple",
         "tourist_attraction",
@@ -1389,11 +1389,11 @@
     {
       "title": "Shoya",
       "rating": 4.4,
-      "ratingCount": 1551,
+      "ratingCount": 1552,
       "types": [
         "ramen_restaurant",
-        "chinese_noodle_restaurant",
         "japanese_restaurant",
+        "chinese_noodle_restaurant",
         "restaurant",
         "food",
         "point_of_interest",
@@ -1416,7 +1416,7 @@
     {
       "title": "Senkoji Temple Mountain Ropeway",
       "rating": 4.2,
-      "ratingCount": 1725,
+      "ratingCount": 1724,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1427,7 +1427,7 @@
     {
       "title": "Gare téléphérique Sanroku",
       "rating": 4.2,
-      "ratingCount": 1014,
+      "ratingCount": 1015,
       "types": [
         "point_of_interest",
         "establishment"
@@ -1440,18 +1440,18 @@
       "ratingCount": 710,
       "types": [
         "rest_stop",
-        "hotel",
-        "bakery",
         "bicycle_store",
         "cafe",
-        "clothing_store",
+        "hotel",
+        "bakery",
         "lodging",
-        "bar",
+        "clothing_store",
         "sporting_goods_store",
         "food_store",
-        "store",
+        "bar",
         "restaurant",
         "food",
+        "store",
         "point_of_interest",
         "establishment"
       ],
@@ -1466,8 +1466,8 @@
         "observation_deck",
         "local_government_office",
         "government_office",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=10228521009265532944&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1475,7 +1475,7 @@
     {
       "title": "Maruboshi",
       "rating": 4.1,
-      "ratingCount": 2499,
+      "ratingCount": 2502,
       "types": [
         "ramen_restaurant",
         "japanese_restaurant",

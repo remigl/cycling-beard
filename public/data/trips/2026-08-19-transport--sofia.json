@@ -1267,13 +1267,119 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Находище на минерална вода \"София-център\"",
+      "dist": 1258,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Amphithéâtre de Serdica",
+      "dist": 1598,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Софийски римски амфитеатър"
+    },
+    {
+      "title": "Васил Левски",
+      "dist": 1934,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Паметник на Васил Левски (София)"
+    },
+    {
+      "title": "Римска стена",
+      "dist": 3097,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Стара стена"
+    },
+    {
+      "title": "Galerie nationale des beaux-arts",
+      "dist": 1669,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Национална художествена галерия"
+    },
+    {
+      "title": "Национален църковен историко-археологически музей при Св. Синод",
+      "dist": 1701,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Национален етнографски музей",
+      "dist": 1716,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Институт за етнология и фолклористика с етнографски музей"
+    },
+    {
+      "title": "Adriana",
+      "dist": 1846,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Париж",
+      "dist": 1952,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Астри",
+      "dist": 1960,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Борис Христов",
+      "dist": 1992,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "ArtVibes",
+      "dist": 2035,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Къща-музей Пейо К. Яворов",
+      "dist": 2397,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Къщата-музей Димитър Димов",
+      "dist": 3614,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Национален антропологичен музей",
+      "dist": 4413,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Национален антропологичен музей"
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
       "title": "Cathédrale Saint-Alexandre-Nevski",
       "rating": 4.8,
-      "ratingCount": 27632,
+      "ratingCount": 27639,
       "types": [
         "church",
         "tourist_attraction",
@@ -1287,7 +1393,7 @@
     {
       "title": "Théâtre national Ivan-Vazov",
       "rating": 4.8,
-      "ratingCount": 11759,
+      "ratingCount": 11760,
       "types": [
         "performing_arts_theater",
         "tourist_attraction",
@@ -1314,7 +1420,7 @@
     {
       "title": "Hyatt Regency Sofia",
       "rating": 4.7,
-      "ratingCount": 1884,
+      "ratingCount": 1885,
       "types": [
         "hotel",
         "lodging",
@@ -1326,7 +1432,7 @@
     {
       "title": "Happy Bar & Grill Sveta Nedelya",
       "rating": 4.5,
-      "ratingCount": 20756,
+      "ratingCount": 20759,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
@@ -1341,7 +1447,7 @@
     {
       "title": "Shtastlivetsa Restaurant - Vitoshka",
       "rating": 4.5,
-      "ratingCount": 13238,
+      "ratingCount": 13239,
       "types": [
         "restaurant",
         "food",
@@ -1353,7 +1459,7 @@
     {
       "title": "Happy Bar & Grill Rakovski",
       "rating": 4.5,
-      "ratingCount": 12934,
+      "ratingCount": 12936,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
@@ -1382,7 +1488,7 @@
     {
       "title": "Université Saint-Clément d'Ohrid de Sofia",
       "rating": 4.5,
-      "ratingCount": 1827,
+      "ratingCount": 1830,
       "types": [
         "university",
         "educational_institution",
@@ -1402,8 +1508,8 @@
         "home_improvement_store",
         "home_goods_store",
         "store",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

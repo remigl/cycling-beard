@@ -6103,20 +6103,20 @@
     {
       "title": "MIMILINE",
       "rating": 4.8,
-      "ratingCount": 530,
+      "ratingCount": 533,
       "types": [
         "shopping_mall",
-        "cosmetics_store",
         "womens_clothing_store",
+        "cosmetics_store",
         "coffee_shop",
         "cafe",
         "clothing_store",
         "food_store",
-        "store",
         "wholesaler",
         "food",
-        "service",
+        "store",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6124,7 +6124,7 @@
     {
       "title": "Nine Tree by Parnas Seoul Dongdaemun",
       "rating": 4.6,
-      "ratingCount": 656,
+      "ratingCount": 658,
       "types": [
         "hotel",
         "lodging",
@@ -6136,7 +6136,7 @@
     {
       "title": "DOOTA Mall",
       "rating": 4.5,
-      "ratingCount": 2546,
+      "ratingCount": 2549,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -6219,7 +6219,7 @@
     {
       "title": "Hotel Skypark Kingstown Dongdaemun",
       "rating": 4.3,
-      "ratingCount": 1796,
+      "ratingCount": 1797,
       "types": [
         "hotel",
         "lodging",

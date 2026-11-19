@@ -2823,13 +2823,13 @@
     {
       "title": "Pokémon Center DX",
       "rating": 4.5,
-      "ratingCount": 4332,
+      "ratingCount": 4333,
       "types": [
         "cafe",
         "toy_store",
         "food",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17206393884080941756&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2864,7 +2864,7 @@
     {
       "title": "Mitsui Garden Hotel Kyobashi",
       "rating": 4.3,
-      "ratingCount": 1949,
+      "ratingCount": 1950,
       "types": [
         "hotel",
         "lodging",
@@ -2876,7 +2876,7 @@
     {
       "title": "remm Tokyo Kyobashi",
       "rating": 4.3,
-      "ratingCount": 1373,
+      "ratingCount": 1374,
       "types": [
         "hotel",
         "lodging",
@@ -2888,7 +2888,7 @@
     {
       "title": "Super Hotel Premier Tokyo-eki Yaesu Chuo-guchi",
       "rating": 4.2,
-      "ratingCount": 2533,
+      "ratingCount": 2534,
       "types": [
         "hotel",
         "lodging",
@@ -2913,7 +2913,7 @@
     {
       "title": "Hotel Yaenomidori Tokyo",
       "rating": 4.2,
-      "ratingCount": 858,
+      "ratingCount": 859,
       "types": [
         "hotel",
         "lodging",
@@ -2925,7 +2925,7 @@
     {
       "title": "Nihombashi Takashimaya Shopping Center",
       "rating": 4.1,
-      "ratingCount": 12822,
+      "ratingCount": 12824,
       "types": [
         "department_store",
         "womens_clothing_store",
@@ -2938,9 +2938,9 @@
         "food_store",
         "restaurant",
         "food",
-        "store",
         "point_of_interest",
         "service",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6814899307248303714&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

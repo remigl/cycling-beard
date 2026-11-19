@@ -5572,13 +5572,119 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Rüzgar Değirmeni",
+      "dist": 7865,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Kadife sokak",
+      "dist": 9070,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Terrace Fulya",
+      "dist": 9276,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Selimiye Hamami",
+      "dist": 11195,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Venüs Sanat",
+      "dist": 6341,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Bahariye Sanat",
+      "dist": 9070,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Galleria Mavist",
+      "dist": 9423,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Abdulmecit Efendi Köşkü",
+      "dist": 11121,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Abdülmecid Efendi Köşkü"
+    },
+    {
+      "title": "Atatürk",
+      "dist": 3312,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "M.K. Atatürk & Salvador Allende",
+      "dist": 4609,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dragos Sahili",
+      "dist": 5243,
+      "kind": "Point de vue",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Atatürk Heykeli",
+      "dist": 5867,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Seyit Onbaşı Heykeli",
+      "dist": 5945,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sadun Oda Boro Heykeli",
+      "dist": 7487,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Fazıl Hüsnü Dağlarca Heykeli",
+      "dist": 7709,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
       "title": "Hilltown",
       "rating": 4.5,
-      "ratingCount": 16999,
+      "ratingCount": 17000,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -5589,7 +5695,7 @@
     {
       "title": "Elite World Grand İstanbul Küçükyalı",
       "rating": 4.5,
-      "ratingCount": 7322,
+      "ratingCount": 7323,
       "types": [
         "hotel",
         "lodging",
@@ -5612,7 +5718,7 @@
     {
       "title": "Bostancı Marmaray",
       "rating": 4.5,
-      "ratingCount": 3078,
+      "ratingCount": 3079,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -5670,7 +5776,7 @@
     {
       "title": "Küçükyalı",
       "rating": 4.4,
-      "ratingCount": 268,
+      "ratingCount": 269,
       "types": [
         "subway_station",
         "transit_station",
