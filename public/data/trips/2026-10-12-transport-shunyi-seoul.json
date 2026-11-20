@@ -6103,20 +6103,20 @@
     {
       "title": "MIMILINE",
       "rating": 4.8,
-      "ratingCount": 533,
+      "ratingCount": 534,
       "types": [
         "shopping_mall",
-        "womens_clothing_store",
         "cosmetics_store",
+        "womens_clothing_store",
         "coffee_shop",
         "cafe",
+        "wholesaler",
         "clothing_store",
         "food_store",
-        "wholesaler",
-        "food",
         "store",
-        "point_of_interest",
         "service",
+        "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6136,7 +6136,7 @@
     {
       "title": "DOOTA Mall",
       "rating": 4.5,
-      "ratingCount": 2551,
+      "ratingCount": 2553,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -6147,7 +6147,7 @@
     {
       "title": "Dongdaemun Design Plaza (DDP)",
       "rating": 4.4,
-      "ratingCount": 32352,
+      "ratingCount": 32359,
       "types": [
         "cultural_center",
         "point_of_interest",

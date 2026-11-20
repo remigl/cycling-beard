@@ -1055,11 +1055,11 @@
     {
       "title": "Ritsurin-kōen",
       "rating": 4.5,
-      "ratingCount": 16588,
+      "ratingCount": 16593,
       "types": [
         "park",
-        "tourist_attraction",
         "garden",
+        "tourist_attraction",
         "point_of_interest",
         "establishment"
       ],
@@ -1109,8 +1109,8 @@
         "hotel",
         "coworking_space",
         "lodging",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=12779366808462679656&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1118,12 +1118,12 @@
     {
       "title": "Udon Baka Ichidai",
       "rating": 4.1,
-      "ratingCount": 9429,
+      "ratingCount": 9430,
       "types": [
         "japanese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=16758362857265554340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1131,14 +1131,14 @@
     {
       "title": "Honetsukidori Ikkaku Takamatsu",
       "rating": 4.1,
-      "ratingCount": 4109,
+      "ratingCount": 4110,
       "types": [
         "chicken_restaurant",
         "japanese_izakaya_restaurant",
         "japanese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9593094264412469003&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1158,7 +1158,7 @@
     {
       "title": "Hotel Kawaroku Her-Stage Takamatsu",
       "rating": 4.1,
-      "ratingCount": 1832,
+      "ratingCount": 1834,
       "types": [
         "hotel",
         "lodging",
