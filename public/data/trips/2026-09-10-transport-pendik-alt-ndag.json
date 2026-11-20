@@ -4563,7 +4563,7 @@
     {
       "title": "Museum of the War of Independence",
       "rating": 4.9,
-      "ratingCount": 6120,
+      "ratingCount": 6122,
       "types": [
         "history_museum",
         "tourist_attraction",
@@ -4576,12 +4576,12 @@
     {
       "title": "CSO Ada Ankara",
       "rating": 4.6,
-      "ratingCount": 3621,
+      "ratingCount": 3622,
       "types": [
         "concert_hall",
         "live_music_venue",
-        "auditorium",
         "museum",
+        "auditorium",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -4591,7 +4591,7 @@
     {
       "title": "Ankara Tren Garı",
       "rating": 4.6,
-      "ratingCount": 1314,
+      "ratingCount": 1315,
       "types": [
         "transportation_service",
         "point_of_interest",
@@ -4602,11 +4602,11 @@
     {
       "title": "Ataturk Statue",
       "rating": 4.5,
-      "ratingCount": 28716,
+      "ratingCount": 28720,
       "types": [
         "monument",
-        "tourist_attraction",
         "sculpture",
+        "tourist_attraction",
         "point_of_interest",
         "establishment"
       ],
@@ -4628,7 +4628,7 @@
     {
       "title": "Ankara Arena",
       "rating": 4.5,
-      "ratingCount": 3916,
+      "ratingCount": 3917,
       "types": [
         "sports_complex",
         "sports_activity_location",
@@ -4665,7 +4665,7 @@
     {
       "title": "YHT GAR",
       "rating": 4.4,
-      "ratingCount": 6806,
+      "ratingCount": 6808,
       "types": [
         "transportation_service",
         "point_of_interest",

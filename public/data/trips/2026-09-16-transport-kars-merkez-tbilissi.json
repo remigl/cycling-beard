@@ -4801,13 +4801,119 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "ქართული ხალხური სიმღერისა და საკრავების სახელმწიფო მუზეუმი",
+      "dist": 66,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "თბილისის ისტორიულ-ეთნოგრაფიული მუზეუმი",
+      "dist": 155,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "თბილისის ისტორიულ-ეთნოგრაფიული მუზეუმი"
+    },
+    {
+      "title": "Musée des beaux-arts Shalva Amiranashvili",
+      "dist": 852,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "ხელოვნების სახელმწიფო მუზეუმი"
+    },
+    {
+      "title": "Musée de l'occupation soviétique",
+      "dist": 955,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Museum of Soviet Occupation (Tbilisi)"
+    },
+    {
+      "title": "Musée national géorgien",
+      "dist": 985,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "საქართველოს ეროვნული მუზეუმი"
+    },
+    {
+      "title": "ლადო გუდიაშვილის სახელობის გალერეა",
+      "dist": 1110,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი",
+      "dist": 1319,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "საქართველოს გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი"
+    },
+    {
+      "title": "ილია ჭავჭავაძის ლიტერატურულ-მემორიალური მუზეუმი",
+      "dist": 1573,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "ელენე ახვლედიანის სახლ-მუსეუმი",
+      "dist": 2322,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "ნიკო ფიროსმანაშვილის სახელმწიფო მუზეუმი",
+      "dist": 3264,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "სოფიკო ჭიაურელი",
+      "dist": 141,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Памятник Софико Чиаурели"
+    },
+    {
+      "title": "ალექსანდრე პუშკინი",
+      "dist": 769,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "ალექსანდრე პუშკინის ბიუსტი თბილისში"
+    },
+    {
+      "title": "ნიკოლოზ ბარათაშვილი",
+      "dist": 816,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "გრიგოლ აბაშიძე",
+      "dist": 1012,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "300 არაგველის მემორიალი",
+      "dist": 1033,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "სამასი არაგველი"
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
       "title": "Cathédrale de la Trinité de Tbilissi",
       "rating": 4.8,
-      "ratingCount": 17215,
+      "ratingCount": 17219,
       "types": [
         "tourist_attraction",
         "church",
@@ -4821,7 +4927,7 @@
     {
       "title": "Pont de la Paix",
       "rating": 4.7,
-      "ratingCount": 18983,
+      "ratingCount": 18986,
       "types": [
         "bridge",
         "tourist_attraction",
@@ -4834,7 +4940,7 @@
     {
       "title": "Place de la Liberté",
       "rating": 4.7,
-      "ratingCount": 17865,
+      "ratingCount": 17867,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -4869,7 +4975,7 @@
     {
       "title": "Tour de l’horloge du Théâtre Gabriadze",
       "rating": 4.7,
-      "ratingCount": 6914,
+      "ratingCount": 6917,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -4880,7 +4986,7 @@
     {
       "title": "Parc Mtatsminda",
       "rating": 4.6,
-      "ratingCount": 26859,
+      "ratingCount": 26862,
       "types": [
         "amusement_park",
         "tourist_attraction",
@@ -4894,7 +5000,7 @@
     {
       "title": "Kartlis Deda",
       "rating": 4.6,
-      "ratingCount": 6560,
+      "ratingCount": 6563,
       "types": [
         "monument",
         "tourist_attraction",
@@ -4918,7 +5024,7 @@
     {
       "title": "\"Rustaveli\"",
       "rating": 4.6,
-      "ratingCount": 3430,
+      "ratingCount": 3431,
       "types": [
         "tourist_attraction",
         "transportation_service",

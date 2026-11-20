@@ -713,7 +713,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Зиндан",
+      "dist": 1425,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Шымкент қамалы",
+      "dist": 1536,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Церковь Николая Чудотворца",
+      "dist": 2243,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Авиаторам-участникам Великой Отечественной войны",
+      "dist": 3956,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Дом культуры «Металлург»",
+      "dist": 4112,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Зоопарк",
+      "dist": 8789,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Мірәлі баба күмбезі",
+      "dist": 11847,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Музей жертв политических репрессий",
+      "dist": 3633,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Үлкен Сағат",
+      "dist": 95,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Тәуелсіздік монументі",
+      "dist": 1441,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Монумент Независимости (Шымкент)"
+    },
+    {
+      "title": "Алия Молдагулова",
+      "dist": 2865,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Обелиск Ветеранам ВОВ",
+      "dist": 3702,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Мунайтпасов Хаджимукан",
+      "dist": 4041,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Мунайтпасов, Хаджимукан"
+    },
+    {
+      "title": "В. И. Ленину",
+      "dist": 4049,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ученикам школы № 4 погибшим в боях за Родину в 1941-1945 г",
+      "dist": 4354,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
@@ -822,8 +928,8 @@
       "rating": 4.2,
       "ratingCount": 5478,
       "types": [
-        "moving_company",
         "shipping_service",
+        "moving_company",
         "transportation_service",
         "point_of_interest",
         "service",

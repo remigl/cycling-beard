@@ -1369,7 +1369,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "岩屋巨石 岩屋荒神社",
+      "dist": 935,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "大正天皇御大典記念樅ノ木",
+      "dist": 1173,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "ゴーカート",
+      "dist": 9121,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "いつか来た道",
+      "dist": 9188,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "おのみち歴史博物館",
+      "dist": 182,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "中村憲吉旧居",
+      "dist": 416,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "中村憲吉"
+    },
+    {
+      "title": "浄土寺宝物館",
+      "dist": 713,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "芙美子記念館",
+      "dist": 752,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "山波とんど&こけしの館",
+      "dist": 2610,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "市民ギャラリー",
+      "dist": 2647,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "大浜埼灯台記念館（旧大浜崎通航潮流信号所）",
+      "dist": 6321,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "因島水軍城",
+      "dist": 9602,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "因島水軍城"
+    },
+    {
+      "title": "尾道市因島史料館",
+      "dist": 9694,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "弥勒之里美術館",
+      "dist": 9912,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "奉行所跡",
+      "dist": 541,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
@@ -1416,7 +1522,7 @@
     {
       "title": "Senkoji Temple Mountain Ropeway",
       "rating": 4.2,
-      "ratingCount": 1724,
+      "ratingCount": 1725,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1451,8 +1557,8 @@
         "bar",
         "restaurant",
         "food",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11542562443715878821&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

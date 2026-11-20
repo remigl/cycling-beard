@@ -6106,17 +6106,17 @@
       "ratingCount": 533,
       "types": [
         "shopping_mall",
-        "womens_clothing_store",
         "cosmetics_store",
         "coffee_shop",
         "cafe",
+        "womens_clothing_store",
         "clothing_store",
-        "food_store",
         "wholesaler",
-        "food",
-        "store",
         "point_of_interest",
         "service",
+        "food_store",
+        "store",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6136,7 +6136,7 @@
     {
       "title": "DOOTA Mall",
       "rating": 4.5,
-      "ratingCount": 2549,
+      "ratingCount": 2550,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -6147,7 +6147,7 @@
     {
       "title": "Dongdaemun Design Plaza (DDP)",
       "rating": 4.4,
-      "ratingCount": 32348,
+      "ratingCount": 32350,
       "types": [
         "cultural_center",
         "point_of_interest",

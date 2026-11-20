@@ -3809,7 +3809,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "荷花市场",
+      "dist": 1626,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "长廊",
+      "dist": 1643,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "团城",
+      "dist": 1925,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "珍妃井",
+      "dist": 2735,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Consort Zhen"
+    },
+    {
+      "title": "九龙壁",
+      "dist": 2983,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "李大钊故居",
+      "dist": 3430,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "北京古观象台",
+      "dist": 6082,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Beijing Ancient Observatory"
+    },
+    {
+      "title": "二校门",
+      "dist": 8419,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "日晷",
+      "dist": 8517,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "水木清华",
+      "dist": 8693,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "水木清华"
+    },
+    {
+      "title": "荷塘月色",
+      "dist": 8716,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "圆明园盛时全景",
+      "dist": 9758,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "残虹桥",
+      "dist": 9906,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "海岳开襟",
+      "dist": 9917,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "残拱桥",
+      "dist": 9923,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {

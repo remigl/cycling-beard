@@ -1055,7 +1055,7 @@
     {
       "title": "Ritsurin-kōen",
       "rating": 4.5,
-      "ratingCount": 16586,
+      "ratingCount": 16587,
       "types": [
         "park",
         "tourist_attraction",
@@ -1080,7 +1080,7 @@
     {
       "title": "Comfort Hotel Takamatsu",
       "rating": 4.4,
-      "ratingCount": 739,
+      "ratingCount": 740,
       "types": [
         "hotel",
         "lodging",
@@ -1122,8 +1122,8 @@
       "types": [
         "japanese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=16758362857265554340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1137,8 +1137,8 @@
         "japanese_izakaya_restaurant",
         "japanese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9593094264412469003&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1174,8 +1174,8 @@
       "types": [
         "historical_landmark",
         "tourist_attraction",
-        "park",
         "historical_place",
+        "park",
         "point_of_interest",
         "establishment"
       ],

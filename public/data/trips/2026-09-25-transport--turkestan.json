@@ -2684,12 +2684,12 @@
       "ratingCount": 2012,
       "types": [
         "hotel",
-        "department_store",
         "amusement_center",
-        "lodging",
+        "department_store",
         "sports_activity_location",
-        "store",
+        "lodging",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=57990983746879684&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2739,8 +2739,8 @@
       "ratingCount": 290,
       "types": [
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14769812894794138506&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

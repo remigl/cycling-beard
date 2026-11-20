@@ -948,8 +948,8 @@
         "opera_house",
         "concert_hall",
         "live_music_venue",
-        "auditorium",
         "performing_arts_theater",
+        "auditorium",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -959,12 +959,12 @@
     {
       "title": "Eastern Gate Indian restaurant",
       "rating": 4.8,
-      "ratingCount": 1892,
+      "ratingCount": 1893,
       "types": [
         "indian_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3140440843158280554&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -983,12 +983,12 @@
     {
       "title": "The Ritz-Carlton, Almaty",
       "rating": 4.7,
-      "ratingCount": 3314,
+      "ratingCount": 3315,
       "types": [
         "hotel",
         "wedding_venue",
-        "lodging",
         "event_venue",
+        "lodging",
         "point_of_interest",
         "service",
         "establishment"
@@ -998,21 +998,21 @@
     {
       "title": "InterContinental Almaty by IHG",
       "rating": 4.7,
-      "ratingCount": 2932,
+      "ratingCount": 2933,
       "types": [
         "hotel",
         "convention_center",
         "resort_hotel",
-        "wedding_venue",
-        "lodging",
         "massage_spa",
         "massage",
         "spa",
+        "wedding_venue",
         "event_venue",
+        "lodging",
         "restaurant",
-        "food",
         "point_of_interest",
         "service",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

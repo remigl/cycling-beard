@@ -2817,7 +2817,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "観世能楽堂",
+      "dist": 7555,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "シンデレラのフェアリーテイル・ホール Cinderella's Fairy Tale Hall",
+      "dist": 10867,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "シンデレラのフェアリーテイル・ホール"
+    },
+    {
+      "title": "ビッグ サンダー マウンテン",
+      "dist": 11090,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Big Thunder Mountain Railroad"
+    },
+    {
+      "title": "ポートディスカバリー・ステーション",
+      "dist": 11404,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "プロメテウス火山",
+      "dist": 11499,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "アメリカンウォーターフロント・ステーション",
+      "dist": 11799,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "アーティゾン美術館",
+      "dist": 255,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "アーティゾン美術館"
+    },
+    {
+      "title": "凧の博物館",
+      "dist": 703,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "日本銀行金融研究所貨幣博物館",
+      "dist": 866,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Currency Museum of the Bank of Japan"
+    },
+    {
+      "title": "三井記念美術館",
+      "dist": 983,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Mitsui Memorial Museum"
+    },
+    {
+      "title": "清月堂画廊",
+      "dist": 1263,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "中央区立築地社会教育会館・郷土資料館",
+      "dist": 1428,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Zemaitis Museum",
+      "dist": 1764,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "旧新橋停車場鉄道歴史展示室",
+      "dist": 1804,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "昭和館",
+      "dist": 2871,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "National Showa Memorial Museum"
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
@@ -2827,9 +2933,9 @@
       "types": [
         "cafe",
         "toy_store",
-        "food",
         "point_of_interest",
         "store",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=17206393884080941756&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2842,8 +2948,8 @@
         "art_museum",
         "museum",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=18105762246803394651&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2855,8 +2961,8 @@
       "types": [
         "japanese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2386807723085252126&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2928,19 +3034,19 @@
       "ratingCount": 12824,
       "types": [
         "department_store",
-        "womens_clothing_store",
         "cosmetics_store",
         "shopping_mall",
         "cafe",
-        "tailor",
+        "womens_clothing_store",
         "clothing_store",
-        "grocery_store",
-        "food_store",
+        "tailor",
         "restaurant",
-        "food",
         "point_of_interest",
         "service",
+        "grocery_store",
+        "food_store",
         "store",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6814899307248303714&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2951,8 +3057,8 @@
       "ratingCount": 3149,
       "types": [
         "cafe",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4725603843889793061&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

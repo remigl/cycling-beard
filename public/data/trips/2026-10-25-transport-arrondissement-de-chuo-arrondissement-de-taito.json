@@ -888,12 +888,12 @@
       "ratingCount": 1443,
       "types": [
         "hostel",
-        "guest_house",
         "inn",
+        "cafe",
+        "guest_house",
+        "lodging",
         "meal_takeaway",
         "bar",
-        "cafe",
-        "lodging",
         "restaurant",
         "food",
         "point_of_interest",
@@ -930,7 +930,7 @@
     {
       "title": "Henn na Hotel Tokyo Asakusa Tawaramachi Premier",
       "rating": 4.4,
-      "ratingCount": 1323,
+      "ratingCount": 1325,
       "types": [
         "hotel",
         "lodging",
@@ -980,7 +980,7 @@
     {
       "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
       "rating": 4.2,
-      "ratingCount": 2757,
+      "ratingCount": 2758,
       "types": [
         "cafe",
         "chocolate_factory",
@@ -989,8 +989,8 @@
         "dessert_shop",
         "confectionery",
         "food_store",
-        "store",
         "food",
+        "store",
         "point_of_interest",
         "establishment"
       ],

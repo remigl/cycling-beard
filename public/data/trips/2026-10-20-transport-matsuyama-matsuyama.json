@@ -969,17 +969,123 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "重要文化財 紫竹門東塀",
+      "dist": 1381,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Matsuyama",
+      "dist": 1393,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "松山城 (伊予国)"
+    },
+    {
+      "title": "秋山兄弟生誕地",
+      "dist": 1868,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Russia Hei Cemetery ロシア兵墓地",
+      "dist": 2140,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "道後温泉第四分湯場",
+      "dist": 3230,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "道後ミュージック",
+      "dist": 3261,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "道後ﾊｲｶﾗ通り",
+      "dist": 3297,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "バンビーズ天山",
+      "dist": 3341,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "湯築城",
+      "dist": 3346,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "湯築城"
+    },
+    {
+      "title": "商店街",
+      "dist": 3363,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "垣生城跡",
+      "dist": 3419,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Shinrokaku",
+      "dist": 3431,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "算額",
+      "dist": 3619,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "テニスコート",
+      "dist": 3760,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "蓮華寺  松山市",
+      "dist": 3873,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
       "title": "Château de Matsuyama",
       "rating": 4.5,
-      "ratingCount": 17566,
+      "ratingCount": 17568,
       "types": [
         "castle",
-        "historical_place",
         "tourist_attraction",
+        "historical_place",
         "point_of_interest",
         "establishment"
       ],
@@ -1003,12 +1109,12 @@
       "ratingCount": 1836,
       "types": [
         "hotel",
-        "sauna",
-        "public_bath",
-        "spa",
         "lodging",
-        "point_of_interest",
+        "sauna",
+        "spa",
+        "public_bath",
         "health",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=13660645603697650924&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1016,7 +1122,7 @@
     {
       "title": "Daiwa Roynet Hotel Matsuyama",
       "rating": 4.3,
-      "ratingCount": 1958,
+      "ratingCount": 1959,
       "types": [
         "hotel",
         "lodging",
@@ -1042,20 +1148,20 @@
       "rating": 4.2,
       "ratingCount": 2273,
       "types": [
-        "sauna",
-        "hotel",
-        "public_bath",
-        "massage_spa",
-        "spa",
-        "massage",
-        "tourist_attraction",
         "cafe",
+        "tourist_attraction",
+        "hotel",
         "lodging",
+        "massage_spa",
+        "massage",
+        "sauna",
+        "spa",
+        "public_bath",
+        "health",
         "restaurant",
         "food",
         "point_of_interest",
         "service",
-        "health",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=1627885297304274361&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1081,16 +1187,16 @@
         "fitness_center",
         "gym",
         "business_center",
-        "swimming_pool",
-        "bar",
         "lodging",
         "event_venue",
+        "swimming_pool",
+        "bar",
         "sports_activity_location",
+        "health",
         "restaurant",
         "food",
         "point_of_interest",
         "service",
-        "health",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6641554347393664152&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
