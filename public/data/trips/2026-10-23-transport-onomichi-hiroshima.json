@@ -1450,10 +1450,10 @@
       "ratingCount": 9215,
       "types": [
         "garden",
-        "tourist_attraction",
         "historical_landmark",
-        "historical_place",
+        "tourist_attraction",
         "park",
+        "historical_place",
         "point_of_interest",
         "establishment"
       ],
@@ -1478,10 +1478,10 @@
       "types": [
         "hotel",
         "wedding_venue",
-        "event_venue",
         "lodging",
-        "service",
+        "event_venue",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1489,7 +1489,7 @@
     {
       "title": "Pokémon Center Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1578,
+      "ratingCount": 1579,
       "types": [
         "toy_store",
         "point_of_interest",
@@ -1551,7 +1551,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4648,
+      "ratingCount": 4649,
       "types": [
         "train_station",
         "transit_station",

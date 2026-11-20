@@ -6106,15 +6106,15 @@
       "ratingCount": 534,
       "types": [
         "shopping_mall",
+        "coffee_shop",
         "cosmetics_store",
         "womens_clothing_store",
-        "coffee_shop",
+        "clothing_store",
         "cafe",
         "wholesaler",
-        "clothing_store",
         "food_store",
-        "store",
         "service",
+        "store",
         "point_of_interest",
         "food",
         "establishment"

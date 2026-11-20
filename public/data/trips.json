@@ -526075,13 +526075,119 @@
     "lodgingName": "",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Находище на минерална вода \"София-център\"",
+        "dist": 1258,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Amphithéâtre de Serdica",
+        "dist": 1598,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Софийски римски амфитеатър"
+      },
+      {
+        "title": "Васил Левски",
+        "dist": 1934,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Паметник на Васил Левски (София)"
+      },
+      {
+        "title": "Римска стена",
+        "dist": 3097,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Стара стена"
+      },
+      {
+        "title": "Galerie nationale des beaux-arts",
+        "dist": 1669,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Национална художествена галерия"
+      },
+      {
+        "title": "Национален църковен историко-археологически музей при Св. Синод",
+        "dist": 1701,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Национален етнографски музей",
+        "dist": 1716,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Институт за етнология и фолклористика с етнографски музей"
+      },
+      {
+        "title": "Adriana",
+        "dist": 1846,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Париж",
+        "dist": 1952,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Астри",
+        "dist": 1960,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Борис Христов",
+        "dist": 1992,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "ArtVibes",
+        "dist": 2035,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Къща-музей Пейо К. Яворов",
+        "dist": 2397,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Къщата-музей Димитър Димов",
+        "dist": 3614,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Национален антропологичен музей",
+        "dist": 4413,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Национален антропологичен музей"
+      }
+    ],
     "majorCities": [],
     "topRatedPlaces": [
       {
         "title": "Cathédrale Saint-Alexandre-Nevski",
         "rating": 4.8,
-        "ratingCount": 27645,
+        "ratingCount": 27650,
         "types": [
           "church",
           "tourist_attraction",
@@ -526095,7 +526201,7 @@
       {
         "title": "Théâtre national Ivan-Vazov",
         "rating": 4.8,
-        "ratingCount": 11764,
+        "ratingCount": 11765,
         "types": [
           "performing_arts_theater",
           "tourist_attraction",
@@ -526134,7 +526240,7 @@
       {
         "title": "Happy Bar & Grill Sveta Nedelya",
         "rating": 4.5,
-        "ratingCount": 20764,
+        "ratingCount": 20768,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
@@ -526149,7 +526255,7 @@
       {
         "title": "Shtastlivetsa Restaurant - Vitoshka",
         "rating": 4.5,
-        "ratingCount": 13244,
+        "ratingCount": 13246,
         "types": [
           "restaurant",
           "food",
@@ -526161,7 +526267,7 @@
       {
         "title": "Happy Bar & Grill Rakovski",
         "rating": 4.5,
-        "ratingCount": 12953,
+        "ratingCount": 12962,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
@@ -526176,7 +526282,7 @@
       {
         "title": "Grande Mosquée de Sofia",
         "rating": 4.5,
-        "ratingCount": 3991,
+        "ratingCount": 3992,
         "types": [
           "mosque",
           "tourist_attraction",
@@ -526190,7 +526296,7 @@
       {
         "title": "Université Saint-Clément d'Ohrid de Sofia",
         "rating": 4.5,
-        "ratingCount": 1834,
+        "ratingCount": 1835,
         "types": [
           "university",
           "educational_institution",
@@ -526202,16 +526308,16 @@
       {
         "title": "BAUHAUS Bulgaria",
         "rating": 4.4,
-        "ratingCount": 9019,
+        "ratingCount": 9021,
         "types": [
           "building_materials_store",
           "garden_center",
           "hardware_store",
           "home_improvement_store",
           "home_goods_store",
-          "store",
           "point_of_interest",
           "service",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -537881,7 +537987,7 @@
       {
         "title": "Museum of the War of Independence",
         "rating": 4.9,
-        "ratingCount": 6123,
+        "ratingCount": 6128,
         "types": [
           "history_museum",
           "tourist_attraction",
@@ -537894,7 +538000,7 @@
       {
         "title": "CSO Ada Ankara",
         "rating": 4.6,
-        "ratingCount": 3625,
+        "ratingCount": 3629,
         "types": [
           "concert_hall",
           "live_music_venue",
@@ -537920,7 +538026,7 @@
       {
         "title": "Ataturk Statue",
         "rating": 4.5,
-        "ratingCount": 28723,
+        "ratingCount": 28729,
         "types": [
           "monument",
           "tourist_attraction",
@@ -537933,7 +538039,7 @@
       {
         "title": "Ankara",
         "rating": 4.5,
-        "ratingCount": 5342,
+        "ratingCount": 5347,
         "types": [
           "train_station",
           "transit_station",
@@ -537969,7 +538075,7 @@
       {
         "title": "Cermodern",
         "rating": 4.4,
-        "ratingCount": 7626,
+        "ratingCount": 7628,
         "types": [
           "art_gallery",
           "art_museum",
@@ -537983,7 +538089,7 @@
       {
         "title": "YHT GAR",
         "rating": 4.4,
-        "ratingCount": 6814,
+        "ratingCount": 6818,
         "types": [
           "transportation_service",
           "point_of_interest",
@@ -537994,7 +538100,7 @@
       {
         "title": "Etiler Orduevi",
         "rating": 4.4,
-        "ratingCount": 947,
+        "ratingCount": 948,
         "types": [
           "point_of_interest",
           "establishment"
@@ -551815,9 +551921,9 @@
           "department_store",
           "amusement_center",
           "lodging",
-          "store",
           "sports_activity_location",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=57990983746879684&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -551843,8 +551949,8 @@
           "hotel",
           "business_center",
           "lodging",
-          "service",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=3563225709364616144&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -551867,8 +551973,8 @@
         "ratingCount": 290,
         "types": [
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=14769812894794138506&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -553805,7 +553911,7 @@
       {
         "title": "Eastern Gate Indian restaurant",
         "rating": 4.8,
-        "ratingCount": 1894,
+        "ratingCount": 1902,
         "types": [
           "indian_restaurant",
           "restaurant",
@@ -553878,7 +553984,7 @@
       {
         "title": "Kok-Tobe Hill",
         "rating": 4.6,
-        "ratingCount": 18281,
+        "ratingCount": 18282,
         "types": [
           "tourist_attraction",
           "point_of_interest",
@@ -556146,8 +556252,8 @@
         "types": [
           "chinese_restaurant",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=14207721148624174731&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -556182,8 +556288,8 @@
         "ratingCount": 61,
         "types": [
           "lodging",
-          "point_of_interest",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15798742090729523652&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -572127,15 +572233,15 @@
         "ratingCount": 534,
         "types": [
           "shopping_mall",
+          "coffee_shop",
           "cosmetics_store",
           "womens_clothing_store",
-          "coffee_shop",
+          "clothing_store",
           "cafe",
           "wholesaler",
-          "clothing_store",
           "food_store",
-          "store",
           "service",
+          "store",
           "point_of_interest",
           "food",
           "establishment"
@@ -576367,11 +576473,11 @@
       {
         "title": "Ritsurin-kōen",
         "rating": 4.5,
-        "ratingCount": 16593,
+        "ratingCount": 16594,
         "types": [
           "park",
-          "garden",
           "tourist_attraction",
+          "garden",
           "point_of_interest",
           "establishment"
         ],
@@ -576421,8 +576527,8 @@
           "hotel",
           "coworking_space",
           "lodging",
-          "service",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=12779366808462679656&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -576434,8 +576540,8 @@
         "types": [
           "japanese_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16758362857265554340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -576449,8 +576555,8 @@
           "japanese_izakaya_restaurant",
           "japanese_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=9593094264412469003&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -580791,10 +580897,10 @@
         "ratingCount": 9215,
         "types": [
           "garden",
-          "tourist_attraction",
           "historical_landmark",
-          "historical_place",
+          "tourist_attraction",
           "park",
+          "historical_place",
           "point_of_interest",
           "establishment"
         ],
@@ -580819,10 +580925,10 @@
         "types": [
           "hotel",
           "wedding_venue",
-          "event_venue",
           "lodging",
-          "service",
+          "event_venue",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -580830,7 +580936,7 @@
       {
         "title": "Pokémon Center Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1578,
+        "ratingCount": 1579,
         "types": [
           "toy_store",
           "point_of_interest",
@@ -580892,7 +580998,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4648,
+        "ratingCount": 4649,
         "types": [
           "train_station",
           "transit_station",
@@ -581821,8 +581927,8 @@
         "ratingCount": 1223,
         "types": [
           "gift_shop",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -581870,7 +581976,7 @@
       {
         "title": "Toyoko Inn Asakusa Kuramae No.2",
         "rating": 4.3,
-        "ratingCount": 915,
+        "ratingCount": 916,
         "types": [
           "hotel",
           "lodging",
@@ -581904,8 +582010,8 @@
           "confectionery",
           "food_store",
           "food",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -584170,7 +584276,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99676,
+        "ratingCount": 99682,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -584182,11 +584288,11 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 77850,
+        "ratingCount": 77887,
         "types": [
           "international_airport",
-          "shopping_mall",
           "tourist_attraction",
+          "shopping_mall",
           "airport",
           "transportation_service",
           "point_of_interest",
@@ -584212,8 +584318,8 @@
         "rating": 4.6,
         "ratingCount": 154,
         "types": [
-          "educational_institution",
           "transportation_service",
+          "educational_institution",
           "point_of_interest",
           "establishment"
         ],
@@ -584225,8 +584331,8 @@
         "ratingCount": 11241,
         "types": [
           "food_court",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11209850883266645349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -584239,9 +584345,9 @@
           "convention_center",
           "athletic_field",
           "event_venue",
+          "service",
           "sports_activity_location",
           "point_of_interest",
-          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=1735453182545619759&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -584286,8 +584392,8 @@
         "types": [
           "food_court",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=3141391163124868476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
