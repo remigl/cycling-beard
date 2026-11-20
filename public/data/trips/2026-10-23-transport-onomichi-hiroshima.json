@@ -1447,7 +1447,7 @@
     {
       "title": "Jardin Shukkei-en",
       "rating": 4.5,
-      "ratingCount": 9208,
+      "ratingCount": 9210,
       "types": [
         "garden",
         "historical_landmark",
@@ -1474,7 +1474,7 @@
     {
       "title": "Sheraton Grand Hiroshima Hotel",
       "rating": 4.3,
-      "ratingCount": 2798,
+      "ratingCount": 2799,
       "types": [
         "hotel",
         "wedding_venue",
@@ -1489,7 +1489,7 @@
     {
       "title": "Pokémon Center Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1577,
+      "ratingCount": 1578,
       "types": [
         "toy_store",
         "store",
@@ -1551,7 +1551,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4644,
+      "ratingCount": 4645,
       "types": [
         "train_station",
         "transit_station",

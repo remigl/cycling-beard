@@ -2655,7 +2655,7 @@
     {
       "title": "Mausolée de Khoja Ahmed Yasavi",
       "rating": 4.8,
-      "ratingCount": 11714,
+      "ratingCount": 11715,
       "types": [
         "historical_landmark",
         "tourist_attraction",
@@ -2684,10 +2684,10 @@
       "ratingCount": 2012,
       "types": [
         "hotel",
-        "amusement_center",
         "department_store",
-        "sports_activity_location",
+        "amusement_center",
         "lodging",
+        "sports_activity_location",
         "point_of_interest",
         "store",
         "establishment"
@@ -2697,7 +2697,7 @@
     {
       "title": "Karavan Saray",
       "rating": 4.7,
-      "ratingCount": 1748,
+      "ratingCount": 1749,
       "types": [
         "resort_hotel",
         "hotel",
@@ -2739,8 +2739,8 @@
       "ratingCount": 290,
       "types": [
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=14769812894794138506&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

@@ -4580,8 +4580,8 @@
       "types": [
         "concert_hall",
         "live_music_venue",
-        "museum",
         "auditorium",
+        "museum",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -4605,8 +4605,8 @@
       "ratingCount": 28720,
       "types": [
         "monument",
-        "sculpture",
         "tourist_attraction",
+        "sculpture",
         "point_of_interest",
         "establishment"
       ],
@@ -4665,7 +4665,7 @@
     {
       "title": "YHT GAR",
       "rating": 4.4,
-      "ratingCount": 6808,
+      "ratingCount": 6809,
       "types": [
         "transportation_service",
         "point_of_interest",

@@ -948,8 +948,8 @@
         "opera_house",
         "concert_hall",
         "live_music_venue",
-        "performing_arts_theater",
         "auditorium",
+        "performing_arts_theater",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -963,8 +963,8 @@
       "types": [
         "indian_restaurant",
         "restaurant",
-        "point_of_interest",
         "food",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3140440843158280554&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -987,8 +987,8 @@
       "types": [
         "hotel",
         "wedding_venue",
-        "event_venue",
         "lodging",
+        "event_venue",
         "point_of_interest",
         "service",
         "establishment"
@@ -1003,16 +1003,16 @@
         "hotel",
         "convention_center",
         "resort_hotel",
+        "wedding_venue",
+        "lodging",
         "massage_spa",
         "massage",
         "spa",
-        "wedding_venue",
         "event_venue",
-        "lodging",
         "restaurant",
+        "food",
         "point_of_interest",
         "service",
-        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

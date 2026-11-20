@@ -526075,119 +526075,13 @@
     "lodgingName": "",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Находище на минерална вода \"София-център\"",
-        "dist": 1258,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Amphithéâtre de Serdica",
-        "dist": 1598,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Софийски римски амфитеатър"
-      },
-      {
-        "title": "Васил Левски",
-        "dist": 1934,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Паметник на Васил Левски (София)"
-      },
-      {
-        "title": "Римска стена",
-        "dist": 3097,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Стара стена"
-      },
-      {
-        "title": "Galerie nationale des beaux-arts",
-        "dist": 1669,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Национална художествена галерия"
-      },
-      {
-        "title": "Национален църковен историко-археологически музей при Св. Синод",
-        "dist": 1701,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Национален етнографски музей",
-        "dist": 1716,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Институт за етнология и фолклористика с етнографски музей"
-      },
-      {
-        "title": "Adriana",
-        "dist": 1846,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Париж",
-        "dist": 1952,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Астри",
-        "dist": 1960,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Борис Христов",
-        "dist": 1992,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "ArtVibes",
-        "dist": 2035,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Къща-музей Пейо К. Яворов",
-        "dist": 2397,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Къщата-музей Димитър Димов",
-        "dist": 3614,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Национален антропологичен музей",
-        "dist": 4413,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Национален антропологичен музей"
-      }
-    ],
+    "pois": [],
     "majorCities": [],
     "topRatedPlaces": [
       {
         "title": "Hotel Via Serdika",
         "rating": 4.8,
-        "ratingCount": 662,
+        "ratingCount": 663,
         "types": [
           "hotel",
           "lodging",
@@ -526201,13 +526095,13 @@
         "rating": 4.5,
         "ratingCount": 8664,
         "types": [
-          "live_music_venue",
           "eastern_european_restaurant",
+          "live_music_venue",
           "event_venue",
           "european_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=8775649631730896212&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -526236,8 +526130,8 @@
         "types": [
           "brunch_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=7004210189753216574&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -538001,8 +537895,8 @@
         "types": [
           "concert_hall",
           "live_music_venue",
-          "museum",
           "auditorium",
+          "museum",
           "event_venue",
           "point_of_interest",
           "establishment"
@@ -538026,8 +537920,8 @@
         "ratingCount": 28720,
         "types": [
           "monument",
-          "sculpture",
           "tourist_attraction",
+          "sculpture",
           "point_of_interest",
           "establishment"
         ],
@@ -538086,7 +537980,7 @@
       {
         "title": "YHT GAR",
         "rating": 4.4,
-        "ratingCount": 6808,
+        "ratingCount": 6809,
         "types": [
           "transportation_service",
           "point_of_interest",
@@ -551886,7 +551780,7 @@
       {
         "title": "Mausolée de Khoja Ahmed Yasavi",
         "rating": 4.8,
-        "ratingCount": 11714,
+        "ratingCount": 11715,
         "types": [
           "historical_landmark",
           "tourist_attraction",
@@ -551915,10 +551809,10 @@
         "ratingCount": 2012,
         "types": [
           "hotel",
-          "amusement_center",
           "department_store",
-          "sports_activity_location",
+          "amusement_center",
           "lodging",
+          "sports_activity_location",
           "point_of_interest",
           "store",
           "establishment"
@@ -551928,7 +551822,7 @@
       {
         "title": "Karavan Saray",
         "rating": 4.7,
-        "ratingCount": 1748,
+        "ratingCount": 1749,
         "types": [
           "resort_hotel",
           "hotel",
@@ -551970,8 +551864,8 @@
         "ratingCount": 290,
         "types": [
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=14769812894794138506&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -553897,8 +553791,8 @@
           "opera_house",
           "concert_hall",
           "live_music_venue",
-          "performing_arts_theater",
           "auditorium",
+          "performing_arts_theater",
           "event_venue",
           "point_of_interest",
           "establishment"
@@ -553912,8 +553806,8 @@
         "types": [
           "indian_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=3140440843158280554&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -553936,8 +553830,8 @@
         "types": [
           "hotel",
           "wedding_venue",
-          "event_venue",
           "lodging",
+          "event_venue",
           "point_of_interest",
           "service",
           "establishment"
@@ -553952,16 +553846,16 @@
           "hotel",
           "convention_center",
           "resort_hotel",
+          "wedding_venue",
+          "lodging",
           "massage_spa",
           "massage",
           "spa",
-          "wedding_venue",
           "event_venue",
-          "lodging",
           "restaurant",
+          "food",
           "point_of_interest",
           "service",
-          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -572186,17 +572080,17 @@
         "ratingCount": 533,
         "types": [
           "shopping_mall",
+          "womens_clothing_store",
           "cosmetics_store",
           "coffee_shop",
           "cafe",
-          "womens_clothing_store",
           "clothing_store",
+          "food_store",
           "wholesaler",
+          "food",
+          "store",
           "point_of_interest",
           "service",
-          "food_store",
-          "store",
-          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -572204,7 +572098,7 @@
       {
         "title": "Nine Tree by Parnas Seoul Dongdaemun",
         "rating": 4.6,
-        "ratingCount": 658,
+        "ratingCount": 661,
         "types": [
           "hotel",
           "lodging",
@@ -572216,7 +572110,7 @@
       {
         "title": "DOOTA Mall",
         "rating": 4.5,
-        "ratingCount": 2550,
+        "ratingCount": 2551,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -572227,7 +572121,7 @@
       {
         "title": "Dongdaemun Design Plaza (DDP)",
         "rating": 4.4,
-        "ratingCount": 32350,
+        "ratingCount": 32352,
         "types": [
           "cultural_center",
           "point_of_interest",
@@ -576426,7 +576320,7 @@
       {
         "title": "Ritsurin-kōen",
         "rating": 4.5,
-        "ratingCount": 16587,
+        "ratingCount": 16588,
         "types": [
           "park",
           "tourist_attraction",
@@ -576493,8 +576387,8 @@
         "types": [
           "japanese_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16758362857265554340&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -576502,14 +576396,14 @@
       {
         "title": "Honetsukidori Ikkaku Takamatsu",
         "rating": 4.1,
-        "ratingCount": 4108,
+        "ratingCount": 4109,
         "types": [
           "chicken_restaurant",
           "japanese_izakaya_restaurant",
           "japanese_restaurant",
           "restaurant",
-          "point_of_interest",
           "food",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=9593094264412469003&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -576545,8 +576439,8 @@
         "types": [
           "historical_landmark",
           "tourist_attraction",
-          "historical_place",
           "park",
+          "historical_place",
           "point_of_interest",
           "establishment"
         ],
@@ -580847,7 +580741,7 @@
       {
         "title": "Jardin Shukkei-en",
         "rating": 4.5,
-        "ratingCount": 9208,
+        "ratingCount": 9210,
         "types": [
           "garden",
           "historical_landmark",
@@ -580874,7 +580768,7 @@
       {
         "title": "Sheraton Grand Hiroshima Hotel",
         "rating": 4.3,
-        "ratingCount": 2798,
+        "ratingCount": 2799,
         "types": [
           "hotel",
           "wedding_venue",
@@ -580889,7 +580783,7 @@
       {
         "title": "Pokémon Center Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1577,
+        "ratingCount": 1578,
         "types": [
           "toy_store",
           "store",
@@ -580951,7 +580845,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4644,
+        "ratingCount": 4645,
         "types": [
           "train_station",
           "transit_station",
@@ -581858,7 +581752,7 @@
       {
         "title": "Nui. Hostel & Bar Lounge",
         "rating": 4.5,
-        "ratingCount": 1443,
+        "ratingCount": 1444,
         "types": [
           "hostel",
           "inn",
@@ -581877,7 +581771,7 @@
       {
         "title": "kakimori",
         "rating": 4.5,
-        "ratingCount": 1222,
+        "ratingCount": 1223,
         "types": [
           "gift_shop",
           "store",
@@ -581953,7 +581847,7 @@
       {
         "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
         "rating": 4.2,
-        "ratingCount": 2758,
+        "ratingCount": 2759,
         "types": [
           "cafe",
           "chocolate_factory",
@@ -584229,7 +584123,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99675,
+        "ratingCount": 99677,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -584241,7 +584135,7 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 77816,
+        "ratingCount": 77832,
         "types": [
           "international_airport",
           "shopping_mall",
@@ -584308,7 +584202,7 @@
       {
         "title": "Downtown East",
         "rating": 4.4,
-        "ratingCount": 10624,
+        "ratingCount": 10625,
         "types": [
           "sports_activity_location",
           "point_of_interest",
