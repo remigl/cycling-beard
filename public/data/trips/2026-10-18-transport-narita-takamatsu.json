@@ -1049,13 +1049,119 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "情報通信交流館 e-とぴあ・かがわ",
+      "dist": 911,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Château de Takamatsu",
+      "dist": 1142,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "高松城 (讃岐国)"
+    },
+    {
+      "title": "高松市歴史資料館",
+      "dist": 583,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "香川県文化会館",
+      "dist": 960,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "香川県立ミュージアム",
+      "dist": 1402,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "香川県立ミュージアム"
+    },
+    {
+      "title": "高松市鬼ヶ島おにの館",
+      "dist": 4745,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "イサム・ノグチ庭園美術館 (Isamu Noguchi Garden Museum)",
+      "dist": 8016,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "イサム・ノグチ庭園美術館"
+    },
+    {
+      "title": "瀬戸内海歴史民俗資料館",
+      "dist": 10361,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "香川県自然科学館",
+      "dist": 10622,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Benesse House Beach",
+      "dist": 11689,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "ハゲさん",
+      "dist": 1143,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "漆芸家 玉楮象谷(たまかじぞうこく)の像",
+      "dist": 1205,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "國東照太翁像",
+      "dist": 1226,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "竣工記念碑",
+      "dist": 4794,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "長池の碑",
+      "dist": 5495,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
       "title": "Ritsurin-kōen",
       "rating": 4.5,
-      "ratingCount": 16594,
+      "ratingCount": 16597,
       "types": [
         "park",
         "tourist_attraction",
@@ -1080,7 +1186,7 @@
     {
       "title": "Comfort Hotel Takamatsu",
       "rating": 4.4,
-      "ratingCount": 740,
+      "ratingCount": 741,
       "types": [
         "hotel",
         "lodging",
@@ -1092,7 +1198,7 @@
     {
       "title": "JR Hotel Clement Takamatsu",
       "rating": 4.2,
-      "ratingCount": 4223,
+      "ratingCount": 4225,
       "types": [
         "hotel",
         "lodging",
@@ -1170,7 +1276,7 @@
     {
       "title": "Parc Tamamo des ruines du château de Takamatsu",
       "rating": 4,
-      "ratingCount": 4197,
+      "ratingCount": 4198,
       "types": [
         "historical_landmark",
         "tourist_attraction",

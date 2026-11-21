@@ -1793,7 +1793,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "鼎园",
+      "dist": 3305,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "祢衡墓",
+      "dist": 3722,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "赤壁之战全景画馆",
+      "dist": 3949,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "黄鹤楼公园",
+      "dist": 4077,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "園博園東門",
+      "dist": 7707,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "漢口里",
+      "dist": 7790,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "大总统黎元洪之墓",
+      "dist": 10351,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "楚市",
+      "dist": 11819,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "武汉美术馆",
+      "dist": 182,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "八七会议会址纪念馆",
+      "dist": 724,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "江汉关博物馆",
+      "dist": 781,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "武汉国民政府旧址纪念馆",
+      "dist": 1013,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "湖北省地质博物馆",
+      "dist": 2542,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "苏联空军志愿队烈士墓",
+      "dist": 3079,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "毛泽东同志故居",
+      "dist": 3546,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {

@@ -4602,7 +4602,7 @@
     {
       "title": "Ataturk Statue",
       "rating": 4.5,
-      "ratingCount": 28729,
+      "ratingCount": 28730,
       "types": [
         "monument",
         "tourist_attraction",
@@ -4615,7 +4615,7 @@
     {
       "title": "Ankara",
       "rating": 4.5,
-      "ratingCount": 5347,
+      "ratingCount": 5348,
       "types": [
         "train_station",
         "transit_station",
@@ -4665,7 +4665,7 @@
     {
       "title": "YHT GAR",
       "rating": 4.4,
-      "ratingCount": 6818,
+      "ratingCount": 6819,
       "types": [
         "transportation_service",
         "point_of_interest",

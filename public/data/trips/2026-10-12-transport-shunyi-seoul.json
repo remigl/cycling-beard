@@ -6106,17 +6106,17 @@
       "ratingCount": 534,
       "types": [
         "shopping_mall",
-        "coffee_shop",
-        "cosmetics_store",
         "womens_clothing_store",
-        "clothing_store",
+        "cosmetics_store",
+        "coffee_shop",
         "cafe",
-        "wholesaler",
+        "clothing_store",
         "food_store",
+        "wholesaler",
+        "food",
+        "point_of_interest",
         "service",
         "store",
-        "point_of_interest",
-        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6147,7 +6147,7 @@
     {
       "title": "Dongdaemun Design Plaza (DDP)",
       "rating": 4.4,
-      "ratingCount": 32359,
+      "ratingCount": 32361,
       "types": [
         "cultural_center",
         "point_of_interest",
@@ -6183,7 +6183,7 @@
     {
       "title": "Dongdaemun History & Culture Park",
       "rating": 4.4,
-      "ratingCount": 876,
+      "ratingCount": 877,
       "types": [
         "park",
         "point_of_interest",
