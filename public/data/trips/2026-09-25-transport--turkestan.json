@@ -2649,7 +2649,113 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Сәулет ескерткіші",
+      "dist": 3878,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Түйе керуені",
+      "dist": 3920,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "«Әзірет Сұлтан» Ұлттық тарихи-мәдени музей-қорығы",
+      "dist": 3680,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Әзірет Сұлтан қорық-мұражайы"
+    },
+    {
+      "title": "Шығыс Моншасы",
+      "dist": 4011,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Mausolée de Khoja Ahmed Yasavi",
+      "dist": 4023,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Mausoleum of Khoja Ahmed Yasawi"
+    },
+    {
+      "title": "Этнографиялық Мұражай",
+      "dist": 4096,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "\"Әзірет Сұлтан\" Ұлттық Тарихи-Мәдени Мұражай Қорығы",
+      "dist": 4116,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Қожа Ахмет Ясауи мұражайы",
+      "dist": 4146,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Ұлы Дала Елі Мұражайы",
+      "dist": 4254,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Түркістан Мұражайы",
+      "dist": 4302,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Тұңғыш Президент Мұражайы",
+      "dist": 4445,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Назир Торекулулы музей",
+      "dist": 4611,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Музей туркологии имени Б.Кенжебайулы",
+      "dist": 5324,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Памятник М.Пошанов",
+      "dist": 1754,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Памятник Абылай хан",
+      "dist": 1766,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
@@ -2668,7 +2774,7 @@
     {
       "title": "Mausoleum of Gauhar Ana",
       "rating": 4.8,
-      "ratingCount": 302,
+      "ratingCount": 303,
       "types": [
         "tourist_attraction",
         "place_of_worship",
@@ -2684,12 +2790,12 @@
       "ratingCount": 2013,
       "types": [
         "hotel",
-        "amusement_center",
         "department_store",
+        "amusement_center",
         "lodging",
-        "store",
         "sports_activity_location",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=57990983746879684&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2715,8 +2821,8 @@
         "hotel",
         "business_center",
         "lodging",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3563225709364616144&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

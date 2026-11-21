@@ -6103,7 +6103,7 @@
     {
       "title": "MIMILINE",
       "rating": 4.8,
-      "ratingCount": 534,
+      "ratingCount": 535,
       "types": [
         "shopping_mall",
         "womens_clothing_store",
@@ -6114,9 +6114,9 @@
         "food_store",
         "wholesaler",
         "food",
-        "store",
         "point_of_interest",
         "service",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6171,7 +6171,7 @@
     {
       "title": "Novotel Ambassador Seoul Dongdaemun Hotels & Residences",
       "rating": 4.4,
-      "ratingCount": 2909,
+      "ratingCount": 2910,
       "types": [
         "hotel",
         "lodging",
@@ -6219,7 +6219,7 @@
     {
       "title": "Hotel Skypark Kingstown Dongdaemun",
       "rating": 4.3,
-      "ratingCount": 1797,
+      "ratingCount": 1798,
       "types": [
         "hotel",
         "lodging",

@@ -907,8 +907,8 @@
       "ratingCount": 1223,
       "types": [
         "gift_shop",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -956,7 +956,7 @@
     {
       "title": "Toyoko Inn Asakusa Kuramae No.2",
       "rating": 4.3,
-      "ratingCount": 916,
+      "ratingCount": 917,
       "types": [
         "hotel",
         "lodging",
@@ -968,7 +968,7 @@
     {
       "title": "APA Hotel Asakusa Kuramae Kita",
       "rating": 4.3,
-      "ratingCount": 658,
+      "ratingCount": 659,
       "types": [
         "hotel",
         "lodging",
@@ -990,8 +990,8 @@
         "confectionery",
         "food_store",
         "food",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
