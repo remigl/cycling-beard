@@ -2655,7 +2655,7 @@
     {
       "title": "Mausolée de Khoja Ahmed Yasavi",
       "rating": 4.8,
-      "ratingCount": 11715,
+      "ratingCount": 11716,
       "types": [
         "historical_landmark",
         "tourist_attraction",
@@ -2681,14 +2681,14 @@
     {
       "title": "Karavan Saray Hotel Turkistan",
       "rating": 4.7,
-      "ratingCount": 2012,
+      "ratingCount": 2013,
       "types": [
         "hotel",
-        "department_store",
         "amusement_center",
-        "sports_activity_location",
+        "department_store",
         "lodging",
         "store",
+        "sports_activity_location",
         "point_of_interest",
         "establishment"
       ],
@@ -2697,7 +2697,7 @@
     {
       "title": "Karavan Saray",
       "rating": 4.7,
-      "ratingCount": 1749,
+      "ratingCount": 1751,
       "types": [
         "resort_hotel",
         "hotel",
@@ -2736,7 +2736,7 @@
     {
       "title": "Sandyq Restaurant",
       "rating": 4.6,
-      "ratingCount": 290,
+      "ratingCount": 291,
       "types": [
         "restaurant",
         "food",

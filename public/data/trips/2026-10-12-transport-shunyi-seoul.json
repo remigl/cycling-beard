@@ -6114,9 +6114,9 @@
         "food_store",
         "wholesaler",
         "food",
+        "store",
         "point_of_interest",
         "service",
-        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6124,7 +6124,7 @@
     {
       "title": "Nine Tree by Parnas Seoul Dongdaemun",
       "rating": 4.6,
-      "ratingCount": 661,
+      "ratingCount": 662,
       "types": [
         "hotel",
         "lodging",
@@ -6136,7 +6136,7 @@
     {
       "title": "DOOTA Mall",
       "rating": 4.5,
-      "ratingCount": 2553,
+      "ratingCount": 2558,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -6147,7 +6147,7 @@
     {
       "title": "Dongdaemun Design Plaza (DDP)",
       "rating": 4.4,
-      "ratingCount": 32361,
+      "ratingCount": 32364,
       "types": [
         "cultural_center",
         "point_of_interest",
@@ -6158,7 +6158,7 @@
     {
       "title": "Heunginjimun",
       "rating": 4.4,
-      "ratingCount": 7976,
+      "ratingCount": 7975,
       "types": [
         "historical_landmark",
         "tourist_attraction",
@@ -6171,7 +6171,7 @@
     {
       "title": "Novotel Ambassador Seoul Dongdaemun Hotels & Residences",
       "rating": 4.4,
-      "ratingCount": 2910,
+      "ratingCount": 2909,
       "types": [
         "hotel",
         "lodging",

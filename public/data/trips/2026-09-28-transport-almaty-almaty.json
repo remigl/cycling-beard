@@ -946,10 +946,10 @@
       "ratingCount": 3030,
       "types": [
         "opera_house",
+        "performing_arts_theater",
         "concert_hall",
         "live_music_venue",
         "auditorium",
-        "performing_arts_theater",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -989,8 +989,8 @@
         "wedding_venue",
         "lodging",
         "event_venue",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1001,18 +1001,18 @@
       "ratingCount": 2933,
       "types": [
         "hotel",
-        "convention_center",
         "resort_hotel",
         "wedding_venue",
-        "lodging",
         "massage_spa",
-        "massage",
+        "convention_center",
         "spa",
+        "lodging",
+        "massage",
         "event_venue",
+        "service",
         "restaurant",
         "food",
         "point_of_interest",
-        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1032,7 +1032,7 @@
     {
       "title": "Kok-Tobe Hill",
       "rating": 4.6,
-      "ratingCount": 18284,
+      "ratingCount": 18289,
       "types": [
         "tourist_attraction",
         "point_of_interest",
@@ -1043,7 +1043,7 @@
     {
       "title": "Esentai Mall",
       "rating": 4.6,
-      "ratingCount": 8751,
+      "ratingCount": 8752,
       "types": [
         "shopping_mall",
         "movie_theater",

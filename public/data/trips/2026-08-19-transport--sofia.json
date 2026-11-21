@@ -1267,142 +1267,129 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [
-    {
-      "title": "Находище на минерална вода \"София-център\"",
-      "dist": 1258,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": null
-    },
-    {
-      "title": "Amphithéâtre de Serdica",
-      "dist": 1598,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Софийски римски амфитеатър"
-    },
-    {
-      "title": "Васил Левски",
-      "dist": 1934,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Паметник на Васил Левски (София)"
-    },
-    {
-      "title": "Римска стена",
-      "dist": 3097,
-      "kind": "Attraction",
-      "rank": 10,
-      "wikiTitle": "Стара стена"
-    },
-    {
-      "title": "Музей на виното и розата",
-      "dist": 1606,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Национален църковен историко-археологически музей при Св. Синод",
-      "dist": 1701,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Двореца",
-      "dist": 1708,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Национална художествена галерия"
-    },
-    {
-      "title": "Национален етнографски музей",
-      "dist": 1716,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Институт за етнология и фолклористика с етнографски музей"
-    },
-    {
-      "title": "Adriana",
-      "dist": 1846,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Париж",
-      "dist": 1952,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Астри",
-      "dist": 1960,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Борис Христов",
-      "dist": 1992,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "ArtVibes",
-      "dist": 2036,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": null
-    },
-    {
-      "title": "Къща-музей Пейо К. Яворов",
-      "dist": 2397,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Къща музей „Пейо Яворов“ (София)"
-    },
-    {
-      "title": "Къщата-музей Димитър Димов",
-      "dist": 3614,
-      "kind": "Musée",
-      "rank": 9,
-      "wikiTitle": "Къща музей „Димитър Димов“"
-    }
-  ],
+  "pois": [],
   "majorCities": [],
   "topRatedPlaces": [
     {
-      "title": "Hotel Via Serdika",
+      "title": "Cathédrale Saint-Alexandre-Nevski",
       "rating": 4.8,
-      "ratingCount": 664,
+      "ratingCount": 27655,
+      "types": [
+        "church",
+        "tourist_attraction",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=185616201431929680&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Théâtre national Ivan-Vazov",
+      "rating": 4.8,
+      "ratingCount": 11767,
+      "types": [
+        "performing_arts_theater",
+        "tourist_attraction",
+        "event_venue",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=18265274753831383472&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Cathédrale Sainte-Nédélia de Sofia",
+      "rating": 4.8,
+      "ratingCount": 7582,
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14300161323953423416&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hyatt Regency Sofia",
+      "rating": 4.7,
+      "ratingCount": 1886,
       "types": [
         "hotel",
         "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=14422343573701449413&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=9296111534426349400&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Hadjidraganovite Houses Restaurant",
+      "title": "Happy Bar & Grill Sveta Nedelya",
       "rating": 4.5,
-      "ratingCount": 8669,
+      "ratingCount": 20776,
       "types": [
-        "eastern_european_restaurant",
-        "live_music_venue",
         "european_restaurant",
-        "event_venue",
+        "sushi_restaurant",
+        "japanese_restaurant",
         "restaurant",
         "food",
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=8775649631730896212&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=7226525182945324271&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Shtastlivetsa Restaurant - Vitoshka",
+      "rating": 4.5,
+      "ratingCount": 13249,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3988865936319669545&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Happy Bar & Grill Rakovski",
+      "rating": 4.5,
+      "ratingCount": 12962,
+      "types": [
+        "european_restaurant",
+        "sushi_restaurant",
+        "japanese_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16065123515711603595&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Grande Mosquée de Sofia",
+      "rating": 4.5,
+      "ratingCount": 3992,
+      "types": [
+        "mosque",
+        "tourist_attraction",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10178196981627827791&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Université Saint-Clément d'Ohrid de Sofia",
+      "rating": 4.5,
+      "ratingCount": 1835,
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9865668039840818614&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
       "title": "BAUHAUS Bulgaria",
@@ -1410,106 +1397,16 @@
       "ratingCount": 9021,
       "types": [
         "building_materials_store",
-        "garden_center",
         "hardware_store",
+        "garden_center",
         "home_improvement_store",
         "home_goods_store",
-        "store",
         "service",
+        "store",
         "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Cafe 1920",
-      "rating": 4.4,
-      "ratingCount": 3236,
-      "types": [
-        "brunch_restaurant",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=7004210189753216574&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Lavov most",
-      "rating": 4.4,
-      "ratingCount": 376,
-      "types": [
-        "subway_station",
-        "transit_station",
-        "transportation_service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=14996019942034741763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Pont aux Lions de Sofia",
-      "rating": 4.3,
-      "ratingCount": 8151,
-      "types": [
-        "bridge",
-        "tourist_attraction",
-        "transportation_service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=7767623845070202893&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Budapest Hotel Sofia",
-      "rating": 4.3,
-      "ratingCount": 1493,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=1209409540861661990&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Hotel LION Sofia",
-      "rating": 4.1,
-      "ratingCount": 1213,
-      "types": [
-        "hotel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=5677010387901932152&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Ramada by Wyndham Sofia City Center",
-      "rating": 4,
-      "ratingCount": 5776,
-      "types": [
-        "hotel",
-        "inn",
-        "motel",
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=2879500040027951242&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-    },
-    {
-      "title": "Sofia",
-      "rating": 3.9,
-      "ratingCount": 2606,
-      "types": [
-        "train_station",
-        "transit_station",
-        "transportation_service",
-        "point_of_interest",
-        "establishment"
-      ],
-      "mapsUrl": "https://maps.google.com/?cid=3830225351685353814&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
   "specialties": []

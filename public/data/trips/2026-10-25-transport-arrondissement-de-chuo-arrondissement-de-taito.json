@@ -871,7 +871,7 @@
     {
       "title": "The Gate Hotel Ryogoku by HULIC",
       "rating": 4.6,
-      "ratingCount": 675,
+      "ratingCount": 676,
       "types": [
         "hotel",
         "lodging",
@@ -907,8 +907,8 @@
       "ratingCount": 1223,
       "types": [
         "gift_shop",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -968,7 +968,7 @@
     {
       "title": "APA Hotel Asakusa Kuramae Kita",
       "rating": 4.3,
-      "ratingCount": 657,
+      "ratingCount": 658,
       "types": [
         "hotel",
         "lodging",
@@ -980,7 +980,7 @@
     {
       "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
       "rating": 4.2,
-      "ratingCount": 2760,
+      "ratingCount": 2761,
       "types": [
         "cafe",
         "chocolate_factory",
@@ -990,8 +990,8 @@
         "confectionery",
         "food_store",
         "food",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -999,7 +999,7 @@
     {
       "title": "Hotel Route-inn Grand Tokyo-Asakusabashi",
       "rating": 4.2,
-      "ratingCount": 1103,
+      "ratingCount": 1104,
       "types": [
         "hotel",
         "extended_stay_hotel",
