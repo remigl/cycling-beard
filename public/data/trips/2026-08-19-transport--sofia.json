@@ -1308,9 +1308,9 @@
         "hardware_store",
         "home_improvement_store",
         "home_goods_store",
+        "store",
         "point_of_interest",
         "service",
-        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

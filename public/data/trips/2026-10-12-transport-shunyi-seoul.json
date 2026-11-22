@@ -6106,17 +6106,17 @@
       "ratingCount": 535,
       "types": [
         "shopping_mall",
-        "womens_clothing_store",
         "cosmetics_store",
         "coffee_shop",
-        "cafe",
-        "clothing_store",
-        "food_store",
+        "womens_clothing_store",
         "wholesaler",
+        "cafe",
+        "food_store",
+        "clothing_store",
         "food",
-        "point_of_interest",
         "service",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6124,7 +6124,7 @@
     {
       "title": "Nine Tree by Parnas Seoul Dongdaemun",
       "rating": 4.6,
-      "ratingCount": 662,
+      "ratingCount": 663,
       "types": [
         "hotel",
         "lodging",
@@ -6171,7 +6171,7 @@
     {
       "title": "Novotel Ambassador Seoul Dongdaemun Hotels & Residences",
       "rating": 4.4,
-      "ratingCount": 2910,
+      "ratingCount": 2911,
       "types": [
         "hotel",
         "lodging",

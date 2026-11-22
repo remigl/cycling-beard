@@ -526116,9 +526116,9 @@
           "hardware_store",
           "home_improvement_store",
           "home_goods_store",
+          "store",
           "point_of_interest",
           "service",
-          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -537917,7 +537917,7 @@
       {
         "title": "Ataturk Statue",
         "rating": 4.5,
-        "ratingCount": 28741,
+        "ratingCount": 28742,
         "types": [
           "monument",
           "tourist_attraction",
@@ -553908,7 +553908,7 @@
       {
         "title": "Eastern Gate Indian restaurant",
         "rating": 4.8,
-        "ratingCount": 1906,
+        "ratingCount": 1905,
         "types": [
           "indian_restaurant",
           "restaurant",
@@ -553932,7 +553932,7 @@
       {
         "title": "The Ritz-Carlton, Almaty",
         "rating": 4.7,
-        "ratingCount": 3315,
+        "ratingCount": 3316,
         "types": [
           "hotel",
           "wedding_venue",
@@ -572442,17 +572442,17 @@
         "ratingCount": 535,
         "types": [
           "shopping_mall",
-          "womens_clothing_store",
           "cosmetics_store",
           "coffee_shop",
-          "cafe",
-          "clothing_store",
-          "food_store",
+          "womens_clothing_store",
           "wholesaler",
+          "cafe",
+          "food_store",
+          "clothing_store",
           "food",
-          "point_of_interest",
           "service",
           "store",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -572460,7 +572460,7 @@
       {
         "title": "Nine Tree by Parnas Seoul Dongdaemun",
         "rating": 4.6,
-        "ratingCount": 662,
+        "ratingCount": 663,
         "types": [
           "hotel",
           "lodging",
@@ -572507,7 +572507,7 @@
       {
         "title": "Novotel Ambassador Seoul Dongdaemun Hotels & Residences",
         "rating": 4.4,
-        "ratingCount": 2910,
+        "ratingCount": 2911,
         "types": [
           "hotel",
           "lodging",
@@ -581209,7 +581209,7 @@
       {
         "title": "Jardin Shukkei-en",
         "rating": 4.5,
-        "ratingCount": 9220,
+        "ratingCount": 9221,
         "types": [
           "garden",
           "historical_landmark",
@@ -581254,8 +581254,8 @@
         "ratingCount": 1579,
         "types": [
           "toy_store",
-          "point_of_interest",
           "store",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -581313,7 +581313,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4659,
+        "ratingCount": 4660,
         "types": [
           "train_station",
           "transit_station",
@@ -582220,7 +582220,7 @@
       {
         "title": "Nui. Hostel & Bar Lounge",
         "rating": 4.5,
-        "ratingCount": 1446,
+        "ratingCount": 1447,
         "types": [
           "hostel",
           "inn",
@@ -582242,8 +582242,8 @@
         "ratingCount": 1223,
         "types": [
           "gift_shop",
-          "point_of_interest",
           "store",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -582291,7 +582291,7 @@
       {
         "title": "Toyoko Inn Asakusa Kuramae No.2",
         "rating": 4.3,
-        "ratingCount": 917,
+        "ratingCount": 918,
         "types": [
           "hotel",
           "lodging",
@@ -582325,8 +582325,8 @@
           "confectionery",
           "food_store",
           "food",
-          "point_of_interest",
           "store",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -584591,7 +584591,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99701,
+        "ratingCount": 99704,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -584603,7 +584603,7 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 77950,
+        "ratingCount": 77968,
         "types": [
           "international_airport",
           "shopping_mall",
@@ -584643,7 +584643,7 @@
       {
         "title": "Changi Airport Terminal 2 Kopitiam",
         "rating": 4.5,
-        "ratingCount": 11244,
+        "ratingCount": 11245,
         "types": [
           "food_court",
           "food",
@@ -584653,9 +584653,20 @@
         "mapsUrl": "https://maps.google.com/?cid=11209850883266645349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
       },
       {
+        "title": "Downtown East",
+        "rating": 4.4,
+        "ratingCount": 10626,
+        "types": [
+          "sports_activity_location",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=18242162267305214701&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
         "title": "Singapore Expo Hall 6",
-        "rating": 4.5,
-        "ratingCount": 513,
+        "rating": 4.4,
+        "ratingCount": 514,
         "types": [
           "convention_center",
           "athletic_field",
@@ -584666,17 +584677,6 @@
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=1735453182545619759&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Downtown East",
-        "rating": 4.4,
-        "ratingCount": 10625,
-        "types": [
-          "sports_activity_location",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=18242162267305214701&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
       },
       {
         "title": "DBS Asia Hub",

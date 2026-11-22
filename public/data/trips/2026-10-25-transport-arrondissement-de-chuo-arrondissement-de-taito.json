@@ -885,7 +885,7 @@
     {
       "title": "Nui. Hostel & Bar Lounge",
       "rating": 4.5,
-      "ratingCount": 1446,
+      "ratingCount": 1447,
       "types": [
         "hostel",
         "inn",
@@ -907,8 +907,8 @@
       "ratingCount": 1223,
       "types": [
         "gift_shop",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -956,7 +956,7 @@
     {
       "title": "Toyoko Inn Asakusa Kuramae No.2",
       "rating": 4.3,
-      "ratingCount": 917,
+      "ratingCount": 918,
       "types": [
         "hotel",
         "lodging",
@@ -990,8 +990,8 @@
         "confectionery",
         "food_store",
         "food",
-        "point_of_interest",
         "store",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
