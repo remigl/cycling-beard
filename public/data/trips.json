@@ -526075,119 +526075,13 @@
     "lodgingName": "",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [
-      {
-        "title": "Находище на минерална вода \"София-център\"",
-        "dist": 1258,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": null
-      },
-      {
-        "title": "Amphithéâtre de Serdica",
-        "dist": 1598,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Софийски римски амфитеатър"
-      },
-      {
-        "title": "Васил Левски",
-        "dist": 1934,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Паметник на Васил Левски (София)"
-      },
-      {
-        "title": "Римска стена",
-        "dist": 3097,
-        "kind": "Attraction",
-        "rank": 10,
-        "wikiTitle": "Стара стена"
-      },
-      {
-        "title": "Galerie nationale des beaux-arts",
-        "dist": 1669,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Национална художествена галерия"
-      },
-      {
-        "title": "Национален църковен историко-археологически музей при Св. Синод",
-        "dist": 1701,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Национален етнографски музей",
-        "dist": 1716,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Институт за етнология и фолклористика с етнографски музей"
-      },
-      {
-        "title": "Adriana",
-        "dist": 1846,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Париж",
-        "dist": 1952,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Астри",
-        "dist": 1960,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Борис Христов",
-        "dist": 1992,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "ArtVibes",
-        "dist": 2035,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Къща-музей Пейо К. Яворов",
-        "dist": 2397,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Къщата-музей Димитър Димов",
-        "dist": 3614,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": null
-      },
-      {
-        "title": "Национален антропологичен музей",
-        "dist": 4413,
-        "kind": "Musée",
-        "rank": 9,
-        "wikiTitle": "Национален антропологичен музей"
-      }
-    ],
+    "pois": [],
     "majorCities": [],
     "topRatedPlaces": [
       {
         "title": "Cathédrale Saint-Alexandre-Nevski",
         "rating": 4.8,
-        "ratingCount": 27665,
+        "ratingCount": 27670,
         "types": [
           "church",
           "tourist_attraction",
@@ -526201,7 +526095,7 @@
       {
         "title": "Théâtre national Ivan-Vazov",
         "rating": 4.8,
-        "ratingCount": 11775,
+        "ratingCount": 11778,
         "types": [
           "performing_arts_theater",
           "tourist_attraction",
@@ -526214,7 +526108,7 @@
       {
         "title": "Cathédrale Sainte-Nédélia de Sofia",
         "rating": 4.8,
-        "ratingCount": 7585,
+        "ratingCount": 7587,
         "types": [
           "tourist_attraction",
           "church",
@@ -526240,7 +526134,7 @@
       {
         "title": "Happy Bar & Grill Sveta Nedelya",
         "rating": 4.5,
-        "ratingCount": 20791,
+        "ratingCount": 20795,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
@@ -526255,7 +526149,7 @@
       {
         "title": "Shtastlivetsa Restaurant - Vitoshka",
         "rating": 4.5,
-        "ratingCount": 13252,
+        "ratingCount": 13253,
         "types": [
           "restaurant",
           "food",
@@ -526267,7 +526161,7 @@
       {
         "title": "Happy Bar & Grill Rakovski",
         "rating": 4.5,
-        "ratingCount": 12968,
+        "ratingCount": 12970,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
@@ -526282,7 +526176,7 @@
       {
         "title": "Grande Mosquée de Sofia",
         "rating": 4.5,
-        "ratingCount": 3996,
+        "ratingCount": 3999,
         "types": [
           "mosque",
           "tourist_attraction",
@@ -526315,9 +526209,9 @@
           "hardware_store",
           "home_improvement_store",
           "home_goods_store",
+          "store",
           "point_of_interest",
           "service",
-          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -554196,7 +554090,7 @@
       {
         "title": "Kok-Tobe Hill",
         "rating": 4.6,
-        "ratingCount": 18290,
+        "ratingCount": 18292,
         "types": [
           "tourist_attraction",
           "point_of_interest",
@@ -581424,13 +581318,13 @@
       {
         "title": "Jardin Shukkei-en",
         "rating": 4.5,
-        "ratingCount": 9236,
+        "ratingCount": 9238,
         "types": [
           "garden",
-          "historical_landmark",
           "tourist_attraction",
-          "park",
+          "historical_landmark",
           "historical_place",
+          "park",
           "point_of_interest",
           "establishment"
         ],
@@ -581457,8 +581351,8 @@
           "wedding_venue",
           "lodging",
           "event_venue",
-          "point_of_interest",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -581469,8 +581363,8 @@
         "ratingCount": 1580,
         "types": [
           "toy_store",
-          "point_of_interest",
           "store",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -581490,7 +581384,7 @@
       {
         "title": "Sotetsu Fresa Inn Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1072,
+        "ratingCount": 1073,
         "types": [
           "hotel",
           "lodging",
@@ -581528,7 +581422,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4667,
+        "ratingCount": 4668,
         "types": [
           "train_station",
           "transit_station",
@@ -582438,12 +582332,12 @@
         "ratingCount": 1447,
         "types": [
           "hostel",
-          "inn",
-          "cafe",
           "guest_house",
+          "inn",
           "lodging",
-          "meal_takeaway",
           "bar",
+          "cafe",
+          "meal_takeaway",
           "restaurant",
           "food",
           "point_of_interest",
@@ -582533,10 +582427,10 @@
         "ratingCount": 2763,
         "types": [
           "cafe",
-          "chocolate_factory",
           "chocolate_shop",
-          "candy_store",
+          "chocolate_factory",
           "dessert_shop",
+          "candy_store",
           "confectionery",
           "food_store",
           "food",
@@ -584806,7 +584700,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99718,
+        "ratingCount": 99720,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -584818,7 +584712,7 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 77999,
+        "ratingCount": 78018,
         "types": [
           "international_airport",
           "shopping_mall",
