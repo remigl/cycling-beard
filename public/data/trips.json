@@ -526075,143 +526075,252 @@
     "lodgingName": "",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Находище на минерална вода \"София-център\"",
+        "dist": 1258,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Amphithéâtre de Serdica",
+        "dist": 1598,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Софийски римски амфитеатър"
+      },
+      {
+        "title": "Васил Левски",
+        "dist": 1934,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Паметник на Васил Левски (София)"
+      },
+      {
+        "title": "Римска стена",
+        "dist": 3097,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": "Стара стена"
+      },
+      {
+        "title": "Galerie nationale des beaux-arts",
+        "dist": 1669,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Национална художествена галерия"
+      },
+      {
+        "title": "Национален църковен историко-археологически музей при Св. Синод",
+        "dist": 1701,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Национален етнографски музей",
+        "dist": 1716,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Институт за етнология и фолклористика с етнографски музей"
+      },
+      {
+        "title": "Adriana",
+        "dist": 1846,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Париж",
+        "dist": 1952,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Астри",
+        "dist": 1960,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Борис Христов",
+        "dist": 1992,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "ArtVibes",
+        "dist": 2035,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Къща-музей Пейо К. Яворов",
+        "dist": 2397,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Къщата-музей Димитър Димов",
+        "dist": 3614,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Национален антропологичен музей",
+        "dist": 4413,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Национален антропологичен музей"
+      }
+    ],
     "majorCities": [],
     "topRatedPlaces": [
       {
-        "title": "Hotel Via Serdika",
+        "title": "Cathédrale Saint-Alexandre-Nevski",
         "rating": 4.8,
-        "ratingCount": 665,
+        "ratingCount": 27665,
+        "types": [
+          "church",
+          "tourist_attraction",
+          "place_of_worship",
+          "association_or_organization",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=185616201431929680&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Théâtre national Ivan-Vazov",
+        "rating": 4.8,
+        "ratingCount": 11775,
+        "types": [
+          "performing_arts_theater",
+          "tourist_attraction",
+          "event_venue",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=18265274753831383472&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Cathédrale Sainte-Nédélia de Sofia",
+        "rating": 4.8,
+        "ratingCount": 7585,
+        "types": [
+          "tourist_attraction",
+          "church",
+          "place_of_worship",
+          "association_or_organization",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=14300161323953423416&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Hyatt Regency Sofia",
+        "rating": 4.7,
+        "ratingCount": 1888,
         "types": [
           "hotel",
           "lodging",
           "point_of_interest",
           "establishment"
         ],
-        "mapsUrl": "https://maps.google.com/?cid=14422343573701449413&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+        "mapsUrl": "https://maps.google.com/?cid=9296111534426349400&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
       },
       {
-        "title": "Hadjidraganovite Houses Restaurant",
+        "title": "Happy Bar & Grill Sveta Nedelya",
         "rating": 4.5,
-        "ratingCount": 8675,
+        "ratingCount": 20791,
         "types": [
-          "eastern_european_restaurant",
-          "live_music_venue",
-          "event_venue",
           "european_restaurant",
+          "sushi_restaurant",
+          "japanese_restaurant",
           "restaurant",
           "food",
           "point_of_interest",
           "establishment"
         ],
-        "mapsUrl": "https://maps.google.com/?cid=8775649631730896212&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+        "mapsUrl": "https://maps.google.com/?cid=7226525182945324271&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Shtastlivetsa Restaurant - Vitoshka",
+        "rating": 4.5,
+        "ratingCount": 13252,
+        "types": [
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=3988865936319669545&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Happy Bar & Grill Rakovski",
+        "rating": 4.5,
+        "ratingCount": 12968,
+        "types": [
+          "european_restaurant",
+          "sushi_restaurant",
+          "japanese_restaurant",
+          "restaurant",
+          "food",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=16065123515711603595&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Grande Mosquée de Sofia",
+        "rating": 4.5,
+        "ratingCount": 3996,
+        "types": [
+          "mosque",
+          "tourist_attraction",
+          "place_of_worship",
+          "association_or_organization",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=10178196981627827791&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      },
+      {
+        "title": "Université Saint-Clément d'Ohrid de Sofia",
+        "rating": 4.5,
+        "ratingCount": 1838,
+        "types": [
+          "university",
+          "educational_institution",
+          "point_of_interest",
+          "establishment"
+        ],
+        "mapsUrl": "https://maps.google.com/?cid=9865668039840818614&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
       },
       {
         "title": "BAUHAUS Bulgaria",
         "rating": 4.4,
-        "ratingCount": 9024,
+        "ratingCount": 9026,
         "types": [
           "building_materials_store",
           "garden_center",
           "hardware_store",
           "home_improvement_store",
           "home_goods_store",
-          "store",
           "point_of_interest",
           "service",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Cafe 1920",
-        "rating": 4.4,
-        "ratingCount": 3236,
-        "types": [
-          "brunch_restaurant",
-          "restaurant",
-          "food",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=7004210189753216574&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Lavov most",
-        "rating": 4.4,
-        "ratingCount": 377,
-        "types": [
-          "subway_station",
-          "transit_station",
-          "transportation_service",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=14996019942034741763&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Pont aux Lions de Sofia",
-        "rating": 4.3,
-        "ratingCount": 8153,
-        "types": [
-          "bridge",
-          "tourist_attraction",
-          "transportation_service",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=7767623845070202893&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Budapest Hotel Sofia",
-        "rating": 4.3,
-        "ratingCount": 1492,
-        "types": [
-          "hotel",
-          "lodging",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=1209409540861661990&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Hotel LION Sofia",
-        "rating": 4.1,
-        "ratingCount": 1213,
-        "types": [
-          "hotel",
-          "lodging",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=5677010387901932152&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Ramada by Wyndham Sofia City Center",
-        "rating": 4,
-        "ratingCount": 5777,
-        "types": [
-          "hotel",
-          "motel",
-          "inn",
-          "lodging",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=2879500040027951242&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
-      },
-      {
-        "title": "Sofia",
-        "rating": 3.9,
-        "ratingCount": 2606,
-        "types": [
-          "train_station",
-          "transit_station",
-          "transportation_service",
-          "point_of_interest",
-          "establishment"
-        ],
-        "mapsUrl": "https://maps.google.com/?cid=3830225351685353814&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
       }
     ],
     "specialties": []
@@ -537872,13 +537981,119 @@
     "lodgingName": "",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "Roma Tiyatrosu",
+        "dist": 1630,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Tarihi Karacabey Hamamı",
+        "dist": 2014,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ankara Kalesi",
+        "dist": 2015,
+        "kind": "Château / fort",
+        "rank": 10,
+        "wikiTitle": "Ankara Kalesi"
+      },
+      {
+        "title": "Mustafa Ayaz Müzesi ve Kültür Merkezi",
+        "dist": 3304,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "Haritacılık Müzesi",
+        "dist": 3387,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Haritacılık Müzesi"
+      },
+      {
+        "title": "Feza Gürsey Bilim Merkezi",
+        "dist": 4770,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Feza Gürsey Bilim Merkezi"
+      },
+      {
+        "title": "Kore'de Savaşan Türkler Anıtı",
+        "dist": 323,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Ankara Zafer Anıtı",
+        "dist": 1191,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Ankara Zafer Anıtı"
+      },
+      {
+        "title": "Hürriyet Kulesi",
+        "dist": 1199,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "İstiklal Kulesi",
+        "dist": 1242,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Cumhuriyet Kulesi",
+        "dist": 1265,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Müdafaa-i Hukuk Kulesi",
+        "dist": 1304,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "İnkılap Kulesi",
+        "dist": 1316,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Mehmetçik Kulesi",
+        "dist": 1341,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "Anıtkabir",
+        "dist": 1347,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "Anıtkabir"
+      }
+    ],
     "majorCities": [],
     "topRatedPlaces": [
       {
         "title": "Museum of the War of Independence",
         "rating": 4.9,
-        "ratingCount": 6133,
+        "ratingCount": 6135,
         "types": [
           "history_museum",
           "tourist_attraction",
@@ -537891,7 +538106,7 @@
       {
         "title": "CSO Ada Ankara",
         "rating": 4.6,
-        "ratingCount": 3634,
+        "ratingCount": 3639,
         "types": [
           "concert_hall",
           "live_music_venue",
@@ -537917,7 +538132,7 @@
       {
         "title": "Ataturk Statue",
         "rating": 4.5,
-        "ratingCount": 28742,
+        "ratingCount": 28746,
         "types": [
           "monument",
           "tourist_attraction",
@@ -537930,7 +538145,7 @@
       {
         "title": "Ankara",
         "rating": 4.5,
-        "ratingCount": 5356,
+        "ratingCount": 5360,
         "types": [
           "train_station",
           "transit_station",
@@ -537966,7 +538181,7 @@
       {
         "title": "Cermodern",
         "rating": 4.4,
-        "ratingCount": 7630,
+        "ratingCount": 7631,
         "types": [
           "art_gallery",
           "art_museum",
@@ -537980,7 +538195,7 @@
       {
         "title": "YHT GAR",
         "rating": 4.4,
-        "ratingCount": 6820,
+        "ratingCount": 6822,
         "types": [
           "transportation_service",
           "point_of_interest",
@@ -553921,7 +554136,7 @@
       {
         "title": "Dostyk Plaza",
         "rating": 4.7,
-        "ratingCount": 17944,
+        "ratingCount": 17946,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -572439,20 +572654,20 @@
       {
         "title": "MIMILINE",
         "rating": 4.8,
-        "ratingCount": 535,
+        "ratingCount": 540,
         "types": [
           "shopping_mall",
+          "womens_clothing_store",
           "cosmetics_store",
           "coffee_shop",
-          "womens_clothing_store",
-          "wholesaler",
           "cafe",
-          "food_store",
           "clothing_store",
+          "food_store",
+          "wholesaler",
           "food",
-          "service",
           "store",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -572460,7 +572675,7 @@
       {
         "title": "Nine Tree by Parnas Seoul Dongdaemun",
         "rating": 4.6,
-        "ratingCount": 663,
+        "ratingCount": 666,
         "types": [
           "hotel",
           "lodging",
@@ -572472,7 +572687,7 @@
       {
         "title": "DOOTA Mall",
         "rating": 4.5,
-        "ratingCount": 2558,
+        "ratingCount": 2564,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -572483,7 +572698,7 @@
       {
         "title": "Dongdaemun Design Plaza (DDP)",
         "rating": 4.4,
-        "ratingCount": 32364,
+        "ratingCount": 32367,
         "types": [
           "cultural_center",
           "point_of_interest",
@@ -572494,7 +572709,7 @@
       {
         "title": "Heunginjimun",
         "rating": 4.4,
-        "ratingCount": 7975,
+        "ratingCount": 7976,
         "types": [
           "historical_landmark",
           "tourist_attraction",
@@ -572507,7 +572722,7 @@
       {
         "title": "Novotel Ambassador Seoul Dongdaemun Hotels & Residences",
         "rating": 4.4,
-        "ratingCount": 2911,
+        "ratingCount": 2912,
         "types": [
           "hotel",
           "lodging",
@@ -572542,7 +572757,7 @@
       {
         "title": "Dongdaemun History & Culture Park",
         "rating": 4.4,
-        "ratingCount": 442,
+        "ratingCount": 443,
         "types": [
           "subway_station",
           "transit_station",
@@ -581209,7 +581424,7 @@
       {
         "title": "Jardin Shukkei-en",
         "rating": 4.5,
-        "ratingCount": 9221,
+        "ratingCount": 9236,
         "types": [
           "garden",
           "historical_landmark",
@@ -581251,11 +581466,11 @@
       {
         "title": "Pokémon Center Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1579,
+        "ratingCount": 1580,
         "types": [
           "toy_store",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -581263,7 +581478,7 @@
       {
         "title": "Hotel Vista Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1326,
+        "ratingCount": 1327,
         "types": [
           "hotel",
           "lodging",
@@ -581275,7 +581490,7 @@
       {
         "title": "Sotetsu Fresa Inn Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1070,
+        "ratingCount": 1072,
         "types": [
           "hotel",
           "lodging",
@@ -581313,7 +581528,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4660,
+        "ratingCount": 4667,
         "types": [
           "train_station",
           "transit_station",
@@ -581326,7 +581541,7 @@
       {
         "title": "Koko Hotel Hiroshima Station",
         "rating": 4.2,
-        "ratingCount": 784,
+        "ratingCount": 785,
         "types": [
           "hotel",
           "lodging",
@@ -582239,7 +582454,7 @@
       {
         "title": "kakimori",
         "rating": 4.5,
-        "ratingCount": 1223,
+        "ratingCount": 1224,
         "types": [
           "gift_shop",
           "store",
@@ -582251,7 +582466,7 @@
       {
         "title": "MyCUBE by MYSTAYS Asakusa Kuramae",
         "rating": 4.5,
-        "ratingCount": 1107,
+        "ratingCount": 1108,
         "types": [
           "hotel",
           "lodging",
@@ -582315,7 +582530,7 @@
       {
         "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
         "rating": 4.2,
-        "ratingCount": 2761,
+        "ratingCount": 2763,
         "types": [
           "cafe",
           "chocolate_factory",
@@ -584591,7 +584806,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99704,
+        "ratingCount": 99718,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -584603,7 +584818,7 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 77968,
+        "ratingCount": 77999,
         "types": [
           "international_airport",
           "shopping_mall",
@@ -584655,7 +584870,7 @@
       {
         "title": "Downtown East",
         "rating": 4.4,
-        "ratingCount": 10626,
+        "ratingCount": 10628,
         "types": [
           "sports_activity_location",
           "point_of_interest",
