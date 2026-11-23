@@ -74,6 +74,13 @@ export default function Globe({ runs, here }: GlobeProps) {
 
   const done = drawn >= totalPts;
 
+  // Altitude de caméra pour que la Terre tienne EN ENTIER dans le cadre :
+  // sur un écran en hauteur (téléphone), c'est la largeur qui limite.
+  const camAlt = useMemo(() => {
+    const ratio = size.w > 0 ? size.h / size.w : 1;
+    return Math.max(2.1, (1 + 2.1) * Math.max(1, ratio) * 0.9 - 1);
+  }, [size.w, size.h]);
+
   // ── Animation du tracé : la ligne se dessine progressivement, une fois ──
   useEffect(() => {
     if (!ready || totalPts === 0) return;
@@ -102,15 +109,15 @@ export default function Globe({ runs, here }: GlobeProps) {
       controls.autoRotate = done;
     } catch { /* contrôles pas encore prêts */ }
     if (done) {
-      try { g.pointOfView({ lat: hp[1], lng: hp[0], altitude: 2.1 }, 1400); } catch { /* ignoré */ }
+      try { g.pointOfView({ lat: hp[1], lng: hp[0], altitude: camAlt }, 1400); } catch { /* ignoré */ }
       return;
     }
     if (!headPt) return;
     const now = performance.now();
     if (now - lastCamMove.current < 450) return;
     lastCamMove.current = now;
-    try { g.pointOfView({ lat: headPt[0], lng: headPt[1], altitude: 2.1 }, 900); } catch { /* ignoré */ }
-  }, [headPt, done, ready, hp[0], hp[1]]);
+    try { g.pointOfView({ lat: headPt[0], lng: headPt[1], altitude: camAlt }, 900); } catch { /* ignoré */ }
+  }, [headPt, done, ready, hp[0], hp[1], camAlt]);
 
   // ── Réglages de la scène + nuages en temps réel (une fois par taille) ──
   useEffect(() => {
@@ -121,7 +128,7 @@ export default function Globe({ runs, here }: GlobeProps) {
       controls.autoRotateSpeed = 0.55;
       controls.enableZoom = false;
     } catch { /* ignoré */ }
-    try { g.pointOfView({ lat: start[1], lng: start[0], altitude: 2.1 }, 0); } catch { /* ignoré */ }
+    try { g.pointOfView({ lat: start[1], lng: start[0], altitude: camAlt }, 0); } catch { /* ignoré */ }
     try {
       const canvas = wrapRef.current?.querySelector("canvas");
       if (canvas) (canvas as HTMLElement).style.touchAction = "pan-y";
@@ -196,7 +203,7 @@ export default function Globe({ runs, here }: GlobeProps) {
           pathPointLng={(p: any) => p[1]}
           pathPointAlt={0.004}
           pathColor={(d: any) => d.color}
-          pathStroke={1.6}
+          pathStroke={2.2}
           pathResolution={2}
           pathTransitionDuration={0}
           ringsData={rings}
