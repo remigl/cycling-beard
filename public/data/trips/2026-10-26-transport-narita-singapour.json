@@ -2247,7 +2247,7 @@
     {
       "title": "Jewel Changi Airport",
       "rating": 4.8,
-      "ratingCount": 99725,
+      "ratingCount": 99735,
       "types": [
         "shopping_mall",
         "tourist_attraction",
@@ -2259,12 +2259,12 @@
     {
       "title": "Aéroport Changi de Singapour",
       "rating": 4.7,
-      "ratingCount": 78037,
+      "ratingCount": 78082,
       "types": [
         "international_airport",
+        "airport",
         "shopping_mall",
         "tourist_attraction",
-        "airport",
         "transportation_service",
         "point_of_interest",
         "establishment"
@@ -2289,8 +2289,8 @@
       "rating": 4.6,
       "ratingCount": 154,
       "types": [
-        "educational_institution",
         "transportation_service",
+        "educational_institution",
         "point_of_interest",
         "establishment"
       ],
@@ -2302,8 +2302,8 @@
       "ratingCount": 11245,
       "types": [
         "food_court",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11209850883266645349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -2363,8 +2363,8 @@
       "types": [
         "food_court",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3141391163124868476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

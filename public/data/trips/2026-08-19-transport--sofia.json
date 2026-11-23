@@ -1273,7 +1273,7 @@
     {
       "title": "Cathédrale Saint-Alexandre-Nevski",
       "rating": 4.8,
-      "ratingCount": 27670,
+      "ratingCount": 27673,
       "types": [
         "church",
         "tourist_attraction",
@@ -1287,7 +1287,7 @@
     {
       "title": "Théâtre national Ivan-Vazov",
       "rating": 4.8,
-      "ratingCount": 11778,
+      "ratingCount": 11779,
       "types": [
         "performing_arts_theater",
         "tourist_attraction",
@@ -1300,7 +1300,7 @@
     {
       "title": "Cathédrale Sainte-Nédélia de Sofia",
       "rating": 4.8,
-      "ratingCount": 7587,
+      "ratingCount": 7589,
       "types": [
         "tourist_attraction",
         "church",
@@ -1314,7 +1314,7 @@
     {
       "title": "Hyatt Regency Sofia",
       "rating": 4.7,
-      "ratingCount": 1888,
+      "ratingCount": 1889,
       "types": [
         "hotel",
         "lodging",
@@ -1326,14 +1326,14 @@
     {
       "title": "Happy Bar & Grill Sveta Nedelya",
       "rating": 4.5,
-      "ratingCount": 20795,
+      "ratingCount": 20798,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
         "japanese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=7226525182945324271&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1344,8 +1344,8 @@
       "ratingCount": 13253,
       "types": [
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=3988865936319669545&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1353,14 +1353,14 @@
     {
       "title": "Happy Bar & Grill Rakovski",
       "rating": 4.5,
-      "ratingCount": 12971,
+      "ratingCount": 12979,
       "types": [
         "european_restaurant",
         "sushi_restaurant",
         "japanese_restaurant",
         "restaurant",
-        "food",
         "point_of_interest",
+        "food",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=16065123515711603595&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1368,7 +1368,7 @@
     {
       "title": "Grande Mosquée de Sofia",
       "rating": 4.5,
-      "ratingCount": 3999,
+      "ratingCount": 4001,
       "types": [
         "mosque",
         "tourist_attraction",
@@ -1382,7 +1382,7 @@
     {
       "title": "Université Saint-Clément d'Ohrid de Sofia",
       "rating": 4.5,
-      "ratingCount": 1838,
+      "ratingCount": 1840,
       "types": [
         "university",
         "educational_institution",
@@ -1394,16 +1394,16 @@
     {
       "title": "BAUHAUS Bulgaria",
       "rating": 4.4,
-      "ratingCount": 9026,
+      "ratingCount": 9028,
       "types": [
         "building_materials_store",
-        "garden_center",
         "hardware_store",
+        "garden_center",
         "home_improvement_store",
         "home_goods_store",
+        "service",
         "store",
         "point_of_interest",
-        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

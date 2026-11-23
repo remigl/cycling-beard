@@ -526081,7 +526081,7 @@
       {
         "title": "Cathédrale Saint-Alexandre-Nevski",
         "rating": 4.8,
-        "ratingCount": 27670,
+        "ratingCount": 27673,
         "types": [
           "church",
           "tourist_attraction",
@@ -526095,7 +526095,7 @@
       {
         "title": "Théâtre national Ivan-Vazov",
         "rating": 4.8,
-        "ratingCount": 11778,
+        "ratingCount": 11779,
         "types": [
           "performing_arts_theater",
           "tourist_attraction",
@@ -526108,7 +526108,7 @@
       {
         "title": "Cathédrale Sainte-Nédélia de Sofia",
         "rating": 4.8,
-        "ratingCount": 7587,
+        "ratingCount": 7589,
         "types": [
           "tourist_attraction",
           "church",
@@ -526122,7 +526122,7 @@
       {
         "title": "Hyatt Regency Sofia",
         "rating": 4.7,
-        "ratingCount": 1888,
+        "ratingCount": 1889,
         "types": [
           "hotel",
           "lodging",
@@ -526134,14 +526134,14 @@
       {
         "title": "Happy Bar & Grill Sveta Nedelya",
         "rating": 4.5,
-        "ratingCount": 20795,
+        "ratingCount": 20798,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
           "japanese_restaurant",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=7226525182945324271&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -526152,8 +526152,8 @@
         "ratingCount": 13253,
         "types": [
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=3988865936319669545&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -526161,14 +526161,14 @@
       {
         "title": "Happy Bar & Grill Rakovski",
         "rating": 4.5,
-        "ratingCount": 12971,
+        "ratingCount": 12979,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
           "japanese_restaurant",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16065123515711603595&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -526176,7 +526176,7 @@
       {
         "title": "Grande Mosquée de Sofia",
         "rating": 4.5,
-        "ratingCount": 3999,
+        "ratingCount": 4001,
         "types": [
           "mosque",
           "tourist_attraction",
@@ -526190,7 +526190,7 @@
       {
         "title": "Université Saint-Clément d'Ohrid de Sofia",
         "rating": 4.5,
-        "ratingCount": 1838,
+        "ratingCount": 1840,
         "types": [
           "university",
           "educational_institution",
@@ -526202,16 +526202,16 @@
       {
         "title": "BAUHAUS Bulgaria",
         "rating": 4.4,
-        "ratingCount": 9026,
+        "ratingCount": 9028,
         "types": [
           "building_materials_store",
-          "garden_center",
           "hardware_store",
+          "garden_center",
           "home_improvement_store",
           "home_goods_store",
+          "service",
           "store",
           "point_of_interest",
-          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -554004,10 +554004,10 @@
         "ratingCount": 3031,
         "types": [
           "opera_house",
-          "performing_arts_theater",
           "concert_hall",
           "live_music_venue",
           "auditorium",
+          "performing_arts_theater",
           "event_venue",
           "point_of_interest",
           "establishment"
@@ -554017,7 +554017,7 @@
       {
         "title": "Eastern Gate Indian restaurant",
         "rating": 4.8,
-        "ratingCount": 1905,
+        "ratingCount": 1906,
         "types": [
           "indian_restaurant",
           "restaurant",
@@ -554030,7 +554030,7 @@
       {
         "title": "Dostyk Plaza",
         "rating": 4.7,
-        "ratingCount": 17946,
+        "ratingCount": 17947,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -554047,8 +554047,8 @@
           "wedding_venue",
           "lodging",
           "event_venue",
-          "service",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -554056,21 +554056,21 @@
       {
         "title": "InterContinental Almaty by IHG",
         "rating": 4.7,
-        "ratingCount": 2933,
+        "ratingCount": 2934,
         "types": [
           "hotel",
           "convention_center",
-          "massage_spa",
           "resort_hotel",
           "wedding_venue",
           "lodging",
-          "event_venue",
-          "spa",
+          "massage_spa",
           "massage",
+          "spa",
+          "event_venue",
           "restaurant",
           "food",
-          "service",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -554090,7 +554090,7 @@
       {
         "title": "Kok-Tobe Hill",
         "rating": 4.6,
-        "ratingCount": 18292,
+        "ratingCount": 18294,
         "types": [
           "tourist_attraction",
           "point_of_interest",
@@ -572548,7 +572548,7 @@
       {
         "title": "MIMILINE",
         "rating": 4.8,
-        "ratingCount": 540,
+        "ratingCount": 542,
         "types": [
           "shopping_mall",
           "womens_clothing_store",
@@ -572581,7 +572581,7 @@
       {
         "title": "DOOTA Mall",
         "rating": 4.5,
-        "ratingCount": 2563,
+        "ratingCount": 2566,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -572592,7 +572592,7 @@
       {
         "title": "Dongdaemun Design Plaza (DDP)",
         "rating": 4.4,
-        "ratingCount": 32368,
+        "ratingCount": 32371,
         "types": [
           "cultural_center",
           "point_of_interest",
@@ -572651,7 +572651,7 @@
       {
         "title": "Dongdaemun History & Culture Park",
         "rating": 4.4,
-        "ratingCount": 443,
+        "ratingCount": 444,
         "types": [
           "subway_station",
           "transit_station",
@@ -581312,13 +581312,119 @@
     "lodgingName": "",
     "thanks": "",
     "thanksTranslations": {},
-    "pois": [],
+    "pois": [
+      {
+        "title": "白神社の岩礁",
+        "dist": 1908,
+        "kind": "Attraction",
+        "rank": 10,
+        "wikiTitle": null
+      },
+      {
+        "title": "Musée d'art contemporain de Hiroshima",
+        "dist": 1465,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "広島市現代美術館"
+      },
+      {
+        "title": "頼山陽史跡資料館",
+        "dist": 1773,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "頼山陽史跡資料館"
+      },
+      {
+        "title": "広島市水道資料館",
+        "dist": 2098,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "広島市健康づくりセンター健康科学館",
+        "dist": 3003,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "府中町歴史民俗資料館",
+        "dist": 3208,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "江波山気象館",
+        "dist": 5144,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "広島市江波山気象館"
+      },
+      {
+        "title": "泉美術館",
+        "dist": 7407,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": null
+      },
+      {
+        "title": "ヌマジ交通ミュージアム（広島市交通科学館｝",
+        "dist": 8950,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "Hiroshima City Transportation Museum"
+      },
+      {
+        "title": "筆の里工房",
+        "dist": 11252,
+        "kind": "Musée",
+        "rank": 9,
+        "wikiTitle": "筆の里工房"
+      },
+      {
+        "title": "Cénotaphe du mémorial pour les victimes de la bombe",
+        "dist": 2084,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": "原爆死没者慰霊碑"
+      },
+      {
+        "title": "日本発送電株式会社中国支店 原爆殉職者慰霊碑",
+        "dist": 2426,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "万代橋親柱",
+        "dist": 2479,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "興南寮跡",
+        "dist": 2571,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      },
+      {
+        "title": "鉄道遭難者追弔塔",
+        "dist": 8313,
+        "kind": "Monument / ruines",
+        "rank": 8,
+        "wikiTitle": null
+      }
+    ],
     "majorCities": [],
     "topRatedPlaces": [
       {
         "title": "Jardin Shukkei-en",
         "rating": 4.5,
-        "ratingCount": 9240,
+        "ratingCount": 9250,
         "types": [
           "garden",
           "historical_landmark",
@@ -581360,11 +581466,11 @@
       {
         "title": "Pokémon Center Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1580,
+        "ratingCount": 1581,
         "types": [
           "toy_store",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -581384,7 +581490,7 @@
       {
         "title": "Sotetsu Fresa Inn Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1073,
+        "ratingCount": 1075,
         "types": [
           "hotel",
           "lodging",
@@ -581410,7 +581516,7 @@
       {
         "title": "Hotel Granvia Hiroshima",
         "rating": 4.2,
-        "ratingCount": 6635,
+        "ratingCount": 6636,
         "types": [
           "hotel",
           "lodging",
@@ -581422,7 +581528,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4669,
+        "ratingCount": 4676,
         "types": [
           "train_station",
           "transit_station",
@@ -582351,8 +582457,8 @@
         "ratingCount": 1224,
         "types": [
           "gift_shop",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=13157758276580352565&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -582374,7 +582480,7 @@
       {
         "title": "Henn na Hotel Tokyo Asakusa Tawaramachi Premier",
         "rating": 4.4,
-        "ratingCount": 1325,
+        "ratingCount": 1326,
         "types": [
           "hotel",
           "lodging",
@@ -582400,7 +582506,7 @@
       {
         "title": "Toyoko Inn Asakusa Kuramae No.2",
         "rating": 4.3,
-        "ratingCount": 918,
+        "ratingCount": 919,
         "types": [
           "hotel",
           "lodging",
@@ -582424,7 +582530,7 @@
       {
         "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
         "rating": 4.2,
-        "ratingCount": 2765,
+        "ratingCount": 2767,
         "types": [
           "cafe",
           "chocolate_factory",
@@ -582434,8 +582540,8 @@
           "confectionery",
           "food_store",
           "food",
-          "store",
           "point_of_interest",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=9095009103258116745&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -584700,7 +584806,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99725,
+        "ratingCount": 99735,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -584712,12 +584818,12 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 78037,
+        "ratingCount": 78082,
         "types": [
           "international_airport",
+          "airport",
           "shopping_mall",
           "tourist_attraction",
-          "airport",
           "transportation_service",
           "point_of_interest",
           "establishment"
@@ -584742,8 +584848,8 @@
         "rating": 4.6,
         "ratingCount": 154,
         "types": [
-          "educational_institution",
           "transportation_service",
+          "educational_institution",
           "point_of_interest",
           "establishment"
         ],
@@ -584755,8 +584861,8 @@
         "ratingCount": 11245,
         "types": [
           "food_court",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11209850883266645349&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -584816,8 +584922,8 @@
         "types": [
           "food_court",
           "restaurant",
-          "food",
           "point_of_interest",
+          "food",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=3141391163124868476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

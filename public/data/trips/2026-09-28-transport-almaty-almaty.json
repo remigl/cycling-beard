@@ -946,10 +946,10 @@
       "ratingCount": 3031,
       "types": [
         "opera_house",
-        "performing_arts_theater",
         "concert_hall",
         "live_music_venue",
         "auditorium",
+        "performing_arts_theater",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -959,7 +959,7 @@
     {
       "title": "Eastern Gate Indian restaurant",
       "rating": 4.8,
-      "ratingCount": 1905,
+      "ratingCount": 1906,
       "types": [
         "indian_restaurant",
         "restaurant",
@@ -972,7 +972,7 @@
     {
       "title": "Dostyk Plaza",
       "rating": 4.7,
-      "ratingCount": 17946,
+      "ratingCount": 17947,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -989,8 +989,8 @@
         "wedding_venue",
         "lodging",
         "event_venue",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -998,21 +998,21 @@
     {
       "title": "InterContinental Almaty by IHG",
       "rating": 4.7,
-      "ratingCount": 2933,
+      "ratingCount": 2934,
       "types": [
         "hotel",
         "convention_center",
-        "massage_spa",
         "resort_hotel",
         "wedding_venue",
         "lodging",
-        "event_venue",
-        "spa",
+        "massage_spa",
         "massage",
+        "spa",
+        "event_venue",
         "restaurant",
         "food",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1032,7 +1032,7 @@
     {
       "title": "Kok-Tobe Hill",
       "rating": 4.6,
-      "ratingCount": 18292,
+      "ratingCount": 18294,
       "types": [
         "tourist_attraction",
         "point_of_interest",

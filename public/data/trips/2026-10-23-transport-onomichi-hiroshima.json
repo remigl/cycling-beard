@@ -1441,13 +1441,119 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "白神社の岩礁",
+      "dist": 1908,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Musée d'art contemporain de Hiroshima",
+      "dist": 1465,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "広島市現代美術館"
+    },
+    {
+      "title": "頼山陽史跡資料館",
+      "dist": 1773,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "頼山陽史跡資料館"
+    },
+    {
+      "title": "広島市水道資料館",
+      "dist": 2098,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "広島市健康づくりセンター健康科学館",
+      "dist": 3003,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "府中町歴史民俗資料館",
+      "dist": 3208,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "江波山気象館",
+      "dist": 5144,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "広島市江波山気象館"
+    },
+    {
+      "title": "泉美術館",
+      "dist": 7407,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "ヌマジ交通ミュージアム（広島市交通科学館｝",
+      "dist": 8950,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Hiroshima City Transportation Museum"
+    },
+    {
+      "title": "筆の里工房",
+      "dist": 11252,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "筆の里工房"
+    },
+    {
+      "title": "Cénotaphe du mémorial pour les victimes de la bombe",
+      "dist": 2084,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "原爆死没者慰霊碑"
+    },
+    {
+      "title": "日本発送電株式会社中国支店 原爆殉職者慰霊碑",
+      "dist": 2426,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "万代橋親柱",
+      "dist": 2479,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "興南寮跡",
+      "dist": 2571,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "鉄道遭難者追弔塔",
+      "dist": 8313,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
       "title": "Jardin Shukkei-en",
       "rating": 4.5,
-      "ratingCount": 9240,
+      "ratingCount": 9250,
       "types": [
         "garden",
         "historical_landmark",
@@ -1489,11 +1595,11 @@
     {
       "title": "Pokémon Center Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1580,
+      "ratingCount": 1581,
       "types": [
         "toy_store",
-        "store",
         "point_of_interest",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=16461688298587499880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1513,7 +1619,7 @@
     {
       "title": "Sotetsu Fresa Inn Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1073,
+      "ratingCount": 1075,
       "types": [
         "hotel",
         "lodging",
@@ -1539,7 +1645,7 @@
     {
       "title": "Hotel Granvia Hiroshima",
       "rating": 4.2,
-      "ratingCount": 6635,
+      "ratingCount": 6636,
       "types": [
         "hotel",
         "lodging",
@@ -1551,7 +1657,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4669,
+      "ratingCount": 4676,
       "types": [
         "train_station",
         "transit_station",
