@@ -138,7 +138,14 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
   // Hauteur du hero figée au chargement → ne bouge plus quand la barre d'adresse
   // mobile apparaît/disparaît au scroll (évite le redimensionnement saccadé).
   const [heroH, setHeroH] = useState<number | null>(null);
-  useEffect(() => { setHeroH(window.innerHeight); }, []);
+  useEffect(() => {
+    // Sur écran en hauteur (téléphone), la Terre est limitée par la largeur :
+    // on ajuste la hauteur du hero à sa taille réelle pour éviter de grands
+    // vides au-dessus et en dessous du globe.
+    const w = window.innerWidth, h = window.innerHeight + 61;
+    const fit = 101 + 56 + Math.round(w * 1.08) + 70;   // titre + globe + flèche
+    setHeroH(Math.min(h, Math.max(fit, 520)));
+  }, []);
 
   // Météo 2 jours à la dernière position connue. Données en cache 30 min et
   // indépendantes de la langue (changer de langue ne refait pas d'appel).
@@ -213,7 +220,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
       {/* ── HERO : titre + globe rapprochés ── */}
       <div
         className="relative w-full overflow-hidden flex flex-col items-center font-sans"
-        style={{ height: heroH ? `${heroH + 61}px` : "100vh" }}
+        style={{ height: heroH ? `${heroH}px` : "100vh" }}
       >
         {/* Titre */}
         <motion.div
