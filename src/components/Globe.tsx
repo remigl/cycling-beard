@@ -21,7 +21,7 @@ const DRAW_MS = 4200;          // durée du dessin initial du trajet
 const TICK_MS = 40;            // ~25 images/s : fluide et léger
 const LINE_ALT = 0.022;        // le tracé flotte AU-DESSUS des nuages (sphère à 0.012)
 const SHADOW_ALT = 0.0015;     // son ombre posée au sol → effet de relief
-const LONG_LEG_RAD = 0.06;     // ~380 km : au-delà, le trajet (avion, train…) s'élève en arc
+const LONG_LEG_RAD = 0.1;      // ~640 km : au-delà, le trajet (avion, train…) s'élève en arc
 const FLOW_MS = 26000;         // vitesse des "comètes" qui indiquent le sens du trajet
 
 type Pt = [number, number, number];   // lat, lng, altitude
@@ -56,7 +56,7 @@ function elevate(points: [number, number][]): Pt[] {
       const prev = points[i - 1];
       const d = angDist(prev, p);
       if (d > LONG_LEG_RAD) {
-        const h = Math.min(0.28, d * 0.35);
+        const h = Math.min(0.12, d * 0.16);
         const n = Math.min(48, Math.ceil(d / 0.02));
         for (let k = 1; k < n; k++) {
           const tt = k / n;
@@ -148,6 +148,14 @@ export default function Globe({ runs, here, startLabel, endLabel }: GlobeProps) 
     }
     return [...shadows, ...lines];
   }, [drawn, done, elevated, fullLines, fullShadows, flow]);
+
+  // Caméra posée sur le centre du trajet dès que le globe est prêt (avant,
+  // la bibliothèque peut encore réinitialiser le point de vue).
+  useEffect(() => {
+    const g = globeRef.current;
+    if (!g || !ready) return;
+    try { g.pointOfView({ lat: center.lat, lng: center.lng, altitude: camAlt }, 0); } catch { /* ignoré */ }
+  }, [ready, center.lat, center.lng, camAlt]);
 
   // ── Dessin progressif du trajet, une seule fois ──
   useEffect(() => {
