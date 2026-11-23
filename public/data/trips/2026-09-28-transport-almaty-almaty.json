@@ -946,10 +946,10 @@
       "ratingCount": 3031,
       "types": [
         "opera_house",
+        "performing_arts_theater",
         "concert_hall",
         "live_music_venue",
         "auditorium",
-        "performing_arts_theater",
         "event_venue",
         "point_of_interest",
         "establishment"
@@ -989,8 +989,8 @@
         "wedding_venue",
         "lodging",
         "event_venue",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1002,17 +1002,17 @@
       "types": [
         "hotel",
         "convention_center",
+        "massage_spa",
         "resort_hotel",
         "wedding_venue",
         "lodging",
-        "massage_spa",
-        "massage",
-        "spa",
         "event_venue",
+        "spa",
+        "massage",
         "restaurant",
         "food",
-        "point_of_interest",
         "service",
+        "point_of_interest",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"

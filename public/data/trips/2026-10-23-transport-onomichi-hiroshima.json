@@ -1447,13 +1447,13 @@
     {
       "title": "Jardin Shukkei-en",
       "rating": 4.5,
-      "ratingCount": 9238,
+      "ratingCount": 9240,
       "types": [
         "garden",
-        "tourist_attraction",
         "historical_landmark",
-        "historical_place",
+        "tourist_attraction",
         "park",
+        "historical_place",
         "point_of_interest",
         "establishment"
       ],
@@ -1480,8 +1480,8 @@
         "wedding_venue",
         "lodging",
         "event_venue",
-        "service",
         "point_of_interest",
+        "service",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -1501,7 +1501,7 @@
     {
       "title": "Hotel Vista Hiroshima",
       "rating": 4.3,
-      "ratingCount": 1327,
+      "ratingCount": 1328,
       "types": [
         "hotel",
         "lodging",
@@ -1539,7 +1539,7 @@
     {
       "title": "Hotel Granvia Hiroshima",
       "rating": 4.2,
-      "ratingCount": 6634,
+      "ratingCount": 6635,
       "types": [
         "hotel",
         "lodging",
@@ -1551,7 +1551,7 @@
     {
       "title": "HIROSHIMA STATION",
       "rating": 4.2,
-      "ratingCount": 4668,
+      "ratingCount": 4669,
       "types": [
         "train_station",
         "transit_station",

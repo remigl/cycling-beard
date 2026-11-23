@@ -6114,9 +6114,9 @@
         "food_store",
         "wholesaler",
         "food",
-        "store",
         "point_of_interest",
         "service",
+        "store",
         "establishment"
       ],
       "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -6124,7 +6124,7 @@
     {
       "title": "Nine Tree by Parnas Seoul Dongdaemun",
       "rating": 4.6,
-      "ratingCount": 666,
+      "ratingCount": 669,
       "types": [
         "hotel",
         "lodging",
@@ -6136,7 +6136,7 @@
     {
       "title": "DOOTA Mall",
       "rating": 4.5,
-      "ratingCount": 2564,
+      "ratingCount": 2563,
       "types": [
         "shopping_mall",
         "point_of_interest",
@@ -6147,7 +6147,7 @@
     {
       "title": "Dongdaemun Design Plaza (DDP)",
       "rating": 4.4,
-      "ratingCount": 32367,
+      "ratingCount": 32368,
       "types": [
         "cultural_center",
         "point_of_interest",
@@ -6194,7 +6194,7 @@
     {
       "title": "SOTETSU HOTELS THE SPLAISIR SEOUL DONGDAEMUN",
       "rating": 4.4,
-      "ratingCount": 761,
+      "ratingCount": 762,
       "types": [
         "hotel",
         "lodging",

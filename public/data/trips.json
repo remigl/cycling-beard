@@ -526161,7 +526161,7 @@
       {
         "title": "Happy Bar & Grill Rakovski",
         "rating": 4.5,
-        "ratingCount": 12970,
+        "ratingCount": 12971,
         "types": [
           "european_restaurant",
           "sushi_restaurant",
@@ -554004,10 +554004,10 @@
         "ratingCount": 3031,
         "types": [
           "opera_house",
+          "performing_arts_theater",
           "concert_hall",
           "live_music_venue",
           "auditorium",
-          "performing_arts_theater",
           "event_venue",
           "point_of_interest",
           "establishment"
@@ -554047,8 +554047,8 @@
           "wedding_venue",
           "lodging",
           "event_venue",
-          "point_of_interest",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=4213420689945984103&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -554060,17 +554060,17 @@
         "types": [
           "hotel",
           "convention_center",
+          "massage_spa",
           "resort_hotel",
           "wedding_venue",
           "lodging",
-          "massage_spa",
-          "massage",
-          "spa",
           "event_venue",
+          "spa",
+          "massage",
           "restaurant",
           "food",
-          "point_of_interest",
           "service",
+          "point_of_interest",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=2949289491478395980&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -572559,9 +572559,9 @@
           "food_store",
           "wholesaler",
           "food",
-          "store",
           "point_of_interest",
           "service",
+          "store",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=11529819489079458096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -572569,7 +572569,7 @@
       {
         "title": "Nine Tree by Parnas Seoul Dongdaemun",
         "rating": 4.6,
-        "ratingCount": 666,
+        "ratingCount": 669,
         "types": [
           "hotel",
           "lodging",
@@ -572581,7 +572581,7 @@
       {
         "title": "DOOTA Mall",
         "rating": 4.5,
-        "ratingCount": 2564,
+        "ratingCount": 2563,
         "types": [
           "shopping_mall",
           "point_of_interest",
@@ -572592,7 +572592,7 @@
       {
         "title": "Dongdaemun Design Plaza (DDP)",
         "rating": 4.4,
-        "ratingCount": 32367,
+        "ratingCount": 32368,
         "types": [
           "cultural_center",
           "point_of_interest",
@@ -572639,7 +572639,7 @@
       {
         "title": "SOTETSU HOTELS THE SPLAISIR SEOUL DONGDAEMUN",
         "rating": 4.4,
-        "ratingCount": 761,
+        "ratingCount": 762,
         "types": [
           "hotel",
           "lodging",
@@ -581318,13 +581318,13 @@
       {
         "title": "Jardin Shukkei-en",
         "rating": 4.5,
-        "ratingCount": 9238,
+        "ratingCount": 9240,
         "types": [
           "garden",
-          "tourist_attraction",
           "historical_landmark",
-          "historical_place",
+          "tourist_attraction",
           "park",
+          "historical_place",
           "point_of_interest",
           "establishment"
         ],
@@ -581351,8 +581351,8 @@
           "wedding_venue",
           "lodging",
           "event_venue",
-          "service",
           "point_of_interest",
+          "service",
           "establishment"
         ],
         "mapsUrl": "https://maps.google.com/?cid=6613574254604478329&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
@@ -581372,7 +581372,7 @@
       {
         "title": "Hotel Vista Hiroshima",
         "rating": 4.3,
-        "ratingCount": 1327,
+        "ratingCount": 1328,
         "types": [
           "hotel",
           "lodging",
@@ -581410,7 +581410,7 @@
       {
         "title": "Hotel Granvia Hiroshima",
         "rating": 4.2,
-        "ratingCount": 6634,
+        "ratingCount": 6635,
         "types": [
           "hotel",
           "lodging",
@@ -581422,7 +581422,7 @@
       {
         "title": "HIROSHIMA STATION",
         "rating": 4.2,
-        "ratingCount": 4668,
+        "ratingCount": 4669,
         "types": [
           "train_station",
           "transit_station",
@@ -582332,12 +582332,12 @@
         "ratingCount": 1447,
         "types": [
           "hostel",
-          "guest_house",
           "inn",
-          "lodging",
-          "bar",
           "cafe",
+          "guest_house",
+          "lodging",
           "meal_takeaway",
+          "bar",
           "restaurant",
           "food",
           "point_of_interest",
@@ -582412,7 +582412,7 @@
       {
         "title": "APA Hotel Asakusa Kuramae Kita",
         "rating": 4.3,
-        "ratingCount": 659,
+        "ratingCount": 660,
         "types": [
           "hotel",
           "lodging",
@@ -582424,13 +582424,13 @@
       {
         "title": "Dandelion Chocolate, Factory & Cafe Kuramae",
         "rating": 4.2,
-        "ratingCount": 2763,
+        "ratingCount": 2765,
         "types": [
           "cafe",
-          "chocolate_shop",
           "chocolate_factory",
-          "dessert_shop",
+          "chocolate_shop",
           "candy_store",
+          "dessert_shop",
           "confectionery",
           "food_store",
           "food",
@@ -584700,7 +584700,7 @@
       {
         "title": "Jewel Changi Airport",
         "rating": 4.8,
-        "ratingCount": 99720,
+        "ratingCount": 99725,
         "types": [
           "shopping_mall",
           "tourist_attraction",
@@ -584712,7 +584712,7 @@
       {
         "title": "Aéroport Changi de Singapour",
         "rating": 4.7,
-        "ratingCount": 78018,
+        "ratingCount": 78037,
         "types": [
           "international_airport",
           "shopping_mall",
