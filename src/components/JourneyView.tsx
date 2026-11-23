@@ -1,5 +1,5 @@
 import { Calendar, TrendingUp, Mountain, Search, Tag, Box, Bird, MapPin, UtensilsCrossed, Map, X, Home, Heart, Star } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useMemo } from "react";
 import { motion } from "motion/react";
 import { TripSummary, SiteStats } from "../types";
 import { Lang } from "../i18n";
@@ -88,24 +88,9 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
     return cityLabel(title);
   };
 
-  // Pays par défaut = PASSAGE de l'étape la plus récente (par date). On calcule
-  // ici la clé de passage directement (countryPassages n'est défini que plus bas).
-  const lastCountry = (() => {
-    const withCountry = trips.filter(tr => tr.country && tr.country !== "—");
-    if (withCountry.length === 0) return "all";
-    const latest = withCountry.reduce((a, b) => (a.date || "") >= (b.date || "") ? a : b);
-    const chronological = [...trips].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
-    let occ = 0, prevCountry: string | null = null;
-    for (const tr of chronological) {
-      const c = tr.country;
-      if (!c || c === "—") continue;
-      if (c !== prevCountry && c === latest.country) occ++;
-      prevCountry = c;
-      if (tr === latest) break;
-    }
-    return `${latest.country}__${occ}`;
-  })();
-  const [selectedCountry, setSelectedCountry] = useState<string>(lastCountry);
+  // Filtre pays : "Tous" à chaque arrivée sur la page (pas de mémorisation du
+  // dernier pays choisi).
+  const [selectedCountry, setSelectedCountry] = useState<string>("all");
   const [selectedRegion, setSelectedRegion] = useState<string>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [lightbox, setLightbox] = useState<{ photos: { src: string; alt: string; lat?: number; lng?: number }[]; index: number } | null>(null);
@@ -237,7 +222,13 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
       body.style.top = "";
       body.style.width = "";
       body.style.overflow = "";
-      window.scrollTo(0, scrollY);
+      // Retour EXACT à la position d'avant, sans animation : on neutralise le
+      // scroll-behavior:smooth global le temps de la restauration.
+      const html = document.documentElement;
+      const prevBehavior = html.style.scrollBehavior;
+      html.style.scrollBehavior = "auto";
+      window.scrollTo({ top: scrollY, left: 0, behavior: "instant" as ScrollBehavior });
+      html.style.scrollBehavior = prevBehavior;
     };
   }, [anyOverlayOpen]);
 
@@ -246,11 +237,10 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   // pour respecter l'ordre chronologique réel du voyage plutôt que de tout
   // regrouper sous un seul bouton "Autriche".
   type CountryPassage = { key: string; country: string; occurrence: number; trips: TripSummary[] };
-  const countryPassages: CountryPassage[] = [];
-  {
-    // Sécurité : on trie par date pour que les "passages consécutifs" soient
-    // détectés dans l'ordre réel du voyage, même si trips.json n'est pas
-    // garanti trié.
+  // Passages calculés une seule fois par jeu de données (pas à chaque rendu).
+  const { countryPassages, passageCountByCountry } = useMemo(() => {
+    const passages: CountryPassage[] = [];
+    // Tri par date : les "passages consécutifs" suivent l'ordre réel du voyage.
     const chronological = [...trips].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
     const countSoFar: Record<string, number> = {};
     let current: CountryPassage | null = null;
@@ -260,17 +250,36 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
       if (!current || current.country !== c) {
         countSoFar[c] = (countSoFar[c] || 0) + 1;
         current = { key: `${c}__${countSoFar[c]}`, country: c, occurrence: countSoFar[c], trips: [] };
-        countryPassages.push(current);
+        passages.push(current);
       }
       current.trips.push(trip);
     }
-  }
-  // Est-ce qu'un pays a plusieurs passages distincts dans le voyage ?
-  const passageCountByCountry: Record<string, number> = {};
-  for (const p of countryPassages) passageCountByCountry[p.country] = (passageCountByCountry[p.country] || 0) + 1;
+    // Un pays a-t-il plusieurs passages distincts ?
+    const counts: Record<string, number> = {};
+    for (const p of passages) counts[p.country] = (counts[p.country] || 0) + 1;
+    return { countryPassages: passages, passageCountByCountry: counts };
+  }, [trips]);
 
-  const countries = ["all", ...countryPassages.map(p => p.key)];
-  const allTags = Array.from(new Set(trips.flatMap(t => t.tags || []))).sort();
+  // Filtre transport → pays disponibles : un passage n'est proposé que s'il
+  // contient au moins une étape du transport choisi (calculé depuis les données).
+  const matchesVehicle = (trip: TripSummary) => selectedVehicle === "all" || tripType(trip) === selectedVehicle;
+  const vehiclePassageTrips = useMemo(() => {
+    const m: Record<string, TripSummary[]> = {};
+    for (const p of countryPassages) {
+      m[p.key] = selectedVehicle === "all" ? p.trips : p.trips.filter(tr => tripType(tr) === selectedVehicle);
+    }
+    return m;
+  }, [countryPassages, selectedVehicle]);
+  const countries = ["all", ...countryPassages.filter(p => vehiclePassageTrips[p.key]?.length > 0).map(p => p.key)];
+  // Si le pays sélectionné n'a aucune étape pour ce transport → retour à "Tous"
+  useEffect(() => {
+    if (selectedCountry !== "all" && !(vehiclePassageTrips[selectedCountry]?.length > 0)) {
+      setSelectedCountry("all");
+      setSelectedRegion("all");
+      setRegionMap(null);
+    }
+  }, [selectedVehicle, selectedCountry, vehiclePassageTrips]);
+  const allTags = useMemo(() => Array.from(new Set(trips.flatMap(t => t.tags || []))).sort(), [trips]);
 
   // Libellé d'un passage : "Autriche" normalement, "Autriche (2)" s'il y a un retour
   const passageLabel = (key: string) => {
@@ -283,7 +292,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const selectedPassage = countryPassages.find(p => p.key === selectedCountry);
   const regions = selectedCountry === "all" || !selectedPassage
     ? []
-    : Array.from(new Set(selectedPassage.trips.map(t => t.region).filter(Boolean))) as string[];
+    : Array.from(new Set((vehiclePassageTrips[selectedPassage.key] || []).map(t => t.region).filter(Boolean))) as string[];
 
   const toggleTag = (tag: string) => {
     setSelectedTags(prev => prev.includes(tag) ? prev.filter(x => x !== tag) : [...prev, tag]);
@@ -332,7 +341,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   const filtered = trips
     .filter(trip => selectedCountry === "all" || (selectedPassage?.trips.includes(trip) ?? false))
     .filter(trip => selectedRegion === "all" || trip.region === selectedRegion)
-    .filter(trip => selectedVehicle === "all" || tripType(trip) === selectedVehicle)
+    .filter(matchesVehicle)
     .filter(trip => selectedTags.length === 0 || selectedTags.every(tag => (trip.tags || []).includes(tag)))
     .filter(trip =>
       trip.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -594,7 +603,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
             key={`country-${selectedCountry}`}
             region={selectedCountry}
             regionLabel={passageLabel(selectedCountry)}
-            explicitTrips={selectedPassage.trips}
+            explicitTrips={vehiclePassageTrips[selectedPassage.key] || selectedPassage.trips}
             trips={trips}
             lang={lang}
             onClose={() => setSelectedCountry("all")}

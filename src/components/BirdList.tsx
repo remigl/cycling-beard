@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Bird, Volume2, Loader2 } from "lucide-react";
 import { Lang } from "../i18n";
+import { cachedJson, DAY, HOUR } from "../lib/cachedJson";
 
 // ─── Clé eBird (lecture de données publiques) ─────────────────────────────────
 const EBIRD_KEY = "6fuv5j5odi8b";
@@ -31,9 +32,7 @@ interface BirdListProps {
 async function fetchWiki(sciName: string, lang: string): Promise<{ thumb: string | null; desc: string | null }> {
   try {
     const url = `https://${lang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(sciName)}&prop=pageimages|extracts&pithumbsize=120&exintro=1&explaintext=1&exsentences=2&format=json&origin=*&redirects=1`;
-    const res = await fetch(url);
-    if (!res.ok) return { thumb: null, desc: null };
-    const data = await res.json();
+    const data = await cachedJson(url, 7 * DAY);
     const pages = data.query?.pages || {};
     for (const k of Object.keys(pages)) {
       const thumb = pages[k]?.thumbnail?.source || null;
@@ -80,13 +79,11 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
       const baseQ = sp ? `gen:${gen} sp:${sp}` : `gen:${gen}`;
 
       // 1) chants de bonne qualité
-      let res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(baseQ + " type:song q:A")}&key=${XC_KEY}`);
-      if (!res.ok) { setSongErr(`HTTP ${res.status}`); }
-      let data = await res.json();
+      // (clé API exclue de la clé de cache)
+      let data: any = await cachedJson(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(baseQ + " type:song q:A")}&key=${XC_KEY}`, 30 * DAY, undefined, `xc:${baseQ}:A`);
       // 2) repli : n'importe quel enregistrement de l'espèce
       if (!data.recordings || data.recordings.length === 0) {
-        res = await fetch(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(baseQ)}&key=${XC_KEY}`);
-        data = await res.json();
+        data = await cachedJson(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(baseQ)}&key=${XC_KEY}`, 30 * DAY, undefined, `xc:${baseQ}`);
       }
       const rec = data.recordings && data.recordings[0];
       if (!rec) { setSongErr(`aucun enregistrement (${baseQ})`); }
@@ -134,8 +131,8 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
     const locale = localeMap[lang] || "en";
     const url = `https://api.ebird.org/v2/data/obs/geo/recent?lat=${lat}&lng=${lng}&dist=25&back=14&maxResults=40&sppLocale=${locale}`;
 
-    fetch(url, { headers: { "X-eBirdApiToken": EBIRD_KEY } })
-      .then((r) => { if (!r.ok) throw new Error("ebird"); return r.json(); })
+    // Observations récentes : valables quelques heures
+    cachedJson(url, 6 * HOUR, { headers: { "X-eBirdApiToken": EBIRD_KEY } })
       .then(async (obs: BirdObs[]) => {
         const freq = new Map<string, BirdObs & { count: number; totalSeen: number }>();
         for (const o of obs) {

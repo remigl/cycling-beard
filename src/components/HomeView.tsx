@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion } from "motion/react";
 import { SiteStats, TripSummary } from "../types";
 import { Lang } from "../i18n";
-import { STAGE_TYPE_META, STAGE_TYPE_ORDER, StageType } from "../stageTypes";
+import { STAGE_TYPE_META, STAGE_TYPE_ORDER, StageType, tripType } from "../stageTypes";
+import type { GlobeRun } from "./Globe";
 import RainRadar from "./RainRadar";
 import Globe from "./Globe";
 import GlobeErrorBoundary from "./GlobeErrorBoundary";
+import { cachedJson, MINUTE } from "../lib/cachedJson";
 
 // URL Buy Me a Coffee
 const BMC_URL = "https://buymeacoffee.com/cyclingBeard";
@@ -100,48 +102,69 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
   const latest = trips[trips.length - 1];
 
-  // Construit le tracé du globe à partir des vrais GPX (segments → [lng,lat]).
-  // Les segments sont stockés en [lat,lng] dans les données → on inverse.
-  const globeRoute: [number, number][] = (() => {
-    const out: [number, number][] = [];
-    for (const tr of trips) {
+  // Tracé du globe : vrais GPX, dans l'ordre chronologique, regroupés en
+  // "runs" continus de même type (vélo / autres) pour colorer la ligne.
+  // Chaque run commence au dernier point du précédent → la ligne est continue.
+  // Points sous-échantillonnés (~1500 au total) : léger pour le GPU.
+  const globeRuns: GlobeRun[] = useMemo(() => {
+    const ordered = [...trips].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+    const perTrip = ordered.map(tr => {
       const segs = (tr.segments && tr.segments.length ? tr.segments : (tr.track ? [tr.track] : []));
-      for (const seg of segs) for (const [lat, lng] of seg) out.push([lng, lat]);
+      const pts: [number, number][] = [];
+      for (const seg of segs) for (const p of seg) if (Array.isArray(p) && isFinite(p[0]) && isFinite(p[1])) pts.push([p[0], p[1]]);
+      if (pts.length === 0 && tr.mapLat != null && tr.mapLng != null) pts.push([tr.mapLat, tr.mapLng]);
+      return { type: tripType(tr), pts };
+    });
+    const total = perTrip.reduce((n, x) => n + x.pts.length, 0) || 1;
+    const runs: GlobeRun[] = [];
+    let last: [number, number] | null = null;
+    for (const { type, pts } of perTrip) {
+      if (pts.length === 0) continue;
+      const budget = Math.max(2, Math.round((pts.length / total) * 1500));
+      const step = Math.max(1, Math.ceil(pts.length / budget));
+      const sampled = pts.filter((_, i) => i % step === 0 || i === pts.length - 1);
+      const color = STAGE_TYPE_META[type].color;
+      const cur = runs[runs.length - 1];
+      if (cur && cur.color === color) cur.points.push(...sampled);
+      else runs.push({ color, points: last ? [last, ...sampled] : sampled });
+      last = sampled[sampled.length - 1];
     }
-    return out;
-  })();
+    return runs;
+  }, [trips]);
   const globeHere: [number, number] | null =
     (latest?.mapLng != null && latest?.mapLat != null) ? [latest.mapLng, latest.mapLat] : null;
 
-  const [weather, setWeather] = useState<WeatherDay[]>([]);
   const [radarOpen, setRadarOpen] = useState(false);
   // Hauteur du hero figée au chargement → ne bouge plus quand la barre d'adresse
   // mobile apparaît/disparaît au scroll (évite le redimensionnement saccadé).
   const [heroH, setHeroH] = useState<number | null>(null);
   useEffect(() => { setHeroH(window.innerHeight); }, []);
 
-  // Récupère la météo 2 jours de la position actuelle (dernier point GPS)
+  // Météo 2 jours à la dernière position connue. Données en cache 30 min et
+  // indépendantes de la langue (changer de langue ne refait pas d'appel).
+  const [weatherRaw, setWeatherRaw] = useState<any>(null);
   useEffect(() => {
-    if (!latest?.mapLat || !latest?.mapLng) return;
+    if (latest?.mapLat == null || latest?.mapLng == null) return;
+    const lat = Number(latest.mapLat).toFixed(3), lng = Number(latest.mapLng).toFixed(3);
+    cachedJson(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lng}&daily=weather_code,temperature_2m_max,temperature_2m_min,uv_index_max,wind_speed_10m_max,wind_direction_10m_dominant&timezone=auto&forecast_days=2`, 30 * MINUTE)
+      .then(data => setWeatherRaw(data?.daily || null))
+      .catch(() => setWeatherRaw(null));
+  }, [latest?.mapLat, latest?.mapLng]);
+  const weather: WeatherDay[] = useMemo(() => {
+    const d = weatherRaw;
+    if (!d || !d.weather_code || d.weather_code.length < 2) return [];
     const labels: Record<string, [string, string]> = {
       fr: ["Aujourd'hui", "Demain"], en: ["Today", "Tomorrow"],
       es: ["Hoy", "Mañana"], it: ["Oggi", "Domani"],
       de: ["Heute", "Morgen"], nl: ["Vandaag", "Morgen"],
     };
-    const [todayLbl, tomorrowLbl] = labels[lang] || labels.fr;
-
-    fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latest.mapLat}&longitude=${latest.mapLng}&daily=weather_code,temperature_2m_max,temperature_2m_min,uv_index_max,wind_speed_10m_max,wind_direction_10m_dominant&timezone=auto&forecast_days=2`)
-      .then(r => r.json())
-      .then(data => {
-        const d = data.daily;
-        if (!d) return;
-        setWeather([
-          { label: todayLbl, icon: weatherIcon(d.weather_code[0]), tempMax: Math.round(d.temperature_2m_max[0]), tempMin: Math.round(d.temperature_2m_min[0]), uvMax: Math.round(d.uv_index_max[0]), windMax: Math.round(d.wind_speed_10m_max[0]), windDir: d.wind_direction_10m_dominant[0] },
-          { label: tomorrowLbl, icon: weatherIcon(d.weather_code[1]), tempMax: Math.round(d.temperature_2m_max[1]), tempMin: Math.round(d.temperature_2m_min[1]), uvMax: Math.round(d.uv_index_max[1]), windMax: Math.round(d.wind_speed_10m_max[1]), windDir: d.wind_direction_10m_dominant[1] },
-        ]);
-      })
-      .catch(() => setWeather([]));
-  }, [latest?.mapLat, latest?.mapLng, lang]);
+    const lbl = labels[lang] || labels.fr;
+    return [0, 1].map(i => ({
+      label: lbl[i], icon: weatherIcon(d.weather_code[i]),
+      tempMax: Math.round(d.temperature_2m_max[i]), tempMin: Math.round(d.temperature_2m_min[i]),
+      uvMax: Math.round(d.uv_index_max[i]), windMax: Math.round(d.wind_speed_10m_max[i]), windDir: d.wind_direction_10m_dominant[i],
+    }));
+  }, [weatherRaw, lang]);
 
   // ── Statistiques : global ou par véhicule (vélo, train, bus, bateau, avion) ──
   const [vehicle, setVehicle] = useState<"all" | StageType>("all");
@@ -207,7 +230,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
         {/* Globe : remplit l'espace restant entre le titre et la flèche */}
         <div className="relative flex-1 w-full min-h-0 z-0 -mt-6">
           <GlobeErrorBoundary>
-            <Globe route={globeRoute} here={globeHere} />
+            <Globe runs={globeRuns} here={globeHere} />
           </GlobeErrorBoundary>
         </div>
 
@@ -221,8 +244,6 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
         </motion.div>
 
-        {/* Léger dégradé bas pour fondre vers la section stats */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-b from-transparent to-bg-dark pointer-events-none z-[5]" />
       </div>
 
       {/* ── STATS + MÉTÉO (révélées au scroll, juste sous le globe) ── */}
@@ -279,9 +300,9 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
 
             <div className="border-t border-brand-teal/10 pt-4 flex flex-col items-center gap-3 text-xs font-mono">
               <span className="text-text-on/80 flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-brand-orange" />
                 {stats
-                  ? `${t("home.current")} : ${stats.currentLocation}${countryFlag(stats.currentCountryCode) ? "," : ""}`
+                  ? `${t("home.last_position")}${lang === "fr" ? " :" : ":"} ${stats.currentLocation}${countryFlag(stats.currentCountryCode) ? "," : ""}`
                   : t("home.locating")}
                 {stats && countryFlag(stats.currentCountryCode) && (
                   <span className="text-sm leading-none" title={countryLabel(stats.currentCountry)}>{countryFlag(stats.currentCountryCode)}</span>

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { X, MapPin } from "lucide-react";
 import { TripSummary, Poi } from "../types";
 import { Lang } from "../i18n";
+import { cachedJson, DAY } from "../lib/cachedJson";
 
 interface PoiView extends Poi {
   thumb?: string | null;
@@ -51,8 +52,7 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
           const titles = tagged.map(x => x.p.wikiTitle!) as string[];
           const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(titles.slice(0, 40).join("|"))}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*&redirects=1`;
           try {
-            const res = await fetch(url);
-            const data = res.ok ? await res.json() : null;
+            const data = await cachedJson(url, 7 * DAY).catch(() => null);
             const pages = data?.query?.pages || {};
             const byTitle: Record<string, { thumb: string | null; desc: string | null }> = {};
             for (const k of Object.keys(pages)) {
@@ -74,8 +74,7 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
             // Recherche avec contexte ville pour viser le bon lieu (ex: "Stadtpark Wien")
             const term = cityCtx ? `${p.title} ${cityCtx}` : p.title;
             const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(term)}&gsrlimit=3&prop=extracts|pageimages|coordinates&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*`;
-            const res = await fetch(url);
-            const data = res.ok ? await res.json() : null;
+            const data = await cachedJson(url, 7 * DAY).catch(() => null);
             const pages = data?.query?.pages ? Object.values(data.query.pages) as any[] : [];
             if (!pages.length) return;
             // On garde le résultat dont le titre ressemble le plus au nom du POI,

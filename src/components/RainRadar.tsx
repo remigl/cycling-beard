@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { X, Play, Pause } from "lucide-react";
+import { cachedJson, MINUTE } from "../lib/cachedJson";
 
 interface RainRadarProps {
   lat: number;
@@ -77,8 +78,7 @@ export default function RainRadar({ lat, lng, onClose, t }: RainRadarProps) {
     }).addTo(map);
 
     // Récupère les frames radar RainViewer
-    fetch("https://api.rainviewer.com/public/weather-maps.json")
-      .then(r => r.json())
+    cachedJson("https://api.rainviewer.com/public/weather-maps.json", 5 * MINUTE)
       .then(data => {
         const host = data.host;
         const past = data.radar?.past || [];

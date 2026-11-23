@@ -19,6 +19,7 @@
 import "dotenv/config";
 import fs from "fs";
 import path from "path";
+import crypto from "crypto";
 import { google } from "googleapis";
 import sharp from "sharp";
 import exifrPkg from "exifr";
@@ -37,59 +38,304 @@ const TRIPS_DIR = path.join(DATA_DIR, "trips");
 const MEDIA_DIR = path.join(PUBLIC_DIR, "media");
 const GPX_DIR = path.join(PUBLIC_DIR, "gpx");
 
+// ─── Cache persistant des appels API (un résultat = une entrée) ───────────────
+// Chaque appel externe (traduction d'UN texte dans UNE langue, géocodage d'UN
+// point, POI d'UN lieu, spécialités d'UN pays…) a sa propre entrée :
+//   ok     → résultat réutilisé tel quel, AUCUN nouvel appel ;
+//   échec  → mémorisé avec une date de nouvelle tentative (backoff progressif :
+//            ~5 h, puis 10 h, 20 h… plafonné à 3 jours) → jamais de boucle de
+//            retry qui viderait les crédits ;
+//   absent → appel normal.
+// Un échec ne touche donc QUE l'élément concerné : le reste est conservé.
+// Les appels identiques pendant un même sync sont dédoublonnés (une requête).
+const API_CACHE_PATH = path.join(DATA_DIR, "api-cache.json");
+const API_CACHE_VERSION = 1;
+const RETRY_BASE_MS = 5 * 3600 * 1000;
+const RETRY_MAX_MS = 3 * 24 * 3600 * 1000;
+let apiCache = { version: API_CACHE_VERSION, entries: {} };
+const apiInflight = new Map();
+const apiStats = { hits: 0, calls: 0, failures: 0, deferred: 0 };
+
+function loadApiCache() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(API_CACHE_PATH, "utf8"));
+    if (raw && raw.version === API_CACHE_VERSION && raw.entries) apiCache = raw;
+  } catch { /* premier lancement : cache vide */ }
+}
+function saveApiCache() {
+  try {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+    fs.writeFileSync(API_CACHE_PATH, JSON.stringify(apiCache));
+  } catch (e) { console.log(`  ⚠️  Cache API non sauvegardé (${e.message})`); }
+}
+const hashKey = (v) => crypto.createHash("sha1").update(typeof v === "string" ? v : JSON.stringify(v)).digest("hex").slice(0, 16);
+
+// État d'une clé sans appeler l'API : "ok" | "deferred" (échec, pas encore l'heure) | "todo"
+function apiCacheState(key) {
+  const e = apiCache.entries[key];
+  if (e?.ok) return "ok";
+  if (e && !e.ok && e.retryAt > Date.now()) return "deferred";
+  return "todo";
+}
+function apiCacheStore(key, ok, value) {
+  if (ok) { apiCache.entries[key] = { ok: true, v: value, at: Date.now() }; return; }
+  const prev = apiCache.entries[key];
+  const attempts = (prev && !prev.ok ? prev.attempts || 0 : 0) + 1;
+  const wait = Math.min(RETRY_MAX_MS, RETRY_BASE_MS * Math.pow(2, attempts - 1));
+  apiCache.entries[key] = { ok: false, attempts, at: Date.now(), retryAt: Date.now() + wait };
+  apiStats.failures++;
+}
+
+// Appel API mis en cache. `fn` renvoie le résultat ; `isFailure(résultat)` dit
+// si c'est un échec (par défaut : null/undefined). Renvoie null si l'élément
+// est en échec (maintenant ou précédemment, en attente de sa prochaine tentative).
+async function cachedCall(key, fn, isFailure = (v) => v === null || v === undefined) {
+  const e = apiCache.entries[key];
+  if (e?.ok) { apiStats.hits++; return e.v; }
+  if (e && !e.ok && e.retryAt > Date.now()) { apiStats.deferred++; return null; }
+  if (apiInflight.has(key)) return apiInflight.get(key);
+  const p = (async () => {
+    apiStats.calls++;
+    let v;
+    try { v = await fn(); } catch { v = null; }
+    if (isFailure(v)) { apiCacheStore(key, false); return null; }
+    apiCacheStore(key, true, v);
+    return v;
+  })();
+  apiInflight.set(key, p);
+  try { return await p; } finally { apiInflight.delete(key); }
+}
+
+// Nominatim impose ~1 requête/s : on n'attend QUE si un vrai appel a eu lieu.
+let lastNominatimCall = 0;
+async function nominatimThrottle() {
+  const wait = lastNominatimCall + 1100 - Date.now();
+  if (wait > 0) await new Promise(r => setTimeout(r, wait));
+  lastNominatimCall = Date.now();
+}
+
 // ─── DeepL Translation ────────────────────────────────────────────────────────
+// - Texte vide → rien à traduire, aucun appel.
+// - Chaque (texte, langue) est mis en cache : un texte déjà traduit (même dans
+//   une autre étape) n'est JAMAIS retraduit.
+// - Les textes manquants d'une langue partent en UNE requête groupée.
+// - En cas d'échec, seuls les textes en échec seront retentés plus tard.
 
 const DEEPL_API_KEY = process.env.DEEPL_API_KEY;
 const TARGET_LANGS = { en: "EN", es: "ES", it: "IT", de: "DE", nl: "NL" };
+const DEEPL_BATCH = 40;
+const deeplKey = (text, deeplLang) => `deepl:${deeplLang}:${hashKey(text)}`;
 
-async function deeplTranslate(text, targetLang) {
-  if (!text || !text.trim() || !DEEPL_API_KEY) return text;
+async function deeplRequest(texts, targetLang) {
   const isFree = DEEPL_API_KEY.endsWith(":fx");
-  const url = isFree
-    ? "https://api-free.deepl.com/v2/translate"
-    : "https://api.deepl.com/v2/translate";
+  const url = isFree ? "https://api-free.deepl.com/v2/translate" : "https://api.deepl.com/v2/translate";
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 30000);
   try {
     const res = await fetch(url, {
       method: "POST",
-      headers: {
-        "Authorization": `DeepL-Auth-Key ${DEEPL_API_KEY}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        text: [text],
-        source_lang: "FR",
-        target_lang: targetLang,
-      }),
+      headers: { "Authorization": `DeepL-Auth-Key ${DEEPL_API_KEY}`, "Content-Type": "application/json" },
+      body: JSON.stringify({ text: texts, source_lang: "FR", target_lang: targetLang }),
+      signal: controller.signal,
     });
-    if (!res.ok) {
-      console.log(`  WARN DeepL erreur ${res.status} pour ${targetLang}`);
-      return text;
-    }
+    if (!res.ok) { console.log(`  ⚠️  DeepL HTTP ${res.status} (${targetLang}) — réessai plus tard`); return null; }
     const data = await res.json();
-    return data.translations?.[0]?.text || text;
+    const out = (data.translations || []).map(t => t?.text);
+    return out.length === texts.length && out.every(t => typeof t === "string" && t.length > 0) ? out : null;
   } catch (e) {
-    console.log(`  WARN DeepL exception : ${e.message}`);
-    return text;
-  }
+    console.log(`  ⚠️  DeepL indisponible (${e.message}) — réessai plus tard`);
+    return null;
+  } finally { clearTimeout(timer); }
 }
 
+// Traduit une liste de textes dans une langue. Renvoie Map(texte → traduction|null).
+async function translateTexts(texts, deeplLang) {
+  const result = new Map();
+  const unique = [...new Set(texts.filter(t => typeof t === "string" && t.trim()))];
+  const todo = [];
+  for (const t of unique) {
+    const key = deeplKey(t, deeplLang);
+    const st = apiCacheState(key);
+    if (st === "ok") { apiStats.hits++; result.set(t, apiCache.entries[key].v); }
+    else if (st === "deferred") { apiStats.deferred++; result.set(t, null); }
+    else todo.push(t);
+  }
+  if (!DEEPL_API_KEY) { for (const t of todo) result.set(t, null); return result; }
+  for (let i = 0; i < todo.length; i += DEEPL_BATCH) {
+    const chunk = todo.slice(i, i + DEEPL_BATCH);
+    apiStats.calls++;
+    const out = await deeplRequest(chunk, deeplLang);
+    chunk.forEach((t, k) => {
+      const key = deeplKey(t, deeplLang);
+      if (out) { apiCacheStore(key, true, out[k]); result.set(t, out[k]); }
+      else { apiCacheStore(key, false); result.set(t, null); }
+    });
+  }
+  return result;
+}
+
+// Traduit un contenu { summary, quote, fullStory[] }. Un champ non traduit
+// retombe sur le français (affichage) et rend la traduction "incomplète"
+// → seul ce champ sera retenté au prochain sync.
 async function translateContent(fr) {
   const translations = { fr };
+  const texts = [fr.summary, fr.quote, ...(fr.fullStory || [])].filter(t => typeof t === "string" && t.trim());
+  if (texts.length === 0) return { translations, complete: true };   // rien à traduire
   if (!DEEPL_API_KEY) {
-    console.log(`  INFO Pas de cle DeepL - francais uniquement`);
-    return translations;
+    console.log(`  ℹ️  Pas de clé DeepL : français uniquement`);
+    return { translations, complete: true };
   }
+  let complete = true;
   for (const [code, deeplCode] of Object.entries(TARGET_LANGS)) {
-    const summary = await deeplTranslate(fr.summary, deeplCode);
-    const quote = await deeplTranslate(fr.quote, deeplCode);
-    const fullStory = [];
-    for (const para of fr.fullStory) {
-      fullStory.push(await deeplTranslate(para, deeplCode));
-    }
-    translations[code] = { summary, quote, fullStory };
-    console.log(`  Traduit en ${code.toUpperCase()}`);
+    const map = await translateTexts(texts, deeplCode);
+    const tr = (t) => {
+      if (!t || !t.trim()) return t;
+      const v = map.get(t);
+      if (v == null) { complete = false; return t; }
+      return v;
+    };
+    translations[code] = {
+      summary: tr(fr.summary),
+      quote: tr(fr.quote),
+      fullStory: (fr.fullStory || []).map(tr),
+    };
   }
-  return translations;
+  return { translations, complete };
+}
+
+// Traduit UN texte libre dans toutes les langues ({ fr, en, … }).
+async function translateAllLangs(text) {
+  const out = { fr: text };
+  let complete = true;
+  if (!text || !text.trim() || !DEEPL_API_KEY) return { value: text ? out : {}, complete: true };
+  for (const [code, deeplCode] of Object.entries(TARGET_LANGS)) {
+    const v = (await translateTexts([text], deeplCode)).get(text);
+    if (v == null) complete = false;
+    out[code] = v ?? text;
+  }
+  return { value: out, complete };
+}
+
+// ─── Appels externes via le cache (un résultat par lieu / pays / tracé) ──────
+const EMPTY_GEO = { city: null, region: null, department: null, country: null, countryCode: null };
+const r5 = (x) => Number(x).toFixed(5);
+const r4 = (x) => Number(x).toFixed(4);
+
+async function reverseGeocodeCached(lat, lng) {
+  if (lat == null || lng == null) return EMPTY_GEO;
+  const v = await cachedCall(`nominatim-rev:${r5(lat)},${r5(lng)}`, async () => {
+    await nominatimThrottle();
+    const r = await reverseGeocode(lat, lng);
+    return (r.countryCode || r.country) ? r : null;   // sans pays = échec
+  });
+  return v || EMPTY_GEO;
+}
+async function forwardGeocodeCached(query) {
+  if (!query || !String(query).trim()) return null;
+  return cachedCall(`nominatim-fwd:${hashKey(String(query).trim().toLowerCase())}`, async () => {
+    await nominatimThrottle();
+    return forwardGeocode(query);
+  });
+}
+async function fetchPoisCached(lat, lng, lang = "fr") {
+  if (lat == null || lng == null) return [];
+  return cachedCall(`pois:${lang}:${r4(lat)},${r4(lng)}`, () => fetchPois(lat, lng, lang));
+}
+async function fetchMajorCitiesCached(trackPoints, lang = "fr") {
+  if (!trackPoints || trackPoints.length < 2) return [];   // pas de tracé : rien à chercher
+  return cachedCall(`cities:${lang}:${hashKey(trackPoints)}`, () => fetchMajorCities(trackPoints, lang));
+}
+async function fetchTopRatedCached(lat, lng, lang = "fr") {
+  // Sans clé Google : on ne met rien en cache (sinon ajouter la clé plus tard
+  // ne déclencherait jamais la recherche).
+  if (!GOOGLE_PLACES_KEY || lat == null || lng == null) return [];
+  return cachedCall(`places:${lang}:${r4(lat)},${r4(lng)}`, () => fetchTopRatedPlaces(lat, lng, lang));
+}
+async function fetchSpecialtiesCached(countryCode, lang = "fr") {
+  if (!countryCode) return [];
+  // Une seule requête par pays, partagée par toutes les étapes de ce pays.
+  return cachedCall(`specialties:${lang}:${String(countryCode).toUpperCase()}`, () => fetchSpecialties(countryCode, lang));
+}
+
+// Enrichit une étape (traductions, POI, villes, lieux notés, spécialités).
+// Utilisé au sync complet ET pour ne compléter QUE ce qui manque : grâce au
+// cache par élément, ce qui a déjà réussi ne refait aucun appel.
+// Renvoie la liste de ce qui reste à obtenir (vide = étape complète).
+async function enrichStage(stage) {
+  const pending = [];
+  const fr = { summary: stage.summary || "", quote: stage.quote || null, fullStory: stage.fullStory || [] };
+  const tr = await translateContent(fr);
+  stage.translations = tr.translations;
+  if (!tr.complete) pending.push("traductions");
+
+  if (stage.thanks) {
+    const th = await translateAllLangs(stage.thanks);
+    stage.thanksTranslations = th.value;
+    if (!th.complete) pending.push("remerciements");
+  } else {
+    stage.thanksTranslations = {};
+  }
+
+  const isBike = stageTypeOf(stage) === "bike";
+  const [pois, cities, top, spec] = [
+    await fetchPoisCached(stage.mapLat, stage.mapLng, "fr"),
+    isBike ? await fetchMajorCitiesCached((stage.segments || []).flat(), "fr") : [],
+    await fetchTopRatedCached(stage.mapLat, stage.mapLng, "fr"),
+    await fetchSpecialtiesCached(stage.countryCode, "fr"),
+  ];
+  // null = échec : on garde la valeur déjà connue (s'il y en a une)
+  if (pois === null) pending.push("POI"); else stage.pois = pois;
+  if (cities === null) pending.push("villes"); else stage.majorCities = cities;
+  if (top === null) pending.push("lieux notés"); else stage.topRatedPlaces = top;
+  if (spec === null) pending.push("spécialités"); else stage.specialties = spec;
+  stage.pois = stage.pois || [];
+  stage.majorCities = stage.majorCities || [];
+  stage.topRatedPlaces = stage.topRatedPlaces || [];
+  stage.specialties = stage.specialties || [];
+  return pending;
+}
+
+// Amorce le cache API avec les résultats DÉJÀ présents dans les étapes
+// synchronisées avant l'existence de ce cache : aucune traduction ni donnée
+// déjà obtenue n'est redemandée. `trusted` = étape complète (ses listes vides
+// sont de vrais "rien trouvé" et non des échecs).
+function seedApiCacheFromStage(stage, trusted) {
+  const seed = (key, v) => { if (!apiCache.entries[key]) apiCache.entries[key] = { ok: true, v, at: Date.now(), seeded: true }; };
+  const fr = stage.translations?.fr || { summary: stage.summary, quote: stage.quote, fullStory: stage.fullStory || [] };
+  for (const [code, deeplCode] of Object.entries(TARGET_LANGS)) {
+    const tr = stage.translations?.[code];
+    if (!tr) continue;
+    const pairs = [[fr.summary, tr.summary], [fr.quote, tr.quote]];
+    (fr.fullStory || []).forEach((p, i) => pairs.push([p, tr.fullStory?.[i]]));
+    for (const [src, dst] of pairs) {
+      // Une "traduction" identique au français = ancien échec silencieux → non reprise
+      if (src && src.trim() && dst && dst.trim() && dst !== src) seed(deeplKey(src, deeplCode), dst);
+    }
+    const th = stage.thanksTranslations?.[code];
+    if (stage.thanks && th && th !== stage.thanks) seed(deeplKey(stage.thanks, deeplCode), th);
+  }
+  if (!trusted) return;
+  if (stage.mapLat != null && stage.mapLng != null) {
+    if (Array.isArray(stage.pois)) seed(`pois:fr:${r4(stage.mapLat)},${r4(stage.mapLng)}`, stage.pois);
+    if (GOOGLE_PLACES_KEY && Array.isArray(stage.topRatedPlaces) && stage.topRatedPlaces.length) seed(`places:fr:${r4(stage.mapLat)},${r4(stage.mapLng)}`, stage.topRatedPlaces);
+  }
+  if (stage.countryCode && Array.isArray(stage.specialties) && stage.specialties.length) seed(`specialties:fr:${String(stage.countryCode).toUpperCase()}`, stage.specialties);
+  const pts = (stage.segments || []).flat();
+  if (stageTypeOf(stage) === "bike" && pts.length >= 2 && Array.isArray(stage.majorCities)) seed(`cities:fr:${hashKey(pts)}`, stage.majorCities);
+}
+
+// Idem pour la présentation (_about) déjà traduite
+function seedApiCacheFromAbout() {
+  try {
+    const about = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "about.json"), "utf8"));
+    for (const [code, deeplCode] of Object.entries(TARGET_LANGS)) {
+      const arr = about.translations?.[code] || [];
+      (about.paragraphs || []).forEach((p, i) => {
+        const key = deeplKey(p, deeplCode);
+        if (p && arr[i] && arr[i] !== p && !apiCache.entries[key]) apiCache.entries[key] = { ok: true, v: arr[i], at: Date.now(), seeded: true };
+      });
+    }
+  } catch { /* pas encore de présentation */ }
 }
 
 // ─── Auth Google Drive ────────────────────────────────────────────────────────
@@ -836,10 +1082,8 @@ async function processLooseGpx(drive, rootId, parentId, gpxFiles, type) {
     const last = dayItems[dayItems.length - 1];
     console.log(`\n  📅 ${date} — ${dayItems.length} GPX`);
 
-    const startGeo = await reverseGeocode(first.meta.startLat, first.meta.startLng);
-    await new Promise(r => setTimeout(r, 1100));
-    const endGeo = await reverseGeocode(last.meta.endLat, last.meta.endLng);
-    await new Promise(r => setTimeout(r, 1100));
+    const startGeo = await reverseGeocodeCached(first.meta.startLat, first.meta.startLng);
+    const endGeo = await reverseGeocodeCached(last.meta.endLat, last.meta.endLng);
 
     const startCity = startGeo.city || "depart";
     const endCity = endGeo.city || "arrivee";
@@ -1345,10 +1589,23 @@ async function syncFolder(drive, folder, cache, force) {
   // Clé de cache = empreinte des fichiers binaires + date de modif du Doc notes.
   const fingerprint = fingerprintFiles(files) + "##notes:" + notesDocModified(files);
   const cached = cache?.stages?.[slug];
-  if (!force && cached && cached.fingerprint === fingerprint && cached.stage
+  // (ancien format : "##retry:" ajouté à l'empreinte = étape incomplète)
+  const cachedBase = (cached?.fingerprint || "").split("##retry:")[0];
+  const legacyRetry = !!cached?.fingerprint?.includes("##retry:");
+  if (!force && cached && cachedBase === fingerprint && cached.stage
       && fs.existsSync(stageJsonPath)) {
-    console.log(`  ⏭  Inchangé → réutilisé depuis le cache`);
-    return { stage: cached.stage, fingerprint, fromCache: true };
+    const wasPending = (cached.pending && cached.pending.length > 0) || legacyRetry;
+    if (!wasPending) {
+      console.log(`  ⏭  Inchangé → réutilisé depuis le cache`);
+      return { stage: cached.stage, fingerprint, pending: [], fromCache: true };
+    }
+    // Étape inchangée mais incomplète : on complète UNIQUEMENT ce qui manque.
+    console.log(`  🧩 Inchangée mais incomplète (${(cached.pending || ["ancienne marque de réessai"]).join(", ")}) → complément ciblé`);
+    const stage = cached.stage;
+    const pending = await enrichStage(stage);
+    fs.writeFileSync(stageJsonPath, JSON.stringify(stage, null, 2));
+    console.log(pending.length ? `  ⏳ Toujours à compléter : ${pending.join(", ")}` : `  ✅ Étape complétée`);
+    return { stage, fingerprint, pending, fromCache: true };
   }
   // Diagnostic : pourquoi cette étape se resync-t-elle ?
   if (cached) {
@@ -1590,8 +1847,7 @@ async function syncFolder(drive, folder, cache, force) {
       console.log(`  📍 Pas de GPX : position déduite des photos géolocalisées`);
     } else {
       const q = notes.location || notes.title || titleRaw;
-      const g = await forwardGeocode(q);
-      await new Promise(r => setTimeout(r, 1100));
+      const g = await forwardGeocodeCached(q);
       if (g) {
         gpxStats.startLat = g.lat; gpxStats.startLng = g.lng;
         gpxStats.endLat = g.lat; gpxStats.endLng = g.lng;
@@ -1605,17 +1861,15 @@ async function syncFolder(drive, folder, cache, force) {
   // ── Reverse geocoding : noms de villes + région + pays ──
   let startCity = null, endCity = null, region = null, geoCountry = null, geoCountryCode = null;
   if (gpxStats.startLat != null) {
-    const startGeo = await reverseGeocode(gpxStats.startLat, gpxStats.startLng);
+    const startGeo = await reverseGeocodeCached(gpxStats.startLat, gpxStats.startLng);
     startCity = startGeo.city;
-    await new Promise(r => setTimeout(r, 1100));
-    const endGeo = await reverseGeocode(gpxStats.endLat, gpxStats.endLng);
+    const endGeo = await reverseGeocodeCached(gpxStats.endLat, gpxStats.endLng);
     endCity = endGeo.city;
     region = endGeo.region || startGeo.region;
     // Pays via le code ISO (fiable) ; repli sur le nom brut Nominatim
     geoCountry = countryFromCode(endGeo.countryCode || startGeo.countryCode)
       || endGeo.country || startGeo.country || null;
     geoCountryCode = endGeo.countryCode || startGeo.countryCode || null;
-    await new Promise(r => setTimeout(r, 1100));
     if (startCity || endCity) {
       console.log(`  📍 Trajet : ${startCity || "?"} → ${endCity || "?"} (${region || "région ?"}, ${geoCountry || "pays ?"})`);
     }
@@ -1635,33 +1889,8 @@ async function syncFolder(drive, folder, cache, force) {
       ? docStory
       : (notes.fullStory?.length > 0 ? notes.fullStory : []),
   };
-  const translations = await translateContent(frContent);
-
-  // Remerciements : traduits (texte libre). L'hébergement est un nom propre +
-  // une URL → pas de traduction, on le garde tel quel pour toutes les langues.
-  const thanksTr = {};
-  if (docNotes.thanks) {
-    for (const [code, deeplCode] of Object.entries({ en: "EN", es: "ES", it: "IT", de: "DE", nl: "NL" })) {
-      thanksTr[code] = await deeplTranslate(docNotes.thanks, deeplCode);
-    }
-    thanksTr.fr = docNotes.thanks;
-  }
-
-  // ── Points d'intérêt touristiques (Overpass/OSM, côté serveur) ──
-  const poisRaw = await fetchPois(gpxStats.endLat, gpxStats.endLng, "fr");
-  // ── 3 plus grandes villes traversées par le tracé ──
-  const allTrackPts = (gpxStats.segments || []).flat();
-  const majorCitiesRaw = !isBike ? [] : await fetchMajorCities(allTrackPts, "fr");
-  // ── Lieux les mieux notés (Google Places), section séparée ──
-  const topRatedRaw = await fetchTopRatedPlaces(gpxStats.endLat, gpxStats.endLng, "fr");
-  // ── Spécialités culinaires du pays (Wikidata, côté serveur) ──
-  const specialtiesRaw = await fetchSpecialties(geoCountryCode, "fr");
-  // null = échec réseau (à réessayer au prochain sync) ; [] = vraiment rien.
-  const enrichmentFailed = (poisRaw === null) || (specialtiesRaw === null) || (majorCitiesRaw === null) || (topRatedRaw === null);
-  const pois = poisRaw || [];
-  const majorCities = majorCitiesRaw || [];
-  const topRatedPlaces = topRatedRaw || [];
-  const specialties = specialtiesRaw || [];
+  // Traductions, POI, villes, lieux notés, spécialités : faits APRÈS la
+  // construction de l'étape, par enrichStage() (cache par élément).
 
   // ── Build stage JSON ──
   const stage = {
@@ -1688,13 +1917,13 @@ async function syncFolder(drive, folder, cache, force) {
     summary: frContent.summary,
     fullStory: frContent.fullStory,
     quote: frContent.quote,
-    // Toutes les traductions
-    translations,
+    // Toutes les traductions (remplies par enrichStage)
+    translations: { fr: frContent },
     // Sections supplémentaires du Google Doc (vides si non remplies)
     lodgingUrl: docNotes.lodgingUrl || "",
     lodgingName: docNotes.lodgingName || "",
     thanks: docNotes.thanks || "",
-    thanksTranslations: thanksTr,
+    thanksTranslations: {},
     photos: coverWebp ? [{ src: coverWebp, thumb: thumbWebp, alt: "Cover" }, ...photos] : photos,
     videos: [],
     gpxFile: gpxPublicPath,
@@ -1709,11 +1938,14 @@ async function syncFolder(drive, folder, cache, force) {
     highlights: notes.highlights || [],
     tags: notes.tags || [],
     weather: notes.weather || null,
-    pois,
-    majorCities,
-    topRatedPlaces,
-    specialties,
+    pois: [],
+    majorCities: [],
+    topRatedPlaces: [],
+    specialties: [],
   };
+
+  // ── Enrichissement (traductions + données externes), élément par élément ──
+  const pending = await enrichStage(stage);
 
   fs.writeFileSync(stageJsonPath, JSON.stringify(stage, null, 2));
   console.log(`  ✅ ${stageJsonPath} généré`);
@@ -1726,15 +1958,12 @@ async function syncFolder(drive, folder, cache, force) {
     const refreshed = await listFilesInFolder(drive, folder.id);
     finalFingerprint = fingerprintFiles(refreshed) + "##notes:" + notesDocModified(refreshed);
   }
-  // Si POI ou spécialités ont échoué (réseau), on rend l'empreinte du cache
-  // "incomplète" : au prochain sync, elle ne matchera pas → l'étape sera
-  // réessayée pour récupérer ce qui manquait. Une fois réussie, l'empreinte
-  // redevient normale et le cache reprend son rôle.
-  if (enrichmentFailed) {
-    finalFingerprint += "##retry:" + Date.now();
-  }
+  // Ce qui a échoué (réseau, quota) est listé dans `pending` et stocké dans le
+  // cache de sync : au prochain passage, SEUL ce qui manque sera retenté
+  // (sans re-télécharger photos/GPX ni refaire ce qui a réussi).
+  if (pending.length) console.log(`  ⏳ À compléter plus tard : ${pending.join(", ")}`);
 
-  return { stage, fingerprint: finalFingerprint, fromCache: false };
+  return { stage, fingerprint: finalFingerprint, pending, fromCache: false };
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -1878,7 +2107,7 @@ async function syncAbout(drive, folder) {
 
   // Traduit la présentation
   const frPres = { summary: "", quote: null, fullStory: paragraphs };
-  const translations = await translateContent(frPres);
+  const { translations } = await translateContent(frPres);
 
   const aboutData = {
     paragraphs,
@@ -1900,6 +2129,8 @@ async function main() {
   }
 
   console.log("🧭 The Moving Beard — sync-drive.js");
+  loadApiCache();
+  console.log(`🗄️  Cache API : ${Object.keys(apiCache.entries).length} résultat(s) mémorisé(s)`);
   console.log("=====================================");
 
   // Setup dirs
@@ -1948,6 +2179,18 @@ async function main() {
   const resyncOnly = (process.env.RESYNC_ONLY || "").trim().toLowerCase();
   if (resyncOnly) console.log(`⚙️  RESYNC_ONLY="${resyncOnly}" → resync forcé uniquement pour ce dossier`);
   const newCache = { version: SYNC_CACHE_VERSION, stages: {} };
+  // Amorçage du cache API depuis l'existant (sans aucun appel réseau)
+  {
+    const before = Object.keys(apiCache.entries).length;
+    for (const entry of Object.values(cache.stages || {})) {
+      if (!entry?.stage) continue;
+      const trusted = !(entry.pending && entry.pending.length) && !String(entry.fingerprint || "").includes("##retry:");
+      seedApiCacheFromStage(entry.stage, trusted);
+    }
+    seedApiCacheFromAbout();
+    const added = Object.keys(apiCache.entries).length - before;
+    if (added > 0) console.log(`🗄️  ${added} résultat(s) existant(s) repris dans le cache API (aucun appel)`);
+  }
 
   const stages = [];
   for (const folder of folders) {
@@ -1968,8 +2211,12 @@ async function main() {
       // Alimente le nouveau cache (empreinte + étape complète réutilisable)
       newCache.stages[result.stage.slug] = {
         fingerprint: result.fingerprint,
+        pending: result.pending || [],
         stage: result.stage,
       };
+      // Sauvegarde au fil de l'eau : un plantage en cours de route ne fait
+      // perdre aucun résultat d'API déjà obtenu.
+      saveApiCache();
     }
   }
 
@@ -2095,6 +2342,10 @@ async function main() {
   console.log(`✅ stats.json mis à jour`);
   console.log(`\n📊 Résumé :`);
   console.log(`   ${stats.totalKm} km · ${stats.totalElevation} m D+ · ${stats.totalCountries} pays · ${stats.totalDays} jours · par type : ${Object.entries(byType).map(([k, v]) => `${k} ${v.km} km/${v.stages} étapes`).join(", ")}`);
+  saveApiCache();
+  const pendingStages = Object.entries(newCache.stages).filter(([, v]) => v.pending?.length);
+  console.log(`\n🗄️  Appels API : ${apiStats.calls} effectué(s), ${apiStats.hits} évité(s) grâce au cache, ${apiStats.failures} échec(s), ${apiStats.deferred} reporté(s) (backoff)`);
+  if (pendingStages.length) console.log(`⏳ ${pendingStages.length} étape(s) à compléter au prochain sync : ${pendingStages.map(([k, v]) => `${k} (${v.pending.join(", ")})`).join(" ; ")}`);
   console.log("\n🎉 Synchronisation terminée !");
 }
 

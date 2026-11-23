@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { X, Share2, Compass } from "lucide-react";
 import Navbar from "./components/Navbar";
@@ -15,7 +15,7 @@ export default function App() {
     const saved = typeof localStorage !== "undefined" ? localStorage.getItem("tcb_lang") : null;
     return (saved as Lang) || "fr";
   });
-  const t = makeT(lang);
+  const t = useMemo(() => makeT(lang), [lang]);
 
   // Thème clair/sombre : choix mémorisé, sinon réglage du système.
   // (index.html applique déjà data-theme avant l'affichage pour éviter le flash.)
@@ -53,11 +53,11 @@ export default function App() {
 
   // Fetch stats.json + trips.json on mount
   useEffect(() => {
-    // Cache-busting : un paramètre qui change à chaque chargement de page force
-    // le navigateur à récupérer la dernière version des données (sinon il peut
-    // servir un ancien JSON en cache après une mise à jour du sync).
-    const v = `?v=${Date.now()}`;
-    fetch(`/data/stats.json${v}`)
+    // "no-cache" = le navigateur revalide auprès du serveur (ETag) : réponse
+    // 304 instantanée si rien n'a changé, nouvelle version sinon. Plus de
+    // paramètre aléatoire qui forçait un re-téléchargement complet à chaque visite.
+    const opts: RequestInit = { cache: "no-cache" };
+    fetch("/data/stats.json", opts)
       .then(r => r.json())
       .then((data: SiteStats) => {
         setStats(data);
@@ -65,12 +65,12 @@ export default function App() {
       })
       .catch(console.error);
 
-    fetch(`/data/trips.json${v}`)
+    fetch("/data/trips.json", opts)
       .then(r => r.json())
       .then((data: TripSummary[]) => setTrips(data))
       .catch(console.error);
 
-    fetch(`/data/about.json${v}`)
+    fetch("/data/about.json", opts)
       .then(r => r.json())
       .then((data) => setAbout(data))
       .catch(() => setAbout(null));
@@ -126,6 +126,7 @@ export default function App() {
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
+        onSearchToggle={() => setSearchDrawerOpen(true)}
         lang={lang}
         changeLang={changeLang}
         theme={theme}
@@ -163,7 +164,7 @@ export default function App() {
       </main>
 
       {activeTab !== "map" && (
-      <footer className="bg-bg-dark border-t border-white/5 pt-12 pb-28 md:pb-12 px-6 md:px-14 items-center">
+      <footer className="relative z-10 border-t border-white/5 pt-12 pb-28 md:pb-12 px-6 md:px-14 items-center">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left text-xs text-text-dim text-opacity-50 font-mono">
           <div className="flex flex-col gap-1.5 md:items-start">
             <span className="font-display font-black tracking-widest text-[10px] uppercase text-text-on">

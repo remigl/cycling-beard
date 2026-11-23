@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState, useMemo } from "react";
 import { Play, Pause, RotateCcw, MapPin } from "lucide-react";
+import { cachedJson, DAY } from "../lib/cachedJson";
 
 // ─── Clé MapTiler ─────────────────────────────────────────────────────────────
 const MAPTILER_KEY = "QxAdnETuTrlBj2mnHXOB";
@@ -140,11 +141,10 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     if (now - lastGeocodeRef.current < 5000) return; // max 1 appel / 5s
     lastGeocodeRef.current = now;
     const query = `[out:json][timeout:8];way(around:600,${lat},${lng})[waterway~"river|stream|canal"][name];out tags 1;`;
-    fetch("https://overpass-api.de/api/interpreter", {
+    cachedJson("https://overpass-api.de/api/interpreter", 30 * DAY, {
       method: "POST",
       body: "data=" + encodeURIComponent(query),
-    })
-      .then(r => r.json())
+    }, `river:${lat.toFixed(3)},${lng.toFixed(3)}`)
       .then(data => {
         const el = data.elements?.find((e: any) => e.tags?.name);
         if (riverRef.current) {
@@ -159,8 +159,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
     const now = Date.now();
     if (now - lastCityRef.current < 4000) return;
     lastCityRef.current = now;
-    fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`)
-      .then(r => r.json())
+    cachedJson(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json&zoom=12&accept-language=fr`, 30 * DAY)
       .then(data => {
         const a = data.address || {};
         const city = a.city || a.town || a.village || a.municipality || a.county || a.state || "";
