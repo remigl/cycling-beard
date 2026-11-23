@@ -8,6 +8,7 @@ import JourneyView from "./components/JourneyView";
 import MapView from "./components/MapView";
 import { SiteStats, TripSummary } from "./types";
 import { Lang, makeT } from "./i18n";
+import { registerCountryCodes, countryName } from "./lib/countryName";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("home");
@@ -67,7 +68,7 @@ export default function App() {
 
     fetch("/data/trips.json", opts)
       .then(r => r.json())
-      .then((data: TripSummary[]) => setTrips(data))
+      .then((data: TripSummary[]) => { registerCountryCodes(data); setTrips(data); })
       .catch(console.error);
 
     fetch("/data/about.json", opts)
@@ -103,6 +104,7 @@ export default function App() {
   const filteredTrips = trips.filter(t =>
     t.title.toLowerCase().includes(globalQuery.toLowerCase()) ||
     t.country.toLowerCase().includes(globalQuery.toLowerCase()) ||
+    countryName(t.country, lang, t.countryCode).toLowerCase().includes(globalQuery.toLowerCase()) ||
     t.shortDescription.toLowerCase().includes(globalQuery.toLowerCase())
   );
 
@@ -231,7 +233,7 @@ export default function App() {
                       }}
                       className="group bg-bg-dark hover:bg-brand-green/20 border border-white/5 rounded p-3 transition-colors cursor-pointer"
                     >
-                      <span className="font-mono text-[8px] text-brand-sand font-bold block mb-0.5">{trip.country} · {trip.date}</span>
+                      <span className="font-mono text-[8px] text-brand-sand font-bold block mb-0.5">{countryName(trip.country, lang, trip.countryCode)} · {trip.date}</span>
                       <h4 className="font-display text-xs font-bold text-text-on group-hover:text-brand-sand transition-colors">{trip.title}</h4>
                       <p className="text-[10px] text-text-dim text-opacity-65 mt-1 line-clamp-1">{trip.shortDescription}</p>
                     </div>

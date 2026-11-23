@@ -1,9 +1,12 @@
-import { useEffect } from "react";
-import { X, Star, MapPin } from "lucide-react";
+import { useEffect, useState } from "react";
+import { X, Star, MapPin, BookOpen } from "lucide-react";
 import { TripSummary } from "../types";
+import { Lang } from "../i18n";
+import { wikiForPlaces, wikiUrl, WikiInfo } from "../lib/wiki";
 
 interface TopRatedInfoProps {
   trip: TripSummary;
+  lang: Lang;
   onClose: () => void;
   t: (key: string) => string;
 }
@@ -15,8 +18,21 @@ function typeLabel(types: string[]): string {
   return t.charAt(0).toUpperCase() + t.slice(1);
 }
 
-export default function TopRatedInfo({ trip, onClose, t }: TopRatedInfoProps) {
+export default function TopRatedInfo({ trip, lang, onClose, t }: TopRatedInfoProps) {
   const places = trip.topRatedPlaces || [];
+  // Classement = Google ; description = introduction Wikipédia (non réécrite)
+  const [wiki, setWiki] = useState<(WikiInfo | null)[]>([]);
+  const [loading, setLoading] = useState(places.length > 0);
+  useEffect(() => {
+    let cancelled = false;
+    setWiki([]);
+    setLoading(places.length > 0);
+    wikiForPlaces(places, trip.endCity || trip.startCity || "", lang)
+      .then(w => { if (!cancelled) setWiki(w); })
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [trip.slug, lang]);
 
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -48,22 +64,20 @@ export default function TopRatedInfo({ trip, onClose, t }: TopRatedInfoProps) {
             <div className="flex flex-col gap-2">
               {places.map((p, i) => {
                 const href = p.mapsUrl || `https://www.google.com/maps/search/${encodeURIComponent(p.title)}`;
+                const w = wiki[i];
                 return (
-                  <a
-                    key={i}
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 py-2.5 border-b border-white/5 hover:bg-white/[0.03] transition-colors -mx-2 px-2 rounded"
-                  >
-                    <div className="w-10 h-10 rounded-full bg-white/5 shrink-0 flex items-center justify-center">
-                      <MapPin size={16} className="text-white/30" />
+                  <div key={i} className="flex items-start gap-3 py-3 border-b border-white/5">
+                    <div className="w-14 h-14 rounded-lg overflow-hidden bg-white/5 shrink-0 flex items-center justify-center">
+                      {w?.thumb
+                        ? <img src={w.thumb} alt={p.title} loading="lazy" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                        : <MapPin size={16} className="text-white/30" />}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="flex items-baseline gap-2">
-                        <span className="text-sm text-text-on font-medium truncate">{p.title}</span>
-                      </div>
-                      <div className="flex items-center gap-2 mt-0.5">
+                      <a href={href} target="_blank" rel="noopener noreferrer" className="text-sm text-text-on font-medium hover:text-brand-sand transition-colors">
+                        {p.title}
+                      </a>
+                      {/* Google : note, nombre d'avis, type */}
+                      <div className="flex items-center gap-2 mt-0.5 flex-wrap">
                         <span className="flex items-center gap-1 font-mono text-[10px] text-brand-sand">
                           <Star size={10} className="fill-brand-sand" /> {p.rating.toFixed(1)}
                         </span>
@@ -72,11 +86,22 @@ export default function TopRatedInfo({ trip, onClose, t }: TopRatedInfoProps) {
                           <span className="font-mono text-[9px] text-text-dim/70">· {typeLabel(p.types)}</span>
                         )}
                       </div>
+                      {/* Wikipédia : introduction de l'article, telle quelle */}
+                      {w?.desc && (
+                        <p className="text-[11px] text-text-dim leading-snug mt-1.5 font-light">{w.desc}</p>
+                      )}
+                      {w && (
+                        <a href={wikiUrl(lang, w.title)} target="_blank" rel="noopener noreferrer"
+                           className="inline-flex items-center gap-1 mt-1 font-mono text-[9px] text-brand-teal hover:underline">
+                          <BookOpen size={10} /> Wikipédia
+                        </a>
+                      )}
                     </div>
-                  </a>
+                  </div>
                 );
               })}
-              <p className="font-mono text-[8px] text-text-dim/50 pt-3">Google Places</p>
+              {loading && <p className="font-mono text-[9px] text-brand-sand/70 animate-pulse pt-2">…</p>}
+              <p className="font-mono text-[8px] text-text-dim/50 pt-3">Google Places · Wikipédia</p>
             </div>
           )}
         </div>

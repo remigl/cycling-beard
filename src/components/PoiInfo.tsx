@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { X, MapPin } from "lucide-react";
 import { TripSummary, Poi } from "../types";
 import { Lang } from "../i18n";
-import { cachedJson, DAY } from "../lib/cachedJson";
+import { wikiForPlaces, wikiUrl } from "../lib/wiki";
 
 interface PoiView extends Poi {
   thumb?: string | null;
@@ -16,21 +16,11 @@ interface PoiInfoProps {
   t: (key: string) => string;
 }
 
-// Extrait image + description courte d'une page Wikipédia (format API)
-function extractPage(pg: any): { thumb: string | null; desc: string | null } {
-  let desc = (pg.extract || "").replace(/\s+/g, " ").trim();
-  if (desc.length > 160) desc = desc.slice(0, 157) + "…";
-  let thumb = pg.thumbnail?.source || null;
-  if (thumb && /(Localisation|location_map|_map|\.svg)/i.test(thumb)) thumb = null;
-  return { thumb, desc: desc || null };
-}
-
 export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
   const basePois: Poi[] = trip.pois || [];
   const [pois, setPois] = useState<PoiView[]>(basePois);
   const [loading, setLoading] = useState(basePois.length > 0);
 
-  const wikiLang = ["en", "fr", "es", "it", "de", "nl"].includes(lang) ? lang : "en";
 
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -38,82 +28,22 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
     return () => { document.body.style.overflow = prev; };
   }, []);
 
-  // Enrichit avec photo + description Wikipédia. Les POI taggés wiki (depuis OSM)
-  // sont récupérés en lot ; ceux sans tag sont cherchés par leur nom sur Wikipédia.
+  // Enrichit avec photo + description Wikipédia (introduction de l'article,
+  // non modifiée), dans la langue choisie. Voir lib/wiki.
   useEffect(() => {
     let cancelled = false;
-    (async () => {
-      try {
-        const enriched: Record<number, { thumb: string | null; desc: string | null; wikiTitle: string | null }> = {};
-
-        // 1) POI avec tag wiki → requête en lot par titres
-        const tagged = basePois.map((p, i) => ({ p, i })).filter(x => x.p.wikiTitle);
-        if (tagged.length) {
-          const titles = tagged.map(x => x.p.wikiTitle!) as string[];
-          const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(titles.slice(0, 40).join("|"))}&prop=extracts|pageimages&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*&redirects=1`;
-          try {
-            const data = await cachedJson(url, 7 * DAY).catch(() => null);
-            const pages = data?.query?.pages || {};
-            const byTitle: Record<string, { thumb: string | null; desc: string | null }> = {};
-            for (const k of Object.keys(pages)) {
-              const pg = pages[k];
-              byTitle[pg.title] = extractPage(pg);
-            }
-            for (const { p, i } of tagged) {
-              const m = p.wikiTitle && byTitle[p.wikiTitle];
-              if (m) enriched[i] = { ...m, wikiTitle: p.wikiTitle! };
-            }
-          } catch {}
-        }
-
-        // 2) POI SANS tag wiki → recherche par nom (une requête chacun, en parallèle limité)
-        const cityCtx = trip.endCity || trip.startCity || "";
-        const untagged = basePois.map((p, i) => ({ p, i })).filter(x => !x.p.wikiTitle);
-        await Promise.all(untagged.map(async ({ p, i }) => {
-          try {
-            // Recherche avec contexte ville pour viser le bon lieu (ex: "Stadtpark Wien")
-            const term = cityCtx ? `${p.title} ${cityCtx}` : p.title;
-            const url = `https://${wikiLang}.wikipedia.org/w/api.php?action=query&generator=search&gsrsearch=${encodeURIComponent(term)}&gsrlimit=3&prop=extracts|pageimages|coordinates&exintro=1&explaintext=1&exsentences=2&pithumbsize=160&format=json&origin=*`;
-            const data = await cachedJson(url, 7 * DAY).catch(() => null);
-            const pages = data?.query?.pages ? Object.values(data.query.pages) as any[] : [];
-            if (!pages.length) return;
-            // On garde le résultat dont le titre ressemble le plus au nom du POI,
-            // pour éviter les pages hors sujet renvoyées par la recherche.
-            const norm = (s: string) => s.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9 ]/g, "").trim();
-            const target = norm(p.title);
-            const scored = pages.map(pg => {
-              const titleN = norm(pg.title || "");
-              let score = 0;
-              if (titleN === target) score = 100;
-              else if (titleN.includes(target) || target.includes(titleN)) score = 60;
-              else {
-                // mots communs
-                const tw = new Set(target.split(" ").filter(w => w.length > 2));
-                const pw = titleN.split(" ").filter(w => w.length > 2);
-                const common = pw.filter(w => tw.has(w)).length;
-                score = common * 20;
-              }
-              if (pg.index != null) score -= pg.index; // léger bonus au mieux classé
-              return { pg, score };
-            }).sort((a, b) => b.score - a.score);
-            const best = scored[0];
-            // Seuil : si le meilleur titre ne ressemble pas assez, on n'enrichit pas
-            // (mieux vaut pas de description qu'une mauvaise).
-            if (best && best.score >= 40) {
-              const ex = extractPage(best.pg);
-              enriched[i] = { ...ex, wikiTitle: best.pg.title || null };
-            }
-          } catch {}
-        }));
-
+    setPois(basePois);
+    setLoading(basePois.length > 0);
+    wikiForPlaces(basePois, trip.endCity || trip.startCity || "", lang)
+      .then(infos => {
         if (cancelled) return;
-        setPois(basePois.map((p, i) => enriched[i]
-          ? { ...p, thumb: enriched[i].thumb, desc: enriched[i].desc, wikiTitle: enriched[i].wikiTitle || p.wikiTitle }
+        setPois(basePois.map((p, i) => infos[i]
+          ? { ...p, thumb: infos[i]!.thumb, desc: infos[i]!.desc, wikiTitle: infos[i]!.title }
           : p));
-      } catch {}
-      if (!cancelled) setLoading(false);
-    })();
+      })
+      .finally(() => { if (!cancelled) setLoading(false); });
     return () => { cancelled = true; };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [trip.slug, lang]);
 
   return (
@@ -140,7 +70,7 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
             <div className="flex flex-col gap-2">
               {pois.map((p, i) => {
                 const href = p.wikiTitle
-                  ? `https://${wikiLang}.wikipedia.org/wiki/${encodeURIComponent(p.wikiTitle)}`
+                  ? wikiUrl(lang, p.wikiTitle)
                   : `https://www.google.com/maps/search/${encodeURIComponent(p.title)}`;
                 return (
                   <a

@@ -12,25 +12,73 @@ export interface GlobeRun {
 interface GlobeProps {
   runs: GlobeRun[];
   here?: [number, number] | null;   // [lng, lat]
+  startLabel?: string;
+  endLabel?: string;
 }
 
-// Durée totale du dessin du trajet, et cadence des mises à jour (légère :
-// ~25 images/s suffisent pour un tracé fluide sans surcharger le GPU).
-const DRAW_MS = 4200;
-const TICK_MS = 40;
+// ── Réglages visuels ──
+const DRAW_MS = 4200;          // durée du dessin initial du trajet
+const TICK_MS = 40;            // ~25 images/s : fluide et léger
+const LINE_ALT = 0.022;        // le tracé flotte AU-DESSUS des nuages (sphère à 0.012)
+const SHADOW_ALT = 0.0015;     // son ombre posée au sol → effet de relief
+const LONG_LEG_RAD = 0.06;     // ~380 km : au-delà, le trajet (avion, train…) s'élève en arc
+const FLOW_MS = 26000;         // vitesse des "comètes" qui indiquent le sens du trajet
 
-type PathDatum = { color: string; pts: [number, number][] };
+type Pt = [number, number, number];   // lat, lng, altitude
+type PathDatum = { kind: "shadow" | "line" | "flow"; color: string; pts: Pt[] };
 
-export default function Globe({ runs, here }: GlobeProps) {
+const toRad = Math.PI / 180;
+const toVec = (lat: number, lng: number): [number, number, number] => {
+  const la = lat * toRad, lo = lng * toRad;
+  return [Math.cos(la) * Math.cos(lo), Math.cos(la) * Math.sin(lo), Math.sin(la)];
+};
+const angDist = (a: [number, number], b: [number, number]) => {
+  const va = toVec(a[0], a[1]), vb = toVec(b[0], b[1]);
+  return Math.acos(Math.min(1, Math.max(-1, va[0] * vb[0] + va[1] * vb[1] + va[2] * vb[2])));
+};
+// Point intermédiaire sur le grand cercle (t ∈ [0,1])
+function slerp(a: [number, number], b: [number, number], t: number): [number, number] {
+  const d = angDist(a, b);
+  if (d < 1e-9) return a;
+  const va = toVec(a[0], a[1]), vb = toVec(b[0], b[1]);
+  const s1 = Math.sin((1 - t) * d) / Math.sin(d), s2 = Math.sin(t * d) / Math.sin(d);
+  const x = s1 * va[0] + s2 * vb[0], y = s1 * va[1] + s2 * vb[1], z = s1 * va[2] + s2 * vb[2];
+  return [Math.atan2(z, Math.hypot(x, y)) / toRad, Math.atan2(y, x) / toRad];
+}
+
+// Ajoute l'altitude : tracé au-dessus des nuages, et les longues étapes
+// (avion, train de nuit…) forment un arc d'autant plus haut qu'elles sont longues.
+function elevate(points: [number, number][]): Pt[] {
+  const out: Pt[] = [];
+  for (let i = 0; i < points.length; i++) {
+    const p = points[i];
+    if (i > 0) {
+      const prev = points[i - 1];
+      const d = angDist(prev, p);
+      if (d > LONG_LEG_RAD) {
+        const h = Math.min(0.28, d * 0.35);
+        const n = Math.min(48, Math.ceil(d / 0.02));
+        for (let k = 1; k < n; k++) {
+          const tt = k / n;
+          const [la, lo] = slerp(prev, p, tt);
+          out.push([la, lo, LINE_ALT + h * Math.sin(Math.PI * tt)]);
+        }
+      }
+    }
+    out.push([p[0], p[1], LINE_ALT]);
+  }
+  return out;
+}
+
+export default function Globe({ runs, here, startLabel, endLabel }: GlobeProps) {
   const globeRef = useRef<any>(null);
   const wrapRef = useRef<HTMLDivElement | null>(null);
   const [size, setSize] = useState({ w: 0, h: 0 });
   const [ready, setReady] = useState(false);
-  // Nombre de points actuellement dessinés (sur l'ensemble des runs)
-  const [drawn, setDrawn] = useState(0);
+  const [drawn, setDrawn] = useState(0);   // nombre de points dessinés
 
   // Taille du conteneur (on ignore les petites variations de hauteur dues à
-  // la barre d'adresse mobile, pour ne pas recréer la scène au scroll).
+  // la barre d'adresse mobile, pour ne pas recréer la scène au défilement).
   useEffect(() => {
     let lastW = 0, lastH = 0;
     const measure = () => {
@@ -44,99 +92,96 @@ export default function Globe({ runs, here }: GlobeProps) {
     return () => window.removeEventListener("resize", measure);
   }, []);
 
-  const totalPts = useMemo(() => runs.reduce((n, r) => n + r.points.length, 0), [runs]);
+  // Trajet en relief (calculé une fois par jeu de données)
+  const elevated = useMemo(() => runs.map(r => ({ color: r.color, pts: elevate(r.points) })), [runs]);
+  const totalPts = useMemo(() => elevated.reduce((n, r) => n + r.pts.length, 0), [elevated]);
+
   const firstPt = runs[0]?.points[0];
   const lastRun = runs[runs.length - 1];
   const lastPt = lastRun?.points[lastRun.points.length - 1];
   const start: [number, number] = firstPt ? [firstPt[1], firstPt[0]] : [-2.21, 47.27];
   const hp: [number, number] = here || (lastPt ? [lastPt[1], lastPt[0]] : start);
 
-  // Objets "path" des runs TERMINÉS : stables (même référence) → le globe ne
-  // reconstruit pas leur géométrie à chaque image, seul le run en cours change.
-  const fullPaths = useMemo<PathDatum[]>(() => runs.map(r => ({ color: r.color, pts: r.points })), [runs]);
-  const pathsData = useMemo<PathDatum[]>(() => {
-    if (drawn >= totalPts) return fullPaths;
-    const out: PathDatum[] = [];
-    let left = drawn;
-    for (let i = 0; i < runs.length && left > 1; i++) {
-      const n = runs[i].points.length;
-      if (left >= n) { out.push(fullPaths[i]); left -= n; }
-      else { out.push({ color: runs[i].color, pts: runs[i].points.slice(0, left) }); left = 0; }
-    }
-    return out;
-  }, [drawn, totalPts, runs, fullPaths]);
+  // Centre du trajet : moyenne des positions sur la sphère → la caméra s'y
+  // place dès l'arrivée, le trajet entier occupe le centre de l'écran.
+  const center = useMemo(() => {
+    let x = 0, y = 0, z = 0;
+    for (const r of runs) for (const [la, lo] of r.points) { const v = toVec(la, lo); x += v[0]; y += v[1]; z += v[2]; }
+    if (!x && !y && !z) return { lat: start[1], lng: start[0] };
+    return { lat: Math.atan2(z, Math.hypot(x, y)) / toRad, lng: Math.atan2(y, x) / toRad };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [runs]);
 
-  // Tête du tracé (dernier point dessiné), pour que la caméra la suive
-  const headPt = useMemo<[number, number] | null>(() => {
-    const last = pathsData[pathsData.length - 1];
-    return last && last.pts.length ? last.pts[last.pts.length - 1] : null;
-  }, [pathsData]);
-
-  const done = drawn >= totalPts;
-
-  // Altitude de caméra pour que la Terre tienne EN ENTIER dans le cadre :
-  // sur un écran en hauteur (téléphone), c'est la largeur qui limite.
+  // Altitude de caméra : la Terre tient en entier (sur écran en hauteur,
+  // c'est la largeur qui limite).
   const camAlt = useMemo(() => {
     const ratio = size.w > 0 ? size.h / size.w : 1;
     return Math.max(2.1, (1 + 2.1) * Math.max(1, ratio) * 0.9 - 1);
   }, [size.w, size.h]);
 
-  // ── Animation du tracé : la ligne se dessine progressivement, une fois ──
+  const done = drawn >= totalPts;
+
+  // Chemins affichés : ombre au sol + ligne surélevée (+ flux animé à la fin).
+  // Les objets des portions terminées restent identiques d'une image à
+  // l'autre → seule la portion en cours de dessin est recalculée.
+  const fullLines = useMemo<PathDatum[]>(() => elevated.map(r => ({ kind: "line", color: r.color, pts: r.pts })), [elevated]);
+  const fullShadows = useMemo<PathDatum[]>(() => elevated.map(r => ({
+    kind: "shadow", color: "rgba(0,0,0,0.32)", pts: r.pts.map(p => [p[0], p[1], SHADOW_ALT] as Pt),
+  })), [elevated]);
+  const flow = useMemo<PathDatum>(() => ({
+    kind: "flow", color: "rgba(255,255,255,0.95)",
+    pts: elevated.flatMap(r => r.pts).map(p => [p[0], p[1], p[2] + 0.002] as Pt),
+  }), [elevated]);
+
+  const pathsData = useMemo<PathDatum[]>(() => {
+    if (done) return [...fullShadows, ...fullLines, flow];
+    const shadows: PathDatum[] = [], lines: PathDatum[] = [];
+    let left = drawn;
+    for (let i = 0; i < elevated.length && left > 1; i++) {
+      const n = elevated[i].pts.length;
+      if (left >= n) { shadows.push(fullShadows[i]); lines.push(fullLines[i]); left -= n; }
+      else {
+        shadows.push({ ...fullShadows[i], pts: fullShadows[i].pts.slice(0, left) });
+        lines.push({ ...fullLines[i], pts: fullLines[i].pts.slice(0, left) });
+        left = 0;
+      }
+    }
+    return [...shadows, ...lines];
+  }, [drawn, done, elevated, fullLines, fullShadows, flow]);
+
+  // ── Dessin progressif du trajet, une seule fois ──
   useEffect(() => {
     if (!ready || totalPts === 0) return;
-    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
-    if (reduce) { setDrawn(totalPts); return; }
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) { setDrawn(totalPts); return; }
     setDrawn(0);
     const t0 = performance.now();
     const id = window.setInterval(() => {
       const p = Math.min(1, (performance.now() - t0) / DRAW_MS);
-      // easeInOut : départ et arrivée en douceur
-      const e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+      const e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;   // easeInOut
       setDrawn(Math.max(2, Math.round(e * totalPts)));
       if (p >= 1) window.clearInterval(id);
     }, TICK_MS);
     return () => window.clearInterval(id);
   }, [ready, totalPts]);
 
-  // Caméra : suit la tête du tracé pendant le dessin, puis se pose sur la
-  // dernière position et reprend la rotation lente.
-  const lastCamMove = useRef(0);
-  useEffect(() => {
-    const g = globeRef.current;
-    if (!g || !ready) return;
-    try {
-      const controls = g.controls();
-      controls.autoRotate = done;
-    } catch { /* contrôles pas encore prêts */ }
-    if (done) {
-      try { g.pointOfView({ lat: hp[1], lng: hp[0], altitude: camAlt }, 1400); } catch { /* ignoré */ }
-      return;
-    }
-    if (!headPt) return;
-    const now = performance.now();
-    if (now - lastCamMove.current < 450) return;
-    lastCamMove.current = now;
-    try { g.pointOfView({ lat: headPt[0], lng: headPt[1], altitude: camAlt }, 900); } catch { /* ignoré */ }
-  }, [headPt, done, ready, hp[0], hp[1], camAlt]);
-
-  // ── Réglages de la scène + nuages en temps réel (une fois par taille) ──
+  // ── Scène : caméra centrée sur le trajet, contrôles, nuages ──
   useEffect(() => {
     const g = globeRef.current;
     if (!g || !size.w) return;
     try {
       const controls = g.controls();
-      controls.autoRotateSpeed = 0.55;
+      controls.autoRotate = false;        // le trajet reste au centre
       controls.enableZoom = false;
     } catch { /* ignoré */ }
-    try { g.pointOfView({ lat: start[1], lng: start[0], altitude: camAlt }, 0); } catch { /* ignoré */ }
+    try { g.pointOfView({ lat: center.lat, lng: center.lng, altitude: camAlt }, 0); } catch { /* ignoré */ }
     try {
       const canvas = wrapRef.current?.querySelector("canvas");
       if (canvas) (canvas as HTMLElement).style.touchAction = "pan-y";
     } catch { /* ignoré */ }
     try { g.renderer().setPixelRatio(Math.min(window.devicePixelRatio || 1, 2)); } catch { /* ignoré */ }
 
-    // Nuages : couverture nuageuse mondiale du moment (live-cloud-maps,
-    // maj ~toutes les 3h), attachés à la Terre pour tourner avec elle.
+    // Nuages du moment (live-cloud-maps), attachés à la Terre. Plus discrets
+    // qu'avant : ils restent SOUS le tracé, qui garde la priorité visuelle.
     let clouds: any = null, cloudsMat: any = null, cancelled = false, tries = 0;
     const setup = () => {
       if (cancelled) return;
@@ -151,9 +196,10 @@ export default function Globe({ runs, here }: GlobeProps) {
         loader.setCrossOrigin("anonymous");
         loader.load("https://clouds.matteason.co.uk/images/2048x1024/clouds-alpha.png", (tex) => {
           if (cancelled) return;
-          cloudsMat = new THREE.MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.85, depthWrite: false });
-          clouds = new THREE.Mesh(new THREE.SphereGeometry(R * 1.012, 64, 64), cloudsMat);
+          cloudsMat = new THREE.MeshPhongMaterial({ map: tex, transparent: true, opacity: 0.6, depthWrite: false });
+          clouds = new THREE.Mesh(new THREE.SphereGeometry(R * 1.008, 64, 64), cloudsMat);
           clouds.rotation.y = -Math.PI / 2;
+          clouds.renderOrder = -1;
           let attached = false;
           try {
             const globeObj = (scene.children || []).find((c: any) =>
@@ -175,16 +221,16 @@ export default function Globe({ runs, here }: GlobeProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [size.w, size.h]);
 
-  // Départ + dernière position (l'anneau de la dernière position apparaît
-  // une fois le tracé terminé).
-  const rings = useMemo(() => done ? [{ lat: hp[1], lng: hp[0], maxR: 4, speed: 1.6, color: "#E8620A" }] : [], [done, hp[0], hp[1]]);
-  const points = useMemo(() => [
-    { lat: start[1], lng: start[0], color: "#d9c9a8", r: 0.35 },
-    ...(done ? [{ lat: hp[1], lng: hp[0], color: "#E8620A", r: 0.6 }] : []),
+  // Départ (toujours visible) et arrivée (avec onde, une fois le tracé fini)
+  const rings = useMemo(() => [
+    { lat: start[1], lng: start[0], maxR: 2.2, speed: 0.8, period: 2600, color: "#FFFFFF" },
+    ...(done ? [{ lat: hp[1], lng: hp[0], maxR: 4, speed: 1.6, period: 1400, color: "#E8620A" }] : []),
   ], [done, start[0], start[1], hp[0], hp[1]]);
+  const labels = useMemo(() => [
+    ...(startLabel ? [{ lat: start[1], lng: start[0], text: startLabel, color: "#FFFFFF" }] : []),
+    ...(done && endLabel ? [{ lat: hp[1], lng: hp[0], text: endLabel, color: "#FFB27A" }] : []),
+  ], [done, startLabel, endLabel, start[0], start[1], hp[0], hp[1]]);
 
-  // Fond transparent : on voit directement l'arrière-plan PNG de la page
-  // (aucun aplat de couleur, aucun halo d'atmosphère autour du globe).
   return (
     <div ref={wrapRef} className="absolute inset-0">
       {size.w > 0 && (
@@ -201,20 +247,27 @@ export default function Globe({ runs, here }: GlobeProps) {
           pathPoints={(d: any) => d.pts}
           pathPointLat={(p: any) => p[0]}
           pathPointLng={(p: any) => p[1]}
-          pathPointAlt={0.004}
+          pathPointAlt={(p: any) => p[2]}
           pathColor={(d: any) => d.color}
-          pathStroke={2.2}
+          pathStroke={(d: any) => (d.kind === "line" ? 3 : d.kind === "shadow" ? 2.6 : 1.6)}
+          pathDashLength={(d: any) => (d.kind === "flow" ? 0.006 : 1)}
+          pathDashGap={(d: any) => (d.kind === "flow" ? 0.03 : 0)}
+          pathDashAnimateTime={(d: any) => (d.kind === "flow" ? FLOW_MS : 0)}
           pathResolution={2}
           pathTransitionDuration={0}
           ringsData={rings}
           ringColor={(d: any) => (t: number) => d.color + Math.round((1 - t) * 200).toString(16).padStart(2, "0")}
           ringMaxRadius="maxR"
           ringPropagationSpeed="speed"
-          ringRepeatPeriod={1400}
-          pointsData={points}
-          pointColor="color"
-          pointAltitude={0.012}
-          pointRadius="r"
+          ringRepeatPeriod={(d: any) => d.period}
+          ringAltitude={LINE_ALT}
+          labelsData={labels}
+          labelText="text"
+          labelColor="color"
+          labelSize={1.3}
+          labelDotRadius={0.45}
+          labelAltitude={LINE_ALT + 0.004}
+          labelResolution={2}
         />
       )}
     </div>

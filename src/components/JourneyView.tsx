@@ -10,6 +10,7 @@ import TopRatedInfo from "./TopRatedInfo";
 import FoodInfo from "./FoodInfo";
 import RegionMap from "./RegionMap";
 import { STAGE_TYPE_META, STAGE_TYPE_ORDER, StageType, tripType } from "../stageTypes";
+import { countryName } from "../lib/countryName";
 
 interface JourneyViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -20,22 +21,11 @@ interface JourneyViewProps {
 }
 
 // Noms de pays localisés — les données du sync sont en français (Nominatim accept-language=fr)
-const COUNTRY_LABELS: Record<string, Record<string, string>> = {
-  France:    { en: "France",      es: "Francia",    it: "Francia",    de: "Frankreich",  nl: "Frankrijk" },
-  Suisse:    { en: "Switzerland", es: "Suiza",      it: "Svizzera",   de: "Schweiz",     nl: "Zwitserland" },
-  Allemagne: { en: "Germany",     es: "Alemania",   it: "Germania",   de: "Deutschland", nl: "Duitsland" },
-  Autriche:  { en: "Austria",     es: "Austria",    it: "Austria",    de: "Österreich",  nl: "Oostenrijk" },
-  Slovaquie: { en: "Slovakia",    es: "Eslovaquia", it: "Slovacchia", de: "Slowakei",    nl: "Slowakije" },
-  Hongrie:   { en: "Hungary",     es: "Hungría",    it: "Ungheria",   de: "Ungarn",      nl: "Hongarije" },
-  Croatie:   { en: "Croatia",     es: "Croacia",    it: "Croazia",    de: "Kroatien",    nl: "Kroatië" },
-  Serbie:    { en: "Serbia",      es: "Serbia",     it: "Serbia",     de: "Serbien",     nl: "Servië" },
-  Roumanie:  { en: "Romania",     es: "Rumanía",    it: "Romania",    de: "Rumänien",    nl: "Roemenië" },
-  Bulgarie:  { en: "Bulgaria",    es: "Bulgaria",   it: "Bulgaria",   de: "Bulgarien",   nl: "Bulgarije" },
-};
+// (noms de pays : voir lib/countryName — traduits depuis le code ISO)
 
 export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
   // Traduit un nom de pays selon la langue active (les données restent en français)
-  const countryLabel = (c: string) => (lang === "fr" ? c : COUNTRY_LABELS[c]?.[lang] ?? c);
+  const countryLabel = (c: string) => countryName(c, lang);
 
   // Régions qui ont une VRAIE traduction. Celles absentes de la table gardent
   // leur nom français/local (ex : "Pays de la Loire" ne se traduit pas).
@@ -363,7 +353,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
           <PoiInfo trip={poiTrip} lang={lang} onClose={() => setPoiTrip(null)} t={t} />
         )}
         {topRatedTrip && (
-          <TopRatedInfo trip={topRatedTrip} onClose={() => setTopRatedTrip(null)} t={t} />
+          <TopRatedInfo trip={topRatedTrip} lang={lang} onClose={() => setTopRatedTrip(null)} t={t} />
         )}
         {/* Popup Spécialités */}
         {foodTrip && (

@@ -8,6 +8,7 @@ import RainRadar from "./RainRadar";
 import Globe from "./Globe";
 import GlobeErrorBoundary from "./GlobeErrorBoundary";
 import { cachedJson, MINUTE } from "../lib/cachedJson";
+import { countryName } from "../lib/countryName";
 
 // URL Buy Me a Coffee
 const BMC_URL = "https://buymeacoffee.com/cyclingBeard";
@@ -86,19 +87,8 @@ interface HomeViewProps {
 
 export default function HomeView({ onNavigate, stats, trips, t, about, lang }: HomeViewProps) {
   // Traduit le nom du pays courant selon la langue (données en français).
-  const COUNTRY_LABELS: Record<string, Record<string, string>> = {
-    France:    { en: "France",      es: "Francia",    it: "Francia",    de: "Frankreich",  nl: "Frankrijk" },
-    Suisse:    { en: "Switzerland", es: "Suiza",      it: "Svizzera",   de: "Schweiz",     nl: "Zwitserland" },
-    Allemagne: { en: "Germany",     es: "Alemania",   it: "Germania",   de: "Deutschland", nl: "Duitsland" },
-    Autriche:  { en: "Austria",     es: "Austria",    it: "Austria",    de: "Österreich",  nl: "Oostenrijk" },
-    Slovaquie: { en: "Slovakia",    es: "Eslovaquia", it: "Slovacchia", de: "Slowakei",    nl: "Slowakije" },
-    Hongrie:   { en: "Hungary",     es: "Hungría",    it: "Ungheria",   de: "Ungarn",      nl: "Hongarije" },
-    Croatie:   { en: "Croatia",     es: "Croacia",    it: "Croazia",    de: "Kroatien",    nl: "Kroatië" },
-    Serbie:    { en: "Serbia",      es: "Serbia",     it: "Serbia",     de: "Serbien",     nl: "Servië" },
-    Roumanie:  { en: "Romania",     es: "Rumanía",    it: "Romania",    de: "Rumänien",    nl: "Roemenië" },
-    Bulgarie:  { en: "Bulgaria",    es: "Bulgaria",   it: "Bulgaria",   de: "Bulgarien",   nl: "Bulgarije" },
-  };
-  const countryLabel = (c: string) => (!c || lang === "fr" ? c : COUNTRY_LABELS[c]?.[lang] ?? c);
+  // (noms de pays : voir lib/countryName — traduits depuis le code ISO)
+  const countryLabel = (c: string) => countryName(c, lang);
 
   const latest = trips[trips.length - 1];
 
@@ -237,7 +227,12 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
         {/* Globe : remplit l'espace restant entre le titre et la flèche */}
         <div className="relative flex-1 w-full min-h-0 z-0 -mt-6">
           <GlobeErrorBoundary>
-            <Globe runs={globeRuns} here={globeHere} />
+            <Globe
+              runs={globeRuns}
+              here={globeHere}
+              startLabel={[...trips].sort((a, b) => (a.date || "").localeCompare(b.date || ""))[0]?.startCity || undefined}
+              endLabel={stats?.currentLocation || undefined}
+            />
           </GlobeErrorBoundary>
         </div>
 
