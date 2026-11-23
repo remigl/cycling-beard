@@ -102,11 +102,20 @@ export default function Globe({ runs, here, startLabel, endLabel }: GlobeProps) 
   const start: [number, number] = firstPt ? [firstPt[1], firstPt[0]] : [-2.21, 47.27];
   const hp: [number, number] = here || (lastPt ? [lastPt[1], lastPt[0]] : start);
 
-  // Centre du trajet : moyenne des positions sur la sphère → la caméra s'y
+  // Centre du trajet : milieu sur la sphère → la caméra s'y
   // place dès l'arrivée, le trajet entier occupe le centre de l'écran.
   const center = useMemo(() => {
+    // Pondéré par la DISTANCE parcourue (et non par le nombre de points GPS,
+    // très denses à vélo) → vrai milieu géographique du voyage.
     let x = 0, y = 0, z = 0;
-    for (const r of runs) for (const [la, lo] of r.points) { const v = toVec(la, lo); x += v[0]; y += v[1]; z += v[2]; }
+    let prev: [number, number] | null = null;
+    for (const r of runs) for (const p of r.points) {
+      if (prev) {
+        const d = angDist(prev, p);
+        if (d > 0) { const m = slerp(prev, p, 0.5); const v = toVec(m[0], m[1]); x += v[0] * d; y += v[1] * d; z += v[2] * d; }
+      }
+      prev = p;
+    }
     if (!x && !y && !z) return { lat: start[1], lng: start[0] };
     return { lat: Math.atan2(z, Math.hypot(x, y)) / toRad, lng: Math.atan2(y, x) / toRad };
     // eslint-disable-next-line react-hooks/exhaustive-deps
