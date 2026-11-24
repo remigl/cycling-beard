@@ -34,3 +34,10 @@ export function countryName(frName: string, lang: string, code?: string | null):
     return n && n !== c ? n : frName;
   } catch { return frName; }
 }
+
+/** Drapeau emoji d'un pays (depuis son code ISO, ou son nom français) */
+export function countryFlag(frName?: string | null, code?: string | null): string {
+  const c = (code || (frName ? FR_TO_CODE[frName] : "") || "").toUpperCase();
+  if (!/^[A-Z]{2}$/.test(c)) return "";
+  return c.replace(/./g, ch => String.fromCodePoint(127397 + ch.charCodeAt(0)));
+}

@@ -10,7 +10,7 @@ import TopRatedInfo from "./TopRatedInfo";
 import FoodInfo from "./FoodInfo";
 import RegionMap from "./RegionMap";
 import { STAGE_TYPE_META, STAGE_TYPE_ORDER, StageType, tripType } from "../stageTypes";
-import { countryName } from "../lib/countryName";
+import { countryName, countryFlag } from "../lib/countryName";
 
 interface JourneyViewProps {
   onNavigate: (tab: string, arg?: string) => void;
@@ -633,7 +633,11 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
                 const textBlock = (
                   <div className="flex flex-col gap-2">
                     <span className="font-mono text-[9px] text-brand-sand font-bold uppercase tracking-widest">
-                      {trip.country !== "—" ? countryLabel(trip.country) : "France"}
+                      {(() => {
+                        const c = trip.country !== "—" ? trip.country : "France";
+                        const flag = countryFlag(c, trip.countryCode);
+                        return <>{flag && <span className="mr-1.5 text-[13px] leading-none align-[-1px]" aria-hidden="true">{flag}</span>}{countryLabel(c)}</>;
+                      })()}
                     </span>
                     <h3 className="font-display font-bold text-xl text-text-on leading-tight">{titleLabel(trip.title)}</h3>
                     <div className="flex gap-3 font-mono text-[9px] text-text-dim">
