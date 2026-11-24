@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-15",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-12-transport-shunyi-seoul/img_6503.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -30,7 +30,39 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-12-transport-shunyi-seoul/img_6503.webp",
+      "thumb": "/media/2026-10-12-transport-shunyi-seoul/thumb_img_6503.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-12-transport-shunyi-seoul/img_6503.webp",
+      "thumb": "/media/2026-10-12-transport-shunyi-seoul/thumb_img_6503.webp",
+      "alt": "Img 6503",
+      "lat": 37.5587179,
+      "lng": 126.9863974
+    },
+    {
+      "src": "/media/2026-10-12-transport-shunyi-seoul/img_6518.webp",
+      "thumb": "/media/2026-10-12-transport-shunyi-seoul/thumb_img_6518.webp",
+      "alt": "Img 6518",
+      "lat": 37.5656916,
+      "lng": 126.9745038
+    },
+    {
+      "src": "/media/2026-10-12-transport-shunyi-seoul/img_6526.webp",
+      "thumb": "/media/2026-10-12-transport-shunyi-seoul/thumb_img_6526.webp",
+      "alt": "Img 6526",
+      "lat": 37.5605657,
+      "lng": 126.9837797
+    },
+    {
+      "src": "/media/2026-10-12-transport-shunyi-seoul/img_6529.webp",
+      "thumb": "/media/2026-10-12-transport-shunyi-seoul/thumb_img_6529.webp",
+      "alt": "Img 6529"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-12-transport-shunyi-seoul_1.gpx",
   "mapLat": 37.5657415,

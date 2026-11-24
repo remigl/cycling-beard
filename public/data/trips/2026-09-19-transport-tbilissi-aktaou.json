@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-09-25",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-09-19-transport-tbilissi-aktaou/img_5670.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,61 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-09-19-transport-tbilissi-aktaou/img_5670.webp",
+      "thumb": "/media/2026-09-19-transport-tbilissi-aktaou/thumb_img_5670.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-09-19-transport-tbilissi-aktaou/img_5670.webp",
+      "thumb": "/media/2026-09-19-transport-tbilissi-aktaou/thumb_img_5670.webp",
+      "alt": "Img 5670",
+      "lat": 43.3550111,
+      "lng": 52.8336402
+    },
+    {
+      "src": "/media/2026-09-19-transport-tbilissi-aktaou/img_5741.webp",
+      "thumb": "/media/2026-09-19-transport-tbilissi-aktaou/thumb_img_5741.webp",
+      "alt": "Img 5741",
+      "lat": 43.4185598,
+      "lng": 54.0821192
+    },
+    {
+      "src": "/media/2026-09-19-transport-tbilissi-aktaou/img_5775.webp",
+      "thumb": "/media/2026-09-19-transport-tbilissi-aktaou/thumb_img_5775.webp",
+      "alt": "Img 5775",
+      "lat": 43.418593,
+      "lng": 54.0821775
+    },
+    {
+      "src": "/media/2026-09-19-transport-tbilissi-aktaou/img_5778.webp",
+      "thumb": "/media/2026-09-19-transport-tbilissi-aktaou/thumb_img_5778.webp",
+      "alt": "Img 5778",
+      "lat": 43.418593,
+      "lng": 54.0821775
+    },
+    {
+      "src": "/media/2026-09-19-transport-tbilissi-aktaou/img_5781.webp",
+      "thumb": "/media/2026-09-19-transport-tbilissi-aktaou/thumb_img_5781.webp",
+      "alt": "Img 5781",
+      "lat": 43.418593,
+      "lng": 54.0821775
+    },
+    {
+      "src": "/media/2026-09-19-transport-tbilissi-aktaou/img_5783.webp",
+      "thumb": "/media/2026-09-19-transport-tbilissi-aktaou/thumb_img_5783.webp",
+      "alt": "Img 5783",
+      "lat": 43.418593,
+      "lng": 54.0821775
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-09-19-transport-tbilissi-aktaou_1.gpx",
   "mapLat": 43.6299273,

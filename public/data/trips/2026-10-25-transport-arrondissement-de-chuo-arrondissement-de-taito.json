@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-26",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6781.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -30,7 +30,23 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6781.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6781.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6781.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6781.webp",
+      "alt": "Img 6781"
+    },
+    {
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6786.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6786.webp",
+      "alt": "Img 6786"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito_1.gpx",
   "mapLat": 35.7028435,

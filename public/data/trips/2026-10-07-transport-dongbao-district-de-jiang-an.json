@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-08",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/img_6246.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,34 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/img_6246.webp",
+      "thumb": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/thumb_img_6246.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/img_6246.webp",
+      "thumb": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/thumb_img_6246.webp",
+      "alt": "Img 6246"
+    },
+    {
+      "src": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/img_6248.webp",
+      "thumb": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/thumb_img_6248.webp",
+      "alt": "Img 6248"
+    },
+    {
+      "src": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/img_6274.webp",
+      "thumb": "/media/2026-10-07-transport-dongbao-district-de-jiang-an/thumb_img_6274.webp",
+      "alt": "Img 6274"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-07-transport-dongbao-district-de-jiang-an_1.gpx",
   "mapLat": 30.585008,

@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-09-29",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-09-28-transport-almaty-almaty/img_5816.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -30,7 +30,47 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-09-28-transport-almaty-almaty/img_5816.webp",
+      "thumb": "/media/2026-09-28-transport-almaty-almaty/thumb_img_5816.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-09-28-transport-almaty-almaty/img_5816.webp",
+      "thumb": "/media/2026-09-28-transport-almaty-almaty/thumb_img_5816.webp",
+      "alt": "Img 5816"
+    },
+    {
+      "src": "/media/2026-09-28-transport-almaty-almaty/img_5824.webp",
+      "thumb": "/media/2026-09-28-transport-almaty-almaty/thumb_img_5824.webp",
+      "alt": "Img 5824"
+    },
+    {
+      "src": "/media/2026-09-28-transport-almaty-almaty/img_5833.webp",
+      "thumb": "/media/2026-09-28-transport-almaty-almaty/thumb_img_5833.webp",
+      "alt": "Img 5833"
+    },
+    {
+      "src": "/media/2026-09-28-transport-almaty-almaty/img_5834.webp",
+      "thumb": "/media/2026-09-28-transport-almaty-almaty/thumb_img_5834.webp",
+      "alt": "Img 5834"
+    },
+    {
+      "src": "/media/2026-09-28-transport-almaty-almaty/img_5854.webp",
+      "thumb": "/media/2026-09-28-transport-almaty-almaty/thumb_img_5854.webp",
+      "alt": "Img 5854",
+      "lat": 43.2485077,
+      "lng": 76.9407563
+    },
+    {
+      "src": "/media/2026-09-28-transport-almaty-almaty/img_5864.webp",
+      "thumb": "/media/2026-09-28-transport-almaty-almaty/thumb_img_5864.webp",
+      "alt": "Img 5864",
+      "lat": 43.2485077,
+      "lng": 76.9407563
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-09-28-transport-almaty-almaty_1.gpx",
   "mapLat": 43.2266652,

@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-12",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-08-transport-district-de-hongshan-xicheng/img_6350.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,50 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-08-transport-district-de-hongshan-xicheng/img_6350.webp",
+      "thumb": "/media/2026-10-08-transport-district-de-hongshan-xicheng/thumb_img_6350.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-08-transport-district-de-hongshan-xicheng/img_6350.webp",
+      "thumb": "/media/2026-10-08-transport-district-de-hongshan-xicheng/thumb_img_6350.webp",
+      "alt": "Img 6350",
+      "lat": 39.9343507,
+      "lng": 116.3781185
+    },
+    {
+      "src": "/media/2026-10-08-transport-district-de-hongshan-xicheng/img_6376.webp",
+      "thumb": "/media/2026-10-08-transport-district-de-hongshan-xicheng/thumb_img_6376.webp",
+      "alt": "Img 6376",
+      "lat": 39.9337848,
+      "lng": 116.3664019
+    },
+    {
+      "src": "/media/2026-10-08-transport-district-de-hongshan-xicheng/img_6462.webp",
+      "thumb": "/media/2026-10-08-transport-district-de-hongshan-xicheng/thumb_img_6462.webp",
+      "alt": "Img 6462",
+      "lat": 39.9049368,
+      "lng": 116.3820681
+    },
+    {
+      "src": "/media/2026-10-08-transport-district-de-hongshan-xicheng/img_6482.webp",
+      "thumb": "/media/2026-10-08-transport-district-de-hongshan-xicheng/thumb_img_6482.webp",
+      "alt": "Img 6482"
+    },
+    {
+      "src": "/media/2026-10-08-transport-district-de-hongshan-xicheng/img_6501.webp",
+      "thumb": "/media/2026-10-08-transport-district-de-hongshan-xicheng/thumb_img_6501.webp",
+      "alt": "Img 6501"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-08-transport-district-de-hongshan-xicheng_1.gpx",
   "mapLat": 39.9337324,

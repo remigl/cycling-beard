@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-09-27",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-09-25-transport--turkestan/img_5789.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,44 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-09-25-transport--turkestan/img_5789.webp",
+      "thumb": "/media/2026-09-25-transport--turkestan/thumb_img_5789.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-09-25-transport--turkestan/img_5789.webp",
+      "thumb": "/media/2026-09-25-transport--turkestan/thumb_img_5789.webp",
+      "alt": "Img 5789"
+    },
+    {
+      "src": "/media/2026-09-25-transport--turkestan/img_5791.webp",
+      "thumb": "/media/2026-09-25-transport--turkestan/thumb_img_5791.webp",
+      "alt": "Img 5791"
+    },
+    {
+      "src": "/media/2026-09-25-transport--turkestan/img_5792.webp",
+      "thumb": "/media/2026-09-25-transport--turkestan/thumb_img_5792.webp",
+      "alt": "Img 5792"
+    },
+    {
+      "src": "/media/2026-09-25-transport--turkestan/img_5804.webp",
+      "thumb": "/media/2026-09-25-transport--turkestan/thumb_img_5804.webp",
+      "alt": "Img 5804"
+    },
+    {
+      "src": "/media/2026-09-25-transport--turkestan/img_5811.webp",
+      "thumb": "/media/2026-09-25-transport--turkestan/thumb_img_5811.webp",
+      "alt": "Img 5811"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-09-25-transport--turkestan_1.gpx",
   "mapLat": 43.2764708,

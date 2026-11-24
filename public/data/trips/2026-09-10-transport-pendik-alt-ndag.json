@@ -24,31 +24,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
@@ -91,6 +66,11 @@
       "alt": "Img 5194"
     },
     {
+      "src": "/media/2026-09-10-transport-pendik-alt-ndag/img_5201.webp",
+      "thumb": "/media/2026-09-10-transport-pendik-alt-ndag/thumb_img_5201.webp",
+      "alt": "Img 5201"
+    },
+    {
       "src": "/media/2026-09-10-transport-pendik-alt-ndag/img_5237.webp",
       "thumb": "/media/2026-09-10-transport-pendik-alt-ndag/thumb_img_5237.webp",
       "alt": "Img 5237",
@@ -122,6 +102,18 @@
       "alt": "Img 5332",
       "lat": 38.5432191,
       "lng": 34.7524113
+    },
+    {
+      "src": "/media/2026-09-10-transport-pendik-alt-ndag/img_5414.webp",
+      "thumb": "/media/2026-09-10-transport-pendik-alt-ndag/thumb_img_5414.webp",
+      "alt": "Img 5414",
+      "lat": 40.0788648,
+      "lng": 32.9653071
+    },
+    {
+      "src": "/media/2026-09-10-transport-pendik-alt-ndag/img_5431.webp",
+      "thumb": "/media/2026-09-10-transport-pendik-alt-ndag/thumb_img_5431.webp",
+      "alt": "Img 5431"
     }
   ],
   "videos": [],

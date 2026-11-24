@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-02",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-09-29-transport-almaty-qingyang/img_5878.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,43 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-09-29-transport-almaty-qingyang/img_5878.webp",
+      "thumb": "/media/2026-09-29-transport-almaty-qingyang/thumb_img_5878.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-09-29-transport-almaty-qingyang/img_5878.webp",
+      "thumb": "/media/2026-09-29-transport-almaty-qingyang/thumb_img_5878.webp",
+      "alt": "Img 5878",
+      "lat": 42.4521868,
+      "lng": 92.9306889
+    },
+    {
+      "src": "/media/2026-09-29-transport-almaty-qingyang/img_5882.webp",
+      "thumb": "/media/2026-09-29-transport-almaty-qingyang/thumb_img_5882.webp",
+      "alt": "Img 5882"
+    },
+    {
+      "src": "/media/2026-09-29-transport-almaty-qingyang/img_5901.webp",
+      "thumb": "/media/2026-09-29-transport-almaty-qingyang/thumb_img_5901.webp",
+      "alt": "Img 5901",
+      "lat": 30.6792808,
+      "lng": 104.0753285
+    },
+    {
+      "src": "/media/2026-09-29-transport-almaty-qingyang/img_5930.webp",
+      "thumb": "/media/2026-09-29-transport-almaty-qingyang/thumb_img_5930.webp",
+      "alt": "Img 5930"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-09-29-transport-almaty-qingyang_1.gpx",
   "mapLat": 30.6641106,

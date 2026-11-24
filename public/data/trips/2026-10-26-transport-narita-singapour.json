@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-29",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-26-transport-narita-singapour/img_6797.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -30,7 +30,33 @@
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-26-transport-narita-singapour/img_6797.webp",
+      "thumb": "/media/2026-10-26-transport-narita-singapour/thumb_img_6797.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-26-transport-narita-singapour/img_6797.webp",
+      "thumb": "/media/2026-10-26-transport-narita-singapour/thumb_img_6797.webp",
+      "alt": "Img 6797"
+    },
+    {
+      "src": "/media/2026-10-26-transport-narita-singapour/img_6801.webp",
+      "thumb": "/media/2026-10-26-transport-narita-singapour/thumb_img_6801.webp",
+      "alt": "Img 6801"
+    },
+    {
+      "src": "/media/2026-10-26-transport-narita-singapour/img_6826.webp",
+      "thumb": "/media/2026-10-26-transport-narita-singapour/thumb_img_6826.webp",
+      "alt": "Img 6826"
+    },
+    {
+      "src": "/media/2026-10-26-transport-narita-singapour/img_6829.webp",
+      "thumb": "/media/2026-10-26-transport-narita-singapour/thumb_img_6829.webp",
+      "alt": "Img 6829"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-26-transport-narita-singapour_1.gpx",
   "mapLat": 1.3586236,

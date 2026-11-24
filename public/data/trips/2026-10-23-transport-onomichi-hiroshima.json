@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-25",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-23-transport-onomichi-hiroshima/img_6673.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,39 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6673.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6673.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6673.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6673.webp",
+      "alt": "Img 6673"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6691.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6691.webp",
+      "alt": "Img 6691"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6705.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6705.webp",
+      "alt": "Img 6705"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6749.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6749.webp",
+      "alt": "Img 6749"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-23-transport-onomichi-hiroshima_1.gpx",
   "mapLat": 34.3995578,

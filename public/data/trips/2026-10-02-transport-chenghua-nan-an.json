@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-05",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-02-transport-chenghua-nan-an/img_5968.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,87 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_5968.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_5968.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_5968.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_5968.webp",
+      "alt": "Img 5968"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6011.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6011.webp",
+      "alt": "Img 6011"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6034.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6034.webp",
+      "alt": "Img 6034"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6058.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6058.webp",
+      "alt": "Img 6058",
+      "lat": 29.5522337,
+      "lng": 106.5716362
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6069.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6069.webp",
+      "alt": "Img 6069",
+      "lat": 29.553842,
+      "lng": 106.5737488
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6084.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6084.webp",
+      "alt": "Img 6084",
+      "lat": 29.555292,
+      "lng": 106.5725223
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6092.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6092.webp",
+      "alt": "Img 6092",
+      "lat": 29.5571959,
+      "lng": 106.5726732
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6108.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6108.webp",
+      "alt": "Img 6108"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6129.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6129.webp",
+      "alt": "Img 6129"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6137.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6137.webp",
+      "alt": "Img 6137"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6164.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6164.webp",
+      "alt": "Img 6164"
+    },
+    {
+      "src": "/media/2026-10-02-transport-chenghua-nan-an/img_6168.webp",
+      "thumb": "/media/2026-10-02-transport-chenghua-nan-an/thumb_img_6168.webp",
+      "alt": "Img 6168"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-02-transport-chenghua-nan-an_1.gpx",
   "mapLat": 29.537547,

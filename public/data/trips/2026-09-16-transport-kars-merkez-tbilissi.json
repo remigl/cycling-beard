@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-09-20",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-09-16-transport-kars-merkez-tbilissi/img_5453.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,33 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-09-16-transport-kars-merkez-tbilissi/img_5453.webp",
+      "thumb": "/media/2026-09-16-transport-kars-merkez-tbilissi/thumb_img_5453.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-09-16-transport-kars-merkez-tbilissi/img_5453.webp",
+      "thumb": "/media/2026-09-16-transport-kars-merkez-tbilissi/thumb_img_5453.webp",
+      "alt": "Img 5453",
+      "lat": 40.6055323,
+      "lng": 43.1038365
+    },
+    {
+      "src": "/media/2026-09-16-transport-kars-merkez-tbilissi/img_5454.webp",
+      "thumb": "/media/2026-09-16-transport-kars-merkez-tbilissi/thumb_img_5454.webp",
+      "alt": "Img 5454",
+      "lat": 41.7165448,
+      "lng": 43.1434755
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-09-16-transport-kars-merkez-tbilissi_1.gpx",
   "mapLat": 41.690022,
