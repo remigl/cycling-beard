@@ -52,6 +52,7 @@ export interface Poi {
   kind: string;
   rank: number;
   wikiTitle?: string | null;
+  localName?: string | null;   // nom d'origine (écriture locale) si translittéré
 }
 
 export interface TopRatedPlace {
@@ -60,6 +61,7 @@ export interface TopRatedPlace {
   ratingCount: number;
   types: string[];
   mapsUrl?: string | null;
+  localName?: string | null;
 }
 
 // ─── Stats (stats.json) ──────────────────────────────────────────────────────

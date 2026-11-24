@@ -3,6 +3,7 @@ import { X, Star, MapPin, BookOpen } from "lucide-react";
 import { TripSummary } from "../types";
 import { Lang } from "../i18n";
 import { wikiForPlaces, wikiUrl, WikiInfo } from "../lib/wiki";
+import { placeKindLabel } from "../lib/placeKinds";
 
 interface TopRatedInfoProps {
   trip: TripSummary;
@@ -12,11 +13,6 @@ interface TopRatedInfoProps {
 }
 
 // Traduit le premier "type" Google Places en libellé court et lisible
-function typeLabel(types: string[]): string {
-  if (!types || types.length === 0) return "";
-  const t = types[0].replace(/_/g, " ");
-  return t.charAt(0).toUpperCase() + t.slice(1);
-}
 
 export default function TopRatedInfo({ trip, lang, onClose, t }: TopRatedInfoProps) {
   const places = trip.topRatedPlaces || [];
@@ -76,14 +72,15 @@ export default function TopRatedInfo({ trip, lang, onClose, t }: TopRatedInfoPro
                       <a href={href} target="_blank" rel="noopener noreferrer" className="text-sm text-text-on font-medium hover:text-brand-sand transition-colors">
                         {p.title}
                       </a>
+                      {p.localName && <div className="text-[10px] text-text-dim/70 truncate" lang="und">{p.localName}</div>}
                       {/* Google : note, nombre d'avis, type */}
                       <div className="flex items-center gap-2 mt-0.5 flex-wrap">
                         <span className="flex items-center gap-1 font-mono text-[10px] text-brand-sand">
                           <Star size={10} className="fill-brand-sand" /> {p.rating.toFixed(1)}
                         </span>
                         <span className="font-mono text-[9px] text-text-dim/70">({p.ratingCount})</span>
-                        {typeLabel(p.types) && (
-                          <span className="font-mono text-[9px] text-text-dim/70">· {typeLabel(p.types)}</span>
+                        {placeKindLabel(p.types, lang) && (
+                          <span className="font-mono text-[9px] text-text-dim/70">· {placeKindLabel(p.types, lang)}</span>
                         )}
                       </div>
                       {/* Wikipédia : introduction de l'article, telle quelle */}

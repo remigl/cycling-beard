@@ -381,7 +381,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                       className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500" />
                   ) : (
                     <div className="w-full aspect-[4/3] bg-bg-dark border border-text-on/5 flex items-center justify-center">
-                      <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">Photo de moi</span>
+                      <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">{t("about.photo_me")}</span>
                     </div>
                   )}
                 </div>
@@ -397,7 +397,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                       className="w-full aspect-[4/3] object-cover hover:scale-105 transition-transform duration-500" />
                   ) : (
                     <div className="w-full aspect-[4/3] bg-bg-dark border border-text-on/5 flex items-center justify-center">
-                      <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">Photo du vélo</span>
+                      <span className="font-mono text-[9px] text-text-dim text-opacity-40 uppercase">{t("about.photo_bike")}</span>
                     </div>
                   )}
                 </div>
@@ -415,7 +415,7 @@ export default function HomeView({ onNavigate, stats, trips, t, about, lang }: H
                     <p key={i} className={i === 0 ? "text-lg text-text-on font-normal" : ""}>{para}</p>
                   ))
                 ) : (
-                  <p className="italic text-text-dim text-opacity-50">Présentation à venir...</p>
+                  <p className="italic text-text-dim text-opacity-50">{t("about.coming")}</p>
                 )}
               </div>
 

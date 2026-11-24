@@ -125,6 +125,7 @@ const DEEPL_API_KEY = process.env.DEEPL_API_KEY;
 const TARGET_LANGS = { en: "EN", es: "ES", it: "IT", de: "DE", nl: "NL" };
 const DEEPL_BATCH = 40;
 const deeplKey = (text, deeplLang) => `deepl:${deeplLang}:${hashKey(text)}`;
+let deeplBlocked = 0;   // code HTTP qui a bloqué DeepL pendant ce sync (0 = OK)
 
 async function deeplRequest(texts, targetLang) {
   const isFree = DEEPL_API_KEY.endsWith(":fx");
@@ -138,7 +139,13 @@ async function deeplRequest(texts, targetLang) {
       body: JSON.stringify({ text: texts, source_lang: "FR", target_lang: targetLang }),
       signal: controller.signal,
     });
-    if (!res.ok) { console.log(`  ⚠️  DeepL HTTP ${res.status} (${targetLang}) — réessai plus tard`); return null; }
+    if (!res.ok) {
+      // 456 = quota/crédits épuisés, 429 = trop de requêtes, 403 = clé refusée :
+      // inutile d'insister pendant CE sync (les autres textes attendent le suivant).
+      if ([403, 429, 456].includes(res.status)) deeplBlocked = res.status;
+      console.log(`  ⚠️  DeepL HTTP ${res.status} (${targetLang})${res.status === 456 ? " — quota épuisé" : ""} — réessai plus tard`);
+      return null;
+    }
     const data = await res.json();
     const out = (data.translations || []).map(t => t?.text);
     return out.length === texts.length && out.every(t => typeof t === "string" && t.length > 0) ? out : null;
@@ -163,6 +170,9 @@ async function translateTexts(texts, deeplLang) {
   if (!DEEPL_API_KEY) { for (const t of todo) result.set(t, null); return result; }
   for (let i = 0; i < todo.length; i += DEEPL_BATCH) {
     const chunk = todo.slice(i, i + DEEPL_BATCH);
+    // DeepL bloqué (quota…) : pas d'appel, et pas d'échec enregistré pour ces
+    // textes (ils n'ont pas été tentés) → retentés au prochain sync.
+    if (deeplBlocked) { apiStats.deferred += chunk.length; chunk.forEach(t => result.set(t, null)); continue; }
     apiStats.calls++;
     const out = await deeplRequest(chunk, deeplLang);
     chunk.forEach((t, k) => {
@@ -177,7 +187,7 @@ async function translateTexts(texts, deeplLang) {
 // Traduit un contenu { summary, quote, fullStory[] }. Un champ non traduit
 // retombe sur le français (affichage) et rend la traduction "incomplète"
 // → seul ce champ sera retenté au prochain sync.
-async function translateContent(fr) {
+async function translateContent(fr, previous = null) {
   const translations = { fr };
   const texts = [fr.summary, fr.quote, ...(fr.fullStory || [])].filter(t => typeof t === "string" && t.trim());
   if (texts.length === 0) return { translations, complete: true };   // rien à traduire
@@ -188,10 +198,21 @@ async function translateContent(fr) {
   let complete = true;
   for (const [code, deeplCode] of Object.entries(TARGET_LANGS)) {
     const map = await translateTexts(texts, deeplCode);
+    // Échec : on garde l'ANCIENNE traduction de ce texte si elle existait
+    // (jamais écrasée par du français), sinon le français en attendant.
+    const prevOf = (t) => {
+      const p = previous?.[code], f = previous?.fr;
+      if (!p || !f) return null;
+      if (f.summary === t && p.summary && p.summary !== t) return p.summary;
+      if (f.quote === t && p.quote && p.quote !== t) return p.quote;
+      const i = (f.fullStory || []).indexOf(t);
+      const v = i >= 0 ? p.fullStory?.[i] : null;
+      return v && v !== t ? v : null;
+    };
     const tr = (t) => {
       if (!t || !t.trim()) return t;
       const v = map.get(t);
-      if (v == null) { complete = false; return t; }
+      if (v == null) { complete = false; return prevOf(t) || t; }
       return v;
     };
     translations[code] = {
@@ -261,15 +282,43 @@ async function fetchSpecialtiesCached(countryCode, lang = "fr") {
 // Utilisé au sync complet ET pour ne compléter QUE ce qui manque : grâce au
 // cache par élément, ce qui a déjà réussi ne refait aucun appel.
 // Renvoie la liste de ce qui reste à obtenir (vide = étape complète).
+// À augmenter quand l'enrichissement change : les étapes déjà synchronisées
+// sont alors complétées UNE fois (sans rien retélécharger ; ce qui est en
+// cache n'est pas redemandé).
+const ENRICH_VERSION = 2;
+
+// L'étape a-t-elle du texte pas encore traduit dans une langue ?
+function hasUntranslatedText(stage) {
+  if (!DEEPL_API_KEY) return false;
+  const fr = { summary: stage.summary || "", quote: stage.quote || "", fullStory: stage.fullStory || [] };
+  const texts = [fr.summary, fr.quote, ...fr.fullStory].filter(t => t && t.trim());
+  if (!texts.length) return false;   // rien à traduire
+  return Object.keys(TARGET_LANGS).some(code => {
+    const tr = stage.translations?.[code];
+    if (!tr) return true;
+    const pairs = [[fr.summary, tr.summary], [fr.quote, tr.quote], ...fr.fullStory.map((p, i) => [p, tr.fullStory?.[i]])];
+    return pairs.some(([src, dst]) => src && src.trim() && (!dst || dst === src));
+  }) || (stage.thanks && Object.keys(TARGET_LANGS).some(c => !stage.thanksTranslations?.[c] || stage.thanksTranslations[c] === stage.thanks));
+}
+// Que reste-t-il à faire sur une étape déjà en cache ?
+function stageNeedsWork(stage, pending) {
+  return (pending && pending.length > 0) || stage.enrichVersion !== ENRICH_VERSION || hasUntranslatedText(stage);
+}
+
 async function enrichStage(stage) {
   const pending = [];
   const fr = { summary: stage.summary || "", quote: stage.quote || null, fullStory: stage.fullStory || [] };
-  const tr = await translateContent(fr);
+  const tr = await translateContent(fr, stage.translations);
   stage.translations = tr.translations;
   if (!tr.complete) pending.push("traductions");
 
   if (stage.thanks) {
     const th = await translateAllLangs(stage.thanks);
+    // garde les anciennes traductions réussies si la nouvelle tentative échoue
+    for (const c of Object.keys(TARGET_LANGS)) {
+      const old = stage.thanksTranslations?.[c];
+      if (th.value[c] === stage.thanks && old && old !== stage.thanks) th.value[c] = old;
+    }
     stage.thanksTranslations = th.value;
     if (!th.complete) pending.push("remerciements");
   } else {
@@ -277,6 +326,16 @@ async function enrichStage(stage) {
   }
 
   const isBike = stageTypeOf(stage) === "bike";
+  // Listes mises en cache AVANT la gestion des noms lisibles : si elles
+  // contiennent encore des noms non latins, on les redemande une fois
+  // (Overpass est gratuit ; la nouvelle version privilégie fr/en/latin).
+  const dropOldNames = (key) => {
+    const e = apiCache.entries[key];
+    if (e?.ok && Array.isArray(e.v) && e.v.some(x => isNonLatin(typeof x === "string" ? x : x?.title))) delete apiCache.entries[key];
+  };
+  if (stage.mapLat != null && stage.mapLng != null) dropOldNames(`pois:fr:${r4(stage.mapLat)},${r4(stage.mapLng)}`);
+  if (isBike && (stage.segments || []).flat().length >= 2) dropOldNames(`cities:fr:${hashKey((stage.segments || []).flat())}`);
+
   const [pois, cities, top, spec] = [
     await fetchPoisCached(stage.mapLat, stage.mapLng, "fr"),
     isBike ? await fetchMajorCitiesCached((stage.segments || []).flat(), "fr") : [],
@@ -292,6 +351,16 @@ async function enrichStage(stage) {
   stage.majorCities = stage.majorCities || [];
   stage.topRatedPlaces = stage.topRatedPlaces || [];
   stage.specialties = stage.specialties || [];
+
+  // Noms affichés toujours lisibles : translittération en dernier recours
+  // (le nom d'origine reste disponible en petit).
+  stage.pois = stage.pois.map(p => (p.localName || !isNonLatin(p.title)) ? p : { ...p, title: readable(p.title).name, localName: p.title });
+  stage.topRatedPlaces = stage.topRatedPlaces.map(p => !isNonLatin(p.title) ? p : { ...p, title: readable(p.title).name, localName: p.title });
+  stage.majorCities = stage.majorCities.map(c => readable(c).name);
+  for (const f of ["region", "startCity", "endCity", "location"]) {
+    if (isNonLatin(stage[f])) stage[f] = readable(stage[f]).name;
+  }
+  stage.enrichVersion = ENRICH_VERSION;
   return pending;
 }
 
@@ -700,11 +769,44 @@ async function forwardGeocode(query) {
   } catch { return null; }
 }
 
+// ─── Noms de lieux lisibles (alphabet latin) ─────────────────────────────────
+// Les noms OSM/Google sont souvent dans l'écriture locale (chinois, japonais,
+// cyrillique, géorgien…). Ordre de préférence : nom français → anglais →
+// nom international / latin d'OSM → translittération automatique (any-ascii).
+// Le nom d'origine est conservé à part (localName) pour l'afficher en petit.
+const NON_LATIN_RE = /[\u0370-\u03FF\u0400-\u052F\u0530-\u058F\u0590-\u06FF\u0E00-\u0E7F\u10A0-\u10FF\u1100-\u11FF\u3040-\u30FF\u3100-\u312F\u3400-\u4DBF\u4E00-\u9FFF\uAC00-\uD7AF\uF900-\uFAFF\uFF66-\uFF9F]/;
+const isNonLatin = (str) => typeof str === "string" && NON_LATIN_RE.test(str);
+let anyAsciiFn = null;
+try { anyAsciiFn = (await import("any-ascii")).default; } catch { /* module absent : noms d'origine */ }
+
+function transliterate(str) {
+  if (!anyAsciiFn || !isNonLatin(str)) return str;
+  return anyAsciiFn(str)
+    .replace(/([a-z])([A-Z])/g, "$1 $2")      // "HuangHeLou" → "Huang He Lou"
+    .replace(/\s+/g, " ")
+    .trim();
+}
+// Chaîne → { name lisible, localName d'origine si différent }
+function readable(str) {
+  if (!isNonLatin(str)) return { name: str, localName: null };
+  const t = transliterate(str);
+  return { name: t || str, localName: t && t !== str ? str : null };
+}
+// Tags OSM → { name, localName }
+function readableOsmName(tags, lang = "fr") {
+  const original = tags.name || null;
+  const latinTags = Object.keys(tags).filter(k => /^name:[a-z]{2,3}-Latn$/.test(k));
+  const candidates = [tags["name:" + lang], tags["name:en"], tags.int_name, tags["name:latin"], ...latinTags.map(k => tags[k]), original];
+  const pick = candidates.find(c => c && !isNonLatin(c));
+  if (pick) return { name: pick, localName: original && isNonLatin(original) ? original : null };
+  return original ? readable(original) : { name: null, localName: null };
+}
+
 async function reverseGeocode(lat, lng) {
   const empty = { city: null, region: null, department: null, country: null, countryCode: null };
   if (lat == null || lng == null) return empty;
 
-  const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=jsonv2&addressdetails=1&zoom=12&accept-language=fr`;
+  const url = `https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=jsonv2&addressdetails=1&zoom=12&accept-language=fr,en`;
 
   // 3 tentatives avec timeout + délai croissant, car Nominatim peut être lent/occupé
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -804,7 +906,7 @@ async function fetchPois(lat, lng, wikiLang = "fr") {
   let list = [];
   for (const el of (data.elements || [])) {
     const tags = el.tags || {};
-    const name = tags["name:" + wikiLang] || tags.name;
+    const { name, localName } = readableOsmName(tags, wikiLang);
     if (!name || seen.has(name)) continue;
     const { rank: r, kind } = rank(tags);
     if (r === 0) continue;
@@ -816,7 +918,7 @@ async function fetchPois(lat, lng, wikiLang = "fr") {
       const parts = tags.wikipedia.split(":");
       wikiTitle = parts.length > 1 ? parts.slice(1).join(":") : tags.wikipedia;
     }
-    list.push({ title: name, dist: haversine(lat, lng, elat, elng), kind, rank: r, wikiTitle });
+    list.push({ title: name, localName, dist: haversine(lat, lng, elat, elng), kind, rank: r, wikiTitle });
   }
   list.sort((a, b) => (b.rank - a.rank) || (a.dist - b.dist));
   list = list.slice(0, 15);
@@ -880,7 +982,7 @@ async function fetchMajorCities(trackPoints, wikiLang = "fr") {
   const cities = [];
   for (const el of (data.elements || [])) {
     const tags = el.tags || {};
-    const name = tags["name:" + wikiLang] || tags.name;
+    const { name } = readableOsmName(tags, wikiLang);
     const pop = parseInt((tags.population || "0").replace(/\D/g, ""), 10);
     if (!name || !pop || el.lat == null || el.lon == null) continue;
     // distance minimale au tracé
@@ -1702,13 +1804,16 @@ async function syncFolder(drive, folder, cache, force) {
   const legacyRetry = !!cached?.fingerprint?.includes("##retry:");
   if (!force && cached && cachedBase === fingerprint && cached.stage
       && fs.existsSync(stageJsonPath)) {
-    const wasPending = (cached.pending && cached.pending.length > 0) || legacyRetry;
+    const wasPending = stageNeedsWork(cached.stage, cached.pending) || legacyRetry;
     if (!wasPending) {
       console.log(`  ⏭  Inchangé → réutilisé depuis le cache`);
       return { stage: cached.stage, fingerprint, pending: [], fromCache: true };
     }
     // Étape inchangée mais incomplète : on complète UNIQUEMENT ce qui manque.
-    console.log(`  🧩 Inchangée mais incomplète (${(cached.pending || ["ancienne marque de réessai"]).join(", ")}) → complément ciblé`);
+    const why = cached.pending?.length ? cached.pending.join(", ")
+      : hasUntranslatedText(cached.stage) ? "traductions"
+      : cached.stage.enrichVersion !== ENRICH_VERSION ? "mise à jour des noms de lieux" : "ancienne marque de réessai";
+    console.log(`  🧩 Inchangée mais incomplète (${why}) → complément ciblé`);
     const stage = cached.stage;
     const pending = await enrichStage(stage);
     fs.writeFileSync(stageJsonPath, JSON.stringify(stage, null, 2));
@@ -2232,7 +2337,15 @@ async function syncAbout(drive, folder) {
 
   // Traduit la présentation
   const frPres = { summary: "", quote: null, fullStory: paragraphs };
-  const { translations } = await translateContent(frPres);
+  // Anciennes traductions de la présentation : conservées si DeepL échoue
+  let previous = null;
+  try {
+    const old = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "about.json"), "utf8"));
+    previous = Object.fromEntries(Object.entries(old.translations || {}).map(([l, arr]) => [l, { summary: "", quote: null, fullStory: arr || [] }]));
+    previous.fr = { summary: "", quote: null, fullStory: old.paragraphs || [] };
+  } catch { /* pas encore de présentation */ }
+  const { translations, complete } = await translateContent(frPres, previous);
+  if (!complete) console.log(`  ⏳ Présentation : traduction incomplète, réessai au prochain sync`);
 
   const aboutData = {
     paragraphs,
@@ -2255,6 +2368,14 @@ async function main() {
 
   console.log("🧭 The Moving Beard — sync-drive.js");
   loadApiCache();
+  // Relance manuelle (workflow GitHub, option "retry_translations") : les
+  // traductions en échec sont retentées tout de suite, sans attendre leur délai.
+  // Les traductions réussies ne sont pas touchées.
+  if (process.env.RETRY_TRANSLATIONS === "1" || process.env.RETRY_TRANSLATIONS === "true") {
+    let n = 0;
+    for (const [k, v] of Object.entries(apiCache.entries)) if (k.startsWith("deepl:") && !v.ok) { delete apiCache.entries[k]; n++; }
+    console.log(`🔁 Relance des traductions demandée : ${n} échec(s) remis en file`);
+  }
   console.log(`🗄️  Cache API : ${Object.keys(apiCache.entries).length} résultat(s) mémorisé(s)`);
   console.log("=====================================");
 

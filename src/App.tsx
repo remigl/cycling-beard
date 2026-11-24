@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { X, Share2, Compass } from "lucide-react";
+import { Share2, Compass } from "lucide-react";
 import Navbar from "./components/Navbar";
 import ViewErrorBoundary from "./components/ViewErrorBoundary";
 import HomeView from "./components/HomeView";
@@ -8,7 +8,7 @@ import JourneyView from "./components/JourneyView";
 import MapView from "./components/MapView";
 import { SiteStats, TripSummary } from "./types";
 import { Lang, makeT } from "./i18n";
-import { registerCountryCodes, countryName } from "./lib/countryName";
+import { registerCountryCodes } from "./lib/countryName";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<string>("home");
@@ -48,8 +48,6 @@ export default function App() {
   const [trips, setTrips] = useState<TripSummary[]>([]);
   const [about, setAbout] = useState<any>(null);
 
-  const [searchDrawerOpen, setSearchDrawerOpen] = useState(false);
-  const [globalQuery, setGlobalQuery] = useState("");
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Fetch stats.json + trips.json on mount
@@ -91,22 +89,16 @@ export default function App() {
     if (navigator.share) {
       navigator.share({
         title: "The Moving Beard — Rémi Gladieu",
-        text: "Suivez mon voyage de Saint-Nazaire jusqu'au Japon : à vélo, en train, en bus, en bateau et en avion.",
+        text: t("share.text"),
         url: window.location.href,
       }).catch(() => {});
     } else {
       navigator.clipboard.writeText(window.location.href);
-      setToastMessage("Lien copié dans le presse-papier !");
+      setToastMessage(t("common.link_copied"));
       setTimeout(() => setToastMessage(null), 3500);
     }
   };
 
-  const filteredTrips = trips.filter(t =>
-    t.title.toLowerCase().includes(globalQuery.toLowerCase()) ||
-    t.country.toLowerCase().includes(globalQuery.toLowerCase()) ||
-    countryName(t.country, lang, t.countryCode).toLowerCase().includes(globalQuery.toLowerCase()) ||
-    t.shortDescription.toLowerCase().includes(globalQuery.toLowerCase())
-  );
 
   return (
     <div className="min-h-screen text-text-on flex flex-col justify-between font-sans relative antialiased selection:bg-brand-sand selection:text-bg-dark">
@@ -128,7 +120,6 @@ export default function App() {
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        onSearchToggle={() => setSearchDrawerOpen(true)}
         lang={lang}
         changeLang={changeLang}
         theme={theme}
@@ -147,17 +138,17 @@ export default function App() {
             className="w-full"
           >
             {activeTab === "home" && (
-              <ViewErrorBoundary label="Accueil">
+              <ViewErrorBoundary label={t("common.error")}>
                 <HomeView onNavigate={handleCustomNavigate} stats={stats} trips={trips} t={t} about={about} lang={lang} />
               </ViewErrorBoundary>
             )}
             {activeTab === "journey" && (
-              <ViewErrorBoundary label="Itinéraire">
+              <ViewErrorBoundary label={t("common.error")}>
                 <JourneyView onNavigate={handleCustomNavigate} trips={trips} stats={stats} t={t} lang={lang} />
               </ViewErrorBoundary>
             )}
             {activeTab === "map" && (
-              <ViewErrorBoundary label="Carte">
+              <ViewErrorBoundary label={t("common.error")}>
                 <MapView onNavigate={handleCustomNavigate} trips={trips} t={t} lang={lang} />
               </ViewErrorBoundary>
             )}
@@ -172,84 +163,23 @@ export default function App() {
             <span className="font-display font-black tracking-widest text-[10px] uppercase text-text-on">
               The Moving Beard // Rémi Gladieu
             </span>
-            <span>© 2026. Voyage en cours · Hébergé sur Vercel.</span>
+            <span>{t("footer.status")}</span>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-6">
             <button
               onClick={handleShare}
               className="flex items-center gap-1 text-text-on hover:text-brand-sand transition-colors cursor-pointer"
             >
-              <Share2 size={12} /> Partager
+              <Share2 size={12} /> {t("common.share")}
             </button>
             <button onClick={() => handleCustomNavigate("map")} className="hover:text-text-on transition-colors cursor-pointer">
-              Carte
+              {t("nav.map")}
             </button>
           </div>
         </div>
       </footer>
       )}
 
-      {/* Search drawer */}
-      <AnimatePresence>
-        {searchDrawerOpen && (
-          <div className="fixed inset-0 z-50 flex justify-end">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setSearchDrawerOpen(false)}
-              className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-            />
-            <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: 0 }}
-              exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="relative w-full max-w-md h-full bg-[#1c1b1b] border-l border-white/5 p-6 flex flex-col justify-between text-left shadow-2xl z-10"
-            >
-              <div>
-                <div className="flex justify-between items-center mb-6">
-                  <span className="font-mono text-[10px] font-bold text-brand-sand uppercase tracking-wider">Recherche</span>
-                  <button onClick={() => setSearchDrawerOpen(false)} className="p-2 hover:bg-white/5 rounded text-text-on">
-                    <X size={18} />
-                  </button>
-                </div>
-                <h3 className="font-display text-lg font-black uppercase text-text-on mb-4">Recherche Globale</h3>
-                <input
-                  type="text"
-                  placeholder="Pays, étape, description..."
-                  value={globalQuery}
-                  onChange={e => setGlobalQuery(e.target.value)}
-                  className="w-full bg-bg-dark border border-white/10 rounded-md p-3 text-xs text-text-on focus:outline-none focus:border-brand-sand mb-6"
-                />
-                <div className="flex flex-col gap-3">
-                  <span className="font-mono text-[8px] uppercase tracking-wider text-text-dim text-opacity-40">Résultats</span>
-                  {filteredTrips.map(trip => (
-                    <div
-                      key={trip.slug}
-                      onClick={() => {
-                        handleCustomNavigate("stage", trip.slug);
-                        setSearchDrawerOpen(false);
-                      }}
-                      className="group bg-bg-dark hover:bg-brand-green/20 border border-white/5 rounded p-3 transition-colors cursor-pointer"
-                    >
-                      <span className="font-mono text-[8px] text-brand-sand font-bold block mb-0.5">{countryName(trip.country, lang, trip.countryCode)} · {trip.date}</span>
-                      <h4 className="font-display text-xs font-bold text-text-on group-hover:text-brand-sand transition-colors">{trip.title}</h4>
-                      <p className="text-[10px] text-text-dim text-opacity-65 mt-1 line-clamp-1">{trip.shortDescription}</p>
-                    </div>
-                  ))}
-                  {filteredTrips.length === 0 && (
-                    <div className="text-xs text-text-dim text-opacity-35 italic py-4">Aucun résultat.</div>
-                  )}
-                </div>
-              </div>
-              <div className="pt-4 border-t border-white/5 mt-auto font-mono text-[10px] text-text-dim text-opacity-30">
-                ÉCHAP POUR FERMER
-              </div>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }

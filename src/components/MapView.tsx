@@ -394,7 +394,7 @@ export default function MapView({ onNavigate, trips, t, lang }: MapViewProps) {
               <button
                 onClick={() => setPopupTrip(null)}
                 className="fixed md:absolute top-4 right-4 z-[10000] w-10 h-10 rounded-full bg-black/60 backdrop-blur hover:bg-black/80 flex items-center justify-center text-white cursor-pointer"
-                aria-label="Fermer"
+                aria-label={t("common.close")}
               >
                 <X size={20} />
               </button>

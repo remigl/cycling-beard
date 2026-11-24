@@ -10,6 +10,10 @@ on:
         description: "Resync complet (ignore le cache)"
         type: boolean
         default: false
+      retry_translations:
+        description: "Relancer tout de suite les traductions en échec (description, textes des étapes). Les traductions réussies ne sont pas refaites."
+        type: boolean
+        default: false
       resync_only:
         description: "Resync d'une seule étape (bout du nom du dossier, ex. grado). Laisser vide sinon."
         type: string
@@ -43,6 +47,7 @@ jobs:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
           FORCE_RESYNC: ${{ inputs.force_resync && '1' || '0' }}
           RESYNC_ONLY: ${{ inputs.resync_only }}
+          RETRY_TRANSLATIONS: ${{ inputs.retry_translations && '1' || '0' }}
           GOOGLE_PLACES_KEY: ${{ secrets.GOOGLE_PLACES_KEY }}
         run: node scripts/sync-drive.js
 

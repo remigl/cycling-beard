@@ -534,7 +534,7 @@ export default function RideReplay({ segments, track, distanceKm, t }: RideRepla
         <button
           onClick={handlePlayPause}
           disabled={!ready}
-          aria-label={playing ? "Pause" : "Play"}
+          aria-label={playing ? t("common.pause") : t("common.play")}
           className="w-11 h-11 rounded-full bg-brand-sand text-bg-dark flex items-center justify-center hover:bg-opacity-90 transition-all cursor-pointer disabled:opacity-40"
         >
           {playing ? <Pause size={18} /> : <Play size={18} className="ml-0.5" />}

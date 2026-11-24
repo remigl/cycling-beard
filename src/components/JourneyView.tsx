@@ -449,7 +449,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
 
               <div className="flex items-center gap-4 mt-1">
                 <span className="font-mono text-[10px] text-white/50">{lightbox.index + 1} / {lightbox.photos.length}</span>
-                <button onClick={() => { setLightbox(null); resetZoom(); }} className="font-mono text-[10px] text-white/50 hover:text-white cursor-pointer uppercase tracking-wider">Fermer ✕</button>
+                <button onClick={() => { setLightbox(null); resetZoom(); }} className="font-mono text-[10px] text-white/50 hover:text-white cursor-pointer uppercase tracking-wider">{t("common.close")} ✕</button>
               </div>
             </div>
           </div>
@@ -581,7 +581,7 @@ export default function JourneyView({ trips, t, lang }: JourneyViewProps) {
               </button>
             ))}
             {selectedTags.length > 0 && (
-              <button onClick={() => setSelectedTags([])} className="font-mono text-[9px] text-text-dim hover:text-text-on underline cursor-pointer">✕ reset</button>
+              <button onClick={() => setSelectedTags([])} className="font-mono text-[9px] text-text-dim hover:text-text-on underline cursor-pointer">✕ {t("common.reset")}</button>
             )}
           </div>
         )}

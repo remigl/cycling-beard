@@ -86,7 +86,7 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
         data = await cachedJson(`https://xeno-canto.org/api/3/recordings?query=${encodeURIComponent(baseQ)}&key=${XC_KEY}`, 30 * DAY, undefined, `xc:${baseQ}`);
       }
       const rec = data.recordings && data.recordings[0];
-      if (!rec) { setSongErr(`aucun enregistrement (${baseQ})`); }
+      if (!rec) { setSongErr(t("birds.no_recording")); }
       // v3 : le champ audio peut être 'file' ou dans sono/oss ; on prend 'file'
       let url: string | null = rec?.file || null;
       if (url && url.startsWith("//")) url = "https:" + url;
@@ -94,7 +94,7 @@ export default function BirdList({ lat, lng, lang, t }: BirdListProps) {
       songCache.current.set(sciName, url);
       return url;
     } catch (e: any) {
-      setSongErr("erreur: " + (e?.message || "réseau/CORS"));
+      setSongErr(t("birds.error"));
       songCache.current.set(sciName, null);
       return null;
     }

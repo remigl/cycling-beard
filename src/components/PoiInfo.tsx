@@ -3,6 +3,7 @@ import { X, MapPin } from "lucide-react";
 import { TripSummary, Poi } from "../types";
 import { Lang } from "../i18n";
 import { wikiForPlaces, wikiUrl } from "../lib/wiki";
+import { placeKindLabel } from "../lib/placeKinds";
 
 interface PoiView extends Poi {
   thumb?: string | null;
@@ -92,7 +93,8 @@ export default function PoiInfo({ trip, lang, onClose, t }: PoiInfoProps) {
                         <span className="text-sm text-text-on font-medium truncate">{p.title}</span>
                         <span className="font-mono text-[9px] text-brand-sand shrink-0">{(p.dist / 1000).toFixed(1)} km</span>
                       </div>
-                      {p.kind && <div className="font-mono text-[9px] text-text-dim/70 mt-0.5">{p.kind}</div>}
+                      {p.localName && <div className="text-[10px] text-text-dim/70 mt-0.5 truncate" lang="und">{p.localName}</div>}
+                      {placeKindLabel(p.kind, lang) && <div className="font-mono text-[9px] text-text-dim/70 mt-0.5">{placeKindLabel(p.kind, lang)}</div>}
                       {p.desc && <p className="text-[11px] text-text-dim leading-snug mt-1 font-light">{p.desc}</p>}
                     </div>
                   </a>

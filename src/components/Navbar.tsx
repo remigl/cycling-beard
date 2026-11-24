@@ -1,11 +1,10 @@
-import { Search, Globe, Check, Sun, Moon, Home, Route, Map as MapIcon } from "lucide-react";
+import { Globe, Check, Sun, Moon, Home, Route, Map as MapIcon } from "lucide-react";
 import { useState } from "react";
 import { Lang, LANGUAGES } from "../i18n";
 
 interface NavbarProps {
   activeTab: string;
   setActiveTab: (tab: string) => void;
-  onSearchToggle: () => void;
   lang: Lang;
   changeLang: (l: Lang) => void;
   theme: "light" | "dark";
@@ -13,7 +12,7 @@ interface NavbarProps {
   t: (key: string) => string;
 }
 
-export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, changeLang, theme, toggleTheme, t }: NavbarProps) {
+export default function Navbar({ activeTab, setActiveTab, lang, changeLang, theme, toggleTheme, t }: NavbarProps) {
   const [langOpen, setLangOpen] = useState(false);
 
   const tabs = [
@@ -36,7 +35,7 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, 
           <button
             onClick={() => setActiveTab("home")}
             className="flex items-center gap-2.5 cursor-pointer hover:opacity-80 transition-opacity min-w-0"
-            aria-label="Accueil"
+            aria-label={t("common.home")}
           >
             <span className="w-9 h-9 shrink-0 rounded-full bg-brand-sand text-surface-card flex items-center justify-center font-display font-black text-sm">
               R
@@ -80,7 +79,7 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, 
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 className="flex items-center gap-1.5 hover:bg-text-on/10 cursor-pointer transition-colors h-9 px-2.5 rounded-full"
-                aria-label="Langue"
+                aria-label={t("common.language")}
               >
                 <span className="text-base leading-none">{currentLang.flag}</span>
                 <Globe size={14} className="opacity-60" />
@@ -112,9 +111,6 @@ export default function Navbar({ activeTab, setActiveTab, onSearchToggle, lang, 
               )}
             </div>
 
-            <button onClick={onSearchToggle} className={iconBtn} aria-label="Rechercher">
-              <Search size={18} />
-            </button>
           </div>
         </div>
       </nav>
