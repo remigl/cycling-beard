@@ -2,7 +2,8 @@ name: Sync Drive
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    # Une fois par jour (04:17 heure de Paris en hiver)
+    - cron: "17 3 * * *"
   workflow_dispatch:
     inputs:
       force_resync:
