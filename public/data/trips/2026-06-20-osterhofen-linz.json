@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Campingplatz,+Heilhamer+W.+2,+4040+Linz,+Autriche/data=!4m2!3m1!1s0x4773982e08f218c5:0xf19ee683dcbe58dd!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=785574a0-cd49-4b93-9c40-acc8d423fae3&g_st=ac",
@@ -6687,7 +6662,139 @@
     "Passau",
     "Leonding"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Cathédrale de l'Immaculée-Conception de Linz",
+      "rating": 4.7,
+      "ratingCount": 6613,
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17685952430648298212&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Posthof - Zeitkultur am Hafen",
+      "rating": 4.7,
+      "ratingCount": 1951,
+      "types": [
+        "live_music_venue",
+        "comedy_club",
+        "cultural_center",
+        "performing_arts_theater",
+        "event_venue",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3207263403653544314&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Linz’s main square",
+      "rating": 4.6,
+      "ratingCount": 7670,
+      "types": [
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17207414027273552130&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tabakfabrik Linz",
+      "rating": 4.5,
+      "ratingCount": 2434,
+      "types": [
+        "event_venue",
+        "real_estate_agency",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13357321017747539747&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Université de Linz",
+      "rating": 4.5,
+      "ratingCount": 550,
+      "types": [
+        "university",
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16199842636009871489&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ars Electronica",
+      "rating": 4.4,
+      "ratingCount": 6997,
+      "types": [
+        "museum",
+        "art_museum",
+        "tourist_attraction",
+        "event_venue",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11242702455497047552&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "LentiaCity",
+      "rating": 4.4,
+      "ratingCount": 5796,
+      "types": [
+        "shopping_mall",
+        "parking_garage",
+        "parking_lot",
+        "parking",
+        "restaurant",
+        "food",
+        "transportation_service",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3129942470974330578&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "CINEPLEXX LINZ",
+      "rating": 4.4,
+      "ratingCount": 4575,
+      "types": [
+        "movie_theater",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14554781285322894147&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "WIFI Upper Austria GmbH",
+      "rating": 4.4,
+      "ratingCount": 621,
+      "types": [
+        "educational_institution",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16610015075857337713&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Passage Linz",
+      "rating": 4.3,
+      "ratingCount": 6073,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15171295510923075987&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -6739,5 +6846,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

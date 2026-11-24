@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/G%C3%A1rdony,+SURFCAMPING,+Harcsa+u.+2,+2483+Hongrie/data=!4m2!3m1!1s0x476a017705848c69:0x465f0192f02e9d79!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=6f52bc1e-4a07-440b-8d10-47a610e0e065&g_st=ac",
@@ -15231,7 +15206,137 @@
     "Budaörs",
     "Biatorbágy"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Tekerbringa Bike Rental",
+      "rating": 4.9,
+      "ratingCount": 1714,
+      "types": [
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14990897312103801607&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pálmajor Pihenöpark és Rendezvényközpont",
+      "rating": 4.8,
+      "ratingCount": 374,
+      "types": [
+        "event_venue",
+        "hotel",
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5280187171755551742&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Gulyás Csárda",
+      "rating": 4.7,
+      "ratingCount": 5239,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8366714209442752389&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Bence-hegyi Kilátó",
+      "rating": 4.6,
+      "ratingCount": 4957,
+      "types": [
+        "scenic_spot",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11375599397719543519&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Castle Park, Open-air Museum, Wall of Saints Dinnyés",
+      "rating": 4.6,
+      "ratingCount": 4189,
+      "types": [
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9380869321706317106&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pákozdi Pagony Vadaspark és Arborétum",
+      "rating": 4.6,
+      "ratingCount": 3275,
+      "types": [
+        "wildlife_park",
+        "zoo",
+        "tourist_attraction",
+        "park",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3641047506718605043&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "SIMON'S BURGER M7",
+      "rating": 4.6,
+      "ratingCount": 3214,
+      "types": [
+        "hamburger_restaurant",
+        "american_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15785446010365035920&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Kovács Katalin Nemzeti Kajak-Kenu Akadémia",
+      "rating": 4.6,
+      "ratingCount": 138,
+      "types": [
+        "sports_complex",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7980449153924763490&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Agard free beach",
+      "rating": 4.4,
+      "ratingCount": 5091,
+      "types": [
+        "spa",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=665727535720523292&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Lidl",
+      "rating": 4.4,
+      "ratingCount": 3695,
+      "types": [
+        "discount_supermarket",
+        "supermarket",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=4526816658290612695&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "frybread",
@@ -15283,5 +15388,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%91%D0%BE%D0%B1%20%D0%B3%D1%83%D0%BB%D1%8F%D1%88%202.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Babguly%C3%A1s"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

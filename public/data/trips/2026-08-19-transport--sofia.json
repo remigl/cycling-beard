@@ -7,7 +7,7 @@
   "country": "Bulgarie",
   "countryCode": "BG",
   "region": "Oblast de Sofia-ville",
-  "startCity": "Михајловац",
+  "startCity": "Mikhajlovats",
   "endCity": "Sofia",
   "distanceKm": 331.2,
   "elevationGain": 0,
@@ -1384,5 +1384,6 @@
       "mapsUrl": "https://maps.google.com/?cid=15168333647564573866&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

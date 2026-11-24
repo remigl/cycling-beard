@@ -6583,7 +6583,150 @@
     "Peschiera del Garda",
     "Sirmione"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Azienda Agricola Ca 'Dei Frati",
+      "rating": 4.7,
+      "ratingCount": 1338,
+      "types": [
+        "winery",
+        "tourist_attraction",
+        "manufacturer",
+        "food",
+        "farm",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13384279222071210802&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Château de Sirmione",
+      "rating": 4.6,
+      "ratingCount": 76117,
+      "types": [
+        "castle",
+        "tourist_attraction",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3754397890361613473&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Parcheggio gratuito",
+      "rating": 4.6,
+      "ratingCount": 951,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13389704085570624842&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Grottes de Catulle",
+      "rating": 4.5,
+      "ratingCount": 18133,
+      "types": [
+        "historical_landmark",
+        "tourist_attraction",
+        "museum",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1272567388803064444&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "SPA & Thermal Garden",
+      "rating": 4.5,
+      "ratingCount": 12156,
+      "types": [
+        "massage_spa",
+        "massage",
+        "spa",
+        "public_bath",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13761650379153813381&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "GrifoParking - Check-in",
+      "rating": 4.5,
+      "ratingCount": 749,
+      "types": [
+        "parking_lot",
+        "parking",
+        "transportation_service",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13485426201696870894&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Esselunga",
+      "rating": 4.4,
+      "ratingCount": 6943,
+      "types": [
+        "supermarket",
+        "deli",
+        "grocery_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2997285336947555859&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Del Garda Village and Camping",
+      "rating": 4.4,
+      "ratingCount": 3318,
+      "types": [
+        "camping_cabin",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2462707030224011043&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Garda Hotel San Vigilio Golf",
+      "rating": 4.4,
+      "ratingCount": 2783,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7835558403704667067&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "CONAD SUPERSTORE",
+      "rating": 4.4,
+      "ratingCount": 2294,
+      "types": [
+        "supermarket",
+        "bakery",
+        "market",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1417903462743807994&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "spaghetti",
@@ -6661,6 +6804,11 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -6669,11 +6817,6 @@
       "title": "Penne",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Pennelisce%20closeup.png",
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
-    },
-    {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
     },
     {
       "title": "tagliatelle",
@@ -6690,5 +6833,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

@@ -22,43 +22,18 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "Simon",
   "thanksTranslations": {
+    "fr": "Simon",
     "en": "Simon",
     "es": "Simon",
     "it": "Simon",
     "de": "Simon",
-    "nl": "Simon",
-    "fr": "Simon"
+    "nl": "Simon"
   },
   "photos": [
     {
@@ -6447,7 +6422,145 @@
     "Gratwein-Straßengel",
     "Frohnleiten"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Schüsserlbrunn",
+      "rating": 4.9,
+      "ratingCount": 207,
+      "types": [
+        "church",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3752379892806706961&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Bärenschützklamm",
+      "rating": 4.8,
+      "ratingCount": 2633,
+      "types": [
+        "hiking_area",
+        "tourist_attraction",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10432511494043797115&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Gasthaus Ebner-Hollerer",
+      "rating": 4.8,
+      "ratingCount": 1228,
+      "types": [
+        "inn",
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=917008631888209968&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Dr. Stefan Brünner",
+      "rating": 4.7,
+      "ratingCount": 149,
+      "types": [
+        "dentist",
+        "doctor",
+        "health",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16347652676117207852&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pizzeria Trattoria San Marco Bruck/Mur",
+      "rating": 4.6,
+      "ratingCount": 1559,
+      "types": [
+        "italian_restaurant",
+        "meal_takeaway",
+        "european_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=430004698525415180&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Restaurant Riegler",
+      "rating": 4.6,
+      "ratingCount": 1198,
+      "types": [
+        "austrian_restaurant",
+        "european_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2999809105843706787&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tyrnauer Alm",
+      "rating": 4.6,
+      "ratingCount": 313,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12989085936855826199&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Lidl Österreich",
+      "rating": 4.5,
+      "ratingCount": 1109,
+      "types": [
+        "discount_supermarket",
+        "supermarket",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6844707416923390836&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "EUROSPAR",
+      "rating": 4.3,
+      "ratingCount": 890,
+      "types": [
+        "supermarket",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6441107694652393004&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tiebersee",
+      "rating": 4.3,
+      "ratingCount": 720,
+      "types": [
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14757598965714721705&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -6499,5 +6612,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Rest+Stop+and+Campsite+For+Canoers+and+Cyclists,+85088+Vohburg+an+der+Donau,+Allemagne/data=!4m2!3m1!1s0x479e53497d08132d:0xee53bb09aa8eae14!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8d566ef6-0d83-48e4-a050-b7758e98dea6&g_st=ac",
@@ -6592,7 +6567,153 @@
     "Neuburg an der Donau",
     "Donauwörth"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Maislabyrinth Menning",
+      "rating": 4.9,
+      "ratingCount": 98,
+      "types": [
+        "amusement_park",
+        "playground",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6856782694653853646&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Offroadpark Bayern",
+      "rating": 4.7,
+      "ratingCount": 297,
+      "types": [
+        "playground",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=18083198440363170047&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Birkenheide - Eventlocation I Hochzeiten I Biergarten I Catering",
+      "rating": 4.6,
+      "ratingCount": 1753,
+      "types": [
+        "event_venue",
+        "convention_center",
+        "beer_garden",
+        "catering_service",
+        "wedding_venue",
+        "food_delivery",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13187092828333628999&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Audi Münchsmünster",
+      "rating": 4.6,
+      "ratingCount": 379,
+      "types": [
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5749653481184684761&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "aérodrome de Ingolstadt",
+      "rating": 4.6,
+      "ratingCount": 121,
+      "types": [
+        "airport",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13238818564584721380&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pollin Electronic Ladengeschäft",
+      "rating": 4.5,
+      "ratingCount": 1400,
+      "types": [
+        "electronics_store",
+        "electrician",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6766288825484609437&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Gasthaus Stöttnerbräu",
+      "rating": 4.5,
+      "ratingCount": 968,
+      "types": [
+        "bavarian_restaurant",
+        "beer_garden",
+        "german_restaurant",
+        "guest_house",
+        "lodging",
+        "european_restaurant",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3110558023527561567&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Wake and Groove - Cablepark",
+      "rating": 4.5,
+      "ratingCount": 882,
+      "types": [
+        "beer_garden",
+        "sports_complex",
+        "sporting_goods_store",
+        "bar",
+        "sports_activity_location",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=4284198589785851951&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Boutique Hotel zur Post",
+      "rating": 4.5,
+      "ratingCount": 401,
+      "types": [
+        "bed_and_breakfast",
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1872759204688609968&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "REWE Familie Tezcanli",
+      "rating": 4.4,
+      "ratingCount": 396,
+      "types": [
+        "supermarket",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15190994980658351613&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "hamburger",
@@ -6670,14 +6791,15 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
-      "title": "Pfälzer Saumagen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
-    },
-    {
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Pfälzer Saumagen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

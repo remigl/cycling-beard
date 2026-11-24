@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Budapest,+Island+Hostel,+Margitsziget,+Sir%C3%A1ly+Cs%C3%B3nakh%C3%A1z,+1138+Hongrie/data=!4m2!3m1!1s0x4741dc078ffec7ab:0xd0a9fae4725f7dc5!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI1LjUYACCenQoqlQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTIxNzkzNTk0LDk0MjgwNTc2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE4NjUzLDk0MjI5ODM5LDk0Mjc1MTY4LDk0Mjc5NjE5LDEwMDgxNTYzNUICRlI%3D&skid=12e3fc45-3fa8-4288-af13-92993c9f25d5&g_st=ac",
@@ -11807,7 +11782,161 @@
     "Vác",
     "Esztergom"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Parc de l'histoire ferroviaire hongroise",
+      "rating": 4.7,
+      "ratingCount": 12570,
+      "types": [
+        "history_museum",
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14836308981092868219&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Garden Kobuci",
+      "rating": 4.7,
+      "ratingCount": 6100,
+      "types": [
+        "live_music_venue",
+        "night_club",
+        "event_venue",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16514848814630547208&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ensana Thermal Margaret Island",
+      "rating": 4.6,
+      "ratingCount": 5139,
+      "types": [
+        "hotel",
+        "resort_hotel",
+        "extended_stay_hotel",
+        "lodging",
+        "massage_spa",
+        "massage",
+        "spa",
+        "event_venue",
+        "swimming_pool",
+        "sports_activity_location",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9519248157391793576&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Danube Arena",
+      "rating": 4.6,
+      "ratingCount": 4232,
+      "types": [
+        "swimming_pool",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=900502773779108893&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Aquaworld Resort Budapest",
+      "rating": 4.5,
+      "ratingCount": 21515,
+      "types": [
+        "hotel",
+        "water_park",
+        "amusement_park",
+        "lodging",
+        "spa",
+        "event_venue",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6091706335036342247&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Alza.hu",
+      "rating": 4.4,
+      "ratingCount": 18058,
+      "types": [
+        "electronics_store",
+        "cosmetics_store",
+        "clothing_store",
+        "home_goods_store",
+        "cell_phone_store",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3895303199326969859&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pólus",
+      "rating": 4.3,
+      "ratingCount": 21417,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17634340668790729132&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pont Árpád",
+      "rating": 4.3,
+      "ratingCount": 2519,
+      "types": [
+        "bridge",
+        "tourist_attraction",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14798713378069437570&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Duna Plaza",
+      "rating": 4.2,
+      "ratingCount": 15704,
+      "types": [
+        "shopping_mall",
+        "cell_phone_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7084438204232826907&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Auchan",
+      "rating": 4.2,
+      "ratingCount": 9946,
+      "types": [
+        "hypermarket",
+        "department_store",
+        "general_store",
+        "supermarket",
+        "shopping_mall",
+        "electronics_store",
+        "clothing_store",
+        "grocery_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12276271077921217748&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "frybread",
@@ -11859,5 +11988,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/%D0%91%D0%BE%D0%B1%20%D0%B3%D1%83%D0%BB%D1%8F%D1%88%202.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Babguly%C3%A1s"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

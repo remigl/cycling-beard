@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Fireflies+In+The+Fog+Camping+Village,+Via+Argine+Po,+35%2Fa,+44012+Stellata+FE,+Italie/data=!4m2!3m1!1s0x477fb2ac56889487:0x4f87fe76bf66a838!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjI5LjIYACCenQoqqQEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsMTAwODI2MzEwLDEwMDgyMjEyNSw5NDI4MDU3Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxODY1Myw5NDIyOTgzOSw5NDI3NTE2OCw5NDI3OTYxOSwxMDA4MTU2MzUsMTAwODIwMjMyQgJGUg%3D%3D&skid=5f577728-b65e-42db-804b-12f3d0236de2&g_st=ac",
@@ -10042,7 +10017,164 @@
   "majorCities": [
     "Mantoue"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Italiana Biscotti S.R.L.",
+      "rating": 4.8,
+      "ratingCount": 36,
+      "types": [
+        "manufacturer",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10518488369007951954&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Rocca Possente di Stellata",
+      "rating": 4.6,
+      "ratingCount": 525,
+      "types": [
+        "historical_landmark",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=898105677309207854&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Fireflies In The Fog Camping Village",
+      "rating": 4.6,
+      "ratingCount": 496,
+      "types": [
+        "camping_cabin",
+        "mobile_home_park",
+        "rv_park",
+        "campground",
+        "swimming_pool",
+        "hotel",
+        "lodging",
+        "restaurant",
+        "sports_activity_location",
+        "point_of_interest",
+        "food",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5730828836823017528&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pneus Bondeno LTD",
+      "rating": 4.6,
+      "ratingCount": 145,
+      "types": [
+        "tire_shop",
+        "auto_parts_store",
+        "car_repair",
+        "point_of_interest",
+        "store",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12955959531455706251&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Casa della Salute \"Fratelli Borselli\"",
+      "rating": 4.6,
+      "ratingCount": 20,
+      "types": [
+        "medical_center",
+        "hospital",
+        "point_of_interest",
+        "service",
+        "health",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17636780705422389608&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "La Carioncella",
+      "rating": 4.5,
+      "ratingCount": 1383,
+      "types": [
+        "pizza_restaurant",
+        "italian_restaurant",
+        "european_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3429339905722422800&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Mulino Padano S.p.A.",
+      "rating": 4.5,
+      "ratingCount": 229,
+      "types": [
+        "point_of_interest",
+        "food",
+        "manufacturer",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12084219427545552766&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ristorante Hotel La Perla",
+      "rating": 4.3,
+      "ratingCount": 1922,
+      "types": [
+        "seafood_restaurant",
+        "hotel",
+        "lodging",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10818006276016413123&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Migross Superstore Bondeno",
+      "rating": 4.3,
+      "ratingCount": 1064,
+      "types": [
+        "supermarket",
+        "butcher_shop",
+        "deli",
+        "cake_shop",
+        "grocery_store",
+        "bakery",
+        "supplier",
+        "point_of_interest",
+        "wholesaler",
+        "food_store",
+        "store",
+        "food",
+        "service",
+        "manufacturer",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7534774348322494533&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Agriturismo & Fattoria Didattica La Florida Bondeno",
+      "rating": 4.3,
+      "ratingCount": 770,
+      "types": [
+        "farmstay",
+        "farm",
+        "lodging",
+        "school",
+        "educational_institution",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=4140960381418140004&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "spaghetti",
@@ -10090,14 +10222,14 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Merlot"
     },
     {
-      "title": "Cannoli PAT",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
-    },
-    {
       "title": "tortellini",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Tortellini%20Bolognesi.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tortellini"
+    },
+    {
+      "title": "Cannoli PAT",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Cannolo%20siciliano%20with%20chocolate%20squares.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Cannolo"
     },
     {
       "title": "Pecorino",
@@ -10120,6 +10252,11 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Biscuit_%C3%A0_la_cuill%C3%A8re"
     },
     {
+      "title": "Fettuccine",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
+    },
+    {
       "title": "osso buco",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Ossobuco.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Osso_buco"
@@ -10130,29 +10267,20 @@
       "wikipedia": "https://fr.wikipedia.org/wiki/Penne_(p%C3%A2tes)"
     },
     {
-      "title": "Fettuccine",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fettucine1.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fettuccine"
-    },
-    {
       "title": "tagliatelle",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Dry%20tagliatelle%20pasta.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Tagliatelle"
     },
     {
-      "title": "sabayon",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
-    },
-    {
-      "title": "fusilli",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Fusilli%20lunghi%20bucati.jpg",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Fusilli"
-    },
-    {
       "title": "pizza Margherita",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Margherita%20Originale.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pizza_Margherita"
+    },
+    {
+      "title": "sabayon",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Marsala%20sabayon%20with%20cookie%20and%20local%20stone%20fruit.jpg",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Sabayon"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

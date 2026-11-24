@@ -24,31 +24,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
@@ -715,109 +690,124 @@
   "weather": null,
   "pois": [
     {
-      "title": "Зиндан",
+      "title": "Zindan",
       "dist": 1425,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Зиндан"
     },
     {
-      "title": "Шымкент қамалы",
+      "title": "Shymkent qamaly",
       "dist": 1536,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Шымкент қамалы"
     },
     {
-      "title": "Церковь Николая Чудотворца",
+      "title": "Tserkov' Nikolaya Chudotvortsa",
       "dist": 2243,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Церковь Николая Чудотворца"
     },
     {
-      "title": "Авиаторам-участникам Великой Отечественной войны",
+      "title": "Aviatoram-uchastnikam Velikoy Otechestvennoy voyny",
       "dist": 3956,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Авиаторам-участникам Великой Отечественной войны"
     },
     {
-      "title": "Дом культуры «Металлург»",
+      "title": "Dom kul'tury <<Metallurg>>",
       "dist": 4112,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Дом культуры «Металлург»"
     },
     {
-      "title": "Зоопарк",
+      "title": "Zoopark",
       "dist": 8789,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Зоопарк"
     },
     {
-      "title": "Мірәлі баба күмбезі",
+      "title": "Mirali baba kumbezi",
       "dist": 11847,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Мірәлі баба күмбезі"
     },
     {
-      "title": "Музей жертв политических репрессий",
+      "title": "Muzey zhertv politicheskikh repressiy",
       "dist": 3633,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Музей жертв политических репрессий"
     },
     {
-      "title": "Үлкен Сағат",
+      "title": "Ulken Saghat",
       "dist": 95,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Үлкен Сағат"
     },
     {
-      "title": "Тәуелсіздік монументі",
+      "title": "Tauelsizdik monumenti",
       "dist": 1441,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": "Монумент Независимости (Шымкент)"
+      "wikiTitle": "Монумент Независимости (Шымкент)",
+      "localName": "Тәуелсіздік монументі"
     },
     {
-      "title": "Алия Молдагулова",
+      "title": "Aliya Moldagulova",
       "dist": 2865,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Алия Молдагулова"
     },
     {
-      "title": "Обелиск Ветеранам ВОВ",
+      "title": "Obelisk Veteranam VOV",
       "dist": 3702,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Обелиск Ветеранам ВОВ"
     },
     {
-      "title": "Мунайтпасов Хаджимукан",
+      "title": "Munaytpasov Khadzhimukan",
       "dist": 4041,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": "Мунайтпасов, Хаджимукан"
+      "wikiTitle": "Мунайтпасов, Хаджимукан",
+      "localName": "Мунайтпасов Хаджимукан"
     },
     {
-      "title": "В. И. Ленину",
+      "title": "V. I. Leninu",
       "dist": 4049,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "В. И. Ленину"
     },
     {
-      "title": "Ученикам школы № 4 погибшим в боях за Родину в 1941-1945 г",
+      "title": "Uchenikam shkoly No 4 pogibshim v boyakh za Rodinu v 1941-1945 g",
       "dist": 4354,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Ученикам школы № 4 погибшим в боях за Родину в 1941-1945 г"
     }
   ],
   "majorCities": [],
@@ -857,7 +847,7 @@
       "mapsUrl": "https://maps.google.com/?cid=5397437020267548726&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "Қатын-Көпір авто",
+      "title": "Qatyn-Kopir avto",
       "rating": 4.5,
       "ratingCount": 1218,
       "types": [
@@ -866,7 +856,8 @@
         "service",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=1658984501827870004&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=1658984501827870004&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "localName": "Қатын-Көпір авто"
     },
     {
       "title": "HYPER HOUSE",
@@ -938,5 +929,6 @@
       "mapsUrl": "https://maps.google.com/?cid=15452161949000095385&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

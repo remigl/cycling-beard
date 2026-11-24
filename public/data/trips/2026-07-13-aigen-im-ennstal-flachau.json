@@ -67,12 +67,12 @@
   "lodgingName": "",
   "thanks": "Jeffrey",
   "thanksTranslations": {
+    "fr": "Jeffrey",
     "en": "Jeffrey",
     "es": "Jeffrey",
     "it": "Jeffrey",
     "de": "Jeffrey",
-    "nl": "Jeffrey",
-    "fr": "Jeffrey"
+    "nl": "Jeffrey"
   },
   "photos": [
     {
@@ -9347,7 +9347,135 @@
     "Schladming",
     "Radstadt"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Sporthotel Wagrain",
+      "rating": 4.8,
+      "ratingCount": 1447,
+      "types": [
+        "hotel",
+        "fitness_center",
+        "gym",
+        "resort_hotel",
+        "lodging",
+        "sports_activity_location",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=96653280488587896&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hotel Felsenhof",
+      "rating": 4.8,
+      "ratingCount": 541,
+      "types": [
+        "hotel",
+        "lodging",
+        "spa",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10902466094305374779&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hofgut Wagrain – Apartment & Lifestyle Resort",
+      "rating": 4.8,
+      "ratingCount": 269,
+      "types": [
+        "hotel",
+        "resort_hotel",
+        "lodging",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3091511757539811783&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Büro/Verwaltung Zauchensee Liftgesellschaft",
+      "rating": 4.7,
+      "ratingCount": 2115,
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=18308408551880452102&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Adapura Wagrain",
+      "rating": 4.7,
+      "ratingCount": 1105,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=18398402476433934136&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "6-SBK spacejet 1",
+      "rating": 4.7,
+      "ratingCount": 496,
+      "types": [
+        "ski_resort",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2695413829583779585&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Flying Mozart",
+      "rating": 4.6,
+      "ratingCount": 817,
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2979684489031496474&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Camping Passrucker",
+      "rating": 4.6,
+      "ratingCount": 744,
+      "types": [
+        "campground",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1859179356890347610&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Snow Space Salzburg - Flachau",
+      "rating": 4.5,
+      "ratingCount": 1320,
+      "types": [
+        "ski_resort",
+        "hiking_area",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6903915595949704046&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hotel Wagrainerhof",
+      "rating": 4.5,
+      "ratingCount": 1052,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10054271814137091636&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "escalope à la viennoise",
@@ -9399,5 +9527,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Waldviertler%20Wurst%2002.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Waldviertler"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

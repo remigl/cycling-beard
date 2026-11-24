@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Kanu-Club+Zeltplatz,+86602,+An+der+Westspange,+86609+Donauw%C3%B6rth,+Allemagne/data=!4m2!3m1!1s0x479ed1f765a366c9:0x1c8455f094a1eafa!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=8a7b9cbe-37c0-44f7-bcea-8589bdec09b6&g_st=ac",
@@ -9496,7 +9471,152 @@
     "Nouvelle-Ulm",
     "Guntzbourg"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "AIRBUS",
+      "rating": 4.7,
+      "ratingCount": 34,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "manufacturer",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9802009136020321736&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Abel+Ruf GmbH",
+      "rating": 4.6,
+      "ratingCount": 611,
+      "types": [
+        "car_dealer",
+        "car_rental",
+        "car_repair",
+        "point_of_interest",
+        "store",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17385316744317279394&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Airbus Helicopters Customer Center",
+      "rating": 4.6,
+      "ratingCount": 348,
+      "types": [
+        "transportation_service",
+        "point_of_interest",
+        "manufacturer",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3485036778406806976&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Zott Genusswelt & Outlet",
+      "rating": 4.5,
+      "ratingCount": 2694,
+      "types": [
+        "ice_cream_shop",
+        "playground",
+        "bistro",
+        "rest_stop",
+        "breakfast_restaurant",
+        "grocery_store",
+        "dessert_shop",
+        "restaurant",
+        "point_of_interest",
+        "confectionery",
+        "food_store",
+        "store",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16581125631442534618&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Lechtaler Dirndl & Tracht",
+      "rating": 4.5,
+      "ratingCount": 825,
+      "types": [
+        "clothing_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11667082280692099172&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Donau-Lech-Camping - Franz Schmid & Volker Dupke i.V.",
+      "rating": 4.5,
+      "ratingCount": 663,
+      "types": [
+        "campground",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=4242555772530826537&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Freibad auf dem Schellenberg",
+      "rating": 4.5,
+      "ratingCount": 547,
+      "types": [
+        "swimming_pool",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7730996291522220325&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Airbus Helicopters Training Academy",
+      "rating": 4.5,
+      "ratingCount": 32,
+      "types": [
+        "educational_institution",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=18406475588266709495&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hofgut Bäldleschwaige",
+      "rating": 4.4,
+      "ratingCount": 2217,
+      "types": [
+        "beer_garden",
+        "playground",
+        "flea_market",
+        "campground",
+        "bar",
+        "cafe",
+        "wedding_venue",
+        "event_venue",
+        "lodging",
+        "market",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3790337149403506235&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "AGCO Fendt GmbH",
+      "rating": 4.4,
+      "ratingCount": 168,
+      "types": [
+        "supplier",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1236190380329461334&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "hamburger",
@@ -9574,14 +9694,15 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Leberkn%C3%B6del"
     },
     {
-      "title": "Pfälzer Saumagen",
-      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
-      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
-    },
-    {
       "title": "Weisslacker",
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Weisslacker%20mit%20brot.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Weisslacker"
+    },
+    {
+      "title": "Pfälzer Saumagen",
+      "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
+      "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

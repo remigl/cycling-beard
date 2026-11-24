@@ -1002,11 +1002,12 @@
   "weather": null,
   "pois": [
     {
-      "title": "重要文化財 紫竹門東塀",
+      "title": "Zhong Yao Wen Hua Cai Zi Zhu Men Dong Ping",
       "dist": 1381,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "重要文化財 紫竹門東塀"
     },
     {
       "title": "Château de Matsuyama",
@@ -1016,67 +1017,76 @@
       "wikiTitle": "松山城 (伊予国)"
     },
     {
-      "title": "秋山兄弟生誕地",
+      "title": "Qiu Shan Xiong Di Sheng Dan De",
       "dist": 1868,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "秋山兄弟生誕地"
     },
     {
-      "title": "Russia Hei Cemetery ロシア兵墓地",
+      "title": "Russia Hei Cemetery roshia Bing Mu De",
       "dist": 2140,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Russia Hei Cemetery ロシア兵墓地"
     },
     {
-      "title": "道後温泉第四分湯場",
+      "title": "Dao Hou Wen Quan Di Si Fen Tang Chang",
       "dist": 3230,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "道後温泉第四分湯場"
     },
     {
-      "title": "道後ミュージック",
+      "title": "Dao Houmiyujitku",
       "dist": 3261,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "道後ミュージック"
     },
     {
-      "title": "道後ﾊｲｶﾗ通り",
+      "title": "Dao Houhaikara Tongri",
       "dist": 3297,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "道後ﾊｲｶﾗ通り"
     },
     {
-      "title": "バンビーズ天山",
+      "title": "banbizu Tian Shan",
       "dist": 3341,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "バンビーズ天山"
     },
     {
-      "title": "湯築城",
+      "title": "Tang Zhu Cheng",
       "dist": 3346,
       "kind": "Château / fort",
       "rank": 10,
-      "wikiTitle": "湯築城"
+      "wikiTitle": "湯築城",
+      "localName": "湯築城"
     },
     {
-      "title": "商店街",
+      "title": "Shang Dian Jie",
       "dist": 3363,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "商店街"
     },
     {
-      "title": "垣生城跡",
+      "title": "Yuan Sheng Cheng Ji",
       "dist": 3419,
       "kind": "Château / fort",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "垣生城跡"
     },
     {
       "title": "Shinrokaku",
@@ -1086,25 +1096,28 @@
       "wikiTitle": null
     },
     {
-      "title": "算額",
+      "title": "Suan E",
       "dist": 3619,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "算額"
     },
     {
-      "title": "テニスコート",
+      "title": "tenisukoto",
       "dist": 3760,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "テニスコート"
     },
     {
-      "title": "蓮華寺  松山市",
+      "title": "Lian Hua Si Song Shan Shi",
       "dist": 3873,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "蓮華寺  松山市"
     }
   ],
   "majorCities": [],
@@ -1262,5 +1275,6 @@
       "mapsUrl": "https://maps.google.com/?cid=8728935889860366819&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

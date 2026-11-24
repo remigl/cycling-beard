@@ -2004,109 +2004,124 @@
   "weather": null,
   "pois": [
     {
-      "title": "黄葛晚渡",
+      "title": "Huang Ge Wan Du",
       "dist": 1347,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "黄葛晚渡"
     },
     {
-      "title": "金汤门",
+      "title": "Jin Tang Men",
       "dist": 1834,
       "kind": "Château / fort",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "金汤门"
     },
     {
-      "title": "海棠烟雨",
+      "title": "Hai Tang Yan Yu",
       "dist": 2176,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "海棠烟雨"
     },
     {
-      "title": "凯旋路电梯",
+      "title": "Kai Xuan Lu Dian Ti",
       "dist": 2314,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "凯旋路电梯"
     },
     {
-      "title": "好吃街",
+      "title": "Hao Chi Jie",
       "dist": 2741,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "好吃街"
     },
     {
-      "title": "摩崖题刻",
+      "title": "Mo Ya Ti Ke",
       "dist": 3567,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "摩崖题刻"
     },
     {
-      "title": "龙门浩月",
+      "title": "Long Men Hao Yue",
       "dist": 3661,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "龙门浩月"
     },
     {
-      "title": "金山古城",
+      "title": "Jin Shan Gu Cheng",
       "dist": 4161,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "金山古城"
     },
     {
-      "title": "字水霄灯",
+      "title": "Zi Shui Xiao Deng",
       "dist": 4413,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "字水霄灯"
     },
     {
-      "title": "禹王遗踪",
+      "title": "Yu Wang Yi Zong",
       "dist": 5113,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "禹王遗踪"
     },
     {
-      "title": "兔子楼",
+      "title": "Tu Zi Lou",
       "dist": 5513,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "兔子楼"
     },
     {
-      "title": "大金鹰",
+      "title": "Da Jin Ying",
       "dist": 6149,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "大金鹰"
     },
     {
-      "title": "小熊猫",
+      "title": "Xiao Xiong Mao",
       "dist": 6476,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "小熊猫"
     },
     {
-      "title": "大熊猫",
+      "title": "Da Xiong Mao",
       "dist": 6534,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "大熊猫"
     },
     {
-      "title": "羚羊",
+      "title": "Ling Yang",
       "dist": 6586,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "羚羊"
     }
   ],
   "majorCities": [],
@@ -2122,14 +2137,15 @@
       "mapsUrl": "https://maps.google.com/?cid=6015381888217188450&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "长江国际",
+      "title": "Zhang Jiang Guo Ji",
       "rating": 4.9,
       "ratingCount": 404,
       "types": [
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=7993408691189020072&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=7993408691189020072&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "localName": "长江国际"
     },
     {
       "title": "Conrad Chongqing",
@@ -2169,7 +2185,7 @@
       "mapsUrl": "https://maps.google.com/?cid=2873341234031452059&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     },
     {
-      "title": "重庆工商大学",
+      "title": "Zhong Qing Gong Shang Da Xue",
       "rating": 4.4,
       "ratingCount": 61,
       "types": [
@@ -2178,7 +2194,8 @@
         "point_of_interest",
         "establishment"
       ],
-      "mapsUrl": "https://maps.google.com/?cid=9464984960836818309&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+      "mapsUrl": "https://maps.google.com/?cid=9464984960836818309&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+      "localName": "重庆工商大学"
     },
     {
       "title": "Pont de Shibanpo",
@@ -2229,5 +2246,6 @@
       "mapsUrl": "https://maps.google.com/?cid=18369795883280623125&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

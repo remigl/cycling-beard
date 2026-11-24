@@ -2657,32 +2657,36 @@
   "weather": null,
   "pois": [
     {
-      "title": "Сәулет ескерткіші",
+      "title": "Saulet eskertkishi",
       "dist": 3878,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Сәулет ескерткіші"
     },
     {
-      "title": "Түйе керуені",
+      "title": "Tuye kerueni",
       "dist": 3920,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Түйе керуені"
     },
     {
-      "title": "«Әзірет Сұлтан» Ұлттық тарихи-мәдени музей-қорығы",
+      "title": "<<Aziret Sultan>> Ulttyq tarikhi-madeni muzey-qoryghy",
       "dist": 3680,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "Әзірет Сұлтан қорық-мұражайы"
+      "wikiTitle": "Әзірет Сұлтан қорық-мұражайы",
+      "localName": "«Әзірет Сұлтан» Ұлттық тарихи-мәдени музей-қорығы"
     },
     {
-      "title": "Шығыс Моншасы",
+      "title": "Shyghys Monshasy",
       "dist": 4011,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Шығыс Моншасы"
     },
     {
       "title": "Mausolée de Khoja Ahmed Yasavi",
@@ -2692,74 +2696,84 @@
       "wikiTitle": "Mausoleum of Khoja Ahmed Yasawi"
     },
     {
-      "title": "Этнографиялық Мұражай",
+      "title": "Etnografiyalyq Murazhay",
       "dist": 4096,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Этнографиялық Мұражай"
     },
     {
-      "title": "\"Әзірет Сұлтан\" Ұлттық Тарихи-Мәдени Мұражай Қорығы",
+      "title": "\"Aziret Sultan\" Ulttyq Tarikhi-Madeni Murazhay Qoryghy",
       "dist": 4116,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "\"Әзірет Сұлтан\" Ұлттық Тарихи-Мәдени Мұражай Қорығы"
     },
     {
-      "title": "Қожа Ахмет Ясауи мұражайы",
+      "title": "Qozha Akhmet Yasaui murazhayy",
       "dist": 4146,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Қожа Ахмет Ясауи мұражайы"
     },
     {
-      "title": "Ұлы Дала Елі Мұражайы",
+      "title": "Uly Dala Eli Murazhayy",
       "dist": 4254,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Ұлы Дала Елі Мұражайы"
     },
     {
-      "title": "Түркістан Мұражайы",
+      "title": "Turkistan Murazhayy",
       "dist": 4302,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Түркістан Мұражайы"
     },
     {
-      "title": "Тұңғыш Президент Мұражайы",
+      "title": "Tungghysh Prezident Murazhayy",
       "dist": 4445,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Тұңғыш Президент Мұражайы"
     },
     {
-      "title": "Назир Торекулулы музей",
+      "title": "Nazir Torekululy muzey",
       "dist": 4611,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Назир Торекулулы музей"
     },
     {
-      "title": "Музей туркологии имени Б.Кенжебайулы",
+      "title": "Muzey turkologii imeni B.Kenzhebayuly",
       "dist": 5324,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Музей туркологии имени Б.Кенжебайулы"
     },
     {
-      "title": "Памятник М.Пошанов",
+      "title": "Pamyatnik M.Poshanov",
       "dist": 1754,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Памятник М.Пошанов"
     },
     {
-      "title": "Памятник Абылай хан",
+      "title": "Pamyatnik Abylay khan",
       "dist": 1766,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "Памятник Абылай хан"
     }
   ],
   "majorCities": [],
@@ -2894,5 +2908,6 @@
       "mapsUrl": "https://maps.google.com/?cid=10646542462955620947&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

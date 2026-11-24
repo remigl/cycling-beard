@@ -6598,7 +6598,166 @@
     "Bratislava",
     "Hainburg an der Donau"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Danubiana Meulensteen Art Museum",
+      "rating": 4.8,
+      "ratingCount": 5083,
+      "types": [
+        "art_museum",
+        "tourist_attraction",
+        "art_gallery",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5636670677123235870&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Gatto Matto Trattoria",
+      "rating": 4.8,
+      "ratingCount": 2459,
+      "types": [
+        "restaurant",
+        "italian_restaurant",
+        "meal_delivery",
+        "food_delivery",
+        "european_restaurant",
+        "family_restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11476515094313223547&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "X-BIONIC SPHERE",
+      "rating": 4.7,
+      "ratingCount": 5867,
+      "types": [
+        "sports_complex",
+        "tourist_attraction",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10865005804684648622&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Veľké Čunovské jazero",
+      "rating": 4.7,
+      "ratingCount": 735,
+      "types": [
+        "hiking_area",
+        "tourist_attraction",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15268090040839478432&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tri point AT/HU/SK",
+      "rating": 4.5,
+      "ratingCount": 1365,
+      "types": [
+        "tourist_attraction",
+        "hiking_area",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1357120610796640579&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Čunovo Water Sports Centre",
+      "rating": 4.5,
+      "ratingCount": 994,
+      "types": [
+        "athletic_field",
+        "campground",
+        "hotel",
+        "lodging",
+        "sports_activity_location",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8422923313419679837&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "x-bionic® aquatic sphere",
+      "rating": 4.5,
+      "ratingCount": 636,
+      "types": [
+        "sports_complex",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13191892982976698101&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Sári Csárda Panzió és Rendezvényközpont",
+      "rating": 4.4,
+      "ratingCount": 3107,
+      "types": [
+        "hungarian_restaurant",
+        "event_venue",
+        "european_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13531146536057346184&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ponteo Activity Park",
+      "rating": 4.4,
+      "ratingCount": 874,
+      "types": [
+        "hotel",
+        "fitness_center",
+        "gym",
+        "convention_center",
+        "bowling_alley",
+        "playground",
+        "tennis_court",
+        "lodging",
+        "athletic_field",
+        "sports_complex",
+        "spa",
+        "event_venue",
+        "sports_activity_location",
+        "health",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=572090149420746766&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Kaufland",
+      "rating": 4.2,
+      "ratingCount": 2335,
+      "types": [
+        "supermarket",
+        "discount_supermarket",
+        "bakery",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7698261858229134252&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "bryndzové halušky",
@@ -6630,5 +6789,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Balk%C3%A1nsk%C3%BD%20s%C3%BDr%20pou%C5%BE%C3%ADvan%C3%BD%20ve%20studen%C3%A9%20kuchyni%2003.jpg",
       "wikipedia": "https://en.wikipedia.org/wiki/Balk%C3%A1nsk%C3%BD_s%C3%BDr"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

@@ -952,7 +952,128 @@
   "highlights": [],
   "tags": [],
   "weather": null,
-  "pois": [],
+  "pois": [
+    {
+      "title": "Residence of the President of the Republic of Kazakhstan",
+      "localName": "Қазақстан Республикасы Президентінің Резиденциясы",
+      "dist": 850,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Palace of Schoolchildren",
+      "localName": null,
+      "dist": 1402,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": "Алматинский дворец школьников"
+    },
+    {
+      "title": "Verniy Fortress",
+      "localName": "Бекініс",
+      "dist": 5594,
+      "kind": "Château / fort",
+      "rank": 10,
+      "wikiTitle": "Верненская крепость"
+    },
+    {
+      "title": "Rotonda",
+      "localName": "Ротонда",
+      "dist": 7179,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "Sunkar Falcon Center",
+      "localName": "Соколиный центр Сункар",
+      "dist": 11547,
+      "kind": "Attraction",
+      "rank": 10,
+      "wikiTitle": null
+    },
+    {
+      "title": "The One",
+      "localName": null,
+      "dist": 361,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Historical museum",
+      "localName": "Тарихи Мұражай",
+      "dist": 2359,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Biological museum",
+      "localName": "Биологиялық Мұражай",
+      "dist": 2452,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": null
+    },
+    {
+      "title": "Dinmukhamed Kunayev Apartment Museum",
+      "localName": "Дінмұхамед Қонаев Пәтер Мұражайы",
+      "dist": 2903,
+      "kind": "Musée",
+      "rank": 9,
+      "wikiTitle": "Дом-музей Кунаева"
+    },
+    {
+      "title": "Nurgisa Tilendiev",
+      "localName": "Нұрғиса Тілендиев",
+      "dist": 871,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Golden Warrior",
+      "localName": "Алтын адам",
+      "dist": 1391,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Тәуелсіздік монументі (Алматы)"
+    },
+    {
+      "title": "G. Muratbaev eskertkishi",
+      "localName": "Г. Мұратбаев ескерткіші",
+      "dist": 1489,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Muqan Tolebaev",
+      "localName": "Мұқан Төлебаев",
+      "dist": 1810,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    },
+    {
+      "title": "Abay monument",
+      "localName": "Абай Ескерткіші",
+      "dist": 1909,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": "Памятник Абаю Кунанбаеву (Алма-Ата)"
+    },
+    {
+      "title": "Fat Lady",
+      "localName": null,
+      "dist": 1962,
+      "kind": "Monument / ruines",
+      "rank": 8,
+      "wikiTitle": null
+    }
+  ],
   "majorCities": [],
   "topRatedPlaces": [
     {
@@ -1089,5 +1210,6 @@
       "mapsUrl": "https://maps.google.com/?cid=7140487183250033297&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

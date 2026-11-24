@@ -1054,7 +1054,8 @@
   "weather": null,
   "pois": [
     {
-      "title": "情報通信交流館 e-とぴあ・かがわ",
+      "title": "Information and Communication Exchange Center e-topia Kagawa",
+      "localName": "情報通信交流館 e-とぴあ・かがわ",
       "dist": 911,
       "kind": "Attraction",
       "rank": 10,
@@ -1062,55 +1063,63 @@
     },
     {
       "title": "Château de Takamatsu",
+      "localName": "高松城",
       "dist": 1142,
       "kind": "Château / fort",
       "rank": 10,
       "wikiTitle": "高松城 (讃岐国)"
     },
     {
-      "title": "高松市歴史資料館",
+      "title": "Takamatsu Historical Archive",
+      "localName": "高松市歴史資料館",
       "dist": 583,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": null
     },
     {
-      "title": "香川県文化会館",
+      "title": "Xiang Chuan Xian Wen Hua Hui Guan",
+      "localName": "香川県文化会館",
       "dist": 960,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": null
     },
     {
-      "title": "香川県立ミュージアム",
+      "title": "The Kagawa Museum",
+      "localName": "香川県立ミュージアム",
       "dist": 1402,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": "香川県立ミュージアム"
     },
     {
-      "title": "高松市鬼ヶ島おにの館",
+      "title": "Onigashima Oninoyakata Museum",
+      "localName": "高松市鬼ヶ島おにの館",
       "dist": 4745,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": null
     },
     {
-      "title": "イサム・ノグチ庭園美術館 (Isamu Noguchi Garden Museum)",
+      "title": "isamu-noguchi Ting Yuan Mei Shu Guan (Isamu Noguchi Garden Museum)",
+      "localName": "イサム・ノグチ庭園美術館 (Isamu Noguchi Garden Museum)",
       "dist": 8016,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": "イサム・ノグチ庭園美術館"
     },
     {
-      "title": "瀬戸内海歴史民俗資料館",
+      "title": "Lai Hu Nei Hai Li Shi Min Su Zi Liao Guan",
+      "localName": "瀬戸内海歴史民俗資料館",
       "dist": 10361,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": null
     },
     {
-      "title": "香川県自然科学館",
+      "title": "Xiang Chuan Xian Zi Ran Ke Xue Guan",
+      "localName": "香川県自然科学館",
       "dist": 10622,
       "kind": "Musée",
       "rank": 9,
@@ -1118,41 +1127,47 @@
     },
     {
       "title": "Benesse House Beach",
+      "localName": null,
       "dist": 11689,
       "kind": "Musée",
       "rank": 9,
       "wikiTitle": null
     },
     {
-      "title": "ハゲさん",
+      "title": "hagesan",
+      "localName": "ハゲさん",
       "dist": 1143,
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null
     },
     {
-      "title": "漆芸家 玉楮象谷(たまかじぞうこく)の像",
+      "title": "Qi Yun Jia Yu Chu Xiang Gu(tamakajizoukoku)no Xiang",
+      "localName": "漆芸家 玉楮象谷(たまかじぞうこく)の像",
       "dist": 1205,
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null
     },
     {
-      "title": "國東照太翁像",
+      "title": "Guo Dong Zhao Tai Weng Xiang",
+      "localName": "國東照太翁像",
       "dist": 1226,
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null
     },
     {
-      "title": "竣工記念碑",
+      "title": "Jun Gong Ji Nian Bei",
+      "localName": "竣工記念碑",
       "dist": 4794,
       "kind": "Monument / ruines",
       "rank": 8,
       "wikiTitle": null
     },
     {
-      "title": "長池の碑",
+      "title": "Zhang Chino Bei",
+      "localName": "長池の碑",
       "dist": 5495,
       "kind": "Monument / ruines",
       "rank": 8,
@@ -1291,5 +1306,6 @@
       "mapsUrl": "https://maps.google.com/?cid=2177612574103133750&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

@@ -22,43 +22,18 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "Anja et Sandro",
   "thanksTranslations": {
+    "fr": "Anja et Sandro",
     "en": "Anja et Sandro",
     "es": "Anja et Sandro",
     "it": "Anja et Sandro",
     "de": "Anja et Sandro",
-    "nl": "Anja et Sandro",
-    "fr": "Anja et Sandro"
+    "nl": "Anja et Sandro"
   },
   "photos": [
     {
@@ -15911,7 +15886,153 @@
     "Mulhouse",
     "Rheinfelden (Baden)"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Feldschlösschen Brauwelt",
+      "rating": 4.8,
+      "ratingCount": 1175,
+      "types": [
+        "visitor_center",
+        "tourist_information_center",
+        "tour_agency",
+        "travel_agency",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13624325072950349673&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "MyPaketshop",
+      "rating": 4.8,
+      "ratingCount": 807,
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17880694109577215460&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Mini Mix 46 GmbH, Rheinfelden",
+      "rating": 4.7,
+      "ratingCount": 669,
+      "types": [
+        "supermarket",
+        "grocery_store",
+        "point_of_interest",
+        "food_store",
+        "store",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16360066674772139555&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "sole uno",
+      "rating": 4.5,
+      "ratingCount": 5192,
+      "types": [
+        "wellness_center",
+        "sauna",
+        "public_bath",
+        "spa",
+        "point_of_interest",
+        "health",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7122553504167237580&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "China Restaurant Ginza",
+      "rating": 4.5,
+      "ratingCount": 1835,
+      "types": [
+        "chinese_restaurant",
+        "barbecue_restaurant",
+        "buffet_restaurant",
+        "asian_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5547601247508800956&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "REWE",
+      "rating": 4.3,
+      "ratingCount": 1252,
+      "types": [
+        "supermarket",
+        "grocery_store",
+        "point_of_interest",
+        "food_store",
+        "store",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1531457709158494000&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Bahnhof SBB",
+      "rating": 4.3,
+      "ratingCount": 132,
+      "types": [
+        "train_ticket_office",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13890391445882697352&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Château de Beuggen",
+      "rating": 4.2,
+      "ratingCount": 1130,
+      "types": [
+        "castle",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9637311079495377774&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "dm-drogerie markt",
+      "rating": 4.2,
+      "ratingCount": 279,
+      "types": [
+        "drugstore",
+        "cosmetics_store",
+        "grocery_store",
+        "clothing_store",
+        "point_of_interest",
+        "food_store",
+        "store",
+        "food",
+        "health",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15775470968161433930&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Kaufland Rheinfelden",
+      "rating": 4.1,
+      "ratingCount": 4034,
+      "types": [
+        "supermarket",
+        "discount_supermarket",
+        "grocery_store",
+        "bakery",
+        "point_of_interest",
+        "food_store",
+        "store",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13270133535098454004&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "muesli",
@@ -15973,5 +16094,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Totche.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Totch%C3%A9"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

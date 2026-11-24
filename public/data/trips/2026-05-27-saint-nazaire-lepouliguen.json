@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Camping+du+Clein,+22+Av.+de+Kerdun,+44510+Le+Pouliguen/data=!4m2!3m1!1s0x48055b4a069bea63:0xdf3b91f67c9d3f3a!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=510968ac-14f1-4b7a-b613-593e2833c31a&g_st=ac",
@@ -8747,7 +8722,161 @@
     "La Baule-Escoublac",
     "Saint-Brevin-les-Pins"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Cité Médiévale de Guérande",
+      "rating": 4.7,
+      "ratingCount": 3698,
+      "types": [
+        "historical_landmark",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13377248176979003171&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Hôtel Barrière L'Hermitage La Baule",
+      "rating": 4.6,
+      "ratingCount": 1181,
+      "types": [
+        "hotel",
+        "bar",
+        "wedding_venue",
+        "event_venue",
+        "lodging",
+        "spa",
+        "educational_institution",
+        "restaurant",
+        "association_or_organization",
+        "point_of_interest",
+        "food",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12649006821130094880&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "LA BAULE ESCOUBLAC l hermitage",
+      "rating": 4.6,
+      "ratingCount": 131,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6432441290079550139&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "GUERANDE / Office de Tourisme La Baule - Presqu'île de Guérande",
+      "rating": 4.5,
+      "ratingCount": 642,
+      "types": [
+        "tourist_information_center",
+        "visitor_center",
+        "gift_shop",
+        "tour_agency",
+        "travel_agency",
+        "point_of_interest",
+        "store",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14030303781825663096&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Océarium du Croisic",
+      "rating": 4.4,
+      "ratingCount": 13030,
+      "types": [
+        "aquarium",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11251308592660605258&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Terre de sel",
+      "rating": 4.4,
+      "ratingCount": 7923,
+      "types": [
+        "historical_landmark",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=17072961178086707838&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Nina à la Plage",
+      "rating": 4.4,
+      "ratingCount": 7451,
+      "types": [
+        "seafood_restaurant",
+        "vegetarian_restaurant",
+        "bar",
+        "educational_institution",
+        "french_restaurant",
+        "european_restaurant",
+        "restaurant",
+        "association_or_organization",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16403010958864032746&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Domaine de Léveno",
+      "rating": 4.4,
+      "ratingCount": 2549,
+      "types": [
+        "campground",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14056880775118923760&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "RELAIS THALASSO Pornichet I Château des Tourelles - Hôtel Spa",
+      "rating": 4.3,
+      "ratingCount": 3262,
+      "types": [
+        "hotel",
+        "brunch_restaurant",
+        "massage_spa",
+        "swimming_pool",
+        "lodging",
+        "spa",
+        "massage",
+        "french_restaurant",
+        "european_restaurant",
+        "restaurant",
+        "sports_activity_location",
+        "point_of_interest",
+        "food",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=4583417703582745547&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "La Baule-Escoublac",
+      "rating": 4.2,
+      "ratingCount": 202,
+      "types": [
+        "train_station",
+        "transit_station",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14049009479763209257&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -8859,5 +8988,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

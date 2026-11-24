@@ -1412,109 +1412,124 @@
   "weather": null,
   "pois": [
     {
-      "title": "岩屋巨石 岩屋荒神社",
+      "title": "Yan Wu Ju Shi Yan Wu Huang Shen She",
       "dist": 935,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "岩屋巨石 岩屋荒神社"
     },
     {
-      "title": "大正天皇御大典記念樅ノ木",
+      "title": "Da Zheng Tian Huang Yu Da Dian Ji Nian Congno Mu",
       "dist": 1173,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "大正天皇御大典記念樅ノ木"
     },
     {
-      "title": "ゴーカート",
+      "title": "gokato",
       "dist": 9121,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "ゴーカート"
     },
     {
-      "title": "いつか来た道",
+      "title": "itsuka Laita Dao",
       "dist": 9188,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "いつか来た道"
     },
     {
-      "title": "おのみち歴史博物館",
+      "title": "onomichi Li Shi Bo Wu Guan",
       "dist": 182,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "おのみち歴史博物館"
     },
     {
-      "title": "中村憲吉旧居",
+      "title": "Zhong Cun Xian Ji Jiu Ju",
       "dist": 416,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "中村憲吉"
+      "wikiTitle": "中村憲吉",
+      "localName": "中村憲吉旧居"
     },
     {
-      "title": "浄土寺宝物館",
+      "title": "Jing Tu Si Bao Wu Guan",
       "dist": 713,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "浄土寺宝物館"
     },
     {
-      "title": "芙美子記念館",
+      "title": "Fu Mei Zi Ji Nian Guan",
       "dist": 752,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "芙美子記念館"
     },
     {
-      "title": "山波とんど&こけしの館",
+      "title": "Shan Botondo&kokeshino Guan",
       "dist": 2610,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "山波とんど&こけしの館"
     },
     {
-      "title": "市民ギャラリー",
+      "title": "Shi Mingiyarari",
       "dist": 2647,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "市民ギャラリー"
     },
     {
-      "title": "大浜埼灯台記念館（旧大浜崎通航潮流信号所）",
+      "title": "Da Bang Qi Deng Tai Ji Nian Guan(Jiu Da Bang Qi Tong Hang Chao Liu Xin Hao Suo)",
       "dist": 6321,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "大浜埼灯台記念館（旧大浜崎通航潮流信号所）"
     },
     {
-      "title": "因島水軍城",
+      "title": "Yin Dao Shui Jun Cheng",
       "dist": 9602,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "因島水軍城"
+      "wikiTitle": "因島水軍城",
+      "localName": "因島水軍城"
     },
     {
-      "title": "尾道市因島史料館",
+      "title": "Wei Dao Shi Yin Dao Shi Liao Guan",
       "dist": 9694,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "尾道市因島史料館"
     },
     {
-      "title": "弥勒之里美術館",
+      "title": "Mi Lei Zhi Li Mei Shu Guan",
       "dist": 9912,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "弥勒之里美術館"
     },
     {
-      "title": "奉行所跡",
+      "title": "Feng Xing Suo Ji",
       "dist": 541,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "奉行所跡"
     }
   ],
   "majorCities": [],
@@ -1660,5 +1675,6 @@
       "mapsUrl": "https://maps.google.com/?cid=365953885848663383&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

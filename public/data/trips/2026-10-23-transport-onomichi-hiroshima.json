@@ -1459,11 +1459,12 @@
   "weather": null,
   "pois": [
     {
-      "title": "白神社の岩礁",
+      "title": "Bai Shen Sheno Yan Jiao",
       "dist": 1908,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "白神社の岩礁"
     },
     {
       "title": "Musée d'art contemporain de Hiroshima",
@@ -1473,60 +1474,68 @@
       "wikiTitle": "広島市現代美術館"
     },
     {
-      "title": "頼山陽史跡資料館",
+      "title": "Lai Shan Yang Shi Ji Zi Liao Guan",
       "dist": 1773,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "頼山陽史跡資料館"
+      "wikiTitle": "頼山陽史跡資料館",
+      "localName": "頼山陽史跡資料館"
     },
     {
-      "title": "広島市水道資料館",
+      "title": "Guang Dao Shi Shui Dao Zi Liao Guan",
       "dist": 2098,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "広島市水道資料館"
     },
     {
-      "title": "広島市健康づくりセンター健康科学館",
+      "title": "Guang Dao Shi Jian Kangzukurisenta Jian Kang Ke Xue Guan",
       "dist": 3003,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "広島市健康づくりセンター健康科学館"
     },
     {
-      "title": "府中町歴史民俗資料館",
+      "title": "Fu Zhong Ting Li Shi Min Su Zi Liao Guan",
       "dist": 3208,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "府中町歴史民俗資料館"
     },
     {
-      "title": "江波山気象館",
+      "title": "Jiang Bo Shan Qi Xiang Guan",
       "dist": 5144,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "広島市江波山気象館"
+      "wikiTitle": "広島市江波山気象館",
+      "localName": "江波山気象館"
     },
     {
-      "title": "泉美術館",
+      "title": "Quan Mei Shu Guan",
       "dist": 7407,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "泉美術館"
     },
     {
-      "title": "ヌマジ交通ミュージアム（広島市交通科学館｝",
+      "title": "numaji Jiao Tongmiyujiamu(Guang Dao Shi Jiao Tong Ke Xue Guan}",
       "dist": 8950,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "Hiroshima City Transportation Museum"
+      "wikiTitle": "Hiroshima City Transportation Museum",
+      "localName": "ヌマジ交通ミュージアム（広島市交通科学館｝"
     },
     {
-      "title": "筆の里工房",
+      "title": "Bino Li Gong Fang",
       "dist": 11252,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "筆の里工房"
+      "wikiTitle": "筆の里工房",
+      "localName": "筆の里工房"
     },
     {
       "title": "Cénotaphe du mémorial pour les victimes de la bombe",
@@ -1536,32 +1545,36 @@
       "wikiTitle": "原爆死没者慰霊碑"
     },
     {
-      "title": "日本発送電株式会社中国支店 原爆殉職者慰霊碑",
+      "title": "Ri Ben Fa Song Dian Zhu Shi Hui She Zhong Guo Zhi Dian Yuan Bao Xun Zhi Zhe Wei Ling Bei",
       "dist": 2426,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "日本発送電株式会社中国支店 原爆殉職者慰霊碑"
     },
     {
-      "title": "万代橋親柱",
+      "title": "Wan Dai Qiao Qin Zhu",
       "dist": 2479,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "万代橋親柱"
     },
     {
-      "title": "興南寮跡",
+      "title": "Xing Nan Liao Ji",
       "dist": 2571,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "興南寮跡"
     },
     {
-      "title": "鉄道遭難者追弔塔",
+      "title": "Zhi Dao Zao Nan Zhe Zhui Diao Ta",
       "dist": 8313,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "鉄道遭難者追弔塔"
     }
   ],
   "majorCities": [],
@@ -1696,5 +1709,6 @@
       "mapsUrl": "https://maps.google.com/?cid=12971200217189007863&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

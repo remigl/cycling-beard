@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "https://www.google.com/maps/place/Camping+Terre+de+Loire,+6+route+du,+6+Port+Saint-Maur+route+du,+49250+La+M%C3%A9nitr%C3%A9/data=!4m2!3m1!1s0x4807e15967645c8d:0x2b33091340191ec9!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjIxLjEYACCenQoqiwEsOTQyNjc3MjcsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA3OTY1MzUsOTQyODA1NzYsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsOTQyNzk2MTksMTAwODE1NjM1QgJGUg%3D%3D&skid=51510666-4544-4cfb-be24-15fa3edb56ab&g_st=ac",
@@ -19166,7 +19141,159 @@
     "Les Ponts-de-Cé",
     "Ancenis-Saint-Géréon"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Casa Mila Loire",
+      "rating": 5,
+      "ratingCount": 1235,
+      "types": [
+        "hotel",
+        "bed_and_breakfast",
+        "cottage",
+        "guest_house",
+        "lodging",
+        "spa",
+        "swimming_pool",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6306729484256141973&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "L'Hélice Terrestre de l'Orbière",
+      "rating": 4.7,
+      "ratingCount": 418,
+      "types": [
+        "art_museum",
+        "tourist_attraction",
+        "museum",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9412450614789272321&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "L'Embarcadère",
+      "rating": 4.6,
+      "ratingCount": 478,
+      "types": [
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3366640226880483092&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Guinguette La Dérive",
+      "rating": 4.6,
+      "ratingCount": 282,
+      "types": [
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2990402312766183481&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Vilmorin-Mikado France",
+      "rating": 4.6,
+      "ratingCount": 69,
+      "types": [
+        "supplier",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=359537122275777059&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Camping Au Bord de Loire",
+      "rating": 4.5,
+      "ratingCount": 718,
+      "types": [
+        "campground",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6248072637048054183&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Guinguette La Riviera",
+      "rating": 4.4,
+      "ratingCount": 1326,
+      "types": [
+        "french_restaurant",
+        "european_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7074578158639324774&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "La Route du Sel",
+      "rating": 4.4,
+      "ratingCount": 1010,
+      "types": [
+        "french_restaurant",
+        "wine_bar",
+        "european_restaurant",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14730608535069127373&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Camping Yelloh! Village Les Voiles d'Anjou",
+      "rating": 4.3,
+      "ratingCount": 788,
+      "types": [
+        "campground",
+        "rv_park",
+        "lodging",
+        "travel_agency",
+        "swimming_pool",
+        "bar",
+        "real_estate_agency",
+        "sports_activity_location",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14660809765167323492&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Action Beaufort-Vallée",
+      "rating": 4.2,
+      "ratingCount": 232,
+      "types": [
+        "discount_store",
+        "general_store",
+        "warehouse_store",
+        "gift_shop",
+        "pet_store",
+        "home_goods_store",
+        "food_store",
+        "supplier",
+        "manufacturer",
+        "food",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1577015368110415730&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "mayonnaise",
@@ -19278,5 +19405,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Munster%2001.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Munster_(fromage)"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

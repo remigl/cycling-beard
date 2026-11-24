@@ -22,43 +22,18 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "Anita et Martin",
   "thanksTranslations": {
+    "fr": "Anita et Martin",
     "en": "Anita et Martin",
     "es": "Anita et Martin",
     "it": "Anita et Martin",
     "de": "Anita et Martin",
-    "nl": "Anita et Martin",
-    "fr": "Anita et Martin"
+    "nl": "Anita et Martin"
   },
   "photos": [
     {
@@ -6787,7 +6762,153 @@
     "Nouvelle-Ulm",
     "Ehingen (Donau)"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Église principale d'Ulm",
+      "rating": 4.7,
+      "ratingCount": 21403,
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=563598184726075166&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ulmer Rathaus",
+      "rating": 4.7,
+      "ratingCount": 628,
+      "types": [
+        "city_hall",
+        "tourist_attraction",
+        "local_government_office",
+        "government_office",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5572898287043532276&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "ROXY Ulm | Kulturzentrum",
+      "rating": 4.6,
+      "ratingCount": 2112,
+      "types": [
+        "event_venue",
+        "concert_hall",
+        "live_music_venue",
+        "auditorium",
+        "performing_arts_theater",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14362038583661956953&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Tiergarten Ulm",
+      "rating": 4.5,
+      "ratingCount": 7944,
+      "types": [
+        "zoo",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10565017856404104176&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Abbaye de Wiblingen",
+      "rating": 4.5,
+      "ratingCount": 683,
+      "types": [
+        "tourist_attraction",
+        "library",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6944994314485179099&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Maritim Hotel Ulm",
+      "rating": 4.4,
+      "ratingCount": 4034,
+      "types": [
+        "hotel",
+        "lodging",
+        "event_venue",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12304265366521749598&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ratiopharm Arena",
+      "rating": 4.4,
+      "ratingCount": 3680,
+      "types": [
+        "arena",
+        "event_venue",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10523876665584319845&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Parkhaus am Rathaus",
+      "rating": 4.4,
+      "ratingCount": 1371,
+      "types": [
+        "parking_garage",
+        "parking_lot",
+        "parking",
+        "transportation_service",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8632965845316603781&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Parkhaus Deutschhaus",
+      "rating": 4.3,
+      "ratingCount": 1026,
+      "types": [
+        "parking_garage",
+        "parking_lot",
+        "parking",
+        "transportation_service",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10106281955437600680&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Furniture Inhofer GmbH & Co. KG",
+      "rating": 4.2,
+      "ratingCount": 9021,
+      "types": [
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "building_materials_store",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=7303474624393952786&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "hamburger",
@@ -6874,5 +6995,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

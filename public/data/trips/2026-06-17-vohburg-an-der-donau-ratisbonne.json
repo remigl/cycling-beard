@@ -22,43 +22,18 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "Uli et Christian",
   "thanksTranslations": {
+    "fr": "Uli et Christian",
     "en": "Uli et Christian",
     "es": "Uli et Christian",
     "it": "Uli et Christian",
     "de": "Uli et Christian",
-    "nl": "Uli et Christian",
-    "fr": "Uli et Christian"
+    "nl": "Uli et Christian"
   },
   "photos": [
     {
@@ -6669,7 +6644,148 @@
     "Kelheim",
     "Neustadt an der Donau"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Pont de pierre",
+      "rating": 4.7,
+      "ratingCount": 13578,
+      "types": [
+        "historical_landmark",
+        "bridge",
+        "tourist_attraction",
+        "historical_place",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=13529046405274414298&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Cathédrale Saint-Pierre de Ratisbonne",
+      "rating": 4.7,
+      "ratingCount": 10748,
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9693286626309092383&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Parkhaus Petersweg",
+      "rating": 4.6,
+      "ratingCount": 1320,
+      "types": [
+        "parking_garage",
+        "parking_lot",
+        "parking",
+        "transportation_service",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12401107479352914050&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Donau-Einkaufszentrum",
+      "rating": 4.5,
+      "ratingCount": 13059,
+      "types": [
+        "shopping_mall",
+        "womens_clothing_store",
+        "clothing_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2787186921598377953&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Usine BMW de Regensburg",
+      "rating": 4.5,
+      "ratingCount": 1262,
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3762171090670207066&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Schloss St. Emmeram, Thurn und Taxis",
+      "rating": 4.4,
+      "ratingCount": 4432,
+      "types": [
+        "castle",
+        "tourist_attraction",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10545762780594351465&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Jahnstadion Regensburg",
+      "rating": 4.4,
+      "ratingCount": 3960,
+      "types": [
+        "stadium",
+        "sports_complex",
+        "event_venue",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1174731925487426285&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Regensburg Arcaden",
+      "rating": 4.3,
+      "ratingCount": 13190,
+      "types": [
+        "shopping_mall",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=5577409449209048704&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Donau Arena",
+      "rating": 4.3,
+      "ratingCount": 2203,
+      "types": [
+        "ice_skating_rink",
+        "concert_hall",
+        "live_music_venue",
+        "auditorium",
+        "sports_complex",
+        "event_venue",
+        "sports_activity_location",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=16025430050289081775&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "IKEA Regensburg",
+      "rating": 4.2,
+      "ratingCount": 9788,
+      "types": [
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "supplier",
+        "building_materials_store",
+        "point_of_interest",
+        "service",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11737114457435250952&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "hamburger",
@@ -6756,5 +6872,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Saumagen%20mit%20Sauerkraut.JPG",
       "wikipedia": "https://fr.wikipedia.org/wiki/Pf%C3%A4lzer_Saumagen"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }

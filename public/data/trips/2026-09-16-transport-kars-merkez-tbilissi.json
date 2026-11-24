@@ -4798,18 +4798,20 @@
   "weather": null,
   "pois": [
     {
-      "title": "ქართული ხალხური სიმღერისა და საკრავების სახელმწიფო მუზეუმი",
+      "title": "kartuli khalkhuri simgherisa da sak'ravebis sakhelmts'ipo muzeumi",
       "dist": 66,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "ქართული ხალხური სიმღერისა და საკრავების სახელმწიფო მუზეუმი"
     },
     {
-      "title": "თბილისის ისტორიულ-ეთნოგრაფიული მუზეუმი",
+      "title": "tbilisis ist'oriul-etnograpiuli muzeumi",
       "dist": 155,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "თბილისის ისტორიულ-ეთნოგრაფიული მუზეუმი"
+      "wikiTitle": "თბილისის ისტორიულ-ეთნოგრაფიული მუზეუმი",
+      "localName": "თბილისის ისტორიულ-ეთნოგრაფიული მუზეუმი"
     },
     {
       "title": "Musée des beaux-arts Shalva Amiranashvili",
@@ -4833,74 +4835,84 @@
       "wikiTitle": "საქართველოს ეროვნული მუზეუმი"
     },
     {
-      "title": "ლადო გუდიაშვილის სახელობის გალერეა",
+      "title": "lado gudiashvilis sakhelobis galerea",
       "dist": 1110,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "ლადო გუდიაშვილის სახელობის გალერეა"
     },
     {
-      "title": "გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი",
+      "title": "giorgi leonidzis sakhelobis kartuli lit'erat'uris sakhelmts'ipo muzeumi",
       "dist": 1319,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": "საქართველოს გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი"
+      "wikiTitle": "საქართველოს გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი",
+      "localName": "გიორგი ლეონიძის სახელობის ქართული ლიტერატურის სახელმწიფო მუზეუმი"
     },
     {
-      "title": "ილია ჭავჭავაძის ლიტერატურულ-მემორიალური მუზეუმი",
+      "title": "ilia ch'avch'avadzis lit'erat'urul-memorialuri muzeumi",
       "dist": 1573,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "ილია ჭავჭავაძის ლიტერატურულ-მემორიალური მუზეუმი"
     },
     {
-      "title": "ელენე ახვლედიანის სახლ-მუსეუმი",
+      "title": "elene akhvledianis sakhl-museumi",
       "dist": 2322,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "ელენე ახვლედიანის სახლ-მუსეუმი"
     },
     {
-      "title": "ნიკო ფიროსმანაშვილის სახელმწიფო მუზეუმი",
+      "title": "nik'o pirosmanashvilis sakhelmts'ipo muzeumi",
       "dist": 3264,
       "kind": "Musée",
       "rank": 9,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "ნიკო ფიროსმანაშვილის სახელმწიფო მუზეუმი"
     },
     {
-      "title": "სოფიკო ჭიაურელი",
+      "title": "sopik'o ch'iaureli",
       "dist": 141,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": "Памятник Софико Чиаурели"
+      "wikiTitle": "Памятник Софико Чиаурели",
+      "localName": "სოფიკო ჭიაურელი"
     },
     {
-      "title": "ალექსანდრე პუშკინი",
+      "title": "aleksandre p'ushk'ini",
       "dist": 769,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": "ალექსანდრე პუშკინის ბიუსტი თბილისში"
+      "wikiTitle": "ალექსანდრე პუშკინის ბიუსტი თბილისში",
+      "localName": "ალექსანდრე პუშკინი"
     },
     {
-      "title": "ნიკოლოზ ბარათაშვილი",
+      "title": "nik'oloz baratashvili",
       "dist": 816,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "ნიკოლოზ ბარათაშვილი"
     },
     {
-      "title": "გრიგოლ აბაშიძე",
+      "title": "grigol abashidze",
       "dist": 1012,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "გრიგოლ აბაშიძე"
     },
     {
-      "title": "300 არაგველის მემორიალი",
+      "title": "300 aragvelis memoriali",
       "dist": 1033,
       "kind": "Monument / ruines",
       "rank": 8,
-      "wikiTitle": "სამასი არაგველი"
+      "wikiTitle": "სამასი არაგველი",
+      "localName": "300 არაგველის მემორიალი"
     }
   ],
   "majorCities": [],
@@ -5029,5 +5041,6 @@
       "mapsUrl": "https://maps.google.com/?cid=3536306607077708543&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

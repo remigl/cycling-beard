@@ -2200,18 +2200,20 @@
   "weather": null,
   "pois": [
     {
-      "title": "相亲角",
+      "title": "Xiang Qin Jiao",
       "dist": 1011,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "相亲角"
     },
     {
-      "title": "宽窄巷子",
+      "title": "Kuan Zhai Xiang Zi",
       "dist": 1242,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "宽窄巷子"
     },
     {
       "title": "Dragon Old Streets",
@@ -2221,88 +2223,100 @@
       "wikiTitle": null
     },
     {
-      "title": "成都砖雕老地图",
+      "title": "Cheng Dou Zhuan Diao Lao De Tu",
       "dist": 1388,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "成都砖雕老地图"
     },
     {
-      "title": "永陵",
+      "title": "Yong Ling",
       "dist": 2275,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": "王建墓"
+      "wikiTitle": "王建墓",
+      "localName": "永陵"
     },
     {
-      "title": "孔明苑",
+      "title": "Kong Ming Yuan",
       "dist": 2366,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "孔明苑"
     },
     {
-      "title": "华西坝",
+      "title": "Hua Xi Ba",
       "dist": 2496,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "华西坝"
     },
     {
-      "title": "安顺廊桥",
+      "title": "An Shun Lang Qiao",
       "dist": 2909,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "安顺廊桥"
     },
     {
-      "title": "春夜喜雨园",
+      "title": "Chun Ye Xi Yu Yuan",
       "dist": 3596,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "春夜喜雨园"
     },
     {
-      "title": "孔雀",
+      "title": "Kong Que",
       "dist": 6302,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "孔雀"
     },
     {
-      "title": "羊驼",
+      "title": "Yang Tuo",
       "dist": 6311,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "羊驼"
     },
     {
-      "title": "鸟蛋展示区",
+      "title": "Niao Dan Zhan Shi Qu",
       "dist": 6319,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "鸟蛋展示区"
     },
     {
-      "title": "矮马",
+      "title": "Ai Ma",
       "dist": 6324,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "矮马"
     },
     {
-      "title": "海豹池",
+      "title": "Hai Bao Chi",
       "dist": 6338,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "海豹池"
     },
     {
-      "title": "火烈鸟",
+      "title": "Huo Lie Niao",
       "dist": 6346,
       "kind": "Attraction",
       "rank": 10,
-      "wikiTitle": null
+      "wikiTitle": null,
+      "localName": "火烈鸟"
     }
   ],
   "majorCities": [],
@@ -2426,5 +2440,6 @@
       "mapsUrl": "https://maps.google.com/?cid=15519441094561404829&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
     }
   ],
-  "specialties": []
+  "specialties": [],
+  "enrichVersion": 2
 }

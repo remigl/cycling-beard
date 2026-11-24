@@ -22,31 +22,6 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
@@ -5931,7 +5906,169 @@
     "Dubrovnik",
     "Korčula"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Gradska kavana Arsenal Restaurant",
+      "rating": 4.8,
+      "ratingCount": 9142,
+      "types": [
+        "croatian_restaurant",
+        "breakfast_restaurant",
+        "mediterranean_restaurant",
+        "pastry_shop",
+        "seafood_restaurant",
+        "dessert_shop",
+        "bakery",
+        "confectionery",
+        "food_store",
+        "european_restaurant",
+        "bar",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=10512641489001600630&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Ploce Gate",
+      "rating": 4.8,
+      "ratingCount": 459,
+      "types": [
+        "historical_landmark",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1293359692600317778&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Restaurant Panorama",
+      "rating": 4.7,
+      "ratingCount": 8308,
+      "types": [
+        "restaurant",
+        "cocktail_bar",
+        "mediterranean_restaurant",
+        "wine_bar",
+        "bar",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15542989541284702488&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Pile Gate",
+      "rating": 4.7,
+      "ratingCount": 6115,
+      "types": [
+        "historical_landmark",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=15767454787977352998&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Sun Gardens Dubrovnik",
+      "rating": 4.7,
+      "ratingCount": 3566,
+      "types": [
+        "resort_hotel",
+        "hotel",
+        "lodging",
+        "spa",
+        "event_venue",
+        "point_of_interest",
+        "service",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1455234364811147338&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Fort Lovrjenac",
+      "rating": 4.6,
+      "ratingCount": 10672,
+      "types": [
+        "tourist_attraction",
+        "historical_landmark",
+        "history_museum",
+        "museum",
+        "historical_place",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=4599821397950923269&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Dubravka 1836 Restaurant & Cafe",
+      "rating": 4.6,
+      "ratingCount": 9294,
+      "types": [
+        "restaurant",
+        "cocktail_bar",
+        "breakfast_restaurant",
+        "mediterranean_restaurant",
+        "pastry_shop",
+        "dessert_shop",
+        "bakery",
+        "confectionery",
+        "food_store",
+        "bar",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11026664496610273536&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Valamar Lacroma Hotel",
+      "rating": 4.6,
+      "ratingCount": 4104,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=1569515434356520356&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Taj Mahal Old Town",
+      "rating": 4.5,
+      "ratingCount": 5872,
+      "types": [
+        "eastern_european_restaurant",
+        "brunch_restaurant",
+        "dumpling_restaurant",
+        "barbecue_restaurant",
+        "european_restaurant",
+        "restaurant",
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6752237764530247183&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Rixos Premium Dubrovnik",
+      "rating": 4.5,
+      "ratingCount": 4839,
+      "types": [
+        "hotel",
+        "casino",
+        "lodging",
+        "wellness_center",
+        "health",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12514745136410599315&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "licitar",
@@ -5963,5 +6100,6 @@
       "image": "http://commons.wikimedia.org/wiki/Special:FilePath/Lumblija2.jpg",
       "wikipedia": "https://fr.wikipedia.org/wiki/Lumblija"
     }
-  ]
+  ],
+  "enrichVersion": 2
 }
