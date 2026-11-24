@@ -477,6 +477,69 @@ async function processImage(srcPath, destDir, baseName) {
   };
 }
 
+// ─── Photos RAW Canon (.CR3) ──────────────────────────────────────────────────
+// sharp ne sait pas lire le CR3. Chaque CR3 contient des aperçus JPEG
+// (dont un en pleine taille) : on prend le plus grand JPEG valide du fichier,
+// on le redresse selon l'orientation de l'appareil, et il suit ensuite le
+// même traitement que n'importe quel JPEG.
+
+// Fin d'un flux JPEG commençant à `start` (SOI), ou -1 s'il est invalide.
+function jpegEnd(buf, start) {
+  let i = start + 2;
+  while (i + 4 <= buf.length) {
+    if (buf[i] !== 0xFF) return -1;
+    const marker = buf[i + 1];
+    if (marker === 0xFF) { i++; continue; }                 // remplissage
+    if (marker === 0xD9) return i + 2;                       // EOI
+    if (marker === 0x01 || (marker >= 0xD0 && marker <= 0xD7)) { i += 2; continue; }
+    const len = buf.readUInt16BE(i + 2);
+    if (len < 2) return -1;
+    i += 2 + len;
+    if (marker === 0xDA) {                                   // SOS : données compressées
+      while (i + 1 < buf.length) {
+        if (buf[i] === 0xFF) {
+          const m = buf[i + 1];
+          if (m === 0x00 || (m >= 0xD0 && m <= 0xD7) || m === 0xFF) { i += (m === 0xFF ? 1 : 2); continue; }
+          break;                                             // marqueur suivant (autre SOS ou EOI)
+        }
+        i++;
+      }
+    }
+  }
+  return -1;
+}
+
+// Écrit le plus grand aperçu JPEG du CR3 dans `outPath`. Renvoie true si OK.
+async function extractCr3Preview(cr3Path, outPath, orientation) {
+  const buf = fs.readFileSync(cr3Path);
+  let best = null;
+  for (let i = buf.indexOf(Buffer.from([0xFF, 0xD8, 0xFF])); i !== -1; i = buf.indexOf(Buffer.from([0xFF, 0xD8, 0xFF]), i + 3)) {
+    const end = jpegEnd(buf, i);
+    if (end > i && (!best || end - i > best.end - best.start)) best = { start: i, end };
+  }
+  if (!best) return false;
+  const jpeg = buf.subarray(best.start, best.end);
+  try {
+    const meta = await sharp(jpeg).metadata();
+    if (!meta.width || meta.width < 300) return false;       // seulement une miniature
+    // Les aperçus n'ont pas toujours l'orientation : on l'applique depuis le CR3
+    const angle = { 3: 180, 6: 90, 8: 270 }[orientation] || 0;
+    await sharp(jpeg).rotate(angle).jpeg({ quality: 92 }).toFile(outPath);
+    console.log(`    📷 aperçu JPEG extrait du CR3 : ${meta.width}×${meta.height}${angle ? ` (rotation ${angle}°)` : ""}`);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function cr3Orientation(cr3Path) {
+  try {
+    const parseFn = (typeof exifParse === "function") ? exifParse : (exifParse && exifParse.default);
+    const t = await parseFn(cr3Path, { pick: ["Orientation"], translateValues: false });
+    return Number(t?.Orientation) || 1;
+  } catch { return 1; }
+}
+
 // Heure de prise de vue d'une photo (EXIF DateTimeOriginal), en timestamp UTC.
 // Renvoie null si absente ou illisible (photo sans EXIF, capture d'écran, etc.)
 async function getPhotoTakenAt(srcPath, debugLabel = "") {
@@ -1114,7 +1177,7 @@ async function processLooseGpx(drive, rootId, parentId, gpxFiles, type) {
 async function processGroupFolder(drive, rootId, typeFolderId, group, type) {
   const children = await listFilesInFolder(drive, group.id);
   const gpxFiles = children.filter(f => f.name.toLowerCase().endsWith(".gpx"));
-  const hasPhotos = children.some(f => /\.(jpg|jpeg|png|webp)$/i.test(f.name));
+  const hasPhotos = children.some(f => /\.(jpg|jpeg|png|webp|cr3)$/i.test(f.name));
   if (gpxFiles.length === 0 && !hasPhotos) {
     console.log(`  ⏭  [${type}] "${group.name}" est vide, ignoré pour l'instant.`);
     return;
@@ -1719,10 +1782,22 @@ async function syncFolder(drive, folder, cache, force) {
       console.log(`  📝 Notes parsées`);
     }
 
-    // Images
-    if (name.match(/\.(jpg|jpeg|png|webp)$/i)) {
+    // Images (JPEG/PNG/WebP, et RAW Canon CR3 via leur aperçu JPEG)
+    if (name.match(/\.(jpg|jpeg|png|webp|cr3)$/i)) {
       const baseName = path.basename(name, path.extname(name));
-      const paths = await processImage(tmpPath, mediaDir, baseName);
+      let imgPath = tmpPath;
+      if (name.endsWith(".cr3")) {
+        // RAW + JPEG : si le JPEG du même nom est là, on garde le JPEG (pas de doublon)
+        const twin = files.some(f => f !== file && /\.(jpe?g)$/i.test(f.name)
+          && path.basename(f.name, path.extname(f.name)).toLowerCase() === baseName);
+        if (twin) { console.log(`  ⏭  ${file.name} : JPEG du même nom présent, CR3 ignoré`); continue; }
+        imgPath = path.join(tmpDir, `${baseName}__cr3preview.jpg`);
+        if (!(await extractCr3Preview(tmpPath, imgPath, await cr3Orientation(tmpPath)))) {
+          console.log(`  ⚠️  ${file.name} : aucun aperçu JPEG exploitable dans ce CR3, photo ignorée`);
+          continue;
+        }
+      }
+      const paths = await processImage(imgPath, mediaDir, baseName);
       console.log(`  🖼  ${name} → ${paths.webp}`);
 
       // Titre lisible : retire préfixe numérique, underscores → espaces, capitalise
@@ -1735,7 +1810,8 @@ async function syncFolder(drive, folder, cache, force) {
       // Heure de prise de vue (EXIF), utilisée après-coup pour retrouver la
       // position sur le tracé GPX. Photo sans EXIF exploitable → simplement
       // pas de géolocalisation, le reste continue normalement.
-      const shot = await getPhotoTakenAt(tmpPath, name);
+      const shot = (await getPhotoTakenAt(tmpPath, name))
+        || (imgPath !== tmpPath ? await getPhotoTakenAt(imgPath, name) : null);
 
       if (name.startsWith("cover")) {
         coverWebp = paths.webp;
