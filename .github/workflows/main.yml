@@ -69,6 +69,12 @@ jobs:
           # "date" recoit deux arguments ("extra operand") et le message est faux.
           git commit -m "sync: $(date '+%Y-%m-%d %H:%M')"
 
+          # Le sync ne publie que public/ : on jette les autres fichiers modifiés
+          # par l'installation (ex. package-lock.json), sinon "git pull --rebase"
+          # refuse de s'exécuter ("You have unstaged changes").
+          git reset -q --hard HEAD
+          git clean -fdq
+
           # Pousse avec jusqu'a 5 tentatives. En cas de conflit pendant le rebase
           # (typiquement public/data/sync-cache.json modifie des deux cotes), on
           # donne la priorite aux donnees fraichement generees par ce sync
