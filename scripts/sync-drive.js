@@ -525,19 +525,62 @@ async function extractCr3Preview(cr3Path, outPath, orientation) {
     // Les aperçus n'ont pas toujours l'orientation : on l'applique depuis le CR3
     const angle = { 3: 180, 6: 90, 8: 270 }[orientation] || 0;
     await sharp(jpeg).rotate(angle).jpeg({ quality: 92 }).toFile(outPath);
-    console.log(`    📷 aperçu JPEG extrait du CR3 : ${meta.width}×${meta.height}${angle ? ` (rotation ${angle}°)` : ""}`);
+    console.log(`    📷 aperçu JPEG extrait du CR3 : ${meta.width}×${meta.height}, orientation ${orientation}${angle ? ` → rotation ${angle}°` : ""}`);
     return true;
   } catch {
     return false;
   }
 }
 
-async function cr3Orientation(cr3Path) {
+// Métadonnées d'un CR3, lues directement dans le fichier (exifr ne sait pas
+// lire le CR3) : les boîtes CMT1 (IFD0 : orientation) et CMT2 (EXIF : date de
+// prise de vue) contiennent chacune un bloc TIFF standard.
+function readTiffTags(buf, wanted) {
+  const out = {};
+  if (buf.length < 8) return out;
+  const le = buf[0] === 0x49 && buf[1] === 0x49;
+  if (!le && !(buf[0] === 0x4D && buf[1] === 0x4D)) return out;
+  const u16 = (o) => (le ? buf.readUInt16LE(o) : buf.readUInt16BE(o));
+  const u32 = (o) => (le ? buf.readUInt32LE(o) : buf.readUInt32BE(o));
+  const ifd = u32(4);
+  if (ifd + 2 > buf.length) return out;
+  const n = u16(ifd);
+  for (let k = 0; k < n; k++) {
+    const e = ifd + 2 + k * 12;
+    if (e + 12 > buf.length) break;
+    const tag = u16(e), type = u16(e + 2), count = u32(e + 4);
+    if (!wanted.includes(tag)) continue;
+    if (type === 3) out[tag] = u16(e + 8);                          // SHORT
+    else if (type === 2) {                                           // ASCII
+      const off = count <= 4 ? e + 8 : u32(e + 8);
+      out[tag] = buf.subarray(off, off + count).toString("latin1").replace(/\0+$/, "");
+    }
+  }
+  return out;
+}
+function cr3Box(buf, name) {
+  const i = buf.indexOf(Buffer.from(name, "latin1"));
+  if (i < 4) return null;
+  const size = buf.readUInt32BE(i - 4);
+  return buf.subarray(i + 4, Math.min(buf.length, i - 4 + size));
+}
+function readCr3Meta(cr3Path) {
   try {
-    const parseFn = (typeof exifParse === "function") ? exifParse : (exifParse && exifParse.default);
-    const t = await parseFn(cr3Path, { pick: ["Orientation"], translateValues: false });
-    return Number(t?.Orientation) || 1;
-  } catch { return 1; }
+    // Les métadonnées sont au début du fichier : inutile de lire 30 Mo
+    const fd = fs.openSync(cr3Path, "r");
+    const head = Buffer.alloc(Math.min(fs.fstatSync(fd).size, 512 * 1024));
+    fs.readSync(fd, head, 0, head.length, 0);
+    fs.closeSync(fd);
+    const ifd0 = readTiffTags(cr3Box(head, "CMT1") || Buffer.alloc(0), [0x0112]);
+    const exif = readTiffTags(cr3Box(head, "CMT2") || Buffer.alloc(0), [0x9003, 0x9004]);
+    const dt = exif[0x9003] || exif[0x9004] || null;               // "AAAA:MM:JJ HH:MM:SS"
+    const m = dt && dt.match(/^(\d{4}):(\d{2}):(\d{2}) (\d{2}):(\d{2}):(\d{2})/);
+    return {
+      orientation: Number(ifd0[0x0112]) || 1,
+      // même convention que exifr pour les JPEG (heure locale de l'appareil)
+      time: m ? new Date(`${m[1]}-${m[2]}-${m[3]}T${m[4]}:${m[5]}:${m[6]}`).getTime() : null,
+    };
+  } catch { return { orientation: 1, time: null }; }
 }
 
 // Heure de prise de vue d'une photo (EXIF DateTimeOriginal), en timestamp UTC.
@@ -1650,7 +1693,9 @@ async function syncFolder(drive, folder, cache, force) {
   //    encore sur disque ET qu'on a l'étape en cache → on saute tout le travail
   //    coûteux (géocodage, DeepL, conversion d'images) et on réutilise le cache.
   // Clé de cache = empreinte des fichiers binaires + date de modif du Doc notes.
-  const fingerprint = fingerprintFiles(files) + "##notes:" + notesDocModified(files);
+  const fingerprint = fingerprintFiles(files) + "##notes:" + notesDocModified(files)
+    // v2 du traitement CR3 (orientation + heure) : les étapes avec des CR3 sont refaites une fois
+    + (files.some(f => /\.cr3$/i.test(f.name)) ? "##cr3v2" : "");
   const cached = cache?.stages?.[slug];
   // (ancien format : "##retry:" ajouté à l'empreinte = étape incomplète)
   const cachedBase = (cached?.fingerprint || "").split("##retry:")[0];
@@ -1786,13 +1831,15 @@ async function syncFolder(drive, folder, cache, force) {
     if (name.match(/\.(jpg|jpeg|png|webp|cr3)$/i)) {
       const baseName = path.basename(name, path.extname(name));
       let imgPath = tmpPath;
+      let cr3Meta = null;
       if (name.endsWith(".cr3")) {
         // RAW + JPEG : si le JPEG du même nom est là, on garde le JPEG (pas de doublon)
         const twin = files.some(f => f !== file && /\.(jpe?g)$/i.test(f.name)
           && path.basename(f.name, path.extname(f.name)).toLowerCase() === baseName);
         if (twin) { console.log(`  ⏭  ${file.name} : JPEG du même nom présent, CR3 ignoré`); continue; }
         imgPath = path.join(tmpDir, `${baseName}__cr3preview.jpg`);
-        if (!(await extractCr3Preview(tmpPath, imgPath, await cr3Orientation(tmpPath)))) {
+        cr3Meta = readCr3Meta(tmpPath);
+        if (!(await extractCr3Preview(tmpPath, imgPath, cr3Meta.orientation))) {
           console.log(`  ⚠️  ${file.name} : aucun aperçu JPEG exploitable dans ce CR3, photo ignorée`);
           continue;
         }
@@ -1810,8 +1857,10 @@ async function syncFolder(drive, folder, cache, force) {
       // Heure de prise de vue (EXIF), utilisée après-coup pour retrouver la
       // position sur le tracé GPX. Photo sans EXIF exploitable → simplement
       // pas de géolocalisation, le reste continue normalement.
-      const shot = (await getPhotoTakenAt(tmpPath, name))
-        || (imgPath !== tmpPath ? await getPhotoTakenAt(imgPath, name) : null);
+      // CR3 : heure lue directement dans le fichier (exifr ne lit pas le CR3)
+      const shot = cr3Meta
+        ? (cr3Meta.time ? { time: cr3Meta.time, gpsLat: null, gpsLng: null } : null)
+        : await getPhotoTakenAt(tmpPath, name);
 
       if (name.startsWith("cover")) {
         coverWebp = paths.webp;
