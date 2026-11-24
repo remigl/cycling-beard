@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-20",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-18-transport-narita-takamatsu/img_6598.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,39 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-18-transport-narita-takamatsu/img_6598.webp",
+      "thumb": "/media/2026-10-18-transport-narita-takamatsu/thumb_img_6598.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-18-transport-narita-takamatsu/img_6598.webp",
+      "thumb": "/media/2026-10-18-transport-narita-takamatsu/thumb_img_6598.webp",
+      "alt": "Img 6598"
+    },
+    {
+      "src": "/media/2026-10-18-transport-narita-takamatsu/img_6600.webp",
+      "thumb": "/media/2026-10-18-transport-narita-takamatsu/thumb_img_6600.webp",
+      "alt": "Img 6600"
+    },
+    {
+      "src": "/media/2026-10-18-transport-narita-takamatsu/img_6601.webp",
+      "thumb": "/media/2026-10-18-transport-narita-takamatsu/thumb_img_6601.webp",
+      "alt": "Img 6601"
+    },
+    {
+      "src": "/media/2026-10-18-transport-narita-takamatsu/img_6602.webp",
+      "thumb": "/media/2026-10-18-transport-narita-takamatsu/thumb_img_6602.webp",
+      "alt": "Img 6602"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-18-transport-narita-takamatsu_1.gpx",
   "mapLat": 34.3483107,

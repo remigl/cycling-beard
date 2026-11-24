@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-25",
   "transport": true,
-  "coverImage": "/media/2026-10-23-transport-onomichi-hiroshima/img_6673.webp",
+  "coverImage": "/media/2026-10-23-transport-onomichi-hiroshima/img_6705.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -32,19 +32,9 @@
   "thanksTranslations": {},
   "photos": [
     {
-      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6673.webp",
-      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6673.webp",
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6705.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6705.webp",
       "alt": "Cover"
-    },
-    {
-      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6673.webp",
-      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6673.webp",
-      "alt": "Img 6673"
-    },
-    {
-      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6691.webp",
-      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6691.webp",
-      "alt": "Img 6691"
     },
     {
       "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6705.webp",
@@ -52,9 +42,34 @@
       "alt": "Img 6705"
     },
     {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6708.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6708.webp",
+      "alt": "Img 6708"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6735.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6735.webp",
+      "alt": "Img 6735"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6739.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6739.webp",
+      "alt": "Img 6739"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6747.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6747.webp",
+      "alt": "Img 6747"
+    },
+    {
       "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6749.webp",
       "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6749.webp",
       "alt": "Img 6749"
+    },
+    {
+      "src": "/media/2026-10-23-transport-onomichi-hiroshima/img_6753.webp",
+      "thumb": "/media/2026-10-23-transport-onomichi-hiroshima/thumb_img_6753.webp",
+      "alt": "Img 6753"
     }
   ],
   "videos": [],

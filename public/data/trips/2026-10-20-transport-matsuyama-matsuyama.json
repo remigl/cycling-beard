@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-21",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6604.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,69 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6604.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6604.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6604.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6604.webp",
+      "alt": "Img 6604"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6605.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6605.webp",
+      "alt": "Img 6605"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6606.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6606.webp",
+      "alt": "Img 6606"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6611.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6611.webp",
+      "alt": "Img 6611"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6615.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6615.webp",
+      "alt": "Img 6615"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6617.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6617.webp",
+      "alt": "Img 6617"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6621.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6621.webp",
+      "alt": "Img 6621"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6624.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6624.webp",
+      "alt": "Img 6624"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6627.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6627.webp",
+      "alt": "Img 6627"
+    },
+    {
+      "src": "/media/2026-10-20-transport-matsuyama-matsuyama/img_6628.webp",
+      "thumb": "/media/2026-10-20-transport-matsuyama-matsuyama/thumb_img_6628.webp",
+      "alt": "Img 6628"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-20-transport-matsuyama-matsuyama_1.gpx",
   "mapLat": 33.8422083,

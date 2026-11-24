@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-23",
   "transport": true,
-  "coverImage": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1600",
+  "coverImage": "/media/2026-10-21-transport-imabari-onomichi/img_6645.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -24,38 +24,79 @@
       "summary": "",
       "quote": null,
       "fullStory": []
-    },
-    "en": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "es": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "it": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "de": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
-    },
-    "nl": {
-      "summary": "",
-      "quote": null,
-      "fullStory": []
     }
   },
   "lodgingUrl": "",
   "lodgingName": "",
   "thanks": "",
   "thanksTranslations": {},
-  "photos": [],
+  "photos": [
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6645.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6645.webp",
+      "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6645.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6645.webp",
+      "alt": "Img 6645"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6647.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6647.webp",
+      "alt": "Img 6647"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6650.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6650.webp",
+      "alt": "Img 6650"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6655.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6655.webp",
+      "alt": "Img 6655"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6662.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6662.webp",
+      "alt": "Img 6662"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6663.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6663.webp",
+      "alt": "Img 6663"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6670.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6670.webp",
+      "alt": "Img 6670"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6671.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6671.webp",
+      "alt": "Img 6671"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6676.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6676.webp",
+      "alt": "Img 6676"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6681.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6681.webp",
+      "alt": "Img 6681"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6691.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6691.webp",
+      "alt": "Img 6691"
+    },
+    {
+      "src": "/media/2026-10-21-transport-imabari-onomichi/img_6696.webp",
+      "thumb": "/media/2026-10-21-transport-imabari-onomichi/thumb_img_6696.webp",
+      "alt": "Img 6696"
+    }
+  ],
   "videos": [],
   "gpxFile": "/gpx/2026-10-21-transport-imabari-onomichi_1.gpx",
   "mapLat": 34.4087446,

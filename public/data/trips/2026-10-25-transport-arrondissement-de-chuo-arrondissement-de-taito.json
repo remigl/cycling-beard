@@ -14,7 +14,7 @@
   "type": "transport",
   "endDate": "2026-10-26",
   "transport": true,
-  "coverImage": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6781.webp",
+  "coverImage": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6759.webp",
   "heroVideo": null,
   "summary": "",
   "fullStory": [],
@@ -32,9 +32,24 @@
   "thanksTranslations": {},
   "photos": [
     {
-      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6781.webp",
-      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6781.webp",
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6759.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6759.webp",
       "alt": "Cover"
+    },
+    {
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6759.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6759.webp",
+      "alt": "Img 6759"
+    },
+    {
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6760.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6760.webp",
+      "alt": "Img 6760"
+    },
+    {
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6764.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6764.webp",
+      "alt": "Img 6764"
     },
     {
       "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6781.webp",
@@ -45,6 +60,11 @@
       "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6786.webp",
       "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6786.webp",
       "alt": "Img 6786"
+    },
+    {
+      "src": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/img_6788.webp",
+      "thumb": "/media/2026-10-25-transport-arrondissement-de-chuo-arrondissement-de-taito/thumb_img_6788.webp",
+      "alt": "Img 6788"
     }
   ],
   "videos": [],
