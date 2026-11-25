@@ -6565,7 +6565,143 @@
   "majorCities": [
     "Korčula"
   ],
-  "topRatedPlaces": [],
+  "topRatedPlaces": [
+    {
+      "title": "Monastery & Church of Our Lady of the Angels",
+      "rating": 4.9,
+      "ratingCount": 561,
+      "types": [
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14422743492845576077&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Konoba Mate",
+      "rating": 4.7,
+      "ratingCount": 1368,
+      "types": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=2545290414512601031&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Saint Mark's Cathedral",
+      "rating": 4.7,
+      "ratingCount": 745,
+      "types": [
+        "tourist_attraction",
+        "church",
+        "place_of_worship",
+        "association_or_organization",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=695331812981591744&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Dominče trajekt",
+      "rating": 4.7,
+      "ratingCount": 434,
+      "types": [
+        "ferry_service",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=8990420220178918869&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Car ferry terminal Orebic to Korcula",
+      "rating": 4.6,
+      "ratingCount": 2877,
+      "types": [
+        "ferry_service",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=14517635038258204021&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Car Ferry Terminal (Korchula to Orebić)",
+      "rating": 4.6,
+      "ratingCount": 1884,
+      "types": [
+        "ferry_service",
+        "transportation_service",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=3783115611953874157&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "La Banya",
+      "rating": 4.6,
+      "ratingCount": 1647,
+      "types": [
+        "cocktail_bar",
+        "breakfast_restaurant",
+        "hamburger_restaurant",
+        "mediterranean_restaurant",
+        "bar",
+        "american_restaurant",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=9759827448886062476&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Konoba Aterina",
+      "rating": 4.6,
+      "ratingCount": 1313,
+      "types": [
+        "restaurant",
+        "croatian_restaurant",
+        "vegetarian_restaurant",
+        "mediterranean_restaurant",
+        "french_restaurant",
+        "european_restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=6484458897174712452&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Bačva Beach",
+      "rating": 4.6,
+      "ratingCount": 1085,
+      "types": [
+        "tourist_attraction",
+        "public_bath",
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=12215228864061651246&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    },
+    {
+      "title": "Aminess Vival Grand Azur Hotel",
+      "rating": 4.5,
+      "ratingCount": 1689,
+      "types": [
+        "hotel",
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "mapsUrl": "https://maps.google.com/?cid=11609343104243979770&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA"
+    }
+  ],
   "specialties": [
     {
       "title": "licitar",
